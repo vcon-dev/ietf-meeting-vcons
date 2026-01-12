@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "e011e6ff-dd38-460b-a1c4-7aed2b8d4594",
   "created_at": "2026-01-03T20:06:46.014597",
-  "updated_at": "2026-01-03T20:06:50.457428",
+  "updated_at": "2026-01-12T15:51:05.358048+00:00",
   "subject": "IETF 121 - NTP Working Group Session",
   "parties": [
     {
@@ -5339,6 +5339,3147 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Oh, he's the guy.\nSPEAKER S2: Okay, I guess we'll go ahead and get started. Apologies, I was distracted. Um. All right. So welcome to the NTP working Group at IETF 121. Um, I'd like to remind everybody this is the note. Well, that you agreed to when you registered for the meeting. And it includes all of the rules and processes that we abide by. Um, they've also provided some additional reminders about meeting behaviors, anti-harassment, and the type of environment that we would like to maintain. So please take a moment to read over these. If you have any questions about the note, well, please see the IETF leadership. Uh, there's also the meeting tips, um, which, uh, recognizing most of you, I'm assuming that, uh, you are aware of these, but, uh, it's always good to have a reminder. Um, so our agenda for today, is there any, um. Agenda bashing, any changes or additions? Nope. All right. With that, we will go ahead and move to the first item, which is our current, um. Uh, working group chairs, the update of our documents that are basically moved beyond the working group. We're making fairly decent process here. We progress here, the registries document and the enterprise profile from the TikTok working Group, which we've included in this set of effort activities, are both in the RFC editor queue at this point. Uh, the NTP interleave modes, uh, needs an author update based on some comments received. Um, it has gone through the tele chat and is awaiting an author update, and the NTP over TP is awaiting a shepherd write up. Any questions about any of these? Oh, and and Eric is reminding us that he's closing TikTok as soon as the enterprise profile is done. Um. Oops. I'll move back one. So. Stop slides. The next thing on the agenda is, uh, we want to have a. Um. Um, hackathon update. We had, uh, hackathon projects in both NP, v5 and also in rough time. Um, David, do you want to just speak to the NP v5, uh, status of implementations? And then after that, I'll get, uh, Marcus to speak.\nSPEAKER S3: Yeah. So, um, part of what we did this weekend, uh, at least I worked a bit on this. And I think Reuben as well, uh, is looking towards getting the, uh, getting an implementation ready to the point where we can start enabling it by default on some of our clients, which is going to be an interesting experience. If anybody thinks this is a really, really, really, really, really bad idea and we really shouldn't be doing it, please let us know. Um, uh, I think we're at the point now where the upgrade mechanism is in a shape that, um, it should automatically detect if anything goes wrong with nb5 and fallback to nb4. So, um, that is at least a positive thing. Um, I have a bunch of notes for, for myself that I still need to, uh, process. Uh, also from this, uh, on how, uh, on a few areas of the spec, we might need some more improvement on, uh, for the most part, those are going to be minor minor issues, though, I think. Right. Based on how the experience we've had with the implementation so far, I'm actually fairly optimistic. Um, I'm not sure what other implementers of NP are present here, but I'm I'm really curious and would like to ask them what the plans are around implementing this in, for example, krone or Npsc. So if anybody is willing to give an update on that, uh. I would be open for that.\nSPEAKER S2: Not not to put you on the spot, Miroslav, but did you want to speak about the status of your implementation?\nSPEAKER S4: Um, yeah. Um, I have this experimental implementation, but I haven't done any work for krone. I. I'm still not sure if this is if this design is what we will end up with. So, um, I would like to avoid. Okay, complete rewrites and things like that.\nSPEAKER S2: All right. And just so that I didn't confuse things, uh, Miroslav does have an experimental implementation. Uh, the hackathon website has links to the code for both of those. Go ahead. Markus, on rough time. Oh, yeah.\nSPEAKER S5: All right. I'm just going to do a sort of a quick run through of what we did with rough time during the hackathon. Um, so I spent some time on updating my two implementations, uh, my server implementation, rough time d, and the client implementation in rough time to draft 11. Uh, me and someone called Sarah Grant. The work on an interoperability framework, which Sarah named plummet. Uh, there's a link to the code there, and that framework sort of runs all the servers against all the all the clients and outputs results, which you'll see in the following slides. Ruben here worked on a rust server implementation of rough time. And then sort of all of us around the table had a bunch of discussions as well, um, about the draft and some, some issues we found with it there. So we can go to the next slide. Um, so this is what the sort of interoperability framework spat out, and it looks sort of spotty. But if we go to the next slide and which shows only the ones that claim to support draft 11, it looks better. The to access there actually turned out to, uh, I started following a thread trying to find what the why the to access sort of showed up there. So why rough enough didn't work with cloudflare's client and by rough time. And that turned out to be a hint of a security issue. So next slide. And the main results here then are we are. We have three servers and three clients up to date with draft 11. And we found a couple of bugs in some of them. So Cloudflare implementation actually was actually missing some tags in its responses. But once I patched that it worked perfectly. Uh, it turns out also that a lot of clients don't check the contents of the nonce and version tags, uh, in the responses, or verify the signatures in the responses. Um, rough enough. One of the server implementations, server and client implementations, uh, follows RFC 1832 when generating keys. Uh, turns out that other implementations don't. That has some implications. And I'll I'll talk about that during the rough time. Uh, point on the agenda. Uh, we also realized that there are version downgrade attacks on rough time. We'll talk more about that later. And we found a bunch of other issues while discussing. And I think that's the last slide.\nSPEAKER S2: Yeah it is. Any questions on the rough time activity at the hackathon? Go ahead Eric.\nSPEAKER S5: That's not so much a question.\nSPEAKER S6: And it could probably also have been said at the other at the other other slot. But whenever you want to security Directorate review. Uh, if you think it's documents ready prior to working with last call prior to ETF last call, we can just click some buttons in the data tracker and request security review. Try to catch some some things like this. Thanks.\nSPEAKER S2: Any other questions or comments on the hackathon activities? All right. I'd like to thank in particular David and Marcus and Ruben for, um. Helping out with this. It really helps move the specs along. We seem to get more activity out of the specs after we do some hackathon activities. So, um. All right. Um. Stop. Share. Next on the agenda is the, uh, requirements draft. Um. We believe this is pretty close to being done. It has been moved over to GitHub. Um. There were some. Um, remaining issues to be dealt with. Um, does anybody have any questions or. I don't believe. Let's see. Last time I said he wasn't here, and he was. Um. We need to decide in the next few months what we're doing with this draft and how to move it forward. Um, and we will follow up with the authors on that. Um. Next is Nv5. Miroslav. Oh, wait, you don't have any slides?\nSPEAKER S4: Yeah. There are a few changes in the git repository prepared for the next version of the draft. Uh, one is the leap indicator that now has a value for a noun, and the original unsynchronized value is now a flag that is set when the server is synchronized. So the clients will be required to Check this flag before accepting the measurement. Uh, the other change that was made is, um, reference IDs are now specified for reference clocks like the GPS, and they are included in the bloom filter to enable clients to detect where the time is coming from. Um, the Nb5 reference ID is the first 120 bits of the MD5 sum of the string, similarly to the NTP v4 address for which we don't have the nb5 reference ID. And I think there are some remaining items. I think we will need to review the use of chutes. And I think this has the same issue as the interleaved mode draft, that there are too many chutes and not much context. Why? It is a chute. So I think we will need to provide more context or replace replace it with mast or something else. And there was a comment from someone. Implementing an tp5 draft. Um, and I suggestion that to improve the handling of the draft extension field, the comparison of the strings when a string can be longer or shorter and the padding and and so I think this is this should be easy. And I think there is a lot of editorial work to be left to be done. Some sections could I think could be improved.\nSPEAKER S2: Okay. Um. So how many people here have read the current draft of NPY v5? Well, that's a problem. You've read it? Um. All right, we need some more eyes on this draft. So if people could please review this, that would be very helpful. It's going to be hard to get it moved through without proper review. Any questions for Miroslav? Benson?\nSPEAKER S7: Um, so the draft has a section on kind of different ways of doing the comparison. Um, so I guess you make a number of measurements and then, uh, use a statistical method to try and get, uh, the best way of the most accurate estimate of the time. Um, are you expecting to look at other methods or just just the one from the IEEE as a new method?\nSPEAKER S4: I'm sorry, which measurement?\nSPEAKER S7: Um, so usually you do a number of round trip measurements between the client and the server and or client in different servers, and then use statistical computation to try and estimate the time most accurately. Um, my question is, are you going to look at other methods, um, that people have tried or this is the only new one that you're going to include.\nSPEAKER S4: Um. Like if there is a, if it makes sense to use the PDP approach. Right. Like, um, the broadcast mode using one, the transmission timestamp, assuming a constant delay and calculating the offset from that. Is that what you are referring to?\nSPEAKER S7: Uh, I guess my question is, um, are there others that are worth considering? Uh, I guess that that also seems new for this draft.\nSPEAKER S4: Um, I'm not aware of anything.\nSPEAKER S7: Okay, I'll take a look, but I, um, I guess I haven't done a comparison, so I don't know. Thank you.\nSPEAKER S2: Go ahead. David.\nSPEAKER S3: Yeah. So, uh, Benson, uh, I was guessing that you were referring to the algorithmic side of things. Um, one of the goals, as far as I understand it, at least for Nv5, is that we're going to completely remove any requirements on that front. Um, so the section you are referring to, if I remember correctly, is basically a suggestion of how you can process it this way. Uh, you don't have to um, and of course, there are other interesting ways to do this. I, I would suggest strongly that we stick to the position of not including anything beyond the basics. Hey, look here. Uh, if, uh, uh, for for how you can process the measurements and, uh, get to an actual clustering algorithm, um, we could do an additional draft for that. Is really interested in that. But experience with past, uh, experience with past specifications on that point, I don't think an RFC is the correct format for, uh, that sort of thing, if I'm honest.\nSPEAKER S2: Okay. Anything else on NP v5? Thank you very much, Marcus. Rough time?\nSPEAKER S5: All right. So this, um, sort of before the hackathon, we somewhat naively thought that we were pretty much done. And it turns out maybe we're not. Uh, so I'll go into some of the issues that we've sort of realized are in there currently. And the first one is rough time and its handling of so rough time uses editor 25519 keys for signing uh responses. And um, most implementations generate their private keys simply by generating a random uh 256 bit number and using that, um, however, um, if you look in RFC 1832, it's, uh, tells you that you should use this 32 bit secret. Uh. Hash it. Take the first 32 bytes. Clear the highest bit. Clear the lowest three bits, and then set the second highest bit. And that's your private key. And the reason for that is, um, that if you sort of get unlucky and get these sort of bits set, um, then that might enable some, some attacks, um, which, you know, we obviously want to want to avoid. Um, I found this thanks to the sort of incompatibility between roughness and other, um, between the rough enough server and clients and, uh, it's sort of unclear what other implementations do, but it seems like most of them don't do it the correct way. Uh, while this is, you know, it's mostly an implementation issue, how, um, how implementations sort of generate their keys. Uh, but considering that the what could conceivably happen, uh, we should we should definitely include some sort of language and guidance on this, including a reference to 832 and, you know, a must when it comes to generating these keys in the in the right way. Yeah. Next slide please. And the other security issue we found, uh, was version downgrade attacks. And in retrospect, this this should have been fairly obvious. Um, there's no way for the client to actually check, uh, that the, uh, its request wasn't tampered with. Um, and there's no signing of the version tag in the response, either. Uh, which means that a man in the middle attacker can pretty much can do very much, actually, in between without it being detected by either server or client. And this. Sure. And a suggested fix for this is instead of just hashing the nonce, um, and putting that in the Merkle tree, which we should hash the entire request uh, instead, and put all that in the in Merkle tree. We should also include, uh, the version tag sent by the server in the signed response. And there should probably also be a tag specify a signed tag specifying what versions the server is supporting, uh, in all server responses. Yeah. We've got. Some other smaller issues. Um, so the fact that we learned that almost all clients are pretty bad at actually checking, uh, version tags, checking nonce tags in responses and verifying signatures. And this really highlights the need for Greece. Uh, I think it's, uh, you know, service should. Service should grease the responses, uh, enough for us to sort of force clients to do this kind of checking. Uh, we found what might have been a sort of a regression between two drafts. So we, uh, we changed, uh, a string, and then that sort of then appears to have reappeared in a later draft for some reason. Um, I don't think this was deliberate. It might have been, um, what also was brought up is the fact that the the Merkle tree. So the max height of the Merkle tree is implicitly specified because we have this maximum server response length. Um, but we should really specify that explicitly to make it clear to, to implementation developers. Um, and currently we also allow multiple version numbers in requests. And, you know, uh, a pretty legitimate question there was raised about, you know, is there is this really necessary? And what's the use case in that case? Uh, so we maybe we should look at restricting it to just a single version number in a, in a request. And then there were also several editorial issues, uh, being brought out, um, regarding, uh, language that could be misunderstood. What's hard to understand? And in one case, as Dieter pointed out, um, we weren't really clear about what we're actually guaranteeing with rough time, which is kind of fundamental to to the whole thing. I think there might is another slide. Um. Yeah. Uh, so I was hoping to release, uh, me and Watson. We're hoping to release a new draft version, uh, pretty much today, but I've decided to sort of wait, since we have a lot of text to add at this point. Uh, there's multiple changes already up on sort of the working draft on GitHub. And pretty much all the issues I've mentioned here also have, you know, are being tracked on GitHub. And at some point I'll also write a digest of all this and sent to the mailing list. And that's all I had I think.\nSPEAKER S2: Okay. Any questions on the rough time progress? Um, a little bit. So you you said you were going to put the additional text in. Do you have a rough idea of when. And once that's done, how how close you are to working group last call.\nSPEAKER S5: Uh, for some parts of the text. Uh, I have a pretty good idea what's going to go in there with some other parts. Uh, uh, I'll have to think of it, or we'll have to discuss it. So? So we'll see.\nSPEAKER S2: Uh, all right, so we're looking at a couple more rounds before we're ready for working group. Last call.\nSPEAKER S5: At least one more round, I think.\nSPEAKER S2: Okay, great. Thank you very much. Thanks. All right. The next document that we are working on is, uh, NTS for PDP. There's been some progress on that. Martin, did you want to speak to the current status of that effort?\nSPEAKER S8: Yes. Of course. Hello, everyone. Um, I have three small points about PDP. Uh, the first one is the implementation, uh, for PDP implementation is progressing but slower than originally planned. However, uh, I think that's the first test can be done at the end. Uh, by the end of this year or the beginning of the next year. And for this reason, I'm planning to participate in hackathon next year, probably in July, uh, because it's in Europe. In Spain, it's, uh, pretty close, and I want to attend in person. So it's the best way, I guess. Um, the next one is a draft document. Uh, there are no further updates on the draft yet. Uh, a major update is planned for February next year. Uh, there are several simplifications in the protocol processes, and there are also a lot of small changes and improvements to be done. Uh, so we have a lot of work to do on the text. Um, furthermore, I will also provide our draft document in the git repository. Uh, but I guess we provided a after the next update, uh, because, um, if people, uh, read the document, they should read the, the, the current one or the updated one, because there are a lot of changes. Um, the last item is I security subcommittee. Um, the point here is that securing PDP messages requires the transport of some data and the authentication tab, which is currently not covered by the PDP standard. Um, we are currently working on the solution to improve the situation, especially Reiner, Steffen Frese and I. And we want to enhance the authentication TLV by using some optional and reserved fields. Um, and I have already prepared a proposal, uh, that can be discussed at the next meeting. Um, I guess we have those scheduled yet. I guess in the next few weeks and then we will have we have to see how we do proceed further. But this is necessary especially for the IETF draft document. Uh, because this is um, yeah, it's the some part is PDP standard, some part is I IETF draft. And so we need to clarify some points to finalize a draft document, especially about handling the replay uh, or handling replay attacks, uh, use sequence numbers and how to filter authentication TV. So this is a big discussion point currently. Uh, but I guess we can solve it. And we already think, uh, that we find a solution for that. So yeah, this is a current state, uh, about for PDP.\nSPEAKER S2: Okay. Any questions on uh, ntts for PDP? I'll talk very briefly later about the overall status of 1588. Um, next on the agenda is the, uh, NTS extensions for enabling pools. Uh, David, do you want to speak to that?\nSPEAKER S3: Yeah. So about a year ago, uh, I guess by this point, uh, we made a first draft of what, uh, a more transparent client, transparent version of a pool could look like, and what sort of tricks you would need to support that. Um, that draft is still in roughly the same state as it was a year ago. Not much has changed. Um, most of the discussion on mailing lists and in the meantime has gone to. Is this the best approach? What are the approaches that we actually have? Um. We have a reasonable view of what is what our options. A lot of open questions remain primarily around is it doable to run a pool, uh, with the pool doing the server and the key exchange? Or is that just too big of a load to realistically be doable? Um, from me and Ruben, uh, there's a project that we are currently looking for funding for. Um, that's in the pipeline to start implementing an actual pool, um, with a number of parties that have already indicated interest in providing servers, uh, for that initially, so that we can start to gain some operational experience. This will be experimental at first. Um, and we'll have to discuss the long term future of where this is going to live in that process. That will hopefully give us some ideas of what is actually realistically realistic to do. And at that point, we might want to move forward with one or more of these drafts. Uh, the draft is currently listed in the, um. has currently listed on the uh working Group database. Record is specifically for the, uh, the pool doing all the work. Uh, if anybody is interested in writing up a decent draft for other approaches to doing a pool, feel free to do so.\nSPEAKER S2: All right. Any questions about this draft?\nSPEAKER S9: I have a question, but I can.\nSPEAKER S2: Just go ahead. You are welcome to the mic. It's a small room.\nSPEAKER S10: I ask, I run into people. Um.\nSPEAKER S2: Sorry.\nSPEAKER S10: There might be others. Um, I think it would be sort of practically. Right now, the pool get 2 to 500,000 DNS queries a second, so some approximation of those would maybe turn into eventually to key exchanges maybe. So that would be a lot for to not decentralize more. Some sort of I would be worried about putting more computing logic into the not distributed part of the system.\nSPEAKER S3: Yeah. So we're looking at that. Um, you were saying 2 to 500,000.\nSPEAKER S10: DNS queries a second.\nSPEAKER S3: Queries a second. That's actually less than I was fearing. Um, one of the challenging parts, of course, with DNS queries is that there's a lot of caching going on in places you probably can't judge. Right?\nSPEAKER S10: It's hard to tell.\nSPEAKER S3: I think the pool sets TTL the current NTP pool set details to, um. To a lower value. Right. Um.\nSPEAKER S10: Um, I think a few minutes, I don't remember. Um, I can, you know, we can talk about that another time. I can. I experiment sometimes with changing it and it scales relatively linearly to whatever boundaries I've tried. Okay. So, you know, if I make it shorter, then I go up towards like a million queries a second. If I make it longer, then it drops down. So at some trailing off points.\nSPEAKER S3: Yeah. So part of what we're wanting to investigate is if this is going to be reasonable. A million per second isn't a doable category for TLS handling. Um, and there are some reasons why we might find that approach more interesting than others. Um, I think I think at this point, our goal is just to get experimental experience with.\nSPEAKER S10: Fully support that. I think my. Right now, how this um, in particular that ends people part of the feature of it is that it can run while I'm on an airplane. And there are very few people who do anything with it there. If these people were born in a more professional way, then they would have it. I also work for Apple. We have services and they run completely differently, with no professional staff and the people watching while everyone else on airplanes. So I think the one of the features of running a large scale pool for very little, with very little effort, is that a lot of things can go wrong without it impeding the service. And I think that's the sort of key exchange service seems monumentally more complicated to sort of keep running than a highly distributed DNS service. So that's my feedback on the current draft.\nSPEAKER S3: Yeah, there's going to be challenges here. We are aware.\nSPEAKER S2: Uh, Marcus.\nSPEAKER S5: Uh, so I just wanted to mention that when we designed NTS and did the decoupling of the key exchange and the actual time exchange, we did that, um, with sort of the express intent to keep things running, even if the key exchange part stops working. Um, and ideally, a client should only do a key exchange once and, uh, then should hopefully never. Well, ideally, very rarely at least have to go back to the exchange server. Um, so the sort of the availability requirements of the key exchange server should be or could be much lower. And the only people actually sort of affected by unavailability of exchange would be sort of new users. Uh, yeah, I guess that's it.\nSPEAKER S2: Are there any other questions or comments on this one? Um. In addition to the experimentation, um, I had gone ahead and marked, um, David's draft as a candidate for working group adoption. I know that there's other proposals on how to solve this problem. I think the idea of experimenting with it is a good idea. Um, it's possible we could publish an experimental RFC, or we could get some drafts that have document some of the other ways that do this, um, to help facilitate that experimentation. Um, any ideas would be appreciated or any, um, opinions on um. Ways forward with this particular draft. Do you have any thoughts on what you would like to see happen with it?\nSPEAKER S3: Yeah. So from my perspective, the way forward here is to await these experimentations that we're planning to do if we can get them going. Um. The one of the main big advantages that this draft has is that it's mostly servers that need to change stuff, which is also why we're interested in pursuing it, by the way. Um, which means that we can at least initially, start experimentation with a relatively small set of changes that it's manageable to to have that software in a few places without it being those changes being fully standardized at that point. Um. I think once a more clear picture has formed of how we might want to move forward with actual operational pools. Uh, then at that point, uh, I feel would be a good point to, to start looking at and maybe adopting this draft into the working group and moving through that part of the process.\nSPEAKER S2: All right, so for the meantime, we'll leave it as a candidate for adoption. I strongly encourage people to review it. And if you have other ideas on how to solve this problem, it would be really helpful to have some other drafts submitted. Anything else on the topic? Okay. The next item on the agenda is, um, just a really quick update on what's going on in 1588. Um, TTP activities. Uh, there's two activities that I want to call to mind. The first one, um, uh, Martin has already alluded to, which is the Security working group in 1588, is looking at NTS for TTP. They're also looking at some of the, um, authentication TLV issues that were brought forward by some of the members of this working group. Uh, and so we expect to have, some corrections or some amendments to the authentication TLV behavior itself. And then we expect to have, um, the NTS for P2P to be defined in that new context for the authentication TLV. So that's one set of work that crosses between the two. Uh, and the second, uh, set of activities that I wanted to be sure that people were paying attention to was, um, there is now a 1580 8.1, which is KSP client server P2P. Um, and this is um, a simplification of P2P and a lot of ways, uh, to um, make more like client server model. There is um, within that, within the 1588, uh, KSP subgroup, there is a draft now, uh, that has just begun to be discussed. Um, that group, um, is open to, uh, contributions from this group. So if you are interested in following that activity, you can request to be added to the data tracker for Not Data Tracker. Excuse me to Central Desktop, which is a tool they use, um, for that. And I would strongly encourage you to follow along with that. Uh, it's going to also have some implications for our crossover security work. So, um, if you need any additional information on how to to get in touch with that particular activity, feel free to contact me. Any questions on 1588 and what they're currently doing. With that, that brings us to the end of our agenda. Any other business? Um, we do hope to have a virtual interim, Probably in the January time frame. Um, and probably in December, we will have a joint call like we did back in July between the the NTP security interested folks and the 1588 security interested folks. So we'll try and get both of those scheduled and get them on the calendar. The next face to face meeting for the IETF is in Thailand. Um, I'm not sure that, um, we'll have a conversation about whether the NTP working group will meet then or not. Um, but as Martin has already alluded to, the July meeting next year is back in Europe. And I think that's an excellent opportunity to get, uh, some additional hackathon and testing activities done. So I'd like to try and target that. I don't think we're going to try and do any sort of a hackathon activity in Thailand. Um, unless there's a Say, groundswell of people who wish to do that. And with that, are there any other questions or comments? This is a very quiet group. All right. Let's, um, adjourn the meeting and have a lovely evening.\nSPEAKER S1: Um, so basically there's multiple versions you can take because this specifically focuses on just talking to a normal server. Um, or at least those kinds of common.",
+          "language": "en",
+          "duration": 5400,
+          "confidence": 0.9871608391608392
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, he's the guy.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, I guess we'll go ahead and get started.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Apologies, I was distracted.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "So welcome to the NTP working Group at IETF 121.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'd like to remind everybody this is the note.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Well, that you agreed to when you registered for the meeting.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "And it includes all of the rules and processes that we abide by.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Um, they've also provided some additional reminders about meeting behaviors, anti-harassment, and the type of environment that we would like to maintain.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "So please take a moment to read over these.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "If you have any questions about the note, well, please see the IETF leadership.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's also the meeting tips, um, which, uh, recognizing most of you, I'm assuming that, uh, you are aware of these, but, uh, it's always good to have a reminder.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so our agenda for today, is there any, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Agenda bashing, any changes or additions?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Nope.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "With that, we will go ahead and move to the first item, which is our current, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, working group chairs, the update of our documents that are basically moved beyond the working group.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "We're making fairly decent process here.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "We progress here, the registries document and the enterprise profile from the TikTok working Group, which we've included in this set of effort activities, are both in the RFC editor queue at this point.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the NTP interleave modes, uh, needs an author update based on some comments received.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it has gone through the tele chat and is awaiting an author update, and the NTP over TP is awaiting a shepherd write up.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions about any of these?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, and and Eric is reminding us that he's closing TikTok as soon as the enterprise profile is done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Oops.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "I'll move back one.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Stop slides.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "The next thing on the agenda is, uh, we want to have a.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Um, hackathon update.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "We had, uh, hackathon projects in both NP, v5 and also in rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Um, David, do you want to just speak to the NP v5, uh, status of implementations?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "And then after that, I'll get, uh, Marcus to speak.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, part of what we did this weekend, uh, at least I worked a bit on this.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "And I think Reuben as well, uh, is looking towards getting the, uh, getting an implementation ready to the point where we can start enabling it by default on some of our clients, which is going to be an interesting experience.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "If anybody thinks this is a really, really, really, really, really bad idea and we really shouldn't be doing it, please let us know.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, I think we're at the point now where the upgrade mechanism is in a shape that, um, it should automatically detect if anything goes wrong with nb5 and fallback to nb4.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, that is at least a positive thing.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I have a bunch of notes for, for myself that I still need to, uh, process.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also from this, uh, on how, uh, on a few areas of the spec, we might need some more improvement on, uh, for the most part, those are going to be minor minor issues, though, I think.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Based on how the experience we've had with the implementation so far, I'm actually fairly optimistic.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure what other implementers of NP are present here, but I'm I'm really curious and would like to ask them what the plans are around implementing this in, for example, krone or Npsc.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "So if anybody is willing to give an update on that, uh.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "I would be open for that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Not not to put you on the spot, Miroslav, but did you want to speak about the status of your implementation?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I have this experimental implementation, but I haven't done any work for krone.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "I.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "I'm still not sure if this is if this design is what we will end up with.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I would like to avoid.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, complete rewrites and things like that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "And just so that I didn't confuse things, uh, Miroslav does have an experimental implementation.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the hackathon website has links to the code for both of those.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Markus, on rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just going to do a sort of a quick run through of what we did with rough time during the hackathon.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I spent some time on updating my two implementations, uh, my server implementation, rough time d, and the client implementation in rough time to draft 11.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, me and someone called Sarah Grant.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "The work on an interoperability framework, which Sarah named plummet.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's a link to the code there, and that framework sort of runs all the servers against all the all the clients and outputs results, which you'll see in the following slides.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Ruben here worked on a rust server implementation of rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "And then sort of all of us around the table had a bunch of discussions as well, um, about the draft and some, some issues we found with it there.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "So we can go to the next slide.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is what the sort of interoperability framework spat out, and it looks sort of spotty.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "But if we go to the next slide and which shows only the ones that claim to support draft 11, it looks better.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "The to access there actually turned out to, uh, I started following a thread trying to find what the why the to access sort of showed up there.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "So why rough enough didn't work with cloudflare's client and by rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "And that turned out to be a hint of a security issue.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "And the main results here then are we are.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "We have three servers and three clients up to date with draft 11.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "And we found a couple of bugs in some of them.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "So Cloudflare implementation actually was actually missing some tags in its responses.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "But once I patched that it worked perfectly.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it turns out also that a lot of clients don't check the contents of the nonce and version tags, uh, in the responses, or verify the signatures in the responses.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Um, rough enough.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "One of the server implementations, server and client implementations, uh, follows RFC 1832 when generating keys.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, turns out that other implementations don't.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "That has some implications.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll I'll talk about that during the rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, point on the agenda.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we also realized that there are version downgrade attacks on rough time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "We'll talk more about that later.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "And we found a bunch of other issues while discussing.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that's the last slide.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah it is.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions on the rough time activity at the hackathon?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead Eric.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: That's not so much a question.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: And it could probably also have been said at the other at the other other slot.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "But whenever you want to security Directorate review.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you think it's documents ready prior to working with last call prior to ETF last call, we can just click some buttons in the data tracker and request security review.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Try to catch some some things like this.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Any other questions or comments on the hackathon activities?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "I'd like to thank in particular David and Marcus and Ruben for, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Helping out with this.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "It really helps move the specs along.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "We seem to get more activity out of the specs after we do some hackathon activities.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Stop.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Share.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Next on the agenda is the, uh, requirements draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "We believe this is pretty close to being done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "It has been moved over to GitHub.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "There were some.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Um, remaining issues to be dealt with.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Um, does anybody have any questions or.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "I don't believe.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Last time I said he wasn't here, and he was.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "We need to decide in the next few months what we're doing with this draft and how to move it forward.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we will follow up with the authors on that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Next is Nv5.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Miroslav.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, wait, you don't have any slides?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "There are a few changes in the git repository prepared for the next version of the draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one is the leap indicator that now has a value for a noun, and the original unsynchronized value is now a flag that is set when the server is synchronized.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "So the clients will be required to Check this flag before accepting the measurement.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other change that was made is, um, reference IDs are now specified for reference clocks like the GPS, and they are included in the bloom filter to enable clients to detect where the time is coming from.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the Nb5 reference ID is the first 120 bits of the MD5 sum of the string, similarly to the NTP v4 address for which we don't have the nb5 reference ID.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "And I think there are some remaining items.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "I think we will need to review the use of chutes.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "And I think this has the same issue as the interleaved mode draft, that there are too many chutes and not much context.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Why?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "It is a chute.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we will need to provide more context or replace replace it with mast or something else.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "And there was a comment from someone.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Implementing an tp5 draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I suggestion that to improve the handling of the draft extension field, the comparison of the strings when a string can be longer or shorter and the padding and and so I think this is this should be easy.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And I think there is a lot of editorial work to be left to be done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Some sections could I think could be improved.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "So how many people here have read the current draft of NPY v5?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Well, that's a problem.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "You've read it?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "All right, we need some more eyes on this draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "So if people could please review this, that would be very helpful.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "It's going to be hard to get it moved through without proper review.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions for Miroslav?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Benson?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, so the draft has a section on kind of different ways of doing the comparison.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I guess you make a number of measurements and then, uh, use a statistical method to try and get, uh, the best way of the most accurate estimate of the time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Um, are you expecting to look at other methods or just just the one from the IEEE as a new method?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I'm sorry, which measurement?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, so usually you do a number of round trip measurements between the client and the server and or client in different servers, and then use statistical computation to try and estimate the time most accurately.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Um, my question is, are you going to look at other methods, um, that people have tried or this is the only new one that you're going to include.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Like if there is a, if it makes sense to use the PDP approach.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Like, um, the broadcast mode using one, the transmission timestamp, assuming a constant delay and calculating the offset from that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Is that what you are referring to?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, I guess my question is, um, are there others that are worth considering?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I guess that that also seems new for this draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, I'm not aware of anything.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay, I'll take a look, but I, um, I guess I haven't done a comparison, so I don't know.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Go ahead.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "David.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, Benson, uh, I was guessing that you were referring to the algorithmic side of things.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one of the goals, as far as I understand it, at least for Nv5, is that we're going to completely remove any requirements on that front.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the section you are referring to, if I remember correctly, is basically a suggestion of how you can process it this way.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you don't have to um, and of course, there are other interesting ways to do this.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "I, I would suggest strongly that we stick to the position of not including anything beyond the basics.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Hey, look here.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if, uh, uh, for for how you can process the measurements and, uh, get to an actual clustering algorithm, um, we could do an additional draft for that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Is really interested in that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "But experience with past, uh, experience with past specifications on that point, I don't think an RFC is the correct format for, uh, that sort of thing, if I'm honest.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Anything else on NP v5?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much, Marcus.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Rough time?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "So this, um, sort of before the hackathon, we somewhat naively thought that we were pretty much done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "And it turns out maybe we're not.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I'll go into some of the issues that we've sort of realized are in there currently.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "And the first one is rough time and its handling of so rough time uses editor 25519 keys for signing uh responses.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "And um, most implementations generate their private keys simply by generating a random uh 256 bit number and using that, um, however, um, if you look in RFC 1832, it's, uh, tells you that you should use this 32 bit secret.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Hash it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Take the first 32 bytes.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Clear the highest bit.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Clear the lowest three bits, and then set the second highest bit.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "And that's your private key.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And the reason for that is, um, that if you sort of get unlucky and get these sort of bits set, um, then that might enable some, some attacks, um, which, you know, we obviously want to want to avoid.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I found this thanks to the sort of incompatibility between roughness and other, um, between the rough enough server and clients and, uh, it's sort of unclear what other implementations do, but it seems like most of them don't do it the correct way.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, while this is, you know, it's mostly an implementation issue, how, um, how implementations sort of generate their keys.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but considering that the what could conceivably happen, uh, we should we should definitely include some sort of language and guidance on this, including a reference to 832 and, you know, a must when it comes to generating these keys in the in the right way.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "And the other security issue we found, uh, was version downgrade attacks.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "And in retrospect, this this should have been fairly obvious.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's no way for the client to actually check, uh, that the, uh, its request wasn't tampered with.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there's no signing of the version tag in the response, either.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, which means that a man in the middle attacker can pretty much can do very much, actually, in between without it being detected by either server or client.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "And this.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "And a suggested fix for this is instead of just hashing the nonce, um, and putting that in the Merkle tree, which we should hash the entire request uh, instead, and put all that in the in Merkle tree.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "We should also include, uh, the version tag sent by the server in the signed response.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And there should probably also be a tag specify a signed tag specifying what versions the server is supporting, uh, in all server responses.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "We've got.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Some other smaller issues.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the fact that we learned that almost all clients are pretty bad at actually checking, uh, version tags, checking nonce tags in responses and verifying signatures.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "And this really highlights the need for Greece.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think it's, uh, you know, service should.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Service should grease the responses, uh, enough for us to sort of force clients to do this kind of checking.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we found what might have been a sort of a regression between two drafts.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "So we, uh, we changed, uh, a string, and then that sort of then appears to have reappeared in a later draft for some reason.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't think this was deliberate.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "It might have been, um, what also was brought up is the fact that the the Merkle tree.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "So the max height of the Merkle tree is implicitly specified because we have this maximum server response length.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we should really specify that explicitly to make it clear to, to implementation developers.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and currently we also allow multiple version numbers in requests.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, uh, a pretty legitimate question there was raised about, you know, is there is this really necessary?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "And what's the use case in that case?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we maybe we should look at restricting it to just a single version number in a, in a request.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "And then there were also several editorial issues, uh, being brought out, um, regarding, uh, language that could be misunderstood.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "What's hard to understand?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "And in one case, as Dieter pointed out, um, we weren't really clear about what we're actually guaranteeing with rough time, which is kind of fundamental to to the whole thing.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "I think there might is another slide.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I was hoping to release, uh, me and Watson.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "We're hoping to release a new draft version, uh, pretty much today, but I've decided to sort of wait, since we have a lot of text to add at this point.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's multiple changes already up on sort of the working draft on GitHub.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "And pretty much all the issues I've mentioned here also have, you know, are being tracked on GitHub.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "And at some point I'll also write a digest of all this and sent to the mailing list.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "And that's all I had I think.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions on the rough time progress?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a little bit.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "So you you said you were going to put the additional text in.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have a rough idea of when.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And once that's done, how how close you are to working group last call.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, for some parts of the text.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I have a pretty good idea what's going to go in there with some other parts.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, uh, I'll have to think of it, or we'll have to discuss it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "So?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll see.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, all right, so we're looking at a couple more rounds before we're ready for working group.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: At least one more round, I think.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, great.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "The next document that we are working on is, uh, NTS for PDP.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "There's been some progress on that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Martin, did you want to speak to the current status of that effort?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yes.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Of course.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Hello, everyone.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I have three small points about PDP.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the first one is the implementation, uh, for PDP implementation is progressing but slower than originally planned.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "However, uh, I think that's the first test can be done at the end.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, by the end of this year or the beginning of the next year.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "And for this reason, I'm planning to participate in hackathon next year, probably in July, uh, because it's in Europe.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "In Spain, it's, uh, pretty close, and I want to attend in person.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "So it's the best way, I guess.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the next one is a draft document.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are no further updates on the draft yet.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a major update is planned for February next year.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are several simplifications in the protocol processes, and there are also a lot of small changes and improvements to be done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we have a lot of work to do on the text.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "Um, furthermore, I will also provide our draft document in the git repository.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I guess we provided a after the next update, uh, because, um, if people, uh, read the document, they should read the, the, the current one or the updated one, because there are a lot of changes.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the last item is I security subcommittee.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the point here is that securing PDP messages requires the transport of some data and the authentication tab, which is currently not covered by the PDP standard.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we are currently working on the solution to improve the situation, especially Reiner, Steffen Frese and I.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "And we want to enhance the authentication TLV by using some optional and reserved fields.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I have already prepared a proposal, uh, that can be discussed at the next meeting.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess we have those scheduled yet.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "I guess in the next few weeks and then we will have we have to see how we do proceed further.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "But this is necessary especially for the IETF draft document.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because this is um, yeah, it's the some part is PDP standard, some part is I IETF draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "And so we need to clarify some points to finalize a draft document, especially about handling the replay uh, or handling replay attacks, uh, use sequence numbers and how to filter authentication TV.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "So this is a big discussion point currently.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I guess we can solve it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "And we already think, uh, that we find a solution for that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, this is a current state, uh, about for PDP.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions on uh, ntts for PDP?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "I'll talk very briefly later about the overall status of 1588.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next on the agenda is the, uh, NTS extensions for enabling pools.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, David, do you want to speak to that?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So about a year ago, uh, I guess by this point, uh, we made a first draft of what, uh, a more transparent client, transparent version of a pool could look like, and what sort of tricks you would need to support that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that draft is still in roughly the same state as it was a year ago.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Not much has changed.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "Um, most of the discussion on mailing lists and in the meantime has gone to.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Is this the best approach?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "What are the approaches that we actually have?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "We have a reasonable view of what is what our options.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "A lot of open questions remain primarily around is it doable to run a pool, uh, with the pool doing the server and the key exchange?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Or is that just too big of a load to realistically be doable?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, from me and Ruben, uh, there's a project that we are currently looking for funding for.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that's in the pipeline to start implementing an actual pool, um, with a number of parties that have already indicated interest in providing servers, uh, for that initially, so that we can start to gain some operational experience.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "This will be experimental at first.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we'll have to discuss the long term future of where this is going to live in that process.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "That will hopefully give us some ideas of what is actually realistically realistic to do.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "And at that point, we might want to move forward with one or more of these drafts.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the draft is currently listed in the, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "has currently listed on the uh working Group database.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Record is specifically for the, uh, the pool doing all the work.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if anybody is interested in writing up a decent draft for other approaches to doing a pool, feel free to do so.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions about this draft?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I have a question, but I can.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Just go ahead.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "You are welcome to the mic.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "It's a small room.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: I ask, I run into people.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Sorry.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: There might be others.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think it would be sort of practically.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Right now, the pool get 2 to 500,000 DNS queries a second, so some approximation of those would maybe turn into eventually to key exchanges maybe.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "So that would be a lot for to not decentralize more.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Some sort of I would be worried about putting more computing logic into the not distributed part of the system.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "So we're looking at that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you were saying 2 to 500,000.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: DNS queries a second.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Queries a second.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "That's actually less than I was fearing.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one of the challenging parts, of course, with DNS queries is that there's a lot of caching going on in places you probably can't judge.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: It's hard to tell.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think the pool sets TTL the current NTP pool set details to, um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "To a lower value.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Um, I think a few minutes, I don't remember.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I can, you know, we can talk about that another time.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "I can.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I experiment sometimes with changing it and it scales relatively linearly to whatever boundaries I've tried.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "So, you know, if I make it shorter, then I go up towards like a million queries a second.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "If I make it longer, then it drops down.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "So at some trailing off points.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "So part of what we're wanting to investigate is if this is going to be reasonable.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "A million per second isn't a doable category for TLS handling.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there are some reasons why we might find that approach more interesting than others.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think I think at this point, our goal is just to get experimental experience with.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Fully support that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "I think my.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Right now, how this um, in particular that ends people part of the feature of it is that it can run while I'm on an airplane.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And there are very few people who do anything with it there.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "If these people were born in a more professional way, then they would have it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "I also work for Apple.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "We have services and they run completely differently, with no professional staff and the people watching while everyone else on airplanes.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the one of the features of running a large scale pool for very little, with very little effort, is that a lot of things can go wrong without it impeding the service.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that's the sort of key exchange service seems monumentally more complicated to sort of keep running than a highly distributed DNS service.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "So that's my feedback on the current draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah, there's going to be challenges here.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "We are aware.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, Marcus.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, so I just wanted to mention that when we designed NTS and did the decoupling of the key exchange and the actual time exchange, we did that, um, with sort of the express intent to keep things running, even if the key exchange part stops working.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and ideally, a client should only do a key exchange once and, uh, then should hopefully never.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Well, ideally, very rarely at least have to go back to the exchange server.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the sort of the availability requirements of the key exchange server should be or could be much lower.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "And the only people actually sort of affected by unavailability of exchange would be sort of new users.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah, I guess that's it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Are there any other questions or comments on this one?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "In addition to the experimentation, um, I had gone ahead and marked, um, David's draft as a candidate for working group adoption.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "I know that there's other proposals on how to solve this problem.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "I think the idea of experimenting with it is a good idea.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's possible we could publish an experimental RFC, or we could get some drafts that have document some of the other ways that do this, um, to help facilitate that experimentation.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Um, any ideas would be appreciated or any, um, opinions on um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Ways forward with this particular draft.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have any thoughts on what you would like to see happen with it?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "So from my perspective, the way forward here is to await these experimentations that we're planning to do if we can get them going.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "The one of the main big advantages that this draft has is that it's mostly servers that need to change stuff, which is also why we're interested in pursuing it, by the way.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which means that we can at least initially, start experimentation with a relatively small set of changes that it's manageable to to have that software in a few places without it being those changes being fully standardized at that point.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "I think once a more clear picture has formed of how we might want to move forward with actual operational pools.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then at that point, uh, I feel would be a good point to, to start looking at and maybe adopting this draft into the working group and moving through that part of the process.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right, so for the meantime, we'll leave it as a candidate for adoption.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "I strongly encourage people to review it.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "And if you have other ideas on how to solve this problem, it would be really helpful to have some other drafts submitted.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Anything else on the topic?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "The next item on the agenda is, um, just a really quick update on what's going on in 1588.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "Um, TTP activities.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's two activities that I want to call to mind.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "The first one, um, uh, Martin has already alluded to, which is the Security working group in 1588, is looking at NTS for TTP.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "They're also looking at some of the, um, authentication TLV issues that were brought forward by some of the members of this working group.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and so we expect to have, some corrections or some amendments to the authentication TLV behavior itself.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "And then we expect to have, um, the NTS for P2P to be defined in that new context for the authentication TLV.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "So that's one set of work that crosses between the two.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the second, uh, set of activities that I wanted to be sure that people were paying attention to was, um, there is now a 1580 8.1, which is KSP client server P2P.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this is um, a simplification of P2P and a lot of ways, uh, to um, make more like client server model.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "There is um, within that, within the 1588, uh, KSP subgroup, there is a draft now, uh, that has just begun to be discussed.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that group, um, is open to, uh, contributions from this group.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "So if you are interested in following that activity, you can request to be added to the data tracker for Not Data Tracker.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Excuse me to Central Desktop, which is a tool they use, um, for that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "And I would strongly encourage you to follow along with that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's going to also have some implications for our crossover security work.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if you need any additional information on how to to get in touch with that particular activity, feel free to contact me.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions on 1588 and what they're currently doing.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "With that, that brings us to the end of our agenda.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Any other business?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we do hope to have a virtual interim, Probably in the January time frame.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and probably in December, we will have a joint call like we did back in July between the the NTP security interested folks and the 1588 security interested folks.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll try and get both of those scheduled and get them on the calendar.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "The next face to face meeting for the IETF is in Thailand.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure that, um, we'll have a conversation about whether the NTP working group will meet then or not.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but as Martin has already alluded to, the July meeting next year is back in Europe.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that's an excellent opportunity to get, uh, some additional hackathon and testing activities done.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "So I'd like to try and target that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we're going to try and do any sort of a hackathon activity in Thailand.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Um, unless there's a Say, groundswell of people who wish to do that.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "And with that, are there any other questions or comments?",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "This is a very quiet group.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Let's, um, adjourn the meeting and have a lovely evening.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, so basically there's multiple versions you can take because this specifically focuses on just talking to a normal server.",
+            "confidence": 0.9871608391608392
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Um, or at least those kinds of common.",
+            "confidence": 0.9871608391608392
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-12T15:51:05.356191+00:00",
+          "processed_at": "2026-01-12T15:51:05.356191+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 5400
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "hfvsgvijvk"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9871608391608392
+        }
+      }
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

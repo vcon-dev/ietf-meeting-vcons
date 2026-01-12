@@ -141,6 +141,75 @@ pip install ietf2vcon
 ietf2vcon convert --meeting 125 --group quic
 ```
 
+## Speechmatics Transcription
+
+This repository includes tools to re-transcribe IETF meeting audio using [Speechmatics](https://www.speechmatics.com/) for higher-quality transcriptions with speaker diarization.
+
+### Prerequisites
+
+1. **Speechmatics API Key**: Sign up at [speechmatics.com](https://www.speechmatics.com/) and obtain an API key.
+
+2. **FFmpeg**: Required for audio processing.
+   - macOS: `brew install ffmpeg`
+   - Ubuntu/Debian: `apt install ffmpeg`
+   - Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+
+3. **Python dependencies**:
+   ```bash
+   pip install -r scripts/requirements.txt
+   ```
+
+### Usage
+
+Set your API key as an environment variable:
+```bash
+export SPEECHMATICS_API_KEY="your-api-key-here"
+```
+
+**Transcribe a single vCon file:**
+```bash
+python scripts/transcribe.py ietf121/ietf121_quic_33502.vcon.json
+```
+
+**Transcribe all sessions from a specific meeting:**
+```bash
+python scripts/transcribe.py --meeting 121
+```
+
+**Transcribe a specific working group:**
+```bash
+python scripts/transcribe.py --meeting 121 --group quic
+```
+
+**Transcribe all vCons missing Speechmatics transcription:**
+```bash
+python scripts/transcribe.py --all-pending
+```
+
+**Preview which files would be transcribed:**
+```bash
+python scripts/transcribe.py --all-pending --dry-run
+```
+
+### Transcription Output
+
+The script:
+1. Downloads audio from the YouTube recording linked in each vCon
+2. Submits the audio to Speechmatics for transcription with speaker diarization
+3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/)
+4. Updates the vCon file with the new transcription in the `analysis` array
+
+The Speechmatics transcription is stored alongside any existing YouTube transcription, with `"vendor": "speechmatics"` to distinguish it.
+
+### WTF Format Features
+
+The Speechmatics transcription includes:
+- **Word-level timestamps**: Precise timing for each word
+- **Speaker diarization**: Identification of different speakers
+- **Confidence scores**: Per-word and per-segment confidence metrics
+- **Segments**: Logical groupings of speech (sentences/phrases)
+- **Quality metrics**: Overall transcription quality assessment
+
 ## Related Specifications
 
 - [draft-ietf-vcon-vcon-container](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) - vCon container format
