@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "c4992afc-a217-4a06-b5f3-084cfe455fb7",
   "created_at": "2026-01-03T19:32:00.622848",
-  "updated_at": "2026-01-03T19:32:05.195826",
+  "updated_at": "2026-01-27T14:41:46.256019+00:00",
   "subject": "IETF 112 - ACE Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=ckwARfS_9o8",
       "meta": {
         "ietf_meeting": 112,
         "working_group": "ace"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 112,
         "location": "Online, ES",
@@ -50,10 +49,10 @@
         "start_time": "2021-11-09T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "ace",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/agenda-112-ace",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/bluesheets-112-ace-202111091430",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-ace-key-groupcomm",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-ace-revoked-token-notification",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-ace-oscore-gm-admin",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-ace-key-groupcomm-oscore",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-extend-dtls-authorize-to-tls",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 5,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-ace-coap-eap",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 6,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/agenda/ace/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-112-ace",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8899,6 +8899,3771 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: You? Um, only when you go to the. When you give me the green button, then I see, I, I would see the slide decks to pick and could look into the slides.\nSPEAKER S2: Okay. So I now I've just given you the I click the, the, the green button for you.\nSPEAKER S3: Um, actually you have to stop sharing the slide and then you can grant Christian the ability to share. Okay?\nSPEAKER S2: Okay.\nSPEAKER S1: Ah yeah. Now I can select something. So like um I select GM admin clicking share and now I can hop through them.\nSPEAKER S2: Okay. So we will try. It's not a good day because we're very busy for this session. But um. Okay, so, uh I, I think we should start now. So I'm going to share my screen. Yeah. Um. The window. So. Hi, everyone. Um, so you are, um, in the ace meeting. Um, uh, Logan, uh, is going to my co-chair. He's going to reach me in a few moments. He had an emergency meeting, so he's going to come later. Um, you have the note. Well, in case you've never read those, or, um, you were not aware of those, uh, notable meetings. Um, so please have a look to to that. And, um, um, we're looking for a minute taker, so we already have Christian, but if anyone else is willing to help him, it's more than welcome. So, um, do we have a second minute taker?\nSPEAKER S4: Yeah, I can help here.\nSPEAKER S2: Okay. Thank you. Goran. I guess it's Goran. Um, so, um, just be informed that we have a new code of conduct at the ITF. I don't think we ever had any problems in this, uh, working group before, but, um, um, I mean, um, we need to to to make the, the conversation professional, and, um, it's, uh, quite a, um, quite standard, uh, behavior. So, um, if, uh, anyone of you is noticing something, um, please let me know. I would be happy to, uh, act on that. So we do have, um, a pretty busy agenda. So I am, um, going to be, um, quite short. And I'm going to ask the, the other, um, presenters to remain quite short. Um, the goal of this meeting is clearly to end up every, uh, document that we have in working group last call or that are going to be in the working group last call in a few days. So that's the priority for the the first priority for that meeting. The second priority is, um, about adapting, um, new work and to have those discussions, um, and uh, that's it. So where we are, um, with this working group, we actually have, um, one, two, three, four, five documents. So it's up east, uh, waiting for details. We have the details authorized, the OAuth, OAuth, OAuth params and Oscar profiles, which are the main Ace framework that are in the RFQ. So congratulations to all the people that have been committed to that. Uh, we have three drafts into the ISG evaluation. So that's the AIF, the CMP v2 and the mqtt TLS profile. Um, one comment I'd like to say, um, and mostly to make it very clear, um, um, to everyone, is that the CMP v2 draft needs to progress, uh, through the RFC editor, uh, in parallel with, um, um, uh, some other documents in labs, uh, mostly because they are um, um, they have um, uh, they do share, um, a registry at the Iana. So, um, that's one of the reasons. Um, yeah. So and, uh, we do have two documents in working group last goal. So that's the key group comms and the co-op EAP, um, and, um, a few, uh, other working group documents, um, among those, um, the key group that is going to be moved to in working Group Glasgow, um, hopefully in the few next days. Um, that said, I'm just wondering if Ben, our Adi, is willing to add anything, if he has any questions or if anyone has, um, any comment to say to our Adi. So, um, please. He's been on the queue. I don't see him on the queue. So, um, as anyone to say anything about to our ad? No. So I suggest that we move on. Um, maybe, uh, we could start with the, uh, document. So I'm going to ask Dan to go to the Q and to ask for. Oh, okay. Peter, tell me that, um, Ben has left the meeting, so, uh, he will probably come, um, uh, later on. Um, and feel free to, to catch him on gather, for example. So, um, then do you want me to present the slides, or do you want to, um, present the size yourself?\nSPEAKER S5: If you if you can please present the slides and I can just indicate when we move forward, please.\nSPEAKER S2: Okay. So I'm gonna do that. So I stopped sharing my, um, my screen. I am asking the slides and let me.\nSPEAKER S5: So, uh. Yes. Sorry.\nSPEAKER S2: Do you see the slides?\nSPEAKER S5: Yes, I can see the slides.\nSPEAKER S2: Um, interesting, because I don't see that. So you see the slides? Because my problem is that I don't see them.\nSPEAKER S1: You you might need to switch around on one of those top, top icons. Presentation view gallery view. One of those should give you slides.\nSPEAKER S2: So I have a share screen. Presentation view. Maybe. Okay. Okay, good.\nSPEAKER S5: So basically, shall I start?\nSPEAKER S2: Yeah. Yeah, sure. Go ahead.\nSPEAKER S5: Thank you. So in this version we have integrated all the comments and discussions with Christian with Carsten. And we have uh, give it also a little bit of restructuring. And we understand that we have now the version that we expected after all these discussions. And we also added a annex regarding the how to use scrapheap with TLS, which is something that has was commented, but we did not add something concrete until now, but we added in an annex. So if we can go to the next slide, we have the summary of the main topics we have been adding to or modified in some meaningful way in regard with the last version. So we added some discussion about the discovery of the authenticator. We added some of the the recommendation from Christian to send the resource in the first message. We are also sending the a sender ID and recipient ID for Oscar instead of calculating it as part of the derivation of key material. Also, to improve the the way of choosing these these identifiers, we confirm the the use of Oscar for doing the confirmation of CoA. And we also added some consideration for the use of proxies. And basically, uh, we gave a definition of, of uh, civil structure to carry some information for the negotiations. And finally, we, we show the current flow of operation, and we give some comments in this presentation regarding how the TLS can be used in the annex. So, uh, in the next slide, please, basically, uh, for the discovery of the authenticator, since copy is expected to be used in different IoT environments, uh, we leave it up to the scope, but we added some discussion of how can this be done. We understand that Coap brings some tools to the table for the resource discovery, and we are using that as part of co-op. But in terms of, uh, getting the information of the IPv6 of the border router or the entity in the domain with which the authenticator is going to talk to. We leave that out of the scope, but there are different approaches that could be considered depending on the deployment scenario, such as ACP or multicast DNS. So next slide please. So one of the modifications we made to the flow operation to to save bytes over the of the link is to send in the first message from the peer to the authenticator is to send in the payload the URI of the resource that is being created in the IoT device for attending the next exchange. So this saves, uh, the flow operation, uh, from having to use the well-known Uri, the well-known URI, uh, twice. So it is a cleaner approach. And the next slide, please. And I think that, uh, we we do is to send in the second and third message, uh, the, uh, along with the message we send in a similar structure, the crypto street negotiation, the values of the crypto street negotiation. And we also send in the request and response, the sender ID and response ID for, uh, Oscar. This is, uh, this can this can also be reused as key ID for details as we will comment in the last. Part of the of the presentation. But this is the basic idea of this exchange. Uh, the next slide, please. So we maintain the use of Oscar in this case in the basic, uh, exchange, uh, as a way of confirming that the key material derived from the EAP authentication, uh, is established correctly. And we, uh, double down on on the use of Oscar by establishing, uh, the Oscar Security Association that could be used, uh, from that point on, to secure any exchange between the IoT device and the controller. To do so, what? What we propose, uh, And also thank I want to take a second to thank Christian Answers for his input on this. Uh, we create a template, an incomplete Oscar, uh, security, uh, context. Uh, that is missing the key, which is, uh, completed after the authentication is is is completed. And what we do is that upon reception of the success, what we do is to complete the Oscar security context and, uh, be able to complete the key confirmation. Uh, the the detail here is that, uh, basically we, we generate the, the, the needed context And, uh, but, uh, we need to use the Oscar message, the first Oscar message as a alternate success indication for EAP. Uh, because, uh, the content is, is cipher. So we use the first Oscar message as an alternative indication for the state machine to release the MSC and then complete the process, uh, and with, uh, the recipient and sender ID that are now sent in the previous message, we are able to to complete the whole process. The next slide, please. Basically, we also had a brief comment about the use of proxies, because in the exchange there is a role reversal in EAP from the first message in which the IoT device acts as a Client, but on the rest of the exchange it is a co-op server. So there is. That is something that needs to be considered when using proxies to send any. Needed information to the controller to be able to use the service. Through a proxy. So this this additional information could be sent also in the in the server. Structure that it is defined. So we are preparing this structure maybe in the next. Slide I think this is there. Yes. So we define a server structure that carries some of the information that we need to exchange for servers with negotiation, the sender editorship and also the authorization information such as session lifetime. Maybe we can we put it as extensible. So maybe if we need in the future to add some additional information, And we can do so in this structure to to add maybe further a feature or another functionality. So that's also integrated in the next version. And I think that we are close to to the end. In here you can see the current change of operation. And now it is cleaner. We have abstracted ourselves from conformable and unconformable messages and just focused on the basic exchange. There you can see how the context is created when the negotiation is done. And basically when the MSC is derived, it is used as in the in the seventh message, to complete the context and to send the message confirming the the key and finishing the exchange. Lastly, in the in the in the last, uh, slide, we had uh, in the annex some considerations for using, uh, for establishing a TLS security association that could be used instead of Oscar. Uh, and for this, we are reusing the same fields as Oscar. We also do a crypto association for for Dtls. The key ID for the TLS Pre-shared key is generated in this case by concatenating the sender and recipient ID, and in here, as we do with Oscar, we consider the Clienthello message from TLS as an alternative success indication to be able to to obtain from the state machine the MSC and uh, be able to run the TLS so that that's it. Uh, thank you very much for your time You want to ask some comments?\nSPEAKER S2: Yeah. So so from my point of view, um, the document is ready to be shipped to the ISD. So that's, uh, that's to me, the next step for, for that document. So if anyone has concerns, if anyone see any issues, clarifications, um, I mean, it's time to show up. Um, and you have until, um, I would say the end of the week to, to to raise your concerns. So I'm hearing no comments. Um, I think that the document is, uh, pretty much ready, and I suggest that we move to the next presentation. So it's, uh, probably going to be Marco.\nSPEAKER S6: Yes. Hi. Can you hear me?\nSPEAKER S2: Yeah.\nSPEAKER S6: Great. I can share the slides if it's okay to you.\nSPEAKER S2: Yeah. So you have to request this. Okay. Yeah. Do you get those?\nSPEAKER S1: I think you'll have sharing as well.\nSPEAKER S6: Yeah I think yeah. You have to clear your sharing first before I can go on.\nSPEAKER S2: So I have to.\nSPEAKER S6: Stop sharing the slides yourself.\nSPEAKER S7: Oh, yeah. I am sharing those.\nSPEAKER S2: Yeah, I've got it there. So I sharing slides. Stop sharing slides. Yeah. Sorry.\nSPEAKER S7: Yeah.\nSPEAKER S6: Not requested.\nSPEAKER S7: Okay.\nSPEAKER S6: Great. Okay. Yes. This should be the one. Uh, this is an update on key Group.com. Uh, most of this was mentioned at the latest interim, so, uh, I'll be I'll be fairly quick. Um, this revision was major, and it was about addressing two reviews we got from working group Last Call, uh, from Jordan. And, uh, thank you very much for that. And to give recap, uh, most were clarifications on general terminology and use and semantics of, uh, some parameters and messages, both in the phases of uh, token uploading to the KDC and then later on joining process for a new candidate group member. Another clarification was related to the overall table of content. Uh, since text and draft was parsed here and there with a lot of repetition. So now it's much more, uh, linear with error handling mentioned, uh, once and for all about it's, uh, common general part when introducing the KDC interface, and then we go through the resources of the KDC. One by one followed by handler one example, Android two example, um, and so on. Uh, in terms of the design changes, it was also agreed to bring into this document the definition of ready of some parameters that were otherwise, uh, defining key group where they remain used. And we define here some new parameters for enabling, uh, control messages that the KDC can send over multicast and in particular, uh, when using advanced uh, group schemes. And related to that, also, uh, a resource about the public key of the KDC initially defining key was transferred here and remained used there. Uh, requested especially by Johan. We also enforce the categorization of the parameters defined in this document and used in its messages as must should may be supported by devices, leaving some of them conditional to support and and leaving to profiles to have a final word on this as a requirement. And we categorized also um functionalities that have to be minimally or additionally supported by devices with profiles to follow this categorization also for possibly even more, uh, new defined parameters. And also, uh, we also gave some more guidelines on error handling when enhanced animal responses are used, following overall the same rationale considered in the main framework, uh, as also requested in the reviews we collected, all the texts we had sparse in the document about, uh, group ranking. Now we have a single section about that, uh, introducing the overall problem and task, uh, at hand. Uh, we introduced an optimization about possible including, uh, public keys of just joined a new members in the ranking messages, and we give high level guidelines and examples about different approaches that can be used to perform a group ranking, like the very basic one to 1 or 1 to many using pub, sub or multicast. But extreme details leading to actual content and encoding to use on the wire are up to yet other documents that should describe how a particular ranking scheme, uh, is used in this context, possibly considering, uh, even the specific profile of this document. Uh, so as a summary, this version has addressed all the working group Last Call reviews, as far as I can tell, plus additional comments. We got, uh, during the July meeting. So we also extended abstract and introduction to clarify even better, um, the scope and the goals of this document in this age group. Com Landscape, and we also extended the security consideration to highlight the big amount of trust that we are putting on the KDC in the first place, and what that implies. I'm not aware at this point of any other open issues, uh, or open points to address, uh, authors. So we believe this is now ready for a next step. We should be Shepherd review and write up. That should be the last one. Yeah. Thank you.\nSPEAKER S2: Yeah. So, um, my comment would be similar to the present to the previous presentation. Is that, um, this document is going to be shipped to the ISG very soon. So if you have any concerns, um, please do raise them by the end of the week.\nSPEAKER S6: Okay. Shall I?\nSPEAKER S2: I think we can go on with the next presentation.\nSPEAKER S6: Okay. Coming up. Okay. And this is a profile of the previous, uh, draft, uh, specific for the use of groups in groups. And everything I've done for this version was really, uh, adopting the changes done in Ascii group.com, uh, to make this draft, this draft consistent with the previous one. So moving out parameters and resources in terms of their definition, as I mentioned, while still used here, and a lot of alignment to be done in terms of, um, terminology, uh, parameter semantics and the optimization of possible including public keys and ranking messages and so on. And the categorization of parameters and operations is now also enforced here. And this document is now overall, um, uh, following the updated list of requirements for profiles of wkyc.com that we have now. Uh, most of the clarifications that were done in HK were, were also to be done, uh, again, here for new parameters and resources defined, brand new. Uh, in this document, uh, there was some clarification requested on uh, who can access what resource to do what and on error handling, uh, on Iana considerations. But relatively, uh, minor things I would say. And really to summarize, I think this version 12 uh, is now stable. Version 11 was already but this is now aligned with the also stable and uh, versions of key 14 and also of the Grupo score document, um in core. Uh, so a reminder, I have an implementation of this draft for eclipse californium uh, where the group manager, acting as KDC, supports both the group mode and pairwise mode is used in the groups. Uh, also about this document, I'm not aware of any further, uh, remaining issues or or open point. Uh, so I think, uh, it can be considered now for uh, working group last call. Um, as a heads up, the group was documenting core is also, uh, going to approach its second working group, last call in fact, uh, which is good. But, uh, of course, we cannot exclude altogether that the group's core documenting core with possible, uh, future updates is going to, uh, to affect this document in turn to adapt something. It's just the way it works as we keep updating the documents in the later stages. But right now they are stable and consistent with one another. Yeah. This is my last slide.\nSPEAKER S2: Yeah. So my understanding for, um, for, for this, uh, document is that we will issue, um, a working group, uh, very shortly. So you will have, uh, two weeks, uh, two week window to make any comment. I would like, um, people to commit to review that. So, um, please, um, I mean, um, just, um, I don't want to, to waste a lot of time on that, but, uh, um, do we have anyone in the room that is planning to review the document? Okay. Karen, uh, it's just, uh, you want to speak?\nSPEAKER S4: No, I just want to review.\nSPEAKER S2: Okay, good. So that's a that's very helpful. Okay. So we will go through the working group. Let's go. And um thank you for the review and um hopefully have that shipped by the end of the month. Thank you.\nSPEAKER S6: Thanks. So I know I have two more presentations in the agenda, but in the interest of time, which one should I pick?\nSPEAKER S2: So, um, I suggest that we we focus on the new, adopted, um, uh, potentially new, uh, work item to adopt. So I would encourage you to, to go to the token.\nSPEAKER S6: Okay. Yes. Uh, I'm happy to give an update on this one. It's now in version six. I think it was presented last time in November last year. But of course we kept working on it the whole year. Um, so as a recap, the problem here is that, uh, access tokens can of course expire, but can be revoked for a number of reasons, uh, before they reach an expiration time. And the problem is how to make this, uh, evident to the involved parties. So the clients and resource servers, uh, having an interest and involved in the use of that token, uh, you have token introspection available, of course, but practically only for, um, resource servers that in case have to take the initiative and, and, uh, request the authorization server to introspect, uh, one token at a time. Uh, this document in addition. So to complement not replace a introspection defines a new service, a new interface at the authorization server, which basically keeps, uh, one single resource, uh, token revocation list intended to keep, uh, let's say short identifiers of tokens that are revoked at the moment but not yet expired, and then both client and authorization and resource servers are registered at that authorization server can access that resource, uh, through a get operation, possibly observe that resource, uh, to be informed, possibly through automatic notifications about, uh, their pertaining access tokens that are revoked but, uh, not expired yet. And when doing so, they in fact retrieve information only about the tokens pertaining them. Not really all of the access tokens issued by the authorization server. And there is really no need for new Ace endpoints here defined at client or resource. Ever. This resource is at the authorization server. So for identifying these revoked tokens to inform about we don't use the token CTI or anything like that. We actually uh, compute a hash, uh, of the token using the 6920, uh, approach of naming things with with hashes, and the hash input is the only thing that all the three parties involved see as identical. So the value of the access token parameter in the response from the authorization server when the token is issued, and the authorization server is basically a list of the token ashes of the tokens that are revoked, uh, but not expired yet. And when registering the authorization server, uh, the client and server learn the, uh, exact URL where to contact, uh, the authorization server for, for the endpoint and, well, can interact with it, as I say, to, to learn about the revoked access token. Uh, this can work actually, in three different modes of operation. And the first one is very simple and mandatory to implement for, uh, the authorization server. Uh, say the client, just like a resource server, can send a get or get observed request and retrieve back all, uh, the token hashes for the token tokens that are revoked. Uh, there are two more advanced, uh, diff query modes. Uh, so the one in the middle requests for, uh, the end most recent updates, uh, occurred most recently, uh, to the pertaining part of the TRL. So pertaining to to the requesting node and can be supported. And we developed a third mode out of input from Carsten about considering the series transfer pattern and about Ben. Uh, I think at the November meeting, uh, last year about considering retrieving. Not really the end most recent updates, but actually the the most recent updates following a certain, uh, resumption point. Um, in time and putting things together, we actually developed this mode, which is currently an appendix, but we have an ambition to to move it up to the, uh, document body. And it's now also detailed in terms of, uh, message payload, uh, error handling and so on. Uh, in the latest versions, uh, other than developing the, uh, the SDP based mode, we added a number of of clarifications about the different modes, uh, the early registration process and the error handling. We added the possible additional use of the Pmax attribute as a query parameter when requesting to observe. That's something defined in the core working group. And basically the client or server is really requesting the authorization server to send notifications here and there, uh, with maximum silence, maximum intervals of silence between one and another, uh, to be kept posted. And yeah, we defined a bit more in detail in the recent versions, uh, how to, uh, format the messages for the most advanced, uh, operation mode. Uh, most recent review we got, or comments on the list were from Michael Richardson about a number of very useful clarifications on different aspects of the document that are also integrated now in the latest version. So to sum up, this is an additional service that the authorization server can provide to both a client and resource service to, um, inform about access tokens that are revoked but not expired yet. Uh, that information can be accessed, uh, still, uh, in appalling fashion with simple gets. Or it can also benefit from automatic notification using, uh, co-op. Observe. Uh, this is building, uh, on input from Carsten and Ben, especially on the advanced uh mode. Recent comments from Michael. And if you, uh, go back to all versions of the draft, we really built on initial comments from Jim and the review, uh, from Trevor Spencer. The big step we have in mind is moving the third most advanced mode of operation up to the document body, and to integrate it better with the other two to make everything look more homogeneous. But, um, otherwise we think the document is is stable in its latest version. And I'm aware of an ongoing implementation from uh, CNR, uh Research Institute in Italy. They are building on our implementation of base framework on eclipse californium, and I'm assisting with that. Uh, so overall, we believe, uh, this is a good shape to be considered, uh, to be adopted as a working document.\nSPEAKER S2: Okay. So anyone, um, I'm just, um, I just like to understand how many people have, uh, read one of the version of that document. Please, just, uh, raise your hands.\nSPEAKER S6: Some are also mentioned in this draft. In this slide. Sorry.\nSPEAKER S2: Yeah, yeah.\nSPEAKER S6: What is worth.\nSPEAKER S2: And, um, um, how many people would like to to review that document? Um, if adopted.\nSPEAKER S6: Uh, Christian is willing to review in the chat.\nSPEAKER S2: Okay. Anyone is opposed to this draft moving forward? Okay, so I'm hearing no opposition. So, um, I will start a call for adoption. Please, um, do state whether you're in favor or against? Uh, very clearly, so that we can, um, um, we can be something, as in a parking lot for, um, document. Okay. So thank you. Um, Marco.\nSPEAKER S6: Thank you.\nSPEAKER S2: Um, I suggest that we we do, um, a presentation on, um, the, the TLS, um, or score profile, and that we, we then switch back to the, um. To the GM admin. Um, uh, from Marco, if time permits. And I suppose we will have time for that.\nSPEAKER S4: Okay. Thank you. So I'm yours, and, uh, I'm going to talk about this draft. This is just one this presentation is just one slide long. and you see the title of the of the draft here. The the purpose of this draft is to discuss the applicability of another draft, uh, with the details profile of this framework to TLS and the content of the draft. This was submitted late, I should say. So it was, uh, uh, in the two weeks period between the submission deadline and and the meeting. And we just uploaded, uh, that on Monday as a compensation. This is a very short draft. So the content is essentially what's stated in this slide. It's saying that, uh, the details profile of Ace applies to TLS as well as Dtls. And we could use the same access token, the same profile. So that's the content of this draft. And the rationale for using this is for example, in case uh, UDP might be blocked and you would rather use TLS and TCP for Nat and firewall traversal, for example. And there is another context as well. And that's the um, the 3D PGP has started looking at uh, use of Coap and uh, in this service based architecture where they already have adopted TLS 1.3 and OAuth 2.0. Uh, and when they now add Coap to this setting, ace makes a natural, uh, um, a natural solution to the authorization problem. So that's basically my presentation. And, and the question is for the working group is, uh, first of all, do you think this is, uh, do you like this? Do you agree with this, uh, this procedure of having a, uh, a statement just about applicability of something? Um, do we need a separate draft? Can we solve it in some other way? Could we could we, for instance, consider including this sentence or this paragraph, uh, in the Atlas authorized draft, uh, which is currently in auth 48. So it's it's kind of late. Um, yeah, that's my question. Thank you. Any any spontaneous answers? Do we have an ad in the meeting at the moment?\nSPEAKER S8: I think we have 280 in the meeting at the moment. Uh, but the question was more directed. Okay. Um, so, I mean, yes, you're right, from a technical sense, we could pull the, the details profile back from auth 48 and try to add to it. Uh, but that's a pretty heavy hammer at this point. And I feel like I would want to redo, like the last call process and get some, uh, visibility into the ISG about it, and I'm fairly reluctant to take that approach. I guess I'm not going to rule it out entirely, but I think there is a fair bit of overhead. And, um, I would want to get a fair bit of review to try and get this change in at such a late stage. And so my preference would be to not do that. Uh, and yes, it feels a little silly to do a two page document, but sometimes it might be the right choice. I'm also happy to hear if there are other opinions in the room.\nSPEAKER S2: Please, John.\nSPEAKER S9: Yeah I was. Would it really need the last call? Uh, ISG added details bundle three. Without having a last call. I would say that's actually a bigger change than this change. This would. I don't see any. The draft before mentioned some details, 1 or 2 details which have now been fixed, but for the TLS, I don't think there's any changes needed at all. Then you're saying, well, this draft does that. This also works for TLS.\nSPEAKER S8: Right. I mean, sort of the trick. Um. It looks like there's no changes needed, but I feel like I would want the review to confirm that there are no changes needed. Uh, because sometimes there can be subtle differences between TLS and TLS that come up. Um, I don't have an example off the top of my head because it's early in the morning today, but I feel like there have been some cases when I'm doing ISG review of other documents where they they want to combine them together, and there's some subtle difference that needs special treatment. Um, usually I think that would show up when you start with TLS and you're trying to add dtls, uh, it's less clear what the issues would be going the other direction, but I, I think there's enough of a risk that I don't want to just, um, make the change at the last minute without actually giving it some thought.\nSPEAKER S4: Okay. Fair enough. Thanks. Thanks for that. So what's your proposal? Do you want to review this and then make a decision? Or is the decision or your at least your strong recommendation here that we go for um, making it separate draft.\nSPEAKER S8: Ah. So I guess my queue is currently a little bit long. So I think my recommendation would be to go ahead and adopt this draft. Um, and if I happen to have the time to look at it sooner, we could maybe short circuit that process, but I think adopting this draft would be a reliable process that we can get started on now and would not be blocking on me indefinitely. Okay.\nSPEAKER S4: Okay. Thank you. Then I'm I'm done with the presentation.\nSPEAKER S2: So, um, one thing I'm it's not clear, um, to me, if it has been said, but, um, um, to, uh, a little bit of context, uh, uh, my understanding is that, um, the request to extend the dtls profile to TLS, uh, I mean, to address the TLS use case, um, has been raised by three GPP. Um, and so, um, my recommendation is that we we start a, um, a working group adoption for this document and move that document pretty, I mean, pretty fast. So I would like to have a lot of people to, um, review this, uh, document that is shorter than the slide. Um, so just as a, um, a short questions, I would like to see, um, how many people have read or are willing to review this document. Um, please, um, raise your hand. So we have only one person. Okay. Anyone opposed to that document to be. Okay, so, uh, I'm gonna start a call for adoption. Um, um, keep in mind that we we need to. When we adopt a document, we need to to make to have a sufficient confidence that, um, the document is going to end to, to, um, be thrown to the iesg. So, um, similarly to the previous document, uh, clearly state whether you're, um, you're going to review the document or you support it. And, um, and we will see how we, how it goes. Um, I think we have time for, uh, Marco for your last GM presentation, so please go ahead.\nSPEAKER S6: Uh, great. So I requested, uh, sharing powers. Can you grant them to me?\nSPEAKER S2: Oh, yeah.\nSPEAKER S6: Thank you.\nSPEAKER S3: Do you have them?\nSPEAKER S6: Yes. There we are. Okay. Um, this is also, uh, an update about, uh, Oscar. Now, version four. And I think this was also presented last time, November last year. Uh, to recap, this is, uh, another RESTful, uh, interface at the same Oscar group manager of the key Oscar draft. Uh, but this interface is intended for, uh, administrator users to create, delete, configure, reconfigure, uh, the Oscar groups that that group manager, um, is responsible for. And right now we are already supporting interactions based both on link format and cbor or, uh, with coral and bottom line at the group manager. This interface exports, um, a single route resource. Uh, for the sake of creating new, uh, group configurations and retrieving the current list. Um, and when a group is created, you have, uh, a child resource of this, uh, of this route resource. The child resource is associated to the specifically created group and, and contains as value the configuration, uh, currently used for that group. Clearly here the client is the administrator and the resource server is again a group manager. And to put all the functionalities in one slide, uh, again the route resource allows the administrator to create a new group, uh, or retrieve the list of existing groups, uh, all of them or part of them using a fetch with, uh, filtering criteria. And then for each child resource, uh, associated to a particular group, you can retrieve the current configuration. so the list of parameters describing how the group works. All of them are part of the fetch. You can entirely override the current configuration with the new one. Using put or as recently introduced, you can use a patch for just selectively updating that configuration, altering only some parameters, or you can delete altogether the group configuration, thus deleting, uh, the uh Oscar group altogether. Uh, what updates have we introduced in the last three versions? Um, error handling got improved mostly for the sake of chasing how that, uh, changed in, in guru.com from which we are reusing, again, the same, uh, content format and rationale for parameters and their semantics. We started to seriously build on, on an idea that, uh, Christian triggered when this document started about having a multiple administrators, not only one that can have to do with the same Oscar group. And that direction we are taking now is that you have for sure a primary administrator that creates a group configuration and can do anything on that. But at the same time, you can also have additional, um, secondary administrators that might be allowed to do at least something, uh, on, on a group configuration. They didn't create, uh, themselves. And to practically enforce this, it is about defining the semantics of, uh, the scope we have in the access token for this, uh, kind of application. And we are not done yet, but we have sketched, uh, the technical direction we are taking already in a section we currently have as a placeholder, and that requires more work. Uh, otherwise, as I mentioned, we have recently introduced the possibility to perform a selective update on the configuration on the Oscar group, um, through a patch. And while if you do a put, you really override all together a group configuration. And if you don't specify some parameter, you fall for default values. Uh, with patch you really act on the only parameters you specify, uh, making them take the exact new value you specify. Uh, it's pretty straightforward for most of the parameters. It's really about specifying the pair parameter name, new parameter value. Uh, there's an exception for a structured parameter up groups, which is a list of names or a list of strings, if you want to think of that. Uh, so it's a bit more tricky with uh, with patch. But we, we have also defined how that can be handled. Uh, you basically have two possible ways, uh, each with pros and cons. Uh, you can't combine them in the same request. Uh, but you can choose what better fits, uh, the particular request at hand. Uh, also, we improved a bit. How? Default values, uh, are handled. Speaking of which, uh, as I said, when creating a group or overriding its configuration, um, if a parameter is not specified, the group manager is supposed to consider a recommended default value in case for some strong reason the group manager doesn't do that. Uh, and goes for a different value than the recommended default one. Uh, the chosen value assigned to the parameter has to be included in the response given back, uh, to the administrator. That's good for for consistency and good knowledge, and also for possible follow up, uh, registrations at the resource directory for, for group discovery. But the details are all in the draft. We have also defined some new configuration parameters for the groups, in case those Oscar groups, uh, allow the usage of, uh, catchability of responses Protected with Oscar. And that mechanism is defined in another, um, code draft. Here we just define the parameters, uh, describing how the group works in that respect so that, um, that information can be consistently provided to, uh, to join in nodes when they join through the um, join interface defined in the other document. This reference here to Oscar is informative at the moment. I think it can remain for informative. Uh, because for the sake of this document, you don't really need to understand how the mechanics of Oscar really work. You just need to pick up those two concepts here mapped into two parameters. So hopefully that can indeed remain an informative reference. Uh, but I'm happy to hear, uh, feedback in the other direction in case, uh, other than this, it was mostly about keeping this document, uh, up to date and aligned to changes happening in document related to it, meaning key, column key, Oscar and group document in core. Uh, so that's just a summary of what I've just said for your convenience. Uh, of course we are not done yet. Uh, I think the main next step is, uh, defining in detail the semantics we want for for scope in the tokens here so that we can enable both a primary administrator creating a group and doing whatever it wants with that, but also possibly additional secondary administrator that can do something on groups they didn't create themselves. Uh, and again, we have a direction sketched, uh, pretty well in the draft already, but, uh, I was hoping that a discussion, uh, a bit more in detail around this to get early feedback can happen. Uh, at some of the next, um, a meeting, uh, if possible, uh, just to get early feedback and that's it I think. Comments input are welcome of course.\nSPEAKER S2: Any any comments please Christian?\nSPEAKER S1: Um, yeah. Just briefly on the topic of the informative reference to deterministic Oscar. If that doesn't work out as an informative reference, um, it should be possible to just remove that part and move that part over to deterministic Oscar where it would then be published later. So I don't expect any showstopper there.\nSPEAKER S6: Yeah, I made the first attempt here because, uh, having this in the Cacheable Oscar document would require to bring up a lot of context from this draft that would make the document a bit heavier. But yeah, in case we can go for it.\nSPEAKER S1: It's I prefer it to be here, but if it doesn't work out, we can do that.\nSPEAKER S6: Thank you.\nSPEAKER S2: Okay. So, um. I think we we have we've, um, we have three minutes left. So, um, I'd like to give those three minutes to our ad if he has anything to say, and basically conclude, um, this meeting. So thank you to all the presenters for, um, making that happen and that we I mean, we were able to, to do all the agenda items, um, during this meeting, and I'm leaving the floor to Ben and wishing you a happy IETF.\nSPEAKER S8: Yeah. Uh, thanks. Since you passed it over to me, I will just say that, uh, the main action item on my front relating to this working group is that the MQTT profile I know has published a revision, and I have not yet had a chance to look that over, but I expect that there will be a lot of good changes in there, and hopefully I can go directly to a ITF last call after that. Um, I was trying to clear out my publication queue, uh, in the week weeks leading up to this meeting, but, uh, I actually got a little bit sick, and that really disrupted my my pace through the queue. So I'm feeling better now and hope to continue, uh, during after the meeting. So that's the update from my end. Uh, I have a good ITF week, and we'll see you in gather.\nSPEAKER S2: Thank you.\nSPEAKER S4: Thank you. Bye bye.\nSPEAKER S2: Bye. Bye, everyone.\nSPEAKER S6: Thank you. Bye bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.98626826891848
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: You?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Um, only when you go to the.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "When you give me the green button, then I see, I, I would see the slide decks to pick and could look into the slides.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "So I now I've just given you the I click the, the, the green button for you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, actually you have to stop sharing the slide and then you can grant Christian the ability to share.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Okay?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Ah yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Now I can select something.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "So like um I select GM admin clicking share and now I can hop through them.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "So we will try.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "It's not a good day because we're very busy for this session.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "But um.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so, uh I, I think we should start now.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm going to share my screen.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "The window.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, everyone.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so you are, um, in the ace meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, Logan, uh, is going to my co-chair.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "He's going to reach me in a few moments.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "He had an emergency meeting, so he's going to come later.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you have the note.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Well, in case you've never read those, or, um, you were not aware of those, uh, notable meetings.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so please have a look to to that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, um, we're looking for a minute taker, so we already have Christian, but if anyone else is willing to help him, it's more than welcome.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, do we have a second minute taker?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, I can help here.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Goran.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "I guess it's Goran.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, um, just be informed that we have a new code of conduct at the ITF.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we ever had any problems in this, uh, working group before, but, um, um, I mean, um, we need to to to make the, the conversation professional, and, um, it's, uh, quite a, um, quite standard, uh, behavior.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if, uh, anyone of you is noticing something, um, please let me know.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "I would be happy to, uh, act on that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "So we do have, um, a pretty busy agenda.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "So I am, um, going to be, um, quite short.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm going to ask the, the other, um, presenters to remain quite short.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the goal of this meeting is clearly to end up every, uh, document that we have in working group last call or that are going to be in the working group last call in a few days.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the priority for the the first priority for that meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "The second priority is, um, about adapting, um, new work and to have those discussions, um, and uh, that's it.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "So where we are, um, with this working group, we actually have, um, one, two, three, four, five documents.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "So it's up east, uh, waiting for details.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "We have the details authorized, the OAuth, OAuth, OAuth params and Oscar profiles, which are the main Ace framework that are in the RFQ.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "So congratulations to all the people that have been committed to that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have three drafts into the ISG evaluation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the AIF, the CMP v2 and the mqtt TLS profile.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one comment I'd like to say, um, and mostly to make it very clear, um, um, to everyone, is that the CMP v2 draft needs to progress, uh, through the RFC editor, uh, in parallel with, um, um, uh, some other documents in labs, uh, mostly because they are um, um, they have um, uh, they do share, um, a registry at the Iana.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, that's one of the reasons.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So and, uh, we do have two documents in working group last goal.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the key group comms and the co-op EAP, um, and, um, a few, uh, other working group documents, um, among those, um, the key group that is going to be moved to in working Group Glasgow, um, hopefully in the few next days.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that said, I'm just wondering if Ben, our Adi, is willing to add anything, if he has any questions or if anyone has, um, any comment to say to our Adi.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "He's been on the queue.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "I don't see him on the queue.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, as anyone to say anything about to our ad?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "So I suggest that we move on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Um, maybe, uh, we could start with the, uh, document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm going to ask Dan to go to the Q and to ask for.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Peter, tell me that, um, Ben has left the meeting, so, uh, he will probably come, um, uh, later on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and feel free to, to catch him on gather, for example.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, then do you want me to present the slides, or do you want to, um, present the size yourself?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: If you if you can please present the slides and I can just indicate when we move forward, please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm gonna do that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "So I stopped sharing my, um, my screen.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "I am asking the slides and let me.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: So, uh.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Do you see the slides?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yes, I can see the slides.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, interesting, because I don't see that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "So you see the slides?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Because my problem is that I don't see them.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: You you might need to switch around on one of those top, top icons.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Presentation view gallery view.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "One of those should give you slides.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So I have a share screen.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Presentation view.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, good.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: So basically, shall I start?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, sure.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "So in this version we have integrated all the comments and discussions with Christian with Carsten.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "And we have uh, give it also a little bit of restructuring.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "And we understand that we have now the version that we expected after all these discussions.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "And we also added a annex regarding the how to use scrapheap with TLS, which is something that has was commented, but we did not add something concrete until now, but we added in an annex.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "So if we can go to the next slide, we have the summary of the main topics we have been adding to or modified in some meaningful way in regard with the last version.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "So we added some discussion about the discovery of the authenticator.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "We added some of the the recommendation from Christian to send the resource in the first message.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "We are also sending the a sender ID and recipient ID for Oscar instead of calculating it as part of the derivation of key material.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Also, to improve the the way of choosing these these identifiers, we confirm the the use of Oscar for doing the confirmation of CoA.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "And we also added some consideration for the use of proxies.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "And basically, uh, we gave a definition of, of uh, civil structure to carry some information for the negotiations.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "And finally, we, we show the current flow of operation, and we give some comments in this presentation regarding how the TLS can be used in the annex.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, in the next slide, please, basically, uh, for the discovery of the authenticator, since copy is expected to be used in different IoT environments, uh, we leave it up to the scope, but we added some discussion of how can this be done.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "We understand that Coap brings some tools to the table for the resource discovery, and we are using that as part of co-op.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "But in terms of, uh, getting the information of the IPv6 of the border router or the entity in the domain with which the authenticator is going to talk to.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "We leave that out of the scope, but there are different approaches that could be considered depending on the deployment scenario, such as ACP or multicast DNS.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "So one of the modifications we made to the flow operation to to save bytes over the of the link is to send in the first message from the peer to the authenticator is to send in the payload the URI of the resource that is being created in the IoT device for attending the next exchange.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "So this saves, uh, the flow operation, uh, from having to use the well-known Uri, the well-known URI, uh, twice.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "So it is a cleaner approach.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "And the next slide, please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that, uh, we we do is to send in the second and third message, uh, the, uh, along with the message we send in a similar structure, the crypto street negotiation, the values of the crypto street negotiation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And we also send in the request and response, the sender ID and response ID for, uh, Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "This is, uh, this can this can also be reused as key ID for details as we will comment in the last.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Part of the of the presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "But this is the basic idea of this exchange.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the next slide, please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "So we maintain the use of Oscar in this case in the basic, uh, exchange, uh, as a way of confirming that the key material derived from the EAP authentication, uh, is established correctly.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "And we, uh, double down on on the use of Oscar by establishing, uh, the Oscar Security Association that could be used, uh, from that point on, to secure any exchange between the IoT device and the controller.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "To do so, what?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "What we propose, uh, And also thank I want to take a second to thank Christian Answers for his input on this.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we create a template, an incomplete Oscar, uh, security, uh, context.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that is missing the key, which is, uh, completed after the authentication is is is completed.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "And what we do is that upon reception of the success, what we do is to complete the Oscar security context and, uh, be able to complete the key confirmation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the the detail here is that, uh, basically we, we generate the, the, the needed context And, uh, but, uh, we need to use the Oscar message, the first Oscar message as a alternate success indication for EAP.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because, uh, the content is, is cipher.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So we use the first Oscar message as an alternative indication for the state machine to release the MSC and then complete the process, uh, and with, uh, the recipient and sender ID that are now sent in the previous message, we are able to to complete the whole process.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "The next slide, please.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, we also had a brief comment about the use of proxies, because in the exchange there is a role reversal in EAP from the first message in which the IoT device acts as a Client, but on the rest of the exchange it is a co-op server.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "So there is.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "That is something that needs to be considered when using proxies to send any.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Needed information to the controller to be able to use the service.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Through a proxy.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "So this this additional information could be sent also in the in the server.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Structure that it is defined.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "So we are preparing this structure maybe in the next.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Slide I think this is there.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "So we define a server structure that carries some of the information that we need to exchange for servers with negotiation, the sender editorship and also the authorization information such as session lifetime.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe we can we put it as extensible.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe if we need in the future to add some additional information, And we can do so in this structure to to add maybe further a feature or another functionality.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "So that's also integrated in the next version.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that we are close to to the end.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "In here you can see the current change of operation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "And now it is cleaner.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "We have abstracted ourselves from conformable and unconformable messages and just focused on the basic exchange.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "There you can see how the context is created when the negotiation is done.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "And basically when the MSC is derived, it is used as in the in the seventh message, to complete the context and to send the message confirming the the key and finishing the exchange.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Lastly, in the in the in the last, uh, slide, we had uh, in the annex some considerations for using, uh, for establishing a TLS security association that could be used instead of Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and for this, we are reusing the same fields as Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "We also do a crypto association for for Dtls.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "The key ID for the TLS Pre-shared key is generated in this case by concatenating the sender and recipient ID, and in here, as we do with Oscar, we consider the Clienthello message from TLS as an alternative success indication to be able to to obtain from the state machine the MSC and uh, be able to run the TLS so that that's it.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thank you very much for your time You want to ask some comments?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "So so from my point of view, um, the document is ready to be shipped to the ISD.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "So that's, uh, that's to me, the next step for, for that document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "So if anyone has concerns, if anyone see any issues, clarifications, um, I mean, it's time to show up.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and you have until, um, I would say the end of the week to, to to raise your concerns.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm hearing no comments.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think that the document is, uh, pretty much ready, and I suggest that we move to the next presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "So it's, uh, probably going to be Marco.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Hi.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Great.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "I can share the slides if it's okay to you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "So you have to request this.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Do you get those?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think you'll have sharing as well.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah I think yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "You have to clear your sharing first before I can go on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So I have to.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Stop sharing the slides yourself.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Oh, yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "I am sharing those.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, I've got it there.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "So I sharing slides.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Stop sharing slides.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Not requested.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Great.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "This should be the one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is an update on key Group.com.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, most of this was mentioned at the latest interim, so, uh, I'll be I'll be fairly quick.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this revision was major, and it was about addressing two reviews we got from working group Last Call, uh, from Jordan.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, thank you very much for that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "And to give recap, uh, most were clarifications on general terminology and use and semantics of, uh, some parameters and messages, both in the phases of uh, token uploading to the KDC and then later on joining process for a new candidate group member.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Another clarification was related to the overall table of content.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, since text and draft was parsed here and there with a lot of repetition.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So now it's much more, uh, linear with error handling mentioned, uh, once and for all about it's, uh, common general part when introducing the KDC interface, and then we go through the resources of the KDC.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "One by one followed by handler one example, Android two example, um, and so on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in terms of the design changes, it was also agreed to bring into this document the definition of ready of some parameters that were otherwise, uh, defining key group where they remain used.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "And we define here some new parameters for enabling, uh, control messages that the KDC can send over multicast and in particular, uh, when using advanced uh, group schemes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "And related to that, also, uh, a resource about the public key of the KDC initially defining key was transferred here and remained used there.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, requested especially by Johan.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "We also enforce the categorization of the parameters defined in this document and used in its messages as must should may be supported by devices, leaving some of them conditional to support and and leaving to profiles to have a final word on this as a requirement.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "And we categorized also um functionalities that have to be minimally or additionally supported by devices with profiles to follow this categorization also for possibly even more, uh, new defined parameters.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "And also, uh, we also gave some more guidelines on error handling when enhanced animal responses are used, following overall the same rationale considered in the main framework, uh, as also requested in the reviews we collected, all the texts we had sparse in the document about, uh, group ranking.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Now we have a single section about that, uh, introducing the overall problem and task, uh, at hand.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we introduced an optimization about possible including, uh, public keys of just joined a new members in the ranking messages, and we give high level guidelines and examples about different approaches that can be used to perform a group ranking, like the very basic one to 1 or 1 to many using pub, sub or multicast.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "But extreme details leading to actual content and encoding to use on the wire are up to yet other documents that should describe how a particular ranking scheme, uh, is used in this context, possibly considering, uh, even the specific profile of this document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so as a summary, this version has addressed all the working group Last Call reviews, as far as I can tell, plus additional comments.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "We got, uh, during the July meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "So we also extended abstract and introduction to clarify even better, um, the scope and the goals of this document in this age group.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Com Landscape, and we also extended the security consideration to highlight the big amount of trust that we are putting on the KDC in the first place, and what that implies.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not aware at this point of any other open issues, uh, or open points to address, uh, authors.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "So we believe this is now ready for a next step.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "We should be Shepherd review and write up.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "That should be the last one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, my comment would be similar to the present to the previous presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Is that, um, this document is going to be shipped to the ISG very soon.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "So if you have any concerns, um, please do raise them by the end of the week.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Shall I?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I think we can go on with the next presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Coming up.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "And this is a profile of the previous, uh, draft, uh, specific for the use of groups in groups.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "And everything I've done for this version was really, uh, adopting the changes done in Ascii group.com, uh, to make this draft, this draft consistent with the previous one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "So moving out parameters and resources in terms of their definition, as I mentioned, while still used here, and a lot of alignment to be done in terms of, um, terminology, uh, parameter semantics and the optimization of possible including public keys and ranking messages and so on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "And the categorization of parameters and operations is now also enforced here.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "And this document is now overall, um, uh, following the updated list of requirements for profiles of wkyc.com that we have now.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, most of the clarifications that were done in HK were, were also to be done, uh, again, here for new parameters and resources defined, brand new.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in this document, uh, there was some clarification requested on uh, who can access what resource to do what and on error handling, uh, on Iana considerations.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "But relatively, uh, minor things I would say.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "And really to summarize, I think this version 12 uh, is now stable.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Version 11 was already but this is now aligned with the also stable and uh, versions of key 14 and also of the Grupo score document, um in core.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so a reminder, I have an implementation of this draft for eclipse californium uh, where the group manager, acting as KDC, supports both the group mode and pairwise mode is used in the groups.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also about this document, I'm not aware of any further, uh, remaining issues or or open point.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I think, uh, it can be considered now for uh, working group last call.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as a heads up, the group was documenting core is also, uh, going to approach its second working group, last call in fact, uh, which is good.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, of course, we cannot exclude altogether that the group's core documenting core with possible, uh, future updates is going to, uh, to affect this document in turn to adapt something.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "It's just the way it works as we keep updating the documents in the later stages.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "But right now they are stable and consistent with one another.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "This is my last slide.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So my understanding for, um, for, for this, uh, document is that we will issue, um, a working group, uh, very shortly.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "So you will have, uh, two weeks, uh, two week window to make any comment.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "I would like, um, people to commit to review that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, please, um, I mean, um, just, um, I don't want to, to waste a lot of time on that, but, uh, um, do we have anyone in the room that is planning to review the document?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Karen, uh, it's just, uh, you want to speak?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: No, I just want to review.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, good.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "So that's a that's very helpful.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "So we will go through the working group.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Let's go.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "And um thank you for the review and um hopefully have that shipped by the end of the month.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thanks.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "So I know I have two more presentations in the agenda, but in the interest of time, which one should I pick?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So, um, I suggest that we we focus on the new, adopted, um, uh, potentially new, uh, work item to adopt.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "So I would encourage you to, to go to the token.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm happy to give an update on this one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "It's now in version six.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was presented last time in November last year.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "But of course we kept working on it the whole year.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so as a recap, the problem here is that, uh, access tokens can of course expire, but can be revoked for a number of reasons, uh, before they reach an expiration time.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "And the problem is how to make this, uh, evident to the involved parties.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "So the clients and resource servers, uh, having an interest and involved in the use of that token, uh, you have token introspection available, of course, but practically only for, um, resource servers that in case have to take the initiative and, and, uh, request the authorization server to introspect, uh, one token at a time.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this document in addition.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "So to complement not replace a introspection defines a new service, a new interface at the authorization server, which basically keeps, uh, one single resource, uh, token revocation list intended to keep, uh, let's say short identifiers of tokens that are revoked at the moment but not yet expired, and then both client and authorization and resource servers are registered at that authorization server can access that resource, uh, through a get operation, possibly observe that resource, uh, to be informed, possibly through automatic notifications about, uh, their pertaining access tokens that are revoked but, uh, not expired yet.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "And when doing so, they in fact retrieve information only about the tokens pertaining them.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Not really all of the access tokens issued by the authorization server.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "And there is really no need for new Ace endpoints here defined at client or resource.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Ever.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "This resource is at the authorization server.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "So for identifying these revoked tokens to inform about we don't use the token CTI or anything like that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "We actually uh, compute a hash, uh, of the token using the 6920, uh, approach of naming things with with hashes, and the hash input is the only thing that all the three parties involved see as identical.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "So the value of the access token parameter in the response from the authorization server when the token is issued, and the authorization server is basically a list of the token ashes of the tokens that are revoked, uh, but not expired yet.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "And when registering the authorization server, uh, the client and server learn the, uh, exact URL where to contact, uh, the authorization server for, for the endpoint and, well, can interact with it, as I say, to, to learn about the revoked access token.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this can work actually, in three different modes of operation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "And the first one is very simple and mandatory to implement for, uh, the authorization server.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, say the client, just like a resource server, can send a get or get observed request and retrieve back all, uh, the token hashes for the token tokens that are revoked.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are two more advanced, uh, diff query modes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so the one in the middle requests for, uh, the end most recent updates, uh, occurred most recently, uh, to the pertaining part of the TRL.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "So pertaining to to the requesting node and can be supported.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "And we developed a third mode out of input from Carsten about considering the series transfer pattern and about Ben.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think at the November meeting, uh, last year about considering retrieving.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Not really the end most recent updates, but actually the the most recent updates following a certain, uh, resumption point.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in time and putting things together, we actually developed this mode, which is currently an appendix, but we have an ambition to to move it up to the, uh, document body.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And it's now also detailed in terms of, uh, message payload, uh, error handling and so on.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the latest versions, uh, other than developing the, uh, the SDP based mode, we added a number of of clarifications about the different modes, uh, the early registration process and the error handling.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "We added the possible additional use of the Pmax attribute as a query parameter when requesting to observe.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "That's something defined in the core working group.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "And basically the client or server is really requesting the authorization server to send notifications here and there, uh, with maximum silence, maximum intervals of silence between one and another, uh, to be kept posted.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "And yeah, we defined a bit more in detail in the recent versions, uh, how to, uh, format the messages for the most advanced, uh, operation mode.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, most recent review we got, or comments on the list were from Michael Richardson about a number of very useful clarifications on different aspects of the document that are also integrated now in the latest version.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "So to sum up, this is an additional service that the authorization server can provide to both a client and resource service to, um, inform about access tokens that are revoked but not expired yet.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that information can be accessed, uh, still, uh, in appalling fashion with simple gets.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Or it can also benefit from automatic notification using, uh, co-op.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Observe.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is building, uh, on input from Carsten and Ben, especially on the advanced uh mode.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Recent comments from Michael.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "And if you, uh, go back to all versions of the draft, we really built on initial comments from Jim and the review, uh, from Trevor Spencer.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "The big step we have in mind is moving the third most advanced mode of operation up to the document body, and to integrate it better with the other two to make everything look more homogeneous.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, otherwise we think the document is is stable in its latest version.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm aware of an ongoing implementation from uh, CNR, uh Research Institute in Italy.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "They are building on our implementation of base framework on eclipse californium, and I'm assisting with that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so overall, we believe, uh, this is a good shape to be considered, uh, to be adopted as a working document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "So anyone, um, I'm just, um, I just like to understand how many people have, uh, read one of the version of that document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Please, just, uh, raise your hands.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Some are also mentioned in this draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "In this slide.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: What is worth.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And, um, um, how many people would like to to review that document?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if adopted.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, Christian is willing to review in the chat.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone is opposed to this draft moving forward?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so I'm hearing no opposition.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I will start a call for adoption.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Please, um, do state whether you're in favor or against?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, very clearly, so that we can, um, um, we can be something, as in a parking lot for, um, document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Marco.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, I suggest that we we do, um, a presentation on, um, the, the TLS, um, or score profile, and that we, we then switch back to the, um.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "To the GM admin.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, from Marco, if time permits.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "And I suppose we will have time for that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm yours, and, uh, I'm going to talk about this draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "This is just one this presentation is just one slide long.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "and you see the title of the of the draft here.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "The the purpose of this draft is to discuss the applicability of another draft, uh, with the details profile of this framework to TLS and the content of the draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "This was submitted late, I should say.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "So it was, uh, uh, in the two weeks period between the submission deadline and and the meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "And we just uploaded, uh, that on Monday as a compensation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "This is a very short draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "So the content is essentially what's stated in this slide.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "It's saying that, uh, the details profile of Ace applies to TLS as well as Dtls.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "And we could use the same access token, the same profile.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the content of this draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "And the rationale for using this is for example, in case uh, UDP might be blocked and you would rather use TLS and TCP for Nat and firewall traversal, for example.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "And there is another context as well.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "And that's the um, the 3D PGP has started looking at uh, use of Coap and uh, in this service based architecture where they already have adopted TLS 1.3 and OAuth 2.0.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and when they now add Coap to this setting, ace makes a natural, uh, um, a natural solution to the authorization problem.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "So that's basically my presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "And, and the question is for the working group is, uh, first of all, do you think this is, uh, do you like this?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Do you agree with this, uh, this procedure of having a, uh, a statement just about applicability of something?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do we need a separate draft?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Can we solve it in some other way?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "Could we could we, for instance, consider including this sentence or this paragraph, uh, in the Atlas authorized draft, uh, which is currently in auth 48.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "So it's it's kind of late.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah, that's my question.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Any any spontaneous answers?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Do we have an ad in the meeting at the moment?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I think we have 280 in the meeting at the moment.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but the question was more directed.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, I mean, yes, you're right, from a technical sense, we could pull the, the details profile back from auth 48 and try to add to it.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but that's a pretty heavy hammer at this point.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "And I feel like I would want to redo, like the last call process and get some, uh, visibility into the ISG about it, and I'm fairly reluctant to take that approach.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "I guess I'm not going to rule it out entirely, but I think there is a fair bit of overhead.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, I would want to get a fair bit of review to try and get this change in at such a late stage.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "And so my preference would be to not do that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and yes, it feels a little silly to do a two page document, but sometimes it might be the right choice.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "I'm also happy to hear if there are other opinions in the room.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Please, John.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Yeah I was.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Would it really need the last call?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, ISG added details bundle three.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Without having a last call.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "I would say that's actually a bigger change than this change.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "This would.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "I don't see any.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "The draft before mentioned some details, 1 or 2 details which have now been fixed, but for the TLS, I don't think there's any changes needed at all.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Then you're saying, well, this draft does that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "This also works for TLS.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Right.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, sort of the trick.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "It looks like there's no changes needed, but I feel like I would want the review to confirm that there are no changes needed.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because sometimes there can be subtle differences between TLS and TLS that come up.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't have an example off the top of my head because it's early in the morning today, but I feel like there have been some cases when I'm doing ISG review of other documents where they they want to combine them together, and there's some subtle difference that needs special treatment.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Um, usually I think that would show up when you start with TLS and you're trying to add dtls, uh, it's less clear what the issues would be going the other direction, but I, I think there's enough of a risk that I don't want to just, um, make the change at the last minute without actually giving it some thought.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Fair enough.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "So what's your proposal?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want to review this and then make a decision?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Or is the decision or your at least your strong recommendation here that we go for um, making it separate draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Ah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "So I guess my queue is currently a little bit long.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "So I think my recommendation would be to go ahead and adopt this draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and if I happen to have the time to look at it sooner, we could maybe short circuit that process, but I think adopting this draft would be a reliable process that we can get started on now and would not be blocking on me indefinitely.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Then I'm I'm done with the presentation.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So, um, one thing I'm it's not clear, um, to me, if it has been said, but, um, um, to, uh, a little bit of context, uh, uh, my understanding is that, um, the request to extend the dtls profile to TLS, uh, I mean, to address the TLS use case, um, has been raised by three GPP.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so, um, my recommendation is that we we start a, um, a working group adoption for this document and move that document pretty, I mean, pretty fast.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So I would like to have a lot of people to, um, review this, uh, document that is shorter than the slide.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so just as a, um, a short questions, I would like to see, um, how many people have read or are willing to review this document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Um, please, um, raise your hand.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "So we have only one person.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone opposed to that document to be.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so, uh, I'm gonna start a call for adoption.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, keep in mind that we we need to.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "When we adopt a document, we need to to make to have a sufficient confidence that, um, the document is going to end to, to, um, be thrown to the iesg.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, similarly to the previous document, uh, clearly state whether you're, um, you're going to review the document or you support it.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, and we will see how we, how it goes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think we have time for, uh, Marco for your last GM presentation, so please go ahead.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, great.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "So I requested, uh, sharing powers.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Can you grant them to me?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Oh, yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Do you have them?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yes.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "There we are.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is also, uh, an update about, uh, Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "Now, version four.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "And I think this was also presented last time, November last year.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to recap, this is, uh, another RESTful, uh, interface at the same Oscar group manager of the key Oscar draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but this interface is intended for, uh, administrator users to create, delete, configure, reconfigure, uh, the Oscar groups that that group manager, um, is responsible for.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "And right now we are already supporting interactions based both on link format and cbor or, uh, with coral and bottom line at the group manager.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "This interface exports, um, a single route resource.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for the sake of creating new, uh, group configurations and retrieving the current list.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and when a group is created, you have, uh, a child resource of this, uh, of this route resource.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "The child resource is associated to the specifically created group and, and contains as value the configuration, uh, currently used for that group.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Clearly here the client is the administrator and the resource server is again a group manager.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "And to put all the functionalities in one slide, uh, again the route resource allows the administrator to create a new group, uh, or retrieve the list of existing groups, uh, all of them or part of them using a fetch with, uh, filtering criteria.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "And then for each child resource, uh, associated to a particular group, you can retrieve the current configuration.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "so the list of parameters describing how the group works.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "All of them are part of the fetch.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "You can entirely override the current configuration with the new one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Using put or as recently introduced, you can use a patch for just selectively updating that configuration, altering only some parameters, or you can delete altogether the group configuration, thus deleting, uh, the uh Oscar group altogether.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what updates have we introduced in the last three versions?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Um, error handling got improved mostly for the sake of chasing how that, uh, changed in, in guru.com from which we are reusing, again, the same, uh, content format and rationale for parameters and their semantics.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "We started to seriously build on, on an idea that, uh, Christian triggered when this document started about having a multiple administrators, not only one that can have to do with the same Oscar group.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "And that direction we are taking now is that you have for sure a primary administrator that creates a group configuration and can do anything on that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "But at the same time, you can also have additional, um, secondary administrators that might be allowed to do at least something, uh, on, on a group configuration.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "They didn't create, uh, themselves.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "And to practically enforce this, it is about defining the semantics of, uh, the scope we have in the access token for this, uh, kind of application.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "And we are not done yet, but we have sketched, uh, the technical direction we are taking already in a section we currently have as a placeholder, and that requires more work.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, otherwise, as I mentioned, we have recently introduced the possibility to perform a selective update on the configuration on the Oscar group, um, through a patch.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "And while if you do a put, you really override all together a group configuration.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "And if you don't specify some parameter, you fall for default values.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, with patch you really act on the only parameters you specify, uh, making them take the exact new value you specify.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's pretty straightforward for most of the parameters.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "It's really about specifying the pair parameter name, new parameter value.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's an exception for a structured parameter up groups, which is a list of names or a list of strings, if you want to think of that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so it's a bit more tricky with uh, with patch.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "But we, we have also defined how that can be handled.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you basically have two possible ways, uh, each with pros and cons.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can't combine them in the same request.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but you can choose what better fits, uh, the particular request at hand.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also, we improved a bit.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "How?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Default values, uh, are handled.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Speaking of which, uh, as I said, when creating a group or overriding its configuration, um, if a parameter is not specified, the group manager is supposed to consider a recommended default value in case for some strong reason the group manager doesn't do that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and goes for a different value than the recommended default one.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the chosen value assigned to the parameter has to be included in the response given back, uh, to the administrator.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "That's good for for consistency and good knowledge, and also for possible follow up, uh, registrations at the resource directory for, for group discovery.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "But the details are all in the draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "We have also defined some new configuration parameters for the groups, in case those Oscar groups, uh, allow the usage of, uh, catchability of responses Protected with Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "And that mechanism is defined in another, um, code draft.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Here we just define the parameters, uh, describing how the group works in that respect so that, um, that information can be consistently provided to, uh, to join in nodes when they join through the um, join interface defined in the other document.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "This reference here to Oscar is informative at the moment.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "I think it can remain for informative.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because for the sake of this document, you don't really need to understand how the mechanics of Oscar really work.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "You just need to pick up those two concepts here mapped into two parameters.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "So hopefully that can indeed remain an informative reference.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I'm happy to hear, uh, feedback in the other direction in case, uh, other than this, it was mostly about keeping this document, uh, up to date and aligned to changes happening in document related to it, meaning key, column key, Oscar and group document in core.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that's just a summary of what I've just said for your convenience.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, of course we are not done yet.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think the main next step is, uh, defining in detail the semantics we want for for scope in the tokens here so that we can enable both a primary administrator creating a group and doing whatever it wants with that, but also possibly additional secondary administrator that can do something on groups they didn't create themselves.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and again, we have a direction sketched, uh, pretty well in the draft already, but, uh, I was hoping that a discussion, uh, a bit more in detail around this to get early feedback can happen.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at some of the next, um, a meeting, uh, if possible, uh, just to get early feedback and that's it I think.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Comments input are welcome of course.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Any any comments please Christian?",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Just briefly on the topic of the informative reference to deterministic Oscar.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "If that doesn't work out as an informative reference, um, it should be possible to just remove that part and move that part over to deterministic Oscar where it would then be published later.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't expect any showstopper there.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, I made the first attempt here because, uh, having this in the Cacheable Oscar document would require to bring up a lot of context from this draft that would make the document a bit heavier.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah, in case we can go for it.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It's I prefer it to be here, but if it doesn't work out, we can do that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "I think we we have we've, um, we have three minutes left.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I'd like to give those three minutes to our ad if he has anything to say, and basically conclude, um, this meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you to all the presenters for, um, making that happen and that we I mean, we were able to, to do all the agenda items, um, during this meeting, and I'm leaving the floor to Ben and wishing you a happy IETF.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thanks.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "Since you passed it over to me, I will just say that, uh, the main action item on my front relating to this working group is that the MQTT profile I know has published a revision, and I have not yet had a chance to look that over, but I expect that there will be a lot of good changes in there, and hopefully I can go directly to a ITF last call after that.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I was trying to clear out my publication queue, uh, in the week weeks leading up to this meeting, but, uh, I actually got a little bit sick, and that really disrupted my my pace through the queue.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm feeling better now and hope to continue, uh, during after the meeting.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the update from my end.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I have a good ITF week, and we'll see you in gather.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "Bye bye.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Bye.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Bye, everyone.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.98626826891848
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "Bye bye.",
+            "confidence": 0.98626826891848
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T14:41:46.253912+00:00",
+          "processed_at": "2026-01-27T14:41:46.253912+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "trelghce7i"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.98626826891848
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

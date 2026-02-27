@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "51141539-4033-485d-a33b-e6e62ffe06ea",
   "created_at": "2026-01-03T19:26:07.741710",
-  "updated_at": "2026-01-03T19:26:12.158948",
+  "updated_at": "2026-01-23T19:37:44.531009+00:00",
   "subject": "IETF 110 - DMM Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=Q74aX3AaaTM",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "dmm"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T16:00:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "dmm",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-dmm",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-kohno-dmm-srv6mob-arch",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-dmm-202103081700",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-ietf-dmm-srv6-mobile-uplane",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-dmm-working-group-update",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-dmm-draft-ietf-dmm-srv6-mobile-uplane-10",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-dmm-architecture-discussion-on-srv6-mobile-user-plane",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/dmm/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-dmm",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -5933,6 +5933,4142 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Hi, Eric. Good morning. Good morning. Uh. Good evening. I think we can get started. Is that thing joining? The thing. I don't believe he's joining. right here. Okay, I guess I think it's 8:00. We can get started. So welcome, folks. Thanks for joining the DM working group myself. Uh, and I'm with Saracen. So this is the agenda for today. Just before we get started, uh, some. Rules about the the IDF is being run under certain, uh, rules and regulations. And these are listed here. These are the IPR, these are IPR statement please review. And this is the note statement. This meeting is under uh hosted under certain rules. And these are the these are documented in these uh specifications. Please review. And uh Blue. Blue sheets, please. And I think, yeah, this is a virtual meeting. And if, if you can, somebody can sign up for taking some notes. Uh, that will be appreciated. Any volunteers, folks, who is here? There are not many folks today. Pablo, would you mind taking the notes, please? Just. It's a short meeting anyways. No. Yeah. Thank you. That's. Yes. Right. Thank you. Yes. Okay. Right. Uh, then this is the agenda for the meeting. Today. Just, you know, a brief update from the last meeting between idea 109 and 109. 110. We have adopted the following document as a working document. This is a transport network aware mobility for 5G. We run the consensus call and there was a good amount of support and there were a couple of objections. And we worked with we gave an opportunity for the authors and reviewers to, you know, address those comments, right? Not much happened. There were mainly two objections, but we didn't get much feedback. When we work, when we try to resolve this offline. But what we still chose to take up the document as a working document. But, uh, we are hoping whatever the objections that were raised will be fixed in the, you know, the course before, between now and between the document becomes a is sent to ISG. So that's with that I think uh. See it in a day or two. Uh, that's then followed by, I think, a quick update on the working of documents. These are the active documents. One is on the user plane protocol architecture analysis of HBV 5G system. And there was a recent update zero four version. I think this is in a good shape I think should be able to, you know, send you know, issue. Last call on this. And there's a segment routing IPv6 for mobile user plane. I think some few updates happened between now and the last meeting. And I think this also is completely ready and all the dependencies are met. And, uh, we should be able to move this document forward. And then this is the transport aware network aware mobility for 5G. As I said, this is just it was adopted as a working document. So we should be able to over the next few months, we should be able to move this forward. And today's. With that. We have two presentations today. One is the one is the architecture discussion on SRB six. This is an individual ID and uh, my son has presented this in the last meeting as well. But, uh, we have to we have not yet issued an adoption call. The plan is like, you know, plan is once we get few more reviews from the working group and we will, we will be able to take this up. So I think with that, I think and then there's the segment routing, uh, IPv6 for mobile user plan. There's a quick update on this as well. So these are the two presentations that we have. And uh, that's about it. With that uh, anything you want to add on? Not much so far.\nSPEAKER S2: Thank you sir.\nSPEAKER S1: Okay. Anything from you, Eric?\nSPEAKER S3: Nope. I'm just waiting. When, uh, a working group, uh, adopt a document comes my way for eval. Okay.\nSPEAKER S1: Yeah. Fair enough. Yeah. We'll, uh, we'll make that happen. Uh, with that, I think. Let's go back to the. Is Mia there? Mia. Mia, son? Yes. Okay, so you're going to do the presentation yourself. Okay. Sorry. Okay. Yeah.\nSPEAKER S4: Okay. Do you hear me?\nSPEAKER S1: Yes, please. Yeah. Please go ahead.\nSPEAKER S4: Yeah. Thank you very much for your time and the opportunity. Um, let me recap the, um. What, um, we'd like to we'd like to, um, achieve with this draft. So next page, please. So today I'd like to recap the objective and some architectural discussion. And, um, I have some new, um, exemplification and conclusion and next step. Next slide please. So to recap the objective, this draft discusses a solution approach and its architectural benefits of common data frame across domains and across layers. Um, background for this. Is that the current mobility related discussion in IETF, like network slicing, are based on the assumption of the existing domain and the current TTP. Um, which in my opinion, in my opinion is not good for um future for considering the new architecture for future. Next, please. So the current connection intensive network has the limitation, um, that uh, session termination point, um, will be uh, scaling bottleneck. And, um, the connection oriented network is not very optimized for, um, edge distributed computing, not optimized for any to any communication and policy and authentication are tied to Access methods. And the security model is, um, perimeter, perimeter security. But for future, um. Next page please. For future. The network architecture is more data intensive, and we are, um, discussing about distributed mobility. So mobility entities will be distributed and computing workload will also be distributed. And um, access will be getting more heterogeneous. And um policy or security will be um considered um, apart from the access method. Next page please. And as you know, xv6 is proposed as a common data frame across domains and by SRB six. Net programming uh, which has now uh RFC um it can program anything including um overlay functionalities such as GTP and ACH, and it could achieve simple flat architecture. And uh, it can be a common data plane across domains, um, and for both overlay and underlay. And it can be easily, um, it can easily interact with applications with scaling and flexibility. So let me um have some examples. Next please. So for edge computing and network racing. Um. So there will be, um, workload container port. And we would like to make the container port belong to, um, arbitrary tenant or thrice. And, um, the network should interact with um container port or applications. And we need to away to, um, control or steer traffic. Flexibility. Flexibility flexibly onto the container pod. So this kind of, um, functionality would be required for edge computing platform and for and for Um, make the container pod, uh, belong to, um, tenant or slices. Next page please. And keep um discusses a lot of um you are LLC and multi-path. Um, so for for, uh, reliable transport, uh, GTP could be, um, uh, could, um, we could have dual GTP tunnel. Um, also, um, GTP 23793 discusses about um maritime path access, traffic steering switch and splitting support, which is good, but this reliability. Reliability or multi-path convergence should be better not completed within GTP. Um, I think they are for seven and application interaction should be more considered. Next please. So as a conclusion, um, as mobile architecture entities become more distributed, um, they have the potential to be integrated as the platform for edge distributed computing and new SLA delivery mechanisms. Um, but for that, it is essential to consider this across domains and across layers. And as I said, the mobility related discussion in IETF like network slicing based on the existing assumption that the current domain and the current GDP. So I really want to, um, have the working group, um, adopt this document and consider how to, how, how, how to um, make um, cross domain or, or across um or how to, how to um. How to apart from the existing GDP practice. That is what I'd like to discuss with this, um, the working group. Thank you very much.\nSPEAKER S1: Okay. Thank you. Yes. Any questions? Comments? Okay, so so what do you want to accomplish from this? Is it a more sorry sorry question? Please go ahead. Yeah. Okay. So I, I recognize that that the.\nSPEAKER S5: Connection oriented nature of setting up PDU sessions is not optimized for edge computing. That's fair observation. But on the other hand, if you consider your three GPP is now heading. So is that we are now in release 17 and it's building on top of two releases already which are Using GTP as the basis for PDE system for the quality of service, mostly of the management. I would say that changing this at this point would be much too radical to be realistic for 5G. So I'm now wondering that we have in in in the IETF or Irtf corridors this discussion on six G. So maybe this is something to discuss over there and change the timeline so that that we address six G rather than try to change something which is already nearly halfway of it existing.\nSPEAKER S1: Okay.\nSPEAKER S5: My comments.\nSPEAKER S1: So I think uh, thanks. Thanks for your Are feedback. So I think one observation, one comment would be like the DMM working group is not chartered to say we are working only on 4G or 5G or six G in general. We are trying to solve the mobility problems, right? I think sure, I think, you know, for the xv6 work, the authors try to push it into the 3G release. 17 standard 1617 right. It did not happen. But it does not mean that, like, you know, I think, you know, you know, we have to really be under the scope of 5G or six G. But my point is, if there is an opportunity to push that into future versions of 3G. It may be possible, but as long as we solve the right technical problems, right? With that, how do you think, um, is there something that this working group should do or, or your, or you're recommending that this only should. This is the only that this is the target. It is the right place for this work.\nSPEAKER S5: Good linkage to this this, uh, uh, ERT discussions and, uh, preparatory discussions. Maybe, maybe you could comment is because I think he's one of the drivers of this discussion. Discussions in this six G interest group of IETF. But yeah, that was my comment and observation. I, uh, I leave leave to you to conclude what is the best place to discuss these matters. Okay.\nSPEAKER S1: Yeah. Yeah. Thanks. I think in general, I think, you know, if the problem is, you know, interesting enough, if the problem is relevant to mobility architectures, right? 5G. Six G or, you know, any other access architecture? I think in general, I think in my opinion we should we should do it here. But again, it's up to the working group and the and the the amount, you know, participation interest. But I think uh, yeah, I think let's uh, get some more feedback. Any other comments? Any other feedback on this document? Okay, so one question I have, right? I think, you know, you talked about the the the your LLC scenarios in the three GPP, the three GPP talks about, I assume with Sv6, you're only addressing one of the scenarios, right? Only the network side, uh, path redundancy. Right. In other words, this is only the one one of the scenarios, but not all the scenarios can be addressed through a service. Is that correct?\nSPEAKER S4: Um, so sorry, could you say it again, please? The only scenario which is service support.\nSPEAKER S1: Yeah. Three GPP specification supports multiple scenarios for you. All right. In one case the you can be connected to two different runs. And potentially there can be an end to end reliability. Right. That is one of the scenarios right now. Then there is a core network redundancy. So my question is with SR basics, what you're arguing is it's only one of the scenarios at least you will be able to support. Right. Which is the network which is the redundancy on the network side.\nSPEAKER S4: Yeah. Yeah. Well yes. So sorry. Thank you for the question. So SR v6 supports um, any form of redundancy. What I wanted to raise this particular model is that, um. So you could have um, dual GTP, which is fine, but this model only has the one, um, connection and um, and network is going to provide redundancy. But this model is not very, um, I what can I say? efficient because GDP doesn't have knowledge of underlay. So how to make this diverse path disjoint is um is lacking from the GPP consideration. Um, so this is this is not very, um, effective. That's why I raised this, um, point.\nSPEAKER S1: Um.\nSPEAKER S4: So which doesn't mean that Sb6 only supports this kind of, um, redundancy.\nSPEAKER S1: Okay. All right. And that helps. Yeah. Uh, any any other questions? Comments. Otherwise, we can move on to the next topic. Thank you. Yes, I think a few before. Yeah. Go ahead. Sorry. Um, sorry. I wanted to just add on to the comments. I also agree that, you know, GTP does have limitations in terms of latency, you know, reliability and all of those things. As you know, Hanu and Sri, all of you have remarked, I did have a couple of questions. I mean, this may be interesting work, but I had I had a couple of questions that are to consider in more specifically, you know, one is does this impact the control plane on the GTP on the 3G side? And if it does, then how do we handle, you know, how do we go forward in a way that, um, you know, does not impact that or reduces the impact? Or how do we do that? It's somewhat related to Hano's comments that, you know, a lot has been developed already for 5G, so this may be something to think about as we move forward. And a second question is more or less about the radio side. They're also using um GTP in the distributed when you distribute between the CEO and the due. That's also, um, um, GTP based. And in all of these cases, I think there's some control plane information to be considered. So if we decide to go forward, I think that's something that we must look to see that there is no impact or or some way that the impact can be managed. I think that'll be the challenge. So those are my comments. Yeah.\nSPEAKER S6: On the second point, right. When you say there is a GTP between the Q and D, you. What do you mean by that? Or are you talking about the N3, the use of GTP on N3 or on the on the.\nSPEAKER S1: F1 F1 interface?\nSPEAKER S6: GTP.\nSPEAKER S1: Yeah.\nSPEAKER S6: Okay.\nSPEAKER S1: It's truly But that may be manageable, I think. You know, I haven't looked into how this may, um, you know, adversely or not affect it, but it may be okay because I'm not sure. You know, the only my the main point would center around the control plane because a control plane is more or less, you know, heavily intertwined into this whole thing. And the control plane is managed, you know, not in the IETF. So that's where I think the challenge will be. And something that we can think about. You know, once we can get past that, maybe there is some, um, you know, interesting ways we can solve for the radio side and the core.\nSPEAKER S4: Yeah. Thank you for your comments. It's I think it's a fair comment. Um, and for that purpose, the sb6, um, mobile user plane, um, defines the GTP to sr v6 um mapping. Um, so that, so that we can insert we um, pre preserving the existing control plane. But I'd like I wanted to point out that if we, um. Don't consider across domains, um, we don't have a good, um, slicing mechanism. Um, or we don't, we don't achieve a good way for, um, edge computing platform. Um, that's why I'd like to, um, how we can we can consider not the not tied with the existing practice which is on GDP exists and mobile domain and transport domain is separated.\nSPEAKER S1: Yeah. I mean, just a last little bit. I agree with the problem. You know, there is no question that these problems exist. Um, it's only a question of how we manage forward. Yeah.\nSPEAKER S4: Yeah. Thank you.\nSPEAKER S1: Thanks.\nSPEAKER S5: Just a very quick.\nSPEAKER S6: Yeah. Just one comment. Okay, so but John's key point, uh, me saying you're agreeing that there will be impact to the control plane. In other words, I'm assuming there is impact to this N4 interface. Correct. Is it? So easily will there be impact to the control plane? I am guessing right. There is. You need some extensions on the N4 interface. Correct.\nSPEAKER S4: And endpoint interface.\nSPEAKER S6: Yeah. Do you need extensions or will there be any changes on info interface?\nSPEAKER S5: Yes, I think so. And also into both ends of the tunnel needs to be controlled.\nSPEAKER S6: Right? Right.\nSPEAKER S5: Speaking. May I compliment you on just just tiny, tiny addition that that so that we get the minutes right in addition. It's not only F1 interface, it's also x and that x mentioned in xn which is between these, uh, run nodes. Uh, there is a that also leads to the question of backwards compatibility if we want to run to 4G. Of course, we can say that this is next generation network. So we don't need to carry all the all the heavy, heavy things of of backwards compatibility. But if we shoot for 5G, we need to have the backwards compatibility at at least 4G.\nSPEAKER S6: Okay. Yes. Or any other comments?\nSPEAKER S4: Yeah. Thank you for comments.\nSPEAKER S6: Yeah. I think uh, a few things. Uh, so your for your email, you want this document to be adopted as a working group document right. Yes yes.\nSPEAKER S4: Yes. Since the working group should, um, discuss about the distributed mobility and so.\nSPEAKER S6: Okay, so I think, uh, one thing, you know, I would, I would, we would request the working group to review this document and provide some feedback, some good points, like, you know, from John Wright and yourself. Right. I think we want some more feedback. I think, you know, can we request a few, you know, volunteers to sign up and provide some feedback. You know, any anybody other than the authors write can, you know, can any of you raise your hands or, like, you know, state that you're willing to review this document? We want some names so that we can capture into the meeting minutes.\nSPEAKER S2: Now go ahead.\nSPEAKER S1: I can provide some feedback.\nSPEAKER S6: Okay. That's. Is that John?\nSPEAKER S1: John. Yes, John. Sorry.\nSPEAKER S6: Thank you. John. So the you're agreeing to review this document. Anybody else please as well?\nSPEAKER S5: Of course.\nSPEAKER S1: Yeah.\nSPEAKER S6: Thank you. That is two and one more volunteer please. Anybody else?\nSPEAKER S7: You guys hear me? I'm trying to. To say something. My, my my hand is raised, and I thought that was gonna go with my question.\nSPEAKER S6: We are not following the protocol. My apologies. I think we are still, you know. Okay. Daniel, please. Sorry.\nSPEAKER S7: Yeah, yeah. Thank you. Um, so I like the document because there's a lot of, uh, use cases from an operator viewpoint, but, um, Maya, when you. I heard when you were talking about the URL use case with GTP not being reliable or not not reliable, but doesn't iterate from convergence. I was just thinking, how is is that possible? Because you're starting a GTP from the radio all the way to the packet core. Before we go with um, Satoru and and other proposition when we stitch GTP with the V6. But just before that, if we do GTP two packet core, then whatever happened in the transport is irrelevant. When I heard about the convergence time for the You are LLC requirement. I just don't understand what you meant by by that because technically anything could happen underneath. It's still not. GTP will will just follow whatever new path happens and in the transport without breaking anything.\nSPEAKER S4: Okay. Yeah. Um, so for for making more reliable, um. They are thinking to have their GTP path, so to replicate the traffic and then merge, uh, for, for ultra reliability. Um.\nSPEAKER S7: But but they don't Control.\nSPEAKER S4: Then it's it's not very effective. So I my point is to have um. Control control controllability on underlay. Um. Which make the disjoint path, um effective. Okay. Sorry. Um, do you know what I mean?\nSPEAKER S7: Well, I'm not, uh, okay. Maybe, uh, I'll write it in the mailing list.\nSPEAKER S8: Yeah, yeah, sorry about that.\nSPEAKER S7: No no no no no, it's fine. You were well understood. Um, I just didn't the. It's not how you pronounced it that it doesn't, um, make sense in my mind. It's more that the. Content on itself like. But I will write my question in the in the mailing list, and it would be better for you to answer.\nSPEAKER S4: Thank you very much. It helps a lot.\nSPEAKER S6: Yeah, that that makes sense, Daniel. Thank you for that. So I think so we have a few volunteers who have signed up and I think, uh, you know, based on the feedback, we can, uh, you know, if there's interest. Right. But we want some more reviews, I think I this is what if you guys can also ask. So ask anybody to review and provide feedback. I think we'll be able to move forward on this document. So with that, uh thank you Jason. Uh, next is a quick update on the architecture discussion survey six mobile user frame. Uh. Yeah. Is am I picking the right document or.\nSPEAKER S9: I think the other slides is replaced.\nSPEAKER S6: Sorry. Yeah, please. Yeah. So who is going to present?\nSPEAKER S9: I am presenting. Pablo?\nSPEAKER S6: Yeah.\nSPEAKER S9: Okay. So many thanks for your time. Um, this is Pablo Camarillo from Cisco. Um, and this is a quick update on the segment routing IPv6 for mobile user plane. Um, next slide please. Okay, so as a very brief reminder, um, what this document is discussing is the applicability of Sv6 to the N3, N9 and N6 interfaces. Um, to this purpose, this document is standardizes um how this um how the mobile data plane could work. So it's focused only on the data plane and it is presenting two modes for the data plane, um, the so-called traditional mode and the enhanced mode. Um, and then this document has a set of interworking mechanisms for legacy entry interfaces, which are still running either IPv4 or IPv6 GDP. Next slide please. Okay, so very briefly a bit as a reminder on the content of this document. Um, so on this document, what we have is a bit of the motivation and the and the background use cases to do this work. Um, then in section five we discuss the traditional mode, um, which is just basically a pure replacement of GDP. Um, then we have a, a more evolved mode, which is the enhanced mode. Um, in this enhanced mode, basically what we have is that in addition to the overlay, we can also integrate, um, underlay traffic engineering as well as NFV services. So that is the enhanced mode. Um, and then what we are doing is we are presenting a set of um, interworking mechanisms, uh, for an unchanged entry interface. Okay. And these interworking mechanisms, um, they are applicable to both IPv4 and IPv6, uh, GTP interfaces. Um, and we present them as an extension to the enhanced mode, but they are equally applicable to a traditional mode. Um, then we also have the Sv6 drop in Interworking, which was the work from Schmid. Um, and then what as well. Then for the purpose of obviously defining these Sv6 Dataplane, we are defining a set of sv6 segment endpoint behaviours, which are defined in section six. Um, and then we have a few considerations on the control plane network slicing and security. Um, next slide please. So that's it on the draft content, um database. Um, moving into the the history. So the last time we presented an update on this document, it was actually in the IETF in Singapore pre-pandemic. Um, so. Well, this draft, um, the first revision, we posted it in July 2017. It was adopted as a working group item in November 2017, and we've had ten revisions, um, as a working group document. Um, together with, uh, this argument, we had two other documents. Uh, one of them was the Sb6 Mobile Proof of Concepts, where we were documenting several implementations and proof of concepts for this work. Um, which at the end we just ended up, uh, parking that document and we brought, um, the implementation part, um, as an appendix to this document. And then we had another document which is the mobility use cases, um, where we started documenting the sb6 use cases in the mobile network. Um, but at the end, there was not a lot of traction within the working group to get them documented. So that documented the packet as well. Um, next slide please. Um, okay. So since Singapore, um, what have been the changes? Well, in revision seven, we added a drop in into working mode, um, which was the POC, uh, that they did for us. Um, and revision eight, it was just a pure refresh on the document. Um, then at that time, the working group chairs asked, uh, to get some reviewers to the document, and Carlos Casas, um, reviewed the document. Many thanks, Carlos. So we in revision nine, we updated it to address the documents from Carlos. Um, revision ten, which was just posted right before this ETF. It just has a few typos and editorial clarifications. Next slide please. Um, then from our technology status point of view, um, there were two POCs which were previously discussed on this working group. Um, so a sprint, uh, did one project which was, uh, using encode, um, where they actually, uh, were capable of demonstrating these six mobile user plane. Um, so that was live stream. And then we also had the POC that was actually presented a few years ago, uh, from uh, leveraging the open air interface. Um, aside from that, we also have two other open source implementations, one in FDI up, um, contributed by Tetsuya. Many thanks. And then we have a P4 implementation, um, that is also available open source. Uh from Kentaro. Next slide please. Um, so the document has been stable for the last two years. Um, this document actually had a normative reference on the spring document on the Cervix Network programming draft, um, which has been approved um, on January this year. Um, so given that the document has been stable, there are no significant changes. Um, and we have implementations. I think that it would be the right time to move forward this document. Thank you.\nSPEAKER S6: Thank you Pablo. Any questions? Comments?\nSPEAKER S2: I have one comment.\nSPEAKER S6: Yeah. Please.\nSPEAKER S2: Yeah. Um, RFC 8986, open the behavior code point 86. And this document defines several, uh, basic behavior. I think before working group last call. Um, uh, code point allocation would be better.\nSPEAKER S6: Okay. Can you repeat the last few words, please? Sorry.\nSPEAKER S2: Um, asking Ana to allocate the behavior code point.\nSPEAKER S6: Okay.\nSPEAKER S2: It's been, uh, 89, 86 already. Open the code point Speaker.\nSPEAKER S1: Sure.\nSPEAKER S6: Thank you. Any other comments? Questions? Okay. Thank you. Pablo. Yeah. Sorry. Was there a comment?\nSPEAKER S3: I had my hand up. I was going to ask a question, and then, uh, I thought for a brief moment, uh, Sertori was reading my mind, but, uh, now I have to respond to that as well. Um, I on an early allocation, uh, I think it's RFC 7120 is something we could do, but I, I think maybe it's, um. I was wondering the question I was going to ask before that was, uh, has has spring reviewed this document, and does anybody think that document the spring should be notified, um, about this or at least notified during the, the DMM groups. Uh, last call or.\nSPEAKER S6: I think, uh, you know, I believe authors very early did present this in spring. I'll let them confirm that. But, uh, at least from the content that we have, I do not know, Eric, if we need any explicit feedback. But as an FYI, just to see if there are any objections, we can certainly do that. Maybe, you know, if you in any capacity, if you can forward that, that would be great. Otherwise we can do that as well.\nSPEAKER S2: I think it's a basic behavior. Code point is a first come first out. So I don't think we need a review from the spring.\nSPEAKER S3: Okay. I haven't checked the, uh, the registry there.\nSPEAKER S9: Just one comment. So, um, on the first revisions of the document went into as an individual document, um, we did, uh, send it to, to spring. Um, and indeed, DM choose to adopt it because we were hesitating between the spring and DM um, for the last couple of revisions, uh, the document has not been forwarded to spring. Um, so certainly, Eric, maybe one interesting thing that we could do is whenever the document goes into working group lasgo, maybe we can cross-post it to both spring and DMM if you think that would be helpful for. Or we could send it for review earlier spring. Whatever. Anything works for.\nSPEAKER S3: Either one of those things I think would be, uh, polite for spring folks. Um, and uh, uh, I'll, I'll, I'll talk to the spring, add about, uh, early allocation if you want. Okay.\nSPEAKER S9: Thank you.\nSPEAKER S2: Okay.\nSPEAKER S6: So so, Eric, to close the AI or you're going to forward the document or do you want us to do anything there?\nSPEAKER S3: Uh, I'll follow up with, uh, with the chairs with you and, and and afterwards.\nSPEAKER S6: Okay. Thank you so much.\nSPEAKER S2: Thank you.\nSPEAKER S6: Okay. All right. Pablo, I think, uh, yeah, we will move this forward, I think, uh, yeah, I think you guys are, you know, pretty much done with this. And we realize that. Thank you so much. Yeah. With that, any other questions? Comments from anybody? That was our last presentation. So do you want to add anything?\nSPEAKER S2: No. That's all I have I think.\nSPEAKER S6: All right. Thanks, everybody. Uh, this wraps up our meeting for today. Uh, we'll, uh, post the meeting minutes and, uh, we'll follow up on action items. Thank you so much.\nSPEAKER S2: Thank you.\nSPEAKER S6: Thank you.\nSPEAKER S2: Bye bye.\nSPEAKER S6: Bye.\nSPEAKER S1: Thank you.\nSPEAKER S9: Right.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9826798700293982
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hi, Eric.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Good morning.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Good morning.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Good evening.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "I think we can get started.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Is that thing joining?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "The thing.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "I don't believe he's joining.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "right here.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, I guess I think it's 8:00.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "We can get started.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "So welcome, folks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for joining the DM working group myself.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I'm with Saracen.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "So this is the agenda for today.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Just before we get started, uh, some.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Rules about the the IDF is being run under certain, uh, rules and regulations.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "And these are listed here.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "These are the IPR, these are IPR statement please review.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "And this is the note statement.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "This meeting is under uh hosted under certain rules.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "And these are the these are documented in these uh specifications.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Please review.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "And uh Blue.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Blue sheets, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "And I think, yeah, this is a virtual meeting.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "And if, if you can, somebody can sign up for taking some notes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that will be appreciated.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Any volunteers, folks, who is here?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "There are not many folks today.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Pablo, would you mind taking the notes, please?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Just.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "It's a short meeting anyways.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "That's.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then this is the agenda for the meeting.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Today.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Just, you know, a brief update from the last meeting between idea 109 and 109.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "110.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "We have adopted the following document as a working document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "This is a transport network aware mobility for 5G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "We run the consensus call and there was a good amount of support and there were a couple of objections.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "And we worked with we gave an opportunity for the authors and reviewers to, you know, address those comments, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Not much happened.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "There were mainly two objections, but we didn't get much feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "When we work, when we try to resolve this offline.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "But what we still chose to take up the document as a working document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, we are hoping whatever the objections that were raised will be fixed in the, you know, the course before, between now and between the document becomes a is sent to ISG.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "So that's with that I think uh.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "See it in a day or two.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that's then followed by, I think, a quick update on the working of documents.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "These are the active documents.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "One is on the user plane protocol architecture analysis of HBV 5G system.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "And there was a recent update zero four version.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "I think this is in a good shape I think should be able to, you know, send you know, issue.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Last call on this.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a segment routing IPv6 for mobile user plane.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "I think some few updates happened between now and the last meeting.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "And I think this also is completely ready and all the dependencies are met.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we should be able to move this document forward.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "And then this is the transport aware network aware mobility for 5G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "As I said, this is just it was adopted as a working document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "So we should be able to over the next few months, we should be able to move this forward.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "And today's.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "With that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "We have two presentations today.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "One is the one is the architecture discussion on SRB six.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "This is an individual ID and uh, my son has presented this in the last meeting as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, we have to we have not yet issued an adoption call.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "The plan is like, you know, plan is once we get few more reviews from the working group and we will, we will be able to take this up.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "So I think with that, I think and then there's the segment routing, uh, IPv6 for mobile user plan.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "There's a quick update on this as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "So these are the two presentations that we have.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, that's about it.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "With that uh, anything you want to add on?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Not much so far.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you sir.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Anything from you, Eric?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Nope.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just waiting.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "When, uh, a working group, uh, adopt a document comes my way for eval.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Fair enough.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "We'll, uh, we'll make that happen.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, with that, I think.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Let's go back to the.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Is Mia there?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Mia.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Mia, son?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so you're going to do the presentation yourself.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Do you hear me?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for your time and the opportunity.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let me recap the, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "What, um, we'd like to we'd like to, um, achieve with this draft.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "So next page, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "So today I'd like to recap the objective and some architectural discussion.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, I have some new, um, exemplification and conclusion and next step.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So to recap the objective, this draft discusses a solution approach and its architectural benefits of common data frame across domains and across layers.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, background for this.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Is that the current mobility related discussion in IETF, like network slicing, are based on the assumption of the existing domain and the current TTP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which in my opinion, in my opinion is not good for um future for considering the new architecture for future.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So the current connection intensive network has the limitation, um, that uh, session termination point, um, will be uh, scaling bottleneck.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, the connection oriented network is not very optimized for, um, edge distributed computing, not optimized for any to any communication and policy and authentication are tied to Access methods.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "And the security model is, um, perimeter, perimeter security.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "But for future, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "For future.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "The network architecture is more data intensive, and we are, um, discussing about distributed mobility.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So mobility entities will be distributed and computing workload will also be distributed.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "And um, access will be getting more heterogeneous.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "And um policy or security will be um considered um, apart from the access method.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "And as you know, xv6 is proposed as a common data frame across domains and by SRB six.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Net programming uh, which has now uh RFC um it can program anything including um overlay functionalities such as GTP and ACH, and it could achieve simple flat architecture.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, it can be a common data plane across domains, um, and for both overlay and underlay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "And it can be easily, um, it can easily interact with applications with scaling and flexibility.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "So let me um have some examples.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "So for edge computing and network racing.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "So there will be, um, workload container port.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And we would like to make the container port belong to, um, arbitrary tenant or thrice.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, the network should interact with um container port or applications.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "And we need to away to, um, control or steer traffic.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Flexibility.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Flexibility flexibly onto the container pod.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "So this kind of, um, functionality would be required for edge computing platform and for and for Um, make the container pod, uh, belong to, um, tenant or slices.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "And keep um discusses a lot of um you are LLC and multi-path.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so for for, uh, reliable transport, uh, GTP could be, um, uh, could, um, we could have dual GTP tunnel.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Um, also, um, GTP 23793 discusses about um maritime path access, traffic steering switch and splitting support, which is good, but this reliability.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Reliability or multi-path convergence should be better not completed within GTP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think they are for seven and application interaction should be more considered.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "So as a conclusion, um, as mobile architecture entities become more distributed, um, they have the potential to be integrated as the platform for edge distributed computing and new SLA delivery mechanisms.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but for that, it is essential to consider this across domains and across layers.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "And as I said, the mobility related discussion in IETF like network slicing based on the existing assumption that the current domain and the current GDP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "So I really want to, um, have the working group, um, adopt this document and consider how to, how, how, how to um, make um, cross domain or, or across um or how to, how to um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "How to apart from the existing GDP practice.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "That is what I'd like to discuss with this, um, the working group.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Comments?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so so what do you want to accomplish from this?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Is it a more sorry sorry question?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "So I, I recognize that that the.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Connection oriented nature of setting up PDU sessions is not optimized for edge computing.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "That's fair observation.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "But on the other hand, if you consider your three GPP is now heading.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "So is that we are now in release 17 and it's building on top of two releases already which are Using GTP as the basis for PDE system for the quality of service, mostly of the management.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "I would say that changing this at this point would be much too radical to be realistic for 5G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm now wondering that we have in in in the IETF or Irtf corridors this discussion on six G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe this is something to discuss over there and change the timeline so that that we address six G rather than try to change something which is already nearly halfway of it existing.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: My comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So I think uh, thanks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for your Are feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "So I think one observation, one comment would be like the DMM working group is not chartered to say we are working only on 4G or 5G or six G in general.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "We are trying to solve the mobility problems, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "I think sure, I think, you know, for the xv6 work, the authors try to push it into the 3G release.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "17 standard 1617 right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "It did not happen.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "But it does not mean that, like, you know, I think, you know, you know, we have to really be under the scope of 5G or six G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "But my point is, if there is an opportunity to push that into future versions of 3G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "It may be possible, but as long as we solve the right technical problems, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "With that, how do you think, um, is there something that this working group should do or, or your, or you're recommending that this only should.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "This is the only that this is the target.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "It is the right place for this work.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Good linkage to this this, uh, uh, ERT discussions and, uh, preparatory discussions.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe, maybe you could comment is because I think he's one of the drivers of this discussion.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Discussions in this six G interest group of IETF.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah, that was my comment and observation.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "I, uh, I leave leave to you to conclude what is the best place to discuss these matters.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "I think in general, I think, you know, if the problem is, you know, interesting enough, if the problem is relevant to mobility architectures, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "5G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Six G or, you know, any other access architecture?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "I think in general, I think in my opinion we should we should do it here.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "But again, it's up to the working group and the and the the amount, you know, participation interest.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "But I think uh, yeah, I think let's uh, get some more feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Any other comments?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Any other feedback on this document?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so one question I have, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "I think, you know, you talked about the the the your LLC scenarios in the three GPP, the three GPP talks about, I assume with Sv6, you're only addressing one of the scenarios, right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Only the network side, uh, path redundancy.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "In other words, this is only the one one of the scenarios, but not all the scenarios can be addressed through a service.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Is that correct?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, so sorry, could you say it again, please?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "The only scenario which is service support.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Three GPP specification supports multiple scenarios for you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "In one case the you can be connected to two different runs.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "And potentially there can be an end to end reliability.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "That is one of the scenarios right now.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Then there is a core network redundancy.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "So my question is with SR basics, what you're arguing is it's only one of the scenarios at least you will be able to support.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Which is the network which is the redundancy on the network side.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "Well yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "So sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for the question.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "So SR v6 supports um, any form of redundancy.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "What I wanted to raise this particular model is that, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "So you could have um, dual GTP, which is fine, but this model only has the one, um, connection and um, and network is going to provide redundancy.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "But this model is not very, um, I what can I say?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "efficient because GDP doesn't have knowledge of underlay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "So how to make this diverse path disjoint is um is lacking from the GPP consideration.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is this is not very, um, effective.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "That's why I raised this, um, point.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So which doesn't mean that Sb6 only supports this kind of, um, redundancy.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "And that helps.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, any any other questions?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise, we can move on to the next topic.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, I think a few before.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Um, sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "I wanted to just add on to the comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "I also agree that, you know, GTP does have limitations in terms of latency, you know, reliability and all of those things.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "As you know, Hanu and Sri, all of you have remarked, I did have a couple of questions.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, this may be interesting work, but I had I had a couple of questions that are to consider in more specifically, you know, one is does this impact the control plane on the GTP on the 3G side?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "And if it does, then how do we handle, you know, how do we go forward in a way that, um, you know, does not impact that or reduces the impact?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Or how do we do that?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "It's somewhat related to Hano's comments that, you know, a lot has been developed already for 5G, so this may be something to think about as we move forward.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "And a second question is more or less about the radio side.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "They're also using um GTP in the distributed when you distribute between the CEO and the due.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "That's also, um, um, GTP based.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "And in all of these cases, I think there's some control plane information to be considered.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "So if we decide to go forward, I think that's something that we must look to see that there is no impact or or some way that the impact can be managed.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "I think that'll be the challenge.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "So those are my comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: On the second point, right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "When you say there is a GTP between the Q and D, you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "What do you mean by that?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Or are you talking about the N3, the use of GTP on N3 or on the on the.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: F1 F1 interface?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: GTP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It's truly But that may be manageable, I think.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "You know, I haven't looked into how this may, um, you know, adversely or not affect it, but it may be okay because I'm not sure.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "You know, the only my the main point would center around the control plane because a control plane is more or less, you know, heavily intertwined into this whole thing.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "And the control plane is managed, you know, not in the IETF.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "So that's where I think the challenge will be.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "And something that we can think about.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "You know, once we can get past that, maybe there is some, um, you know, interesting ways we can solve for the radio side and the core.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for your comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "It's I think it's a fair comment.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and for that purpose, the sb6, um, mobile user plane, um, defines the GTP to sr v6 um mapping.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that, so that we can insert we um, pre preserving the existing control plane.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "But I'd like I wanted to point out that if we, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Don't consider across domains, um, we don't have a good, um, slicing mechanism.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Um, or we don't, we don't achieve a good way for, um, edge computing platform.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that's why I'd like to, um, how we can we can consider not the not tied with the existing practice which is on GDP exists and mobile domain and transport domain is separated.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, just a last little bit.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "I agree with the problem.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "You know, there is no question that these problems exist.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's only a question of how we manage forward.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thanks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Just a very quick.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Just one comment.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so but John's key point, uh, me saying you're agreeing that there will be impact to the control plane.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "In other words, I'm assuming there is impact to this N4 interface.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Correct.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Is it?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "So easily will there be impact to the control plane?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "I am guessing right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "There is.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "You need some extensions on the N4 interface.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Correct.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: And endpoint interface.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Do you need extensions or will there be any changes on info interface?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yes, I think so.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "And also into both ends of the tunnel needs to be controlled.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Speaking.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "May I compliment you on just just tiny, tiny addition that that so that we get the minutes right in addition.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "It's not only F1 interface, it's also x and that x mentioned in xn which is between these, uh, run nodes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is a that also leads to the question of backwards compatibility if we want to run to 4G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, we can say that this is next generation network.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "So we don't need to carry all the all the heavy, heavy things of of backwards compatibility.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "But if we shoot for 5G, we need to have the backwards compatibility at at least 4G.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Or any other comments?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for comments.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "I think uh, a few things.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so your for your email, you want this document to be adopted as a working group document right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Yes yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Since the working group should, um, discuss about the distributed mobility and so.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, so I think, uh, one thing, you know, I would, I would, we would request the working group to review this document and provide some feedback, some good points, like, you know, from John Wright and yourself.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "I think we want some more feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "I think, you know, can we request a few, you know, volunteers to sign up and provide some feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "You know, any anybody other than the authors write can, you know, can any of you raise your hands or, like, you know, state that you're willing to review this document?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "We want some names so that we can capture into the meeting minutes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Now go ahead.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I can provide some feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "That's.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Is that John?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: John.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, John.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "John.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "So the you're agreeing to review this document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody else please as well?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Of course.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "That is two and one more volunteer please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody else?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: You guys hear me?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "I'm trying to.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "To say something.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "My, my my hand is raised, and I thought that was gonna go with my question.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: We are not following the protocol.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "My apologies.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "I think we are still, you know.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Daniel, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah, yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I like the document because there's a lot of, uh, use cases from an operator viewpoint, but, um, Maya, when you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "I heard when you were talking about the URL use case with GTP not being reliable or not not reliable, but doesn't iterate from convergence.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "I was just thinking, how is is that possible?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Because you're starting a GTP from the radio all the way to the packet core.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Before we go with um, Satoru and and other proposition when we stitch GTP with the V6.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "But just before that, if we do GTP two packet core, then whatever happened in the transport is irrelevant.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "When I heard about the convergence time for the You are LLC requirement.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "I just don't understand what you meant by by that because technically anything could happen underneath.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "It's still not.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "GTP will will just follow whatever new path happens and in the transport without breaking anything.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so for for making more reliable, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "They are thinking to have their GTP path, so to replicate the traffic and then merge, uh, for, for ultra reliability.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: But but they don't Control.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Then it's it's not very effective.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "So I my point is to have um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Control control controllability on underlay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Which make the disjoint path, um effective.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do you know what I mean?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Well, I'm not, uh, okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe, uh, I'll write it in the mailing list.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, yeah, sorry about that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: No no no no no, it's fine.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "You were well understood.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I just didn't the.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "It's not how you pronounced it that it doesn't, um, make sense in my mind.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "It's more that the.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Content on itself like.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "But I will write my question in the in the mailing list, and it would be better for you to answer.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you very much.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "It helps a lot.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, that that makes sense, Daniel.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "So I think so we have a few volunteers who have signed up and I think, uh, you know, based on the feedback, we can, uh, you know, if there's interest.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "But we want some more reviews, I think I this is what if you guys can also ask.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So ask anybody to review and provide feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "I think we'll be able to move forward on this document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "So with that, uh thank you Jason.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next is a quick update on the architecture discussion survey six mobile user frame.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Is am I picking the right document or.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I think the other slides is replaced.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "So who is going to present?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I am presenting.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Pablo?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "So many thanks for your time.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is Pablo Camarillo from Cisco.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this is a quick update on the segment routing IPv6 for mobile user plane.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so as a very brief reminder, um, what this document is discussing is the applicability of Sv6 to the N3, N9 and N6 interfaces.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, to this purpose, this document is standardizes um how this um how the mobile data plane could work.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "So it's focused only on the data plane and it is presenting two modes for the data plane, um, the so-called traditional mode and the enhanced mode.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then this document has a set of interworking mechanisms for legacy entry interfaces, which are still running either IPv4 or IPv6 GDP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so very briefly a bit as a reminder on the content of this document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so on this document, what we have is a bit of the motivation and the and the background use cases to do this work.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then in section five we discuss the traditional mode, um, which is just basically a pure replacement of GDP.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then we have a, a more evolved mode, which is the enhanced mode.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in this enhanced mode, basically what we have is that in addition to the overlay, we can also integrate, um, underlay traffic engineering as well as NFV services.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "So that is the enhanced mode.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then what we are doing is we are presenting a set of um, interworking mechanisms, uh, for an unchanged entry interface.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "And these interworking mechanisms, um, they are applicable to both IPv4 and IPv6, uh, GTP interfaces.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we present them as an extension to the enhanced mode, but they are equally applicable to a traditional mode.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then we also have the Sv6 drop in Interworking, which was the work from Schmid.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then what as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Then for the purpose of obviously defining these Sv6 Dataplane, we are defining a set of sv6 segment endpoint behaviours, which are defined in section six.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then we have a few considerations on the control plane network slicing and security.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "So that's it on the draft content, um database.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Um, moving into the the history.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "So the last time we presented an update on this document, it was actually in the IETF in Singapore pre-pandemic.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Well, this draft, um, the first revision, we posted it in July 2017.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "It was adopted as a working group item in November 2017, and we've had ten revisions, um, as a working group document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Um, together with, uh, this argument, we had two other documents.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one of them was the Sb6 Mobile Proof of Concepts, where we were documenting several implementations and proof of concepts for this work.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which at the end we just ended up, uh, parking that document and we brought, um, the implementation part, um, as an appendix to this document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "And then we had another document which is the mobility use cases, um, where we started documenting the sb6 use cases in the mobile network.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but at the end, there was not a lot of traction within the working group to get them documented.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "So that documented the packet as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "So since Singapore, um, what have been the changes?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "Well, in revision seven, we added a drop in into working mode, um, which was the POC, uh, that they did for us.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and revision eight, it was just a pure refresh on the document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then at that time, the working group chairs asked, uh, to get some reviewers to the document, and Carlos Casas, um, reviewed the document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Many thanks, Carlos.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "So we in revision nine, we updated it to address the documents from Carlos.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Um, revision ten, which was just posted right before this ETF.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "It just has a few typos and editorial clarifications.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then from our technology status point of view, um, there were two POCs which were previously discussed on this working group.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so a sprint, uh, did one project which was, uh, using encode, um, where they actually, uh, were capable of demonstrating these six mobile user plane.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that was live stream.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "And then we also had the POC that was actually presented a few years ago, uh, from uh, leveraging the open air interface.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Um, aside from that, we also have two other open source implementations, one in FDI up, um, contributed by Tetsuya.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Many thanks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "And then we have a P4 implementation, um, that is also available open source.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Uh from Kentaro.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the document has been stable for the last two years.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this document actually had a normative reference on the spring document on the Cervix Network programming draft, um, which has been approved um, on January this year.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so given that the document has been stable, there are no significant changes.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we have implementations.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "I think that it would be the right time to move forward this document.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you Pablo.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Comments?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I have one comment.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Please.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Um, RFC 8986, open the behavior code point 86.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "And this document defines several, uh, basic behavior.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "I think before working group last call.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, code point allocation would be better.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Can you repeat the last few words, please?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, asking Ana to allocate the behavior code point.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: It's been, uh, 89, 86 already.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Open the code point Speaker.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sure.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Any other comments?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Questions?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Pablo.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "Was there a comment?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I had my hand up.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "I was going to ask a question, and then, uh, I thought for a brief moment, uh, Sertori was reading my mind, but, uh, now I have to respond to that as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I on an early allocation, uh, I think it's RFC 7120 is something we could do, but I, I think maybe it's, um.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "I was wondering the question I was going to ask before that was, uh, has has spring reviewed this document, and does anybody think that document the spring should be notified, um, about this or at least notified during the, the DMM groups.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, last call or.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I think, uh, you know, I believe authors very early did present this in spring.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "I'll let them confirm that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, at least from the content that we have, I do not know, Eric, if we need any explicit feedback.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "But as an FYI, just to see if there are any objections, we can certainly do that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe, you know, if you in any capacity, if you can forward that, that would be great.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise we can do that as well.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I think it's a basic behavior.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "Code point is a first come first out.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't think we need a review from the spring.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "I haven't checked the, uh, the registry there.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Just one comment.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, on the first revisions of the document went into as an individual document, um, we did, uh, send it to, to spring.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and indeed, DM choose to adopt it because we were hesitating between the spring and DM um, for the last couple of revisions, uh, the document has not been forwarded to spring.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so certainly, Eric, maybe one interesting thing that we could do is whenever the document goes into working group lasgo, maybe we can cross-post it to both spring and DMM if you think that would be helpful for.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "Or we could send it for review earlier spring.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "Whatever.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "Anything works for.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Either one of those things I think would be, uh, polite for spring folks.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, uh, I'll, I'll, I'll talk to the spring, add about, uh, early allocation if you want.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So so, Eric, to close the AI or you're going to forward the document or do you want us to do anything there?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, I'll follow up with, uh, with the chairs with you and, and and afterwards.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "Pablo, I think, uh, yeah, we will move this forward, I think, uh, yeah, I think you guys are, you know, pretty much done with this.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "And we realize that.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "With that, any other questions?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "Comments from anybody?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "That was our last presentation.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "So do you want to add anything?",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: No.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "That's all I have I think.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: All right.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, everybody.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this wraps up our meeting for today.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we'll, uh, post the meeting minutes and, uh, we'll follow up on action items.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Bye bye.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Bye.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 583,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9826798700293982
+          },
+          {
+            "id": 584,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Right.",
+            "confidence": 0.9826798700293982
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T19:37:44.529300+00:00",
+          "processed_at": "2026-01-23T19:37:44.529300+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "xzebwu0xzq"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9826798700293982
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "a461b978-a3c7-4122-9ccc-af4cdb04d0e4",
   "created_at": "2026-01-03T19:28:14.960020",
-  "updated_at": "2026-01-03T19:28:19.206528",
+  "updated_at": "2026-01-23T19:54:08.794903+00:00",
   "subject": "IETF 110 - TSVAREA Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=xSDxJGdjw98",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "tsvarea"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-09T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "tsvarea",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-tsvarea",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-tsvarea",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-tsvarea-202103111300",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-tsvarea-tsv-area-overview-and-status",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-tsvarea-the-delay-disruption-tolerant-working-group-dtnwg",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/tsvarea/",
         "mimetype": "text/html",
@@ -183,10 +182,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-tsvarea",
         "mimetype": "text/markdown",
@@ -197,7 +196,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -9607,6 +9607,3547 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Be clear. I mean, I'm just a participant and don't have the share, right? So anything you want.\nSPEAKER S2: All right, well, we can start now. I guess it's it's one after the hour. Uh, welcome, everyone to TSV area at 110. I hope you're all having a good remote meeting. Um, approaching the end here. I think this is the note. Well, um, I think probably most of you, if not all of you, have seen this. If you have any, uh, if you need to read this detail, please type this into your, um, itf note, well into your favorite search engine, and you can review it in detail. Click the links and find out everything you want to know about note. Well, uh, this is the agenda for today. Um, I would like to bash my own agenda and actually just move the open mic in front of, uh, Ed's DTN talk. Um, just because I think it'll be shorter. And I just want to give DTN the time it needs to to, uh, take us where the discussion wants to go. Um, so after the normal administrivia and the open mic, we're going to have, uh, Edward Breen of the. I hope I pronounced that correctly of the working group. Uh, he's the new chair there, and he's going to, um, repeating the the experience of our, uh, presentation last time. We're going to, um, highlight another, uh, less known part of that area and talk about DTN, which is pretty cool. It's got lots of deep space stuff, which I think is cool. Um, and it's also a lot of interesting and challenging technical problems. So, uh, looking forward to that talk. Would anyone else like to bash the agenda? Okay. Um, our most significant change, uh, I think, is that, um, as of yesterday, uh, in a somewhat bittersweet, uh, moment, uh, we're not saying goodbye to Magnus by any means. He's not going anywhere. But he will no longer be one of the area directors. Um, Magnus has, uh, done a total six years in the job, beginning in 2006, and just concluded a two year term. Um, it has been incredibly valuable to me to have somewhere that depth of experience, both as an ad and in the transport area and the ITF in general, because I, uh, uh, I'm not necessarily strong in that particular area. And just having his advice and his, his, his, uh, his wisdom on, on a number of matters has been invaluable to me. So, uh, and, you know, I think he's done a lot of things for a lot of people in this, in this area. Um, the most notable achievement, probably, I think he would say his most notable achievement in this term was getting quick out the door just under the wire, um, which is, of course, an enormously consequential, uh, development, not just for transport area, but for the internet. Um, And of course he's and of course Zaha is moving into that position. He's taking all of the working groups that Magnus had, except we are switching tram and our MCAT for reasons that aren't worth explaining and probably won't have any impact on anything, frankly, because those groups appear to be winding down. Um, so, Magnus, any words you would like to to share with us?\nSPEAKER S1: Thank you very much for those words. Uh, yeah. It's been two very interesting years, been intense with quick. But I, I also would like to really, I think if large accomplish has been to actually get the DTN core specs out, that's in some sense has taken more work from me as an Add and, and uh, a lot of Fournier issues with cross area relations because DTN, as you will see, is actually not just the transfer protocol. It's the whole IDF squished into one working group in some sense for that particular problem. So it's it's a lot of challenging problems and, and security routing etc. all existing there. But you will learn more about that later. But so therefore actually is happy that we managed to get the first set of specs as standard struck out and that the working group can continue to work. Um, there's been a number of other specs, but actually looking back, this two year term has been, from a document perspective, fairly light. And and um, we haven't we maybe got more through in some sense, but um, yeah, still it changes and and that's been noticeable also compared to my 2006, 2009 ten term. This it's another it's another IETF degree. You maybe not notice it when you're just looking here, but when you take this managerial role up, uh, you see a little bit more and you actually see what has changed, etc.. So I enjoy it. But I'm gonna enjoy being back, uh, going back to doing maybe a little more technical work. And, uh, also, the TSB is not gonna get rid of me because I'm back. Was reviewing, and I'm gonna probably work a little bit more intensive to sign them documents. When to help out with in the triage position. So. And I hope every one of you will be happy. Happy with that. In in as a replacement I will as we are colleagues and work fairly close. I will be able to assist him quite a lot. So. Yeah. Done.\nSPEAKER S2: Thanks for your work and your friendship. Um, uh, would you like to introduce yourself?\nSPEAKER S3: Yes, I would, I, uh, so, so thanks, Magnus. Um, and, uh, Martin for having me here. I need to be here to some extent. Uh, so my name is John, but usually people call me, uh, short version of that. So you can call me Jared. Um, so I work at Ericsson, uh, particularly Ericsson research, especially with Magnus as colleague for like 13 years. So we have been doing a lot of work internally in additional research together. Uh, and then I live in Stockholm, Sweden. Um, so that's it. Um, my entry in it is from 2008. Uh, after then I have been working on different working. I think it was PC and working group. That's where I first posted my draft. Uh, and then I worked on, um, WebRTC, um, and more like quick. And I have chat tabs, um, MCAT, uh, substantial work done in the MCAT. Uh, so, uh, internally, also, I have been working on different layers like application layer, transport layer and uh, radio layer. So I have some experience on mobile networks. Obviously I work for Ericsson. Uh, so that's that's it. Uh, that's who am I. And some of you might already know me. Uh, and I'm looking forward. I think I'm already getting, uh. So two things I did. One, I get a shirt from Magnus. He's not abandoning me. And the other thing is, like, I'm taking some of the stack that he has left. So, uh, nice work done. Uh. Great achievements. Uh, Magnus. Hopefully, um, I'll leave up to the expectation.\nSPEAKER S2: Welcome, Zion. I'm looking forward to, uh, to spending a couple of years with you. This will be. This will be fun. Yeah. Moving on. Uh, here is a update of, um. Uh, of the working groups from across the area. I don't know if there's anything that that my colleagues here would like to to highlight in particular, but I'll just give you a moment to look through that. I will say that alto are rapidly approaching a recharter, uh, as is quick, for that matter. And so if you're interested in the overall direction of those groups, this is a good time to get involved in those. Um. And, uh, I just also note that 793 bis, which is about as foundational as they come in terms of transparency documents, is is um, is in working group last call. So, uh, obviously not a giant change the way TCP works, but something that most of us hold near and dear to our hearts. So, Magnus, did we ship anything of consequence? This since 109, I can't remember. Like, I think it's. I mean, it wasn't really much happening.\nSPEAKER S1: No, only only only nine specifications. So that's new. And the fact is. And the fact that we actually I mean, the first four of the quick documents, I do expect to within weeks, as I said yesterday in the plenary to it, it's it's there's nothing preventing it. Just the editing time from the RFC editor here and then the office 48 and there's so there's no known, uh, issues before it's published. The quick HTP and specs, they're gonna be stuck behind the mishref in Hbss, but I expect it to come out within a few months. Uh, they are making progress, and we're already working with a few back, so it's making progress.\nSPEAKER S2: So not only quick at DTN, which we've already spoken about the significance of that, but also cluster 38, the the the pile of MCAT documents that was stuck forever actually made it to RSC. So the queue is much smaller than it used to be. Just a few things that are blocked because of some some down references. Um, mainly from IPM. So uh, good work everybody. This has been a very productive, um, interim between the two between IETF hundred and nine and today. So nice work.\nSPEAKER S1: Yeah. And I expect there's a few more of those documents that was from 309 is it's actually going to start moving aren't they. Uh, they're some of the IPM documents still. And they I hope they are. NFS is not too far off either, but it's.\nSPEAKER S2: Um, and they're not in there 3 or 4 that are through ITF last call. They're just kind of dealing with some, some ISG issues and whatnot. So so we're, you know, we're really turning the crank pretty well here as an area. This is our, um, every meeting reminder that we have a TSV area review team, um, which greatly assists the ISG in reading documents from other areas and looking at them in transport lens and making sure they're not doing, um, stupid stuff from a transport perspective. Uh, I invite you to contact, uh, Magnus or Wes. I think Magnus is not listed here, but I think as of today, he's back on the TSV Art, or as of yesterday. Um, so you can you can contact Wes or Magnus if you're interested in participating. I think it's, uh, a good opportunity to learn a little bit what's going on elsewhere in the ITF outside transport area, and also helps us a lot, helps create good quality documents. And I think as you can see, that little number in parentheses is how many reviews they had to do since 109. So, uh, you know, people reading 1 or 2 documents or in some cases zero documents and I would hope that that's not an incredibly onerous workload on people. So. So please, uh, you know, if there's something interests you, please contact either West or Magnus. And thanks to our reviewers for for the good work that they've been doing.\nSPEAKER S1: Yep.\nSPEAKER S2: Okay. So that's, um. Can I stop sharing? Ah. Okay. So that concludes the administrivia. And I think we're going ahead and open it up for open mic. If anyone has any concerns, issues, questions about things in the area of any three of us, this would be the time to get in the queue. Okay, is a very content population out there. Either that or asleep. Um, where? Most of us should be right now. Um, okay. So, um, I think at this point we'll go ahead and hand off to, uh, Edward Barron, who is the DTN working Group chair, the newest one. And he is going to talk about this particular part of the area.\nSPEAKER S4: All right. So give me a moment as I figure out how to share my screen. Uh. Let's see.\nSPEAKER S2: There's a there's a share button in your in the upper left. There's a, there's a monitor with a line through it. That's how you share your screen.\nSPEAKER S4: So I clicked, uh, share screen request. And I think I'm queued waiting, uh, to be given permission.\nSPEAKER S2: Oh, yes. Okay. Yeah. The UI is a little backwards from my intuition. Okay, there we go. Now you're set. All right.\nSPEAKER S4: And, uh, are you seeing my screen? Oh, I'm seeing my screen. So, um. Okay. Uh, hi. My name is Ed Baran. Uh, I'm from the Johns Hopkins University applied Physics Laboratory. I'm a co-chair of the DTN working group, along with, uh, Rick Taylor from Airbus Defence and Space. I wanted to spend a little bit of time today and talk about, uh, just sort of the general area of delay tolerant networking and then some of the things that we're doing in the working group. And I see a couple of familiar, uh, names, uh, in the, in the meeting and some people who had been working on DTN in the past as well. So that's good to see. Yes.\nSPEAKER S1: Can you go to full screen in your presentation?\nSPEAKER S4: Oh, sorry.\nSPEAKER S1: If it works. I think it's gonna be easy for especially with your coming figures.\nSPEAKER S4: Oh, indeed. Thank you. So? So what I wanted to do was give just sort of an overview of the history of DTN, how we got here, how we came to understand the problems, how it came into IETF. And then in particular, as Magnus said before, DTN is a large, uh, and sort of, uh, cross area, um, set of concerns. But I wanted to then focus a little bit on how the bundle protocol, in particular the bundle protocol version seven operates. It really is the the transport protocol for DTN. And the thing that has, you know, a lot of the attention with the addition of how to secure that protocol. And then lastly, I have there are many case studies on the value of DTN in certain environments. And I picked, uh, one related to NASA, uh, optical communications. Uh, so if we talk a little bit about a brief history, the we have some URLs in the top right here. If you go to NASA.gov, uh, they have a couple of pages associated with why NASA cares about this. But as we sometimes like to say with DTN, it came from outer space. You know, there was an initial desire to move from this very point to point, uh, link, uh, scenario, which is what we have for the most part now, uh, in deep space, where individual space agencies build their entire direct to earth infrastructure when they land, um, on, uh, on Mars, when they start landing on the moon, uh, when they start putting orbiters, uh, and other deep space assets into space. And how do we get to a point where we get to some sort of, you know, deeply, richly, uh, networked model of, of spacecraft? Could we get to a point where landers are only carrying enough radio, uh, to get up to an orbiter and can rely on, uh, a network to give them that multi-hop, uh, back, and in particular with the nonlinearities of transmission, adding those hops where you can get to a more resource node actually can increase the data rates while reducing size, weight and power on landers. And so there's there's really a significant desire to get to that point. So when when space agencies in general and NASA in particular started looking through this, they said, well, there are a couple of do's and do not's that we think we need here. Uh, certainly there were a few do nots, uh, which are we can't always assume that a path, an end to end path exists all at once. Uh, if you're a lander and the orbiter isn't, uh, overhead, then you can't talk to it. If the orbiter is overhead but you don't have line of sight back to Earth, you can't talk to ground. Uh, you therefore also given long, uh, light, uh, round trip delays and just generally the resource constrained nature of some of these devices. You also don't always have the ability to keep end states, uh, at, at the lander, down to ground station and so on. And certainly because of those first two things. If you do have to do retransmissions, you don't want to retransmit from the original message source because it's hard enough to get through the network, and starting all over again from scratch makes that more difficult. Uh, you you do want to store data? Uh, sometimes. Clearly for milliseconds. Uh, sometimes for days, depending on when you get passes and when you can get dishes on Earth to point to things. Uh, and because you might not have, uh, end state information at end points, session information at end points, you may want to increase the amount of annotated metadata that you take with you in your messages, either encoded in payloads, but from the networking layer also included as extra secondary headers in the message itself. And then came the question of well, if we do that from a transport perspective, then how do we secure things? Now, obviously we know we can't rely solely on physical layer security. Um, but if you are in in this sort of top picture of point to point links Without really a networking model, there tends to be an overreliance on that kind of security. Uh, if we have annotative metadata added as secondary headers in a packet in a bundles, as we'll come to see, does that change how we secure things? Uh, and then how do we make sure that while we are storing things for milliseconds or days, that they are secured? And then there were other questions about how much autonomy goes into network management and how do we do routing with time variant graphs and so on. And when we started asking those kinds of questions, then the the, the first thing you do is you say, well, what what do we currently have and what can we currently reuse? We certainly don't want to make a new thing, uh, just because and and there were sort of two driving, uh, concerns that came out of, uh, you know, everything we just talked about. Uh, the first was delay, and the second was, uh, disruption. And the delay case is, you know, fairly clear, you know, if, uh, if we look at this particular illustration where we have, you know, some number of nodes. Nodes one, two, three and four on the vertical with some notion of time on the horizontal. And if, if blue here or the shaded area represents connectivity between the nodes. If you have a data volume which we call D1 and it has to wait for an end to end node one to node four, uh, path uh to exist all at once. It may be waiting for a very long time, and it may be waiting for long enough that by the time that transmit opportunity comes, there's another data volume which would be in contention, uh, with that, that same end to end path. And if, of course, we can take advantage of sooner, uh, hops, uh, than waiting for an end to end path, then the ability to, uh, exfiltrate data off of a particular platform sooner, uh, you know, for certainly for resource constrained devices allows you to get data off your platform so that you can free up storage and take new observations. Uh, but it also means these kinds of link opportunities don't become wasted in the network. The other observation was disruptions. And what happens when we have frequent enough disruptions that the disruptions are not considered strange cases to recover from, but they actually represent the normal operation of the network as you have it. So if we look at a standard, you know, you know, session establishment, uh, con op where we take some amount of time to synchronize on information, we do data exchange and keep sessions alive. We do some cleanup at the end, you know, if there's negligible disruption, it's all handled as part of just the minor jitter in the network. Uh, if you get infrequent disruptions of significant length, uh, this this graphic isn't meant to imply that packets are actually exploding, but if we sort of lose, uh, and time out, we may have to reestablish sessions. Or if the session itself collapses, we may have to re-establish sessions, and there's an implied focus here on if we can just wait out the storm, then we can go back to normal operations. Uh, of course, if the disruptions are regular enough, uh, and infrequent and perhaps even unplanned, uh, then it becomes a lot harder to do that. And so the, the overall area of DTN, uh, started, uh, as delay tolerant networking, it sort of morphed into disruption tolerant networking. And it again, was this, uh, migration from, you know, what would a solar system internet or an interplanetary internet look like, uh, 30, 50 years into the future? And what can we do now just to get little bits of it? Uh, that concept, uh, doesn't look dramatically different than, uh, local sensor networks. Uh, so instead of an orbiter over a lander on a planetary surface, uh, you may have a data mule, maybe a UAV or or a car or a bus going by and collecting sensor nodes. And maybe you have a satellite, a Satcom backhaul, or maybe something else. And so if the problems on the left are mostly delay, the problems on the right might actually be more disruption. So then if we said that was some of the statement of problem, uh, what could we start doing, uh, to solve all of this. So, so, uh, started looking at a couple of things related to, uh, you know, existing protocols. Can we, uh, pick up and reuse, uh, IP about 15? I think at this point, 15 years ago, there was a lot of discussion of whether a NASA should be baselining IP for their, um, for their deep space, uh, networking aspirations. Uh, they started looking at the kind of things that are just sort of generally considered useful, uh, on the internet today. Uh, a couple of them are here. I'm sure that the people in the audience know and can come up with many more suggestions than the couple of bullets here, but the idea of of caching and pushing information, uh, and not, you know, relying on sessions if you don't have to or not having to rely on nested sessions and things of that nature. But a lot of this came down to the observation, again, that we don't have infinite access to bandwidth. And as silly as that sounds, if you are, if you are wholly in control of the construction of your purpose built network, then there is a sense that you can build it and resource it enough for the data that's coming through. Uh, whether whether that actually tends to be true over the entire lifetime of the network and whether that remains true as you try and federate other networks. You know that that tends to be the we need to think ten, 15 years into the future. So, so being able to go to, uh, missions and be able to go to those who build their own networks and say, you cannot just assume that you will solve these problems by having, you know, relatively infinite access to bandwidth, Even when you do in the moment, you're going to have to prioritize. You're going to want to look at whether or not your protocols are making good use of these, of your bandwidth. When you federate, you're going to need to worry about untrusted infrastructure. So DTN came back as specific solutions to some of the problems. And if you look to the right here again you see another concept of of how, uh, folks would measure what they would call the the latency of, of um, of an IP network, where latency here includes the wait for the end to end path versus what folks would call the DTN latency, which is the time essentially to get data off the platform. Um, then, uh, when we started looking at, uh, not just waiting for the end to end path, but the asymmetry of of the likely, uh, links where you may have, uh, very, very small, uh, for example, very small uplinks, but very large Downlinks again, going back to the space cases where an orbiter may have a much larger dish, more power and be able to send data down to a lander or back to Earth significantly faster than a lander could otherwise, you know, upload it. But there are, again, a couple of features that you need. You need to be able to send data without knowing if the end state destination is online or not. You don't want to start retransmissions back from the beginning, partially because of the, uh, the disconnected nature of these networks and partially because of the significant asymmetries of of the uplinks. Uh, if you uplink something and it gets somewhere, that's great, you don't want to then take that precious, uh, low rate uplink and use it for the retransmissions if you can avoid it. And again, we talked a little bit about the this concept of bundling annotated data, uh, with your payloads. Uh, if you do that, uh, then your endpoints perhaps don't need to remember very much session information or special states and all of all of this sort of boils down into what? You know, started to look like familiar features and other areas like asynchronous text messaging or email. Uh, and the interesting observation from the DTN perspective is, how do we get that down into a package that is, uh, small and efficient enough that it could run on very resource constrained devices? So what then came out of that was a description of of DTN as a suite of protocols and applications. And and this is what is considered, uh, right now to be sort of the core set of concerns that, uh, that are being addressed. Now, the, the four major, uh, protocols that are on the right are, uh, just so happen to be the four documents, uh, three of which, uh, have have gone out, uh, for, um, standards, I think are waiting on a, a href, a missing reference and then a third related to security. And these are the bundle protocol BP version seven. Uh, and that is the main transport protocol. That is the protocol that allows for these, uh, extension headers for carrying additional information and the behavior around store and forward operations. Uh, a security protocol for securing, uh, the bundle, in particular, the ability to handle, uh, and secure payloads, uh, separately from some of the secondary headers, uh, some context security context to provide, um, information around how that security information and the cryptographic materials therein should be handled. And then, uh, because BP is, is is considered an overlay, uh, how it, it, it maps to, uh, the underlays that are carrying it and in particular, uh, out of the working group, the first convergence layer is a TCP convergence layer. Certainly not to imply that in the space cases we're using TCP for communication. Uh, but there are plenty of terrestrial uses of DTN that care about disruption, but otherwise don't have long signal propagation delays. But then there are other things that are that are waiting and progressing. And those include, uh, work on quality of service, uh, time variant, uh, graph routing, uh, in particular, the Ccsds is working through something called schedule aware bundle routing. Uh, and there is additional work on what it means to do key management in these kinds of very disconnected networks. And, uh, a look at, uh, network management, uh, from a, from to include more, uh, deterministic autonomy, uh, in the system, which is the asynchronous management protocol or AMP, uh, things that are not particularly considered part of the ecosystem are higher level user applications, uh, you know, delay tolerant file transfer or messaging or that sort of thing. Uh, and then the underlying transport mechanisms beyond how we talk about them in the convergence layers are also things that aren't considered part of that suite. So we start we've talked quite a bit about the NASA and the space part of the problem. You know DTN has the the focus on DTN included many different folks over time. Uh, my my understanding of the history is it started, uh, with NASA's, uh, concerns about interplanetary networking. Uh, DARPA picked it up for several years, uh, and worried about what it means in highly disrupted environments. The Ccsds, uh, the Consultative Committee for Space Data Systems, uh, looked at and started doing some initial standardizations specific to space, and then it came into the Irtf and the IETF, uh, a DTN research group was formed in 2002, uh, that was chaired by Kevin Fall and yogurt and uh, its initial charter, uh, pulled from the initial charter which you can see from I. Org included DTE energy was the observation that non-interactive asynchronous messaging was important, and not only is it important in these space cases, but there are lots of different networks where this would be useful. The Irtf the produce 14 rfc's for that were notable. They were all notable. Before that were fundamental were a DTN architecture. RFC 4838, the Bundle Protocol, version six um and Initial Security Protocol, and an initial TCP convergence layer in 2014. Uh, after. After some experimental deployments and field tests and lessons learned, uh a working group was formed to standardize this, and that was at IETF 91. And the initial charter, uh, large parts of the initial charter were to take this work from the, uh, from the irtf and the lessons learned from field deployments and then, uh, update these different documents. And so, you know, update RFC 5050, which was bundle protocol version six, update 6257, the security protocol. You know, provide a convergence layer RFC update to TCP. And that's what we've done. And that's why they mentioned we're going into our rechartering, uh, discussions now. Uh, so the the ones that are in the editors queue, uh, bundle protocol seven security and TCP version four, and then another that's in AD evaluation, which is a security context to work with, uh, the security protocol. So if we speak just a little bit about, uh, the bundle protocol, and, you know, the first question always is where does it live? And sometimes the answer is wherever you would like it to live. Uh, and if you were to go out and pull images off the internet, as I did to create this slide, uh, you'll see a couple of different versions of this, but generally a bundle, uh, bundle agent or a forwarder is something that that lives in an overlay overlaying, uh, and speaking through its convergence layers. The value of that, of course, is that a BP instance can go over different underlying networks. And so just like for internet transfers and what hopefully is a very familiar, um, simplification of of TCP IP networking where you don't need to, of course, you know, terminate TCP at every node. Uh, and TCP talks end to end. If we put a bundle layer in place, the bundle layer, uh, has the ability to do some storage because it is a store and forward network, but also it can sit over various convergence layers to include the point where perhaps you you move away from TCP and into something else, uh, for, you know, a to bridge a TCP part of the network with a non TCP part of the network. Uh, the bundle itself, uh, is considered a bundle of blocks. Uh, so everything is termed a block. Uh, there is a primary block, which of course is a primary header. There is a payload block which is a payload, and then there are a series of extension blocks. And you can have sort of any number of those. Uh, the the primary block has standard, uh, primary header things in it. It identifies the bundle and particular processing options. It says adds routing information here. That just means that it has sort of source and destination, uh, information in it, as well as something called report to address, uh, to send administrative or other statuses, uh, as, as you work your way through the network, uh, these optional blocks, uh, extension blocks, you can have zero of them, you can have more, uh, and they are what carries additional annotated data, either annotated data for the payload or annotated data for the network, like what was your previous hop. And then the payload of course is is the payload. And payloads can be full payloads or payloads can be marked as fragments of some prior payload. If we look at the extension block mechanism in BP. One of the things that's interesting about it, of course, is that you can define and the protocol is structured to allow for the creation of of new extension blocks over time, and also for nodes that are doing processing to read these extension blocks, do whatever processing is necessary and maybe even, uh, write back or update those extension blocks or add new ones. So it is not necessarily the case that the originator of a bundle is the only bundle agent that would add an extension block. Obviously, I just mentioned before something called the prior hop block. Uh, that's something that's added by a prior hop. So you could accept a bundle in, uh, look at the prior hop block that is there, remove it, add your own and send it along the way. And again, this is part of getting to that operational concept of not relying on state existing end to end, but being able to update it in the network as you go. And that's essentially what we talk about here. The value, of course, is that if if you're able to synchronize state, end to end and end to end could mean truly message end to end or maybe source to some initial gateway or something else, then you can make your messages smaller and just simply refer to sessions as you um, or session state that's that's synchronized along the way. Uh, if you can't rely on this, then you need to carry all of that information with you. And I think that that is probably one of sort of the key insights, uh, behind bundle protocol, the need to store the data, waiting for a time variant path, and this idea that you can't always rely on your endpoints to tell you what you need, and you can't always rely on your destination to know everything it needs to know to process you, uh, from that perspective. Again, we talked about primary blocks and payload blocks. What's interesting in Bppv seven is that the primary block is is immutable. So it can be signed by the, uh, by the bundle source. And um, and it should remain unchanged through the network, uh, unless it is fragmented, in which case new new bundle fragments are created. But that's not the original bundle. That's a fragment. Uh, and then, you know, the payload block, it's always the the last block in a bundle. Uh, the original BP version six had some ideas of extension blocks before payload and extension blocks after payload to help with the, uh, the the understanding of very large bundles. Uh, but we didn't see the need to carry that forward in BP version seven. And then the extension blocks in general, which are the ones that live between the primary block and the payload block, have some standard information in them. What is the type, uh, what is the unique identifier of the block if if you have more than one block of the same type existing in a bundle, and then, are there interesting, uh, processing options associated with those blocks? So for example, uh, because extension block types can be added to over time, you may, uh, you may find that not every bundle agent in a network understands every block type. And so there are options here that say things like, uh, if you understand this block type, process it. But if you don't understand this block type, just pass it along quietly. Or if you don't understand the block type, then that's a problem. And remove that block from the bundle before you pass it along. Or if you don't understand the block type, that's a big problem and get rid of the entire bundle and process it no further, or perhaps hold it off to the side for forensic analysis. Uh, within the Bppv seven spec itself, uh, we, uh, define a couple of blocks, uh, that are useful, uh, we think are generally useful and need to be supported. Uh, the three of them, uh, here the, uh, the the again the the previous hop block. The previous node block, which is the information associated with the last transmitter of the bundle. Uh, a bundle age block which carries the sort of accumulating milliseconds from the time the bundle was created until it was last forwarded. Uh, this is particularly helpful for devices that themselves have, uh, can keep relative time but have difficulty keeping absolute time. Uh, and then, uh, a for, for areas where, you know, hop count is still a very useful thing, even in a delay tolerant network for, for to avoid routing loops and things like that, particularly in time variant graphs, uh, carrying hop counts and hop limits, uh, may also be, you know, necessary in the network. And then, uh, there's another set of specifications, uh, called the BP or the bundle protocol. Security protocol, uh, which uses two additional blocks to carry integrity and confidentiality information. And I'll talk about those a little more in just a moment. Uh, which is right now, because it's a little more about security. So when we then asked ourselves if we don't necessarily, you know, have session end to end session information and we have this additional metadata, what do we do? Uh, there were a couple of design decisions associated with a security protocol specific to to bundle protocol. Uh, the first was if we're having different kinds of information in a bundle than having block level granularity, uh, is going to become important because now information that normally would be in different payloads is now in a single bundle. And we may have to treat that differently. Perhaps we want to sign an extension block with metadata or sign the primary block, but encrypted payload. And those are two different things that may have to coexist in a single PDU. Uh, separately, if we accept that different nodes in a network could add extension blocks as we go, like with the prior, uh, pop, uh, extension block. Well, then, uh, the node that adds a block may have to secure that block. And that's different than the node that created the bundle itself. So there are different sources of security in a PDU. And then of course, because of those first two things, you will have different security policies. Uh, if if you have different security sources in the network, they will probably have different identifications. They might be using different cipher suites. Uh, or if they're using the same cipher suite, they will probably have different keys or other cryptographic material associated with those cipher suites. Uh, to that end, uh, different cipher suites and sets of cryptographic materials are active in the system. Uh, and if you take all of those four things, uh, you then need to come back and say, there must exist, uh, some, some, some limitations and constraints on this so that we can deterministically process all of this and not wonder about who did what, in what order, in ways that we can't back it out and back it out in a forensically recreatable way. Uh, so to that end, uh, the the security protocol uses the extension mechanisms in BP for the security of information in BP. Uh, and, uh, to that end, we define two, uh, extension blocks related to security, a block integrity block for integrity services and a block confidentiality block for confidentiality services. Uh, block integrity is defined here as, uh, essentially an integrity mechanism over plaintext. Uh, for if, for example, you're using, uh, signing as your integrity mechanism, then you can sign plaintext and you can sign multiple blocks at once and it can carry that long. And there there are some constraints associated with not having circular references. If you if you use bibs and bcb's, uh, for security and bibs can target bcb's which can target bibs which can target bcb's. That's something you want to avoid. So we had to put some, some, some constraints there. And then a confidentiality block is defined as confidentiality on the plaintext and integrity over the ciphertext. What that means is any cipher suite used for the application of confidentiality. It really must be an AAD cipher suite. It needs to carry with it, you know, you know, additional authentication data. Uh, and it uh, to to include being able to do things like cryptographically bind blocks into a bundle so that, for example, you could include the primary block of the bundle, uh, as part of the authenticated data, along with, uh, the ciphertext that's created when you create, for example, a signature, uh, if, if we then sort of look through the, the security considerations, uh, unique to Dtns, there are certainly a lot of them, uh, obviously with any kind of store and forward network, there's a lot of concern about, uh, person in the middle attacks, um, clearly eavesdropping and working on things, uh, out of band and offline. The concern. Of course, when you have blocks that are added and removed from a bundle, you worry about modification and replay and then anything that's time variant. There are concerns about, you know, topology attacks as well. So for those who are interested in this, uh, there is a, uh, good security analysis of this in the document itself under Security considerations, where we talk through what we can, uh, handle in inside of the bundle itself, and then what can't be handled from a security perspective solely inside of the bundle and would need to be taken, uh, more out of band in the network, but not in a particular bundle itself. Uh, the last thing I wanted to mention on the security side is, you know, when would you use, uh, the BPF protocol? So it is not something that needs to be used all the time. And it depends, of course, on the security you're trying to, to create. So if you want security at rest, then having the security as part of the protocol data unit itself certainly helps with that. Um, it is nice to say that, you know, some of the blocks inside of a bundle are themselves encrypted by the network, and if the network's going to store this persistently for hours and days, then that security persists and you don't have to decrypt a bundle coming out of a secure, um, you know, tunnel and then re-encrypt it for, for storing it, uh, locally and then decrypt it off of the local, uh, drive, uh, and then re-encrypt it for pushing it down the next tunnel so you can save some of that, um, if you need that kind of security at rest. Um, interestingly, obviously, we think that applications will provide, uh, encrypted payloads when the applications feel that that is necessary. But then all of the additional, um, uh, extension blocks and other network information itself will need to be encrypted. And then, of course, the underlying convergence layers, we also assume to provide security. But since the convergence layers may change as the bundle works its way through the network, then, um, you know, then again, having security within the bundle itself is a useful thing. Uh, the other interesting, uh, observation is that there are probably some, some, uh, different ways of using this that may be interesting to certain, um, security operational concepts, uh, namely, if you're trying to create secure tunnels in, in networks, but they may want to overlap, uh, if you use security solely as encapsulating the entirety of a bundle in ways that don't, uh, don't secure extension blocks and payloads separately. Uh, then it's all or nothing for things that are in a tunnel. However, if you wanted, because you're carrying different information to have, for example, uh, integrity over a primary block from the beginning to an end of a of a transmission, end to end, uh, perhaps confidentiality, uh, For some subset, some other kind of confidentiality. For another subset of the network, this becomes impossible to do if if everything is treated the same within the PDU. However, if you look at this block by block and not PDU by PDU, you can start getting that kind of behavior. Uh, then the last thing is just, you know, there are many, many, uh, studies on, uh, how store and forward in general and bundle protocol in particular, uh, is useful in challenging environments and how we get data through, uh, here's, here's a one from 2014, uh, called the Lunar Laser Communication Demonstration, uh, that NASA had had run. And it was, uh, just to to show the value of optical communication and how how we are proceeding, uh, at that time, uh, while many of us probably understand the value of that, you know, the certainly the driving value here is that, you know, a NASA 34 meter antenna using 20kW of power can get about 8.3 eirp. A lunar lasercom terminal, which is about ten centimetres, using about a half a watt of power, can get the same eirp, and that's just really motivating. Uh, so there was a DTN demo that was done, uh, in this way. Uh, it was using um, DTN up to and through, uh, so bent piping, uh, through the lunar link. I don't think that was actually, uh, on the spacecraft itself. Uh, but it was, um, it was, um, providing the actual data of handling when that link went up and down. And one of the things that they found, uh, in particular, was one of the limiters of, of getting the data through, uh, particularly back, particularly back to Earth or up to the spacecraft initially was clouds. You know, what they called the all natural Lasercom link limiter. And, uh, what they found was that, you know, DTN worked, you know, just as it was supposed to. Uh, when when things were good, uh, delivery, uh, went through, uh, just as it expected. Uh, bundles were sent. That's the blue bundles were received back again, uh, when the link went down, uh, then they didn't get any of the receptions. However, uh, once the link started to come back up, the data started to trickle in. And what was nice about it is this, this essential recovery period here was not swamped with control information, trying to reestablish a sense of, uh, of session, thereby losing, uh, you know, the data opportunities to control information. Uh, a little bit of control could be an extension blocks. But then the rest was coming in as data. And they found that this period of recovery versus other things that they had experimented with got more of the user data down faster, uh, increased their goodput. Uh, and for those reasons, uh, NASA came back and said, you know, we really need this technology for anytime we're doing, you know, these kinds of operations. And, um, and then essentially there were also things here where just from optical to RF, uh, rate buffering was considered valuable to them as well. So, so that was my last slide. Uh, it's a little bit about the history of DTN. It came from outer space, but it has application to, um, any kind of disruption, certainly link disruption, but also sometimes prioritization. Prioritization and disruption around administrative boundaries. Uh, we've pushed out transport and security protocols. We're looking at, um, other topics right now. And if you're interested, please come and see us in the working group.\nSPEAKER S2: Well, thanks, Edward. That was, uh, really interesting and I think really cool. I mean, I'm, I'm like a kid when I, when I hear about this stuff. Um, so if any of you are super energized now to go be a part of BTN. You have to wait about three hours. Uh, the third session. Um, today is, uh, DTN is having their their meeting. It's 410. Let's open up the queue for for questions. Okay. I see a lot of positive comments in the in the jabber, but no one wants to come to the mic. Uh, so, uh, I have a question. Um, so, uh, just because, like, you know, here at the ad level, we're working on creating, uh, a little more press about what TSB is doing. Um, and also because I'm personally interested, like what has like to what extent has this been deployed, like, I mean, obviously V7 is pretty new. Um, uh, and, you know, you just showed this demo here, but like, are any like are any probes or anything that have gone out, use this or an earlier version of DTN technology.\nSPEAKER S4: So? So, uh, yes and no. Uh next question. No. So the yes and no. The, um, the the issue, particularly on the space side, is, uh, early in mission formulation. Uh, you you really need to have the standards set. Uh, and so there is, uh, we are we are quite and keenly aware of some of the pressure to make sure that bundle protocol version seven is out and out in, in a timely fashion because, uh, it is necessary to have that RFC so that it can be put into contracts, uh, and requirements for missions and missions won't adopt it until, however, bundle protocol version six, RFC 5050, for a similar reason, was taken and standardized by the Ccsds, uh, the Consultative Committee for Space Data Systems as as a Blue book. And once that happened, missions did adopt it. So NASA Goddard has a large mission. I think it's $1 billion mission called Pace Plankton aerosol, uh, something and uh, it will be using bundle protocol version six. And what's interesting there is by using one on a spacecraft. And this is not necessarily for delay and disruption but just efficiency. Uh, you can have a file system and you can worry about writing to files and doing garbage collection in file systems and so on. Or if you know, you're going to create persistent data and, uh, you can put it in a bundle and it only needs to be persisted so that it can be sent, you're not going to open it and do surgery on it and save it again. Uh, you you don't need the complexity of a file system to do all of that. And so you you can have a little more efficient processing if you have a bundle store instead of a file system. So I, I'm really anxious to see whether missions start seeing those kinds of benefits as they go through their deployments. But it will fly on pace. Uh, we're also going to here in the DTN working group about an ESA, uh, European Space Agency, a project called Ops-sat, which will be flying both bundle protocol version six and bundle protocol version seven. Uh, and we also have uh, several uh, industry folks who have non-space case uses of DTN, although, uh, they, they keep some of that, uh, private until they're ready to, you know, release their, you know, products and results and so on.\nSPEAKER S3: That's cool. I, I would like to thank Ed also for this presentation because taking on DTN, this was like really, really a crash course for me. I. Really liked it.\nSPEAKER S2: Ah ah a secret agenda was to just save a bunch of reading and I think we succeeded at that. Um.\nSPEAKER S3: I think, I think we should do this for other working groups as well. Nfsv4 next up.\nSPEAKER S2: Okay, so, um, I guess, well, so we're, you know, this was supposed. We asked for an hour session. We got two hours. So I guess a lot of you are going to have another hour and gather. Uh, we really hope that you have. Again, thank thanks. Thanks to Edward for this talk, which I found super interesting, even though I don't have to read all the docs. Um, and, um, I hope that the rest of your 110 is productive. We'll see you at 111. And, uh, hopefully, uh, again, Zaha and I will be gathered out of town, um, a lot if you want to hit us up about any particular issues more privately. So, uh, have a good rest of your meeting and see you in San Francisco with a little bit of hope. Yes. Bye, everyone.\nSPEAKER S5: Bye bye bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9907604282022886
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Be clear.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I'm just a participant and don't have the share, right?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "So anything you want.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right, well, we can start now.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "I guess it's it's one after the hour.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, welcome, everyone to TSV area at 110.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "I hope you're all having a good remote meeting.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Um, approaching the end here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "I think this is the note.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, I think probably most of you, if not all of you, have seen this.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "If you have any, uh, if you need to read this detail, please type this into your, um, itf note, well into your favorite search engine, and you can review it in detail.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Click the links and find out everything you want to know about note.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Well, uh, this is the agenda for today.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I would like to bash my own agenda and actually just move the open mic in front of, uh, Ed's DTN talk.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just because I think it'll be shorter.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "And I just want to give DTN the time it needs to to, uh, take us where the discussion wants to go.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so after the normal administrivia and the open mic, we're going to have, uh, Edward Breen of the.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "I hope I pronounced that correctly of the working group.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, he's the new chair there, and he's going to, um, repeating the the experience of our, uh, presentation last time.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to, um, highlight another, uh, less known part of that area and talk about DTN, which is pretty cool.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "It's got lots of deep space stuff, which I think is cool.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it's also a lot of interesting and challenging technical problems.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, looking forward to that talk.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Would anyone else like to bash the agenda?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Um, our most significant change, uh, I think, is that, um, as of yesterday, uh, in a somewhat bittersweet, uh, moment, uh, we're not saying goodbye to Magnus by any means.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "He's not going anywhere.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "But he will no longer be one of the area directors.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Magnus has, uh, done a total six years in the job, beginning in 2006, and just concluded a two year term.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it has been incredibly valuable to me to have somewhere that depth of experience, both as an ad and in the transport area and the ITF in general, because I, uh, uh, I'm not necessarily strong in that particular area.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "And just having his advice and his, his, his, uh, his wisdom on, on a number of matters has been invaluable to me.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, and, you know, I think he's done a lot of things for a lot of people in this, in this area.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the most notable achievement, probably, I think he would say his most notable achievement in this term was getting quick out the door just under the wire, um, which is, of course, an enormously consequential, uh, development, not just for transport area, but for the internet.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Um, And of course he's and of course Zaha is moving into that position.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "He's taking all of the working groups that Magnus had, except we are switching tram and our MCAT for reasons that aren't worth explaining and probably won't have any impact on anything, frankly, because those groups appear to be winding down.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, Magnus, any words you would like to to share with us?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you very much for those words.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "It's been two very interesting years, been intense with quick.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "But I, I also would like to really, I think if large accomplish has been to actually get the DTN core specs out, that's in some sense has taken more work from me as an Add and, and uh, a lot of Fournier issues with cross area relations because DTN, as you will see, is actually not just the transfer protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "It's the whole IDF squished into one working group in some sense for that particular problem.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "So it's it's a lot of challenging problems and, and security routing etc.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "all existing there.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "But you will learn more about that later.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "But so therefore actually is happy that we managed to get the first set of specs as standard struck out and that the working group can continue to work.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's been a number of other specs, but actually looking back, this two year term has been, from a document perspective, fairly light.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "And and um, we haven't we maybe got more through in some sense, but um, yeah, still it changes and and that's been noticeable also compared to my 2006, 2009 ten term.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "This it's another it's another IETF degree.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "You maybe not notice it when you're just looking here, but when you take this managerial role up, uh, you see a little bit more and you actually see what has changed, etc..",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "So I enjoy it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "But I'm gonna enjoy being back, uh, going back to doing maybe a little more technical work.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, also, the TSB is not gonna get rid of me because I'm back.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Was reviewing, and I'm gonna probably work a little bit more intensive to sign them documents.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "When to help out with in the triage position.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "And I hope every one of you will be happy.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Happy with that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "In in as a replacement I will as we are colleagues and work fairly close.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "I will be able to assist him quite a lot.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Done.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thanks for your work and your friendship.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, would you like to introduce yourself?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yes, I would, I, uh, so, so thanks, Magnus.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, Martin for having me here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "I need to be here to some extent.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so my name is John, but usually people call me, uh, short version of that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "So you can call me Jared.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I work at Ericsson, uh, particularly Ericsson research, especially with Magnus as colleague for like 13 years.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "So we have been doing a lot of work internally in additional research together.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then I live in Stockholm, Sweden.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that's it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Um, my entry in it is from 2008.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, after then I have been working on different working.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was PC and working group.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "That's where I first posted my draft.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then I worked on, um, WebRTC, um, and more like quick.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "And I have chat tabs, um, MCAT, uh, substantial work done in the MCAT.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, uh, internally, also, I have been working on different layers like application layer, transport layer and uh, radio layer.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "So I have some experience on mobile networks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Obviously I work for Ericsson.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that's that's it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that's who am I.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "And some of you might already know me.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I'm looking forward.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "I think I'm already getting, uh.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "So two things I did.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "One, I get a shirt from Magnus.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "He's not abandoning me.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "And the other thing is, like, I'm taking some of the stack that he has left.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, nice work done.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Great achievements.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Magnus.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully, um, I'll leave up to the expectation.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Welcome, Zion.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "I'm looking forward to, uh, to spending a couple of years with you.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "This will be.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "This will be fun.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Moving on.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here is a update of, um.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, of the working groups from across the area.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if there's anything that that my colleagues here would like to to highlight in particular, but I'll just give you a moment to look through that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "I will say that alto are rapidly approaching a recharter, uh, as is quick, for that matter.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "And so if you're interested in the overall direction of those groups, this is a good time to get involved in those.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I just also note that 793 bis, which is about as foundational as they come in terms of transparency documents, is is um, is in working group last call.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, obviously not a giant change the way TCP works, but something that most of us hold near and dear to our hearts.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So, Magnus, did we ship anything of consequence?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "This since 109, I can't remember.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Like, I think it's.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, it wasn't really much happening.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: No, only only only nine specifications.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "So that's new.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "And the fact is.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And the fact that we actually I mean, the first four of the quick documents, I do expect to within weeks, as I said yesterday in the plenary to it, it's it's there's nothing preventing it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "Just the editing time from the RFC editor here and then the office 48 and there's so there's no known, uh, issues before it's published.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "The quick HTP and specs, they're gonna be stuck behind the mishref in Hbss, but I expect it to come out within a few months.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they are making progress, and we're already working with a few back, so it's making progress.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So not only quick at DTN, which we've already spoken about the significance of that, but also cluster 38, the the the pile of MCAT documents that was stuck forever actually made it to RSC.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "So the queue is much smaller than it used to be.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Just a few things that are blocked because of some some down references.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Um, mainly from IPM.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So uh, good work everybody.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "This has been a very productive, um, interim between the two between IETF hundred and nine and today.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "So nice work.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "And I expect there's a few more of those documents that was from 309 is it's actually going to start moving aren't they.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they're some of the IPM documents still.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "And they I hope they are.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "NFS is not too far off either, but it's.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, and they're not in there 3 or 4 that are through ITF last call.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "They're just kind of dealing with some, some ISG issues and whatnot.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "So so we're, you know, we're really turning the crank pretty well here as an area.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "This is our, um, every meeting reminder that we have a TSV area review team, um, which greatly assists the ISG in reading documents from other areas and looking at them in transport lens and making sure they're not doing, um, stupid stuff from a transport perspective.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I invite you to contact, uh, Magnus or Wes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "I think Magnus is not listed here, but I think as of today, he's back on the TSV Art, or as of yesterday.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so you can you can contact Wes or Magnus if you're interested in participating.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's, uh, a good opportunity to learn a little bit what's going on elsewhere in the ITF outside transport area, and also helps us a lot, helps create good quality documents.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "And I think as you can see, that little number in parentheses is how many reviews they had to do since 109.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, you know, people reading 1 or 2 documents or in some cases zero documents and I would hope that that's not an incredibly onerous workload on people.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "So please, uh, you know, if there's something interests you, please contact either West or Magnus.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And thanks to our reviewers for for the good work that they've been doing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yep.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "So that's, um.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Can I stop sharing?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Ah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "So that concludes the administrivia.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "And I think we're going ahead and open it up for open mic.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "If anyone has any concerns, issues, questions about things in the area of any three of us, this would be the time to get in the queue.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, is a very content population out there.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Either that or asleep.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Um, where?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Most of us should be right now.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I think at this point we'll go ahead and hand off to, uh, Edward Barron, who is the DTN working Group chair, the newest one.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "And he is going to talk about this particular part of the area.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "So give me a moment as I figure out how to share my screen.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: There's a there's a share button in your in the upper left.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "There's a, there's a monitor with a line through it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "That's how you share your screen.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So I clicked, uh, share screen request.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "And I think I'm queued waiting, uh, to be given permission.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Oh, yes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "The UI is a little backwards from my intuition.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, there we go.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Now you're set.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: And, uh, are you seeing my screen?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, I'm seeing my screen.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, hi.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "My name is Ed Baran.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm from the Johns Hopkins University applied Physics Laboratory.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "I'm a co-chair of the DTN working group, along with, uh, Rick Taylor from Airbus Defence and Space.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "I wanted to spend a little bit of time today and talk about, uh, just sort of the general area of delay tolerant networking and then some of the things that we're doing in the working group.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "And I see a couple of familiar, uh, names, uh, in the, in the meeting and some people who had been working on DTN in the past as well.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "So that's good to see.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Can you go to full screen in your presentation?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Oh, sorry.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: If it works.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's gonna be easy for especially with your coming figures.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Oh, indeed.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "So?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "So what I wanted to do was give just sort of an overview of the history of DTN, how we got here, how we came to understand the problems, how it came into IETF.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "And then in particular, as Magnus said before, DTN is a large, uh, and sort of, uh, cross area, um, set of concerns.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "But I wanted to then focus a little bit on how the bundle protocol, in particular the bundle protocol version seven operates.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "It really is the the transport protocol for DTN.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "And the thing that has, you know, a lot of the attention with the addition of how to secure that protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "And then lastly, I have there are many case studies on the value of DTN in certain environments.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And I picked, uh, one related to NASA, uh, optical communications.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so if we talk a little bit about a brief history, the we have some URLs in the top right here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "If you go to NASA.gov, uh, they have a couple of pages associated with why NASA cares about this.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "But as we sometimes like to say with DTN, it came from outer space.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "You know, there was an initial desire to move from this very point to point, uh, link, uh, scenario, which is what we have for the most part now, uh, in deep space, where individual space agencies build their entire direct to earth infrastructure when they land, um, on, uh, on Mars, when they start landing on the moon, uh, when they start putting orbiters, uh, and other deep space assets into space.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "And how do we get to a point where we get to some sort of, you know, deeply, richly, uh, networked model of, of spacecraft?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Could we get to a point where landers are only carrying enough radio, uh, to get up to an orbiter and can rely on, uh, a network to give them that multi-hop, uh, back, and in particular with the nonlinearities of transmission, adding those hops where you can get to a more resource node actually can increase the data rates while reducing size, weight and power on landers.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "And so there's there's really a significant desire to get to that point.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So when when space agencies in general and NASA in particular started looking through this, they said, well, there are a couple of do's and do not's that we think we need here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, certainly there were a few do nots, uh, which are we can't always assume that a path, an end to end path exists all at once.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you're a lander and the orbiter isn't, uh, overhead, then you can't talk to it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "If the orbiter is overhead but you don't have line of sight back to Earth, you can't talk to ground.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you therefore also given long, uh, light, uh, round trip delays and just generally the resource constrained nature of some of these devices.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "You also don't always have the ability to keep end states, uh, at, at the lander, down to ground station and so on.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "And certainly because of those first two things.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "If you do have to do retransmissions, you don't want to retransmit from the original message source because it's hard enough to get through the network, and starting all over again from scratch makes that more difficult.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you you do want to store data?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, sometimes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Clearly for milliseconds.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, sometimes for days, depending on when you get passes and when you can get dishes on Earth to point to things.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and because you might not have, uh, end state information at end points, session information at end points, you may want to increase the amount of annotated metadata that you take with you in your messages, either encoded in payloads, but from the networking layer also included as extra secondary headers in the message itself.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "And then came the question of well, if we do that from a transport perspective, then how do we secure things?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Now, obviously we know we can't rely solely on physical layer security.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but if you are in in this sort of top picture of point to point links Without really a networking model, there tends to be an overreliance on that kind of security.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if we have annotative metadata added as secondary headers in a packet in a bundles, as we'll come to see, does that change how we secure things?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then how do we make sure that while we are storing things for milliseconds or days, that they are secured?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And then there were other questions about how much autonomy goes into network management and how do we do routing with time variant graphs and so on.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "And when we started asking those kinds of questions, then the the, the first thing you do is you say, well, what what do we currently have and what can we currently reuse?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "We certainly don't want to make a new thing, uh, just because and and there were sort of two driving, uh, concerns that came out of, uh, you know, everything we just talked about.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the first was delay, and the second was, uh, disruption.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "And the delay case is, you know, fairly clear, you know, if, uh, if we look at this particular illustration where we have, you know, some number of nodes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Nodes one, two, three and four on the vertical with some notion of time on the horizontal.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "And if, if blue here or the shaded area represents connectivity between the nodes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "If you have a data volume which we call D1 and it has to wait for an end to end node one to node four, uh, path uh to exist all at once.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "It may be waiting for a very long time, and it may be waiting for long enough that by the time that transmit opportunity comes, there's another data volume which would be in contention, uh, with that, that same end to end path.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "And if, of course, we can take advantage of sooner, uh, hops, uh, than waiting for an end to end path, then the ability to, uh, exfiltrate data off of a particular platform sooner, uh, you know, for certainly for resource constrained devices allows you to get data off your platform so that you can free up storage and take new observations.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but it also means these kinds of link opportunities don't become wasted in the network.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "The other observation was disruptions.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "And what happens when we have frequent enough disruptions that the disruptions are not considered strange cases to recover from, but they actually represent the normal operation of the network as you have it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So if we look at a standard, you know, you know, session establishment, uh, con op where we take some amount of time to synchronize on information, we do data exchange and keep sessions alive.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "We do some cleanup at the end, you know, if there's negligible disruption, it's all handled as part of just the minor jitter in the network.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you get infrequent disruptions of significant length, uh, this this graphic isn't meant to imply that packets are actually exploding, but if we sort of lose, uh, and time out, we may have to reestablish sessions.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Or if the session itself collapses, we may have to re-establish sessions, and there's an implied focus here on if we can just wait out the storm, then we can go back to normal operations.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, of course, if the disruptions are regular enough, uh, and infrequent and perhaps even unplanned, uh, then it becomes a lot harder to do that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "And so the, the overall area of DTN, uh, started, uh, as delay tolerant networking, it sort of morphed into disruption tolerant networking.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And it again, was this, uh, migration from, you know, what would a solar system internet or an interplanetary internet look like, uh, 30, 50 years into the future?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "And what can we do now just to get little bits of it?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that concept, uh, doesn't look dramatically different than, uh, local sensor networks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so instead of an orbiter over a lander on a planetary surface, uh, you may have a data mule, maybe a UAV or or a car or a bus going by and collecting sensor nodes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe you have a satellite, a Satcom backhaul, or maybe something else.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And so if the problems on the left are mostly delay, the problems on the right might actually be more disruption.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "So then if we said that was some of the statement of problem, uh, what could we start doing, uh, to solve all of this.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "So, so, uh, started looking at a couple of things related to, uh, you know, existing protocols.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Can we, uh, pick up and reuse, uh, IP about 15?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "I think at this point, 15 years ago, there was a lot of discussion of whether a NASA should be baselining IP for their, um, for their deep space, uh, networking aspirations.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they started looking at the kind of things that are just sort of generally considered useful, uh, on the internet today.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a couple of them are here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sure that the people in the audience know and can come up with many more suggestions than the couple of bullets here, but the idea of of caching and pushing information, uh, and not, you know, relying on sessions if you don't have to or not having to rely on nested sessions and things of that nature.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "But a lot of this came down to the observation, again, that we don't have infinite access to bandwidth.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "And as silly as that sounds, if you are, if you are wholly in control of the construction of your purpose built network, then there is a sense that you can build it and resource it enough for the data that's coming through.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, whether whether that actually tends to be true over the entire lifetime of the network and whether that remains true as you try and federate other networks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "You know that that tends to be the we need to think ten, 15 years into the future.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "So, so being able to go to, uh, missions and be able to go to those who build their own networks and say, you cannot just assume that you will solve these problems by having, you know, relatively infinite access to bandwidth, Even when you do in the moment, you're going to have to prioritize.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "You're going to want to look at whether or not your protocols are making good use of these, of your bandwidth.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "When you federate, you're going to need to worry about untrusted infrastructure.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "So DTN came back as specific solutions to some of the problems.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "And if you look to the right here again you see another concept of of how, uh, folks would measure what they would call the the latency of, of um, of an IP network, where latency here includes the wait for the end to end path versus what folks would call the DTN latency, which is the time essentially to get data off the platform.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then, uh, when we started looking at, uh, not just waiting for the end to end path, but the asymmetry of of the likely, uh, links where you may have, uh, very, very small, uh, for example, very small uplinks, but very large Downlinks again, going back to the space cases where an orbiter may have a much larger dish, more power and be able to send data down to a lander or back to Earth significantly faster than a lander could otherwise, you know, upload it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "But there are, again, a couple of features that you need.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "You need to be able to send data without knowing if the end state destination is online or not.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "You don't want to start retransmissions back from the beginning, partially because of the, uh, the disconnected nature of these networks and partially because of the significant asymmetries of of the uplinks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you uplink something and it gets somewhere, that's great, you don't want to then take that precious, uh, low rate uplink and use it for the retransmissions if you can avoid it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "And again, we talked a little bit about the this concept of bundling annotated data, uh, with your payloads.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you do that, uh, then your endpoints perhaps don't need to remember very much session information or special states and all of all of this sort of boils down into what?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "You know, started to look like familiar features and other areas like asynchronous text messaging or email.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the interesting observation from the DTN perspective is, how do we get that down into a package that is, uh, small and efficient enough that it could run on very resource constrained devices?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "So what then came out of that was a description of of DTN as a suite of protocols and applications.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "And and this is what is considered, uh, right now to be sort of the core set of concerns that, uh, that are being addressed.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Now, the, the four major, uh, protocols that are on the right are, uh, just so happen to be the four documents, uh, three of which, uh, have have gone out, uh, for, um, standards, I think are waiting on a, a href, a missing reference and then a third related to security.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "And these are the bundle protocol BP version seven.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and that is the main transport protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "That is the protocol that allows for these, uh, extension headers for carrying additional information and the behavior around store and forward operations.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a security protocol for securing, uh, the bundle, in particular, the ability to handle, uh, and secure payloads, uh, separately from some of the secondary headers, uh, some context security context to provide, um, information around how that security information and the cryptographic materials therein should be handled.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "And then, uh, because BP is, is is considered an overlay, uh, how it, it, it maps to, uh, the underlays that are carrying it and in particular, uh, out of the working group, the first convergence layer is a TCP convergence layer.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Certainly not to imply that in the space cases we're using TCP for communication.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but there are plenty of terrestrial uses of DTN that care about disruption, but otherwise don't have long signal propagation delays.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "But then there are other things that are that are waiting and progressing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "And those include, uh, work on quality of service, uh, time variant, uh, graph routing, uh, in particular, the Ccsds is working through something called schedule aware bundle routing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and there is additional work on what it means to do key management in these kinds of very disconnected networks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, a look at, uh, network management, uh, from a, from to include more, uh, deterministic autonomy, uh, in the system, which is the asynchronous management protocol or AMP, uh, things that are not particularly considered part of the ecosystem are higher level user applications, uh, you know, delay tolerant file transfer or messaging or that sort of thing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then the underlying transport mechanisms beyond how we talk about them in the convergence layers are also things that aren't considered part of that suite.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "So we start we've talked quite a bit about the NASA and the space part of the problem.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "You know DTN has the the focus on DTN included many different folks over time.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, my my understanding of the history is it started, uh, with NASA's, uh, concerns about interplanetary networking.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, DARPA picked it up for several years, uh, and worried about what it means in highly disrupted environments.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "The Ccsds, uh, the Consultative Committee for Space Data Systems, uh, looked at and started doing some initial standardizations specific to space, and then it came into the Irtf and the IETF, uh, a DTN research group was formed in 2002, uh, that was chaired by Kevin Fall and yogurt and uh, its initial charter, uh, pulled from the initial charter which you can see from I.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Org included DTE energy was the observation that non-interactive asynchronous messaging was important, and not only is it important in these space cases, but there are lots of different networks where this would be useful.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "The Irtf the produce 14 rfc's for that were notable.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "They were all notable.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Before that were fundamental were a DTN architecture.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "RFC 4838, the Bundle Protocol, version six um and Initial Security Protocol, and an initial TCP convergence layer in 2014.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, after.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "After some experimental deployments and field tests and lessons learned, uh a working group was formed to standardize this, and that was at IETF 91.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "And the initial charter, uh, large parts of the initial charter were to take this work from the, uh, from the irtf and the lessons learned from field deployments and then, uh, update these different documents.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "And so, you know, update RFC 5050, which was bundle protocol version six, update 6257, the security protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "You know, provide a convergence layer RFC update to TCP.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "And that's what we've done.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why they mentioned we're going into our rechartering, uh, discussions now.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so the the ones that are in the editors queue, uh, bundle protocol seven security and TCP version four, and then another that's in AD evaluation, which is a security context to work with, uh, the security protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "So if we speak just a little bit about, uh, the bundle protocol, and, you know, the first question always is where does it live?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "And sometimes the answer is wherever you would like it to live.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and if you were to go out and pull images off the internet, as I did to create this slide, uh, you'll see a couple of different versions of this, but generally a bundle, uh, bundle agent or a forwarder is something that that lives in an overlay overlaying, uh, and speaking through its convergence layers.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "The value of that, of course, is that a BP instance can go over different underlying networks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "And so just like for internet transfers and what hopefully is a very familiar, um, simplification of of TCP IP networking where you don't need to, of course, you know, terminate TCP at every node.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and TCP talks end to end.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "If we put a bundle layer in place, the bundle layer, uh, has the ability to do some storage because it is a store and forward network, but also it can sit over various convergence layers to include the point where perhaps you you move away from TCP and into something else, uh, for, you know, a to bridge a TCP part of the network with a non TCP part of the network.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the bundle itself, uh, is considered a bundle of blocks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so everything is termed a block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is a primary block, which of course is a primary header.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "There is a payload block which is a payload, and then there are a series of extension blocks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "And you can have sort of any number of those.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the the primary block has standard, uh, primary header things in it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "It identifies the bundle and particular processing options.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "It says adds routing information here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "That just means that it has sort of source and destination, uh, information in it, as well as something called report to address, uh, to send administrative or other statuses, uh, as, as you work your way through the network, uh, these optional blocks, uh, extension blocks, you can have zero of them, you can have more, uh, and they are what carries additional annotated data, either annotated data for the payload or annotated data for the network, like what was your previous hop.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "And then the payload of course is is the payload.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "And payloads can be full payloads or payloads can be marked as fragments of some prior payload.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "If we look at the extension block mechanism in BP.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "One of the things that's interesting about it, of course, is that you can define and the protocol is structured to allow for the creation of of new extension blocks over time, and also for nodes that are doing processing to read these extension blocks, do whatever processing is necessary and maybe even, uh, write back or update those extension blocks or add new ones.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "So it is not necessarily the case that the originator of a bundle is the only bundle agent that would add an extension block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Obviously, I just mentioned before something called the prior hop block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that's something that's added by a prior hop.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So you could accept a bundle in, uh, look at the prior hop block that is there, remove it, add your own and send it along the way.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "And again, this is part of getting to that operational concept of not relying on state existing end to end, but being able to update it in the network as you go.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "And that's essentially what we talk about here.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "The value, of course, is that if if you're able to synchronize state, end to end and end to end could mean truly message end to end or maybe source to some initial gateway or something else, then you can make your messages smaller and just simply refer to sessions as you um, or session state that's that's synchronized along the way.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you can't rely on this, then you need to carry all of that information with you.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that that is probably one of sort of the key insights, uh, behind bundle protocol, the need to store the data, waiting for a time variant path, and this idea that you can't always rely on your endpoints to tell you what you need, and you can't always rely on your destination to know everything it needs to know to process you, uh, from that perspective.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Again, we talked about primary blocks and payload blocks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "What's interesting in Bppv seven is that the primary block is is immutable.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "So it can be signed by the, uh, by the bundle source.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "And um, and it should remain unchanged through the network, uh, unless it is fragmented, in which case new new bundle fragments are created.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "But that's not the original bundle.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "That's a fragment.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then, you know, the payload block, it's always the the last block in a bundle.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the original BP version six had some ideas of extension blocks before payload and extension blocks after payload to help with the, uh, the the understanding of very large bundles.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but we didn't see the need to carry that forward in BP version seven.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "And then the extension blocks in general, which are the ones that live between the primary block and the payload block, have some standard information in them.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "What is the type, uh, what is the unique identifier of the block if if you have more than one block of the same type existing in a bundle, and then, are there interesting, uh, processing options associated with those blocks?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "So for example, uh, because extension block types can be added to over time, you may, uh, you may find that not every bundle agent in a network understands every block type.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "And so there are options here that say things like, uh, if you understand this block type, process it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "But if you don't understand this block type, just pass it along quietly.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Or if you don't understand the block type, then that's a problem.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "And remove that block from the bundle before you pass it along.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Or if you don't understand the block type, that's a big problem and get rid of the entire bundle and process it no further, or perhaps hold it off to the side for forensic analysis.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, within the Bppv seven spec itself, uh, we, uh, define a couple of blocks, uh, that are useful, uh, we think are generally useful and need to be supported.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the three of them, uh, here the, uh, the the again the the previous hop block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "The previous node block, which is the information associated with the last transmitter of the bundle.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a bundle age block which carries the sort of accumulating milliseconds from the time the bundle was created until it was last forwarded.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is particularly helpful for devices that themselves have, uh, can keep relative time but have difficulty keeping absolute time.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then, uh, a for, for areas where, you know, hop count is still a very useful thing, even in a delay tolerant network for, for to avoid routing loops and things like that, particularly in time variant graphs, uh, carrying hop counts and hop limits, uh, may also be, you know, necessary in the network.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "And then, uh, there's another set of specifications, uh, called the BP or the bundle protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Security protocol, uh, which uses two additional blocks to carry integrity and confidentiality information.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll talk about those a little more in just a moment.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, which is right now, because it's a little more about security.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "So when we then asked ourselves if we don't necessarily, you know, have session end to end session information and we have this additional metadata, what do we do?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there were a couple of design decisions associated with a security protocol specific to to bundle protocol.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the first was if we're having different kinds of information in a bundle than having block level granularity, uh, is going to become important because now information that normally would be in different payloads is now in a single bundle.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "And we may have to treat that differently.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Perhaps we want to sign an extension block with metadata or sign the primary block, but encrypted payload.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "And those are two different things that may have to coexist in a single PDU.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, separately, if we accept that different nodes in a network could add extension blocks as we go, like with the prior, uh, pop, uh, extension block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Well, then, uh, the node that adds a block may have to secure that block.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "And that's different than the node that created the bundle itself.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "So there are different sources of security in a PDU.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "And then of course, because of those first two things, you will have different security policies.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if if you have different security sources in the network, they will probably have different identifications.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "They might be using different cipher suites.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or if they're using the same cipher suite, they will probably have different keys or other cryptographic material associated with those cipher suites.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to that end, uh, different cipher suites and sets of cryptographic materials are active in the system.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and if you take all of those four things, uh, you then need to come back and say, there must exist, uh, some, some, some limitations and constraints on this so that we can deterministically process all of this and not wonder about who did what, in what order, in ways that we can't back it out and back it out in a forensically recreatable way.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so to that end, uh, the the security protocol uses the extension mechanisms in BP for the security of information in BP.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, to that end, we define two, uh, extension blocks related to security, a block integrity block for integrity services and a block confidentiality block for confidentiality services.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, block integrity is defined here as, uh, essentially an integrity mechanism over plaintext.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for if, for example, you're using, uh, signing as your integrity mechanism, then you can sign plaintext and you can sign multiple blocks at once and it can carry that long.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "And there there are some constraints associated with not having circular references.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "If you if you use bibs and bcb's, uh, for security and bibs can target bcb's which can target bibs which can target bcb's.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "That's something you want to avoid.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "So we had to put some, some, some constraints there.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "And then a confidentiality block is defined as confidentiality on the plaintext and integrity over the ciphertext.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "What that means is any cipher suite used for the application of confidentiality.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "It really must be an AAD cipher suite.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "It needs to carry with it, you know, you know, additional authentication data.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and it uh, to to include being able to do things like cryptographically bind blocks into a bundle so that, for example, you could include the primary block of the bundle, uh, as part of the authenticated data, along with, uh, the ciphertext that's created when you create, for example, a signature, uh, if, if we then sort of look through the, the security considerations, uh, unique to Dtns, there are certainly a lot of them, uh, obviously with any kind of store and forward network, there's a lot of concern about, uh, person in the middle attacks, um, clearly eavesdropping and working on things, uh, out of band and offline.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "The concern.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, when you have blocks that are added and removed from a bundle, you worry about modification and replay and then anything that's time variant.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "There are concerns about, you know, topology attacks as well.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "So for those who are interested in this, uh, there is a, uh, good security analysis of this in the document itself under Security considerations, where we talk through what we can, uh, handle in inside of the bundle itself, and then what can't be handled from a security perspective solely inside of the bundle and would need to be taken, uh, more out of band in the network, but not in a particular bundle itself.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the last thing I wanted to mention on the security side is, you know, when would you use, uh, the BPF protocol?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "So it is not something that needs to be used all the time.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "And it depends, of course, on the security you're trying to, to create.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "So if you want security at rest, then having the security as part of the protocol data unit itself certainly helps with that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it is nice to say that, you know, some of the blocks inside of a bundle are themselves encrypted by the network, and if the network's going to store this persistently for hours and days, then that security persists and you don't have to decrypt a bundle coming out of a secure, um, you know, tunnel and then re-encrypt it for, for storing it, uh, locally and then decrypt it off of the local, uh, drive, uh, and then re-encrypt it for pushing it down the next tunnel so you can save some of that, um, if you need that kind of security at rest.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Um, interestingly, obviously, we think that applications will provide, uh, encrypted payloads when the applications feel that that is necessary.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "But then all of the additional, um, uh, extension blocks and other network information itself will need to be encrypted.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "And then, of course, the underlying convergence layers, we also assume to provide security.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "But since the convergence layers may change as the bundle works its way through the network, then, um, you know, then again, having security within the bundle itself is a useful thing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other interesting, uh, observation is that there are probably some, some, uh, different ways of using this that may be interesting to certain, um, security operational concepts, uh, namely, if you're trying to create secure tunnels in, in networks, but they may want to overlap, uh, if you use security solely as encapsulating the entirety of a bundle in ways that don't, uh, don't secure extension blocks and payloads separately.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then it's all or nothing for things that are in a tunnel.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "However, if you wanted, because you're carrying different information to have, for example, uh, integrity over a primary block from the beginning to an end of a of a transmission, end to end, uh, perhaps confidentiality, uh, For some subset, some other kind of confidentiality.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "For another subset of the network, this becomes impossible to do if if everything is treated the same within the PDU.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "However, if you look at this block by block and not PDU by PDU, you can start getting that kind of behavior.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then the last thing is just, you know, there are many, many, uh, studies on, uh, how store and forward in general and bundle protocol in particular, uh, is useful in challenging environments and how we get data through, uh, here's, here's a one from 2014, uh, called the Lunar Laser Communication Demonstration, uh, that NASA had had run.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "And it was, uh, just to to show the value of optical communication and how how we are proceeding, uh, at that time, uh, while many of us probably understand the value of that, you know, the certainly the driving value here is that, you know, a NASA 34 meter antenna using 20kW of power can get about 8.3 eirp.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "A lunar lasercom terminal, which is about ten centimetres, using about a half a watt of power, can get the same eirp, and that's just really motivating.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so there was a DTN demo that was done, uh, in this way.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it was using um, DTN up to and through, uh, so bent piping, uh, through the lunar link.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think that was actually, uh, on the spacecraft itself.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but it was, um, it was, um, providing the actual data of handling when that link went up and down.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "And one of the things that they found, uh, in particular, was one of the limiters of, of getting the data through, uh, particularly back, particularly back to Earth or up to the spacecraft initially was clouds.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "You know, what they called the all natural Lasercom link limiter.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, what they found was that, you know, DTN worked, you know, just as it was supposed to.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, when when things were good, uh, delivery, uh, went through, uh, just as it expected.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, bundles were sent.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "That's the blue bundles were received back again, uh, when the link went down, uh, then they didn't get any of the receptions.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "However, uh, once the link started to come back up, the data started to trickle in.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "And what was nice about it is this, this essential recovery period here was not swamped with control information, trying to reestablish a sense of, uh, of session, thereby losing, uh, you know, the data opportunities to control information.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a little bit of control could be an extension blocks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "But then the rest was coming in as data.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "And they found that this period of recovery versus other things that they had experimented with got more of the user data down faster, uh, increased their goodput.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and for those reasons, uh, NASA came back and said, you know, we really need this technology for anytime we're doing, you know, these kinds of operations.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, and then essentially there were also things here where just from optical to RF, uh, rate buffering was considered valuable to them as well.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "So, so that was my last slide.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's a little bit about the history of DTN.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "It came from outer space, but it has application to, um, any kind of disruption, certainly link disruption, but also sometimes prioritization.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Prioritization and disruption around administrative boundaries.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we've pushed out transport and security protocols.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "We're looking at, um, other topics right now.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "And if you're interested, please come and see us in the working group.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Well, thanks, Edward.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "That was, uh, really interesting and I think really cool.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I'm, I'm like a kid when I, when I hear about this stuff.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if any of you are super energized now to go be a part of BTN.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "You have to wait about three hours.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the third session.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Um, today is, uh, DTN is having their their meeting.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "It's 410.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Let's open up the queue for for questions.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "I see a lot of positive comments in the in the jabber, but no one wants to come to the mic.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, uh, I have a question.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, just because, like, you know, here at the ad level, we're working on creating, uh, a little more press about what TSB is doing.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and also because I'm personally interested, like what has like to what extent has this been deployed, like, I mean, obviously V7 is pretty new.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and, you know, you just showed this demo here, but like, are any like are any probes or anything that have gone out, use this or an earlier version of DTN technology.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So?",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, yes and no.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next question.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "So the yes and no.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "The, um, the the issue, particularly on the space side, is, uh, early in mission formulation.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you you really need to have the standards set.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and so there is, uh, we are we are quite and keenly aware of some of the pressure to make sure that bundle protocol version seven is out and out in, in a timely fashion because, uh, it is necessary to have that RFC so that it can be put into contracts, uh, and requirements for missions and missions won't adopt it until, however, bundle protocol version six, RFC 5050, for a similar reason, was taken and standardized by the Ccsds, uh, the Consultative Committee for Space Data Systems as as a Blue book.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "And once that happened, missions did adopt it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "So NASA Goddard has a large mission.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's $1 billion mission called Pace Plankton aerosol, uh, something and uh, it will be using bundle protocol version six.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "And what's interesting there is by using one on a spacecraft.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "And this is not necessarily for delay and disruption but just efficiency.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can have a file system and you can worry about writing to files and doing garbage collection in file systems and so on.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Or if you know, you're going to create persistent data and, uh, you can put it in a bundle and it only needs to be persisted so that it can be sent, you're not going to open it and do surgery on it and save it again.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you you don't need the complexity of a file system to do all of that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "And so you you can have a little more efficient processing if you have a bundle store instead of a file system.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "So I, I'm really anxious to see whether missions start seeing those kinds of benefits as they go through their deployments.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "But it will fly on pace.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we're also going to here in the DTN working group about an ESA, uh, European Space Agency, a project called Ops-sat, which will be flying both bundle protocol version six and bundle protocol version seven.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and we also have uh, several uh, industry folks who have non-space case uses of DTN, although, uh, they, they keep some of that, uh, private until they're ready to, you know, release their, you know, products and results and so on.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: That's cool.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "I, I would like to thank Ed also for this presentation because taking on DTN, this was like really, really a crash course for me.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "I.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Really liked it.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Ah ah a secret agenda was to just save a bunch of reading and I think we succeeded at that.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think, I think we should do this for other working groups as well.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Nfsv4 next up.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, so, um, I guess, well, so we're, you know, this was supposed.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "We asked for an hour session.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "We got two hours.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "So I guess a lot of you are going to have another hour and gather.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we really hope that you have.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Again, thank thanks.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks to Edward for this talk, which I found super interesting, even though I don't have to read all the docs.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, um, I hope that the rest of your 110 is productive.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "We'll see you at 111.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, hopefully, uh, again, Zaha and I will be gathered out of town, um, a lot if you want to hit us up about any particular issues more privately.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, have a good rest of your meeting and see you in San Francisco with a little bit of hope.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Bye, everyone.",
+            "confidence": 0.9907604282022886
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Bye bye bye.",
+            "confidence": 0.9907604282022886
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T19:54:08.793025+00:00",
+          "processed_at": "2026-01-23T19:54:08.793025+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "r671tnklrp"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9907604282022886
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

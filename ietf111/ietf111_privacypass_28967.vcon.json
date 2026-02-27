@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "097bf357-8769-4c45-8c04-2dfbab9a5f7a",
   "created_at": "2026-01-03T19:30:45.185521",
-  "updated_at": "2026-01-03T19:30:49.670911",
+  "updated_at": "2026-01-27T13:31:54.822326+00:00",
   "subject": "IETF 111 - PRIVACYPASS Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=3ng2JsM1gCM",
       "meta": {
         "ietf_meeting": 111,
         "working_group": "privacypass"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 111,
         "location": "Online, US",
@@ -50,10 +49,10 @@
         "start_time": "2021-07-26T21:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "privacypass",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/agenda-111-privacypass",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/bluesheets-111-privacypass-202107301430",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/minutes-111-privacypass",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-privacypass-chair-slides",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-privacypass-privacypass-updates",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-privacypass-summary-from-anonymous-credentials-meeting",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-privacypass-adding-public-metadata",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/agenda/privacypass/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-111-privacypass",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8651,6 +8651,3841 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: We should get started. Um, since it's, uh, time, uh, this is privacy pass. Your chairs are Joe Soloway and Ben Schwartz. Um. I can get my slides to advance here. Uh, by this time on Friday, you should probably all be familiar with the know. Well, which kind of describes your obligations with respect to contribution and participation within the IETF. Um, I'll leave it up here for a brief second. More, if you're not familiar with it, you can always go to the IETF website and look at it. Okay. Uh, we have a minute, taker. We can monitor jabber, but if somebody there's important points raised in jabber, somebody can bring those to the mic if chairs don't get to it. Um, we have no blue sheets to sign because this is a virtual meeting. Uh, when you're speaking, please state your name so the note taker can easily, uh, capture that information and always, uh, keep the discussions professional. Uh, on the agenda today, we have a present presentation on the document update, um, a summary from the second anonymous credentials meeting and then a section on adding public metadata to the privacy pass. Um, does anybody have anything that they would like to add or update on this agenda? Chris.\nSPEAKER S2: Yeah. If if possible, could we swap the last two? Um. Uh, I think the public metadata is more important than the meeting update. And, uh, in the rare case that we run out of time, be better. I think if we spent the time on that.\nSPEAKER S1: I'm okay with that. Are there any objections? Uh. Okay. We'll switch those two. All right. Uh, so for the presenters, um, I'm happy to run the slides. I have it set up here, but then you have to kind of tell me to advance the slides. I don't charge for that service, but, um, if you would prefer to run your slides yourself, then, uh, we can do that as well. So I think, Steven, your first up, um, would you like me to run the slides for you?\nSPEAKER S3: Uh, I can just run them myself if it's easy enough. Okay. Ready for the first one? Uh, so I'm Steven. Well, I'm going to quickly go over the current status of the various privacy pass documents, open issues, and what the next steps are based on our charter. Um, as a reminder, the privacy pass drafts are split up into three major drafts. There's the protocol draft, which talks about the cryptographic primitives and the, uh, methods that we expose. There's the architecture doc that talks more about the ecosystem and is built on top of the protocol draft. And then there's a sample http API draft, which is the HTTP implementation of the architecture. And all of these is is built on top of various crypto primitives. Currently, the VF draft is the main one we support, though there's been some discussion about other constructions that could possibly fit into this whole. Um, so since last meeting, we've had a couple of closed issues. The major one was adding redemption context with based on the presentation at ITF 110, uh, which basically adds to the architecture doc some discussion of how to, uh, view privacy boundaries during redemption time to allow for more, um, issuers to be in the ecosystem. And then there has also been a minor fix to some of the TLS syntax in the protocol draft. In terms of the open issues for the protocol, the one major open issue is how to refactor the flow to better support how the inputs and outputs have been updated in the CFG draft. and what the tag and info being exposed is there. Um, this should be fairly minor and isn't too contentious. Uh, in the architecture draft, we have a number of additional open issues. Um, there's one about trying to figure out how much to discuss about malicious issuers in the ecosystem and what the architecture draft should say about that. Um, if people have thoughts on the scope there, uh, responding on that issue might be useful. Uh, there's some information about what to expose in terms of a server's configuration in the key server configurations. And there's a balance between how much we specify in the architecture draft versus leaving it up to each individual use case, and each individual application that's built on top of this. Uh, there's an open issue about centralization. Uh, there's a draft by Clayton that I think might be currently expired that discusses the centralization issue. Um, we should see whether we want to bring that into the Into Privacy Pass or include as part of the architecture draft. I think Mark's in the queue.\nSPEAKER S4: Yeah. Mark McFadden.\nSPEAKER S5: Um, thanks for noting that that document has been updated. Uh, and the update, uh, was an attempt to try to describe, um, what goes on in redemption contexts, in the context of of centralization. I think, um, it'll be useful to work with Steven to sort of talk that out. I think it needs to be a better section, but it, um, uh, it has been updated to reflect the, uh, the conversation we had at the last meeting.\nSPEAKER S3: Cool. Um, so I think one question here is what, uh, what we want to do to update the architecture draft to point at that doc or what they like. Relative status of these stocks should be, um, and then there's an open issue, uh, an open issue about what we expose to proxy verifiers, which is one of the modes that runs in the architecture draft. I think just coming up with like some like, threat model of what a proxy verifier should see versus the other constructions. Uh, and I think that's fairly straightforward. The other one is once we've made all these updates, we should update the privacy calculations to take into account, like any discussion from the centralization doc, the redemption mode and things like metadata, which we have a separate discussion about coming up. The other chunk of open issues is around supporting other constructions beyond just vp-fs. There's number 40, which is about public liability, um, which are tokens that can be verified without needing to be the issuer. Um, and I think there are a few constructions that people have been talking about in that space. There was private metadata variants, which I think is going to be talking about the various metadata constructions as part of that discussion. Um, and then there's the larger overhaul of how we should reformat the protocol to either abstract away the crypto schemes beneath it that Chris Woods has been, uh, writing up. Um, this is PR number 79, and the general concept is adding additional abstraction layer so that the protocol exposed by Privacy Pass is very generic and treats all the messages as arbitrary blobs. And any new construction we want to support defines its own internal functions and structures. Uh, and this should hopefully simplify some of the, uh, changes necessary on the high level protocol. Um, and makes adding these new constructions easier. It is a fairly radical shift from what is currently in the docs, so we probably want to see what people's thoughts on that are. Um. Other updates are we have a charter timeline that we came up with about a year ago, which is very out of date and has deadlines that we've missed. Mostly we were hoping to get things done by February 2021. Um, and then get some of the application layer things done in the summer. Um, we'll probably want to update the charter timeline. Uh, one proposal is based on the current status of the core protocol doc trying to aim for IETF 112 to get that cut with the construction, um, then updating the architecture draft based on the open issues that are currently there. And assuming there's not too many more open issues that show up, hopefully IETF 113 would be a good timeline. Um, and then the other two, uh, charter items pushed on IETF beyond that, since those build up on knitting the knitting, the architecture draft to be finished, and the protocol to be semifinalist, at least for the main construction. There's also a question of what additional constructions we want to be supporting in the working group beyond the draft, or if we don't and want to leave that as a separate item. Um, so the general open questions currently are whether we should do the refactor that Chris has proposed for the adding the abstraction, uh, whether this updated charter timeline looks reasonable or what would a reasonable charter timeline look like and what metadata support should be in the draft, which we should discuss after Sophia's presentation.\nSPEAKER S4: Thank you. Stephen. Uh, let's go to comments on those, uh, first two topics, uh, and also on the status of Mark McFadden centralization draft. Ben.\nSPEAKER S6: Uh, thanks. so. I take this in the chat, but I figured it might be worth asking since it's either one of the open questions. But whenever whenever we're thinking about adding this abstraction layer to cover up many possible constructions that we could use to achieve the properties we want, there's always the risk that we get the abstraction wrong. And so I know we have quite a few things that were listed actually. We've got the and we've got the blinding and bells and whatnot. So it's pretty reasonable that we, we have enough potential constructions that we can analyze the abstraction. But that's sort of the big aspect of the open question there to me. And maybe Chris can answer.\nSPEAKER S4: Chris would.\nSPEAKER S2: Uh, yeah, I can just reply it. Yeah. Basically the the PR came from, uh, the observation that the abstraction was wrong, as is, um, uh, trying to add a construction that supports both verifiability specifically based on the blind or blind RSA signature scheme. Uh, it was it was incredibly, uh, difficult to take, uh, basically the wire format of that protocol and, and wrap it in the wire format for privacy pass. Um, and so rather than try to have, you know, some generic, uh, you know, some generic wire format that somehow magically works for all the constructions that we might potentially see in the future, be it BLS, be it some Schnorr based thing that potentially requires multiple rounds, what have you. It just seemed cleaner to to sort of wrap all of it, um, and sort of delegate the, the bits that are specific to the crypto construction, to the crypto construction and just have, you know, Privacy Pass be this very thin layer on top of, uh, those particular cryptographic protocols. Right.\nSPEAKER S6: Um, so we would still need to make sure that we can handle those multiple round trips if some of the constructions. Yeah.\nSPEAKER S2: And I think that's, that's the, the role of sort of the wrapper that is privacy pass to to to be able to like deal with things that are multiple round trips or deal with things that have um, perhaps different uh, uh, contents therein. So the, the specific challenge with RSA versus VWF is that VWF and the response from the server during issuance, you get back a bunch of evaluated elements and then a proof, um, uh, depending on whether or not it's a like a batch proof or, or or just like a single proof or a single evaluated element. But basically there's two things in that response. Whereas in the RSA case, it's just like a single blinded, uh, signed message.\nSPEAKER S6: Um, right.\nSPEAKER S2: And uh, um, uh, yeah. So I think, I think the proposal sort of, um, captures the right abstraction. Um, but it's currently just a draft. Um, certainly, uh, people who have thoughts on, you know, what the abstraction should be should take a look. But, um, I found that with this particular like RSA, like BLS was a lot easier. Um.\nSPEAKER S6: So it's promising.\nSPEAKER S2: That that that I hope is the, the just or is sufficient rationale, um, or reasoning as to why the PR exists.\nSPEAKER S6: Thanks.\nSPEAKER S4: Ben Schwartz. Uh, no. No. Chair had I have a question, is this does this propose to add a document anywhere? Does this create a new document?\nSPEAKER S2: Chris PR you mean.\nSPEAKER S4: Uh, I mean, this this refactor, um, which defines a uniform abstraction here. Does this add a document to our set?\nSPEAKER S2: No, no, no, no, um, it just, uh, so it just changes the existing protocol document.\nSPEAKER S4: Okay. Um, and does it rely on a CFG document to provide that abstraction.\nSPEAKER S2: Uh, yes. But that is not new in the sense that the particular, uh, like the VF construction or the VF, um, uh, instantiation, um, is already there. Um.\nSPEAKER S3: Yeah. I guess in the current PR, the VF, uh, like internal like data structure is included as a separate section in the protocol document.\nSPEAKER S2: Yeah. That's right.\nSPEAKER S4: Okay. Um, is there anyone who wants to to to make a comment, uh, proposing an alternative or supporting an alternative to Chris Woods proposal? Uh, it doesn't seem that anybody opposes your proposal. Uh, does anybody want to speak about charter timelines? Uh, Chris Patton.\nSPEAKER S7: Action is is the I is the consensus that will move forward with Chris's proposal.\nSPEAKER S4: Uh, so, uh, as chair, I would say it's not clear to me that this is something that needs working group consensus for, for for this change. It seems to me that this is in the hands of the editors. Uh, and as long as they, uh, you know, as long as there's no conflicting input, I think the editors can can proceed as they wish. Uh, to be honest, I'm not sure what the procedure is for updating a charter timeline. Um, but I will ask my co-chair and maybe our ad, and we'll think about that. It seems like, uh, if there's no other comments, we should move to the next segment. Oh.\nSPEAKER S8: I guess I have to.\nSPEAKER S4: We did, uh, we did have an agenda. Bash. So I believe the next segment about, uh, metadata.\nSPEAKER S1: Chris, are you going to present about metadata or was Sophia or.\nSPEAKER S2: I believe that's Sophie's presentation.\nSPEAKER S8: Okay. Should I start presenting?\nSPEAKER S1: Yeah. If you want to present, that's fine. If not, I can present either way.\nSPEAKER S9: Okay. Um.\nSPEAKER S8: There's no slides available here. Could you share the slides yourself? And I asked you to move them. Thank you. Okay. I'm just going to be waiting until they show up for me. Okay. I think that's good enough. And then if you scroll, that would be perfect. Okay. Okay. Um, so. Hi, everyone. My name is Sophia Kelly, and I'm a cryptography researcher at Cloudflare. Um, And I will. Today I was going to talk about how to add public, how a proposal on how to add public metadata to Privacy Pass. And if you want to actually take a more in-depth look at this proposal, there's already a PR against the base wraps. So if you want to check it out, please do so in that link. Next slide please. Okay. So basically what is the proposal? As I said in the title of the presentation is to add public metadata into the current, uh, as, as it is right now currently defined privacy path. And this proposal is built up in a paper that we published recently to the E-print. My coauthors are listed in this slide, and you can find it in that link if you are interested in reading more about it. Of course, there have been already other proposals that have been proposed, uh, on these sessions or can be found in the regular places. Um, there has been one proposal about how to add private metadata that can be found that place. Another one that came from, um, from Facebook on how to add public metadata by using a different construction that is called an attribute based view. Um, just to note again, this construction that I'm going to be presenting today deals with public metadata, not with private metadata. Next slide please. Okay. So the question is why should we add metadata. Specifically why should we ask the why should we add the public metadata. The reason is because at least in this, the specificities of this construction that are presenting is because it is useful against certain attacks, something that has been noted early on since the early paper privacy past, is this idea that one can execute a holding attack against the protocol. In the first paper, privacy passed by Goldberg et al. Is actually defined as a foaming attack, and I think it is defined on section eight if I'm not wrong. Um, but it's basically the same attack that I'm talking about in this slide. The idea that individual users, individual clients, or a group of clients can gather tokens over a long period of time, and then they try to redeem them all at once. And the reason why attackers might want a malicious client, a malicious user, an attacker would like to do this, is because they want to render the service unavailable. So, um, the idea is and so one of the things that in the, in the original privacy paper say is that there's ways to actually preventing this. The mechanism to preventing this are several. One of them is, um, to only have an an X amount of tokens that can be, uh, issued at a certain amount of times. Another prevention that they listed is to add this idea of a key rotation in which that, um, even if an attacker is able to gather a lot of tokens, uh, for an X amount of time, they will not be able to redeem them all at once in a different time, because the key under which those tokens were issued, uh, has been rotated. But of course, it has also these problems, because if you are rotating the key, uh, all of the time in a with a the specificity that is too short, then you will be diminishing the anonymity of those tokens. So we thought of a new construction that will be much easier to implement than just having this key rotation mechanism, and that has the idea of adding public metadata. And the way to solve the holding attacks problems is by adding certain metadata that prevents against these. The metadata that you can be adding is, for example, an expiration times to the token. Or you can also be adding a geographic location to the tokens. And in the last slides I'm going to be talking about specifically what the specific metadata you could be adding, because adding metadata to the construction as privacy pass has to be always carefully considered, because you could be diminishing the anonymity set. Next slide please. So um, as we know right now, as it is now written, the privacy pass document, the underlying primitive that is used is a bopf. Um, that is the one defined here that we all know and love. And that is basically the two parties, uh, want to compute a pseudorandom function that has the obliviousness property. And with that, and what does this obliviousness property means is that the secret key of the server remains secret, and the input that the client inputs in the function also remains secret, but both can compute the output of the pseudo random function. Um, the idea of adding public metadata is really simple. As you see, the construction only gets added one parameter that is well known by the client and the server, and most of the operations on that line are really, um, a change, but are just, um, the changes are really little. And if you want to know more about what changes it requires to the construction, there's also already a PR open against the CFR CFG draft that you can check out at the end of the presentation on the slides that actually have the link. If you're interested in following that next slide, please. Okay. From a privacy perspective, as we know, Privacy Pass has two phases, which is the issuance phase and the redemption phase. And here as you see in the construction itself, the only thing that needs to get added is the client metadata and the metadata. And in this case, these are values that are publicly known by both. And that can be actually defined prior to the execution of the protocol, or can also be sent during execution by the client on the server. And that's a decision that is kind of outside of the protocol, is how applications want to define what metadata will be at the traditions of the CNU is not really part of any of the commitment phase, but actually in the issuance phase of the G1 phase. Next slide please. For our redemption, is this the same? You're going to be assuming that the client and the server know what metadata they're going to be adding that is publicly known, and they will be adding to all of the API via PRF, um, functionality that needs it. Next slide please. Okay. As I said, um, also metadata, even though, um, this, uh, construction allows you to add a public metadata that is known by the client and the server, or both. It's always carefully it has to be carefully considered, because any kind of metadata that you're going to be adding, it will be diminishing the anonymity set. So, for example, in the case of actually going trying to prevent these coding attacks, you can be adding expiration time of the tokens. But this expiration time should not be explicit. Because if you're actually saying that this token is only valid, was issued during this time and is valid until this time, you will be diminishing quite heavily the anonymity set right now in the current pie, you will see that we are not using explicit timestamp, but we're actually using epoch numbers. Meaning for example, the server defines that the epoch is um, since today until two months and calls this epoch a number, let's say one. And then they add this one, uh, to the to the token. And that's the public metadata that is known. And therefore the anonymity set gets diminished, but not as heavily as it will be if you're using explicit timestamp. Um, yeah. Another note to have is, of course, is that this metadata that you're adding to the tokens is not bounded by length. You can add as much bits of metadata that you want as possible, but it has to be carefully considered by the application itself because obviously added um, metadata is really, really big, will not be really useful for applications. So this is application dependence to balance privacy and utility. And as I said, if you want to check how this, uh, construction impacts the bopf construction, there's already the PR that you can find here. And also you want to see how it has been added or what thinking there has been to be adding to the privacy pass draft. That's the PR and I think that's my last slide. So next slide please okay. Yes. Thank you. And I'm open for questions I see that there's already a discussion. Okay Christopher you go. Sorry. Uh should I call the people. Okay. Wait.\nSPEAKER S4: Chris Patton, you're on the air.\nSPEAKER S7: Uh, what was the name of the second paper? So you listed some alternatives. Um, there was the Facebook paper, and then there was one other paper.\nSPEAKER S10: So the other paper is not about public metadata.\nSPEAKER S8: It's about private metadata. So it's called something like adding a private metadata bit. And it's by Tancrede Tancrede Lepoint et al. Um, yeah.\nSPEAKER S7: Could you just put up the slide so I can write it down. Thank you.\nSPEAKER S10: Yes. Um.\nSPEAKER S8: Second slide I think it is. Yes, that.\nSPEAKER S1: Any other comments on on the public and public metadata or, uh, you know what? Whether it's a good idea in general.\nSPEAKER S4: Chris Wood.\nSPEAKER S2: Yeah. Um, I think it's a good idea, but I think the larger question is whether or not it's something, um, that constrains all instantiations of privacy paths or only applies to certain constructions. Um, so would it be desirable to to ship privacy pass such that you could, um, uh, use just the Vo version, um, without any metadata support? Or must it be the case that any version of privacy paths supports metadata? Because that drastically changes what's possible underneath the hood? Um, right now we only know of one other sort of construction that works for partially oblivious proof support, the one that's listed here on the slide. Um, and we have, uh, sort of ideas as to how to kludge things together, uh, glue things together for, um, publicly verifiable, uh, or partially blind signatures. Um, uh, but that's still very much sort of an open research question. Um, and if requiring metadata for all instantiations was going to be the way we went, um, that might, um, delay sort of that public, um, verifiability extension. So, um, curious to hear what people think about that.\nSPEAKER S8: Yeah. Thank you. Chris. Curious. Sorry.\nSPEAKER S3: Um, as for that, yeah, I think like, requiring every construction to support private or support metadata at all, like, seems like maybe a high bar and, like, there might be use cases where we don't need like all this extra like infrastructure. I think there's also the question of like how much the documents should talk about, like metadata as an abstract concept versus like specifically like it's used for epochs and other things like that.\nSPEAKER S8: Yeah, I completely agree, Steven. Right now, as it is in the PR, we only define, um, geographic localization and the timing, um, and it's kind of open if someone else wants to add anything else. Um, but it might be worth revisiting that, um, against the optionality of adding or not adding public metadata. Um, as right now how we're writing for the CFG draft, um, which I didn't cover today. And if you want to see that talk that's coming later today, um, there's the possibility of you're adding an empty string and it will still be working. Um, but yeah, there could be other construction besides the PPF, one that allow you to use metadata, and that's like a big API discussion as well.\nSPEAKER S1: Yeah. So thinking about whether to, you know, make the metadata mandatory, I think, you know, making arbitrary metadata mandatory would certainly be I think that would be a high bar. Um, maybe, uh, you know, these specific cases that you have listed could be accommodated, but I kind of think I think we might have to dig in and see how critical those features are. Um, but if they're not super critical, then I would say it'd be better not to have that requirement.\nSPEAKER S4: Chris, would.\nSPEAKER S2: My, uh, my take regarding the sort of generality of the metadata is that if we're going to sort of support it, it it I don't think it should be bound, uh, at the protocol layer. Um, Um, uh, we can certainly give examples of what our suitable uses of metadata, like epics, like geo stuff, whatever. Um, but it seems up to the application to determine exactly how many bits they want to admit, um, if any at all. Um, but that's my $0.02.\nSPEAKER S4: Alex.\nSPEAKER S11: Hi. Um, I was wondering if this partially oblivious proof supports, like, no metadata bits. Um, and the reason I ask that is, uh, kind of wondering whether this construction could just be used instead of the original VF, because as far as I know, the performance seems pretty similar. Um.\nSPEAKER S8: Yes. Thank you very much for that question, Alex. Um, so right now, for example, in the PR that we have for CFG, Um, there's the possibility of you not adding any metadata at all. And in that case, what happens is that they you just add a context string plus some empty string, and that's all. Uh, because the underlying, the underlying operations of the papf executes as almost as efficiently as a regular BPF. So yeah. So it's completely fine if you pass an empty string. Um, yeah. Or if you pass an actual, uh, metadata string.\nSPEAKER S4: Hi, this is Ben Schwartz. Uh, as individual, I wonder if you could share your thoughts on the, uh, the trade offs or or the relationship between public metadata in the construction versus having a larger number of issuer keys? um, with metadata associated with the issuer key.\nSPEAKER S8: Um, so what you're talking about is the difference between having different keys for key rotations, uh, compare with adding metadata.\nSPEAKER S4: Not not for key rotations necessarily, but um, so there's a sort of a trivial way of adding metadata where we simply, uh, assign each metadata value to a distinct issuer key.\nSPEAKER S8: Yeah, I think that was more like the AB, AB, AB, ab, pdf construction. I think it was that one. Um, the problem with that construction is that it's not as efficient, actually, as the one. Um, you need to add a zero knowledge proof that executes much less efficiently. Um, and that's what was most much more likely the problem, uh, with that construction. So actually adding the proper one is kind of better in comparison, which how you will add public metadata because it's much more efficient.\nSPEAKER S4: Um, yeah. Efficient in sorry, just efficient in what?\nSPEAKER S8: Computation time? Yeah. On. Um, yeah. Specifically in the BPF construction is because the zero knowledge proof that you have we have to be adding for the verification part is less efficient.\nSPEAKER S4: Okay. Thank you. Uh, Chris Wood.\nSPEAKER S2: Yeah. Ben, I just wanted to ask a clarifying question to you. Actually, um, was your question about, uh, the naive metadata approach where you have, like, a single signing key for each value of metadata? Or were you asking specifically in the context of the attribute based BPF construction?\nSPEAKER S4: Yes. I was not really asking about the attribute attribute based construction. I was I was thinking about the the very naive, uh, one key per value, um, construction. Gotcha.\nSPEAKER S2: Um, so I think Sophie's answer was great for the attribute based one. Um, and she probably has thoughts on the other one as well. So I'll let her take that.\nSPEAKER S8: No, I have not. Not much thoughts. Um, but I think that will need a little bit more careful analysis. That will be my answer, that maybe that's something that I can start looking at for later. Yes.\nSPEAKER S4: Okay. Thank you.\nSPEAKER S3: Stephen kind of urging that in the like, trust token experiments. Um, and I think the big issue is like it works fine for like, small amount of metadata, like 2 or 3, but like, all clients are going to need to know, like the full set of, like applicable keys, which then like balloons up to like hundreds of points if you're like doing any like significant amount of metadata. And it also means you can't like do arbitrary named metadata and have to know a priority like what it is.\nSPEAKER S4: Uh. Thank you.\nSPEAKER S8: Yes. Thank you. Stephen. Yeah. That's great. Sorry for forgetting about that one. Thank you. Stephen.\nSPEAKER S4: Chris. Patten.\nSPEAKER S7: Um, do we have any use cases right now that involve more than just a few bits of metadata?\nSPEAKER S8: No, as it is right now, of course, if you would like to really add the whole time expiration time, it's really split in a really explicit way. Um, I don't recommend doing that. I don't think we should recommend doing that, but you can use it. But what I personally think is that, um, the metadata that gets added publicly should also be small enough, because that would also what I think is that that will, um, not be diminishing the anonymity set so heavily because if you add things that are more explicit and maybe bigger, then maybe you will be, um, hum in the anonymity said, uh, further. It kind of more depends on. Yes. You can add, uh, as much as metadata as you want, but the biggest concern with adding metadata is the anonymity set rather than more like if it's okay to, uh, a lot of metadata.\nSPEAKER S4: So, uh, Sophia, I wonder what your recommendation is to the working group. Would you recommend that we add a public metadata, uh, element to the, uh, to the Privacy Pass API?\nSPEAKER S8: Yes, I do recommend that. Um, but I would really like to know also the thoughts of the CFG um, happening later today of adding, um, easily adding the, uh, the papf construction into the Bopf one because the previous pass builds on top of that draft. Um, so I would also like to know if indeed that's something to be supported there, because then it's much more easy to also modify the draft to do recommendation of the draft if the underlying primitive is also part of the CFG one. So I would like to know the output of that discussion as well.\nSPEAKER S4: Great. Thank you. I think we're ready to move to the next segment.\nSPEAKER S1: Are you, uh, presenting again?\nSPEAKER S3: Uh, yeah. I'll present again.\nSPEAKER S12: Okay.\nSPEAKER S3: So really briefly, there was an anonymous credential meeting that happened a few weeks ago at pets, um, 2021. And we'll go over some of the privacy paths, relevant things that came out of that meeting. Um, uh, so one of the main things that came up there were a couple of presentations about various anonymous credential constructions. Uh, there was one by Alex about post-quantum construction, which is an extension of the scheme to use a lattice based approach. Um, and this might be interesting if Privacy Pass is concerned about more post-quantum proofness. Um, there are also some of the constructions that Sophia mentioned regarding adding metadata in various forms. Um, beyond just the like naive one key per metadata value, which if we think that having lots of different metadata values might be worth investigating more. There are also a lot of discussion about various use cases, some of them which might be applicable to Privacy Pass. Uh, the ones that came up were contact tracing, um, and anonymous credentials. Um, and notably, the one thing that those use cases sort of require that is only like partially supported in current privacy pass, but would maybe be more supported with the addition of metadata. Is having some having non-identifying information in these tokens or so that like you can limit like the domain they're used in, um, in a way that like the client is like aware of what the metadata is and can like make an informed choice that it's not like your username or your real name or anything identifying, uh, there's also the requirement for some sort of time bounded or one time use, uh, time bounded tokens that like expire at a certain amount of time after being used, which you can sort of use in privacy pass by having very short key rotations. Uh, but that adds logistical complexity, and the additional crew rotations also have some amount of privacy implications in terms of different users having different expired tokens. Um, and having a nicer way of supporting that might support those sorts of use cases. Um, more generally, these, uh, anonymous credential meetings have been happening about twice a year and is been a good place to get these sorts of use cases in discussion about additional constructions, and they'll hopefully keep on providing some useful fodder for privacy, paths to think about and for constructions to happen here. I think the next ones in January, hopefully around crypto time. Um, and it might be a good idea once privacy passes further finalized to see whether the charter or privacy pass should expand to include some of these cases or their separate work streams that should be spun up in regards to anonymous credentials. Uh, yep.\nSPEAKER S1: With respect to some of those additional use cases, how would the addition of metadata solve some of the or how many of those or is it? Uh.\nSPEAKER S3: So I think the addition of metadata could solve somewhere like the information required isn't identifying like, um, but I think, like, we'd need some sort of brand new construction for anything that's like a time bounded token, um, where, like, the time bound is based on when the token was issued, but in a way that, like, isn't like you can now split it by, like, the exact issuance time. Um, there might be ideas of like, splitting up the, like, chunking Time to do something similar to the epoch stuff that Sophia mentioned. Um, so I do think like adding metadata does add support for some of these cases. There are some that I think will still be beyond privacy pass with metadata without additional work.\nSPEAKER S1: Okay, thanks. Any other, uh, comments on that particular presentation? If not, I think we have run through our, uh, scheduled agenda. Are there? I know there's been some discussion, uh, in the chat, um, um, whether to add, uh, on on the abstraction layer that's been proposed. I don't know if any. We have some time that that we can continue that discussion here or if not, we can all get ready for CFG.\nSPEAKER S6: So I think that one part that came up in the chat that I think Martin Thompson raised was sort of the question of do we need to support the view PRF style at all versus going straight to publicly verifiable line signatures type thing? Uh, because the charter is treating the public verification as an extension. That will do as a follow on. Um, but, you know, in some ways the protocol is actually simpler if you do it that way, uh, versus the VRF being a little bit more efficient, I think, if I'm remembering that correctly. So that might be a topic to discuss live as well if people have further thoughts. But to be clear, I don't have particular thoughts myself.\nSPEAKER S4: Chris Wood.\nSPEAKER S2: Yeah, I mean, it's an interesting proposal. I guess my question would be, imagine, imagine you did that and you abandoned Vpf and just said, we're going to do something like, um, you know, partially blind signature. What is the difference, then, between, uh, you know, a protocol that is a partially blind signature and privacy pass? Like, what is the what is the thing that Privacy Pass adds on top of that? That is not already provided by the underlying protocol. It's not clear to me that there is anything sort of noteworthy, um, there. So if we just if we just sort of reduce this all down to one primitive. Sorry, I'm clearly holding this wrong. If we reduce this all down to one primitive. Um, it's not clear to me that we have sort of a useful protocol at the end. Um, but there are other people in the queue.\nSPEAKER S4: Alex Davidson.\nSPEAKER S11: Yeah. I guess my thoughts on the matter that, um, I think that there are applications where the efficiency advantages of using, like, the symmetric, the OPF will become apparent. But I think on that note, as, as much as finding applications where like public metadata, um, is useful, uh, is going to be useful for us. I think also finding applications where using like symmetric VOP, RF with no metadata would also be useful in order to ascertain whether, um, we really do need like that stripped back construction.\nSPEAKER S4: Martin Thompson.\nSPEAKER S13: Because it seemed to me like the Viper wasn't adding anything, but someone just said optimization. And that creates a visceral reaction in me that says, well, well, maybe you just need a better whatever the primitive is. Uh, at the same time, uh, I think I'm coming around to the, the view that we probably have some value to it in terms of tying down parameters and defining, um, maybe formats or more, more close to how HPK does its work than, uh, say TLS does its work. And, uh, in that context, yeah, it does make a bit of sense to have a bit of choice in how you implement things.\nSPEAKER S4: Uh, as individual, uh, Ben Schwartz. I, uh, I was under the impression that that the, um, that the schemes that lack public verifiability, uh, are, uh, uh, have have stronger cryptographic security proofs or are proven secure under stronger assumptions. Um, I wonder if one of the crypto experts could shed some light on that. Uh, Alex.\nSPEAKER S11: Yeah, I in a sense, that's true. Um, but the I think the main points are that the publicly verifiable schemes that we know of are currently based on either pairings or RSA, um, and, uh, I think the main, the main point is that choosing parameters in such a way that the like, security assumptions remain secure in those settings is slightly more difficult in the RSA setting. Obviously you have to, um, you know, choose things so that the RSA assumption is secure. And in the pairing setting, um, I think security is just a little bit less known because, um, it's slightly newer cryptography. And you do see generally more cryptanalysis in that area. So security parameters can change. Um, so uh, in that sense you would have more confidence in the like classic prime order group setting that the original VOP roofs are kind of based in.\nSPEAKER S4: Thank you Alex. Chris patten.\nSPEAKER S7: Just for the record, um, I kind of I didn't I didn't get that all which class of of protocols require stronger assumptions than which class of protocols? At least right now.\nSPEAKER S4: Uh, Alex, could you could you give that summary for Chris or, uh. So the.\nSPEAKER S11: Um, so the, the vop, the, the original vop rf like the two rd vop that we used is based on, uh, like a one more gap Diffie-Hellman assumption, um, partially oblivious pseudorandom function, I believe is based on a variant of like a Q strong Diffie-Hellman assumption. Um, and then I'm less well versed blind RSA, I guess, is based on the assumption and the pairing based assumptions. I'm I'm not actually very well versed on what assumptions they're based on, but I assume it's some bilinear variant of like a discrete log type assumption.\nSPEAKER S7: And we know like just yeah, we know the relationship between the Diffie-Hellman assumptions. And then the RSA assumption is super standard and then the pairing based scheme. Uh, we don't know. In this room.\nSPEAKER S11: That's my take.\nSPEAKER S7: Okay. Thank you.\nSPEAKER S4: Martin Thompson.\nSPEAKER S13: Basically with chicken. Chicken, chicken. Um, what I'm hearing here is that we have a bunch of primitives, and each one of them has some sort of subset of the various capabilities that we're looking for, whether it contains public metadata, private metadata, um, or and public verifiability or not. And none of them seem to provide all of those capabilities. Yet each one of them has different performance characteristics. Each one of them relies on different security assumptions. And we're sort of in a mode where we're going to be trying to pick the right primitive. That makes me worried about this work. Quite frankly, I don't know how to deal with that situation very well because, yeah, this this sounds more like research than it does engineering.\nSPEAKER S4: Thank you. Martin Chris wood.\nSPEAKER S2: Um, just to react to that. Um, it's definitely true that the different primitives have, um, different feature sets, like, uh, some of them are publicly verifiable, some are not. Um, I'm not sure. Uh, like, one of the assumptions I have been making, um, perhaps implicitly, is like all the constructions that we're considering, we consider them to be, um, uh, at least as secure as one another for some definition of, uh, secure, that is to say, um, people who are deciding to choose one variant of privacy pass or the next or the other one variant over the other should not have to make a determination in terms of like what type of security they want. Um, that just seems kind of terrible. Like TLS 1.3 did a very good thing and that like, okay, for AEDs, we're just going to pick three AEDs that we know have basically the same properties. And um, the choice doesn't really matter. It comes down to performance. You do you do you whatever you want. Um, ideally we'd be in a similar posture here where in, um, the differences in the primitives or the instantiations rather vary only in, uh, what features they provide. Um, and possibly also performance. If we can come up with a scheme that makes the performance question moot, even better. Um, so, um. Yeah. Sophie.\nSPEAKER S4: Thank you. Sophia Salih.\nSPEAKER S8: Okay. Um, yes. I want to agree with Chris. Uh, would, um, in the sense that. Yeah, all of the constructions that have been proposed are targeting almost the same security properties. It is true that they are based on different underlying assumptions. Um, but at least also when you're trying to add an extra feature, most of the times when adding this extra feature is adding already onto an onto the well known primitives. So for example, in the case, um, one of the things one of the big focus of that research was to actually provide the same properties that the BPF was. So I don't think that the BPF has um, so I don't think it's, it's it's just that because that would be really bad for, for any user reading, um, this I think they all are targeting kind of the same security properties.\nSPEAKER S4: Thank you Martin.\nSPEAKER S13: My point for me, um, I don't think it matters. What what, uh, what, uh, security assumptions we're basing these things on as as both of you have established. Um, but that's not the focus of the comment. Um, when we do engineering, typically we try to choose the one tool that's going to work for the use cases that we have. What it sounds like we're doing here is we're trying to get all the tools for all the use cases. And that makes me very nervous, because I don't want to get into some sort of open ended thing that says, well, we're just going to do something and everyone's going to do their own thing. That's not actually seeking interoperability, that's everyone doing the right thing. They just happen to be talking at each other at the IETF. That's not really a constructive use of the time that we have here.\nSPEAKER S4: Okay. Well, I hope our, uh, document authors are inspired by these comments to, uh, to update the documents and bring back to the working group, uh, new, new revisions that that address these these inputs from the group. Uh, Joe, over to you for any last comments.\nSPEAKER S1: Um, that's all I have. Yeah, hopefully, uh, see a bunch of activity in the drafts and on the list, and, uh, we'll see you next time or in CFG if you're going there.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9882190760059613
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: We should get started.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Um, since it's, uh, time, uh, this is privacy pass.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Your chairs are Joe Soloway and Ben Schwartz.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "I can get my slides to advance here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, by this time on Friday, you should probably all be familiar with the know.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Well, which kind of describes your obligations with respect to contribution and participation within the IETF.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'll leave it up here for a brief second.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "More, if you're not familiar with it, you can always go to the IETF website and look at it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a minute, taker.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "We can monitor jabber, but if somebody there's important points raised in jabber, somebody can bring those to the mic if chairs don't get to it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have no blue sheets to sign because this is a virtual meeting.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, when you're speaking, please state your name so the note taker can easily, uh, capture that information and always, uh, keep the discussions professional.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the agenda today, we have a present presentation on the document update, um, a summary from the second anonymous credentials meeting and then a section on adding public metadata to the privacy pass.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Um, does anybody have anything that they would like to add or update on this agenda?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Chris.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "If if possible, could we swap the last two?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think the public metadata is more important than the meeting update.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, in the rare case that we run out of time, be better.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "I think if we spent the time on that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I'm okay with that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any objections?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "We'll switch those two.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so for the presenters, um, I'm happy to run the slides.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "I have it set up here, but then you have to kind of tell me to advance the slides.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "I don't charge for that service, but, um, if you would prefer to run your slides yourself, then, uh, we can do that as well.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "So I think, Steven, your first up, um, would you like me to run the slides for you?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, I can just run them myself if it's easy enough.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Ready for the first one?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I'm Steven.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I'm going to quickly go over the current status of the various privacy pass documents, open issues, and what the next steps are based on our charter.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as a reminder, the privacy pass drafts are split up into three major drafts.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "There's the protocol draft, which talks about the cryptographic primitives and the, uh, methods that we expose.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "There's the architecture doc that talks more about the ecosystem and is built on top of the protocol draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "And then there's a sample http API draft, which is the HTTP implementation of the architecture.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "And all of these is is built on top of various crypto primitives.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Currently, the VF draft is the main one we support, though there's been some discussion about other constructions that could possibly fit into this whole.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so since last meeting, we've had a couple of closed issues.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "The major one was adding redemption context with based on the presentation at ITF 110, uh, which basically adds to the architecture doc some discussion of how to, uh, view privacy boundaries during redemption time to allow for more, um, issuers to be in the ecosystem.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "And then there has also been a minor fix to some of the TLS syntax in the protocol draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "In terms of the open issues for the protocol, the one major open issue is how to refactor the flow to better support how the inputs and outputs have been updated in the CFG draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "and what the tag and info being exposed is there.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this should be fairly minor and isn't too contentious.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the architecture draft, we have a number of additional open issues.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's one about trying to figure out how much to discuss about malicious issuers in the ecosystem and what the architecture draft should say about that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if people have thoughts on the scope there, uh, responding on that issue might be useful.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's some information about what to expose in terms of a server's configuration in the key server configurations.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a balance between how much we specify in the architecture draft versus leaving it up to each individual use case, and each individual application that's built on top of this.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's an open issue about centralization.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's a draft by Clayton that I think might be currently expired that discusses the centralization issue.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we should see whether we want to bring that into the Into Privacy Pass or include as part of the architecture draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "I think Mark's in the queue.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Mark McFadden.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Um, thanks for noting that that document has been updated.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the update, uh, was an attempt to try to describe, um, what goes on in redemption contexts, in the context of of centralization.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "I think, um, it'll be useful to work with Steven to sort of talk that out.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "I think it needs to be a better section, but it, um, uh, it has been updated to reflect the, uh, the conversation we had at the last meeting.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Cool.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I think one question here is what, uh, what we want to do to update the architecture draft to point at that doc or what they like.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Relative status of these stocks should be, um, and then there's an open issue, uh, an open issue about what we expose to proxy verifiers, which is one of the modes that runs in the architecture draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "I think just coming up with like some like, threat model of what a proxy verifier should see versus the other constructions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I think that's fairly straightforward.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "The other one is once we've made all these updates, we should update the privacy calculations to take into account, like any discussion from the centralization doc, the redemption mode and things like metadata, which we have a separate discussion about coming up.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "The other chunk of open issues is around supporting other constructions beyond just vp-fs.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "There's number 40, which is about public liability, um, which are tokens that can be verified without needing to be the issuer.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think there are a few constructions that people have been talking about in that space.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "There was private metadata variants, which I think is going to be talking about the various metadata constructions as part of that discussion.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then there's the larger overhaul of how we should reformat the protocol to either abstract away the crypto schemes beneath it that Chris Woods has been, uh, writing up.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is PR number 79, and the general concept is adding additional abstraction layer so that the protocol exposed by Privacy Pass is very generic and treats all the messages as arbitrary blobs.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "And any new construction we want to support defines its own internal functions and structures.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and this should hopefully simplify some of the, uh, changes necessary on the high level protocol.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and makes adding these new constructions easier.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "It is a fairly radical shift from what is currently in the docs, so we probably want to see what people's thoughts on that are.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Other updates are we have a charter timeline that we came up with about a year ago, which is very out of date and has deadlines that we've missed.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Mostly we were hoping to get things done by February 2021.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then get some of the application layer things done in the summer.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll probably want to update the charter timeline.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one proposal is based on the current status of the core protocol doc trying to aim for IETF 112 to get that cut with the construction, um, then updating the architecture draft based on the open issues that are currently there.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "And assuming there's not too many more open issues that show up, hopefully IETF 113 would be a good timeline.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the other two, uh, charter items pushed on IETF beyond that, since those build up on knitting the knitting, the architecture draft to be finished, and the protocol to be semifinalist, at least for the main construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "There's also a question of what additional constructions we want to be supporting in the working group beyond the draft, or if we don't and want to leave that as a separate item.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the general open questions currently are whether we should do the refactor that Chris has proposed for the adding the abstraction, uh, whether this updated charter timeline looks reasonable or what would a reasonable charter timeline look like and what metadata support should be in the draft, which we should discuss after Sophia's presentation.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "Stephen.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, let's go to comments on those, uh, first two topics, uh, and also on the status of Mark McFadden centralization draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Ben.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, thanks.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "so.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "I take this in the chat, but I figured it might be worth asking since it's either one of the open questions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "But whenever whenever we're thinking about adding this abstraction layer to cover up many possible constructions that we could use to achieve the properties we want, there's always the risk that we get the abstraction wrong.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "And so I know we have quite a few things that were listed actually.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "We've got the and we've got the blinding and bells and whatnot.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "So it's pretty reasonable that we, we have enough potential constructions that we can analyze the abstraction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "But that's sort of the big aspect of the open question there to me.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe Chris can answer.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris would.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, yeah, I can just reply it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Basically the the PR came from, uh, the observation that the abstraction was wrong, as is, um, uh, trying to add a construction that supports both verifiability specifically based on the blind or blind RSA signature scheme.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it was it was incredibly, uh, difficult to take, uh, basically the wire format of that protocol and, and wrap it in the wire format for privacy pass.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so rather than try to have, you know, some generic, uh, you know, some generic wire format that somehow magically works for all the constructions that we might potentially see in the future, be it BLS, be it some Schnorr based thing that potentially requires multiple rounds, what have you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "It just seemed cleaner to to sort of wrap all of it, um, and sort of delegate the, the bits that are specific to the crypto construction, to the crypto construction and just have, you know, Privacy Pass be this very thin layer on top of, uh, those particular cryptographic protocols.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um, so we would still need to make sure that we can handle those multiple round trips if some of the constructions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And I think that's, that's the, the role of sort of the wrapper that is privacy pass to to to be able to like deal with things that are multiple round trips or deal with things that have um, perhaps different uh, uh, contents therein.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "So the, the specific challenge with RSA versus VWF is that VWF and the response from the server during issuance, you get back a bunch of evaluated elements and then a proof, um, uh, depending on whether or not it's a like a batch proof or, or or just like a single proof or a single evaluated element.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "But basically there's two things in that response.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Whereas in the RSA case, it's just like a single blinded, uh, signed message.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um, right.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And uh, um, uh, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So I think, I think the proposal sort of, um, captures the right abstraction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's currently just a draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, certainly, uh, people who have thoughts on, you know, what the abstraction should be should take a look.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, I found that with this particular like RSA, like BLS was a lot easier.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So it's promising.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That that that I hope is the, the just or is sufficient rationale, um, or reasoning as to why the PR exists.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thanks.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Ben Schwartz.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, no.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Chair had I have a question, is this does this propose to add a document anywhere?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Does this create a new document?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Chris PR you mean.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, I mean, this this refactor, um, which defines a uniform abstraction here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Does this add a document to our set?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: No, no, no, no, um, it just, uh, so it just changes the existing protocol document.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and does it rely on a CFG document to provide that abstraction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "But that is not new in the sense that the particular, uh, like the VF construction or the VF, um, uh, instantiation, um, is already there.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "I guess in the current PR, the VF, uh, like internal like data structure is included as a separate section in the protocol document.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "That's right.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Um, is there anyone who wants to to to make a comment, uh, proposing an alternative or supporting an alternative to Chris Woods proposal?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it doesn't seem that anybody opposes your proposal.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, does anybody want to speak about charter timelines?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Chris Patton.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Action is is the I is the consensus that will move forward with Chris's proposal.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, so, uh, as chair, I would say it's not clear to me that this is something that needs working group consensus for, for for this change.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "It seems to me that this is in the hands of the editors.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and as long as they, uh, you know, as long as there's no conflicting input, I think the editors can can proceed as they wish.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to be honest, I'm not sure what the procedure is for updating a charter timeline.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I will ask my co-chair and maybe our ad, and we'll think about that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "It seems like, uh, if there's no other comments, we should move to the next segment.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I guess I have to.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: We did, uh, we did have an agenda.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Bash.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "So I believe the next segment about, uh, metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Chris, are you going to present about metadata or was Sophia or.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I believe that's Sophie's presentation.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Should I start presenting?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "If you want to present, that's fine.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "If not, I can present either way.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: There's no slides available here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Could you share the slides yourself?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "And I asked you to move them.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just going to be waiting until they show up for me.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's good enough.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "And then if you scroll, that would be perfect.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, everyone.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "My name is Sophia Kelly, and I'm a cryptography researcher at Cloudflare.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Um, And I will.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Today I was going to talk about how to add public, how a proposal on how to add public metadata to Privacy Pass.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "And if you want to actually take a more in-depth look at this proposal, there's already a PR against the base wraps.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "So if you want to check it out, please do so in that link.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "So basically what is the proposal?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "As I said in the title of the presentation is to add public metadata into the current, uh, as, as it is right now currently defined privacy path.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "And this proposal is built up in a paper that we published recently to the E-print.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "My coauthors are listed in this slide, and you can find it in that link if you are interested in reading more about it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, there have been already other proposals that have been proposed, uh, on these sessions or can be found in the regular places.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there has been one proposal about how to add private metadata that can be found that place.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Another one that came from, um, from Facebook on how to add public metadata by using a different construction that is called an attribute based view.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just to note again, this construction that I'm going to be presenting today deals with public metadata, not with private metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "So the question is why should we add metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "Specifically why should we ask the why should we add the public metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "The reason is because at least in this, the specificities of this construction that are presenting is because it is useful against certain attacks, something that has been noted early on since the early paper privacy past, is this idea that one can execute a holding attack against the protocol.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "In the first paper, privacy passed by Goldberg et al.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Is actually defined as a foaming attack, and I think it is defined on section eight if I'm not wrong.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's basically the same attack that I'm talking about in this slide.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "The idea that individual users, individual clients, or a group of clients can gather tokens over a long period of time, and then they try to redeem them all at once.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "And the reason why attackers might want a malicious client, a malicious user, an attacker would like to do this, is because they want to render the service unavailable.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, the idea is and so one of the things that in the, in the original privacy paper say is that there's ways to actually preventing this.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "The mechanism to preventing this are several.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "One of them is, um, to only have an an X amount of tokens that can be, uh, issued at a certain amount of times.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Another prevention that they listed is to add this idea of a key rotation in which that, um, even if an attacker is able to gather a lot of tokens, uh, for an X amount of time, they will not be able to redeem them all at once in a different time, because the key under which those tokens were issued, uh, has been rotated.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "But of course, it has also these problems, because if you are rotating the key, uh, all of the time in a with a the specificity that is too short, then you will be diminishing the anonymity of those tokens.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "So we thought of a new construction that will be much easier to implement than just having this key rotation mechanism, and that has the idea of adding public metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "And the way to solve the holding attacks problems is by adding certain metadata that prevents against these.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "The metadata that you can be adding is, for example, an expiration times to the token.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "Or you can also be adding a geographic location to the tokens.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "And in the last slides I'm going to be talking about specifically what the specific metadata you could be adding, because adding metadata to the construction as privacy pass has to be always carefully considered, because you could be diminishing the anonymity set.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "So um, as we know right now, as it is now written, the privacy pass document, the underlying primitive that is used is a bopf.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that is the one defined here that we all know and love.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "And that is basically the two parties, uh, want to compute a pseudorandom function that has the obliviousness property.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "And with that, and what does this obliviousness property means is that the secret key of the server remains secret, and the input that the client inputs in the function also remains secret, but both can compute the output of the pseudo random function.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the idea of adding public metadata is really simple.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "As you see, the construction only gets added one parameter that is well known by the client and the server, and most of the operations on that line are really, um, a change, but are just, um, the changes are really little.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "And if you want to know more about what changes it requires to the construction, there's also already a PR open against the CFR CFG draft that you can check out at the end of the presentation on the slides that actually have the link.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "If you're interested in following that next slide, please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "From a privacy perspective, as we know, Privacy Pass has two phases, which is the issuance phase and the redemption phase.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "And here as you see in the construction itself, the only thing that needs to get added is the client metadata and the metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "And in this case, these are values that are publicly known by both.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "And that can be actually defined prior to the execution of the protocol, or can also be sent during execution by the client on the server.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "And that's a decision that is kind of outside of the protocol, is how applications want to define what metadata will be at the traditions of the CNU is not really part of any of the commitment phase, but actually in the issuance phase of the G1 phase.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "For our redemption, is this the same?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "You're going to be assuming that the client and the server know what metadata they're going to be adding that is publicly known, and they will be adding to all of the API via PRF, um, functionality that needs it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "As I said, um, also metadata, even though, um, this, uh, construction allows you to add a public metadata that is known by the client and the server, or both.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "It's always carefully it has to be carefully considered, because any kind of metadata that you're going to be adding, it will be diminishing the anonymity set.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, in the case of actually going trying to prevent these coding attacks, you can be adding expiration time of the tokens.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "But this expiration time should not be explicit.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Because if you're actually saying that this token is only valid, was issued during this time and is valid until this time, you will be diminishing quite heavily the anonymity set right now in the current pie, you will see that we are not using explicit timestamp, but we're actually using epoch numbers.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Meaning for example, the server defines that the epoch is um, since today until two months and calls this epoch a number, let's say one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "And then they add this one, uh, to the to the token.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "And that's the public metadata that is known.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And therefore the anonymity set gets diminished, but not as heavily as it will be if you're using explicit timestamp.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Another note to have is, of course, is that this metadata that you're adding to the tokens is not bounded by length.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "You can add as much bits of metadata that you want as possible, but it has to be carefully considered by the application itself because obviously added um, metadata is really, really big, will not be really useful for applications.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "So this is application dependence to balance privacy and utility.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And as I said, if you want to check how this, uh, construction impacts the bopf construction, there's already the PR that you can find here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "And also you want to see how it has been added or what thinking there has been to be adding to the privacy pass draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "That's the PR and I think that's my last slide.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide please okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm open for questions I see that there's already a discussion.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Okay Christopher you go.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Uh should I call the people.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Wait.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris Patton, you're on the air.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, what was the name of the second paper?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "So you listed some alternatives.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there was the Facebook paper, and then there was one other paper.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: So the other paper is not about public metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: It's about private metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "So it's called something like adding a private metadata bit.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "And it's by Tancrede Tancrede Lepoint et al.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Could you just put up the slide so I can write it down.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Second slide I think it is.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Any other comments on on the public and public metadata or, uh, you know what?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Whether it's a good idea in general.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris Wood.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think it's a good idea, but I think the larger question is whether or not it's something, um, that constrains all instantiations of privacy paths or only applies to certain constructions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so would it be desirable to to ship privacy pass such that you could, um, uh, use just the Vo version, um, without any metadata support?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Or must it be the case that any version of privacy paths supports metadata?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Because that drastically changes what's possible underneath the hood?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Um, right now we only know of one other sort of construction that works for partially oblivious proof support, the one that's listed here on the slide.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we have, uh, sort of ideas as to how to kludge things together, uh, glue things together for, um, publicly verifiable, uh, or partially blind signatures.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, but that's still very much sort of an open research question.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and if requiring metadata for all instantiations was going to be the way we went, um, that might, um, delay sort of that public, um, verifiability extension.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, curious to hear what people think about that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Chris.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Curious.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, as for that, yeah, I think like, requiring every construction to support private or support metadata at all, like, seems like maybe a high bar and, like, there might be use cases where we don't need like all this extra like infrastructure.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "I think there's also the question of like how much the documents should talk about, like metadata as an abstract concept versus like specifically like it's used for epochs and other things like that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, I completely agree, Steven.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Right now, as it is in the PR, we only define, um, geographic localization and the timing, um, and it's kind of open if someone else wants to add anything else.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it might be worth revisiting that, um, against the optionality of adding or not adding public metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as right now how we're writing for the CFG draft, um, which I didn't cover today.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And if you want to see that talk that's coming later today, um, there's the possibility of you're adding an empty string and it will still be working.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but yeah, there could be other construction besides the PPF, one that allow you to use metadata, and that's like a big API discussion as well.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "So thinking about whether to, you know, make the metadata mandatory, I think, you know, making arbitrary metadata mandatory would certainly be I think that would be a high bar.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Um, maybe, uh, you know, these specific cases that you have listed could be accommodated, but I kind of think I think we might have to dig in and see how critical those features are.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but if they're not super critical, then I would say it'd be better not to have that requirement.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris, would.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: My, uh, my take regarding the sort of generality of the metadata is that if we're going to sort of support it, it it I don't think it should be bound, uh, at the protocol layer.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Um, uh, we can certainly give examples of what our suitable uses of metadata, like epics, like geo stuff, whatever.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it seems up to the application to determine exactly how many bits they want to admit, um, if any at all.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but that's my $0.02.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Alex.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Hi.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I was wondering if this partially oblivious proof supports, like, no metadata bits.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the reason I ask that is, uh, kind of wondering whether this construction could just be used instead of the original VF, because as far as I know, the performance seems pretty similar.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for that question, Alex.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so right now, for example, in the PR that we have for CFG, Um, there's the possibility of you not adding any metadata at all.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "And in that case, what happens is that they you just add a context string plus some empty string, and that's all.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because the underlying, the underlying operations of the papf executes as almost as efficiently as a regular BPF.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "So it's completely fine if you pass an empty string.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Or if you pass an actual, uh, metadata string.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Hi, this is Ben Schwartz.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as individual, I wonder if you could share your thoughts on the, uh, the trade offs or or the relationship between public metadata in the construction versus having a larger number of issuer keys?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "um, with metadata associated with the issuer key.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Um, so what you're talking about is the difference between having different keys for key rotations, uh, compare with adding metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Not not for key rotations necessarily, but um, so there's a sort of a trivial way of adding metadata where we simply, uh, assign each metadata value to a distinct issuer key.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, I think that was more like the AB, AB, AB, ab, pdf construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was that one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the problem with that construction is that it's not as efficient, actually, as the one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you need to add a zero knowledge proof that executes much less efficiently.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that's what was most much more likely the problem, uh, with that construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "So actually adding the proper one is kind of better in comparison, which how you will add public metadata because it's much more efficient.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Efficient in sorry, just efficient in what?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Computation time?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "On.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Specifically in the BPF construction is because the zero knowledge proof that you have we have to be adding for the verification part is less efficient.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Chris Wood.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Ben, I just wanted to ask a clarifying question to you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Actually, um, was your question about, uh, the naive metadata approach where you have, like, a single signing key for each value of metadata?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "Or were you asking specifically in the context of the attribute based BPF construction?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "I was not really asking about the attribute attribute based construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I was I was thinking about the the very naive, uh, one key per value, um, construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Gotcha.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, so I think Sophie's answer was great for the attribute based one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and she probably has thoughts on the other one as well.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll let her take that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: No, I have not.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Not much thoughts.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think that will need a little bit more careful analysis.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "That will be my answer, that maybe that's something that I can start looking at for later.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Stephen kind of urging that in the like, trust token experiments.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think the big issue is like it works fine for like, small amount of metadata, like 2 or 3, but like, all clients are going to need to know, like the full set of, like applicable keys, which then like balloons up to like hundreds of points if you're like doing any like significant amount of metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And it also means you can't like do arbitrary named metadata and have to know a priority like what it is.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Stephen.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "That's great.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry for forgetting about that one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Stephen.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Patten.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, do we have any use cases right now that involve more than just a few bits of metadata?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: No, as it is right now, of course, if you would like to really add the whole time expiration time, it's really split in a really explicit way.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't recommend doing that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we should recommend doing that, but you can use it.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "But what I personally think is that, um, the metadata that gets added publicly should also be small enough, because that would also what I think is that that will, um, not be diminishing the anonymity set so heavily because if you add things that are more explicit and maybe bigger, then maybe you will be, um, hum in the anonymity said, uh, further.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "It kind of more depends on.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "You can add, uh, as much as metadata as you want, but the biggest concern with adding metadata is the anonymity set rather than more like if it's okay to, uh, a lot of metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So, uh, Sophia, I wonder what your recommendation is to the working group.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Would you recommend that we add a public metadata, uh, element to the, uh, to the Privacy Pass API?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yes, I do recommend that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I would really like to know also the thoughts of the CFG um, happening later today of adding, um, easily adding the, uh, the papf construction into the Bopf one because the previous pass builds on top of that draft.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I would also like to know if indeed that's something to be supported there, because then it's much more easy to also modify the draft to do recommendation of the draft if the underlying primitive is also part of the CFG one.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "So I would like to know the output of that discussion as well.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Great.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're ready to move to the next segment.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Are you, uh, presenting again?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "I'll present again.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So really briefly, there was an anonymous credential meeting that happened a few weeks ago at pets, um, 2021.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "And we'll go over some of the privacy paths, relevant things that came out of that meeting.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, so one of the main things that came up there were a couple of presentations about various anonymous credential constructions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there was one by Alex about post-quantum construction, which is an extension of the scheme to use a lattice based approach.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this might be interesting if Privacy Pass is concerned about more post-quantum proofness.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there are also some of the constructions that Sophia mentioned regarding adding metadata in various forms.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Um, beyond just the like naive one key per metadata value, which if we think that having lots of different metadata values might be worth investigating more.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "There are also a lot of discussion about various use cases, some of them which might be applicable to Privacy Pass.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the ones that came up were contact tracing, um, and anonymous credentials.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and notably, the one thing that those use cases sort of require that is only like partially supported in current privacy pass, but would maybe be more supported with the addition of metadata.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Is having some having non-identifying information in these tokens or so that like you can limit like the domain they're used in, um, in a way that like the client is like aware of what the metadata is and can like make an informed choice that it's not like your username or your real name or anything identifying, uh, there's also the requirement for some sort of time bounded or one time use, uh, time bounded tokens that like expire at a certain amount of time after being used, which you can sort of use in privacy pass by having very short key rotations.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but that adds logistical complexity, and the additional crew rotations also have some amount of privacy implications in terms of different users having different expired tokens.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and having a nicer way of supporting that might support those sorts of use cases.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Um, more generally, these, uh, anonymous credential meetings have been happening about twice a year and is been a good place to get these sorts of use cases in discussion about additional constructions, and they'll hopefully keep on providing some useful fodder for privacy, paths to think about and for constructions to happen here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "I think the next ones in January, hopefully around crypto time.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it might be a good idea once privacy passes further finalized to see whether the charter or privacy pass should expand to include some of these cases or their separate work streams that should be spun up in regards to anonymous credentials.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yep.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: With respect to some of those additional use cases, how would the addition of metadata solve some of the or how many of those or is it?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So I think the addition of metadata could solve somewhere like the information required isn't identifying like, um, but I think, like, we'd need some sort of brand new construction for anything that's like a time bounded token, um, where, like, the time bound is based on when the token was issued, but in a way that, like, isn't like you can now split it by, like, the exact issuance time.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there might be ideas of like, splitting up the, like, chunking Time to do something similar to the epoch stuff that Sophia mentioned.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I do think like adding metadata does add support for some of these cases.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "There are some that I think will still be beyond privacy pass with metadata without additional work.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, thanks.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Any other, uh, comments on that particular presentation?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "If not, I think we have run through our, uh, scheduled agenda.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Are there?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "I know there's been some discussion, uh, in the chat, um, um, whether to add, uh, on on the abstraction layer that's been proposed.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if any.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "We have some time that that we can continue that discussion here or if not, we can all get ready for CFG.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So I think that one part that came up in the chat that I think Martin Thompson raised was sort of the question of do we need to support the view PRF style at all versus going straight to publicly verifiable line signatures type thing?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because the charter is treating the public verification as an extension.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "That will do as a follow on.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, you know, in some ways the protocol is actually simpler if you do it that way, uh, versus the VRF being a little bit more efficient, I think, if I'm remembering that correctly.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "So that might be a topic to discuss live as well if people have further thoughts.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "But to be clear, I don't have particular thoughts myself.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Chris Wood.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, I mean, it's an interesting proposal.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "I guess my question would be, imagine, imagine you did that and you abandoned Vpf and just said, we're going to do something like, um, you know, partially blind signature.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "What is the difference, then, between, uh, you know, a protocol that is a partially blind signature and privacy pass?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Like, what is the what is the thing that Privacy Pass adds on top of that?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "That is not already provided by the underlying protocol.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "It's not clear to me that there is anything sort of noteworthy, um, there.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "So if we just if we just sort of reduce this all down to one primitive.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, I'm clearly holding this wrong.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "If we reduce this all down to one primitive.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's not clear to me that we have sort of a useful protocol at the end.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but there are other people in the queue.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Alex Davidson.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "I guess my thoughts on the matter that, um, I think that there are applications where the efficiency advantages of using, like, the symmetric, the OPF will become apparent.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "But I think on that note, as, as much as finding applications where like public metadata, um, is useful, uh, is going to be useful for us.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "I think also finding applications where using like symmetric VOP, RF with no metadata would also be useful in order to ascertain whether, um, we really do need like that stripped back construction.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Martin Thompson.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Because it seemed to me like the Viper wasn't adding anything, but someone just said optimization.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "And that creates a visceral reaction in me that says, well, well, maybe you just need a better whatever the primitive is.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at the same time, uh, I think I'm coming around to the, the view that we probably have some value to it in terms of tying down parameters and defining, um, maybe formats or more, more close to how HPK does its work than, uh, say TLS does its work.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, in that context, yeah, it does make a bit of sense to have a bit of choice in how you implement things.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, as individual, uh, Ben Schwartz.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "I, uh, I was under the impression that that the, um, that the schemes that lack public verifiability, uh, are, uh, uh, have have stronger cryptographic security proofs or are proven secure under stronger assumptions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I wonder if one of the crypto experts could shed some light on that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Alex.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Yeah, I in a sense, that's true.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but the I think the main points are that the publicly verifiable schemes that we know of are currently based on either pairings or RSA, um, and, uh, I think the main, the main point is that choosing parameters in such a way that the like, security assumptions remain secure in those settings is slightly more difficult in the RSA setting.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Obviously you have to, um, you know, choose things so that the RSA assumption is secure.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "And in the pairing setting, um, I think security is just a little bit less known because, um, it's slightly newer cryptography.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "And you do see generally more cryptanalysis in that area.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "So security parameters can change.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so uh, in that sense you would have more confidence in the like classic prime order group setting that the original VOP roofs are kind of based in.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you Alex.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Chris patten.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Just for the record, um, I kind of I didn't I didn't get that all which class of of protocols require stronger assumptions than which class of protocols?",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "At least right now.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, Alex, could you could you give that summary for Chris or, uh.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "So the.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Um, so the, the vop, the, the original vop rf like the two rd vop that we used is based on, uh, like a one more gap Diffie-Hellman assumption, um, partially oblivious pseudorandom function, I believe is based on a variant of like a Q strong Diffie-Hellman assumption.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then I'm less well versed blind RSA, I guess, is based on the assumption and the pairing based assumptions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "I'm I'm not actually very well versed on what assumptions they're based on, but I assume it's some bilinear variant of like a discrete log type assumption.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: And we know like just yeah, we know the relationship between the Diffie-Hellman assumptions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "And then the RSA assumption is super standard and then the pairing based scheme.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we don't know.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "In this room.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: That's my take.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Martin Thompson.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Basically with chicken.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Chicken, chicken.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Um, what I'm hearing here is that we have a bunch of primitives, and each one of them has some sort of subset of the various capabilities that we're looking for, whether it contains public metadata, private metadata, um, or and public verifiability or not.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "And none of them seem to provide all of those capabilities.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "Yet each one of them has different performance characteristics.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "Each one of them relies on different security assumptions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "And we're sort of in a mode where we're going to be trying to pick the right primitive.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "That makes me worried about this work.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Quite frankly, I don't know how to deal with that situation very well because, yeah, this this sounds more like research than it does engineering.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Martin Chris wood.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, just to react to that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's definitely true that the different primitives have, um, different feature sets, like, uh, some of them are publicly verifiable, some are not.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, like, one of the assumptions I have been making, um, perhaps implicitly, is like all the constructions that we're considering, we consider them to be, um, uh, at least as secure as one another for some definition of, uh, secure, that is to say, um, people who are deciding to choose one variant of privacy pass or the next or the other one variant over the other should not have to make a determination in terms of like what type of security they want.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that just seems kind of terrible.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Like TLS 1.3 did a very good thing and that like, okay, for AEDs, we're just going to pick three AEDs that we know have basically the same properties.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "And um, the choice doesn't really matter.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "It comes down to performance.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "You do you do you whatever you want.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "Um, ideally we'd be in a similar posture here where in, um, the differences in the primitives or the instantiations rather vary only in, uh, what features they provide.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and possibly also performance.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "If we can come up with a scheme that makes the performance question moot, even better.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, um.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "Sophie.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Sophia Salih.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yes.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "I want to agree with Chris.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, would, um, in the sense that.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, all of the constructions that have been proposed are targeting almost the same security properties.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "It is true that they are based on different underlying assumptions.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but at least also when you're trying to add an extra feature, most of the times when adding this extra feature is adding already onto an onto the well known primitives.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "So for example, in the case, um, one of the things one of the big focus of that research was to actually provide the same properties that the BPF was.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't think that the BPF has um, so I don't think it's, it's it's just that because that would be really bad for, for any user reading, um, this I think they all are targeting kind of the same security properties.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you Martin.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: My point for me, um, I don't think it matters.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "What what, uh, what, uh, security assumptions we're basing these things on as as both of you have established.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but that's not the focus of the comment.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "Um, when we do engineering, typically we try to choose the one tool that's going to work for the use cases that we have.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "What it sounds like we're doing here is we're trying to get all the tools for all the use cases.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "And that makes me very nervous, because I don't want to get into some sort of open ended thing that says, well, we're just going to do something and everyone's going to do their own thing.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "That's not actually seeking interoperability, that's everyone doing the right thing.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "They just happen to be talking at each other at the IETF.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "That's not really a constructive use of the time that we have here.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I hope our, uh, document authors are inspired by these comments to, uh, to update the documents and bring back to the working group, uh, new, new revisions that that address these these inputs from the group.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Joe, over to you for any last comments.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, that's all I have.",
+            "confidence": 0.9882190760059613
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, hopefully, uh, see a bunch of activity in the drafts and on the list, and, uh, we'll see you next time or in CFG if you're going there.",
+            "confidence": 0.9882190760059613
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T13:31:54.820566+00:00",
+          "processed_at": "2026-01-27T13:31:54.820566+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "9itjn6xdbn"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9882190760059613
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

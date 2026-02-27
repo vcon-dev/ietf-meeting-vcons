@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "aee4b16c-29d9-4148-a6f5-b7c004f76e5f",
   "created_at": "2026-01-03T19:32:34.195422",
-  "updated_at": "2026-01-03T19:32:38.391856",
+  "updated_at": "2026-01-27T14:42:50.012765+00:00",
   "subject": "IETF 112 - DMARC Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=elYbOOfpNys",
       "meta": {
         "ietf_meeting": 112,
         "working_group": "dmarc"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 112,
         "location": "Online, ES",
@@ -50,10 +49,10 @@
         "start_time": "2021-11-09T16:00:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "dmarc",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/agenda-112-dmarc",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/bluesheets-112-dmarc-202111091600",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/minutes-112-dmarc",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-dmarc-agenda-item-2-policy-discovery",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-dmarc-chairs-slides",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/agenda/dmarc/",
         "mimetype": "text/html",
@@ -183,10 +182,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-112-dmarc",
         "mimetype": "text/markdown",
@@ -197,7 +196,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -6979,6 +6979,3981 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Well. Welcome everybody to Denmark. We have passed the top of the hour. Unfortunately, um, most of the people who've been involved in the online conversation are not here. We have no Alessandro. We have no, um, Scott Kitterman. We have no Mike hammer. Uh, there there are several, several people who have been quite involved. And I'm not expecting, uh, Doug Foster. So. Alessandra. Seth.\nSPEAKER S2: Yeah, I think some of the people are just starting to show up. Like Alessandro just joined.\nSPEAKER S1: Yeah, I see. Alessandro did just join, so maybe we'll give it a few more minutes. And, uh. Uh, starting on time is not going to help if we don't have the right people. So let's give it a few minutes. I'm still concerned that, um, most people who were involved in the conversation on the mailing list about the primary topic are not here, but we do have a few, and we seem to have some kind of critical mass. So let's get started. Welcome to the dMarc working Group session at IETF 112. Uh, I'm Barry Leiba, your, uh, one of your friendly chairs. Seth Blank is the other friendly chair. And we used to have some unfriendly chairs, but they're still participating at. Never mind. That was a silly statement anyway. Um, we'll start off with the, uh, with, as I like to say, note the note. Well, well, uh, the note well reminds you of your responsibilities in disclosing, uh, intellectual property and other things like that when you participate in IETF conversations. Um, so there's the standard slide that most of you have seen many times. Please, um, follow it. And we'll also have one that you've been seeing, uh, stress on the IETF Code of Conduct guidelines, which are specified in RFC 7154. Um, here's one summary of them. Thanks to, uh, Wes Hardaker for this slide. Um, the main thing here is, uh, treat colleagues with respect, I think is the, the primary thing. I want to highlight that, uh, um, talk to other people in a way that you would not be angry if they talked with you that way. And I think that pretty much summarizes it pretty well. So the agenda we have for today, uh, we're doing number one now. Uh, number two is what I expect to, uh, to take the most time on. Uh, we talk we've talked about this at length on the mailing list, and we hope we can wrap most of it up on the call today. And, uh, then we'll, um, if we have time, we'll get to indirect email flows. And you'll notice that I did eliminate item four from this, um, because it was a joke. So, um, we, we we asked for a one hour session. We're in a two hour time slot simply because there were more two hour time slots than one hour time slots. But let's not, um, rejoice and take two hours. Uh, let's try to keep the conversation focused. So that's the end of the chair slides. I'm going to ask, well, first, does anybody have anything they want to tweak in the agenda. And hearing nothing. Um, Todd, go ahead and um. Request slide request sharing of preloaded slides and I will do it.\nSPEAKER S3: Oh, I'm sorry. I thought we were just going to work on the slide deck, so let me pull up the slides that I have prepared and. Yeah.\nSPEAKER S1: Just, um, yeah, just to click the, um, the little paper icon and, uh, and you can load the slides that were uploaded.\nSPEAKER S3: The little paper icon.\nSPEAKER S1: Yeah. Next to your name, the second icon, the first one is a hand raised. The second one looks like a piece of paper with the corner folded over.\nSPEAKER S3: Um. I apologize. I'm not seeing the icons you're referring to. Um, but perhaps I'm looking in the wrong screen.\nSPEAKER S1: At the top of the screen, you have your name, and there are a bunch of icons. Uh, next to that, the first one is Join Queue. The second one is share preloaded slides.\nSPEAKER S3: No, my second one is ask to share slides. So that's. Yeah that's.\nSPEAKER S1: That's it.\nSPEAKER S3: Yeah okay.\nSPEAKER S1: Okay. And now you can select your slides from that technology.\nSPEAKER S3: Yay.\nSPEAKER S1: That's amazing. All right. Isn't your meeting. Go for it.\nSPEAKER S3: Okay. Sorry about that everybody. Um, as Barry mentioned and as, um, those of you who subscribe to the mailing list have seen, there has been quite a lot of discussion on the topic of policy discovery and related alignment issues over the past couple of weeks. Um, 11 tickets, uh, pertaining to this topic in some form or another. Um, this theme, it seems that we have coalesced around the idea of replacing what I call the current two query method with doing a DNS tree walk, um, with some discussion of how to limit that walk, um, in scope. Is there any disagreement as to whether or not the list coalesced around that idea that, uh, doing a DNS tree walk should be the way to go? Anyone at all? Okay.\nSPEAKER S1: We are a small group, so just, uh, unmute and talk. We need to ask to get in the queue.\nSPEAKER S3: Uh, Ali, I see your hand up. Go ahead. Alessandro.\nSPEAKER S1: Alessandro, you need to unmute yourself to talk. You know.\nSPEAKER S4: Yes. Hello. Uh, okay. Um, I wouldn't replace the the two query method. I mean, it's a method which we know it works. And, uh, it was, uh, quite well, quite correctly with, uh, some limits due to the, uh, least to the public suffix list, but it works. Uh, we have another method which is, uh, working the tree, uh, which we hope also works, but, uh, why should we push one out? We have two. We can keep two of them should be fine, shouldn't it? That's about it. Tomatoes is better than one.\nSPEAKER S3: Thank you for your comment. Murray, I see you have your hand up.\nSPEAKER S5: Um, I'm actually kind of pleased to see that a tree walk is actually surviving criticism this time. Unlike, whatever, ten or however many years ago. Uh, it was, um, we might want to include a section if we do this, uh, about, you know, in the past, this was seen as a bad idea, but the community has come around. The DNS community has come around to realize that this is probably acceptable or something like that. Uh, just so that, uh, because that's question is going to come up during evaluations by various parties. So we should get in front of it. Um, I had a thought about what Alexander just said, but it escapes me. I'll come back to the Q.\nSPEAKER S3: Okay. Thank you, Mr. Levine.\nSPEAKER S6: Thank you, I guess. I mean, the current incarnation of the of the Tree Walk was my idea in the first place, with not surprising that I like it. And I like Scott's refined version that it starts at level five even better. Which which makes which makes the cost quite clear. But actually, I have to agree. I have to disagree with with what Ali said as strongly as possible. Having two methods to do something is always worse than having one one method. The point of a standard is you give people one method that works and you use it. So if we're going to go to a tree walk, I mean, I think that means we need we need to say the tree walk is what you do is what is what you do. Now the the the PSL look up is, is is deprecated. And fortunately they usually give you the right the same answer.\nSPEAKER S3: Okay. Thank you for that. All right. I'm just writing down some notes here. Does anybody else wish to speak on the topic? John, I see you're still in the queue, but I assume that. Yeah. Okay. Jim. Fenton. Hi. Um.\nSPEAKER S7: I'd also I'd like to echo what, uh, what Murray had to say. I, I kind of felt that the the tree walk was, um, uh, actually effective and would not cause, uh, extensive, uh, problems when it was when it was brought up many years ago. So, uh, I haven't dug into the details of, of what's proposed this time, but in principle, I like the idea.\nSPEAKER S3: Thank you. Seth.\nSPEAKER S2: Context that, uh, in these tickets, a few of the things that come up is the complexity and problems with the public suffix list. And, uh, the fact that a lot of people, when they implement dMarc are confused by policy discovery and the jump, and they expect the tree walk. And we see lots of complexity and confusion. That tree walk resolves that current policy discovery mechanism doesn't. Uh, and so I think actually holding both is a is problematic because we know the current mechanism has some issues. And I, I also want to issue what John Levine said. And Scott Kinnaman's proposals actually quite, um, simple and elegant and resolves all of these matters, uh, in a standard way.\nSPEAKER S1: So I'll back in and say, um, Alessandro, um, why do you want to keep the public suffix lists? Public suffix list. Other than that, people are using it today. What advantage do you see? Of it? Of keeping it in addition to the tree walk. Alejandro, are you still there?\nSPEAKER S4: You get this unmute. Uh, it is more accurate, uh, when the PSL is accurate. I mean, for the for those domains for which the PSL is accurate, it is precise. Using that method is is very good Is, uh. Yes, we could do it with tree work, but, uh, we have, uh, uncertainties. We we may do. We may have to do more lookups. We may have to do to get something wrong. We may encounter a name or something strange, I don't know, it's, uh, it I would agree that one can try doing the tree work if it works. Good. But, uh. If it won't work or if it will have the troubles, we don't know. It is a risk. That's it.\nSPEAKER S1: Okay. Thanks for sharing that. Does anybody want to respond to that or do we think we've already discussed that point enough on the list? Because I believe there's nothing new in what Alessandro said. And, um, that the consensus we have so far is that the tree walk works and that we don't need the backup. Does anyone disagree with that consensus? Okay. Murray.\nSPEAKER S5: Thing that jumps to mind is, uh, have we seen the tree walk, work or have any interesting side effects when run at scale? Um, but, I mean, it's one thing to put it in the spec and it's another thing to, to answer that question. So, um, if any operators are, are, um, are in a position to activate that the, the tree walk and try it and see if it beats up anybody's DNS servers. That would be useful information to have.\nSPEAKER S1: Tim.\nSPEAKER S3: Thanks, Mary.\nSPEAKER S1: Tim. Go ahead. Oh, well.\nSPEAKER S8: I, uh, the bike was doing strange things. Um, to that point, I think the CAA, uh, record was brought up in the, uh, chat. And I think that's actually an excellent example of this working well at scale. Um, we had a little bit of issues the first time because the tree wasn't the tree walk wasn't specified correctly in the original CAA RFC, so be careful with that one. But once the, uh, once it was specified correctly, It worked just fine, and I think it's actually far more intuitive for most people. The public suffix list is impossible to ever get right, and I think experience has shown that. So I have a strong aversion to anything that's based off of the public suffix list. It's just proved unmanageable at scale.\nSPEAKER S1: Yes, and I do. I do think that's also rough consensus of, uh, of the group. Okay. Um, any further discussion on this topic? Todd, continue.\nSPEAKER S3: Okay. Moving on to the next slide. Um. It's maybe difficult to read, but this was something that was posted to the list. Uh, as possible text changes, uh, to describe the tree walk. I looking at this slide now it's it's minuscule and it's and it's fun. I apologize for that. But I couldn't think of a better way to represent the proposed changes on here. Um, probably worth more discussion. Um, for those of you who read it, uh, we can talk about it now, but it may, you know, obviously the text, uh, suggesting how to implement a tree walk. We'll go through, no doubt, numerous revisions between now and publication of the document. Um, but for those of you who may have taken the time to read the proposed changes, um, does anyone have any comment on this at the moment? This is a suggestion, I think, to limit it to no more than five lookups and how to do that? Um, so if we do a tree walk, are we happy with, with limiting things to five lookups? It's, it seemed like there was, um, support for limiting the tree walk to a number. And five I think was the number of people landed on. and that's what this text proposes. But, um, anybody have any thoughts on this? John?\nSPEAKER S6: Yeah, I'm looking at it now. It basically looks fine. Um, the only tweak I would make is, is to make it clear that at each level you do, you do you do prepend the dMarc label. So it's not a strict tree walk. It's it's it's it's a tree walk with a, with a leaf added each time. Okay.\nSPEAKER S1: I'm Murray noted in the chat that, uh, he would put some of the bullets as sub bullets of bullet three instead. But, you know, that's a layout issue. Jim. Jim.\nSPEAKER S7: Yeah. Based on having looked at tree walks previously in the in the context of, uh, edsp. Uh, I mean, five seems generous. Um, you could probably get away with less. Five is definitely, definitely sufficient. I mean, I mean, when you think about the operational situations where, uh, you know, you might be looking to have some inheritance of a policy or, um, where the, uh, uh. Uh, you know, maybe the, the, the potential for abuse with, uh, somebody trying to manufacture a domain name that's a bunch of levels down. Um, it doesn't seem doesn't seem terribly likely that you'd need any more than that. And, you know, perhaps even a little bit less if there were concerns about DNS load.\nSPEAKER S3: Thank you for that. Anybody else want to speak on the proposed text? Alessandro.\nSPEAKER S4: And the five labels limit. Uh, if if, uh, one have more than five labels, uh, uh, switch to uh, but, uh, that limits come from the PSL, so we should not have hard coded in the program to skip five labels. We should have a parameter for something like that which says, uh, okay, five is a good number. Uh, to skip is a good maximum number of label uh, to, to to work. And uh, if we have that Parameter, replied. We. Could it have any format at all? Um, possibly like the cell itself. Uh. I'm asking. Okay.\nSPEAKER S3: So I apologize. I wasn't quite able to hear everything you were saying. I had a little bit of feedback in my headset. You're asking for there not to be a limit. Is that what I heard you say?\nSPEAKER S4: No. To to have a parameter. A parameter file which says limit so that, um, without recompiling the program, one can say no. Now it is six or now it is decreased before it are not a fixed number because it may vary. The PSL may vary and we can change it. We can edit it. We can remove the private part only keep the first part. It is a way to parameterize the the filter, the lookup. And if we do text work, we should still have some some means to to to set some parameters. If that clears.\nSPEAKER S3: It, it seems to me that parameter setting is outside the bounds of the standard and would be more something for software implementations, but yes, I. I mean.\nSPEAKER S4: Yes, it is a software implementation, but so is using the PSL because you use it is like a parameter that you use to jump up in the tree. It is a I don't understand why we should specify ah, I accept, I agree that it is a clearer if you say do so so so so the program must do a precise thing and it's difficult to get it wrong. But there will always be details that The program will change.\nSPEAKER S3: So is your point that standards shouldn't evolve because software will have to change or I'm not. I'm not clear on what point you're trying to make. I apologize.\nSPEAKER S4: Uh, no, I mean, whatever, uh. What whichever way is, is the best one to define the standard. That will be fine for me, but. I wouldn't like to have, uh, skipping five label to set, uh, in. Uh, This is hard coded.\nSPEAKER S1: So I think you're saying what I hear you saying is that the implementation should decide how many levels to, uh, to walk.\nSPEAKER S4: Right?\nSPEAKER S1: Right. Um, in, in that it's not an interoperability issue. You walk as many levels as you want or as few. And that's not an interoperability issue. So the standard doesn't need to say that. One reason that we say that is to avoid, uh, unlimited tree walks. That would be ridiculous. Um. What I'm what I'm seeing in the side conversations is that, um, that most people are satisfied with specifying five in the spec. Does anyone want to speak about more? Uh, speak about that in more detail. And I'll just channel Seth from the, uh, from the chat that, uh, the max depth of the walk is a security consideration. Yes. To to prevent, um, unlimited walks and denial of service attacks from strange domain names. And it has some rough consensus on the list. Okay. No, no further conversation on that. I really do wish we had some of those missing people on on the meeting today. I really would prefer if the people who are chatting about this on the chat would instead speak on the medico.\nSPEAKER S3: Seth, you have your hand up.\nSPEAKER S2: The people in chat. So I will come to the mic. Um, so I, I think what what Alessandro was saying just about why five? Couldn't it be implementation specific? I think we have really strong operational parameters here. We know what people use in the real world that's collected in the PSL. Whether we whether we like the PSL or not, is is separate from it's where people record current reality. And one of the very specific guidelines in the dMarc working group charter for this phase of work is to work on dMarc. Standardization based upon operational experience. And operational experience is really clear that for seems to be the max depth. And that's I forget the exact number, but it was like 2 or 3%. Um, of the PSL has four labels, most have far fewer. And so that really does seem to be the current operational maximum. And five then seems to encompass a full tree walk that encompasses everything that's done in reality and feels both reasonable and like that's where the consensus on the list is.\nSPEAKER S1: Jim.\nSPEAKER S7: Um, do we have any notion as to whether the PSL might, at some point in the future, have more depth than it does now. I mean, that's that's the one thing that we're kind of postulating here is that four is going to be the only is going to be the maximum depth that there ever will be.\nSPEAKER S1: John.\nSPEAKER S6: I'd be pretty surprised. I mean, the the people who maintain the PSL are, are pushing back pretty hard on, on the, on. Let's see if I can do a complete sentence. The deep entries in the PSL typically come from hosting providers who want to say our customers are not our problem, and they have a whole page on their website explaining like, don't do that. And if you look at at places with actual for entry for for label entries that make sense, they tend either to be fairly deep inside, like Amazon Web Services or arcane like fourth level city entries in Japan. and it's hard to see any of those getting any deeper. So I would be I would be extremely surprised if he ever got any deeper. I mean, if anything, it might get shallower as they prune prune stuff out.\nSPEAKER S1: On the other hand, to play devil's advocate that before and things like Amazon Web Services were around, we didn't go as deep as four. So I think one of Ali's points is that if in the future we would need six instead of five, uh, are we tying ourselves or are we tying our hands behind our backs by saying five in the spec?\nSPEAKER S6: Well, I would also suggest that if you look at most of those deep names, very few of them are plausible mail senders. I mean, they tend to be, you know, host names for random web servers.\nSPEAKER S2: For one second. Yep. Um, I think the the other thing, and I'm speaking out loud here, this is, as an individual with no data to back this up is just the PSL is difficult and people see it as complicated. And like there are issues such as we're discussing. So it's also possible the PSL itself is a limiter. And once there's an easy thing like a tree walk and dMarc, maybe people might actually express the depth we haven't historically seen. So I do think there is some veracity to that talk, but there's no evidence or current operational experience to back that up. Um, I think one of the other things here that that's worth discussing, and this came up a while ago, I think when we kicked off this was should the definition of an org domain lookup be in a separate document. So the dMarc document is clean simply references the current domain. Org domain policy and then things like this are carved off in a small, concise document and then easily modified without needing to go open up or demand for surgery to make a change if we suddenly see deeper labels. And so I think that's a conversation that was started and punted until this was resolved, but is likely something we should be discussing now or soon.\nSPEAKER S1: Interesting thought Jim. Yeah.\nSPEAKER S7: Just one other thought on this. I mean, it isn't entirely hosting providers. We do have some some even in the even in the US, we do have some fairly deep, uh, domains that are things like schools like, uh, that K-12, US domains. And I think those are to some extent going out of vogue. And I think that's a good thing. But I mean, it's it's not entirely, um, people that are that are providing hosting services with, uh, with weird domain names, uh, that that being said, um, I mean, I'm not I don't love the PSL and, um, you know, the whole idea that you have to go to the essentially parse the PSL and figure out how deep it is for the domain that you're looking at just is is kind of distasteful to me.\nSPEAKER S1: I like.\nSPEAKER S4: Yes. I don't think we should give a definition of the domain in terms of a method. Uh, I mean, uh, go walk up the three for one or maximum five or anything like that, but uh, neither. Uh, look up the PSL or whatever. It should be a semantic is the organization who which is hosting that domain. That's the definition. And it is very clear and it is very good. We should not make it worse by limiting it to a method to discover it. We can suggest how to discover it because we know the DNS and we can work in it and find what is the the organizational domain. But it is it's a semantic which is, uh, compelling, not the method by which we, we reach it. Or we can try to reach it with every method. We will sometimes fail and sometimes not.\nSPEAKER S1: Well, okay. I think from an interoperability point of view, uh, we want we would like all, um, uh, all implementations to get the same answer. And if one implementation uses a tree walk and another implementation consults the PSL and we hit a situation where they provide different results, or if they do tree walks at with different, um, depth and that causes different results, then I think we, we start to have interoperability issues.\nSPEAKER S4: Why? Uh, I don't think so. I mean, what what happens if we get, uh, if one, uh, filter gets a different result? Uh, I mean, if I look up, uh, and I say, ah, I know this domain. It is my domain. I know who is the organization or domain and I go right there. Well, so, so far so good. But another filter does not do it. So when we say.\nSPEAKER S1: When we send mail to this domain, um, it bounces because it finds a p equals reject policy. When we send mail to this other domain it doesn't because they don't find the policy. So we get different results depending on where the mail went to.\nSPEAKER S4: Now you don't bounce because you don't find the policy. I mean I know you always look for the different domain. So if the policy is there, that's good. If it's not, you reach the organizational domain. Maybe you get an intermediate policy. But uh, that is the problem. Why are they defining different policies if they are different? It is a problem of that organization, not a problem of the standard or of the program which is implementing it.\nSPEAKER S1: Anybody else want to weigh in on that? Is that.\nSPEAKER S2: Not 100% certain I'm following you. So I apologize if I'm getting this wrong, but, um, I. I think what you're discussing is out of scope for the charter and how we define the project. I think this was specifically saying we are moving standards back. Previous document was informational. We have a lot of operational learning what worked and what did not work. And we want to clarify and refine this back. And so I, I hear what you're saying, but it seems to be outside of those guardrails. Or am I completely misunderstanding you?\nSPEAKER S3: Um.\nSPEAKER S4: I don't know. Sorry. I.\nSPEAKER S1: Okay. I think we need to move on to, uh, the next conversation. We can I it seems to me that we have rough consensus on limiting the tree walk to five. We can discuss further on the mailing list if we have any question, whether that's the consensus or not. So, Todd.\nSPEAKER S3: Okay.\nSPEAKER S1: Yeah.\nSPEAKER S3: Yep. There have been concerns raised regarding the PSL or, I mean, regarding the tree walk. Um, as to how one will identify the organizational domain. Um. And there was talk of, at least for PSD domains, including a flag. I believe in the dMarc records identifying themselves as PSD domains. Um, and the implementation there would be two billions. Two domains would be considered to be in relaxed alignment if both end in names that are not psds. It was my understanding of the conversation on the list, um, that there has been no consensus reached on this concept as of yet. Does anybody want to comment on this slide or the stuff that I presented here? Have I captured the current state of the conversation from the list?\nSPEAKER S1: It sounds like we have a lot of discussion on that one.\nSPEAKER S3: Well, I know there's a side conversation going on in chat that isn't in regards to this part of the topic. It's, I think, still on the how many levels.\nSPEAKER S1: Yeah, I think that's kind of settled down. So, uh, so John, go ahead.\nSPEAKER S6: I looked at Scott's comment about PTSD and this makes perfect sense, and particularly particularly since like, he personally knows everybody who has published a PTSD. So getting the getting getting them to put the flag in should not be difficult.\nSPEAKER S3: Right. Okay. Anyone else want to weigh in on this topic?\nSPEAKER S1: Well, given that there's no discussion, I suggest. Todd, are you in a position with the discussion that's happened so far that you could write some text to propose and float that specifically to the list?\nSPEAKER S3: I think so. It may take me a few days or perhaps a week or so. But yes, I can do that.\nSPEAKER S1: It doesn't have to be yesterday, but, um, maybe that's the way to go, because it doesn't seem like we have a particular interest in discussing it now, so.\nSPEAKER S3: Great. Okay, that's the end of my three card monte slide deck.\nSPEAKER S1: Okay, then I guess we are done with the tree walk conversation. So we're back to the agenda here where, um, um, have have we discussed the alignment issues that we need to discuss?\nSPEAKER S3: I think so. I mean, that was the point of the third slide about identifying the organizational domain. And that's right. When we speak, that's that's the alignment issue.\nSPEAKER S1: Okay. So indirect email flows is the the next bit. Um, where do we need to go with that? Holly. Unmute and talk.\nSPEAKER S4: I have a draft in, in the in the data tracker, uh, about, uh, recognizing uh, the, the old, the original, uh, signature after, uh, some kind of, uh, transformation by a mailing list. And I want to ask if the working group will ever be interested the in refining it or adopting it, or if I should put it on on on on the other on on uh on uh on the independent. Q. Uh, have you have a are there any any ideas on that?\nSPEAKER S1: Will you post the, um, name of the draft in the, uh, yeah, in the chat.\nSPEAKER S4: Um. That is.\nSPEAKER S1: Right. Has, um. So first I'll ask if, uh, if there's anybody who's read that and wants to comment. Well, first, who's who has read that document, the MLM transform document. Great. Raise your hand. Do the the hit the join queue button if you have. John has. And he seems to be the only one, uh, that has. Okay. Um, if you leave your hand up, if you would like to comment otherwise, put your hand down. Okay. Your hands are remaining up, so go ahead. Ned, we'll start with you. Ned, you need to unmute if you're trying to talk. Okay. Nothing. Not hearing anything from Ned. John, go ahead and comment. And John took his hand down, so. Okay. We have, uh. Go ahead.\nSPEAKER S6: Too many buttons here. Yeah. Hi, this is John. I'm trying to talk. Anyway, I looked I look at the draft, and I was I don't I don't think it's useful here. I mean, this this is an I, this is an idea that's been around for ever since AOL started publishing a dMarc policy. And it's been around even maybe even longer than that. And I think attempting to categorize all of the ways that that mailing lists might change messages and then trying to unwind them is, is hopeless. I mean, I went when the, when the ITF started doing antiedema stuff on its mailing list. I mean, I wrote I wrote some little scripts to try. Here's a bunch of ways you can wrap messages and and and try to do various other things to, to evade dMarc. And it just, you know, it's like it's not useful because mailing because people who run mailing lists are not, are not interested in this. I mean, I think we can get them to do Arc because it doesn't require them to change the way they run their lists. But saying, but saying you can make these changes, but you can't make those changes. And then having to go back into the software and trying to figure out whether the way that the list makes makes a particular change exactly matches the way this draft make makes the change. It's just like it's not going to happen. So basically, I don't think we should adopt it.\nSPEAKER S1: Okay. Go ahead Alessandro. Oh, wait, wait. Ned. Ned has, uh. Ned, it looks like you are unmuted now. No, but I still can't hear you. It looks like you're unmuted, but I still can't hear you.\nSPEAKER S4: Uh, I try, uh, I have implemented that method, and, uh, sometimes it works. Uh, yes. It does not work if, uh, if the signatures are not done, uh, regularly, like the FFC says, or, uh, if the mailing list is not, uh, is removing them, for example, but sometimes it works. So it is a partial solution to the indirect mail flow problem. I don't know a few things like, uh, should I send the. Reports when, uh, when I succeed or when fails? Or. I mean, uh, the reports. But, uh. Or should I use, uh, the the the author, uh, header field rather than regional? This kind of. Question, but okay, if if the working group is not interested, uh, just, uh, good to know.\nSPEAKER S1: Thank you. Right. It does seem like they are not. At least not at this point. Okay. Is there any other discussion on indirect email flows that we need to have right now? Todd, what what were you looking for in closing that discussion?\nSPEAKER S3: I just knew that there had been quite a lot of discussion on the list that seemed to not reach a conclusion to the decision, or the discussion just sort of petered out. And so, you know, if we're done talking about it for now, that's fine. Um, I didn't know if there was anything that the group wanted to see documented as we discussed this topic. And here's the decision we reached and therefore it should be in the work.\nSPEAKER S1: Okay. Uh, Ned Typekit comment into the chat, so I'll read it here. Um, he says, uh, while he wishes he wishes it were otherwise. He doesn't think this covers enough of the mutations. That Alessandro's document does not cover enough of the mutations to provide sufficient benefit given the cost. So. Yeah. Um. All right. I guess we are done with the, the, the indirect email flow discussion because we don't seem to have gotten critical mass on it. And that net Adds. He really wishes that weren't true. So. Okay, then I guess we have finished the agenda. I suppose.\nSPEAKER S9: Oh! Danny boy. The pipes. The pipes are calling. From glen to glen.\nSPEAKER S1: Okay. Did you guys hear that? Good. It wasn't Seth, but, you know, and you couldn't see my dancing, so I think we're done with the agenda. Does anyone have anything else they would like to discuss on this call now? Okay then I think we are done with the dMarc session. I thank everybody for calling in and I'll say again, I wish we had some of the, uh, active participants who weren't able to get on the call on the call. But here we go. So we will continue this stuff on the list with proposed text from Todd. And if we get to a point where we should have an interim, another interim meeting to discuss things further in real time, we will schedule that. So if there's no, uh, no other final comments, thanks again for coming by.\nSPEAKER S2: Thanks, everyone.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9890793299183165
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome everybody to Denmark.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "We have passed the top of the hour.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Unfortunately, um, most of the people who've been involved in the online conversation are not here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "We have no Alessandro.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "We have no, um, Scott Kitterman.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "We have no Mike hammer.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there there are several, several people who have been quite involved.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm not expecting, uh, Doug Foster.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Alessandra.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Seth.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, I think some of the people are just starting to show up.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Like Alessandro just joined.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, I see.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Alessandro did just join, so maybe we'll give it a few more minutes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, starting on time is not going to help if we don't have the right people.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "So let's give it a few minutes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "I'm still concerned that, um, most people who were involved in the conversation on the mailing list about the primary topic are not here, but we do have a few, and we seem to have some kind of critical mass.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "So let's get started.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the dMarc working Group session at IETF 112.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm Barry Leiba, your, uh, one of your friendly chairs.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Seth Blank is the other friendly chair.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "And we used to have some unfriendly chairs, but they're still participating at.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Never mind.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "That was a silly statement anyway.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll start off with the, uh, with, as I like to say, note the note.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Well, well, uh, the note well reminds you of your responsibilities in disclosing, uh, intellectual property and other things like that when you participate in IETF conversations.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's the standard slide that most of you have seen many times.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Please, um, follow it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "And we'll also have one that you've been seeing, uh, stress on the IETF Code of Conduct guidelines, which are specified in RFC 7154.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Um, here's one summary of them.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks to, uh, Wes Hardaker for this slide.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the main thing here is, uh, treat colleagues with respect, I think is the, the primary thing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "I want to highlight that, uh, um, talk to other people in a way that you would not be angry if they talked with you that way.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that pretty much summarizes it pretty well.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "So the agenda we have for today, uh, we're doing number one now.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, number two is what I expect to, uh, to take the most time on.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we talk we've talked about this at length on the mailing list, and we hope we can wrap most of it up on the call today.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, then we'll, um, if we have time, we'll get to indirect email flows.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "And you'll notice that I did eliminate item four from this, um, because it was a joke.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, we, we we asked for a one hour session.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "We're in a two hour time slot simply because there were more two hour time slots than one hour time slots.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "But let's not, um, rejoice and take two hours.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, let's try to keep the conversation focused.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the end of the chair slides.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to ask, well, first, does anybody have anything they want to tweak in the agenda.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "And hearing nothing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Todd, go ahead and um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Request slide request sharing of preloaded slides and I will do it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Oh, I'm sorry.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "I thought we were just going to work on the slide deck, so let me pull up the slides that I have prepared and.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Just, um, yeah, just to click the, um, the little paper icon and, uh, and you can load the slides that were uploaded.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: The little paper icon.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Next to your name, the second icon, the first one is a hand raised.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "The second one looks like a piece of paper with the corner folded over.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "I apologize.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not seeing the icons you're referring to.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but perhaps I'm looking in the wrong screen.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: At the top of the screen, you have your name, and there are a bunch of icons.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next to that, the first one is Join Queue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "The second one is share preloaded slides.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: No, my second one is ask to share slides.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "So that's.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah that's.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: That's it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "And now you can select your slides from that technology.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: That's amazing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Isn't your meeting.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Go for it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry about that everybody.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as Barry mentioned and as, um, those of you who subscribe to the mailing list have seen, there has been quite a lot of discussion on the topic of policy discovery and related alignment issues over the past couple of weeks.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Um, 11 tickets, uh, pertaining to this topic in some form or another.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this theme, it seems that we have coalesced around the idea of replacing what I call the current two query method with doing a DNS tree walk, um, with some discussion of how to limit that walk, um, in scope.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Is there any disagreement as to whether or not the list coalesced around that idea that, uh, doing a DNS tree walk should be the way to go?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone at all?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: We are a small group, so just, uh, unmute and talk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "We need to ask to get in the queue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, Ali, I see your hand up.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Alessandro.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Alessandro, you need to unmute yourself to talk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "You know.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I wouldn't replace the the two query method.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, it's a method which we know it works.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, it was, uh, quite well, quite correctly with, uh, some limits due to the, uh, least to the public suffix list, but it works.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have another method which is, uh, working the tree, uh, which we hope also works, but, uh, why should we push one out?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "We have two.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "We can keep two of them should be fine, shouldn't it?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "That's about it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Tomatoes is better than one.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you for your comment.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Murray, I see you have your hand up.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Um, I'm actually kind of pleased to see that a tree walk is actually surviving criticism this time.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Unlike, whatever, ten or however many years ago.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it was, um, we might want to include a section if we do this, uh, about, you know, in the past, this was seen as a bad idea, but the community has come around.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "The DNS community has come around to realize that this is probably acceptable or something like that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just so that, uh, because that's question is going to come up during evaluations by various parties.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "So we should get in front of it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I had a thought about what Alexander just said, but it escapes me.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "I'll come back to the Q.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you, Mr.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Levine.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you, I guess.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the current incarnation of the of the Tree Walk was my idea in the first place, with not surprising that I like it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "And I like Scott's refined version that it starts at level five even better.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Which which makes which makes the cost quite clear.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "But actually, I have to agree.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "I have to disagree with with what Ali said as strongly as possible.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Having two methods to do something is always worse than having one one method.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "The point of a standard is you give people one method that works and you use it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So if we're going to go to a tree walk, I mean, I think that means we need we need to say the tree walk is what you do is what is what you do.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Now the the the PSL look up is, is is deprecated.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "And fortunately they usually give you the right the same answer.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just writing down some notes here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Does anybody else wish to speak on the topic?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "John, I see you're still in the queue, but I assume that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Jim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Fenton.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Hi.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I'd also I'd like to echo what, uh, what Murray had to say.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "I, I kind of felt that the the tree walk was, um, uh, actually effective and would not cause, uh, extensive, uh, problems when it was when it was brought up many years ago.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I haven't dug into the details of, of what's proposed this time, but in principle, I like the idea.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Seth.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Context that, uh, in these tickets, a few of the things that come up is the complexity and problems with the public suffix list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, the fact that a lot of people, when they implement dMarc are confused by policy discovery and the jump, and they expect the tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "And we see lots of complexity and confusion.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "That tree walk resolves that current policy discovery mechanism doesn't.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and so I think actually holding both is a is problematic because we know the current mechanism has some issues.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "And I, I also want to issue what John Levine said.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "And Scott Kinnaman's proposals actually quite, um, simple and elegant and resolves all of these matters, uh, in a standard way.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So I'll back in and say, um, Alessandro, um, why do you want to keep the public suffix lists?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Public suffix list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Other than that, people are using it today.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "What advantage do you see?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Of it?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Of keeping it in addition to the tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Alejandro, are you still there?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: You get this unmute.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it is more accurate, uh, when the PSL is accurate.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, for the for those domains for which the PSL is accurate, it is precise.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Using that method is is very good Is, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, we could do it with tree work, but, uh, we have, uh, uncertainties.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "We we may do.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "We may have to do more lookups.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "We may have to do to get something wrong.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "We may encounter a name or something strange, I don't know, it's, uh, it I would agree that one can try doing the tree work if it works.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Good.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "If it won't work or if it will have the troubles, we don't know.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "It is a risk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "That's it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for sharing that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Does anybody want to respond to that or do we think we've already discussed that point enough on the list?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Because I believe there's nothing new in what Alessandro said.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, that the consensus we have so far is that the tree walk works and that we don't need the backup.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Does anyone disagree with that consensus?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Murray.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Thing that jumps to mind is, uh, have we seen the tree walk, work or have any interesting side effects when run at scale?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, I mean, it's one thing to put it in the spec and it's another thing to, to answer that question.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if any operators are, are, um, are in a position to activate that the, the tree walk and try it and see if it beats up anybody's DNS servers.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "That would be useful information to have.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Tim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thanks, Mary.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Tim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, well.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I, uh, the bike was doing strange things.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Um, to that point, I think the CAA, uh, record was brought up in the, uh, chat.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that's actually an excellent example of this working well at scale.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we had a little bit of issues the first time because the tree wasn't the tree walk wasn't specified correctly in the original CAA RFC, so be careful with that one.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "But once the, uh, once it was specified correctly, It worked just fine, and I think it's actually far more intuitive for most people.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "The public suffix list is impossible to ever get right, and I think experience has shown that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "So I have a strong aversion to anything that's based off of the public suffix list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "It's just proved unmanageable at scale.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes, and I do.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "I do think that's also rough consensus of, uh, of the group.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Um, any further discussion on this topic?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Todd, continue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Moving on to the next slide.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "It's maybe difficult to read, but this was something that was posted to the list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as possible text changes, uh, to describe the tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "I looking at this slide now it's it's minuscule and it's and it's fun.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "I apologize for that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "But I couldn't think of a better way to represent the proposed changes on here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Um, probably worth more discussion.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for those of you who read it, uh, we can talk about it now, but it may, you know, obviously the text, uh, suggesting how to implement a tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "We'll go through, no doubt, numerous revisions between now and publication of the document.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but for those of you who may have taken the time to read the proposed changes, um, does anyone have any comment on this at the moment?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "This is a suggestion, I think, to limit it to no more than five lookups and how to do that?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if we do a tree walk, are we happy with, with limiting things to five lookups?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "It's, it seemed like there was, um, support for limiting the tree walk to a number.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And five I think was the number of people landed on.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "and that's what this text proposes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, anybody have any thoughts on this?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "John?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, I'm looking at it now.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "It basically looks fine.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the only tweak I would make is, is to make it clear that at each level you do, you do you do prepend the dMarc label.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "So it's not a strict tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "It's it's it's it's a tree walk with a, with a leaf added each time.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I'm Murray noted in the chat that, uh, he would put some of the bullets as sub bullets of bullet three instead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "But, you know, that's a layout issue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Jim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Jim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Based on having looked at tree walks previously in the in the context of, uh, edsp.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I mean, five seems generous.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you could probably get away with less.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "Five is definitely, definitely sufficient.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I mean, when you think about the operational situations where, uh, you know, you might be looking to have some inheritance of a policy or, um, where the, uh, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you know, maybe the, the, the potential for abuse with, uh, somebody trying to manufacture a domain name that's a bunch of levels down.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it doesn't seem doesn't seem terribly likely that you'd need any more than that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, perhaps even a little bit less if there were concerns about DNS load.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you for that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody else want to speak on the proposed text?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "Alessandro.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: And the five labels limit.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if if, uh, one have more than five labels, uh, uh, switch to uh, but, uh, that limits come from the PSL, so we should not have hard coded in the program to skip five labels.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "We should have a parameter for something like that which says, uh, okay, five is a good number.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to skip is a good maximum number of label uh, to, to to work.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, if we have that Parameter, replied.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "We.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Could it have any format at all?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Um, possibly like the cell itself.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "I'm asking.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So I apologize.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "I wasn't quite able to hear everything you were saying.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "I had a little bit of feedback in my headset.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "You're asking for there not to be a limit.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Is that what I heard you say?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: No.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "To to have a parameter.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "A parameter file which says limit so that, um, without recompiling the program, one can say no.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Now it is six or now it is decreased before it are not a fixed number because it may vary.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "The PSL may vary and we can change it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "We can edit it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "We can remove the private part only keep the first part.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "It is a way to parameterize the the filter, the lookup.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "And if we do text work, we should still have some some means to to to set some parameters.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "If that clears.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: It, it seems to me that parameter setting is outside the bounds of the standard and would be more something for software implementations, but yes, I.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "I mean.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes, it is a software implementation, but so is using the PSL because you use it is like a parameter that you use to jump up in the tree.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "It is a I don't understand why we should specify ah, I accept, I agree that it is a clearer if you say do so so so so the program must do a precise thing and it's difficult to get it wrong.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "But there will always be details that The program will change.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So is your point that standards shouldn't evolve because software will have to change or I'm not.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not clear on what point you're trying to make.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "I apologize.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, no, I mean, whatever, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "What whichever way is, is the best one to define the standard.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "That will be fine for me, but.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "I wouldn't like to have, uh, skipping five label to set, uh, in.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, This is hard coded.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So I think you're saying what I hear you saying is that the implementation should decide how many levels to, uh, to walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Right?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in, in that it's not an interoperability issue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "You walk as many levels as you want or as few.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "And that's not an interoperability issue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "So the standard doesn't need to say that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "One reason that we say that is to avoid, uh, unlimited tree walks.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "That would be ridiculous.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "What I'm what I'm seeing in the side conversations is that, um, that most people are satisfied with specifying five in the spec.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Does anyone want to speak about more?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, speak about that in more detail.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll just channel Seth from the, uh, from the chat that, uh, the max depth of the walk is a security consideration.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "To to prevent, um, unlimited walks and denial of service attacks from strange domain names.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "And it has some rough consensus on the list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "No, no further conversation on that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "I really do wish we had some of those missing people on on the meeting today.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "I really would prefer if the people who are chatting about this on the chat would instead speak on the medico.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Seth, you have your hand up.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: The people in chat.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So I will come to the mic.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I, I think what what Alessandro was saying just about why five?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Couldn't it be implementation specific?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "I think we have really strong operational parameters here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "We know what people use in the real world that's collected in the PSL.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Whether we whether we like the PSL or not, is is separate from it's where people record current reality.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "And one of the very specific guidelines in the dMarc working group charter for this phase of work is to work on dMarc.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Standardization based upon operational experience.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And operational experience is really clear that for seems to be the max depth.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "And that's I forget the exact number, but it was like 2 or 3%.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, of the PSL has four labels, most have far fewer.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "And so that really does seem to be the current operational maximum.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "And five then seems to encompass a full tree walk that encompasses everything that's done in reality and feels both reasonable and like that's where the consensus on the list is.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, do we have any notion as to whether the PSL might, at some point in the future, have more depth than it does now.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, that's that's the one thing that we're kind of postulating here is that four is going to be the only is going to be the maximum depth that there ever will be.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: John.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I'd be pretty surprised.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the the people who maintain the PSL are, are pushing back pretty hard on, on the, on.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see if I can do a complete sentence.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "The deep entries in the PSL typically come from hosting providers who want to say our customers are not our problem, and they have a whole page on their website explaining like, don't do that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "And if you look at at places with actual for entry for for label entries that make sense, they tend either to be fairly deep inside, like Amazon Web Services or arcane like fourth level city entries in Japan.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "and it's hard to see any of those getting any deeper.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "So I would be I would be extremely surprised if he ever got any deeper.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, if anything, it might get shallower as they prune prune stuff out.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: On the other hand, to play devil's advocate that before and things like Amazon Web Services were around, we didn't go as deep as four.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "So I think one of Ali's points is that if in the future we would need six instead of five, uh, are we tying ourselves or are we tying our hands behind our backs by saying five in the spec?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Well, I would also suggest that if you look at most of those deep names, very few of them are plausible mail senders.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, they tend to be, you know, host names for random web servers.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: For one second.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the the other thing, and I'm speaking out loud here, this is, as an individual with no data to back this up is just the PSL is difficult and people see it as complicated.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "And like there are issues such as we're discussing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "So it's also possible the PSL itself is a limiter.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "And once there's an easy thing like a tree walk and dMarc, maybe people might actually express the depth we haven't historically seen.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "So I do think there is some veracity to that talk, but there's no evidence or current operational experience to back that up.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think one of the other things here that that's worth discussing, and this came up a while ago, I think when we kicked off this was should the definition of an org domain lookup be in a separate document.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "So the dMarc document is clean simply references the current domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Org domain policy and then things like this are carved off in a small, concise document and then easily modified without needing to go open up or demand for surgery to make a change if we suddenly see deeper labels.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "And so I think that's a conversation that was started and punted until this was resolved, but is likely something we should be discussing now or soon.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Interesting thought Jim.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Just one other thought on this.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, it isn't entirely hosting providers.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "We do have some some even in the even in the US, we do have some fairly deep, uh, domains that are things like schools like, uh, that K-12, US domains.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "And I think those are to some extent going out of vogue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that's a good thing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "But I mean, it's it's not entirely, um, people that are that are providing hosting services with, uh, with weird domain names, uh, that that being said, um, I mean, I'm not I don't love the PSL and, um, you know, the whole idea that you have to go to the essentially parse the PSL and figure out how deep it is for the domain that you're looking at just is is kind of distasteful to me.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I like.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we should give a definition of the domain in terms of a method.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I mean, uh, go walk up the three for one or maximum five or anything like that, but uh, neither.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, look up the PSL or whatever.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "It should be a semantic is the organization who which is hosting that domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "That's the definition.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "And it is very clear and it is very good.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "We should not make it worse by limiting it to a method to discover it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "We can suggest how to discover it because we know the DNS and we can work in it and find what is the the organizational domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "But it is it's a semantic which is, uh, compelling, not the method by which we, we reach it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Or we can try to reach it with every method.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "We will sometimes fail and sometimes not.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well, okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "I think from an interoperability point of view, uh, we want we would like all, um, uh, all implementations to get the same answer.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And if one implementation uses a tree walk and another implementation consults the PSL and we hit a situation where they provide different results, or if they do tree walks at with different, um, depth and that causes different results, then I think we, we start to have interoperability issues.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Why?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I don't think so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, what what happens if we get, uh, if one, uh, filter gets a different result?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I mean, if I look up, uh, and I say, ah, I know this domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "It is my domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "I know who is the organization or domain and I go right there.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Well, so, so far so good.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "But another filter does not do it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "So when we say.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: When we send mail to this domain, um, it bounces because it finds a p equals reject policy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "When we send mail to this other domain it doesn't because they don't find the policy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "So we get different results depending on where the mail went to.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Now you don't bounce because you don't find the policy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "I mean I know you always look for the different domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So if the policy is there, that's good.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "If it's not, you reach the organizational domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe you get an intermediate policy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "But uh, that is the problem.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "Why are they defining different policies if they are different?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "It is a problem of that organization, not a problem of the standard or of the program which is implementing it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Anybody else want to weigh in on that?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Is that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Not 100% certain I'm following you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "So I apologize if I'm getting this wrong, but, um, I.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "I think what you're discussing is out of scope for the charter and how we define the project.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "I think this was specifically saying we are moving standards back.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Previous document was informational.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "We have a lot of operational learning what worked and what did not work.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "And we want to clarify and refine this back.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "And so I, I hear what you're saying, but it seems to be outside of those guardrails.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Or am I completely misunderstanding you?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I don't know.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "I.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "I think we need to move on to, uh, the next conversation.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "We can I it seems to me that we have rough consensus on limiting the tree walk to five.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "We can discuss further on the mailing list if we have any question, whether that's the consensus or not.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "So, Todd.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yep.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "There have been concerns raised regarding the PSL or, I mean, regarding the tree walk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as to how one will identify the organizational domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "And there was talk of, at least for PSD domains, including a flag.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "I believe in the dMarc records identifying themselves as PSD domains.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the implementation there would be two billions.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Two domains would be considered to be in relaxed alignment if both end in names that are not psds.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "It was my understanding of the conversation on the list, um, that there has been no consensus reached on this concept as of yet.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Does anybody want to comment on this slide or the stuff that I presented here?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Have I captured the current state of the conversation from the list?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It sounds like we have a lot of discussion on that one.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well, I know there's a side conversation going on in chat that isn't in regards to this part of the topic.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "It's, I think, still on the how many levels.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, I think that's kind of settled down.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, so John, go ahead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I looked at Scott's comment about PTSD and this makes perfect sense, and particularly particularly since like, he personally knows everybody who has published a PTSD.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "So getting the getting getting them to put the flag in should not be difficult.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone else want to weigh in on this topic?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well, given that there's no discussion, I suggest.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Todd, are you in a position with the discussion that's happened so far that you could write some text to propose and float that specifically to the list?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "It may take me a few days or perhaps a week or so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "But yes, I can do that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It doesn't have to be yesterday, but, um, maybe that's the way to go, because it doesn't seem like we have a particular interest in discussing it now, so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Great.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, that's the end of my three card monte slide deck.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, then I guess we are done with the tree walk conversation.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "So we're back to the agenda here where, um, um, have have we discussed the alignment issues that we need to discuss?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, that was the point of the third slide about identifying the organizational domain.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "And that's right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "When we speak, that's that's the alignment issue.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "So indirect email flows is the the next bit.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Um, where do we need to go with that?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Holly.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Unmute and talk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I have a draft in, in the in the data tracker, uh, about, uh, recognizing uh, the, the old, the original, uh, signature after, uh, some kind of, uh, transformation by a mailing list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "And I want to ask if the working group will ever be interested the in refining it or adopting it, or if I should put it on on on on the other on on uh on uh on the independent.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Q.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, have you have a are there any any ideas on that?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Will you post the, um, name of the draft in the, uh, yeah, in the chat.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "That is.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Has, um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "So first I'll ask if, uh, if there's anybody who's read that and wants to comment.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Well, first, who's who has read that document, the MLM transform document.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Raise your hand.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "Do the the hit the join queue button if you have.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "John has.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "And he seems to be the only one, uh, that has.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you leave your hand up, if you would like to comment otherwise, put your hand down.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Your hands are remaining up, so go ahead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Ned, we'll start with you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "Ned, you need to unmute if you're trying to talk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Nothing.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Not hearing anything from Ned.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "John, go ahead and comment.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "And John took his hand down, so.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "We have, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Too many buttons here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, this is John.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "I'm trying to talk.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, I looked I look at the draft, and I was I don't I don't think it's useful here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, this this is an I, this is an idea that's been around for ever since AOL started publishing a dMarc policy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "And it's been around even maybe even longer than that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "And I think attempting to categorize all of the ways that that mailing lists might change messages and then trying to unwind them is, is hopeless.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I went when the, when the ITF started doing antiedema stuff on its mailing list.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I wrote I wrote some little scripts to try.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Here's a bunch of ways you can wrap messages and and and try to do various other things to, to evade dMarc.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "And it just, you know, it's like it's not useful because mailing because people who run mailing lists are not, are not interested in this.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I think we can get them to do Arc because it doesn't require them to change the way they run their lists.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "But saying, but saying you can make these changes, but you can't make those changes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "And then having to go back into the software and trying to figure out whether the way that the list makes makes a particular change exactly matches the way this draft make makes the change.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "It's just like it's not going to happen.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "So basically, I don't think we should adopt it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead Alessandro.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, wait, wait.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Ned.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Ned has, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Ned, it looks like you are unmuted now.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "No, but I still can't hear you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "It looks like you're unmuted, but I still can't hear you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, I try, uh, I have implemented that method, and, uh, sometimes it works.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "It does not work if, uh, if the signatures are not done, uh, regularly, like the FFC says, or, uh, if the mailing list is not, uh, is removing them, for example, but sometimes it works.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "So it is a partial solution to the indirect mail flow problem.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know a few things like, uh, should I send the.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Reports when, uh, when I succeed or when fails?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Or.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, uh, the reports.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "Or should I use, uh, the the the author, uh, header field rather than regional?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "This kind of.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Question, but okay, if if the working group is not interested, uh, just, uh, good to know.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "It does seem like they are not.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "At least not at this point.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Is there any other discussion on indirect email flows that we need to have right now?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Todd, what what were you looking for in closing that discussion?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I just knew that there had been quite a lot of discussion on the list that seemed to not reach a conclusion to the decision, or the discussion just sort of petered out.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "And so, you know, if we're done talking about it for now, that's fine.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I didn't know if there was anything that the group wanted to see documented as we discussed this topic.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "And here's the decision we reached and therefore it should be in the work.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Ned Typekit comment into the chat, so I'll read it here.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "Um, he says, uh, while he wishes he wishes it were otherwise.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "He doesn't think this covers enough of the mutations.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "That Alessandro's document does not cover enough of the mutations to provide sufficient benefit given the cost.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "I guess we are done with the, the, the indirect email flow discussion because we don't seem to have gotten critical mass on it.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "And that net Adds.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "He really wishes that weren't true.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, then I guess we have finished the agenda.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "I suppose.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Oh!",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "Danny boy.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "The pipes.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "The pipes are calling.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "From glen to glen.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "Did you guys hear that?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "Good.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "It wasn't Seth, but, you know, and you couldn't see my dancing, so I think we're done with the agenda.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "Does anyone have anything else they would like to discuss on this call now?",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "Okay then I think we are done with the dMarc session.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "I thank everybody for calling in and I'll say again, I wish we had some of the, uh, active participants who weren't able to get on the call on the call.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "But here we go.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "So we will continue this stuff on the list with proposed text from Todd.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "And if we get to a point where we should have an interim, another interim meeting to discuss things further in real time, we will schedule that.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "So if there's no, uh, no other final comments, thanks again for coming by.",
+            "confidence": 0.9890793299183165
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thanks, everyone.",
+            "confidence": 0.9890793299183165
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T14:42:50.011483+00:00",
+          "processed_at": "2026-01-27T14:42:50.011483+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "i57iu3668c"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9890793299183165
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

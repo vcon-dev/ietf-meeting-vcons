@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "777dc995-144d-4042-b8f4-18131ad1080c",
   "created_at": "2026-01-03T19:27:19.910880",
-  "updated_at": "2026-01-03T19:27:24.419954",
+  "updated_at": "2026-01-23T21:06:53.085197+00:00",
   "subject": "IETF 110 - OPENPGP Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=wfSodl-beQ4",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "openpgp"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "openpgp",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-openpgp",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-ietf-openpgp-crypto-refresh",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-openpgp-202103111530",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-openpgp",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-openpgp-chair-slides",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-openpgp-key-extraction-attacks-through-private-key-corruption",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-openpgp-a-common-openpgp-interoperability-test-suite",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-openpgp-simple-octet-strings-for-ecc-in-openpgp",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/openpgp/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-openpgp",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8383,6 +8383,4128 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Okay, I guess we're at time. So as you said a minute ago, we're we're we have one hour today. Uh, the agenda is relatively full, so we'll try and get on through it. Uh, my name is Steven Farrell. I'm one of your co-chairs, and.\nSPEAKER S2: And I'm Daniel Con Gilmore, other co-chair.\nSPEAKER S1: And. Okay, so you can talk to these slides, and I'll shut up.\nSPEAKER S2: Sure. Um, so this is the note. Well, we are well into, uh, the ITF. Hopefully you've seen this before. This covers, um, rules about what is discussed in this meeting. Um, hopefully you've already read it. Um, I think we'll skip to the next slide here. Um, so the agenda is. Tight today. Uh, Steven mentioned, um, we are gonna, uh, have a brief reprise of the strategy for the working group, how we're how we're working on the documents. And then we have three presentations today. Um, we have, uh, a talk about key extraction attacks through encrypted private key corruption, a discussion about the interoperability test suite and using simple octet strings for elliptic curves. Um, and then, uh, in the remaining time, we have opportunity for the editors of the crypto refresh draft, which in particular will be Paul today, uh, to talk through the status of the draft and any issues. Um, and hopefully by the end of this, we will be able to discuss, um, an upcoming interim. Um, I want to give folks a chance to look at this agenda and raise concerns. Um, uh, I see a note from Paul in the chat that says, uh, am I talking today? Um, we have a chance to go through open issues with the draft. I think we can just pull up the GitLab issue tracker, um, and give people a chance to talk about it if we have the time. Um, but I want to the presentations that we have are going to consume most of the meeting here. Um, so, uh, any other agenda bashing or shall we move on to, um, a discussion of the overall plan? Just so we're set on the same page. I'm not hearing anything. If something comes up and you want to agenda bash later, you can always just bring it up. Uh, in, in jabber. So, uh, just a brief reminder about how we're working with this. Um, before the group got rechartered, there was a lingering, uh, RFC 48, 80 draft ten. Um, that was from a previous iteration of the working group that failed to produce an RFC. Um, in trying to figure out how we could get consensus on a new RFC that still meets the intruder scope for the new revision of the working group. What we've done is we sort of reset to RFC 4880. We picked a new draft name. It's now draft IETF OpenPGP crypto refresh. Um, and we are trying to restore the changes that were in 48, 80, ten, um, topic by topic. So each revision, um, tries to address each each one. So far we've had three revisions. Zero zero is basically 4880 with some minor formatting changes. Uh, zero one uh, fixed all the uh, published errata and uh, added the Camellia cipher and updated some terminology along with one change about whitespace that, thanks to the list, has been reverted. Oh two included elliptic curves merging in stuff from existing Rfc's. Um, we changed the registries to be specification required instead of IETF consensus um or RFC required. Uh, we added Sha three. Uh, we brought in two 5519 for SDH, and we deprecated some of the older stuff that people shouldn't be using anyway. And we reserved a bunch of code points for what had been in this ten, um, in the upcoming revision. I guess Paul can maybe speak to this later, but I think we're talking about staging, uh, Eddie DSA, um, and maybe V5 and V5 fingerprints in the next one upcoming. And thank you to everyone who's reviewed on the list for these changes. Uh, it has been really useful to get a sense of what the working group thinks about them. It's pretty clear that we will, um, uh, fix up some some parts of it. Um, yeah. I see your comment there about, uh, about just how legacy this stuff is that we are trying to to, um, put in here. But yeah, it's 2021. Let's get open PGP up to date. Um, so that's sort of the direction that the working group is going on. Next slide Steven. Just about the mechanisms, the mechanics for how we're doing it. Um, uh, so the draft is being developed. Uh, in git, we are using a central GitHub repository as a place to keep track of the changes. We're using Gitlab.com that is not github.com. Um, in that repository you will see three documents in markdown form, which are the source. 4080 is a markdown source version of what is the actual original? 4880 4880 Bestmed is a markdown version of 4080 dash ten that is, the previous draft from the previous iteration of the working group. And crypto refresh is the draft that we are working on. So there are opportunities to do sort of diffs and comparisons between those three documents. Uh, as Paul mentioned in the chat, RFC diff is useful for comparing these things. Um, I find actually also diff, given the markdown sources, is useful for comparing the different documents. And if anybody wants to talk later, probably not in this group, but in a separate conversation, I'm happy to walk you through. If you're interested in trying to help edit for proposed changes, I can help you with some of that. We were using the issue tracker where possible, but of course all conversation goes on the mailing list. Um, but when stuff comes up on the mailing list, we do like to keep track of it in the issue tracker so that it doesn't get lost. There's been a fair amount of discussion, which is much appreciated. I think that's it for the recap here. And um, if possible, I'd like to go ahead and get started with the next presentation, unless folks have questions.\nSPEAKER S1: And so just on the on that, I think there's it's maybe worth emphasizing since, uh, we, we're likely to do a lot of the kind of detailed issue tracking and processing via a set of interim meetings. And so there's probably a slightly larger group here today. Uh, it's probably worth emphasizing that we're not really in a position where the working group is open for, uh, fresh new ideas just now. Um, really what we're doing is we're playing kind of catch up on the set of diffs versus 4880 that we already nearly know for sure that we want to include, but we're making sure we get consensus on those before we go forward. So it's a it's a it's a slightly kind of bookkeeping exercise to some extent, but with technical parts. Um, but the main thing is, if, you know, if you have a super good idea for something new to do with BGP, now's not really the good time. Uh, by all means, you know, drop a mail to the list, but expect that we might say, uh, let's get to that after we've already got a bit of success with the current work. Just want that to be clear. Yep. And if there's no other, if there's no questions on the plan, then we will move to key extraction. Let me just pull that up. Okay. Lara. Okay, great. Um, so just say next slide whenever you need it.\nSPEAKER S3: Uh, yeah. Sorry. There's, uh. Okay, cool. Um. Hey. I'm Lara. Uh, I am a security engineer at ProtonMail, and as part of my master's thesis, I work with Kenny Patterson and Daniel Hawkins. Um, and we looked into the security of BGP. And one of the questions we focused on is how far can an attacker go if they have access to the encrypted private key of the victim? So today I'll give a high level overview of the attacks and issues that we have found. And then I will also discuss the countermeasures. Um next slide please. So in terms of the model we are considering, we have an attacker who has write access to the encrypted key. So this means that the attacker can corrupt the encrypted private key of the victim. And then the victim will use a key as long as they can decrypt it with their passphrase. In practice, this means that the victim will not check the key fingerprint before using the key. Uh, next slide please. So the requirement on key decryption is relevant because, um, in PGP the private key is not fully encrypted. So here you can see uh, the schema of an RSA key for instance. And when you encrypt the key only the fields in gray, uh, are both encrypted and authenticated. So those include the secret key parameters And if an attacker tampers with the encrypted data, then the key decryption will fail. But there are also some parameters that are stored in clear text. And in case of RSA, those are the public modulo n and the public exponent e. And if the attacker corrupts those values, then the decryption will work fine. And uh Klemmer Rossa in 2001 already noticed this, uh, partial integrity check issue, and they exploited it. They showed how an attacker could corrupt the public parameters of a DSA key. Then they wait for the victim to sign using the corrupted key. And from the faulty signature, they could extract the DSA secret exponent. Next slide please. Um. Now at the time, OpenPGP was not fixed to address that specific attack vector. So what we have found is we have, uh, looked at the same attack idea again. And, um, we have found that, uh, it's not just DSA keys, but any key type is potentially vulnerable to, uh, this kind of key corruption attacks, uh, specifically when it comes to faulty signature attacks, um, DSA, Ecdsa and RSA keys can be directly, uh, compromised, and the attacker needs to, um, corrupt the key only once, and then it needs as little as one faulty signature to extract the secrets. But also, um, any encrypted key as well as Elgamal key can be indirectly targeted by transforming, um, the key into a DSA one, and this kind of key transformation is possible without breaking key decryption because, um, uh, all key types except for RSA have a compatible format of the encrypted data in a private key. Um, now, if you're not familiar with the key types, I'll just point out that keys and elgamal keys are encryption only. However, thanks to this, uh, key transformation, they can still be compromised using multi-signature attacks by so converting those keys into DSA ones. Um, so aside from these, uh, attacks that target signing, we've also found some attacks that exploit decryption, but those are, uh, a little bit more involved. And, uh, we will be sharing, um, more information about the decryption attacks, as well as all the mathematical details of designing attacks. Um, soon enough we are finishing up a paper and we will be, um, publishing it and sharing it with the community soon. Next slide please. So, um, just to review, uh, what are the existing protocol level protections in place, uh, that are relevant for the attack? So, uh, as mentioned, the issue is that only, uh, some of the parameters are authenticated. This is either with AAD or CFB. But in both cases, uh, the public values, uh, can be corrupted by the attacker. And key decryption, uh, will succeed. Um, and when the attacker has control of the public values, it means that the attacker is also free to really replace the subkey binding signatures, for instance, to make sure that they still verify with the corrupted public key parameters. Now, what the attacker cannot do is forge third party certifications. So those become invalid. And also, if the public feels are corrupted then the key fingerprint necessarily changes. But to reiterate, uh, that's why in our threat model, we really consider a user that is not careful enough and basically ends up using the key without inspecting the key fingerprint. Um, next slide please. And so, uh, currently if, uh, an OpenPGP library wants to prevent, uh, key corruption attacks from happening. Well, uh, it needs to do is to perform some kind of key validation after decrypting a private key and before using it for security operations. So specifically, the idea of key validation would be that, um, since you have the secret values, the secret parameters that are necessarily authenticated, but you have the public values that are potentially corrupted, you want to make sure that the private and public parameters are consistent and validation, uh, is a bit of a delicate process because, um, if you do it wrongly, it's either ineffective or it can open up the possibility of additional attacks. Um, for instance, uh, the validation method that does not work is, uh, trying to use the key, for instance, to sign and verify a message or encrypt and decrypt a message. So in many, depending on the key type, Even if the operation is successful, you have no guarantee that the private and public parameters correspond or are strong enough. So instead, um, to carry out private key validation, one should really check the mathematical relationship between the different parameters. And this means carrying out some algorithm specific checks. And in case of RSA these are straightforward enough. But um this is not the case with all key types. Uh next slide please. In fact um, for instance, in Elgamal, there is no way to fully validate a key by checking the correspondence between parameters. Um, so it's possible, but it's not feasible. And for DSA, um, an eddsa, uh, the operations are still expensive. And in the case of DSA, is kind of tricky. Um, and in general, what we're seeing in practice, um, we have reviewed a number of popular OpenPGP libraries and none of them is safe, um, against, uh, all of the attacks that were found. So even if key validation is implemented, it's always it's often missing some key checks. And uh, in in terms of end to end attacks, we have found, um, two real world applications that, um, are vulnerable to, uh, this key corruption issues. So, uh, next slide please. So in light of the what we think is the seriousness of the issue and the fact that, um, it's difficult and inefficient for, uh, implementations to address the problem. Uh, what we would propose is that the standard, um, be changed so that key decryption, uh, fails if the public, uh, parameters are corrupted. And this can be achieved without introducing any new primitive in the spec. It can just reuse, uh, what, uh, libraries have already implemented. Specifically, if I'd encrypted keys, uh, are standardized, then the idea for them would be to put the public parameters and the key type inside the associated data, which is data that is not encrypted but is still authenticated. Instead, if we remain with CFB encrypted keys, then one possibility is to put the public key, um, and actually together with the private one currently in CFB key is only the private parameters are hashed. And this the second CFD solution is the same that was proposed in 2001 when the first DSA attack was established, and so the advantage of this kind of protocol level solution would be security wise, that you don't delegate the you don't delegate the anything to the implementations, and you have a solution that works across all algorithms. And that is really much, much faster. So that's that's all for me.\nSPEAKER S1: Great. Thank you. Uh, I guess we have time for a couple of questions. Uh, I'm sure one of them will be. When? When can we expect to see the full detail or. And where or will you just let us know?\nSPEAKER S3: Uh, we're really reviewing the paper. So I don't want to give any time and time predictions, but it should be fairly soon.\nSPEAKER S1: Okay. If there are other questions, then if people would just like to get themselves, uh, raise their hand using the echo tool and. There's some chat in the jabber that Kenny's been handling, I guess. Kirsty.\nSPEAKER S4: You for the presentation. Um, you said you found two real world apps where this was vulnerable. Um, did you report the vulnerability through their vulnerability disclosure program? Did you get in touch with the apps themselves? Thanks.\nSPEAKER S3: Uh, yes. So, um, both the libraries that we have reviewed and the applications have been contacted and the application specifically have already been fixed, uh, already a few months ago, actually.\nSPEAKER S1: Wait, so we don't seem to have. Oh, Kenny, are you in the.\nSPEAKER S5: Oh, just to say thanks. We did. Responsible disclosure, I guess, is the short way of saying what I just said. And, uh, uh, so all the affected libraries have been notified and have had a chance to, uh, patch, um, and as I already said, both of the applications we found to be vulnerable have fixed.\nSPEAKER S2: So I just wanted to say, uh, thanks to the researchers, to Lara and Kenny and and your and your colleagues who worked on this for bringing this to the attention of the working group. Um, it sounds like you did a pretty good review of existing implementations, but obviously there may be implementations that you don't know about. So being able to talk about it here should hopefully give people a chance to have a heads up if they have an implementation that they haven't published, but much appreciated for bringing that to the group. Sure.\nSPEAKER S1: Yeah. Indeed. I think it's really good work. Thank you. Okay. And you were exactly on time, so that's even better. Thank you for that, too. Uh, so I think if we can move on to the next one, it's justice.\nSPEAKER S6: Hi. Can you hear me?\nSPEAKER S1: Yeah.\nSPEAKER S2: Yes, we can hear you.\nSPEAKER S1: So just, uh, whenever you want. Next slide. Just just just let me know and I'll click the button for you.\nSPEAKER S6: Great. So I'm useless. I'm here to very briefly talk about my efforts to bring interop testing into the OpenPGP community. Um, if you're curious, you can find the results on tests. And the presentation is both in the IETF tool and will also be on our website. Next slide please.\nSPEAKER S2: If you could be a little bit louder that would be great.\nSPEAKER S6: Okay I will try to make that happen. Better. Can you hear me? Better. Okay. So I've been a developer for roughly five years. Um, I started working for Werner, and in 2015. And nowadays, I'm employed by the foundation. And our mandate is not only to write a P2P implementation. Although we did that. Our implementation is called Sequoia. Our mandate is also to improve the ecosystem as a whole, and writing an universally useful test suite has been on my mind for quite some time. In fact, I proposed to do that at the OpenPGP conference in Cologne in 2016. Next slide please. So why why should we do that? So we needed our, uh, a way to verify our implementation, right? And if we have to do the work anyway, we can make it useful for others too. And this is in line with our mandate of improving the ecosystem. And it's good for other implementations too, because writing tests is a lot of work and they get free tests. And there are, um, secondary effects too. So we hope that users will enjoy better software and increased interoperability. And recently I've learned that this will also help the standardization effort. So the working group can see what's implemented and maybe also see where the implementation is is lacking or where implementers, uh, would benefit from more guidance. Next slide please. So the tests are black box tests. And there are two kinds of tests. The first one I call consumer tests, where artifacts are produced by the test suite and then, uh, consumed by all the implementations. And the other kind are producer consumer tests. And here the artifacts are also produced by the implementations being tested. So you get this nice interoperability matrix. And the test suite uses an interface called SOP or the stateless OpenPGP interface that has been extracted by DDG. And you can see some examples. So here we generate a key. Then we use it to encrypt some data. Data is read from standard in and the ciphertext is produced on standard out. And to decrypt you do the same. You feed the uh, ciphertext on standard in and get the plaintext on standard out. And currently, the test suite just uses five very simple operations and gets out a lot of information that way. So on the right you see an example test. Um, every test has a heading and it has a stable link that you can refer to in bug reports when you get a description and maybe additional artifacts like certificates. And there is a little button next to artifacts. And if you have the right font, you also get this little magnifying glass in the button. And if you click on that, you get, uh, taken to a packet dumper to inspect the artifact. If you look at the results, um, you see check marks and cross marks. Check Mark means the operation succeeded. Crossmark means it does not, did not, and some tests have an expectation. So we expect an operation to succeed or we expect an operation to fail. And if an implementation matches the expectation, it's marked as green and has an earmark in the left top corner. And if it fails to meet the expectations, it's red and has a earmark in the right top corner. Most tests start with a base case, so to make sure we are all on the same page. And there are then there are some variants and some of the variants where the the interpretation or the expectation is not clear. They don't have any expectations. So you get a kind of white uh row. and sometimes, um, mostly in producer consumer tests, the producer fails to produce an artifact, or the produced artifact does not meet the expectations. So you can get a cross mark there. Two. Finally, if you hover with the mouse on cross marks or check marks, you can see additional output like, uh, the result of successful signature verifications or error messages. Next slide please. So this is an example of a signature verification verification test. So Neba started looking into encodings of IC artifacts. And to aid that I decided to write the test. And the test verifies the eddsa Signature, and it starts with a base case that's, uh, green for all implementations except for GPG, one for um, which does not do EQ. And then you see a variant where the s value of the signature is zero padded. Um, and many implementations just support that even though it's slightly out of spec. And then just for fun, I decided to tack the R value as well. And none of the implementations like that. Next slide please. This is an example of a producer consumer test. So or maybe we could should call it um, a scenario test. Um and this model's key generation encryption and decryption. So you generate a key with implementation, a encrypt for that key with implementation B, and then decrypt it with the implementation A, and you can see um, gpgme for example, using GPG one four fails to pass the test for every implementation that creates an SEC key by default. And Dhcpd generates an DSA and Elgamal encryption key. And some implementations do not support Elgamal, so that fails. Finally, key generation with GPG one four is not supported. Next slide please. So currently we have around 80 tests and that amounts to around 400 test vectors. And I found at least 80 bucks and reported around 80 bucks across nine different implementations. So I consider that a success. And the improved implementations across the board, not only, uh, Sequoia in accordance with our mandate. And we also improved the the understanding of the ecosystem. So during our implementation effort, we ask our questions how our implementation handling this or that. And we just wrote the test to find out. And. There are some tests where the implementations, uh vary widely. And this may point out uh where implementers need more guidance. Next slide please. So. Let's start with the good news. Algorithm support is excellent. So almost all implementations support almost all algorithms. Um, and if you look at the the chart on the right, uh, a significant uh, percentage of, of uh, the points you see are the, the algorithm supporters. Um, then there are problems. For example, if you consider a signature sub packets, it's unclear what implementations should do if there are multiple, maybe conflicting sub packets. Um, there is uncertainty about what information you can take from Unhatched subject areas and how you handle critical sub packets. Then timestamps. A bit of a disaster. Um, it's sometimes not clear how to handle missing sub packets. Missing timestamps, sub packets. Uh, what to do if a signature's creation time is in the future? Or what if the signature's creation time predates the signing keys creation time? Or what if, at the time the signature was supposedly created, the signature subkey was not bound or was revoked, or the certificate was for some reason not not valid. And there are unknown packets. So I think unknown packets should be ignored as as much as possible to ensure forward compatibility. Say you've verifying signatures, detached signatures and there is a V4 and V5 signature And you don't dig the five signature. You should. You should be fine with verifying the signature. Expirations. Um. Implementations vary widely with respect to, uh, the question of do signatures expire like in the context of um, certificate component binding signatures? Uh, do primary key binding signatures expire and do certs expire? If you look at revocations, revocations are unfortunately not as reliable as we like. And then there is the question of are there software revocations as in if I revoke a user ID but I joined the organization later on. Again, can I rebind the user ID? There are tests um, looking at robustness. So certificates are the most complex compound data structure in P2P. And there is a test that explores how robust the certificate Canonicalization is. For example, if you duplicate components or change the order of packets, stuff like that. Finally, there is some tests about Ascii armor. For example, I explored the question whether concatenated armored certificates are a keyring or not, and Ascii armor itself can be a source of brittleness. For example, you can have whitespace changes or your armor text is quoted or parts are missing like the footer is missing. Or finally, you can get arbitrary encoding done to your to your armored block. So I check how implementations deal with that. Finally, the really bad news. Um, many implementations accept signatures from weak algorithms. So a third of implementations accept and successfully verify MD5 signatures. Five of nine signature um implementations are fine with Sha1 signatures, and four of nine are happy with ripemd signatures. And just for fun, I included a test that checks signatures over the shattered collision, and five of nine implementations are fine with that. Okay. Next slide, please. So. I hope you consider interoperability testing important and want to join the effort. And I, I would like to invite you to do that. So if you want to add tests or um propose tests talk to me or open an issue. Um, most artifacts are generated on the fly using Sequoyah, but some artifacts are just stored as test data. And if you generate artifacts, please, please use the common test keys, the Alice and Bob key. And if you want to get your implementation tested, that's really easy. You just need to implement the stateless OpenPGP and OpenPGP interface. And then we can plug it into the test suite. To do that just talk to me. Finally, if you want to argue semantics, you know, I wrote tests, and then I thought about what the most useful outcome is. But I could be wrong, right? Again, please talk to me or open an issue, or let's take the discussion to the mailing list. Finally, if you want to run the test suite, uh, locally, that should be quite easy. Just clone it. Um, look into the readme. There are some build dependencies you might need to install. Then you need to install the implementations you want to test, tweak your configuration and then run it. And you can create both HTML output or a JSON output. And. One area where uh help would be greatly appreciated would be in the presentation of results because, um, as as we add more and more tests, the results become more and more unwieldy. So having a front end, maybe that looks at the JSON data and then presents it in a nicer way, that would be very helpful. And that's it. Thank you.\nSPEAKER S1: Great. Thanks. Uh. Go ahead.\nSPEAKER S2: Yeah. I just wanted to thank justice for the presentation and for the tremendous amount of work that's gone into this. Uh, I think it's actually highlighted a lot of stuff. And I know that many bugs have been fixed as a result. Um, we have a little bit of time for questions. Um, but, uh, we're a little over time right now. Um, do folks have anything they want to raise? You can just put yourself in the queue. uh, by raising your hand. I want to encourage people to take a look at that. If you if you're in the working group and you have not looked at the, uh, test suite, um, you're missing out. This is something that I think really makes it useful for implementers. Um, and for those of us who are working on the spec itself to get a sense of where things might be confused or confusing. So, um. So thank you. Eustace. Yeah. So our next presentation is about simple octet strings representing new elliptic curve points in OpenPGP. And I'll take it away.\nSPEAKER S1: Hello? Hello, I'm nib. Um, I have been working, uh, for.\nSPEAKER S7: Guinea pig implementations for years, and today I'd like to. Provide an offer. Uh. About S.O.S.. Simple. Octetstring. The, uh, country or it was 2019. I tried to implement, um, support of e.g. 48 and, uh, x4 48, and, uh, I found that GnuPG is a kind of messy about IC, especially for eddsa. So, um, I fixed group Z, uh, when I introduce it for 48 and x4 for 48, and it is currently available in GnuPG 2.3 beta. And this is this. This presentation. Explains how I fixed one pkg. Next slide please. Basically, S.O.S. is a variant for MPI Multiprecision integer OpenPGP. Defines multiple strong integer, but. For ECC and each point is encoded into MPI. I think that that that is the cause of many troubles. And for calves, which format is big, big endian, it is okay, but these days modern use little endian format. And because of that, um, we have zero removal problem or um, any existing implementation which support ed25519 have to support zero recovery things. So, uh, currently the uh crypto refresh A document will be. Introduced eds. EDS are in the next step and you will see the problem. And uh, next slide please. The SOS definition is simple. Uh. It just changes the definition of MPI. And uh. And, uh, no semantics, but, uh, it is an opaque string because, uh, there is no semantics. Uh, it is. We can avoid zero removal things. Next slide please. Uh, classic. I mean, by the word classic, I mean, uh, ick or n'est n'est curves or brainpool curves. Uh, big endian IC existing specification for classic IC can just replace the word MPE with S.O.S. then it is compatible. So I think that it it can be cleaner definition by using SOS definition. Um next slide please. Currently in the A RFC 6637. Uh, we have a definition of the encode encoding into MPI for. For each point. But uh, uh, using the OS we can just refer other, um, specification. Not inside OpenPGP specification. Next slide please. Uh, now I use ideal OS to support. Id448 and uh z448. Because new modern curves uses little endian format. Uh, SOS Is better. Uh, I use S.O.S. to represent scholars and scholars and issue point. Next slide please. But, uh, currently, uh, already many implementation of OpenPGP adopted Ed25519 and Carb 219. And, uh. Ed25519 has been implemented uh, before the idea of S.O.S. and it is, uh, it it's a kind of mess and, uh, cab 255 19. Key and encryption by ACH was introduced by me into Winnipeg some years ago. And it it's done before the specification of x299 and the idea of SOS. So for those things, uh, we need special care. Even though even if we don't use SOS or even if we use SOS because of existing data we need care about, uh, uh, corner cases. Next slide please. Here is a special things for egd with ID 25255 19. Um, somehow we invented the prefix for zero to represent an easy point. Uh, the prefix has been introduced to the intention was to avoid zero removal problem, but unfortunately the the prefix was not used for the signature part of r. So here zero removal. Problem is there. Yes. And because of that uh implementation have to support zero recovery. Yes. So I don't like that. So for for implementation in future, it's better to define or improve here. Yes. Next slide please. And another special thing is a curve two 519 is key here. We also use the prefix for for zero. But a strange thing is that uh secret key is scalar represented as big numpy. Uh and. That's because of the when I implemented. It with 219 specification of X2 519 was not available, and to conform RFC 6637 idea. Uh, it had to be big endian. Yes. Next slide please. And uh, if I understand correctly, the low level removable issues, the causes, historical things the there are culture of. A. Basic encoding rules and or. Or. Uh. The the uh so those standard uh recommend or mandate uh, zero removal and some implementation like a guinea pig because of this culture. Uh, it removes zero. Yes. And next slide please. And the idea of S.O.S. principle is that OpenPGP format is to convey data of underlining crypto algorithm, and it is underlining algorithm which defines the data format itself. And next slide please I, I here I explain three alternatives to SOS at first when I try to implement. Try to implement id448 and X-48. Uh I was about to adopt easiest approach. Uh, it's basically following the It is two 519 and Carb 219, but. I changed my mind because of these pros and cons it. It was easiest for guinea pig, but. The all problem of zero removal or zero recovery. Things have to be. Have to be there. So the it. The complexity and providing vector a test vector covering all the cases. Uh all the cases are quite complex.\nSPEAKER S2: So we're running a little short on time, I apologize. Yes.\nSPEAKER S7: Yes.\nSPEAKER S2: Yeah.\nSPEAKER S7: And next slide, please. So. And so the we will we have other approach. Park approach defining data format for each class. Uh next slide please. And the most the best one would be just a. Octet string if. But it would require new algo number. Yes. And next slide please. So my conclusion is that S.O.S. is a compromise to introduce other modern curves of Icsi See without diverging from standard implementations. It's a bit strange, but a. Backward compatibility is good. And that's my presentation. And basically I my I. My point is that when we try to introduce things into the standard you will see problems. And I don't have a strong opinion to push SOS into specification, but we can share the experience of current Edsa problems. Thank you. That's my presentation. And next slide is questions.\nSPEAKER S1: Thank you. I guess yeah I guess we have not that much time. So Phil if it's a quick comment or question uh speed would be good. Thank you.\nSPEAKER S8: Yeah. I was just going to say there is another way that you can skin this cat, and that is the one that I do in UWF, which I dropped into the comments, where I use a random, a random seed and a per algorithm, uh, key generation mechanism. Uh, you know, it's defined for 255, one nine or whatever. Um, they specify how to generate the key from random information. If we adopted that as the approach throughout the ITF, then you push the, uh, whole onus on all this part of tagging and bagging onto the creators of the new algorithms, and we don't need to revisit this, because the only things that the algorithm ever the code ever needs to deal with is, uh, the seed. So just just a different way of looking at it.\nSPEAKER S2: So that seems to me like that has pretty serious interoperability issues with deployed clients. I'm not sure how it actually applies to the, um, elliptic curve representation that I was talking about here.\nSPEAKER S8: Uh, yeah. I mean, like, it doesn't solve your legacy thing, but it means that as you try and solve this problem, you're not building out a new problem for the next, uh, set of curves or whatever. It's a permanent solution.\nSPEAKER S2: So we are pretty close on time here. Um, the session has, I think, three minutes left. Um, Paul, I don't know whether you want to talk about any of the outstanding issues in the draft or about your plans for the next revision, but, nib, thank you for the presentation. Um, hi.\nSPEAKER S9: So I'm not sure if there's any point in rushing through this, but, um, just a generic thing for the people who haven't followed the list and who are, um, now in the working group meeting here, what we've done is, as Daniel said in the beginning, we are we are pulling in a lot of changes in, in sizeable chunks for people to reconfirm the consensus so that we can get to a state where everybody agrees on the BIS document. Uh, that is, for instance, uh, Yoav, why you are seeing triple dashes and most algorithm, because we haven't gotten to the part where we're going to rewrite that section again. Um, that is, that is scheduled to be in the next or the, the second next update to the draft. So, um, in general, I'm mostly interested in if people see if there's anything in the in the process that we can improve on so far. So so we're basically trying to to present this in little chunks with, you know, 1 or 2 weeks of time for the working group to give us feedback and then move on to the next one in the hope that once we've, like, you know, consumed all the items, uh, that, you know, you see listed here, that we are basically in a in a similar position as the older BIS document. But we have confirmed all the consensus of all these items.\nSPEAKER S1: Great.\nSPEAKER S2: Please raise your hands if you want to speak to that. Um, but, uh, we can also follow up on the list if folks have suggestions about other ways to improve the process, like Paul is asking for.\nSPEAKER S9: And why not. So the the the previous presentation is interesting in that it would have if we would pull this into this, this document and we'd have to see. Um, because that would, that would prevent that, that would help us in specifying some of the older, the newer curves that we're about to merge in. We would have to do that in this newer way. So I'm just the editor of the document. So I would hope that the working group will at least discuss this stress mechanism, um, in the next two weeks so that we can figure out how to incorporate that or not in the crypto refresh.\nSPEAKER S1: Great. Thanks, Paul. And, uh, I guess the last topic we wanted to cover really was, uh, our assumption was that we'd have one or a couple of interim meetings, um, depending on the cadence of production of new drafts. Um, I don't think there's too much to say about that here now, but just wanted to raise that. That's the plan, basically, on how we how we think we'll be working between now and Eitf. 111 if anybody has, um, who wouldn't otherwise be taking part, wants to do more than welcome. Um, and, uh, we'll probably do some doodles and someone on the list for dates and things quite shortly. I'm guessing we'll aim for 1 or 2 interims between now and July. And I think I just want to thank the presenters. And then I'll hand over to Dhg can close this out.\nSPEAKER S2: Um, I think that, uh, I think that covers it. I'm not sure I've got too much else. Um, I'm hoping that we can, uh, get, um, more people to give some, uh, feedback and proposed fixes, uh, on the list. And hopefully the, uh, editors will be able to drop a new revision in the next, uh, sometime in the next week, once you've had a chance to recover from the IETF. So thanks, everyone for coming, and we'll see you on the mailing list.\nSPEAKER S1: Thank you. Goodbye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.985773710482529
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, I guess we're at time.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "So as you said a minute ago, we're we're we have one hour today.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the agenda is relatively full, so we'll try and get on through it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, my name is Steven Farrell.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "I'm one of your co-chairs, and.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And I'm Daniel Con Gilmore, other co-chair.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: And.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so you can talk to these slides, and I'll shut up.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Sure.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is the note.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we are well into, uh, the ITF.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully you've seen this before.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "This covers, um, rules about what is discussed in this meeting.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Um, hopefully you've already read it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think we'll skip to the next slide here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the agenda is.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Tight today.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Steven mentioned, um, we are gonna, uh, have a brief reprise of the strategy for the working group, how we're how we're working on the documents.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "And then we have three presentations today.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have, uh, a talk about key extraction attacks through encrypted private key corruption, a discussion about the interoperability test suite and using simple octet strings for elliptic curves.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then, uh, in the remaining time, we have opportunity for the editors of the crypto refresh draft, which in particular will be Paul today, uh, to talk through the status of the draft and any issues.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and hopefully by the end of this, we will be able to discuss, um, an upcoming interim.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I want to give folks a chance to look at this agenda and raise concerns.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, I see a note from Paul in the chat that says, uh, am I talking today?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have a chance to go through open issues with the draft.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "I think we can just pull up the GitLab issue tracker, um, and give people a chance to talk about it if we have the time.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I want to the presentations that we have are going to consume most of the meeting here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, any other agenda bashing or shall we move on to, um, a discussion of the overall plan?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Just so we're set on the same page.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not hearing anything.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "If something comes up and you want to agenda bash later, you can always just bring it up.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in, in jabber.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, just a brief reminder about how we're working with this.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Um, before the group got rechartered, there was a lingering, uh, RFC 48, 80 draft ten.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that was from a previous iteration of the working group that failed to produce an RFC.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in trying to figure out how we could get consensus on a new RFC that still meets the intruder scope for the new revision of the working group.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "What we've done is we sort of reset to RFC 4880.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "We picked a new draft name.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "It's now draft IETF OpenPGP crypto refresh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we are trying to restore the changes that were in 48, 80, ten, um, topic by topic.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "So each revision, um, tries to address each each one.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "So far we've had three revisions.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Zero zero is basically 4880 with some minor formatting changes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, zero one uh, fixed all the uh, published errata and uh, added the Camellia cipher and updated some terminology along with one change about whitespace that, thanks to the list, has been reverted.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Oh two included elliptic curves merging in stuff from existing Rfc's.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we changed the registries to be specification required instead of IETF consensus um or RFC required.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we added Sha three.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we brought in two 5519 for SDH, and we deprecated some of the older stuff that people shouldn't be using anyway.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "And we reserved a bunch of code points for what had been in this ten, um, in the upcoming revision.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "I guess Paul can maybe speak to this later, but I think we're talking about staging, uh, Eddie DSA, um, and maybe V5 and V5 fingerprints in the next one upcoming.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "And thank you to everyone who's reviewed on the list for these changes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it has been really useful to get a sense of what the working group thinks about them.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "It's pretty clear that we will, um, uh, fix up some some parts of it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "I see your comment there about, uh, about just how legacy this stuff is that we are trying to to, um, put in here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah, it's 2021.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Let's get open PGP up to date.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that's sort of the direction that the working group is going on.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide Steven.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Just about the mechanisms, the mechanics for how we're doing it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, so the draft is being developed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in git, we are using a central GitHub repository as a place to keep track of the changes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "We're using Gitlab.com that is not github.com.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in that repository you will see three documents in markdown form, which are the source.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "4080 is a markdown source version of what is the actual original?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "4880 4880 Bestmed is a markdown version of 4080 dash ten that is, the previous draft from the previous iteration of the working group.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "And crypto refresh is the draft that we are working on.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "So there are opportunities to do sort of diffs and comparisons between those three documents.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as Paul mentioned in the chat, RFC diff is useful for comparing these things.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I find actually also diff, given the markdown sources, is useful for comparing the different documents.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "And if anybody wants to talk later, probably not in this group, but in a separate conversation, I'm happy to walk you through.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "If you're interested in trying to help edit for proposed changes, I can help you with some of that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "We were using the issue tracker where possible, but of course all conversation goes on the mailing list.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but when stuff comes up on the mailing list, we do like to keep track of it in the issue tracker so that it doesn't get lost.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "There's been a fair amount of discussion, which is much appreciated.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's it for the recap here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "And um, if possible, I'd like to go ahead and get started with the next presentation, unless folks have questions.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: And so just on the on that, I think there's it's maybe worth emphasizing since, uh, we, we're likely to do a lot of the kind of detailed issue tracking and processing via a set of interim meetings.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "And so there's probably a slightly larger group here today.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's probably worth emphasizing that we're not really in a position where the working group is open for, uh, fresh new ideas just now.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Um, really what we're doing is we're playing kind of catch up on the set of diffs versus 4880 that we already nearly know for sure that we want to include, but we're making sure we get consensus on those before we go forward.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "So it's a it's a it's a slightly kind of bookkeeping exercise to some extent, but with technical parts.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but the main thing is, if, you know, if you have a super good idea for something new to do with BGP, now's not really the good time.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, by all means, you know, drop a mail to the list, but expect that we might say, uh, let's get to that after we've already got a bit of success with the current work.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Just want that to be clear.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "And if there's no other, if there's no questions on the plan, then we will move to key extraction.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Let me just pull that up.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Lara.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so just say next slide whenever you need it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "There's, uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, cool.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Hey.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "I'm Lara.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I am a security engineer at ProtonMail, and as part of my master's thesis, I work with Kenny Patterson and Daniel Hawkins.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we looked into the security of BGP.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "And one of the questions we focused on is how far can an attacker go if they have access to the encrypted private key of the victim?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "So today I'll give a high level overview of the attacks and issues that we have found.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "And then I will also discuss the countermeasures.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "So in terms of the model we are considering, we have an attacker who has write access to the encrypted key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "So this means that the attacker can corrupt the encrypted private key of the victim.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "And then the victim will use a key as long as they can decrypt it with their passphrase.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "In practice, this means that the victim will not check the key fingerprint before using the key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So the requirement on key decryption is relevant because, um, in PGP the private key is not fully encrypted.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "So here you can see uh, the schema of an RSA key for instance.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "And when you encrypt the key only the fields in gray, uh, are both encrypted and authenticated.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "So those include the secret key parameters And if an attacker tampers with the encrypted data, then the key decryption will fail.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "But there are also some parameters that are stored in clear text.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "And in case of RSA, those are the public modulo n and the public exponent e.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "And if the attacker corrupts those values, then the decryption will work fine.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And uh Klemmer Rossa in 2001 already noticed this, uh, partial integrity check issue, and they exploited it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "They showed how an attacker could corrupt the public parameters of a DSA key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Then they wait for the victim to sign using the corrupted key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "And from the faulty signature, they could extract the DSA secret exponent.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Now at the time, OpenPGP was not fixed to address that specific attack vector.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "So what we have found is we have, uh, looked at the same attack idea again.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, we have found that, uh, it's not just DSA keys, but any key type is potentially vulnerable to, uh, this kind of key corruption attacks, uh, specifically when it comes to faulty signature attacks, um, DSA, Ecdsa and RSA keys can be directly, uh, compromised, and the attacker needs to, um, corrupt the key only once, and then it needs as little as one faulty signature to extract the secrets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "But also, um, any encrypted key as well as Elgamal key can be indirectly targeted by transforming, um, the key into a DSA one, and this kind of key transformation is possible without breaking key decryption because, um, uh, all key types except for RSA have a compatible format of the encrypted data in a private key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now, if you're not familiar with the key types, I'll just point out that keys and elgamal keys are encryption only.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "However, thanks to this, uh, key transformation, they can still be compromised using multi-signature attacks by so converting those keys into DSA ones.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so aside from these, uh, attacks that target signing, we've also found some attacks that exploit decryption, but those are, uh, a little bit more involved.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we will be sharing, um, more information about the decryption attacks, as well as all the mathematical details of designing attacks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Um, soon enough we are finishing up a paper and we will be, um, publishing it and sharing it with the community soon.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, just to review, uh, what are the existing protocol level protections in place, uh, that are relevant for the attack?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, as mentioned, the issue is that only, uh, some of the parameters are authenticated.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "This is either with AAD or CFB.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "But in both cases, uh, the public values, uh, can be corrupted by the attacker.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "And key decryption, uh, will succeed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and when the attacker has control of the public values, it means that the attacker is also free to really replace the subkey binding signatures, for instance, to make sure that they still verify with the corrupted public key parameters.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Now, what the attacker cannot do is forge third party certifications.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "So those become invalid.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "And also, if the public feels are corrupted then the key fingerprint necessarily changes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "But to reiterate, uh, that's why in our threat model, we really consider a user that is not careful enough and basically ends up using the key without inspecting the key fingerprint.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "And so, uh, currently if, uh, an OpenPGP library wants to prevent, uh, key corruption attacks from happening.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Well, uh, it needs to do is to perform some kind of key validation after decrypting a private key and before using it for security operations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "So specifically, the idea of key validation would be that, um, since you have the secret values, the secret parameters that are necessarily authenticated, but you have the public values that are potentially corrupted, you want to make sure that the private and public parameters are consistent and validation, uh, is a bit of a delicate process because, um, if you do it wrongly, it's either ineffective or it can open up the possibility of additional attacks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for instance, uh, the validation method that does not work is, uh, trying to use the key, for instance, to sign and verify a message or encrypt and decrypt a message.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "So in many, depending on the key type, Even if the operation is successful, you have no guarantee that the private and public parameters correspond or are strong enough.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "So instead, um, to carry out private key validation, one should really check the mathematical relationship between the different parameters.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "And this means carrying out some algorithm specific checks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "And in case of RSA these are straightforward enough.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "But um this is not the case with all key types.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "In fact um, for instance, in Elgamal, there is no way to fully validate a key by checking the correspondence between parameters.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so it's possible, but it's not feasible.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "And for DSA, um, an eddsa, uh, the operations are still expensive.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "And in the case of DSA, is kind of tricky.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in general, what we're seeing in practice, um, we have reviewed a number of popular OpenPGP libraries and none of them is safe, um, against, uh, all of the attacks that were found.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "So even if key validation is implemented, it's always it's often missing some key checks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, in in terms of end to end attacks, we have found, um, two real world applications that, um, are vulnerable to, uh, this key corruption issues.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "So in light of the what we think is the seriousness of the issue and the fact that, um, it's difficult and inefficient for, uh, implementations to address the problem.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what we would propose is that the standard, um, be changed so that key decryption, uh, fails if the public, uh, parameters are corrupted.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "And this can be achieved without introducing any new primitive in the spec.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "It can just reuse, uh, what, uh, libraries have already implemented.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Specifically, if I'd encrypted keys, uh, are standardized, then the idea for them would be to put the public parameters and the key type inside the associated data, which is data that is not encrypted but is still authenticated.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Instead, if we remain with CFB encrypted keys, then one possibility is to put the public key, um, and actually together with the private one currently in CFB key is only the private parameters are hashed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "And this the second CFD solution is the same that was proposed in 2001 when the first DSA attack was established, and so the advantage of this kind of protocol level solution would be security wise, that you don't delegate the you don't delegate the anything to the implementations, and you have a solution that works across all algorithms.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "And that is really much, much faster.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "So that's that's all for me.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I guess we have time for a couple of questions.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm sure one of them will be.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "When?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "When can we expect to see the full detail or.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "And where or will you just let us know?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, we're really reviewing the paper.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't want to give any time and time predictions, but it should be fairly soon.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "If there are other questions, then if people would just like to get themselves, uh, raise their hand using the echo tool and.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "There's some chat in the jabber that Kenny's been handling, I guess.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Kirsty.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: You for the presentation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you said you found two real world apps where this was vulnerable.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Um, did you report the vulnerability through their vulnerability disclosure program?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Did you get in touch with the apps themselves?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, both the libraries that we have reviewed and the applications have been contacted and the application specifically have already been fixed, uh, already a few months ago, actually.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Wait, so we don't seem to have.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, Kenny, are you in the.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Oh, just to say thanks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "We did.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Responsible disclosure, I guess, is the short way of saying what I just said.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, uh, so all the affected libraries have been notified and have had a chance to, uh, patch, um, and as I already said, both of the applications we found to be vulnerable have fixed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So I just wanted to say, uh, thanks to the researchers, to Lara and Kenny and and your and your colleagues who worked on this for bringing this to the attention of the working group.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it sounds like you did a pretty good review of existing implementations, but obviously there may be implementations that you don't know about.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "So being able to talk about it here should hopefully give people a chance to have a heads up if they have an implementation that they haven't published, but much appreciated for bringing that to the group.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Indeed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's really good work.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "And you were exactly on time, so that's even better.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for that, too.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I think if we can move on to the next one, it's justice.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Hi.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes, we can hear you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So just, uh, whenever you want.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Just just just let me know and I'll click the button for you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm useless.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "I'm here to very briefly talk about my efforts to bring interop testing into the OpenPGP community.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you're curious, you can find the results on tests.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "And the presentation is both in the IETF tool and will also be on our website.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: If you could be a little bit louder that would be great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay I will try to make that happen.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Better.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Better.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "So I've been a developer for roughly five years.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I started working for Werner, and in 2015.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "And nowadays, I'm employed by the foundation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "And our mandate is not only to write a P2P implementation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Although we did that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Our implementation is called Sequoia.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Our mandate is also to improve the ecosystem as a whole, and writing an universally useful test suite has been on my mind for quite some time.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, I proposed to do that at the OpenPGP conference in Cologne in 2016.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "So why why should we do that?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "So we needed our, uh, a way to verify our implementation, right?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "And if we have to do the work anyway, we can make it useful for others too.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "And this is in line with our mandate of improving the ecosystem.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "And it's good for other implementations too, because writing tests is a lot of work and they get free tests.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "And there are, um, secondary effects too.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "So we hope that users will enjoy better software and increased interoperability.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "And recently I've learned that this will also help the standardization effort.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "So the working group can see what's implemented and maybe also see where the implementation is is lacking or where implementers, uh, would benefit from more guidance.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So the tests are black box tests.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And there are two kinds of tests.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "The first one I call consumer tests, where artifacts are produced by the test suite and then, uh, consumed by all the implementations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "And the other kind are producer consumer tests.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "And here the artifacts are also produced by the implementations being tested.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "So you get this nice interoperability matrix.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And the test suite uses an interface called SOP or the stateless OpenPGP interface that has been extracted by DDG.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "And you can see some examples.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "So here we generate a key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Then we use it to encrypt some data.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Data is read from standard in and the ciphertext is produced on standard out.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "And to decrypt you do the same.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "You feed the uh, ciphertext on standard in and get the plaintext on standard out.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "And currently, the test suite just uses five very simple operations and gets out a lot of information that way.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "So on the right you see an example test.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Um, every test has a heading and it has a stable link that you can refer to in bug reports when you get a description and maybe additional artifacts like certificates.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "And there is a little button next to artifacts.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "And if you have the right font, you also get this little magnifying glass in the button.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "And if you click on that, you get, uh, taken to a packet dumper to inspect the artifact.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "If you look at the results, um, you see check marks and cross marks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Check Mark means the operation succeeded.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Crossmark means it does not, did not, and some tests have an expectation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "So we expect an operation to succeed or we expect an operation to fail.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "And if an implementation matches the expectation, it's marked as green and has an earmark in the left top corner.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "And if it fails to meet the expectations, it's red and has a earmark in the right top corner.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Most tests start with a base case, so to make sure we are all on the same page.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "And there are then there are some variants and some of the variants where the the interpretation or the expectation is not clear.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "They don't have any expectations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "So you get a kind of white uh row.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "and sometimes, um, mostly in producer consumer tests, the producer fails to produce an artifact, or the produced artifact does not meet the expectations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So you can get a cross mark there.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Two.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, if you hover with the mouse on cross marks or check marks, you can see additional output like, uh, the result of successful signature verifications or error messages.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "So this is an example of a signature verification verification test.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "So Neba started looking into encodings of IC artifacts.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "And to aid that I decided to write the test.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "And the test verifies the eddsa Signature, and it starts with a base case that's, uh, green for all implementations except for GPG, one for um, which does not do EQ.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "And then you see a variant where the s value of the signature is zero padded.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and many implementations just support that even though it's slightly out of spec.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "And then just for fun, I decided to tack the R value as well.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "And none of the implementations like that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "This is an example of a producer consumer test.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "So or maybe we could should call it um, a scenario test.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Um and this model's key generation encryption and decryption.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "So you generate a key with implementation, a encrypt for that key with implementation B, and then decrypt it with the implementation A, and you can see um, gpgme for example, using GPG one four fails to pass the test for every implementation that creates an SEC key by default.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "And Dhcpd generates an DSA and Elgamal encryption key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "And some implementations do not support Elgamal, so that fails.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, key generation with GPG one four is not supported.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "So currently we have around 80 tests and that amounts to around 400 test vectors.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "And I found at least 80 bucks and reported around 80 bucks across nine different implementations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "So I consider that a success.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "And the improved implementations across the board, not only, uh, Sequoia in accordance with our mandate.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "And we also improved the the understanding of the ecosystem.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "So during our implementation effort, we ask our questions how our implementation handling this or that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And we just wrote the test to find out.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "There are some tests where the implementations, uh vary widely.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "And this may point out uh where implementers need more guidance.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Let's start with the good news.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Algorithm support is excellent.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "So almost all implementations support almost all algorithms.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and if you look at the the chart on the right, uh, a significant uh, percentage of, of uh, the points you see are the, the algorithm supporters.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then there are problems.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "For example, if you consider a signature sub packets, it's unclear what implementations should do if there are multiple, maybe conflicting sub packets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there is uncertainty about what information you can take from Unhatched subject areas and how you handle critical sub packets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Then timestamps.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "A bit of a disaster.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's sometimes not clear how to handle missing sub packets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Missing timestamps, sub packets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what to do if a signature's creation time is in the future?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Or what if the signature's creation time predates the signing keys creation time?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Or what if, at the time the signature was supposedly created, the signature subkey was not bound or was revoked, or the certificate was for some reason not not valid.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "And there are unknown packets.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "So I think unknown packets should be ignored as as much as possible to ensure forward compatibility.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Say you've verifying signatures, detached signatures and there is a V4 and V5 signature And you don't dig the five signature.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "You should.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "You should be fine with verifying the signature.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Expirations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Implementations vary widely with respect to, uh, the question of do signatures expire like in the context of um, certificate component binding signatures?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, do primary key binding signatures expire and do certs expire?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "If you look at revocations, revocations are unfortunately not as reliable as we like.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "And then there is the question of are there software revocations as in if I revoke a user ID but I joined the organization later on.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Again, can I rebind the user ID?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "There are tests um, looking at robustness.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So certificates are the most complex compound data structure in P2P.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "And there is a test that explores how robust the certificate Canonicalization is.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "For example, if you duplicate components or change the order of packets, stuff like that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, there is some tests about Ascii armor.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "For example, I explored the question whether concatenated armored certificates are a keyring or not, and Ascii armor itself can be a source of brittleness.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "For example, you can have whitespace changes or your armor text is quoted or parts are missing like the footer is missing.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Or finally, you can get arbitrary encoding done to your to your armored block.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "So I check how implementations deal with that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, the really bad news.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Um, many implementations accept signatures from weak algorithms.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "So a third of implementations accept and successfully verify MD5 signatures.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Five of nine signature um implementations are fine with Sha1 signatures, and four of nine are happy with ripemd signatures.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "And just for fun, I included a test that checks signatures over the shattered collision, and five of nine implementations are fine with that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide, please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "I hope you consider interoperability testing important and want to join the effort.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "And I, I would like to invite you to do that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "So if you want to add tests or um propose tests talk to me or open an issue.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Um, most artifacts are generated on the fly using Sequoyah, but some artifacts are just stored as test data.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "And if you generate artifacts, please, please use the common test keys, the Alice and Bob key.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "And if you want to get your implementation tested, that's really easy.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "You just need to implement the stateless OpenPGP and OpenPGP interface.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "And then we can plug it into the test suite.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "To do that just talk to me.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, if you want to argue semantics, you know, I wrote tests, and then I thought about what the most useful outcome is.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "But I could be wrong, right?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Again, please talk to me or open an issue, or let's take the discussion to the mailing list.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Finally, if you want to run the test suite, uh, locally, that should be quite easy.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "Just clone it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Um, look into the readme.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "There are some build dependencies you might need to install.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Then you need to install the implementations you want to test, tweak your configuration and then run it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And you can create both HTML output or a JSON output.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "One area where uh help would be greatly appreciated would be in the presentation of results because, um, as as we add more and more tests, the results become more and more unwieldy.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "So having a front end, maybe that looks at the JSON data and then presents it in a nicer way, that would be very helpful.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "And that's it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to thank justice for the presentation and for the tremendous amount of work that's gone into this.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think it's actually highlighted a lot of stuff.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "And I know that many bugs have been fixed as a result.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have a little bit of time for questions.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, we're a little over time right now.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do folks have anything they want to raise?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "You can just put yourself in the queue.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "uh, by raising your hand.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "I want to encourage people to take a look at that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "If you if you're in the working group and you have not looked at the, uh, test suite, um, you're missing out.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "This is something that I think really makes it useful for implementers.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and for those of us who are working on the spec itself to get a sense of where things might be confused or confusing.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Eustace.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "So our next presentation is about simple octet strings representing new elliptic curve points in OpenPGP.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll take it away.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hello?",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Hello, I'm nib.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I have been working, uh, for.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Guinea pig implementations for years, and today I'd like to.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Provide an offer.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "About S.O.S..",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Simple.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Octetstring.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "The, uh, country or it was 2019.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "I tried to implement, um, support of e.g.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "48 and, uh, x4 48, and, uh, I found that GnuPG is a kind of messy about IC, especially for eddsa.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I fixed group Z, uh, when I introduce it for 48 and x4 for 48, and it is currently available in GnuPG 2.3 beta.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "And this is this.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "This presentation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Explains how I fixed one pkg.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "is a variant for MPI Multiprecision integer OpenPGP.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Defines multiple strong integer, but.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "For ECC and each point is encoded into MPI.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "I think that that that is the cause of many troubles.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "And for calves, which format is big, big endian, it is okay, but these days modern use little endian format.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "And because of that, um, we have zero removal problem or um, any existing implementation which support ed25519 have to support zero recovery things.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, currently the uh crypto refresh A document will be.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Introduced eds.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "EDS are in the next step and you will see the problem.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "The SOS definition is simple.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "It just changes the definition of MPI.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "And uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, no semantics, but, uh, it is an opaque string because, uh, there is no semantics.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it is.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "We can avoid zero removal things.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, classic.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, by the word classic, I mean, uh, ick or n'est n'est curves or brainpool curves.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, big endian IC existing specification for classic IC can just replace the word MPE with S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "then it is compatible.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that it it can be cleaner definition by using SOS definition.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Um next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Currently in the A RFC 6637.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a definition of the encode encoding into MPI for.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "For each point.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "But uh, uh, using the OS we can just refer other, um, specification.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "Not inside OpenPGP specification.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, now I use ideal OS to support.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Id448 and uh z448.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Because new modern curves uses little endian format.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, SOS Is better.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I use S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "to represent scholars and scholars and issue point.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, currently, uh, already many implementation of OpenPGP adopted Ed25519 and Carb 219.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Ed25519 has been implemented uh, before the idea of S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "and it is, uh, it it's a kind of mess and, uh, cab 255 19.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Key and encryption by ACH was introduced by me into Winnipeg some years ago.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "And it it's done before the specification of x299 and the idea of SOS.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "So for those things, uh, we need special care.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Even though even if we don't use SOS or even if we use SOS because of existing data we need care about, uh, uh, corner cases.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Here is a special things for egd with ID 25255 19.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Um, somehow we invented the prefix for zero to represent an easy point.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the prefix has been introduced to the intention was to avoid zero removal problem, but unfortunately the the prefix was not used for the signature part of r.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "So here zero removal.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Problem is there.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "And because of that uh implementation have to support zero recovery.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't like that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "So for for implementation in future, it's better to define or improve here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "And another special thing is a curve two 519 is key here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "We also use the prefix for for zero.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "But a strange thing is that uh secret key is scalar represented as big numpy.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "Uh and.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "That's because of the when I implemented.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "It with 219 specification of X2 519 was not available, and to conform RFC 6637 idea.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it had to be big endian.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, if I understand correctly, the low level removable issues, the causes, historical things the there are culture of.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "A.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Basic encoding rules and or.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "Or.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "The the uh so those standard uh recommend or mandate uh, zero removal and some implementation like a guinea pig because of this culture.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it removes zero.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "And next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "And the idea of S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "principle is that OpenPGP format is to convey data of underlining crypto algorithm, and it is underlining algorithm which defines the data format itself.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "And next slide please I, I here I explain three alternatives to SOS at first when I try to implement.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Try to implement id448 and X-48.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Uh I was about to adopt easiest approach.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's basically following the It is two 519 and Carb 219, but.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "I changed my mind because of these pros and cons it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "It was easiest for guinea pig, but.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "The all problem of zero removal or zero recovery.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Things have to be.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Have to be there.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "So the it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "The complexity and providing vector a test vector covering all the cases.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Uh all the cases are quite complex.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So we're running a little short on time, I apologize.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: And next slide, please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "And so the we will we have other approach.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Park approach defining data format for each class.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "And the most the best one would be just a.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Octet string if.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "But it would require new algo number.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "And next slide please.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "So my conclusion is that S.O.S.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "is a compromise to introduce other modern curves of Icsi See without diverging from standard implementations.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "It's a bit strange, but a.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Backward compatibility is good.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "And that's my presentation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "And basically I my I.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "My point is that when we try to introduce things into the standard you will see problems.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "And I don't have a strong opinion to push SOS into specification, but we can share the experience of current Edsa problems.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "That's my presentation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "And next slide is questions.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "I guess yeah I guess we have not that much time.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "So Phil if it's a quick comment or question uh speed would be good.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "I was just going to say there is another way that you can skin this cat, and that is the one that I do in UWF, which I dropped into the comments, where I use a random, a random seed and a per algorithm, uh, key generation mechanism.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you know, it's defined for 255, one nine or whatever.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Um, they specify how to generate the key from random information.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "If we adopted that as the approach throughout the ITF, then you push the, uh, whole onus on all this part of tagging and bagging onto the creators of the new algorithms, and we don't need to revisit this, because the only things that the algorithm ever the code ever needs to deal with is, uh, the seed.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "So just just a different way of looking at it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So that seems to me like that has pretty serious interoperability issues with deployed clients.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure how it actually applies to the, um, elliptic curve representation that I was talking about here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, yeah.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, like, it doesn't solve your legacy thing, but it means that as you try and solve this problem, you're not building out a new problem for the next, uh, set of curves or whatever.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "It's a permanent solution.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So we are pretty close on time here.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the session has, I think, three minutes left.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Paul, I don't know whether you want to talk about any of the outstanding issues in the draft or about your plans for the next revision, but, nib, thank you for the presentation.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "Um, hi.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: So I'm not sure if there's any point in rushing through this, but, um, just a generic thing for the people who haven't followed the list and who are, um, now in the working group meeting here, what we've done is, as Daniel said in the beginning, we are we are pulling in a lot of changes in, in sizeable chunks for people to reconfirm the consensus so that we can get to a state where everybody agrees on the BIS document.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that is, for instance, uh, Yoav, why you are seeing triple dashes and most algorithm, because we haven't gotten to the part where we're going to rewrite that section again.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that is, that is scheduled to be in the next or the, the second next update to the draft.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, in general, I'm mostly interested in if people see if there's anything in the in the process that we can improve on so far.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "So so we're basically trying to to present this in little chunks with, you know, 1 or 2 weeks of time for the working group to give us feedback and then move on to the next one in the hope that once we've, like, you know, consumed all the items, uh, that, you know, you see listed here, that we are basically in a in a similar position as the older BIS document.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "But we have confirmed all the consensus of all these items.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Please raise your hands if you want to speak to that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, we can also follow up on the list if folks have suggestions about other ways to improve the process, like Paul is asking for.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: And why not.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "So the the the previous presentation is interesting in that it would have if we would pull this into this, this document and we'd have to see.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because that would, that would prevent that, that would help us in specifying some of the older, the newer curves that we're about to merge in.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "We would have to do that in this newer way.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm just the editor of the document.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "So I would hope that the working group will at least discuss this stress mechanism, um, in the next two weeks so that we can figure out how to incorporate that or not in the crypto refresh.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Paul.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I guess the last topic we wanted to cover really was, uh, our assumption was that we'd have one or a couple of interim meetings, um, depending on the cadence of production of new drafts.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't think there's too much to say about that here now, but just wanted to raise that.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "That's the plan, basically, on how we how we think we'll be working between now and Eitf.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "111 if anybody has, um, who wouldn't otherwise be taking part, wants to do more than welcome.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, we'll probably do some doodles and someone on the list for dates and things quite shortly.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "I'm guessing we'll aim for 1 or 2 interims between now and July.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "And I think I just want to thank the presenters.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "And then I'll hand over to Dhg can close this out.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, I think that, uh, I think that covers it.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure I've got too much else.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm hoping that we can, uh, get, um, more people to give some, uh, feedback and proposed fixes, uh, on the list.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "And hopefully the, uh, editors will be able to drop a new revision in the next, uh, sometime in the next week, once you've had a chance to recover from the IETF.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "So thanks, everyone for coming, and we'll see you on the mailing list.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.985773710482529
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "Goodbye.",
+            "confidence": 0.985773710482529
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T21:06:53.083342+00:00",
+          "processed_at": "2026-01-23T21:06:53.083342+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "uyeawyg27b"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.985773710482529
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

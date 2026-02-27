@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "a032f6f1-d489-4595-a02f-d8202debc2f2",
   "created_at": "2026-01-03T19:26:57.757920",
-  "updated_at": "2026-01-03T19:27:02.414746",
+  "updated_at": "2026-01-23T18:36:23.845822+00:00",
   "subject": "IETF 110 - LSVR Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=upCi5Z7pDQA",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "lsvr"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "lsvr",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-lsvr",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-lsvr-202103091530",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-lsvr",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-lsvr-0-welcome-and-admin",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-lsvr-1-l3dl-status-update",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-lsvr-2-lldpv2-status-update-ieee-liaison-slot",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-lsvr-3-lsvr-progress-update",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/lsvr/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-lsvr",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -7565,6 +7565,4233 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Good morning.\nSPEAKER S2: I see. How are you doing? Good. Okay.\nSPEAKER S1: Uh, at the start of our slot. So we only have, like, one hour, so, you know, maybe. Let's get started there. So you have landed into the VR working group, and, uh, we have a few interesting topics here. Now, before we start, let me see if my slides actually work. Okay. So we don't need the scribe thing because we have the scribe automatically built into the tool nowadays, which is very handy. Uh, if there are like any minutes, then, you know, please feel free to use the menu tab on top of the screen. You don't have to do this. You know, just by yourself. We can actually all do this together. So that's very helpful, you know? Very handy and very convenient. So that will be appreciated. Uh, next is you have seen this note well, already a few times because we're already on the second day. If any questions, you know, please be aware of this then the agenda bashing. So what we have on the agenda at this point in time is, uh, three topics, three main topics here. Uh, first we're going to get like an L3, DL, uh, status update. Then we're gonna have uh, Paul speaking a bit about LBP v2, which is, you know, uh, what is happening in the IEEE. Uh, from that perspective, then we're going to be discussing the enhancements in the progress around the BGP, SPF, uh, draft itself and see where we are. And then we are going to be closing. So where are we? Within the in our working group here. So we have sent two documents towards the ad. The ad reviewed it and actually sent it back. But you know together with sending it back, he actually sent, you know, it back with like a thousand pages of feedback, which, uh, the authors have been working upon very intensively over the New Year period until now. And AC is going to give like, uh, an update on, on where we are at this point in time with this particular draft. Now, in the meantime, also, uh, last month, we have done a working, uh, working group last call on the L3, DL documents. Uh, while no major concerns were raised, you know, there was also not really a lot of feedback on that. So, you know, we need to figure out how to deal with that going forward. Now, that being said, there is another element playing also, and that has to do with the fact that L3, DL is a little bit out of scope from our charter. So what we are thinking about doing is to recharter the working group by explicitly adding the L3 DL components into the charter itself, which would give us, you know, a better foundation to keep progressing on this particular technology going forward. Uh, and that being said, you know, for in an effort for trying to enhance, uh, the feedback required, you know, feedback requests and reviews, requests for these documents, uh, will also be, you know, launching a call on the working group, uh, email alias for some volunteers to actually give feedback on these, on these documents, uh, just to trigger, you know, more discussions on that going forward. Uh, you have anything to add on this, Victor?\nSPEAKER S2: Pretty much covers it. So sorry. Um, now that covers it from my perspective as well.\nSPEAKER S1: Okay. So yeah, I've already talked about this, the IEEE status, uh, element here, which Paul is going to give us an update about. So going back to the agenda, any anybody wants to add or change something on here. Uh, at this point in time, if not, I think then we're going to be starting with the first session and the first slot from Randy. Okay, so let me pull up the slides for Randy. Uh, voila. So, Randy, if you can push the microphone button, then the floor or the worldwide internet is all yours at this point in time.\nSPEAKER S3: Well, I can only use this very small portion of the internet. Um, okay. This. So, um, raised an issue, uh, via private email, which was interesting. Um, but first, just a little bit more on status is the documents, the three L3 DL documents passed within the last call with, as Gunther said, light feedback. But, um, you should be aware that also the Rob is contemplating upgrading updating the LSO open source implementation to L3 DL. So that kind of wraps the status. Um, so Sue raised an issue about the hello PDU possibly causing a layer two storm. Next slide please. If you remember, the hello is a multicast layer two PDU being sent from a device who wakes up and is seeking friendship. There are two forms the PDU can take. One is that first Mac, which is stopped dead at the nearest bridge by layer two rules. Okay. If just in case there's an intermediate switch, we specified a, uh, to be assigned Mac. that will pierce an intermediate switch because by layer two rules, when a switch receives a frame with a multicast dest that it doesn't recognize it forwards. Okay, so the second one is to be used when you know you're connected to a switch. Next slide please. So the document says that that hello should be repeated at a configured interval with a default of 60s. So when a device wakes up, it should find its friends within a mean of 30s and a max of 60s. But it further warns that if you're in the multilink scenario, in other words, there allowing for intermediate switches. Be aware of a trade off between the timer tuning and network noise, and maybe tune the timer up or down accordingly. But Sue raised a further issue. Next slide please. Next slide please. So I've stolen her artwork. Sue, do you want to, um, walk through the storm or shall I do it? I think everybody knows what a layer two storm is like, so we can breeze through the storm, as it were. Or we can. If you've got the patience, you can take us through it. It might sound. I don't hear you.\nSPEAKER S4: Um. That means. Because them. They need to enable me. Did you get me? Can you hear me?\nSPEAKER S2: Gotcha. Yeah, I hear you.\nSPEAKER S1: Yes.\nSPEAKER S4: Okay. I would go through the brief because if people understand multicast storms, this may be a simple issue. Uh, if the brief doesn't make it, we'll go through the more lengthy approach. So, uh, folks, the diagram, I'll explain. And then I'm going to let Randy go through the discussion because he tends to be a bit briefer than I. The concept is you don't have the topology described in the document. Okay. And Randy will go through it. But you have this more interconnected switch topology. How you got there? Not my problem. Uh, perhaps it's recon errors. And so this is the air topology. Note I realize it is not a standard class topology. It would be created by air or by something else. So, Randy, why don't you, um, why don't you go ahead or I can explain the next set? Next slide.\nSPEAKER S3: Fine. It's fine. So essentially, the routers, the things labeled routers are L3, DL speakers. The things not labeled routers. The little square cubes. Oops. That's bad. The little cubes are switches. Whereas if you use the multicast to be assigned, multicast packets will go not only through them, but it will as it receives one. Next slide please. It will re announce it. Said, okay, you see the multicast hello coming up from router A and switch one re-announcing that on all its other interfaces. Next slide please. Those other destinations generously do similarly. And we can see more pretty colored little boxes multiplying in the network. Next slide please. Those in turn. Echo back. Now what was fun here is that. Because the echoes caused regeneration, they go back and are allowed to come back through the mesh and are even worse. Next slide please. Okay. So I think you see where this is going. If anybody wants more detail on layer two storms, feel free to hit your mic button. Oh, Bill. Bill asks.\nSPEAKER S2: Hi.\nSPEAKER S1: Do you have a layer.\nSPEAKER S5: Two network without spanning tree but with loops? Like, how do you get to this point where the switches are flooding and creating a storm?\nSPEAKER S4: That's a good point. This is an edge case, bill. The spanning tree is most likely not running. You would have some interconnections that are are, um, not normal. So as I started out in the beginning, this broadcast storm only works with the with a set of edge cases. Okay. You don't have something that's limiting running a spanning tree. You're using, uh, the multicast transmission, which goes through switches and then redistributes widely. Um, Paul, I don't know if this is even possible in the current thing.\nSPEAKER S3: Just just let me see if I can cut to the chase here. Excuse the spoiler. Uh, the final scene of the movie is this isn't our envisioned topology in this working group. This isn't a club, and there's tons of intermediate switches which we don't envision. We envision RLS, AR enabled, RLS. Enabled devices all on link to link just in case we can move forward. Let me move forward. Next slide please.\nSPEAKER S1: I think we also have Paul actually in the line here. I'm sorry.\nSPEAKER S6: Yeah. I just was gonna echo kind of what Bill said. We have it, obviously a kind of an invalid layer two topology here. There's besides multicast, there would be other flooded packets that were not learned yet or various things. So I also wanted to point out Spanning Tree is not your only topology management protocol at layer two. There's other approaches, including software defined networking things or as well as shortest path bridging. And so to to make this work, there must be some kind of loop free topology management going on that would prevent this. I mean.\nSPEAKER S3: So my my point is I don't want to make it work. I don't think we're interested in it. But we'll I'll get there in a minute. Next slide please. Okay. One approach aside from as Paul and. Simran point out, um, try to use standard layer two damping tools. Is do we add an ounce? No. Nice try because the ordinance wouldn't be recognized by those non l3 dl speakers. So the storm would propagate. Next slide please. But isn't this isn't our model. Okay. We don't have a model with all these switches with a dumb switch mesh. Next slide please. Our model is a clone a standard clove fabric. And they're all 3D hell speakers. Next slide please. At worst, we might have a switch that wants some fan out one stage, which is why we stuck that one. Um, form of switch piercing multicast Mac. Okay, this isn't going to storm. Next slide please. So do we actually have a problem. And that's the end.\nSPEAKER S4: Comments is because I think it's an edge case. I didn't perceive anything that really needed to be fixed after our discussion with Randy. And I couldn't think of, uh, of a shortest path bridging or a normal spanning tree topology where this would actually apply. I, I just thought outside the box. So I'll leave this to Bill and the rest. I didn't think there was a problem, because I don't think the scenario I described is something you would normally see. Now that I've shared my evil nightmare, I'll let the rest of you work on Bill.\nSPEAKER S5: Uh, just, um, there are other packets, like broadcasts that also need to be, um, not, uh, create a storm. And multicast is just another instance of this. So you need to have some mechanism spanning tree or or as Paul said, there are many other mechanisms in your layer two to prevent storms. It's not just multicast that has this problem. So to have a layer two like this is just to have an invalid layer two. It's not just this particular multicast that will have a problem. It's broadcast Arps, it's unicast, unlearned, uh, flooding. So I think the problem, even though even though we don't need this, you know, we don't want to address this topology because it's not a CLO. We also don't want to address this topology because it's just not a valid layer two to run over.\nSPEAKER S3: Um, I agree, first of all, um, there's a hidden issue here or desire here, which is over an IDR. They're discussing BGP discovery, finding your friends and their immediate target is the data center. I don't know if they are limiting Their definition of data center to be a, uh, clo um, as far as I can tell, they're in expansion and laundry list phase. Um, but I think this probably triggered the oh my God, what happens when there's all these other devices here? Um, one thing we could do is, by the way, is ignore or actually prohibit the case when there's an intermediate switch and remove that second form of Mac. I'm not advocating it. I'm saying, you know, that certainly shuts off this possibility of discussion.\nSPEAKER S1: So one of the things, you know. Yeah.\nSPEAKER S4: Go ahead.\nSPEAKER S1: Yeah. I was just wondering about the fact, you know, so if you look into the layer two topology, what we have here, you know, it's a little bit legal because it represents a layer two environment without, you know, a spanning tree or, you know, some sort of a protocol to do, you know, to manage the multicast and broadcast floating within the environment, which is a little bit, I think, illegal. Well, it will give problems always. So I think we should, you know, to me we should the L3, DL should support like multi levels of, you know of of switches. But we should have a floating mechanisms. You know that should be you know a requirement. I think if, if that actually happens it should not be not what I was thinking.\nSPEAKER S3: Um I think everybody's discussed the fact that, that topology is not something you want to write home to mother about? Um, but that last statement you made is that L30d should support multi-layer, uh, switching topology. Properly configured, of course. Is that really a target for LSV? And I'm asking you as chair.\nSPEAKER S1: From LSV. I don't think that is the case. But then again, I think L3, DL you know, is a technology which could be used potentially beyond, you know, the LZ VR use case. So I don't you know, I think if we constrain it too far in the applicability at this point in time, then in a later phase we will have to do, you know, more R&D research to expand, you know, the use case from it.\nSPEAKER S3: Ah, Paul.\nSPEAKER S6: Yeah, I was going to respond to your comment about maybe not using the, um, address that passes through switches and using one that terminates at switches like, um, lldp might. Um, and there's probably a couple of ways that you could do that. Um, first of all, in 802.1, we do have attribute registration protocols that allow you to propagate information like who my neighbor might be or something about somebody across the network like that. You showed, uh, without flooding and without, you know, without causing the storm. Um, so there's there are separate registration protocols that could be leveraged, but perhaps even easier would be to, to find your own, like, higher layer entity that propagates information using, um, uh, you know, hop by hop kind of methodology. So in other words we do this in LBP as well. You you you may receive, uh, some information on one link. And then you generate an entirely, another packet rather than just using the forwarding plane, you use the software plane, you generate another one that goes out the other links. Um, that sort of propagates that information. So you could conceivably build some higher layer, uh, entity. When I say higher layer, I mean above layer two. So, um, you know, some software forwarder, so to speak, that that just regenerated the L3, DL information, um, uh, and sent it in a whole new packet rather than just flooding it. So anyway, just a couple of thoughts. There's, there's possible ways I think you could do what you were proposing. Randy. Uh.\nSPEAKER S3: Jeff.\nSPEAKER S7: Hey, Randy. Uh, Jeff has juniper. The point from the autoconf, I suspect, was the genesis for this conversation, but I think it probably still impacts health VR as well. The observation that we'd left in the documents that we did for Autoconf is you have to figure out what is the scope of the thing you want to talk to. In this case, we're talking about L2. And I think you've nailed the point perfectly fine, that if you use something that goes beyond the scope of the thing I'm talking to at the end of this wire to a broader domain, if you have a mis wiring in your network, it's potentially problematic. I'm not saying that you should solve that.\nSPEAKER S3: And probably some some operators have told us one of the things they like about this is it might help them detect mis wires. Sorry, did I interrupt?\nSPEAKER S7: No, I agree with you. Um, it's one of the things I do like about L3. DL is that it's good plumbing to extend for a lot of things, including this use case. Um, I think that we both realize that if that is part of the core use case, a little bit of additional machinery needs to be added to the protocol.\nSPEAKER S3: Gladly. Discuss.\nSPEAKER S7: Thank you.\nSPEAKER S3: My. Forward proposal at the moment is this is not our problem in L3 and LSB. If people over in IDR want to, uh. Use L3, DL, know. Certainly we can discuss it with them. Somebody feel free to whack me on that.\nSPEAKER S1: Okay.\nSPEAKER S3: Then I'm done.\nSPEAKER S1: Okay, cool. Thank you, thank you. Randy. So let's jump to the next one. I think this is going to be Paul now. So instead of five minutes you actually have ten minutes. Paul.\nSPEAKER S6: Okay. Uh, I'm assuming you can hear me. Okay. Yep. Um, yeah. So it's been a while since we've. I've given you an update on what we call project 82.1. Abd, um, which we, we call an 802.1 x, but we've talked in the past about it being called sort of lldpe version two. Uh, and the main, the main objective here was to allow us to send more information in lldpe than can typically fit in a single frame. Uh, but do that in a way that is backward compatible. So, uh, I have some, uh. Well, first of all, we have an editor, uh, who's been developing the draft, uh, Steve Haddock. You may or may not know him. He's been around for quite a while. Excellent editor. Uh, and the the draft is made quite a bit of progress, and it's sort of getting to the final, final stages, if you will. So next slide. Um, because first of all, this is, uh, an individual contribution. This is not an official kind of, quote, liaison or anything from IEEE 802. This is just me. However, if if uh Lspr was interested, we could do, uh, something a little more formal in terms of document sharing and those kind of things. So making it possible for, uh, you know, your the group to, you know, comment vote whatever on the documents. We're typically very liberal about accepting comments from from anybody. Anyway, uh, in the earliest phases, as you get to the final, final phase, uh, then of course, it's, uh, things are a process is a little bit more tight. But in general, we're we're open for comment. So anyway, next slide. Um, so briefly, this is the, uh, I didn't want to get into, I don't, you know, in 5 or 10 minutes, still not enough to do a lot of technical discussion here. So there have been, uh, presentations in the past. I point out that the, the motivation for originally doing this work came from, um, looking at the requirements that L3, DL was satisfying, uh, and trying to see if it was time to update LBP. It's a widely used protocol. Uh, there were a lot of people that have augmented it or added additional information, and it really pushed the boundaries when it only allowed you to send a single frame. Uh, so the L3 DL motivation helped kick us off into this new project in general. So there's some background presentations here. And again, last time we did an update was IETF 106. But nothing really has changed since then. Um, I've just got some references to pointers for the project page and the, the, the project scope and those kinds of things. Welcome to read. Uh, and then more recently, the, the sort of technical contributions, um, as Steve Haddock came in and became editor, he had a couple of questions and he noted a few things. Uh, we had resolved those those are discussed in here. Uh, and, uh, there's a paper written by myself and Paul Bottorff, uh, who kind of goes into really more of the details. That's the fundamentals for the for the, uh, the draft. so feel free to take a look at those. I think those are all publicly available documents. Uh next slide. So since the last, uh, the status and since the last ETF, um, we've completed what we called the working group ballot, first working group ballot. And the that was very recently completed. It's kind of roughly equivalent to an IETF last call. Um, and we're we're resolving those comments now, uh, this week as unfortunately IETF and IEEE overlapped, uh, at the same time. So it made it difficult to attend both. Um, but really the changes are we put all the content into the format of a standard, um, we that draft is complete with all the normative texts and state machines and, and conformance. We're using this xlp terminology to, to express the extension of Lldp. It's not necessarily a version too, because what's important is that version one implementation that's probably already running in the network is capable of communicating with the version two. Uh, but obviously only the first pdus worth of information. Um, but in that PDU, we, we defined a new a new TLV that basically describes a set of extensions, um, and, uh, and all that information allows you to send up to like 64 or more pdus worth of, of data. Um, and one technical thing that came up, LBP supports the concept of multiple agents per interface. Uh, and really there's different scope, uh, in two networks, you might have provider bridges or provider backbone bridges, which are kind of layers of layer two, if you will. Um, and we want to be able to communicate lldp messages between different endpoints across that layer two topology. And so there was some there's some trickiness in how that works, but we made some clarification of that in the standard. So it's always been there. It's not new support. It's just when we added xlp uh capability it got a little bit more interesting. So um next slide. So the next steps is again we're resolving comments on uh, Thursday, I guess it is this week. Um, and then we'll have what we call recirculation ballot. If that passes then it goes to uh, what we call Standards Association ballot, which is kind of, you know, the equivalent of the end of the road. Um, and, um, what would be great is to see an open source implementation. You know, the current lldp open source implementation would be would be great to see that augmented to support this. um, and then like I mentioned early on, if there's a desire, we can do some liaison and document sharing with Lswr if, uh, if that's of interest, um, we can take that offline to, to roll those wheels. So if anybody's interested in doing that. So anyway, that's, that's really the update. Um, if there's any questions. Happy to take those.\nSPEAKER S1: Thank you Paul. Any questions at all. If not, then we're gonna go to the next, uh, slot.\nSPEAKER S6: I think.\nSPEAKER S8: AC yeah, uh, no, this isn't just a question. This AC Cisco, I want to say that I think this is a good work. Uh, I'm hoping I recommended that Cisco support this, even though I'm not active in the IEEE, so I'm hoping. Hoping that happened.\nSPEAKER S6: Uh, yeah, we did get your support to make it all happen. Thank you.\nSPEAKER S1: Thank you.\nSPEAKER S3: Thank you. And, uh, um.\nSPEAKER S2: Randy had a.\nSPEAKER S3: I. Can you hear me? Yeah. Yes.\nSPEAKER S1: Randy.\nSPEAKER S3: Hi. I did, uh, come over to IEEE and try to help and join this, and nothing much was happening. Things are spinning up again. I again volunteer to help.\nSPEAKER S6: Okay, let me know how we can make that happen. I can, uh, I'll bring that back to the group and mention somehow we can, as an individual, work you in or or, um, again, we can do a more official collaboration.\nSPEAKER S3: Um, I'm just doing a little hippie engineer so you can rap whatever you want around it. Um, but email works well.\nSPEAKER S2: Okay.\nSPEAKER S1: Okay. That's it. Okay, let me go to the last section, to the last slot, and voila. Oops. Okay, here we go.\nSPEAKER S9: Let me adjust here.\nSPEAKER S8: Good morning everyone. I'm going to be presenting one thing. Uh, I'm only going. We we. Well, both, uh, documents went back to the working group. We focused on the protocol document with updates. We were doing, uh, during, uh, starting about, uh, Thanksgiving. K.R. Victor and I met, uh, weekly and and went through the comments, actually, as Gunther said, there are a lot of comments. I think the comments plus the inline draft greatly exceeded the size of the original draft. Uh, so there was a we spent, uh, quite a bit of time on this on the first document. The reason we didn't look at the applicability yet is because, uh, why don't you go to the next slide? Because the applicability, uh, will be impacted by the change the protocol in a lot of places. When we first did this, we thought something with BGP. We said, yeah, we could do this with BGP, SPF, but we took out all those things that we could do but didn't fully specify because we wanted to have a nice tight core protocol that could that can be augmented with future drafts to do more things with it. Uh, uh, a lot of the comments, these are just things we did. We beefed up the, uh, error handling. Uh, we added the security section with the parts of it that are relevant to BGP, SPF. We clarified the relationship to BGP, TLS and, uh, you know, in addition, we've always had the separate address family. But we clarified that clarified which um nearly and which uh attributes we were specifically using in the base protocol. And we also um, also like I said, we eliminated things in BGP that we said, you know, you know, uh, like for instance, uh, route optimize route reflection. We took that out completely. We took out some of the other discussions of 55, 49 desktops and things like that. And, uh, I rewrote the or we rewrote the SPF section and used consistent terminology throughout. I think I think it's a lot easier. I mean, it would be, uh, there were actually some mistakes in it, too. And once we did that. So, uh, I know the implementations must I hope the implementations just said, oh, we know what we know what it what he means not or what what the draft means, not what it says. And some other minor nits. Next slide. Yeah. Most of the changes were clarifications and things that should have been, you know, where we under specified there are weren't a lot of changes to the protocol other than the error handling. I mean that that really clear, really crisp that up because he's familiar with all the different the evolution of error handling in BGP complete with, uh, the um, the draft, I, I forget the number of it that tells what you do, uh, when you whether you ignore, uh, an attribute and continue or whether you whether you uh, with take it as an implicit withdrawal or bring down the session. We tried to stay away from that last one, of course. And, uh, we put in the, uh. The code points used by the Arcus implementation into the antenna section and have requested early allocation of those. Next slide. Now this is really the key point. There are a number of things we didn't put in yet, but I think uh, most of them are closed. We inherited because we use BGP. Nearly. We we we pretty much inherited that. You're going to be limited to one entry per update because conceivably you could have a bunch of prefixes that all have the same metric, all the same attributes. Uh, but if once you start like that, if, if anything ever changes, you'd have to keep them together because of the sequence number and everything. So I think we're going to go ahead and say, really? You really, really only can have one entry per update. I'm going to go to I'm going to do initial synchronization last the next top requirement. Uh, cricket crisp that up. So it follows the 4760 rules. And I think this issue is closed completely. And the single session requirement this was for Melbourne but we he said. He said, are you limiting it to a single or a separate session for BGP? And the other address families. And we can take that. We think we're just going to verify this on the list. We don't think it needs to be. So we're not going to do this. Okay. Let me go back to the key one that we're going to discuss. This is the initial synchronization. What Alvaro brought up which is a really good point, is the IGP is at least OSPF, uh, has a you know, you don't advertise a neighbor until you have synchronized with that neighbor or the link that it's, you know, you know, that you're connected over that link to that neighbor. Now, uh, we'll have we're going to add some discussions of this. I guess ISIS has a, a similar thing that you don't advertise, but it's not mandatory in ISIS. I forget the name of the, the bit in, uh, the and the ISIS hellos. But anyway, um, we're going to discuss that further on the list. The one thing that I was thinking, this is just me I haven't even talked to my coauthors about. This is maybe we could push the route reflector case out or the controller case, you know, talk about that. What you could do or whether your mileage will vary or whatever. So that's what's coming next slide. Like I said we're going to we we did one working group last call. We're going to do another. Once we get this done we'll start working. You know once now that we know we've sort of scoped the base protocol down to what we've, uh, fully specified, we're going to work on the applicability as well. And there are now multiple implementations. There's a there's Arcus and one underway for, uh, with, uh, free range routing. Comments.\nSPEAKER S1: Hello? Hello.\nSPEAKER S5: Uh. Hey, guys. Good morning. Um, um, uh, future technologies, I guess. Speaking as a individual working group participant at this time, um, I just want to. I guess if we go back to the last slide, the slide before this one, um, insist a little bit on the separate session requirement or maybe not requirement considerations because, um, not only are we carrying different information inside a BGP session, but we're making decisions based on different things. Meaning we're running SPF here versus a decision process. And 4271 so the Potential dynamics of how the updates get distributed around the network are different from a normal BGP session to BGP SPF session. Um, so if the working group. So I would you know, I'll obviously uh, really want to see a requirement for separate session. But what I would settle for is if we could include in the draft, um, you know, some considerations around, you know, what things. Could happen. You know what what things to look at in the network. Uh, I don't know, congruent topologies, things along those lines. Uh, again, just individual contribution.\nSPEAKER S8: Uh, I'm going to let I see cars in the queue. I'm going to let him talk to that one.\nSPEAKER S10: Super. Uh, first of all, uh, uh, I was going to say Cisco, uh, Following is no. Uh, one thing I wanted to, uh, first acknowledge, uh, was that it was a fantastic feedback from Alvaro. Um, on the draft. Uh, we couldn't have asked for more. Um, and so thank you on that, particularly on a single, uh, single and a separate session requirement. Um, to me, uh, we could certainly add some text in the draft, but, um, this is also somewhat an implementation, uh, detail in a sense that today certain BGP implementations do allow you to run multiple processes wherein you can listen on a different, uh, ports, uh, over and above 179. So you could definitely fork, uh, this implementation of some different port where you could listen on to. And then it would automatically be a completely separate session. Um, so whether you want to do that or not is a very implementation. Specific details. Um, a lot of people do it for a lot of different surveys. And that's why I think you can add something in, uh, in draft, uh, as a loose text, but we wouldn't want to make it as a requirement. Thank you.\nSPEAKER S8: Right. The period, I mean. Yeah, you wouldn't want to have you, you know, especially if you're doing the period model where you're using a session per, uh, per link. You certainly wouldn't want to have a separate address for peering on to two addresses to make them unique.\nSPEAKER S10: Yeah. The separate listener port would typically make that session completely separate.\nSPEAKER S8: Yeah, that'd be a better option.\nSPEAKER S10: Thank you.\nSPEAKER S1: Thank you. Hi, Bo.\nSPEAKER S8: I know what he's asking. I owe him a response on this.\nSPEAKER S2: Oh.\nSPEAKER S11: I have a question that I found from the draft trial version. There are. Add a new chapter 6.1.1. And I think this this this action is like IGP method but for BGP for BGP basic basic mechanism. Uh, the one route, one route originated from itself. Uh, it May 1st it received from another. Perhaps the loop may be may be used or other otherwise or be orientated may be used to identify the route. So I think this, uh, perhaps may not be happened in the SPF.\nSPEAKER S8: Yeah, I remember this one from the, uh, from the email you sent. What he's talking about is the fact that we, um, we have handling of self, uh, self originated entirely and by self originated. I don't mean I don't mean nearly from your neighbor. I mean entirely with a node descriptor in the BGP. Uh, nearly identifies the, uh, receiving router and we do it. And, and I had added something to do it, like the IGP to speed the convergence in the case. Um, I don't know if we don't think we let me talk about that with, uh, with the co-authors on the list, we can see if we we don't need this. Uh, but that was added. Yeah, that was added to speed convergence in the, uh, uh, in the event there was stale nearly. But granted, it should all go away as it permeates from the, you know, from the from the source, from the, from the originator. Just take might take a little bit longer without this.\nSPEAKER S11: Okay.\nSPEAKER S8: We have a rule that you always if, if, if, if the uh, this is to cover the case where the router restarts and loses all its state. We have a rule that if you receive nearly, uh, from the originator, you will, uh, you will in fact prefer it, even if it has a lower, uh, less recent sequence number to take care of this case. So maybe we don't need to discuss. Discuss the, uh, uh, the self originated case. I thought about that as well.\nSPEAKER S1: Okay. Any any more questions? Comments? Okay. This is the last slide I see. Oh.\nSPEAKER S8: Oh yeah. Yeah. Right, right. Yeah. The Yang model work is in progress in, uh, care. Care and associates are working with it. Uh, we're going to work on it. Uh, we're sort of. I guess the BGP, uh, Yang model has gone through one last call so it would augment. It would augment the BGP Yang model in IDR, which is pretty big already with a new address family. Or new Safie. Well, okay. Or you want to talk to that, are we going to do all of BGP or just what we need for BGP, SPF?\nSPEAKER S10: Um, uh, we we were thinking of doing it just specifically for BGP SPF, but it would be generic enough to extend it to LRS eventually. And maybe if we have an agreement, if the chairs have an agreement with the chairs, uh, at IDR, that then it could be a common draft. Uh, but what we don't want is, uh, to have a perception that we are taking our ideas work. So if there is an agreement, we'd love to do it at a common place. I think it makes sense also. But then again I'll defer that to chairs. I think we should defer them to chairs.\nSPEAKER S1: Of which you are one of them from IDR nowadays. So it's going to be easy. Okay. That's it. Uh, Victor, you have any last words to say at the end of the session?\nSPEAKER S2: Specifically? Uh. We'll talk. Um, I guess we'll take that as a output, sort of how we're going to deal with that, along with IDR. Um, and then we will be processing some of these updates and getting and we'll let the working group know via mailing list when ready for the next working group. Last call now. AC, one question I had for you is, Um, I guess we have to discuss whether we want to last call the BGP spec before the update to the applicability draft, or if we want to get that reviewed, and then kind of send them both in as a pair. Um, if we if you don't think it's going to take too long to get the applicability updated, then perhaps doing it at the same time, maybe simplify things. Did you have a religion on that?\nSPEAKER S8: I don't know, I don't uh I, I wouldn't mind doing separate cycles, but.\nSPEAKER S2: Okay, I'll discuss with Gunther offline and we'll, uh. Oh, wait. Alvaro has something to say here.\nSPEAKER S5: Uh, hey, um, so I would prefer to publish them both. Publish them both together. Uh, that doesn't mean you have to last call them at the same time. Um, you know, progress through my queue, and I'll just, uh, push them both together at the end.\nSPEAKER S2: Okay. All right. So I'll just go to Gunther. So we were specifically talking there about how to deal with the working group last fall, but it's understood and noted that when we're ready for publishing that we put them, that they should go together for simplicity reasons. No.\nSPEAKER S5: Right, right. So if you send them to me, you can send them to me independently. It doesn't matter. I'll just at the end.\nSPEAKER S2: Got it. But you want to go to the ISG once I understood. Let me for now.\nSPEAKER S1: Okay, I think, Dana, I guess we're finished. I know we have. I give you back like eight minutes of time before stepping into the next session. Thank you all.\nSPEAKER S8: Thanks.\nSPEAKER S6: Bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9882646843772849
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Good morning.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I see.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "How are you doing?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Good.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, at the start of our slot.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "So we only have, like, one hour, so, you know, maybe.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Let's get started there.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "So you have landed into the VR working group, and, uh, we have a few interesting topics here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Now, before we start, let me see if my slides actually work.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "So we don't need the scribe thing because we have the scribe automatically built into the tool nowadays, which is very handy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if there are like any minutes, then, you know, please feel free to use the menu tab on top of the screen.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "You don't have to do this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "You know, just by yourself.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "We can actually all do this together.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "So that's very helpful, you know?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Very handy and very convenient.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "So that will be appreciated.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next is you have seen this note well, already a few times because we're already on the second day.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "If any questions, you know, please be aware of this then the agenda bashing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "So what we have on the agenda at this point in time is, uh, three topics, three main topics here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, first we're going to get like an L3, DL, uh, status update.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Then we're gonna have uh, Paul speaking a bit about LBP v2, which is, you know, uh, what is happening in the IEEE.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, from that perspective, then we're going to be discussing the enhancements in the progress around the BGP, SPF, uh, draft itself and see where we are.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "And then we are going to be closing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "So where are we?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Within the in our working group here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "So we have sent two documents towards the ad.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "The ad reviewed it and actually sent it back.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "But you know together with sending it back, he actually sent, you know, it back with like a thousand pages of feedback, which, uh, the authors have been working upon very intensively over the New Year period until now.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "And AC is going to give like, uh, an update on, on where we are at this point in time with this particular draft.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Now, in the meantime, also, uh, last month, we have done a working, uh, working group last call on the L3, DL documents.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, while no major concerns were raised, you know, there was also not really a lot of feedback on that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "So, you know, we need to figure out how to deal with that going forward.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Now, that being said, there is another element playing also, and that has to do with the fact that L3, DL is a little bit out of scope from our charter.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "So what we are thinking about doing is to recharter the working group by explicitly adding the L3 DL components into the charter itself, which would give us, you know, a better foundation to keep progressing on this particular technology going forward.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and that being said, you know, for in an effort for trying to enhance, uh, the feedback required, you know, feedback requests and reviews, requests for these documents, uh, will also be, you know, launching a call on the working group, uh, email alias for some volunteers to actually give feedback on these, on these documents, uh, just to trigger, you know, more discussions on that going forward.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you have anything to add on this, Victor?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Pretty much covers it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "So sorry.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now that covers it from my perspective as well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, I've already talked about this, the IEEE status, uh, element here, which Paul is going to give us an update about.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So going back to the agenda, any anybody wants to add or change something on here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at this point in time, if not, I think then we're going to be starting with the first session and the first slot from Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so let me pull up the slides for Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, voila.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "So, Randy, if you can push the microphone button, then the floor or the worldwide internet is all yours at this point in time.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well, I can only use this very small portion of the internet.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "This.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, raised an issue, uh, via private email, which was interesting.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but first, just a little bit more on status is the documents, the three L3 DL documents passed within the last call with, as Gunther said, light feedback.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, you should be aware that also the Rob is contemplating upgrading updating the LSO open source implementation to L3 DL.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So that kind of wraps the status.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so Sue raised an issue about the hello PDU possibly causing a layer two storm.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "If you remember, the hello is a multicast layer two PDU being sent from a device who wakes up and is seeking friendship.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "There are two forms the PDU can take.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "One is that first Mac, which is stopped dead at the nearest bridge by layer two rules.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "If just in case there's an intermediate switch, we specified a, uh, to be assigned Mac.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "that will pierce an intermediate switch because by layer two rules, when a switch receives a frame with a multicast dest that it doesn't recognize it forwards.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so the second one is to be used when you know you're connected to a switch.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "So the document says that that hello should be repeated at a configured interval with a default of 60s.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "So when a device wakes up, it should find its friends within a mean of 30s and a max of 60s.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "But it further warns that if you're in the multilink scenario, in other words, there allowing for intermediate switches.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Be aware of a trade off between the timer tuning and network noise, and maybe tune the timer up or down accordingly.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "But Sue raised a further issue.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "So I've stolen her artwork.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Sue, do you want to, um, walk through the storm or shall I do it?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "I think everybody knows what a layer two storm is like, so we can breeze through the storm, as it were.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Or we can.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "If you've got the patience, you can take us through it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "It might sound.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "I don't hear you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "That means.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Because them.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "They need to enable me.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Did you get me?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Gotcha.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I hear you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "I would go through the brief because if people understand multicast storms, this may be a simple issue.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if the brief doesn't make it, we'll go through the more lengthy approach.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, folks, the diagram, I'll explain.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "And then I'm going to let Randy go through the discussion because he tends to be a bit briefer than I.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "The concept is you don't have the topology described in the document.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "And Randy will go through it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "But you have this more interconnected switch topology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "How you got there?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Not my problem.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, perhaps it's recon errors.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "And so this is the air topology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Note I realize it is not a standard class topology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "It would be created by air or by something else.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "So, Randy, why don't you, um, why don't you go ahead or I can explain the next set?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Fine.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "It's fine.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "So essentially, the routers, the things labeled routers are L3, DL speakers.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "The things not labeled routers.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "The little square cubes.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Oops.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "That's bad.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "The little cubes are switches.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Whereas if you use the multicast to be assigned, multicast packets will go not only through them, but it will as it receives one.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "It will re announce it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Said, okay, you see the multicast hello coming up from router A and switch one re-announcing that on all its other interfaces.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Those other destinations generously do similarly.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "And we can see more pretty colored little boxes multiplying in the network.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Those in turn.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Echo back.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Now what was fun here is that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Because the echoes caused regeneration, they go back and are allowed to come back through the mesh and are even worse.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "So I think you see where this is going.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "If anybody wants more detail on layer two storms, feel free to hit your mic button.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, Bill.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Bill asks.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hi.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Do you have a layer.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Two network without spanning tree but with loops?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Like, how do you get to this point where the switches are flooding and creating a storm?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: That's a good point.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "This is an edge case, bill.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "The spanning tree is most likely not running.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "You would have some interconnections that are are, um, not normal.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "So as I started out in the beginning, this broadcast storm only works with the with a set of edge cases.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "You don't have something that's limiting running a spanning tree.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "You're using, uh, the multicast transmission, which goes through switches and then redistributes widely.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Paul, I don't know if this is even possible in the current thing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Just just let me see if I can cut to the chase here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Excuse the spoiler.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the final scene of the movie is this isn't our envisioned topology in this working group.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "This isn't a club, and there's tons of intermediate switches which we don't envision.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "We envision RLS, AR enabled, RLS.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Enabled devices all on link to link just in case we can move forward.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Let me move forward.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think we also have Paul actually in the line here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sorry.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "I just was gonna echo kind of what Bill said.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "We have it, obviously a kind of an invalid layer two topology here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "There's besides multicast, there would be other flooded packets that were not learned yet or various things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "So I also wanted to point out Spanning Tree is not your only topology management protocol at layer two.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "There's other approaches, including software defined networking things or as well as shortest path bridging.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "And so to to make this work, there must be some kind of loop free topology management going on that would prevent this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "I mean.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So my my point is I don't want to make it work.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we're interested in it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "But we'll I'll get there in a minute.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "One approach aside from as Paul and.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Simran point out, um, try to use standard layer two damping tools.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Is do we add an ounce?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Nice try because the ordinance wouldn't be recognized by those non l3 dl speakers.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "So the storm would propagate.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "But isn't this isn't our model.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "We don't have a model with all these switches with a dumb switch mesh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Our model is a clone a standard clove fabric.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "And they're all 3D hell speakers.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "At worst, we might have a switch that wants some fan out one stage, which is why we stuck that one.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Um, form of switch piercing multicast Mac.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, this isn't going to storm.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "So do we actually have a problem.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "And that's the end.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Comments is because I think it's an edge case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "I didn't perceive anything that really needed to be fixed after our discussion with Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "And I couldn't think of, uh, of a shortest path bridging or a normal spanning tree topology where this would actually apply.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "I, I just thought outside the box.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll leave this to Bill and the rest.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "I didn't think there was a problem, because I don't think the scenario I described is something you would normally see.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Now that I've shared my evil nightmare, I'll let the rest of you work on Bill.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, just, um, there are other packets, like broadcasts that also need to be, um, not, uh, create a storm.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "And multicast is just another instance of this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "So you need to have some mechanism spanning tree or or as Paul said, there are many other mechanisms in your layer two to prevent storms.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "It's not just multicast that has this problem.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "So to have a layer two like this is just to have an invalid layer two.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "It's not just this particular multicast that will have a problem.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "It's broadcast Arps, it's unicast, unlearned, uh, flooding.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the problem, even though even though we don't need this, you know, we don't want to address this topology because it's not a CLO.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "We also don't want to address this topology because it's just not a valid layer two to run over.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, I agree, first of all, um, there's a hidden issue here or desire here, which is over an IDR.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "They're discussing BGP discovery, finding your friends and their immediate target is the data center.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if they are limiting Their definition of data center to be a, uh, clo um, as far as I can tell, they're in expansion and laundry list phase.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think this probably triggered the oh my God, what happens when there's all these other devices here?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one thing we could do is, by the way, is ignore or actually prohibit the case when there's an intermediate switch and remove that second form of Mac.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not advocating it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "I'm saying, you know, that certainly shuts off this possibility of discussion.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So one of the things, you know.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Go ahead.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "I was just wondering about the fact, you know, so if you look into the layer two topology, what we have here, you know, it's a little bit legal because it represents a layer two environment without, you know, a spanning tree or, you know, some sort of a protocol to do, you know, to manage the multicast and broadcast floating within the environment, which is a little bit, I think, illegal.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Well, it will give problems always.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we should, you know, to me we should the L3, DL should support like multi levels of, you know of of switches.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "But we should have a floating mechanisms.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "You know that should be you know a requirement.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "I think if, if that actually happens it should not be not what I was thinking.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um I think everybody's discussed the fact that, that topology is not something you want to write home to mother about?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but that last statement you made is that L30d should support multi-layer, uh, switching topology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Properly configured, of course.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Is that really a target for LSV?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm asking you as chair.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: From LSV.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think that is the case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "But then again, I think L3, DL you know, is a technology which could be used potentially beyond, you know, the LZ VR use case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't you know, I think if we constrain it too far in the applicability at this point in time, then in a later phase we will have to do, you know, more R&D research to expand, you know, the use case from it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Ah, Paul.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, I was going to respond to your comment about maybe not using the, um, address that passes through switches and using one that terminates at switches like, um, lldp might.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there's probably a couple of ways that you could do that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Um, first of all, in 802.1, we do have attribute registration protocols that allow you to propagate information like who my neighbor might be or something about somebody across the network like that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "You showed, uh, without flooding and without, you know, without causing the storm.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's there are separate registration protocols that could be leveraged, but perhaps even easier would be to, to find your own, like, higher layer entity that propagates information using, um, uh, you know, hop by hop kind of methodology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "So in other words we do this in LBP as well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "You you you may receive, uh, some information on one link.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "And then you generate an entirely, another packet rather than just using the forwarding plane, you use the software plane, you generate another one that goes out the other links.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that sort of propagates that information.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "So you could conceivably build some higher layer, uh, entity.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "When I say higher layer, I mean above layer two.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you know, some software forwarder, so to speak, that that just regenerated the L3, DL information, um, uh, and sent it in a whole new packet rather than just flooding it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "So anyway, just a couple of thoughts.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "There's, there's possible ways I think you could do what you were proposing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Jeff.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Hey, Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Jeff has juniper.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "The point from the autoconf, I suspect, was the genesis for this conversation, but I think it probably still impacts health VR as well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "The observation that we'd left in the documents that we did for Autoconf is you have to figure out what is the scope of the thing you want to talk to.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "In this case, we're talking about L2.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And I think you've nailed the point perfectly fine, that if you use something that goes beyond the scope of the thing I'm talking to at the end of this wire to a broader domain, if you have a mis wiring in your network, it's potentially problematic.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not saying that you should solve that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And probably some some operators have told us one of the things they like about this is it might help them detect mis wires.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, did I interrupt?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: No, I agree with you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's one of the things I do like about L3.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "DL is that it's good plumbing to extend for a lot of things, including this use case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think that we both realize that if that is part of the core use case, a little bit of additional machinery needs to be added to the protocol.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Gladly.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Discuss.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: My.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Forward proposal at the moment is this is not our problem in L3 and LSB.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "If people over in IDR want to, uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Use L3, DL, know.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Certainly we can discuss it with them.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Somebody feel free to whack me on that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Then I'm done.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, cool.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you, thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "So let's jump to the next one.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "I think this is going to be Paul now.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So instead of five minutes you actually have ten minutes.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Paul.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm assuming you can hear me.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "So it's been a while since we've.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "I've given you an update on what we call project 82.1.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Abd, um, which we, we call an 802.1 x, but we've talked in the past about it being called sort of lldpe version two.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the main, the main objective here was to allow us to send more information in lldpe than can typically fit in a single frame.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but do that in a way that is backward compatible.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I have some, uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Well, first of all, we have an editor, uh, who's been developing the draft, uh, Steve Haddock.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "You may or may not know him.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "He's been around for quite a while.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Excellent editor.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the the draft is made quite a bit of progress, and it's sort of getting to the final, final stages, if you will.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because first of all, this is, uh, an individual contribution.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "This is not an official kind of, quote, liaison or anything from IEEE 802.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "This is just me.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "However, if if uh Lspr was interested, we could do, uh, something a little more formal in terms of document sharing and those kind of things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "So making it possible for, uh, you know, your the group to, you know, comment vote whatever on the documents.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "We're typically very liberal about accepting comments from from anybody.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, uh, in the earliest phases, as you get to the final, final phase, uh, then of course, it's, uh, things are a process is a little bit more tight.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "But in general, we're we're open for comment.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "So anyway, next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so briefly, this is the, uh, I didn't want to get into, I don't, you know, in 5 or 10 minutes, still not enough to do a lot of technical discussion here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So there have been, uh, presentations in the past.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "I point out that the, the motivation for originally doing this work came from, um, looking at the requirements that L3, DL was satisfying, uh, and trying to see if it was time to update LBP.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "It's a widely used protocol.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there were a lot of people that have augmented it or added additional information, and it really pushed the boundaries when it only allowed you to send a single frame.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so the L3 DL motivation helped kick us off into this new project in general.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "So there's some background presentations here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "And again, last time we did an update was IETF 106.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "But nothing really has changed since then.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I've just got some references to pointers for the project page and the, the, the project scope and those kinds of things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to read.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then more recently, the, the sort of technical contributions, um, as Steve Haddock came in and became editor, he had a couple of questions and he noted a few things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we had resolved those those are discussed in here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, there's a paper written by myself and Paul Bottorff, uh, who kind of goes into really more of the details.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "That's the fundamentals for the for the, uh, the draft.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "so feel free to take a look at those.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "I think those are all publicly available documents.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "So since the last, uh, the status and since the last ETF, um, we've completed what we called the working group ballot, first working group ballot.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "And the that was very recently completed.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "It's kind of roughly equivalent to an IETF last call.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we're we're resolving those comments now, uh, this week as unfortunately IETF and IEEE overlapped, uh, at the same time.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "So it made it difficult to attend both.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but really the changes are we put all the content into the format of a standard, um, we that draft is complete with all the normative texts and state machines and, and conformance.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "We're using this xlp terminology to, to express the extension of Lldp.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "It's not necessarily a version too, because what's important is that version one implementation that's probably already running in the network is capable of communicating with the version two.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but obviously only the first pdus worth of information.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but in that PDU, we, we defined a new a new TLV that basically describes a set of extensions, um, and, uh, and all that information allows you to send up to like 64 or more pdus worth of, of data.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and one technical thing that came up, LBP supports the concept of multiple agents per interface.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and really there's different scope, uh, in two networks, you might have provider bridges or provider backbone bridges, which are kind of layers of layer two, if you will.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we want to be able to communicate lldp messages between different endpoints across that layer two topology.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "And so there was some there's some trickiness in how that works, but we made some clarification of that in the standard.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So it's always been there.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "It's not new support.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "It's just when we added xlp uh capability it got a little bit more interesting.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "So um next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "So the next steps is again we're resolving comments on uh, Thursday, I guess it is this week.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then we'll have what we call recirculation ballot.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "If that passes then it goes to uh, what we call Standards Association ballot, which is kind of, you know, the equivalent of the end of the road.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, um, what would be great is to see an open source implementation.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "You know, the current lldp open source implementation would be would be great to see that augmented to support this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "um, and then like I mentioned early on, if there's a desire, we can do some liaison and document sharing with Lswr if, uh, if that's of interest, um, we can take that offline to, to roll those wheels.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "So if anybody's interested in doing that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "So anyway, that's, that's really the update.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if there's any questions.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Happy to take those.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you Paul.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions at all.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "If not, then we're gonna go to the next, uh, slot.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I think.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: AC yeah, uh, no, this isn't just a question.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "This AC Cisco, I want to say that I think this is a good work.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm hoping I recommended that Cisco support this, even though I'm not active in the IEEE, so I'm hoping.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Hoping that happened.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, yeah, we did get your support to make it all happen.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, um.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Randy had a.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Randy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Hi.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "I did, uh, come over to IEEE and try to help and join this, and nothing much was happening.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Things are spinning up again.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "I again volunteer to help.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, let me know how we can make that happen.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "I can, uh, I'll bring that back to the group and mention somehow we can, as an individual, work you in or or, um, again, we can do a more official collaboration.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, I'm just doing a little hippie engineer so you can rap whatever you want around it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but email works well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "That's it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, let me go to the last section, to the last slot, and voila.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Oops.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, here we go.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Let me adjust here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Good morning everyone.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to be presenting one thing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm only going.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "We we.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Well, both, uh, documents went back to the working group.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "We focused on the protocol document with updates.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "We were doing, uh, during, uh, starting about, uh, Thanksgiving.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "K.R.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Victor and I met, uh, weekly and and went through the comments, actually, as Gunther said, there are a lot of comments.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "I think the comments plus the inline draft greatly exceeded the size of the original draft.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so there was a we spent, uh, quite a bit of time on this on the first document.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "The reason we didn't look at the applicability yet is because, uh, why don't you go to the next slide?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Because the applicability, uh, will be impacted by the change the protocol in a lot of places.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "When we first did this, we thought something with BGP.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "We said, yeah, we could do this with BGP, SPF, but we took out all those things that we could do but didn't fully specify because we wanted to have a nice tight core protocol that could that can be augmented with future drafts to do more things with it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, uh, a lot of the comments, these are just things we did.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "We beefed up the, uh, error handling.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we added the security section with the parts of it that are relevant to BGP, SPF.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "We clarified the relationship to BGP, TLS and, uh, you know, in addition, we've always had the separate address family.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "But we clarified that clarified which um nearly and which uh attributes we were specifically using in the base protocol.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "And we also um, also like I said, we eliminated things in BGP that we said, you know, you know, uh, like for instance, uh, route optimize route reflection.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "We took that out completely.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "We took out some of the other discussions of 55, 49 desktops and things like that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I rewrote the or we rewrote the SPF section and used consistent terminology throughout.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "I think I think it's a lot easier.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, it would be, uh, there were actually some mistakes in it, too.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "And once we did that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I know the implementations must I hope the implementations just said, oh, we know what we know what it what he means not or what what the draft means, not what it says.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "And some other minor nits.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Most of the changes were clarifications and things that should have been, you know, where we under specified there are weren't a lot of changes to the protocol other than the error handling.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "I mean that that really clear, really crisp that up because he's familiar with all the different the evolution of error handling in BGP complete with, uh, the um, the draft, I, I forget the number of it that tells what you do, uh, when you whether you ignore, uh, an attribute and continue or whether you whether you uh, with take it as an implicit withdrawal or bring down the session.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "We tried to stay away from that last one, of course.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we put in the, uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "The code points used by the Arcus implementation into the antenna section and have requested early allocation of those.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Now this is really the key point.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "There are a number of things we didn't put in yet, but I think uh, most of them are closed.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "We inherited because we use BGP.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Nearly.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "We we we pretty much inherited that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "You're going to be limited to one entry per update because conceivably you could have a bunch of prefixes that all have the same metric, all the same attributes.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but if once you start like that, if, if anything ever changes, you'd have to keep them together because of the sequence number and everything.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we're going to go ahead and say, really?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "You really, really only can have one entry per update.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to go to I'm going to do initial synchronization last the next top requirement.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, cricket crisp that up.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "So it follows the 4760 rules.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "And I think this issue is closed completely.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "And the single session requirement this was for Melbourne but we he said.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "He said, are you limiting it to a single or a separate session for BGP?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "And the other address families.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "And we can take that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "We think we're just going to verify this on the list.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "We don't think it needs to be.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "So we're not going to do this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Let me go back to the key one that we're going to discuss.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "This is the initial synchronization.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "What Alvaro brought up which is a really good point, is the IGP is at least OSPF, uh, has a you know, you don't advertise a neighbor until you have synchronized with that neighbor or the link that it's, you know, you know, that you're connected over that link to that neighbor.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Now, uh, we'll have we're going to add some discussions of this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "I guess ISIS has a, a similar thing that you don't advertise, but it's not mandatory in ISIS.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "I forget the name of the, the bit in, uh, the and the ISIS hellos.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "But anyway, um, we're going to discuss that further on the list.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "The one thing that I was thinking, this is just me I haven't even talked to my coauthors about.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "This is maybe we could push the route reflector case out or the controller case, you know, talk about that.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "What you could do or whether your mileage will vary or whatever.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "So that's what's coming next slide.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Like I said we're going to we we did one working group last call.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to do another.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Once we get this done we'll start working.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "You know once now that we know we've sort of scoped the base protocol down to what we've, uh, fully specified, we're going to work on the applicability as well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "And there are now multiple implementations.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "There's a there's Arcus and one underway for, uh, with, uh, free range routing.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Comments.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hello?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Hey, guys.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "Good morning.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, uh, future technologies, I guess.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Speaking as a individual working group participant at this time, um, I just want to.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "I guess if we go back to the last slide, the slide before this one, um, insist a little bit on the separate session requirement or maybe not requirement considerations because, um, not only are we carrying different information inside a BGP session, but we're making decisions based on different things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Meaning we're running SPF here versus a decision process.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "And 4271 so the Potential dynamics of how the updates get distributed around the network are different from a normal BGP session to BGP SPF session.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if the working group.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "So I would you know, I'll obviously uh, really want to see a requirement for separate session.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "But what I would settle for is if we could include in the draft, um, you know, some considerations around, you know, what things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Could happen.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "You know what what things to look at in the network.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I don't know, congruent topologies, things along those lines.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, again, just individual contribution.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, I'm going to let I see cars in the queue.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to let him talk to that one.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Super.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, first of all, uh, uh, I was going to say Cisco, uh, Following is no.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one thing I wanted to, uh, first acknowledge, uh, was that it was a fantastic feedback from Alvaro.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Um, on the draft.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we couldn't have asked for more.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so thank you on that, particularly on a single, uh, single and a separate session requirement.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Um, to me, uh, we could certainly add some text in the draft, but, um, this is also somewhat an implementation, uh, detail in a sense that today certain BGP implementations do allow you to run multiple processes wherein you can listen on a different, uh, ports, uh, over and above 179.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "So you could definitely fork, uh, this implementation of some different port where you could listen on to.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "And then it would automatically be a completely separate session.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so whether you want to do that or not is a very implementation.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Specific details.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a lot of people do it for a lot of different surveys.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why I think you can add something in, uh, in draft, uh, as a loose text, but we wouldn't want to make it as a requirement.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Right.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "The period, I mean.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, you wouldn't want to have you, you know, especially if you're doing the period model where you're using a session per, uh, per link.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "You certainly wouldn't want to have a separate address for peering on to two addresses to make them unique.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "The separate listener port would typically make that session completely separate.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, that'd be a better option.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, Bo.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I know what he's asking.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "I owe him a response on this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Oh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: I have a question that I found from the draft trial version.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "There are.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "Add a new chapter 6.1.1.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "And I think this this this action is like IGP method but for BGP for BGP basic basic mechanism.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the one route, one route originated from itself.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it May 1st it received from another.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Perhaps the loop may be may be used or other otherwise or be orientated may be used to identify the route.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "So I think this, uh, perhaps may not be happened in the SPF.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, I remember this one from the, uh, from the email you sent.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "What he's talking about is the fact that we, um, we have handling of self, uh, self originated entirely and by self originated.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "I don't mean I don't mean nearly from your neighbor.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "I mean entirely with a node descriptor in the BGP.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, nearly identifies the, uh, receiving router and we do it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "And, and I had added something to do it, like the IGP to speed the convergence in the case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know if we don't think we let me talk about that with, uh, with the co-authors on the list, we can see if we we don't need this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but that was added.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, that was added to speed convergence in the, uh, uh, in the event there was stale nearly.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "But granted, it should all go away as it permeates from the, you know, from the from the source, from the, from the originator.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Just take might take a little bit longer without this.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: We have a rule that you always if, if, if, if the uh, this is to cover the case where the router restarts and loses all its state.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "We have a rule that if you receive nearly, uh, from the originator, you will, uh, you will in fact prefer it, even if it has a lower, uh, less recent sequence number to take care of this case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe we don't need to discuss.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "Discuss the, uh, uh, the self originated case.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "I thought about that as well.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "Any any more questions?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "Comments?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "This is the last slide I see.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Oh yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "Right, right.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "The Yang model work is in progress in, uh, care.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "Care and associates are working with it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we're going to work on it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we're sort of.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "I guess the BGP, uh, Yang model has gone through one last call so it would augment.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "It would augment the BGP Yang model in IDR, which is pretty big already with a new address family.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Or new Safie.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "Well, okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "Or you want to talk to that, are we going to do all of BGP or just what we need for BGP, SPF?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Um, uh, we we were thinking of doing it just specifically for BGP SPF, but it would be generic enough to extend it to LRS eventually.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe if we have an agreement, if the chairs have an agreement with the chairs, uh, at IDR, that then it could be a common draft.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but what we don't want is, uh, to have a perception that we are taking our ideas work.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "So if there is an agreement, we'd love to do it at a common place.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "I think it makes sense also.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "But then again I'll defer that to chairs.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "I think we should defer them to chairs.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Of which you are one of them from IDR nowadays.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "So it's going to be easy.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "That's it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Victor, you have any last words to say at the end of the session?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Specifically?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "We'll talk.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess we'll take that as a output, sort of how we're going to deal with that, along with IDR.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then we will be processing some of these updates and getting and we'll let the working group know via mailing list when ready for the next working group.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "Last call now.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "AC, one question I had for you is, Um, I guess we have to discuss whether we want to last call the BGP spec before the update to the applicability draft, or if we want to get that reviewed, and then kind of send them both in as a pair.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if we if you don't think it's going to take too long to get the applicability updated, then perhaps doing it at the same time, maybe simplify things.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "Did you have a religion on that?",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I don't know, I don't uh I, I wouldn't mind doing separate cycles, but.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, I'll discuss with Gunther offline and we'll, uh.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, wait.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "Alvaro has something to say here.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, hey, um, so I would prefer to publish them both.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "Publish them both together.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that doesn't mean you have to last call them at the same time.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, progress through my queue, and I'll just, uh, push them both together at the end.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll just go to Gunther.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 583,
+            "start": 0,
+            "end": 0,
+            "text": "So we were specifically talking there about how to deal with the working group last fall, but it's understood and noted that when we're ready for publishing that we put them, that they should go together for simplicity reasons.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 584,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 585,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Right, right.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 586,
+            "start": 0,
+            "end": 0,
+            "text": "So if you send them to me, you can send them to me independently.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 587,
+            "start": 0,
+            "end": 0,
+            "text": "It doesn't matter.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 588,
+            "start": 0,
+            "end": 0,
+            "text": "I'll just at the end.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 589,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Got it.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 590,
+            "start": 0,
+            "end": 0,
+            "text": "But you want to go to the ISG once I understood.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 591,
+            "start": 0,
+            "end": 0,
+            "text": "Let me for now.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 592,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, I think, Dana, I guess we're finished.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 593,
+            "start": 0,
+            "end": 0,
+            "text": "I know we have.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 594,
+            "start": 0,
+            "end": 0,
+            "text": "I give you back like eight minutes of time before stepping into the next session.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 595,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you all.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 596,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Thanks.",
+            "confidence": 0.9882646843772849
+          },
+          {
+            "id": 597,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Bye.",
+            "confidence": 0.9882646843772849
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T18:36:23.844086+00:00",
+          "processed_at": "2026-01-23T18:36:23.844086+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "pdkmujl70s"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9882646843772849
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

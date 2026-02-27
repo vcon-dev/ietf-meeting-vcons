@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "1a5cbe53-05da-4d28-b00d-fd336f9aea59",
   "created_at": "2026-01-03T19:37:09.363216",
-  "updated_at": "2026-01-03T19:37:14.385115",
+  "updated_at": "2026-01-27T16:48:51.032795+00:00",
   "subject": "IETF 113 - PRIVACYPASS Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=wip30cWHRBI",
       "meta": {
         "ietf_meeting": 113,
         "working_group": "privacypass"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 113,
         "location": "Vienna, AT",
@@ -50,10 +49,10 @@
         "start_time": "2022-03-22T12:00:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "privacypass",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/chatlog-113-privacypass-202203241300",
         "mimetype": "text/plain",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/minutes-113-privacypass",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/agenda-113-privacypass",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/bluesheets-113-privacypass-202203241300",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-privacypass-chair-slides",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-privacypass-core-docs-update",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-privacypass-rate-limited-issuance",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/agenda/privacypass/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-113-privacypass",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -9869,6 +9869,3778 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: All right. Um. Welcome to, uh, Privacy pass at, uh, IETF 13. Um, this session is being recorded as usual. Um. You're probably, by this time all familiar with the note. Well, um, if anybody isn't, you can quickly get a refresher here or look it up online. Um, as always. So for for participants in the room, if you want to speak at the mic, please add yourself to the queue. And also you need to log in to the, uh, meeting using the barcode or the QR code up there so that we can get you counted on the blue sheets. The attendants. Um. All right. Uh, some more information about the agenda. We don't think we need to go in there. So for our agenda today, um, we do need note takers. Is there anybody who's willing to, uh, take notes in the code EMD? Either online or in the room here. Let's see if I go to. Can't quite see it. Anybody respond in chat? Okay. Thank you Jonathan. All right. And then on the agenda today, we have, um, uh, looking at our adopted drafts and going through some of the changes that have been made there. Um, we have a draft on rate limit tokens, uh, that, uh. We are, uh, that that we may adopt. So we'll have a presentation on that. And then if we have time, I don't know if Mark is here, but, um, there's some updates to the centralization problem. We weren't sure if we were going to have time for that presentation. So I don't know if, if, if Mark is going to attend or not, but if he is, we can get get him to, uh, give us an update. Are there any other additions or modifications to the agenda? Or. Ben, did I leave anything off? Awesome. Mark is here. Alright. Um.\nSPEAKER S2: Uh, we only have one hour, so let's see if, uh, let's see how fast we can move.\nSPEAKER S1: All right, well, then let's go and get started with, um, the, uh. Uh, core drafts. Chris, do you want to. Are you going to share? Yeah.\nSPEAKER S3: Can you stop sharing?\nSPEAKER S1: Yeah, I can just do this. I think that'll do it.\nSPEAKER S3: I need to. Thank you. Um. Oh, sorry. Um. Okay. Uh. Morning, everyone. Uh. Afternoon, everyone. I guess, um, uh, as Joe said, this is just going to be an update on the the two core documents, the architecture and the, um, uh, the authentication scheme documents. Um, uh, so for the architecture, the biggest change that went into the last revision was a, um, sort of an exploration of deployment considerations for, uh, ways in which you would use privacy, perhaps in practice and what the implications are on, um, sort of the privacy posture of the protocol with respect to clients. Um, we'll kind of go through, um, the main highlights of those deployment considerations here. Um, and talk about next steps for the draft after that. As a reminder, um, uh, the architecture, uh, draft, uh, since the or as of the last meeting was sort of updated such that it's now split into, um, uh, two sub protocols in which, uh, there's this, this issuance protocol that that clients run, uh, with an attestor, an issuer for the purposes of acquiring tokens, uh, um, for use, uh, in interacting with an origin via the redemption protocol later on. Um, in the architecture document describes what the role of the Attestor is and the issuer is, and the issuance protocol, as well as what the role of the origin is and challenge and redemption protocol. Um tried to orchestrate things such that the redemption protocol is really simple and lightweight, um, and doesn't really put a lot of burden on the origin. Uh, conversely, the issuance protocol therefore sort of encapsulates all of the complexity of, uh, new token types. Um, and uh, the, uh, I guess relevant privacy properties, um, of those different issuance protocols. Um, and, uh, and, uh, yeah, that's pretty much sums it up, I guess, um, the, the overall flow of the, the, the protocol sort of looks like this, uh, if you recall. So, um, the, the origin of the server on the right hand side, um, generally would ask the client, you know, when it wants to, uh, you you want the client to present a token? Um, simply ask the client, you know, can you attest to some particular property, uh, and give me proof of that particular property via a token? And then the client would then go off and interact with the issuer and the attester through the issuance protocol to produce a token and then present it back to the to the origin. And the trust relation is such, such that the server trusts the issuer that is issuing tokens in this particular arrangement, and issuer trust the attester that is attesting to particular properties on behalf of the client. Um, and uh, in the latest version of the architecture document, we've introduced this this notion of context. Um, so for example, during the redemption protocol, um, there's a redemption context. And the redemption context sort of encapsulates all of the things that the origin of the server would see about the client, uh, during an interaction with the client for the purposes of redeeming a token. So that might be, uh, the origin name itself, uh, because the origin is information about that particular redemption context might be the timestamp of the redemption event. Um, might be the client IP address. Uh, you know, whatever information there is about a particular client interaction, uh, when redeeming a token with a particular server. And likewise, there's, um, an attestation context that is present during the, uh, or sort of encapsulates all of the, you know, per client information that the, uh, tester sees during the issuance side of the, uh, exchange or side of the interaction. Um, it's the exact same sort of thing. So it's the all the information is about the client, including timestamp, the event or the client's IP address, um, whatever other relevant metadata or information is, um, you know, representative of that particular issuance event. And if you take a step back and ask yourself, you know, what is, uh, at least in a deployment of Privacy Pass, what is meaningful privacy? Um, because, uh, you know, uh, for most uses of Privacy Pass, we're trying to use it for purposes of improving client privacy. Mind you, there are applications of privacy passport. You may not care about privacy. Um, but for this particular, uh, you know, scenario, uh, um, we are so in, uh, the meaningful privacy we claim in this particular setup is that there's no single entity in the system, uh, that can link per client information and per server information, sort of across these contexts, this attestation and redemption contexts. And of course, the the way in which you deploy privacy pass as an, as an impact on, you know, uh, who sees what in the interaction. Um, and uh, also has an impact on sort of what the, the client has to do when it's interacting with these different parties in the system in order to achieve this goal. So take for example, um, what we call the joint deployment model, um, which is basically how privacy is deployed today, where the client interacts within a tester and a server, um, for the purposes of solving, uh, CAPTCHAs, uh, as an attestation mechanism and then spending tokens, um, uh, as a, as a way to, you know, demonstrate that they solve CAPTCHAs at some point in the past. Um, in this deployment model, the tester and server are the same entity. Um, uh, and so they have, uh, basically a shared view of the client during both interactions. Um, uh, they, they share the same IP address or they, they will, they will share, um, uh, their view of the client during, uh, the, the Captcha solving process as well as the, you know, presenting the token or the of the redemption solving process. Um, and, uh, as a result, sort of meaningful privacy in this particular arrangement means that the client has to either separate itself, um, across interactions over time, uh, sort of, um, so that across different redemption events or across different attestation events, it appears as sort of a different client, um, or over space such that, um, and when interacting with the attestor or the server, it appears as a different, uh, client or it's sort of unlinkable with respect to, um, uh, attestation and redemption event. So, uh, if you're looking at the time separation aspect of this, um, this is where things like, you know, um, uh, our Unlinkable tokens, you know, sort of the basis of the, the privacy Pass protocol come into play. Um, a you can't, uh, we use, like, unlinkable tokens that are issued through, like blind signature protocols or OPR protocols or whatever. Um. Uh, such that the Attestor and server can't link um, uh, particular issuance flow to a particular redemption flow. Um, or go they're sort of separated in time. Um, and the space separation side, um, the client would sort of separate itself in space by using, for example, a proxy and connecting, uh, to the attestor or connecting to the server. Indeed, in the initial motivating use case for privacy pass, where and um, Tor users would go, uh, interact with the, um, uh, with the, you know, users would users of Tor would be, you know, being faced with CAPTCHAs over and over again, repeatedly, um, being forced to, um, uh, present tokens. Uh, they would they were already sort of separating themselves over space. Um, um, Um, but you can use other proxies if, you know, reasonable for your particular deployment model. Um. Uh, yeah. Ben. Go ahead.\nSPEAKER S2: Hey, you said time or space here. Um, I guess I would have expected time and space because, uh, whether I see a consistent IP address over a long period of time or. I don't know your IP address, but I, uh. But you're the only client who's who's, uh, requesting and using tokens in some short period of time. Seems like either one of those is, uh, would.\nSPEAKER S3: I think, um, sort of implicit here is that there's more than one client interacting with the system. Um, right. Otherwise, like, the none of this really holds, um, there's no really privacy to be gained. Um, so, um, certainly if there's only one client, uh, that's asking for tokens and spending them, um, doing any sort of separation, um, over time or over space doesn't really help. So, um.\nSPEAKER S2: Uh, right. I mean, that if you don't have separation over time, then you're, you're sort of necessarily the only client. That's because in any sufficiently short time window, there's only one client.\nSPEAKER S3: Sure. And that's why in this particular model, non-interactive tokens sort of like are the most sensible variant, um, in particular, because, uh, spending a token, um, or redeeming a token does not mean that you, like, went off and fetched it in real time. It just means that at some point in the past, you fetched a token. So, um, uh, there's like a sort of a natural separation between the two over, over time. Um, whereas if this if, uh, like all of these, uh, if, if they were interactive tokens rather, um, uh, than Then there would be sort of no, um, time separation and you could link attestation and, um, uh, and redemption together, uh, presumably by like timestamp or, or what have you.\nSPEAKER S2: Right. It seems like you could, you know, in that context, you can do that linkage even if you have space separation. So it's not that you need. This is why I'm saying it's not that you need one or the other. It seems like you need both. Anyway, I won't.\nSPEAKER S3: Um, so recall the the the meaningful privacy here is that you're not being you're not able to link per client, per server information. Um, so although you're able to link these two events together, presumably by the timestamp, um, you're not linking, uh, uh, you're not sort of revealing any, uh, per client information by virtue of using, um, a sort of a proxy and interacting with the server, the server in that particular case. Um. Uh, so, Yeah. Um, okay. Uh, okay. Moving on. Um, uh, there's also, um, there's another other deployments in the, in the draft as well, uh, deployment models in the draft as well. Another one, uh, we talked about is this, uh, split deployment model. Um, uh, and this is, this is, uh, useful for different attestation mechanisms that are less privacy friendly. Um, like, say, for example, the client is demonstrating that has, you know, ownership over some specific type of application account. And it's like specifically logging in with that account. Um, uh, in this particular model by um, uh, joint, we mean that the sort of the Attestor and the server are run by two different non colluding entities. Um, uh, and as a result, they don't share the same context with respect to, um, attestation and redemption. Um, and so the, the sort of bar to meaningful privacy is kind of lowered in a sense. Um, and just means that the attestation in this particular case can't reveal any sort of per server information. Um, because the Attestor doesn't have, uh, the sort of the shared view of the, uh, the redemption side that it otherwise would in the joint deployment model. Um, and likewise, that redemption doesn't reveal any per client information. Um, so the excuse me, the interaction between the client and the server, uh, during redemption, uh, just needs to sort of, uh, make sure that there's no per client information revealed, for example, using a proxy to interact with it so that, um, uh, you know, it's particularly unique IP address or whatever stays hidden. Um, and then, uh, during attestation, uh, you just need to make sure that, uh, whatever issuance protocol you're using doesn't leak inadvertently. The, the origin name, um, or anything else in particular about the redemption context. Um, uh, to the attestor and, uh, this sort of has implications on, you know, how the protocol works. In particular, the issuance protocol should not reveal, um, uh, things that are, uh, particular to the to the origin, um, uh, during issuance. But, um, thankfully, all the issuance protocols, like the blind signatures and the otps and whatnot, um, naturally sort of hide this information, um, by virtue of being blind signatures or oblivious pseudorandom functions. Um, so, uh, yeah, uh, I think, uh, next steps, there's, there's an open issue right now, um, for sort of addressing the, uh, the double spend requirements, uh, when you're using, uh, cross origin tokens, um, across different, uh, or double spend prevention requirements. Excuse me when you're using um, uh, cross-origin tokens, um, which means that like, say, for example, uh, you have two origins that both accept, um, cross-origin tokens. They both have to sort of share double spend prevention state. Otherwise, um, a client could spend, um, a token at either one of these particular servers. Um, and I don't think we explicitly sort of make that obvious, uh, in the draft right now. Um, so there's just an issue to sort of call that out. Um, there is, uh, also some existing sort of privacy parameterization in the draft, which sort of describes, you know, if this is the sort of size of the anonymity set that you want for particular clients, here's how you should arrange your issuers and arrange your testers and whatnot. Um, but it's still sort of, uh, kind of highly dependent on the previous incarnation of the architecture draft. Um, so we just need to kind of go through and update that. Um, and then there's, uh, there's been a sort of a long standing, uh, issue to address centralization. Although, um, with Mark's draft, uh, we may be able to, uh, or we may consider just simply punting discussion there or, conversely, folding his, his, um, uh, some of his texts into this architecture document and closing out the issue. I think at that point, um, uh, we'll have sort of, uh, discussed and covered all of the different architectural, uh, properties of the system, um, uh, that are, you know, relevant to, uh, how you would deploy it, how you'd use it, and what the resulting privacy posture is, or, uh, for clients. I think we could either park it or move it into working group last call and focus our efforts elsewhere in the issuance protocols. Um, um, but that's pretty much it. Um, anyone have any questions before I hand it over to Tommy to talk about the architecture or the Authentication scheme. If not, uh, Tommy, do you want to stop sharing so you can pull it up? Or do you want me just advance for you? Um, sure.\nSPEAKER S4: I can just say next slide. It's. It's fine, if you don't mind.\nSPEAKER S3: Yep. That's fine.\nSPEAKER S4: Okay. All right. Next slide. Great. Um so I'm going to talk about the authentication scheme. This is the document that we discussed at the interim meeting. It is newly adopted. And, uh, we did actually publish A-01 version, uh, just this week with a couple of the changes that I we'll talk about today. Um, these are mainly minor terminology changes to some of the fields in the struct that should hopefully make it clearer. And the other thing we wanted to cover today was the fact that we want to be able to stabilize this challenge and response format, To make sure that people doing deployment experiments and interop experiments have something that we are comfortable with. Next slide. Okay. So for the changes in the zero one document, um, the main thing was renaming some of the terminology. There was a field in the challenge structure before which was a redemption nonce. Um, oh. In the chat is saying that the audio is not very clear. Is that true?\nSPEAKER S1: You are breaking up occasionally.\nSPEAKER S4: Okay. Um, try to mute. Unmute. All right. Um, I will just try as best I can. I'll speak a little bit more slowly. So the redemption nonce is renamed to the redemption context. Uh, generally, um, this is because this field was not necessarily a nonce. It's really just some server chosen context that they want a token bound to. And I want to point out that the fact that you have this redemption context in a challenge doesn't actually make the token issuance interactive, as in saying that the client needs to fetch a token immediately is just saying that this token is bound to something that the server knows for purposes of double spend prevention, and it's something that isn't exposed to the issuance protocol. So it's really just between the client and the origin that's doing the redeeming to make sure that you're not spending a token that someone else got. And then one other minor rename is that there was another confusing context name in the actual token struct that was given back to the origin upon redemption, and this was renamed to Challenge Digest because it is indeed a hash digest of the challenge. Next slide. All right. Um, and then the other thing we want to do is talk about stabilizing the format of this challenge and response. We have several implementations, um, that have been testing with interop and to encourage the deployment, um, of these and experimentation between these, the authors would like to essentially hear any issues with that format now so that, um, we don't have to worry about changing it too much later. Next slide. So just to review what the current status is of these structures. Um, in the challenge. So this is all using HTTP authentication with the scheme as private token. It has a challenge and a key that are passed there. And then the challenge structure has the token type which defines which issuance protocol we would use. It has the issuer name which tells you who who is allowed to actually get give you the tokens on the other side. It has the newly renamed redemption context, which is optional and is essentially just some random server chosen context that they want to bind this token to, and then also an origin name to scope this token to a particular origin upon redemption. And that's it for the challenge. And then the next slide is the redemption side. It's the same scheme, um, for actually sending this authorization. The token type is there again. There is now a client generated nonce, which is a true nonce that, um, is is used to make sure that this is a unique token. As part of the issuance protocol, there's a hash of the challenge structure. There is the token key ID used, and then there are all the bytes that are specific to the issuance protocol. This is based on the RSA blind signature, the PRF, etc.. Um, I see a question from Ted in the chat. Uh, Ted, would you mind maybe asking the question at the mic?\nSPEAKER S5: Uh, speaking, if you wouldn't mind going back a slide. I was I was typing slowly, so I was actually about this, uh, for the opaque origin name, which is optional. Uh, if you wanted to have something that covered both YouTube and, you know, Google search at the moment, you could leave this out and the redemption context would handle it. You could present it in either one could could do it. But I was wondering whether it would be, uh, another option to consider, and maybe it's not needed, is to allow opaque origin name to to have more than one appearance in the struct so that you could specify, uh, a a list of origin names that it covered for when you have cases like that, where the redemption mechanics in the back end are likely to be the same. Um, but the origin names are not, So I'm not sure this is worth doing. That's why I just put it in the chat to kind of as a side comment. But that was the question.\nSPEAKER S4: Got it. Um, yeah. That's a great point of an interesting feature that this could have. As you point out, it could, of course just use cross origin tokens. But then depending on what your issuer is this, that could be a much broader pool of origins that it would be shared with, and not just Google and YouTube. The other approach I imagine could be taken is that the client could know essentially when it is safe to do cross origin for a single origin, similar to how I can do connection. Uh, like HTTP two connection reuse. If the, uh, if two origins are covered in the same certificate of the server that I'm talking to, potentially.\nSPEAKER S5: So, um, I think I think you're probably right there that the there could be something else that uses to know whether it's safe to do the cross-origin. Um, but. The mechanics of this in the back ends of some of these are going to be a little bit wonky, because in some of these cases, the same redemption mechanics are going to be used for something like GCP. So you could have instances, um, that are being issued by Google, where the redemption mechanics definitely do not want you to use the same redemption context as, um, uh, the Google properties themselves, but they might be the same redemption mechanics in the back end for, um, uh, origins that are just, you know, living in their cloud. So if, if you if we're not going to use multiple origin names, then I think one of two things will happen. either. Cross-origin is going to be very, very common to to major services because they many of them have more than one, uh, name from the point of view of HTTP origin, or you're going to have to have some other system to kind of figure out, oh, okay, what am I going to actually use to figure out whether it's cross-origin safe is my last contact for them, what all of the subject names were in the certificate or something like that. Um, so there's some trade offs here, and a simpler trade off might actually just be to say opaque origin name can can occur multiple times because then if somebody wants to, um, to, to scope it to a specific set, they don't have to rely on either previous, um, contact by the, the client or um, maybe a try and fail with Cross-origin that was to the same, um, set of servers, but two different um actual redemption context. So just just a thought.\nSPEAKER S4: Got it. Yeah. No, that's that's good. We we will take that as a, uh, as an issue to look at Steven.\nSPEAKER S6: I think like, even beyond like, wanting multiple origins, like the definition of an origin in privacy past is slightly different from, like, what an origin might be on the web, like it might be a site or it might be an origin. So I think Ben mentioned the like ideas leave origin to be an actual opaque blob that, depending on the use case, like it, might be interpreted as like a literal origin, or it might be like a set of things or a site and leave that up to the use case rather than trying to put it in this doc.\nSPEAKER S4: All right. Thank you. Okay. Let's go forward a little bit. All right. Um, and yes, that was Steven. So. The origin behavior, essentially the server behavior of what to do in this is if you want to challenge, it should be very, very simple. You essentially just need to choose who your issuer is, one or more of them and what token type you want to use. So what issuance protocol you can choose to be per origin or cross origin. And to the discussion we were just having, maybe you know, there is a in between you essentially you need to choose what is that value of kind of what you are binding your challenge to. And then you can choose the optional context that you want to have. So for this, the context really is about the state that you need to keep for double spend prevention. If you don't have any context, then the state for enforcing double spend prevention is not really tied to what's in the challenge, but you need to have some broader state that you keep upon redemption to recognize identical tokens coming back to you. And that is certainly doable, but it can require more work on the origin. The benefit of having the context based token is that they can tie specific client session properties or other properties that they want to the token to make it a smaller set of things amongst which you need to do double spend prevention. Um, I think the next slide has some examples that Chris gave. So of course you can have an empty context, but you could have some very simple mechanics like, uh, doing a hash of the client IP address or the client IP address subnet so that you can, um, just compare these tokens to other clients that fall within that subnet. Or you could have something associated with your state, uh, with the client. So if the client has a long lived connection with you that's doing HTTP two or HTTP three, maybe you have some state associated with that that you just keep for the lifetime of that session. And then you can just guarantee that this token is only valid for the lifetime of that session. All right. And then on the client mainly what the interesting things that a client needs to do is manage what tokens are cached and how they are reused, and recognizing when, which which tokens are eligible to be reused, and what cache you need to pull from. When you don't have a context, then it's very easy to cache it. Um, if they are context based, then you, um, have generally shorter caching lifetimes. And we had a recent issue from something like Chris pointed out that you want to probably clear any cached tokens whenever you clear your cookie state, or something else that would otherwise be changing the client state. And then the other thing that you want to do on the client side is to verify that origin name information, to make sure that it matches. And this again, to the point that Ted brought up, is where if this is expanded to include multiple things, it's some verification that what the challenge was bound to actually represents what you, um, the, the state you think you have with the server to make sure that you're not going to give a token to the wrong server. All right. Next slide. All right. So based on this discussion it sounds like we have, you know, one issue where we want to kind of dive in a bit more to this origin name. If other people see other changes that to the formats that would be useful. That would be great to hear. Now, um, and other than that, we plan to continue polishing the document and doing interop testing. If people are interested in testing with this, let us know any other questions.\nSPEAKER S1: Okay. Any other, uh. Feedback on. Either of these two core drafts.\nSPEAKER S4: All right.\nSPEAKER S1: All right. Chris, are you presenting the next draft as well?\nSPEAKER S3: Uh oh. I'll share slides. Um, Tommy and I are going to kind of do it together.\nSPEAKER S1: Okay.\nSPEAKER S4: Yeah, we'll go back and forth. All right. So next we'll talk about a secondary issuance protocol. So the main core issuance document talks about blind RSA blind signatures and PRF. And these are just very very basic usages of those protocols. But we have another issuance protocol that has been defined specifically to allow per origin rate limiting. Next slide please. So rate limiting is a very very common part of fraud prevention and anonymous access across web and in apps. And often it's something that does rely on tracking cookies or client IP address. And so it's not a great thing for user privacy. And just first to give some background on how this is commonly done. Um, with something called token buckets. Uh, Chris is going to walk through some examples.\nSPEAKER S3: Yeah. Um, so token buckets or leaky buckets, um, you know, choose whichever one you like, uh, using token buckets because I think it maps better to the analogy of, uh, uh, the sort of the use case here. Um, so, so as I guess, a reminder or refresher for people who may not know, um, a token bucket is, uh, sort of a just a process or an algorithm for sort of enforcing, uh, rate limits. Um, uh, and you can think of it as a, like a composition of two independent processes, um, one of which is a process for sort of replenishing tokens in this bucket. Um, it's sort of like adds a new token to the bucket at a fixed rate. Um, and the bucket has a particular size or capacity, um, after which, uh, if it's full, you can't add any more tokens. Um, if it's empty, uh, you can add the tokens, and then you have another process that removes tokens from this bucket. Um, and this, uh, this process that is, uh, removing tokens is typically, um, representative of something that wants to access a resource, like send a packet on the network or send an API call or do whatever, basically. Um, and the, the token bucket, just, uh, the internal check is basically, you know, are there tokens available to service this particular request? Um, if the answer is yes, as in, uh, the number of tokens in the bucket is non-empty, um, the request is serviced. Um, if it's not, it's dropped on the floor. Um, leaky buckets. Um, um, are sort of the mirror image of this, um, and also commonly used to implement rate limiting. But as I said, um, this is, I think, a simpler mental model. Um, internally, if you're to sort of open this up, um, uh, take a look at the sort of token replenishing process first. Um, uh, when a token, uh, bucket is replenished, the very first obvious thing is that the, the bucket that is being replenished has to be identified. Um, so in this particular case, you can think of it like, you know, there's a hash table inside, and the hash table has a particular index. And, uh, the value associated with that particular index maintains the count. So in this particular slide here, um, uh, the, the the bucket with the, the index one, two five, blah, blah, blah, whatever. Um, is incremented with uh tokens or replenished with T tokens. Um, uh, and uh, previously we're ahead N now has n plus t straightforward on the redemption or the sorry the resource request side. Similarly, the bucket has to be identified. Um, and uh, so that involves going into the hash table. Um, and then uh, depending on how many, uh, tokens your particular request corresponds to, maybe it's like, you know, if it's a packet size and bytes, uh, there needs to be N tokens or whatever. Um, uh, here, we're just saying that each request counts as one token. Um, the the algorithm identifies the bucket, decrements the count by one. Um, and if it's greater than zero surfaces, if it's not, it just drops it on the floor. Um, and uh, that's basically it. Uh, the it's pretty straightforward. The, the, you know, you have to identify bucket and either you increment increment tokens or decrement tokens, um, uh, and uh act accordingly or service requests accordingly. Back to you, Tommy.\nSPEAKER S4: All right. Thank you. So that's how these schemes normally work. Um, so why is this interesting for privacy pass. Um, so specifically. These, these rate limiting schemes, which are used for both fraud prevention as well as things like metered paywalls, really break down when the clients have more privacy, um, because they end up sharing the rate limiting buckets. This is because of Tor or proxies or VPNs, or just being on a shared IP on a public network, and a basic privacy pass token is useful for the cases where I'm just going to get really gratuitous CAPTCHAs. Um, but it's not always enough. Um, both for some functional use cases, like the metered paywall, but even for some of the just the capture prevention cases. So a basic privacy pass token says that a device or a user passed some check, but it doesn't stop that device from overwhelming. Um, what the service would allow if that service wants to have a pretty low rate limit. So I could have a bunch of legitimate devices that are being used as a click farm or capture farm, or I'm just trying to get around something like a metered paywall. And so we have a concern that in many of these cases, we're still going to degenerate to people being blocked, even if they're using basic privacy pass. Next slide. So on the left we have our basic tokens. And these are about attesting to a user device legitimacy that you could do a Captcha, etc. and it's good for replacing the Captcha to improve the confidence around a specific user or device. And then the rate limited token variant does that. But it also is attesting that your access rate for this origin was below a certain threshold. And this, um, adds mitigations doesn't completely solve, but it adds a lot of mitigations against, uh, devices being used as a click farm or capture farm. And it also allows you to work with things like metered paywalls, even without giving away user privacy. Next slide. So The, uh, the rate limited token issuance protocol is extending the basic issuance protocol that's used for RSA blind signatures. It shares most of the same structure, and it essentially adds a bit at the end that the attestor and issuer um, boxes will use. And so this does rely on the attestor and issuer being separate, which is not a requirement for basic privacy passes. And in this model, the Attestor, which is the thing that sees the client identity, maintains a counter for how many times a given client has accessed an anonymized identifier for that origin. And so these attestor are trying to learn a stable mapping between the client and the origin, uh, based on a per client secret. It's anonymized using a per client secret and a per origin secret. So the tester cannot learn what you're going to, just that it is a unique thing within a given time window. The issuer is responsible for providing what the rate limit is and telling the attester during the issuance protocol. By the way, for this, for the thing that this client is accessing, they should only be allowed to access it. Uh, either, you know, let's say three times per hour or five times per month. You know, it could be a fairly wide range of rate limits. And the tester is the one responsible for failing the request if that rate limit is exceeded. Next slide. Um, yeah. And so the the main interesting part here is how you do this without revealing to the tester what the, uh, per origin information is. Next slide. And I think it's back to Chris now. Yep.\nSPEAKER S3: Yeah. Thanks, Tommy. Um, right. So, as Tommy said, the the main challenge in the protocol is to basically compute the stable mapping because we want to do it in such a way that the, the sort of bucket identifier is private to the Attester, um, uh, in particular, um, private in the sense that it, the attester doesn't learn the specific origin for which the bucket corresponds to, um, but it does have assurances that it is sort of the same origin for a given client over time. Uh, otherwise, it's difficult to reason about or difficult to say that this is meaningful rate limiting on a per client and per origin basis. Um, uh, so to do so, sort of the, the way the rate limited issuance protocol works is a part of it, um, is that it computes this, this, this stable mapping, which is, um, you can think of it as just a deterministic function between this client secret and this origin secret, um, where the client has, uh, and maintains the client secret, um, and the issuer has a, maintains the origin secret, and tester has access to neither and therefore can't compute the mapping. Um, and this mapping is basically, uh, you can use it as an index into whatever other data structure you'd like to use for enforcing rate limits. Um, so if you think back on the, uh, the token bucket example, you would use it as the, for example, the hash table index it would use to store and associate your accounts. Um, uh, or your token counts for that particular, uh, per client, per origin, um, bucket. Um, and so the flow would be a tester computes the secret or computes this mapping looks up in this table. Um, and then uh, basically applies the rate limiting policy. Um, And, uh, if you were to map this to sort of the flow, uh, the issuance flow between the client and the tester and the issuer, um, sort of hand-waving massively over, uh, sort of the underlying details in terms of how this stable mapping is computed. Reserve those details to the document. Um, uh, basically the the tester's job is to, uh, interacting, uh, and completing this protocol between the client and the issuer is to compute the stable mapping decrement account. Um, or rather, I should say increment count. You'll find that the slide is hilariously wrong in terms of like the the algorithm, but like hopefully the idea is clear. Um, basically compute the mapping, apply the the algorithm, um, and either reject or accept the request um, and forward the token response back down to the client, um, or drop it on the floor sending the client down an appropriate error code. Um, and this year, the close reader will understand why this is wrong. Uh, in terms of like, what the what the check is actually doing, um. Um, but I think you should get the idea. Um, so the I think that the, the, the novelty here is that we build on the, this new scheme that we're presenting at CFG next, uh, for uh, computing the stable mappings, um, uh, in particular, uh, this, uh, what we call a signature scheme with key binding. Um, it looks something like an OPF. Uh, but it's not quite an OPF. Um, uh, if you're interested in sort of, uh, learning more, I'd encourage you to take pop into the next session and check it out. Um, as Tommy said, it does require, um, split deployment for a meaningful privacy, uh, in particular, because the issuer does need to learn, um, the origin name in order to associate and use, uh, sort of the right origin secret for computing the stable mapping. Uh, And as a result, the attester who cannot learn sort of per origin information. Uh, thinking back on what what we think of as meaningful privacy, uh, needs to be a separate entity. Um, uh, there are, uh, to date a couple of different implementations of this particular variant, um, uh, using the, the signature scheme with Ecdsa. Um, previous incarnations of this draft used Eddsa, uh, for the crypto. Um, but we've since changed that. We could bring it back. Uh, I guess we're not particular on the type of crypto here. Um, and there is, uh, security analysis underway for sort of the both the new underlying cryptographic scheme as well as sort of, uh, how it plugs into the larger rate limited issuance protocol and what the resulting privacy properties are. Um, so at this point, um, uh, as I said, without going into sort of the crypto details, uh, I think those are perhaps more useful for offline discussion or, um, you know, CFG in particular. Um, we want to know, uh, if the working group is interested in adopting this draft, and I will stop here and turn it over to Joe and John or Joe and Ben. Sorry.\nSPEAKER S1: Okay. Ben.\nSPEAKER S2: Hi. Uh, this is just as individual. I want to understand a little bit more about the, um, about the proposal and use case. So let me, um, let me ask, why can't we, um, why can't we do this with the standard or previous privacy pass construction? So, for example, uh, let's talk about the the rate limiting paywall case. Um, if I'm a magazine, uh, I could act as both issuer and, uh, and, and validator And users could make an account with my, um, with my origin. And then I would say, you know, you have a free account, so I'm going to issue you, uh, three tokens a month, and then I'm going to execute a redemption on, uh, you know, to, to do a token spend event every time you attempt to view an article. And so you'll run out of tokens. Then when you try to get more tokens that, you know, I can, I can trigger the rate limit. So, um, you know why? Why isn't that the architecture here? Uh, Tommy?\nSPEAKER S3: Tommy, do you want to take this or.\nSPEAKER S4: Yeah. That's fine. Um, so, I mean, yes, you're right that if I'm willing to create an account with the origin and you, you could definitely use it for that case. Um. This model is more for when you haven't created an account. Because if I, if I can create an account with, you know, the New York Times, I can already read my articles, and that's not an issue. Um, I think the more interesting case here is talking about the cases where you're trying to rate limit for the fraud prevention case. Let's say the actual account creation time. Right. So if what I'm trying to do is prevent, you know, device farms from creating a bunch of abusive accounts, that's a case where, you know, today they may use capture plus rate limiting on IP addresses, etc., and the basic token issuance, there isn't always going to be enough because they that will still not give you confidence that these aren't abusive devices. So it is it's for it's specifically for the anonymous case when you.\nSPEAKER S2: Yes. Sorry, I wasn't clear when I said an account here, I didn't mean. I didn't mean an account in the, uh, that is in the origin. Um, I mean, uh, I mean an account that is, uh, that is not linkable to the origin. So it is in the account is in a separate origin. Uh, but it is, uh, but it is providing the tokens. It is acting as, as issuer in, in standard. Uh.\nSPEAKER S4: That's okay. That's essentially what this is then. Um, but so in that case, if I have an account that says, oh, you get to read articles or you get to do this, um. that thing if if it wants to rate limit to you to say, I will give you only three.\nSPEAKER S2: Right.\nSPEAKER S4: Um, it kind of needs to know what what those are for. For. Like, unless you're setting up a new one of those accounts for every service. So, like, if I have, like, do you think I have, like, a new 1 to 1 mapping of like some other rate limiting service.\nSPEAKER S2: Right.\nSPEAKER S4: But I think that the issue then is at that point, it sounds like it would be fairly easy to know. When I signed up for that service, like, oh, this is the service to give me tokens for the New York Times. And so that thing does know when I am getting those.\nSPEAKER S3: Tommy, you're saying that the the the thing that has the account, the free account has been described. It would then basically learn the browsing history of the client.\nSPEAKER S4: And I guess I guess you could get the tokens earlier still, but but.\nSPEAKER S3: Still like if.\nSPEAKER S4: It's you're having this per origin state somewhere there, like essentially someone is needing to keep track of these are all of the sites you want to sign up for accounts on, or all the sites that you want to be able to read articles on. And that's partly.\nSPEAKER S2: What.\nSPEAKER S4: I'm.\nSPEAKER S2: Looking for. Here is a way to take that state and shard it out and push it into an entity that is accountable and funded by the, um, by the origin, as opposed to, um, having it all essentially centralized in a single attestor, which has to maintain this like potentially unbounded amount of state for like all of the different origins that the user is potentially active on. Um, so. Okay. Um, I mean, stepping back to the question at hand, uh, I'll just say I, um, you know, I my my feeling as individual here is, is that, um, I wish I could see a little. I wish I were a little more confident that, uh, that this is the, um, simplest solution. Uh, in the in in the broader architectural context.\nSPEAKER S4: Okay.\nSPEAKER S1: Uh, Tommy, are you in the queue? Okay. So, Joanna.\nSPEAKER S4: Yeah, that was just to respond.\nSPEAKER S1: Joanna.\nSPEAKER S7: Hi. Uh, um, just wanted to quickly respond to Ben's comment. Ben, I, I, I think I would 100% agree with you, uh, that if there was something simpler, we should absolutely do the simpler thing. And I would encourage folks to think about how this could be made simpler and share that either on the list or in GitHub.\nSPEAKER S3: Yeah, I just wanted to on that, that. Oh, John, are you done? I'm sorry. Yes, I assume you're done. Thank you. Um, um, the key challenge here, um, was in that in trying to, uh, build in a mechanism for, uh, sort of keeping the state, um, uh, we did not want the, the, the thing maintaining the state to be able to effectively reconstruct, um, any, any, like, browsing information or any sort of origin information about the the the thing that it's enforcing rate limits for um, uh, indeed, like earlier designs, uh, were a lot simpler. Um, but they enable the attestor. Um, I don't know if it was called the Attestor at that particular point, but they enabled the Attestor, um, to learn that information. Um, uh, and in, in trying to address that, uh, this was the this was not the first solution that we came up with, but it is I think it is the one that has, um, the desired functional properties as well as the desired privacy properties. Um, and just to, to heavily plus one to what John has said. If there is a simpler solution, we would love to see it. Um, um, but the, the, the core challenge I think remains the same. Um. So.\nSPEAKER S1: Okay. I think we're just about out of time, so I think we'll have to continue this this discussion on the list, and maybe we'll try to get to an interim before the next, uh, IETF to discuss this and some of the consolidation issues and other topics. All right. Thank you very much. And for folks in the room, if you didn't check in, I think you might still be able to check in. Uh, want to make sure everybody can count? Everybody. Thank you.\nSPEAKER S8: Masks increase the concentration of carbon dioxide. Makes it a little bit challenging.\nSPEAKER S9: Yesterday, I guess I was on I can't remember. Yeah, it just got warmer and warmer.\nSPEAKER S8: Yeah.\nSPEAKER S9: I think that's over there. But.\nSPEAKER S8: Anyway.\nSPEAKER S9: During that really warms. Up the pieces here.\nSPEAKER S8: Oh.\nSPEAKER S10: Thank you very much. Those in the room.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.992245352439969
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to, uh, Privacy pass at, uh, IETF 13.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this session is being recorded as usual.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "You're probably, by this time all familiar with the note.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, if anybody isn't, you can quickly get a refresher here or look it up online.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as always.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "So for for participants in the room, if you want to speak at the mic, please add yourself to the queue.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "And also you need to log in to the, uh, meeting using the barcode or the QR code up there so that we can get you counted on the blue sheets.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "The attendants.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, some more information about the agenda.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "We don't think we need to go in there.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "So for our agenda today, um, we do need note takers.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Is there anybody who's willing to, uh, take notes in the code EMD?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Either online or in the room here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see if I go to.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Can't quite see it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody respond in chat?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you Jonathan.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "And then on the agenda today, we have, um, uh, looking at our adopted drafts and going through some of the changes that have been made there.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have a draft on rate limit tokens, uh, that, uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "We are, uh, that that we may adopt.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll have a presentation on that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "And then if we have time, I don't know if Mark is here, but, um, there's some updates to the centralization problem.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "We weren't sure if we were going to have time for that presentation.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't know if, if, if Mark is going to attend or not, but if he is, we can get get him to, uh, give us an update.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any other additions or modifications to the agenda?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Or.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Ben, did I leave anything off?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Awesome.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Mark is here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, we only have one hour, so let's see if, uh, let's see how fast we can move.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right, well, then let's go and get started with, um, the, uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, core drafts.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Chris, do you want to.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Are you going to share?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Can you stop sharing?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, I can just do this.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "I think that'll do it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I need to.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, sorry.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Morning, everyone.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Afternoon, everyone.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "I guess, um, uh, as Joe said, this is just going to be an update on the the two core documents, the architecture and the, um, uh, the authentication scheme documents.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, so for the architecture, the biggest change that went into the last revision was a, um, sort of an exploration of deployment considerations for, uh, ways in which you would use privacy, perhaps in practice and what the implications are on, um, sort of the privacy posture of the protocol with respect to clients.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll kind of go through, um, the main highlights of those deployment considerations here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and talk about next steps for the draft after that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "As a reminder, um, uh, the architecture, uh, draft, uh, since the or as of the last meeting was sort of updated such that it's now split into, um, uh, two sub protocols in which, uh, there's this, this issuance protocol that that clients run, uh, with an attestor, an issuer for the purposes of acquiring tokens, uh, um, for use, uh, in interacting with an origin via the redemption protocol later on.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in the architecture document describes what the role of the Attestor is and the issuer is, and the issuance protocol, as well as what the role of the origin is and challenge and redemption protocol.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Um tried to orchestrate things such that the redemption protocol is really simple and lightweight, um, and doesn't really put a lot of burden on the origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, conversely, the issuance protocol therefore sort of encapsulates all of the complexity of, uh, new token types.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, the, uh, I guess relevant privacy properties, um, of those different issuance protocols.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, and, uh, yeah, that's pretty much sums it up, I guess, um, the, the overall flow of the, the, the protocol sort of looks like this, uh, if you recall.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, the, the origin of the server on the right hand side, um, generally would ask the client, you know, when it wants to, uh, you you want the client to present a token?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Um, simply ask the client, you know, can you attest to some particular property, uh, and give me proof of that particular property via a token?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "And then the client would then go off and interact with the issuer and the attester through the issuance protocol to produce a token and then present it back to the to the origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "And the trust relation is such, such that the server trusts the issuer that is issuing tokens in this particular arrangement, and issuer trust the attester that is attesting to particular properties on behalf of the client.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, in the latest version of the architecture document, we've introduced this this notion of context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so for example, during the redemption protocol, um, there's a redemption context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "And the redemption context sort of encapsulates all of the things that the origin of the server would see about the client, uh, during an interaction with the client for the purposes of redeeming a token.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "So that might be, uh, the origin name itself, uh, because the origin is information about that particular redemption context might be the timestamp of the redemption event.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Um, might be the client IP address.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you know, whatever information there is about a particular client interaction, uh, when redeeming a token with a particular server.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "And likewise, there's, um, an attestation context that is present during the, uh, or sort of encapsulates all of the, you know, per client information that the, uh, tester sees during the issuance side of the, uh, exchange or side of the interaction.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's the exact same sort of thing.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "So it's the all the information is about the client, including timestamp, the event or the client's IP address, um, whatever other relevant metadata or information is, um, you know, representative of that particular issuance event.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "And if you take a step back and ask yourself, you know, what is, uh, at least in a deployment of Privacy Pass, what is meaningful privacy?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because, uh, you know, uh, for most uses of Privacy Pass, we're trying to use it for purposes of improving client privacy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Mind you, there are applications of privacy passport.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "You may not care about privacy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but for this particular, uh, you know, scenario, uh, um, we are so in, uh, the meaningful privacy we claim in this particular setup is that there's no single entity in the system, uh, that can link per client information and per server information, sort of across these contexts, this attestation and redemption contexts.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, the the way in which you deploy privacy pass as an, as an impact on, you know, uh, who sees what in the interaction.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, also has an impact on sort of what the, the client has to do when it's interacting with these different parties in the system in order to achieve this goal.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "So take for example, um, what we call the joint deployment model, um, which is basically how privacy is deployed today, where the client interacts within a tester and a server, um, for the purposes of solving, uh, CAPTCHAs, uh, as an attestation mechanism and then spending tokens, um, uh, as a, as a way to, you know, demonstrate that they solve CAPTCHAs at some point in the past.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in this deployment model, the tester and server are the same entity.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and so they have, uh, basically a shared view of the client during both interactions.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, they, they share the same IP address or they, they will, they will share, um, uh, their view of the client during, uh, the, the Captcha solving process as well as the, you know, presenting the token or the of the redemption solving process.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, as a result, sort of meaningful privacy in this particular arrangement means that the client has to either separate itself, um, across interactions over time, uh, sort of, um, so that across different redemption events or across different attestation events, it appears as sort of a different client, um, or over space such that, um, and when interacting with the attestor or the server, it appears as a different, uh, client or it's sort of unlinkable with respect to, um, uh, attestation and redemption event.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, if you're looking at the time separation aspect of this, um, this is where things like, you know, um, uh, our Unlinkable tokens, you know, sort of the basis of the, the privacy Pass protocol come into play.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a you can't, uh, we use, like, unlinkable tokens that are issued through, like blind signature protocols or OPR protocols or whatever.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, such that the Attestor and server can't link um, uh, particular issuance flow to a particular redemption flow.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Um, or go they're sort of separated in time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the space separation side, um, the client would sort of separate itself in space by using, for example, a proxy and connecting, uh, to the attestor or connecting to the server.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Indeed, in the initial motivating use case for privacy pass, where and um, Tor users would go, uh, interact with the, um, uh, with the, you know, users would users of Tor would be, you know, being faced with CAPTCHAs over and over again, repeatedly, um, being forced to, um, uh, present tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they would they were already sort of separating themselves over space.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, Um, but you can use other proxies if, you know, reasonable for your particular deployment model.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Ben.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hey, you said time or space here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess I would have expected time and space because, uh, whether I see a consistent IP address over a long period of time or.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know your IP address, but I, uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "But you're the only client who's who's, uh, requesting and using tokens in some short period of time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Seems like either one of those is, uh, would.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think, um, sort of implicit here is that there's more than one client interacting with the system.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Um, right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise, like, the none of this really holds, um, there's no really privacy to be gained.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, um, certainly if there's only one client, uh, that's asking for tokens and spending them, um, doing any sort of separation, um, over time or over space doesn't really help.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, that if you don't have separation over time, then you're, you're sort of necessarily the only client.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "That's because in any sufficiently short time window, there's only one client.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Sure.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why in this particular model, non-interactive tokens sort of like are the most sensible variant, um, in particular, because, uh, spending a token, um, or redeeming a token does not mean that you, like, went off and fetched it in real time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "It just means that at some point in the past, you fetched a token.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, uh, there's like a sort of a natural separation between the two over, over time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, whereas if this if, uh, like all of these, uh, if, if they were interactive tokens rather, um, uh, than Then there would be sort of no, um, time separation and you could link attestation and, um, uh, and redemption together, uh, presumably by like timestamp or, or what have you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "It seems like you could, you know, in that context, you can do that linkage even if you have space separation.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So it's not that you need.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "This is why I'm saying it's not that you need one or the other.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "It seems like you need both.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, I won't.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, so recall the the the meaningful privacy here is that you're not being you're not able to link per client, per server information.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so although you're able to link these two events together, presumably by the timestamp, um, you're not linking, uh, uh, you're not sort of revealing any, uh, per client information by virtue of using, um, a sort of a proxy and interacting with the server, the server in that particular case.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Moving on.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, there's also, um, there's another other deployments in the, in the draft as well, uh, deployment models in the draft as well.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Another one, uh, we talked about is this, uh, split deployment model.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and this is, this is, uh, useful for different attestation mechanisms that are less privacy friendly.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, like, say, for example, the client is demonstrating that has, you know, ownership over some specific type of application account.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "And it's like specifically logging in with that account.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, in this particular model by um, uh, joint, we mean that the sort of the Attestor and the server are run by two different non colluding entities.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and as a result, they don't share the same context with respect to, um, attestation and redemption.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so the, the sort of bar to meaningful privacy is kind of lowered in a sense.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and just means that the attestation in this particular case can't reveal any sort of per server information.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because the Attestor doesn't have, uh, the sort of the shared view of the, uh, the redemption side that it otherwise would in the joint deployment model.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and likewise, that redemption doesn't reveal any per client information.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the excuse me, the interaction between the client and the server, uh, during redemption, uh, just needs to sort of, uh, make sure that there's no per client information revealed, for example, using a proxy to interact with it so that, um, uh, you know, it's particularly unique IP address or whatever stays hidden.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then, uh, during attestation, uh, you just need to make sure that, uh, whatever issuance protocol you're using doesn't leak inadvertently.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "The, the origin name, um, or anything else in particular about the redemption context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, to the attestor and, uh, this sort of has implications on, you know, how the protocol works.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "In particular, the issuance protocol should not reveal, um, uh, things that are, uh, particular to the to the origin, um, uh, during issuance.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, thankfully, all the issuance protocols, like the blind signatures and the otps and whatnot, um, naturally sort of hide this information, um, by virtue of being blind signatures or oblivious pseudorandom functions.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, yeah, uh, I think, uh, next steps, there's, there's an open issue right now, um, for sort of addressing the, uh, the double spend requirements, uh, when you're using, uh, cross origin tokens, um, across different, uh, or double spend prevention requirements.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Excuse me when you're using um, uh, cross-origin tokens, um, which means that like, say, for example, uh, you have two origins that both accept, um, cross-origin tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "They both have to sort of share double spend prevention state.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise, um, a client could spend, um, a token at either one of these particular servers.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I don't think we explicitly sort of make that obvious, uh, in the draft right now.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's just an issue to sort of call that out.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there is, uh, also some existing sort of privacy parameterization in the draft, which sort of describes, you know, if this is the sort of size of the anonymity set that you want for particular clients, here's how you should arrange your issuers and arrange your testers and whatnot.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's still sort of, uh, kind of highly dependent on the previous incarnation of the architecture draft.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we just need to kind of go through and update that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then there's, uh, there's been a sort of a long standing, uh, issue to address centralization.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Although, um, with Mark's draft, uh, we may be able to, uh, or we may consider just simply punting discussion there or, conversely, folding his, his, um, uh, some of his texts into this architecture document and closing out the issue.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "I think at that point, um, uh, we'll have sort of, uh, discussed and covered all of the different architectural, uh, properties of the system, um, uh, that are, you know, relevant to, uh, how you would deploy it, how you'd use it, and what the resulting privacy posture is, or, uh, for clients.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "I think we could either park it or move it into working group last call and focus our efforts elsewhere in the issuance protocols.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, but that's pretty much it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Um, anyone have any questions before I hand it over to Tommy to talk about the architecture or the Authentication scheme.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "If not, uh, Tommy, do you want to stop sharing so you can pull it up?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Or do you want me just advance for you?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Um, sure.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I can just say next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "It's.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "It's fine, if you don't mind.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yep.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "That's fine.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Um so I'm going to talk about the authentication scheme.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "This is the document that we discussed at the interim meeting.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "It is newly adopted.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we did actually publish A-01 version, uh, just this week with a couple of the changes that I we'll talk about today.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Um, these are mainly minor terminology changes to some of the fields in the struct that should hopefully make it clearer.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "And the other thing we wanted to cover today was the fact that we want to be able to stabilize this challenge and response format, To make sure that people doing deployment experiments and interop experiments have something that we are comfortable with.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "So for the changes in the zero one document, um, the main thing was renaming some of the terminology.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "There was a field in the challenge structure before which was a redemption nonce.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Um, oh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "In the chat is saying that the audio is not very clear.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Is that true?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: You are breaking up occasionally.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Um, try to mute.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Unmute.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I will just try as best I can.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "I'll speak a little bit more slowly.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "So the redemption nonce is renamed to the redemption context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, generally, um, this is because this field was not necessarily a nonce.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "It's really just some server chosen context that they want a token bound to.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And I want to point out that the fact that you have this redemption context in a challenge doesn't actually make the token issuance interactive, as in saying that the client needs to fetch a token immediately is just saying that this token is bound to something that the server knows for purposes of double spend prevention, and it's something that isn't exposed to the issuance protocol.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So it's really just between the client and the origin that's doing the redeeming to make sure that you're not spending a token that someone else got.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "And then one other minor rename is that there was another confusing context name in the actual token struct that was given back to the origin upon redemption, and this was renamed to Challenge Digest because it is indeed a hash digest of the challenge.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the other thing we want to do is talk about stabilizing the format of this challenge and response.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "We have several implementations, um, that have been testing with interop and to encourage the deployment, um, of these and experimentation between these, the authors would like to essentially hear any issues with that format now so that, um, we don't have to worry about changing it too much later.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So just to review what the current status is of these structures.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in the challenge.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "So this is all using HTTP authentication with the scheme as private token.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "It has a challenge and a key that are passed there.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "And then the challenge structure has the token type which defines which issuance protocol we would use.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "It has the issuer name which tells you who who is allowed to actually get give you the tokens on the other side.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "It has the newly renamed redemption context, which is optional and is essentially just some random server chosen context that they want to bind this token to, and then also an origin name to scope this token to a particular origin upon redemption.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And that's it for the challenge.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "And then the next slide is the redemption side.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "It's the same scheme, um, for actually sending this authorization.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "The token type is there again.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "There is now a client generated nonce, which is a true nonce that, um, is is used to make sure that this is a unique token.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "As part of the issuance protocol, there's a hash of the challenge structure.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "There is the token key ID used, and then there are all the bytes that are specific to the issuance protocol.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "This is based on the RSA blind signature, the PRF, etc..",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I see a question from Ted in the chat.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Ted, would you mind maybe asking the question at the mic?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, speaking, if you wouldn't mind going back a slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "I was I was typing slowly, so I was actually about this, uh, for the opaque origin name, which is optional.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you wanted to have something that covered both YouTube and, you know, Google search at the moment, you could leave this out and the redemption context would handle it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "You could present it in either one could could do it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "But I was wondering whether it would be, uh, another option to consider, and maybe it's not needed, is to allow opaque origin name to to have more than one appearance in the struct so that you could specify, uh, a a list of origin names that it covered for when you have cases like that, where the redemption mechanics in the back end are likely to be the same.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but the origin names are not, So I'm not sure this is worth doing.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "That's why I just put it in the chat to kind of as a side comment.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "But that was the question.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Got it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "That's a great point of an interesting feature that this could have.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "As you point out, it could, of course just use cross origin tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "But then depending on what your issuer is this, that could be a much broader pool of origins that it would be shared with, and not just Google and YouTube.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "The other approach I imagine could be taken is that the client could know essentially when it is safe to do cross origin for a single origin, similar to how I can do connection.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, like HTTP two connection reuse.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "If the, uh, if two origins are covered in the same certificate of the server that I'm talking to, potentially.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: So, um, I think I think you're probably right there that the there could be something else that uses to know whether it's safe to do the cross-origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "The mechanics of this in the back ends of some of these are going to be a little bit wonky, because in some of these cases, the same redemption mechanics are going to be used for something like GCP.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So you could have instances, um, that are being issued by Google, where the redemption mechanics definitely do not want you to use the same redemption context as, um, uh, the Google properties themselves, but they might be the same redemption mechanics in the back end for, um, uh, origins that are just, you know, living in their cloud.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "So if, if you if we're not going to use multiple origin names, then I think one of two things will happen.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "either.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Cross-origin is going to be very, very common to to major services because they many of them have more than one, uh, name from the point of view of HTTP origin, or you're going to have to have some other system to kind of figure out, oh, okay, what am I going to actually use to figure out whether it's cross-origin safe is my last contact for them, what all of the subject names were in the certificate or something like that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's some trade offs here, and a simpler trade off might actually just be to say opaque origin name can can occur multiple times because then if somebody wants to, um, to, to scope it to a specific set, they don't have to rely on either previous, um, contact by the, the client or um, maybe a try and fail with Cross-origin that was to the same, um, set of servers, but two different um actual redemption context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "So just just a thought.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Got it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "No, that's that's good.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "We we will take that as a, uh, as an issue to look at Steven.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I think like, even beyond like, wanting multiple origins, like the definition of an origin in privacy past is slightly different from, like, what an origin might be on the web, like it might be a site or it might be an origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "So I think Ben mentioned the like ideas leave origin to be an actual opaque blob that, depending on the use case, like it, might be interpreted as like a literal origin, or it might be like a set of things or a site and leave that up to the use case rather than trying to put it in this doc.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Let's go forward a little bit.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and yes, that was Steven.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "The origin behavior, essentially the server behavior of what to do in this is if you want to challenge, it should be very, very simple.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "You essentially just need to choose who your issuer is, one or more of them and what token type you want to use.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "So what issuance protocol you can choose to be per origin or cross origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "And to the discussion we were just having, maybe you know, there is a in between you essentially you need to choose what is that value of kind of what you are binding your challenge to.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "And then you can choose the optional context that you want to have.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "So for this, the context really is about the state that you need to keep for double spend prevention.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "If you don't have any context, then the state for enforcing double spend prevention is not really tied to what's in the challenge, but you need to have some broader state that you keep upon redemption to recognize identical tokens coming back to you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "And that is certainly doable, but it can require more work on the origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "The benefit of having the context based token is that they can tie specific client session properties or other properties that they want to the token to make it a smaller set of things amongst which you need to do double spend prevention.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the next slide has some examples that Chris gave.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "So of course you can have an empty context, but you could have some very simple mechanics like, uh, doing a hash of the client IP address or the client IP address subnet so that you can, um, just compare these tokens to other clients that fall within that subnet.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Or you could have something associated with your state, uh, with the client.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "So if the client has a long lived connection with you that's doing HTTP two or HTTP three, maybe you have some state associated with that that you just keep for the lifetime of that session.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "And then you can just guarantee that this token is only valid for the lifetime of that session.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "And then on the client mainly what the interesting things that a client needs to do is manage what tokens are cached and how they are reused, and recognizing when, which which tokens are eligible to be reused, and what cache you need to pull from.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "When you don't have a context, then it's very easy to cache it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if they are context based, then you, um, have generally shorter caching lifetimes.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "And we had a recent issue from something like Chris pointed out that you want to probably clear any cached tokens whenever you clear your cookie state, or something else that would otherwise be changing the client state.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "And then the other thing that you want to do on the client side is to verify that origin name information, to make sure that it matches.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "And this again, to the point that Ted brought up, is where if this is expanded to include multiple things, it's some verification that what the challenge was bound to actually represents what you, um, the, the state you think you have with the server to make sure that you're not going to give a token to the wrong server.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "So based on this discussion it sounds like we have, you know, one issue where we want to kind of dive in a bit more to this origin name.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "If other people see other changes that to the formats that would be useful.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "That would be great to hear.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Now, um, and other than that, we plan to continue polishing the document and doing interop testing.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "If people are interested in testing with this, let us know any other questions.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Any other, uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Feedback on.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Either of these two core drafts.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Chris, are you presenting the next draft as well?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh oh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "I'll share slides.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Tommy and I are going to kind of do it together.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, we'll go back and forth.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "So next we'll talk about a secondary issuance protocol.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So the main core issuance document talks about blind RSA blind signatures and PRF.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "And these are just very very basic usages of those protocols.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "But we have another issuance protocol that has been defined specifically to allow per origin rate limiting.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "So rate limiting is a very very common part of fraud prevention and anonymous access across web and in apps.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And often it's something that does rely on tracking cookies or client IP address.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "And so it's not a great thing for user privacy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "And just first to give some background on how this is commonly done.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, with something called token buckets.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Chris is going to walk through some examples.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so token buckets or leaky buckets, um, you know, choose whichever one you like, uh, using token buckets because I think it maps better to the analogy of, uh, uh, the sort of the use case here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, so as I guess, a reminder or refresher for people who may not know, um, a token bucket is, uh, sort of a just a process or an algorithm for sort of enforcing, uh, rate limits.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and you can think of it as a, like a composition of two independent processes, um, one of which is a process for sort of replenishing tokens in this bucket.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's sort of like adds a new token to the bucket at a fixed rate.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the bucket has a particular size or capacity, um, after which, uh, if it's full, you can't add any more tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if it's empty, uh, you can add the tokens, and then you have another process that removes tokens from this bucket.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this, uh, this process that is, uh, removing tokens is typically, um, representative of something that wants to access a resource, like send a packet on the network or send an API call or do whatever, basically.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the, the token bucket, just, uh, the internal check is basically, you know, are there tokens available to service this particular request?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if the answer is yes, as in, uh, the number of tokens in the bucket is non-empty, um, the request is serviced.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if it's not, it's dropped on the floor.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Um, leaky buckets.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, are sort of the mirror image of this, um, and also commonly used to implement rate limiting.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "But as I said, um, this is, I think, a simpler mental model.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Um, internally, if you're to sort of open this up, um, uh, take a look at the sort of token replenishing process first.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, when a token, uh, bucket is replenished, the very first obvious thing is that the, the bucket that is being replenished has to be identified.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so in this particular case, you can think of it like, you know, there's a hash table inside, and the hash table has a particular index.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, the value associated with that particular index maintains the count.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So in this particular slide here, um, uh, the, the the bucket with the, the index one, two five, blah, blah, blah, whatever.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Um, is incremented with uh tokens or replenished with T tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and uh, previously we're ahead N now has n plus t straightforward on the redemption or the sorry the resource request side.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Similarly, the bucket has to be identified.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, so that involves going into the hash table.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then uh, depending on how many, uh, tokens your particular request corresponds to, maybe it's like, you know, if it's a packet size and bytes, uh, there needs to be N tokens or whatever.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, here, we're just saying that each request counts as one token.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the the algorithm identifies the bucket, decrements the count by one.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and if it's greater than zero surfaces, if it's not, it just drops it on the floor.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, that's basically it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the it's pretty straightforward.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "The, the, you know, you have to identify bucket and either you increment increment tokens or decrement tokens, um, uh, and uh act accordingly or service requests accordingly.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Back to you, Tommy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "So that's how these schemes normally work.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so why is this interesting for privacy pass.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so specifically.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "These, these rate limiting schemes, which are used for both fraud prevention as well as things like metered paywalls, really break down when the clients have more privacy, um, because they end up sharing the rate limiting buckets.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "This is because of Tor or proxies or VPNs, or just being on a shared IP on a public network, and a basic privacy pass token is useful for the cases where I'm just going to get really gratuitous CAPTCHAs.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's not always enough.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Um, both for some functional use cases, like the metered paywall, but even for some of the just the capture prevention cases.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "So a basic privacy pass token says that a device or a user passed some check, but it doesn't stop that device from overwhelming.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Um, what the service would allow if that service wants to have a pretty low rate limit.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So I could have a bunch of legitimate devices that are being used as a click farm or capture farm, or I'm just trying to get around something like a metered paywall.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "And so we have a concern that in many of these cases, we're still going to degenerate to people being blocked, even if they're using basic privacy pass.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "So on the left we have our basic tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "And these are about attesting to a user device legitimacy that you could do a Captcha, etc.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "and it's good for replacing the Captcha to improve the confidence around a specific user or device.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "And then the rate limited token variant does that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "But it also is attesting that your access rate for this origin was below a certain threshold.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And this, um, adds mitigations doesn't completely solve, but it adds a lot of mitigations against, uh, devices being used as a click farm or capture farm.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And it also allows you to work with things like metered paywalls, even without giving away user privacy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "So The, uh, the rate limited token issuance protocol is extending the basic issuance protocol that's used for RSA blind signatures.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "It shares most of the same structure, and it essentially adds a bit at the end that the attestor and issuer um, boxes will use.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "And so this does rely on the attestor and issuer being separate, which is not a requirement for basic privacy passes.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "And in this model, the Attestor, which is the thing that sees the client identity, maintains a counter for how many times a given client has accessed an anonymized identifier for that origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "And so these attestor are trying to learn a stable mapping between the client and the origin, uh, based on a per client secret.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "It's anonymized using a per client secret and a per origin secret.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "So the tester cannot learn what you're going to, just that it is a unique thing within a given time window.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "The issuer is responsible for providing what the rate limit is and telling the attester during the issuance protocol.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "By the way, for this, for the thing that this client is accessing, they should only be allowed to access it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, either, you know, let's say three times per hour or five times per month.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "You know, it could be a fairly wide range of rate limits.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "And the tester is the one responsible for failing the request if that rate limit is exceeded.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "And so the the main interesting part here is how you do this without revealing to the tester what the, uh, per origin information is.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "And I think it's back to Chris now.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Tommy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Um, right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "So, as Tommy said, the the main challenge in the protocol is to basically compute the stable mapping because we want to do it in such a way that the, the sort of bucket identifier is private to the Attester, um, uh, in particular, um, private in the sense that it, the attester doesn't learn the specific origin for which the bucket corresponds to, um, but it does have assurances that it is sort of the same origin for a given client over time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, otherwise, it's difficult to reason about or difficult to say that this is meaningful rate limiting on a per client and per origin basis.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, so to do so, sort of the, the way the rate limited issuance protocol works is a part of it, um, is that it computes this, this, this stable mapping, which is, um, you can think of it as just a deterministic function between this client secret and this origin secret, um, where the client has, uh, and maintains the client secret, um, and the issuer has a, maintains the origin secret, and tester has access to neither and therefore can't compute the mapping.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this mapping is basically, uh, you can use it as an index into whatever other data structure you'd like to use for enforcing rate limits.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if you think back on the, uh, the token bucket example, you would use it as the, for example, the hash table index it would use to store and associate your accounts.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, or your token counts for that particular, uh, per client, per origin, um, bucket.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so the flow would be a tester computes the secret or computes this mapping looks up in this table.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then uh, basically applies the rate limiting policy.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um, And, uh, if you were to map this to sort of the flow, uh, the issuance flow between the client and the tester and the issuer, um, sort of hand-waving massively over, uh, sort of the underlying details in terms of how this stable mapping is computed.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Reserve those details to the document.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, basically the the tester's job is to, uh, interacting, uh, and completing this protocol between the client and the issuer is to compute the stable mapping decrement account.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Um, or rather, I should say increment count.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "You'll find that the slide is hilariously wrong in terms of like the the algorithm, but like hopefully the idea is clear.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Um, basically compute the mapping, apply the the algorithm, um, and either reject or accept the request um, and forward the token response back down to the client, um, or drop it on the floor sending the client down an appropriate error code.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this year, the close reader will understand why this is wrong.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in terms of like, what the what the check is actually doing, um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think you should get the idea.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the I think that the, the, the novelty here is that we build on the, this new scheme that we're presenting at CFG next, uh, for uh, computing the stable mappings, um, uh, in particular, uh, this, uh, what we call a signature scheme with key binding.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it looks something like an OPF.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but it's not quite an OPF.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, if you're interested in sort of, uh, learning more, I'd encourage you to take pop into the next session and check it out.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as Tommy said, it does require, um, split deployment for a meaningful privacy, uh, in particular, because the issuer does need to learn, um, the origin name in order to associate and use, uh, sort of the right origin secret for computing the stable mapping.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, And as a result, the attester who cannot learn sort of per origin information.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thinking back on what what we think of as meaningful privacy, uh, needs to be a separate entity.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, there are, uh, to date a couple of different implementations of this particular variant, um, uh, using the, the signature scheme with Ecdsa.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Um, previous incarnations of this draft used Eddsa, uh, for the crypto.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we've since changed that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "We could bring it back.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I guess we're not particular on the type of crypto here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there is, uh, security analysis underway for sort of the both the new underlying cryptographic scheme as well as sort of, uh, how it plugs into the larger rate limited issuance protocol and what the resulting privacy properties are.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so at this point, um, uh, as I said, without going into sort of the crypto details, uh, I think those are perhaps more useful for offline discussion or, um, you know, CFG in particular.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we want to know, uh, if the working group is interested in adopting this draft, and I will stop here and turn it over to Joe and John or Joe and Ben.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Ben.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hi.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is just as individual.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "I want to understand a little bit more about the, um, about the proposal and use case.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "So let me, um, let me ask, why can't we, um, why can't we do this with the standard or previous privacy pass construction?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, uh, let's talk about the the rate limiting paywall case.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if I'm a magazine, uh, I could act as both issuer and, uh, and, and validator And users could make an account with my, um, with my origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "And then I would say, you know, you have a free account, so I'm going to issue you, uh, three tokens a month, and then I'm going to execute a redemption on, uh, you know, to, to do a token spend event every time you attempt to view an article.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "And so you'll run out of tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Then when you try to get more tokens that, you know, I can, I can trigger the rate limit.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you know why?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Why isn't that the architecture here?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Tommy?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Tommy, do you want to take this or.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "That's fine.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, I mean, yes, you're right that if I'm willing to create an account with the origin and you, you could definitely use it for that case.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "This model is more for when you haven't created an account.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Because if I, if I can create an account with, you know, the New York Times, I can already read my articles, and that's not an issue.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the more interesting case here is talking about the cases where you're trying to rate limit for the fraud prevention case.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Let's say the actual account creation time.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "So if what I'm trying to do is prevent, you know, device farms from creating a bunch of abusive accounts, that's a case where, you know, today they may use capture plus rate limiting on IP addresses, etc., and the basic token issuance, there isn't always going to be enough because they that will still not give you confidence that these aren't abusive devices.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "So it is it's for it's specifically for the anonymous case when you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, I wasn't clear when I said an account here, I didn't mean.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "I didn't mean an account in the, uh, that is in the origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I mean, uh, I mean an account that is, uh, that is not linkable to the origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "So it is in the account is in a separate origin.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but it is, uh, but it is providing the tokens.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "It is acting as, as issuer in, in standard.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: That's okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "That's essentially what this is then.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but so in that case, if I have an account that says, oh, you get to read articles or you get to do this, um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "that thing if if it wants to rate limit to you to say, I will give you only three.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, it kind of needs to know what what those are for.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "For.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Like, unless you're setting up a new one of those accounts for every service.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "So, like, if I have, like, do you think I have, like, a new 1 to 1 mapping of like some other rate limiting service.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: But I think that the issue then is at that point, it sounds like it would be fairly easy to know.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "When I signed up for that service, like, oh, this is the service to give me tokens for the New York Times.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "And so that thing does know when I am getting those.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Tommy, you're saying that the the the thing that has the account, the free account has been described.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "It would then basically learn the browsing history of the client.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: And I guess I guess you could get the tokens earlier still, but but.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Still like if.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It's you're having this per origin state somewhere there, like essentially someone is needing to keep track of these are all of the sites you want to sign up for accounts on, or all the sites that you want to be able to read articles on.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "And that's partly.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: What.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I'm.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Looking for.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Here is a way to take that state and shard it out and push it into an entity that is accountable and funded by the, um, by the origin, as opposed to, um, having it all essentially centralized in a single attestor, which has to maintain this like potentially unbounded amount of state for like all of the different origins that the user is potentially active on.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I mean, stepping back to the question at hand, uh, I'll just say I, um, you know, I my my feeling as individual here is, is that, um, I wish I could see a little.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "I wish I were a little more confident that, uh, that this is the, um, simplest solution.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the in in the broader architectural context.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, Tommy, are you in the queue?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "So, Joanna.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, that was just to respond.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Joanna.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Hi.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, um, just wanted to quickly respond to Ben's comment.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Ben, I, I, I think I would 100% agree with you, uh, that if there was something simpler, we should absolutely do the simpler thing.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "And I would encourage folks to think about how this could be made simpler and share that either on the list or in GitHub.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah, I just wanted to on that, that.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, John, are you done?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sorry.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, I assume you're done.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, the key challenge here, um, was in that in trying to, uh, build in a mechanism for, uh, sort of keeping the state, um, uh, we did not want the, the, the thing maintaining the state to be able to effectively reconstruct, um, any, any, like, browsing information or any sort of origin information about the the the thing that it's enforcing rate limits for um, uh, indeed, like earlier designs, uh, were a lot simpler.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but they enable the attestor.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know if it was called the Attestor at that particular point, but they enabled the Attestor, um, to learn that information.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, and in, in trying to address that, uh, this was the this was not the first solution that we came up with, but it is I think it is the one that has, um, the desired functional properties as well as the desired privacy properties.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and just to, to heavily plus one to what John has said.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "If there is a simpler solution, we would love to see it.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, but the, the, the core challenge I think remains the same.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're just about out of time, so I think we'll have to continue this this discussion on the list, and maybe we'll try to get to an interim before the next, uh, IETF to discuss this and some of the consolidation issues and other topics.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "And for folks in the room, if you didn't check in, I think you might still be able to check in.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, want to make sure everybody can count?",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Everybody.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Masks increase the concentration of carbon dioxide.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Makes it a little bit challenging.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Yesterday, I guess I was on I can't remember.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, it just got warmer and warmer.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I think that's over there.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "But.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Anyway.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: During that really warms.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Up the pieces here.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Oh.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Thank you very much.",
+            "confidence": 0.992245352439969
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "Those in the room.",
+            "confidence": 0.992245352439969
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T16:48:51.030738+00:00",
+          "processed_at": "2026-01-27T16:48:51.030738+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "bizf0mkyj0"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.992245352439969
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "91f6e3bc-e35e-4600-a25f-08e4b714bd9a",
   "created_at": "2026-01-03T19:40:46.029955",
-  "updated_at": "2026-01-03T19:40:50.445376",
+  "updated_at": "2026-01-27T18:23:43.336870+00:00",
   "subject": "IETF 114 - RIFT Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=QECqH9QDSxw",
       "meta": {
         "ietf_meeting": 114,
         "working_group": "rift"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 114,
         "location": "Philadelphia, US",
@@ -50,10 +49,10 @@
         "start_time": "2022-07-26T17:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "rift",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/agenda-114-rift",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/bluesheets-114-rift-202207281600",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/chatlog-114-rift-202207281600",
         "mimetype": "text/plain",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/slides-114-rift-base-spec-update",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/slides-114-rift-kv-registry",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/slides-114-rift-auto-evpn",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/slides-114-rift-flood-reduction",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/materials/slides-114-rift-chairs-slide",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 5,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/114/agenda/rift/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-114-rift",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -4105,6 +4105,2742 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Okay. Um, so it's 4:00 now. Um, here in the room, we have three people I don't know how many online. Um, let me actually let me check.\nSPEAKER S2: Uh, we've got, uh, let's see how many but 15 people I see.\nSPEAKER S1: Um, our main presenter is here. Uh, Jordan had, um. I think we can get started. Um, I see that our our viral is online, but, um. Uh, viral. Are you there? He has been in the app for a while, but I don't know if he's actively there.\nSPEAKER S2: Uh, let's give it one. Two more minutes.\nSPEAKER S1: Yeah. We can. Yeah, we. Oh, yeah. He just walked in. Yeah.\nSPEAKER S2: Oliver, thank you for fixing the network.\nSPEAKER S1: So do we want to get started?\nSPEAKER S2: Yeah. Let's go.\nSPEAKER S1: Okay. Welcome to the Rift Working Group in IETF 114, in Philadelphia and online. It's not. Well, please remember that by participating in the IETF, you agree to follow the IETF processes and policies. I'll just read that line. Everything else just read. You should be already familiar with it already. Some reminders. Please wear masks in the meeting room. Please be courteous and professional. Also, please use the onsite tool even if you don't plan to speak at the mic. That is the way to to sign the blue sheet today. These days you can do that. You can to use the onsite tool. Either either follow the link in the agenda or scan the QR code. Um, so, uh, Jeff, do you want to take from here?\nSPEAKER S2: So agenda for today we are going to provide a quick update. Also with regards to Rechartering and uh, what we would like to progress. And then Jordan is going to talk about uh, updates to the base spec, uh, and the auto VPN, CVE registry. I think we reached good Consensus with Ayanna Fox here. And yes, I said Rechartering discussion. Next slide please. So, uh, thanks for your review. It came back. So we are working on it. Applicability statement is still pending. Uh this review young model was yesterday submitted to ASG, CVE registry. As we said, we reached consensus with Ayanna, and now we need Shepherd to write up. And, uh, uh, segment routing has been adopted as a new working group document.\nSPEAKER S1: So, um, then the next, uh, presentation is from Jordan Head. Let me start load the material. Uh. One second.\nSPEAKER S3: All right. Okay. Uh, so pretty big change. Or at least there will be pretty big upcoming changes for the, uh, the base spec. Um. Next slide. So with alvaro's feedback that came back, um, here's, you know, some of the stuff that's going to come up as, um, the major feedback would be some of the Ascii diagrams didn't exactly. They weren't parallel with their SVG counterparts. Um, now there aren't requirements for things to be exact, but they need to be at least comparable so that both version or both formats of the document have, you know, roughly the same experience, um, things like textual references and diagrams and so forth. Um, other clarifying changes to, um, next slide. Uh, just a little bit of, uh, visualization for those that are interested. So, um, what did I mean by not parallel? Um, so the SVG on the left, you know, pretty cool and so forth. But the, um, the two Ascii versions on the right, the top is the before and the bottom one is, is after it, you know, more clearly reflects the point of, you know, the in this case inter inner top of fabric, uh, rings on the fabrics. Um, again, the svg's are kind of more of a should than a should. Um, but again, it's about uh, it's an accessibility thing, right? They need to be able to read relatively similarly. Uh next slide. Um, kind of the same thing. Right. Just there's just some inconsistent labeling stuff like that. Um, see the SVG on the left and the, uh, Ascii version on the right is a little more parallel.\nSPEAKER S4: Uh, a lot of the, um, yeah. One thing that came to mind just now is that, um. The Svg's are, of course, nicer and easier to understand. Uh, if I was reading the document, um, I don't know if we can put a note, maybe especially at the beginning of that first section saying, you know, go look at the PDF, uh, type thing, because most people are going to go look at the ML version or something, and they might not get the the benefit of looking at all the all the nice pictures.\nSPEAKER S3: Yeah, I know, um, this was when we were first doing the SVG as it came into a whole. It was a whole thing figuring out what was allowed, what wasn't, you know, grayscale versus color and so forth. We're not actually allowed. Well, we were, uh, advised not to reference specific formats in the text at all. At least that's what I saw. Um, it ties back to Geneva Convention sort of things. It's pretty interesting as far as accessibility and readability and certain parts of the world may not have access to something that can render HTML properly, things like that. But, um, yeah, so wanted to, but um, okay. Uh, next slide. Um, just kind of other stuff. Uh, there, I know you mentioned the, um, we should request early allocation for the multicast addresses and the UDP ports. Um, we'll I'll make a note to the chairs or I'll send an email to the chairs when we push version 16. Um, you know, beyond that, various editorial things, readability, uh, you know, clarity aspects, um, some reference fixes and, um, I still your responses. So there'll be a couple of things that will have a little bit of a discussion about. The vast majority of feedback is super straightforward. Uh, next slide. Um, and there are some things unrelated to your review that I kind of noticed. Um, so, well, first off, uh, I'll be added as the six co-author. Um, thanks for helping me wade through that. Um, it required a minor Shepard update. Um, but adds mentioned that that's a pretty straightforward thing. Um, did some fixes for minor fixes for the thrift schema with regard to what's already reflected in the CVE draft. They just a little bit out of date there. Um, other SVG fixes, just, you know, size scale things. Some of the in the previous versions, they were they scaled really, really poorly. And it was, it was ugly. Um, and other kind of SVG, XML optimization. And that had to do with there's actually a three Meg, uh, limit on the draft upload tool that, um, caused all sorts of fun problems. We had to render the PDF version, and the PDF version doesn't render the SVG very well. Um, but anyway, so that now everything should kind of fall into and they'll get the full benefit of the HTML version. Um, I'm going to well, we we, we have a git issue open with them, but hopefully there won't be pushback. So I might bug you depending upon things. But um, uh okay. Next slide I think that's yeah. That's it. Other questions before we move on. It's pretty straightforward. Okay.\nSPEAKER S1: I don't see a Q um, so we'll just continue the next one. Sure.\nSPEAKER S3: Okay. Um, just going to provide a brief update on auto flood reflection. Um, next slide. So. Just a quick refresher for those aren't unfamiliar, it's, um, it's an experimental draft out of LSR, but the short version of it is, um, so, you know, there are lots of reasons to use, you know, flat, single area ECG, but they come with drawbacks, you know, flooding state convergence. Right? Every node's got to know hold that state and then compute that state. Um, so there's a link to the actual flood reflection draft. Um, but we'll kind of circle in with it here in a second. Next slide. Um, so flood reflection like rift is very well suited for cloth topologies. Um, so rift will take care of the underlay. Um, and then the auto for extensions will use, you know, rift CTP and uh, the lie exchanges to build a flood reflection topology on top of that. So next slide. So where does it actually fit in. So flood reflection requires um loopback addresses uh system IDs for ISIS network entity titles, which just makes the single address and then a cluster ID to actually segment the flood reflection domains. Um, and so, uh, auto fr has to actually build and derive those variables using the distributed state we get in rift. So next slide. Uh, so what that really kind of looks like is so CTP will you know, it'll drive each level. It'll build the rift fabric. Next slide. Uh, the the FSM will help derive all of the flood reflection roles and variables. And, you know, basically take the what would be configuration data and then next slide. And then finally you end up with ISIS flood reflection on top of everything. So the adjacencies come up. You have the flood reflection topology. And there you go. You basically plug in everything. You have a whole fabric. Um okay. Next slide. So as far as the actual, uh, work in the draft. So, uh, there were some, uh, concerns with how, you know, uh, the ISO address derivation wasn't very clear where it came from. Unless you went in and looked at the thrift model. It's there, but it should be kind of aligned in the text as well. Um, the kind of did a new section refactoring of sections for all of the extensions required to refuse to let auto for work. So that would be, you know, the finite state machine. Um, no. Ty advertisements and kind of any applicable schema updates. Basically, prior to kind of refactoring, it felt a little disjointed. You have to bounce around the draft to figure out what was what was doing what. So more readable now. Um. Next slide. Okay. Uh, we added a flood reflector, uh, preference value, which means we need to update the election procedures to factor that in. Um, and then, uh, the key value ties are more of a, uh, just editorial stuff. So a little bit of normative language and kind of. We've since reworked the draft just a little bit, so we've got the request criteria aligned to that. Okay. So next slide. Okay. Just a little bit of a visual fluff if you will, as to how what's clarified. Um, so we those are the functions that are tied to what are actually in the draft, in the appendix that kind of show, you know, here's how we derive it. And these are the, you know, the individual functions that build the parts of the address that we need. So it's that image isn't there. But it's described in text now versus not. Uh next slide. Um, right. So like I said, what what it was before was with things being so disjointed, um, we just put everything in a single section, um, and said, you know, here's the, um, flood reflector version, the cluster ID and the preference values. And, um, there were a little there was a little bit of a functional change with that that wasn't described before, um, to kind of factor in for Interoperability with um, nodes that do run it, nodes that don't run it, nodes that do support it but don't want to run it. So uh next slide. Uh, so a quick look at the actual reflector election. Previously it was just high sed lowest sed second highest second lowest. Uh, that's basically to prevent, you know, any single node coming in from flipping the entire fabric and killing all the adjacencies. Um, so we it's the same concept. All we do is factor in preference now. So it's the same thing but with highest preference value. And it will cycle through if uh, you have enough flood reflectors. But um okay next slide. Um like I said for key value ties, lots of normative stuff. Basically we made it say that, you know, you don't have to carry everything, but you probably should. Um, and then the like I said, the actual request component of it is aligned with, um, What the p value says. Okay. Next slide. Um, so that's that's really it. Uh, we are requesting working group adoption for that one, but we'll add in some, um, multi-plane considerations. I know that's kind of on a back burner for the moment, but, um, that's really the gist. Any questions about auto for. Okay.\nSPEAKER S1: All right. So adoption um it would need to, to probably need a the charter update to adopt it. Yeah.\nSPEAKER S3: Well that's fair enough. Yep.\nSPEAKER S1: Yeah, we'll talk about it at the end.\nSPEAKER S3: Okay. Auto VPN. Um, Similar to auto fr but you know, build a evpn topologies on that. But just a quick update with this one. Next slide. Uh, so kind of similar to the auto fr things were um, you know, we use this the template for auto fr and then we notice that problems. So uh, similar structural changes made things a lot more clear and readable. Um, so again, it was just feeling disjointed previously and, you know, jumping around the documents. Never good. Um, similar stuff to the auto fr with the key value ties as well. Some normative language things and, you know, into things were tightened. Um, there was a little bit of a model change in that, um, certain piece. Well, we'll, we'll come to it, uh, and then, you know, editorial and, and things like that. So next slide. Okay. Um, so again, just kind of kind of aligns with what we did with auto fr. So the, the actual extensions just kind of more contained where they should be as well as the actual behavior. This was never really spelled out before and that they, uh, version fabric ID, the auto VPN model itself, um, actually has to be advertised in a node tie at least once in each direction. So we can again, it has to do with interop. Um, and then there are kind of, uh, relevance complementary schema updates for that. Um, yeah. Next slide. Okay. So with the with the key value ties, um, the auto VPN, the the telemetry model we use to push up state upstream, um, had a couple of things in the thrift model that have now since moved to common model overall. So, you know, can be used outside of it. So it's kind of just a it's more of a cleanup thing, but it's an important one. Um, the, the structure of the that that bit in common thrift also changed just a little bit. But again, that just aligns with the values that we're going to request from Ayanna for, uh, well-known and experimental key types. Um, again, normative language stuff. Right? Don't don't have to do these things, but you should and, um, the actual request of it line up. Um next slide. Okay. Same thing here. Um, we are still kind of working on some of the data center interconnect stuff. So it'll basically be a different auto VPN model to, you know, get traffic out of a fabric. Um, more multi-plane considerations. Um, we've got a lot of this stuff built in already, but there's some other implications we need to work on. Um, and then some actual operational deployment considerations. Um, next slide. I think that's it. Okay. Questions there.\nSPEAKER S1: Questions? Comments. Okay, we'll move on to the next one then.\nSPEAKER S3: And this, this one will be fast. So key value structure. Just need a little bit of restructuring. So next slide might be the only slide. Um nothing terribly exciting but it's kind of worthy of an update. Um, going through the Shepherd review for the Yang model made me realize that, uh, this would not do well, so I refactored it to take into consideration all the stuff, you know, expert review requirements, guidance for them, you know, registry structure as well. Um, so, like Jeff said, the Shepherd writeups already in progress there. But um next slide. So this may be a little bit of a question for Adi. Depends on what they want to do. Uh, I sent an email initially saying, you know, um, or I had reached out to me. They did an early review actually, before this and kind of said, well, you know, you're you're requesting a registry from something that isn't there yet. There was no top level risk category yet because it's requested in the base spec. Um, I was thinking about already just, you know, we'll move that request into this draft, but I change my mind. I don't know if there's any benefit to it. We can just leave it in the spec if it's not going to speed anything up. Yeah. Um, so the.\nSPEAKER S4: Uh, right. Sorry, I, I saw your email, but I was a little bit confused because, yes, the registry doesn't exist. They, um, they have been doing has been doing recently. I think they started maybe this ETF reviewing documents that they see on agendas.\nSPEAKER S3: Mhm.\nSPEAKER S4: Um, so they probably have never reviewed the base spec right. Yeah. Right. So they don't know that that is coming. So yeah. You know they so, so no I you should just assume that that exists, because in any case, we're going to publish this after the base spec. Yeah. So by that time, yeah, it should be there.\nSPEAKER S3: Yeah. And I talked to you, I'm thinking, oh, maybe, maybe this'll move along faster, but yeah. Splitting hairs. Right. So leave it as is. I'll correct the email. Um, the, uh, but there is I actually have to specify the rift registry that I'm requesting out of. So, um, very brief update to version two, but literally since. Yep. Tony.\nSPEAKER S5: Um, Tony P juniper. So that's my question to Alvaro. So do you prefer us to stick the whole into one huge registry King of rift? Or should we break off the rift base spec registry and then the key values registries?\nSPEAKER S4: So, so I think what should happen is there should be one Iana page for rift. And in there there will be multiple registers.\nSPEAKER S3: Yeah. No no problem Okay. No. And, uh, that's that's it. So, um. No, that's all I have.\nSPEAKER S1: Okay. I think, uh.\nSPEAKER S3: Thank you.\nSPEAKER S1: That's all the updates we have. Uh, we just zipped through the presentations. Um, now it's come to the. Before we go to the next agenda item. Do you have any comments? Questions from anyone? Tony.\nSPEAKER S5: Uh, Tony P again. So just as update the community. So Jordan is pushing the newest version of the draft up because, you know, we're basically breaking tools all the time size wise. Um, the review is going on, and I am, uh, updating Bruno's open source, the implementation to the new spec, which I already did. But there's one thing that Bruno was supposed to do, but he's incommunicado for the moment. So, um, that will be done within the next week or two and tested against, you know, juniper implementation. So the open source implementation should be completely up to date within a week or two on the newest schema. ET cetera. ET cetera.\nSPEAKER S2: Thanks.\nSPEAKER S1: Jeff. Do you want to take it from here?\nSPEAKER S2: Yeah. So the last presentation for today's meeting is, uh, Richard discussion. So currently charter has a base spec applicability statement model. All documents are in advanced state and progressing really well right. So we have adopted another number of items that kind of have in the charter have not. So we would like to update charter to explicitly include, uh, all the work on key value registry and all the work where uh, um, rift is used really for bootstrapping stuff. So evpn, uh, flood reflection. Uh, so segment routing is, uh, adopted, but again, not exactly in the charter. So we would like to include it. Uh, multicast work has been stranded for quite some time, but uh, we plan to restart working working group potentially after next ATF. And we would like to include it in new charter as well. so it's there when we start. So we don't have any off charter work for the couple of upcoming years. Tony.\nSPEAKER S5: Yeah. So the especially the multicast, um, I mean, the whole multicast was stuck on this last issue of the tree join at the top right. And that was before the whole auto VPN auto flood reflection would actually delivers a completely distributed, stable election at the top for, you know, whatever, one, two, three routes that possibly can be used to resolve this multicast dilemma on which the multicast at the end was stuck. And, uh, I think it's worth a push. If it doesn't, you know, if it's impossible to, to solve. Well, I mean, no other IGP managed to solve it reasonably. If we manage to actually get this multicast working and merge it at the top, this will be a pretty big pop in terms of protocol design. So I just encourage, you know, more than happy to have a look and help with the stuff as well to give, you know, the the one last look whether we can merge all these trees that we already figured out at the very top and get the whole solution working.\nSPEAKER S2: Yeah, I think there's a unique opportunity because of characteristics of protocol. It doesn't only distribute reachability, it also allows some bootstrapping which other protocols don't do so well. So yeah, that's the idea. Uh. Any comments? Uh, Alvaro, what do you think? Oh, sorry. You're here.\nSPEAKER S4: Uh, yeah. It would be really nice if, uh, others in the working group, uh, had opinions, uh, because, you know, it's important to, to, um, you know, get reviews and people to look at the drafts and everything else. Um, other than that. Yeah. This looks good to me.\nSPEAKER S2: Great. So we'll send to the list proposals for update. Charter. Charter discussion and potentially going on. So next year we plan to have an updated charter anyway. And we don't have any more items to discuss. So if no questions here we can give you back 30 minutes. You can spend something else. Or maybe think about multicast in rift. Thank you so much everyone for joining us and we will see you in London hopefully.\nSPEAKER S1: Okay. Thank you Jeffrey. Thank you. Thanks. Bye.\nSPEAKER S2: Thanks, everyone.\nSPEAKER S1: Bye. Thanks. Bye.\nSPEAKER S3: I have.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9869944657300979
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so it's 4:00 now.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Um, here in the room, we have three people I don't know how many online.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let me actually let me check.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, we've got, uh, let's see how many but 15 people I see.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, our main presenter is here.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Jordan had, um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "I think we can get started.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I see that our our viral is online, but, um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, viral.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Are you there?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "He has been in the app for a while, but I don't know if he's actively there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, let's give it one.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Two more minutes.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "We can.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, we.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "He just walked in.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Oliver, thank you for fixing the network.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So do we want to get started?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Let's go.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the Rift Working Group in IETF 114, in Philadelphia and online.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "It's not.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Well, please remember that by participating in the IETF, you agree to follow the IETF processes and policies.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "I'll just read that line.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Everything else just read.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "You should be already familiar with it already.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Some reminders.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Please wear masks in the meeting room.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Please be courteous and professional.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Also, please use the onsite tool even if you don't plan to speak at the mic.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "That is the way to to sign the blue sheet today.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "These days you can do that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "You can to use the onsite tool.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Either either follow the link in the agenda or scan the QR code.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, Jeff, do you want to take from here?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So agenda for today we are going to provide a quick update.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Also with regards to Rechartering and uh, what we would like to progress.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "And then Jordan is going to talk about uh, updates to the base spec, uh, and the auto VPN, CVE registry.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "I think we reached good Consensus with Ayanna Fox here.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "And yes, I said Rechartering discussion.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, thanks for your review.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "It came back.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "So we are working on it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Applicability statement is still pending.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh this review young model was yesterday submitted to ASG, CVE registry.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "As we said, we reached consensus with Ayanna, and now we need Shepherd to write up.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, uh, segment routing has been adopted as a new working group document.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So, um, then the next, uh, presentation is from Jordan Head.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Let me start load the material.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "One second.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: All right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so pretty big change.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Or at least there will be pretty big upcoming changes for the, uh, the base spec.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "So with alvaro's feedback that came back, um, here's, you know, some of the stuff that's going to come up as, um, the major feedback would be some of the Ascii diagrams didn't exactly.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "They weren't parallel with their SVG counterparts.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now there aren't requirements for things to be exact, but they need to be at least comparable so that both version or both formats of the document have, you know, roughly the same experience, um, things like textual references and diagrams and so forth.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Um, other clarifying changes to, um, next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just a little bit of, uh, visualization for those that are interested.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, what did I mean by not parallel?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the SVG on the left, you know, pretty cool and so forth.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "But the, um, the two Ascii versions on the right, the top is the before and the bottom one is, is after it, you know, more clearly reflects the point of, you know, the in this case inter inner top of fabric, uh, rings on the fabrics.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, again, the svg's are kind of more of a should than a should.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but again, it's about uh, it's an accessibility thing, right?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "They need to be able to read relatively similarly.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Um, kind of the same thing.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Just there's just some inconsistent labeling stuff like that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Um, see the SVG on the left and the, uh, Ascii version on the right is a little more parallel.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, a lot of the, um, yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "One thing that came to mind just now is that, um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "The Svg's are, of course, nicer and easier to understand.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if I was reading the document, um, I don't know if we can put a note, maybe especially at the beginning of that first section saying, you know, go look at the PDF, uh, type thing, because most people are going to go look at the ML version or something, and they might not get the the benefit of looking at all the all the nice pictures.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah, I know, um, this was when we were first doing the SVG as it came into a whole.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "It was a whole thing figuring out what was allowed, what wasn't, you know, grayscale versus color and so forth.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "We're not actually allowed.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we were, uh, advised not to reference specific formats in the text at all.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "At least that's what I saw.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it ties back to Geneva Convention sort of things.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "It's pretty interesting as far as accessibility and readability and certain parts of the world may not have access to something that can render HTML properly, things like that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, yeah, so wanted to, but um, okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just kind of other stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there, I know you mentioned the, um, we should request early allocation for the multicast addresses and the UDP ports.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll I'll make a note to the chairs or I'll send an email to the chairs when we push version 16.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, beyond that, various editorial things, readability, uh, you know, clarity aspects, um, some reference fixes and, um, I still your responses.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "So there'll be a couple of things that will have a little bit of a discussion about.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "The vast majority of feedback is super straightforward.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there are some things unrelated to your review that I kind of noticed.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, well, first off, uh, I'll be added as the six co-author.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Um, thanks for helping me wade through that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it required a minor Shepard update.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but adds mentioned that that's a pretty straightforward thing.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, did some fixes for minor fixes for the thrift schema with regard to what's already reflected in the CVE draft.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "They just a little bit out of date there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Um, other SVG fixes, just, you know, size scale things.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Some of the in the previous versions, they were they scaled really, really poorly.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And it was, it was ugly.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and other kind of SVG, XML optimization.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "And that had to do with there's actually a three Meg, uh, limit on the draft upload tool that, um, caused all sorts of fun problems.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "We had to render the PDF version, and the PDF version doesn't render the SVG very well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but anyway, so that now everything should kind of fall into and they'll get the full benefit of the HTML version.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm going to well, we we, we have a git issue open with them, but hopefully there won't be pushback.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "So I might bug you depending upon things.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "But um, uh okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide I think that's yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "That's it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "Other questions before we move on.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "It's pretty straightforward.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I don't see a Q um, so we'll just continue the next one.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just going to provide a brief update on auto flood reflection.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Just a quick refresher for those aren't unfamiliar, it's, um, it's an experimental draft out of LSR, but the short version of it is, um, so, you know, there are lots of reasons to use, you know, flat, single area ECG, but they come with drawbacks, you know, flooding state convergence.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Every node's got to know hold that state and then compute that state.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's a link to the actual flood reflection draft.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we'll kind of circle in with it here in a second.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so flood reflection like rift is very well suited for cloth topologies.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so rift will take care of the underlay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the auto for extensions will use, you know, rift CTP and uh, the lie exchanges to build a flood reflection topology on top of that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "So where does it actually fit in.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "So flood reflection requires um loopback addresses uh system IDs for ISIS network entity titles, which just makes the single address and then a cluster ID to actually segment the flood reflection domains.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so, uh, auto fr has to actually build and derive those variables using the distributed state we get in rift.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so what that really kind of looks like is so CTP will you know, it'll drive each level.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "It'll build the rift fabric.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the the FSM will help derive all of the flood reflection roles and variables.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, basically take the what would be configuration data and then next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And then finally you end up with ISIS flood reflection on top of everything.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "So the adjacencies come up.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "You have the flood reflection topology.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "And there you go.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "You basically plug in everything.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "You have a whole fabric.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Um okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "So as far as the actual, uh, work in the draft.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, there were some, uh, concerns with how, you know, uh, the ISO address derivation wasn't very clear where it came from.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Unless you went in and looked at the thrift model.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "It's there, but it should be kind of aligned in the text as well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the kind of did a new section refactoring of sections for all of the extensions required to refuse to let auto for work.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "So that would be, you know, the finite state machine.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Um, no.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Ty advertisements and kind of any applicable schema updates.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, prior to kind of refactoring, it felt a little disjointed.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "You have to bounce around the draft to figure out what was what was doing what.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "So more readable now.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we added a flood reflector, uh, preference value, which means we need to update the election procedures to factor that in.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then, uh, the key value ties are more of a, uh, just editorial stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "So a little bit of normative language and kind of.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "We've since reworked the draft just a little bit, so we've got the request criteria aligned to that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Just a little bit of a visual fluff if you will, as to how what's clarified.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we those are the functions that are tied to what are actually in the draft, in the appendix that kind of show, you know, here's how we derive it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "And these are the, you know, the individual functions that build the parts of the address that we need.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "So it's that image isn't there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "But it's described in text now versus not.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Um, right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "So like I said, what what it was before was with things being so disjointed, um, we just put everything in a single section, um, and said, you know, here's the, um, flood reflector version, the cluster ID and the preference values.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, there were a little there was a little bit of a functional change with that that wasn't described before, um, to kind of factor in for Interoperability with um, nodes that do run it, nodes that don't run it, nodes that do support it but don't want to run it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "So uh next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so a quick look at the actual reflector election.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Previously it was just high sed lowest sed second highest second lowest.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that's basically to prevent, you know, any single node coming in from flipping the entire fabric and killing all the adjacencies.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we it's the same concept.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "All we do is factor in preference now.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "So it's the same thing but with highest preference value.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "And it will cycle through if uh, you have enough flood reflectors.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "But um okay next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Um like I said for key value ties, lots of normative stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Basically we made it say that, you know, you don't have to carry everything, but you probably should.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the like I said, the actual request component of it is aligned with, um, What the p value says.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that's that's really it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we are requesting working group adoption for that one, but we'll add in some, um, multi-plane considerations.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "I know that's kind of on a back burner for the moment, but, um, that's really the gist.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions about auto for.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So adoption um it would need to, to probably need a the charter update to adopt it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well that's fair enough.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, we'll talk about it at the end.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Auto VPN.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Similar to auto fr but you know, build a evpn topologies on that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "But just a quick update with this one.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so kind of similar to the auto fr things were um, you know, we use this the template for auto fr and then we notice that problems.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "So uh, similar structural changes made things a lot more clear and readable.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so again, it was just feeling disjointed previously and, you know, jumping around the documents.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Never good.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "Um, similar stuff to the auto fr with the key value ties as well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Some normative language things and, you know, into things were tightened.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there was a little bit of a model change in that, um, certain piece.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we'll, we'll come to it, uh, and then, you know, editorial and, and things like that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so again, just kind of kind of aligns with what we did with auto fr.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "So the, the actual extensions just kind of more contained where they should be as well as the actual behavior.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "This was never really spelled out before and that they, uh, version fabric ID, the auto VPN model itself, um, actually has to be advertised in a node tie at least once in each direction.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "So we can again, it has to do with interop.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then there are kind of, uh, relevance complementary schema updates for that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "So with the with the key value ties, um, the auto VPN, the the telemetry model we use to push up state upstream, um, had a couple of things in the thrift model that have now since moved to common model overall.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "So, you know, can be used outside of it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "So it's kind of just a it's more of a cleanup thing, but it's an important one.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the, the structure of the that that bit in common thrift also changed just a little bit.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "But again, that just aligns with the values that we're going to request from Ayanna for, uh, well-known and experimental key types.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Um, again, normative language stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Don't don't have to do these things, but you should and, um, the actual request of it line up.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Um next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Same thing here.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we are still kind of working on some of the data center interconnect stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "So it'll basically be a different auto VPN model to, you know, get traffic out of a fabric.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Um, more multi-plane considerations.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we've got a lot of this stuff built in already, but there's some other implications we need to work on.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then some actual operational deployment considerations.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Questions there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Questions?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Comments.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, we'll move on to the next one then.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And this, this one will be fast.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So key value structure.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Just need a little bit of restructuring.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide might be the only slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Um nothing terribly exciting but it's kind of worthy of an update.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Um, going through the Shepherd review for the Yang model made me realize that, uh, this would not do well, so I refactored it to take into consideration all the stuff, you know, expert review requirements, guidance for them, you know, registry structure as well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, like Jeff said, the Shepherd writeups already in progress there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "But um next slide.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "So this may be a little bit of a question for Adi.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Depends on what they want to do.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I sent an email initially saying, you know, um, or I had reached out to me.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "They did an early review actually, before this and kind of said, well, you know, you're you're requesting a registry from something that isn't there yet.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "There was no top level risk category yet because it's requested in the base spec.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I was thinking about already just, you know, we'll move that request into this draft, but I change my mind.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if there's any benefit to it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "We can just leave it in the spec if it's not going to speed anything up.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, I, I saw your email, but I was a little bit confused because, yes, the registry doesn't exist.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "They, um, they have been doing has been doing recently.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "I think they started maybe this ETF reviewing documents that they see on agendas.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Mhm.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, so they probably have never reviewed the base spec right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "So they don't know that that is coming.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "You know they so, so no I you should just assume that that exists, because in any case, we're going to publish this after the base spec.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "So by that time, yeah, it should be there.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "And I talked to you, I'm thinking, oh, maybe, maybe this'll move along faster, but yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Splitting hairs.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "So leave it as is.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "I'll correct the email.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the, uh, but there is I actually have to specify the rift registry that I'm requesting out of.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, very brief update to version two, but literally since.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Tony.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Um, Tony P juniper.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "So that's my question to Alvaro.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "So do you prefer us to stick the whole into one huge registry King of rift?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Or should we break off the rift base spec registry and then the key values registries?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So, so I think what should happen is there should be one Iana page for rift.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "And in there there will be multiple registers.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "No no problem Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, that's that's it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "No, that's all I have.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "I think, uh.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: That's all the updates we have.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we just zipped through the presentations.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now it's come to the.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Before we go to the next agenda item.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have any comments?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Questions from anyone?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Tony.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, Tony P again.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "So just as update the community.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "So Jordan is pushing the newest version of the draft up because, you know, we're basically breaking tools all the time size wise.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the review is going on, and I am, uh, updating Bruno's open source, the implementation to the new spec, which I already did.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "But there's one thing that Bruno was supposed to do, but he's incommunicado for the moment.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, that will be done within the next week or two and tested against, you know, juniper implementation.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "So the open source implementation should be completely up to date within a week or two on the newest schema.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "ET cetera.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "ET cetera.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thanks.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jeff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want to take it from here?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "So the last presentation for today's meeting is, uh, Richard discussion.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "So currently charter has a base spec applicability statement model.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "All documents are in advanced state and progressing really well right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "So we have adopted another number of items that kind of have in the charter have not.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So we would like to update charter to explicitly include, uh, all the work on key value registry and all the work where uh, um, rift is used really for bootstrapping stuff.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "So evpn, uh, flood reflection.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so segment routing is, uh, adopted, but again, not exactly in the charter.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "So we would like to include it.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, multicast work has been stranded for quite some time, but uh, we plan to restart working working group potentially after next ATF.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "And we would like to include it in new charter as well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "so it's there when we start.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "So we don't have any off charter work for the couple of upcoming years.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Tony.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "So the especially the multicast, um, I mean, the whole multicast was stuck on this last issue of the tree join at the top right.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "And that was before the whole auto VPN auto flood reflection would actually delivers a completely distributed, stable election at the top for, you know, whatever, one, two, three routes that possibly can be used to resolve this multicast dilemma on which the multicast at the end was stuck.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I think it's worth a push.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "If it doesn't, you know, if it's impossible to, to solve.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I mean, no other IGP managed to solve it reasonably.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "If we manage to actually get this multicast working and merge it at the top, this will be a pretty big pop in terms of protocol design.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "So I just encourage, you know, more than happy to have a look and help with the stuff as well to give, you know, the the one last look whether we can merge all these trees that we already figured out at the very top and get the whole solution working.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, I think there's a unique opportunity because of characteristics of protocol.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "It doesn't only distribute reachability, it also allows some bootstrapping which other protocols don't do so well.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, that's the idea.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Any comments?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Alvaro, what do you think?",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, sorry.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "You're here.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "It would be really nice if, uh, others in the working group, uh, had opinions, uh, because, you know, it's important to, to, um, you know, get reviews and people to look at the drafts and everything else.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Um, other than that.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "This looks good to me.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll send to the list proposals for update.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Charter.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Charter discussion and potentially going on.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "So next year we plan to have an updated charter anyway.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And we don't have any more items to discuss.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "So if no questions here we can give you back 30 minutes.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "You can spend something else.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Or maybe think about multicast in rift.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much everyone for joining us and we will see you in London hopefully.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you Jeffrey.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thanks, everyone.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Bye.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9869944657300979
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I have.",
+            "confidence": 0.9869944657300979
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T18:23:43.335745+00:00",
+          "processed_at": "2026-01-27T18:23:43.335745+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "zsrig3vgjq"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9869944657300979
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

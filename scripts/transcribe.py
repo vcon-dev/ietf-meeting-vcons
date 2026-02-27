@@ -10,12 +10,17 @@ Usage:
     python transcribe.py <vcon_file> [--api-key KEY] [--language LANG]
     python transcribe.py --meeting 121 [--group 6lo] [--api-key KEY]
     python transcribe.py --all-pending [--api-key KEY]
+    python transcribe.py --all --cookies-from-browser chrome  # Use browser cookies
 
 Requirements:
     pip install speechmatics-batch yt-dlp
 
 Environment:
     SPEECHMATICS_API_KEY - Your Speechmatics API key
+
+Note:
+    If YouTube blocks downloads with "Sign in to confirm you're not a bot",
+    use --cookies-from-browser to authenticate with your browser cookies.
 """
 
 import argparse
@@ -60,7 +65,11 @@ def get_api_key(args_key: Optional[str] = None) -> str:
     return key
 
 
-def download_youtube_audio(youtube_url: str, output_path: str) -> str:
+def download_youtube_audio(
+    youtube_url: str,
+    output_path: str,
+    cookies_from_browser: Optional[str] = None
+) -> str:
     """Download audio from YouTube video.
 
     Downloads as MP3 to keep file size manageable for the Speechmatics API.
@@ -69,12 +78,14 @@ def download_youtube_audio(youtube_url: str, output_path: str) -> str:
     Args:
         youtube_url: YouTube video URL
         output_path: Directory to save the audio file
+        cookies_from_browser: Browser to extract cookies from (e.g., 'chrome', 'firefox')
 
     Returns:
         Path to the downloaded audio file
     """
     ydl_opts = {
-        'format': 'bestaudio/best',
+        # Try multiple format options for better compatibility
+        'format': 'bestaudio[ext=m4a]/bestaudio[ext=webm]/bestaudio/best',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',
@@ -89,6 +100,10 @@ def download_youtube_audio(youtube_url: str, output_path: str) -> str:
         'quiet': True,
         'no_warnings': True,
     }
+
+    # Add browser cookies if specified (helps bypass YouTube bot detection)
+    if cookies_from_browser:
+        ydl_opts['cookiesfrombrowser'] = (cookies_from_browser,)
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(youtube_url, download=True)
@@ -241,7 +256,7 @@ def update_vcon_with_transcription(vcon_path: str, wtf_transcription: dict) -> N
         "type": "wtf_transcription",
         "dialog": 0,
         "vendor": "speechmatics",
-        "spec": "draft-howe-wtf-transcription-00",
+        "encoding": "json",
         "body": wtf_transcription
     }
 
@@ -265,7 +280,9 @@ async def transcribe_vcon(
     vcon_path: str,
     api_key: str,
     language: str = "en",
-    force: bool = False
+    force: bool = False,
+    worker_id: int = 0,
+    cookies_from_browser: Optional[str] = None
 ) -> bool:
     """Transcribe the audio from a vCon file using Speechmatics.
 
@@ -274,11 +291,14 @@ async def transcribe_vcon(
         api_key: Speechmatics API key
         language: Language code
         force: Re-transcribe even if already done
+        worker_id: Worker number for logging
+        cookies_from_browser: Browser to extract cookies from for YouTube
 
     Returns:
         True if transcription was performed, False otherwise
     """
-    print(f"Processing: {vcon_path}")
+    prefix = f"[W{worker_id}]"
+    print(f"{prefix} Processing: {vcon_path}")
 
     # Load vCon
     with open(vcon_path, 'r', encoding='utf-8') as f:
@@ -289,7 +309,7 @@ async def transcribe_vcon(
         for analysis in vcon.get("analysis", []):
             if (analysis.get("type") == "wtf_transcription" and
                 analysis.get("vendor") == "speechmatics"):
-                print("  Already has Speechmatics transcription, skipping.")
+                print(f"{prefix}   Already has Speechmatics transcription, skipping.")
                 return False
 
     # Get YouTube URL from dialog
@@ -304,32 +324,32 @@ async def transcribe_vcon(
                 break
 
     if not youtube_url:
-        print("  No YouTube URL found in dialog, skipping.")
+        print(f"{prefix}   No YouTube URL found in dialog, skipping.")
         return False
 
-    print(f"  YouTube URL: {youtube_url}")
+    print(f"{prefix}   YouTube URL: {youtube_url}")
 
     # Download audio
     with tempfile.TemporaryDirectory() as tmpdir:
-        print("  Downloading audio...")
+        print(f"{prefix}   Downloading audio...")
         try:
-            audio_path = download_youtube_audio(youtube_url, tmpdir)
+            audio_path = download_youtube_audio(youtube_url, tmpdir, cookies_from_browser)
         except Exception as e:
-            print(f"  Error downloading audio: {e}")
+            print(f"{prefix}   Error downloading audio: {e}")
             return False
 
-        print(f"  Downloaded: {audio_path}")
+        print(f"{prefix}   Downloaded: {audio_path}")
 
         # Transcribe
-        print("  Transcribing with Speechmatics...")
+        print(f"{prefix}   Transcribing with Speechmatics...")
         try:
             result = await transcribe_with_speechmatics(audio_path, api_key, language)
         except Exception as e:
-            print(f"  Error transcribing: {e}")
+            print(f"{prefix}   Error transcribing: {e}")
             return False
 
         # Convert to WTF
-        print("  Converting to WTF format...")
+        print(f"{prefix}   Converting to WTF format...")
         wtf = transcript_to_wtf(
             transcript_text=result["transcript_text"],
             confidence=result.get("confidence"),
@@ -339,10 +359,10 @@ async def transcribe_vcon(
         )
 
         # Update vCon
-        print("  Updating vCon file...")
+        print(f"{prefix}   Updating vCon file...")
         update_vcon_with_transcription(vcon_path, wtf)
 
-        print("  Done!")
+        print(f"{prefix}   Done!")
         return True
 
 
@@ -405,6 +425,35 @@ def find_pending_vcons() -> list:
     return pending
 
 
+async def process_with_semaphore(
+    semaphore: asyncio.Semaphore,
+    vcon_path: str,
+    api_key: str,
+    language: str,
+    force: bool,
+    worker_id: int,
+    cookies_from_browser: Optional[str] = None
+) -> tuple[str, bool, str]:
+    """Process a single vCon file with semaphore for rate limiting.
+
+    Returns:
+        Tuple of (vcon_path, success, error_message)
+    """
+    async with semaphore:
+        try:
+            result = await transcribe_vcon(
+                vcon_path,
+                api_key,
+                language,
+                force,
+                worker_id,
+                cookies_from_browser
+            )
+            return (vcon_path, result, "")
+        except Exception as e:
+            return (vcon_path, False, str(e))
+
+
 async def main():
     parser = argparse.ArgumentParser(
         description="Transcribe IETF meeting vCons using Speechmatics"
@@ -424,8 +473,9 @@ async def main():
         help="Working group acronym (used with --meeting)"
     )
     parser.add_argument(
-        "--all-pending",
+        "--all-pending", "--all",
         action="store_true",
+        dest="all_pending",
         help="Transcribe all vCons missing Speechmatics transcription"
     )
     parser.add_argument(
@@ -446,6 +496,17 @@ async def main():
         "--dry-run",
         action="store_true",
         help="List files that would be transcribed without actually doing it"
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Number of parallel workers (default: 1, max recommended: 5)"
+    )
+    parser.add_argument(
+        "--cookies-from-browser",
+        metavar="BROWSER",
+        help="Browser to extract YouTube cookies from (e.g., chrome, firefox, safari, edge)"
     )
 
     args = parser.parse_args()
@@ -470,6 +531,7 @@ async def main():
         sys.exit(1)
 
     print(f"Found {len(vcon_files)} vCon file(s) to process")
+    print(f"Using {args.workers} parallel worker(s)")
 
     if args.dry_run:
         for f in vcon_files:
@@ -483,20 +545,33 @@ async def main():
         print(f"Error: {e}")
         sys.exit(1)
 
-    # Process files
-    success_count = 0
-    for vcon_path in vcon_files:
-        try:
-            result = await transcribe_vcon(
-                str(vcon_path),
-                api_key,
-                args.language,
-                args.force
-            )
-            if result:
-                success_count += 1
-        except Exception as e:
-            print(f"Error processing {vcon_path}: {e}")
+    # Process files in parallel with semaphore
+    semaphore = asyncio.Semaphore(args.workers)
+
+    tasks = [
+        process_with_semaphore(
+            semaphore,
+            str(vcon_path),
+            api_key,
+            args.language,
+            args.force,
+            i % args.workers,
+            args.cookies_from_browser
+        )
+        for i, vcon_path in enumerate(vcon_files)
+    ]
+
+    results = await asyncio.gather(*tasks)
+
+    success_count = sum(1 for _, success, _ in results if success)
+    errors = [(path, err) for path, success, err in results if not success and err]
+
+    if errors:
+        print(f"\nErrors encountered:")
+        for path, err in errors[:10]:  # Show first 10 errors
+            print(f"  {path}: {err}")
+        if len(errors) > 10:
+            print(f"  ... and {len(errors) - 10} more errors")
 
     print(f"\nCompleted: {success_count}/{len(vcon_files)} files transcribed")
 

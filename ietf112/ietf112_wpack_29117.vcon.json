@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "38190f45-9034-4cd6-94c6-cc4f92263013",
   "created_at": "2026-01-03T19:34:42.084865",
-  "updated_at": "2026-01-03T19:34:46.337317",
+  "updated_at": "2026-01-27T15:10:47.319143+00:00",
   "subject": "IETF 112 - WPACK Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=qR10nOgvhN4",
       "meta": {
         "ietf_meeting": 112,
         "working_group": "wpack"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 112,
         "location": "Online, ES",
@@ -50,10 +49,10 @@
         "start_time": "2021-11-09T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "wpack",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/agenda-112-wpack",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/bluesheets-112-wpack-202111101600",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/minutes-112-wpack",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-wpack-wpack-chairs-slides-ietf112",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/materials/slides-112-wpack-bundle-preload",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/112/agenda/wpack/",
         "mimetype": "text/html",
@@ -183,10 +182,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-112-wpack",
         "mimetype": "text/markdown",
@@ -197,7 +196,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -4963,6 +4963,2490 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Folks, it's the top of the hour. I think we're going to give people a couple more minutes to see if they can straggle in, and then we're going to try to start. Um, I will note that I asked for an hour and they gave us two. So there's probably little chance that we will use the full two hours. A couple more people coming in, so that's good. Give them like, we'll give another minute and then we'll get started. Okay. I think we've kind of waited long enough for people to show up. Um, I guess I want to welcome everybody to Wpac. Um, at iATf 112. Um, the chairs are Sean and David. Um, we're here. I see the, um, our editors are here as well. Um, just a reminder, we're gonna record this. Uh, please, if you're not speaking, uh, make sure your your microphone is muted. Um, if you want to come off, turn your video on when you're speaking. That's fine. Um, this room is small enough that it shouldn't really crash it. Um, there's some links there for the useful things. Um, um, for the links for the medico audio and the encoding. MD um, so next there we go. Click on the next slide. This is the note. Well, um, this relates to, you know, all the, the, um, IPR notices that we have, um, you know, had a working group, progress, all kinds of stuff. I'll get to the anti harassment things later in the code of conduct, the copyright and patents, basically. Um, if you know anything about, uh, IPR in this space, you declare it before you participate. And that includes basically communicating in any way to the working group. Um, and next we're going to go you might have seen this in a couple of working groups where we're trying to trying to focus on the code of conduct guidelines. Um, this working group has not had this problem, but I think it's worth just kind of repeating everywhere. We've got an RFC that defines the code of conduct. Um, basically the highlights are to treat colleagues with respect, um, speak slowly but slowly, which I sometimes have a problem with. Um, try not to use slang so everybody can kind of get on, uh, and understand what's going on. Um, we should dispute ideas by, uh, reasoned argument, use our best engineering judgment, find the best solution for the whole internet, and contribute to the ongoing work of the IETF. Um, and remember that we'd like this to apply everywhere, not just in not just on the channel, but also on the mic. Uh, jabber, echo, etc.. And the mailing list for that matter. All right. I kind of know that that's us. The agenda is pretty straightforward, like I said. Um, I did request an hour, and they gave us two. So I basically just split it down the middle. We have two documents that we've adopted. We have more that we need to adopt, but these are the two that we're starting with. Um, and kind of just split them between use cases and bundle. Um, I do note that I put Philippes name on the bundle, uh, draft. I think it's probably just going to be Jeffrey. Um, and that's really it. I we didn't have any particular slides. I thought we would basically just go to the, um, repo and start working through any issues and have an open discussion, unless anybody has any other ideas and wants to bash this agenda. Jeffrey. Go ahead.\nSPEAKER S2: Cool. Um, I also asked Felipe to, uh, kind of discuss a little bit, um, about kind of his work and his team's work on, uh, bundle implementation progress. Um, and so when we get to that section, um, I think he'll have, uh, some stuff to present.\nSPEAKER S1: Great. Um, so, you know, I put his name in the right place, then completely. Uh. Good call. Um, alright, so let's get into the use cases. I'm just gonna switch screens. Yes.\nSPEAKER S3: There is one thing that we, uh, skipped right over, and that is. We need a scribe, please.\nSPEAKER S1: Oh, yes.\nSPEAKER S3: Take notes into the code EMD. Uh, hopefully other people keep an eye on it, and the chairs will definitely go over it afterward. But somebody to get the initial set of notes into the code would certainly be helpful. Call for volunteers. Can't be, Geoffrey. He's busy. Is anybody else paying attention? Mr. Bishop, Mr. Saab, can I implore upon either of you to perhaps pay enough attention for notes? Is anybody listening other than Geoffrey?\nSPEAKER S1: Yeah. We only really need to highlight the decisions made. We don't really need blow by blow. Right. Um. Minutes.\nSPEAKER S3: Okay. Oh, Siobhan, I was encouraged by seeing your name, but I appreciate that you might have to duck out, so. Yes. We should have worked this out ahead of time. Sorry, we did not. Is there anybody who doesn't possibly have to duck out in 15 minutes? Oh, and Jeffrey has volunteered to write down the decisions, which also the chairs are capable of doing so. Um. Okay. Thank you very much, Justin. We appreciate, uh, we appreciate that highly. And like I said, the chairs will go over the notes, um, to corroborate with, you know, our, um, sense of the meeting. And, of course, there's a YouTube video, so, um, that should be sufficient. Thank you again, Justin. And away we go with Jeffrey.\nSPEAKER S2: Right. So the, um, the use cases document is basically the the content that you all have seen before. Um, it's still on my plate to to split out the, um, The controversial use cases into an appendix and leave the rest. Uh, in the in the main section. Um, I believe the the primary non-controversial use cases are um, basically the, the uh prefetch of, of content in a of like subresources. Um, and so, so just about everything else will, will go into the appendix. Does anyone have particular. Um, and then I'll also, uh, split out requirements. Um, similarly so that they the only kind of essential requirements are the ones that, that are required by the, by the agreed on use cases. Um. Does anyone have particular use cases that you, that you want to kind of see stay in the top section that, um, that kind of shouldn't move to the appendix? I don't hear anyone. Um, so. Yeah, I'll. I'll proceed with that. Oh.\nSPEAKER S3: Siobhan is, uh, uh, free to go, please.\nSPEAKER S4: Can you hear me? Okay.\nSPEAKER S3: Yes we can. Yeah. We're good.\nSPEAKER S4: I'm not a use case, but, um, just wondering. And this might be addressed by the change you have, and. But just wondering why Subresource bundling was so low in the list of the use cases. Because I think they're ordered by priority. Right?\nSPEAKER S2: Yeah, at least roughly by priority. Um, it was it was not kind of in the, in the top set of things that, that I was interested in when starting the, the work. Um, kind of we were, we were looking at, uh, at ways to replace um, or ways to, to compete with native apps where you can share the, installation file. Um, but it seems like there's kind of we can we can get partway there by doing subresources. And there's a lot more consensus, um, in the community for, for doing subresources first. Um, and so that that seems like the right thing to focus on initially.\nSPEAKER S4: Yeah. Gotcha.\nSPEAKER S3: Um, Geoffrey, one thing I'll observe, too, is a couple of weeks ago, uh, Larry has, um, asked about this whole, um, my multi-part thing and that he wasn't suggesting we use it necessarily, but he wanted to add it as a use case and so on and so forth. Do you have thoughts? Um, perhaps that you could even then, uh, share with Larry on the list for others to digest? Uh, because Larry keeps coming back to this, my multi-part thing. Um, and so far we haven't seen energy in the group, um, to, uh, go down that particular path. But if you had, um, some, some relevant thoughts, that would certainly be welcome.\nSPEAKER S2: Yeah. The the multi-part kind of scheme like clearly. Clearly the bundle format does compete with multi-part. Um, but the particular use cases, like multi-part is a set of formats rather than a set of use cases. Um, and so it, I think hasn't been clear. Like what, what use cases in particular we're missing here. Um, and this kind of the, the use cases that we've listed are seem like the ones that, that we want to focus on. Um, and I don't think Larry has said like, like here are use cases you're missing. He's just said, like, here's a bunch of multi-part stuff. You should you should look at at kind of completely replacing it.\nSPEAKER S3: Right. I I've also been confused on what Larry sees as the use case there, um, as opposed to the possibility of compatible formatting. Um, and I will follow up with Larry on the list, suggesting that if he sees a relevant, specific use case there, that he follow up to you with actual suggested text.\nSPEAKER S2: Yeah. And and it I think we do I think we do replace most most or all of what of like the particular subtypes of multi-part like you can you can accomplish them using bundles. Um and it yeah. It's not clear what what in particular would need to change to replace the rest.\nSPEAKER S3: Great. Thank you.\nSPEAKER S1: Um, I guess the question is, do we want to talk about the implementation experience or. I'm sorry, are we done with use cases? Yeah. So we're done with use cases. I guess the question is, should we talk about implementation experience? Um, before we talk about the draft, I think that might be interesting because it might inform, um, the Bundle's draft. So do we want to give Felipe the the floor here and let him let him talk?\nSPEAKER S2: That is my suggestion.\nSPEAKER S1: All right. Felipe, welcome to come to the front of the room. Thanks.\nSPEAKER S5: Let me see if I can share my screen over here. Okay. Okay. Hello everybody I am. Yeah. You can see them.\nSPEAKER S3: Well yeah. We're good.\nSPEAKER S5: Okay. So I'm Felipe Arias from Hialeah. We've been working in partnership with io. Uh, feel free to reach out after the meeting if you have any questions. And this is a short update on the work that we have been doing on the use case of resource pre-loading. Using bundle responses. You can have a look at the explainer for more details. Uh, the general approach is that a page would provide a list of resources to preload, and then would send a request to the server with a list of those resources that are not in the cache, and then the server would reply with a web bundle containing the resources. Each resource can be stored in the cache individually, and our proposal restricts the origin and the path of the resources to those of the reference bundle file, and also enforces URL consistency in the sense that for a given URL, the server must return the same resource regardless of whether the request has been done individually or as part of a bundle. Chromium has an implementation of a similar set of ideas, and we have an open issue there where we want to gradually converge towards a common complete specification. In the last meeting of the group, we discussed some changes to keep the spec as simple as possible and to focus on consensus functionality like Pre-loading well, also allowing for additional sector sections that may extend the format for specific use cases related to the implementation of this spec. There is a NodeJS module to create and read web bundles, and one of the things that we have been doing over the past weeks has been to update this tool to support the new, updated version of the spec, while also keeping compatibility with the previous version. So with this NodeJS module, we can prototype implement a server that is aware of bundles and is able to handle and manipulate manipulate them. Uh, this is a bit how the backwards compatibility works where the new version is used by default, but you can specify a previous one, and then the code in the bundle will be able to pick the right version. And this NodeJS module can also be used in the browser to get some experimentation. But we managed to do it, which means that since we have support for web bundles in the server and in the client, we can prototype the whole bundle Pre-loading use case. So that's what we have done. Our client parses the declarations in the HTML file that lists the resources that the page wants to preload, and then sends an HTTP request with a specific header that lists the resources that are not in the cache. In the case of the prototype, we are using a service worker. So the cache is the service workers cache, and then the bundles or those requests are served by a small web server that supports bundle preloading with subsetting and is able to create bundles on the fly. So if the client requests only a subset of the resources that have been listed on the page, then the server can return only those resources in a in a new bundle. So this is how the current syntax that we have been using looks like, where you basically specify a reference web bundle file in the server and then list the resources. And you can use Absolute or relative URLs for this. And this is just a draft. Uh, one benefit of this prototyping strategy is that it wouldn't take much to try out different syntaxes for this. We have a couple examples at the moment in the repository. The first one is a very basic test where some resources are preloaded. And you can use the dev tools in the browser to see how those resources are retrieved. And then one by one, they are made available in the cache. So they are retrieved in one request, but then they become several entries in the service. Workers can share this. The second example is a small react application that uses Webpack as a bundler tool, and in this case, bundle preloading is already able to improve the performance because the resources can be loaded in parallel in one single request, whereas by default what Webpack does is that it loads the JavaScript and then the JavaScript loads the rest of the resources. So it happens in sequence, which is slower. So what have we learned so far? Well, first that this approach works for prototyping and for trying out a solution for this use case. It already allows us to test the different scenarios where the solution might be used, and it gives us an easy way to experiment with different syntaxes for the HTML tags or for the HTTP headers. So far, the performance is actually reasonable. Of course, using a service worker adds its own overhead, Head, but other than that, we are seeing that the solution has good potential for improving performance in the future, because we are seeing that we can reduce the number of, uh, requests, response round trips, we can parallelize, uh, downloading resources, we can put individual resources in the cache and so on. And the next steps for this line of work is to have better integration for with boundary tools. So it's easier to try out in, in more use cases or in more pages. Um, one of my colleagues come is working on benchmarking this solution and comparing it with bundle tools and with other solutions. Uh, we want to create more examples. So we are really looking for ideas of Scenarios where people feel that this could be a good solution and something that they would like to to try out. And a final thought is that I'm really wondering if this approach of prototyping and then iterating on that, uh, can also be applied for other use cases that we have on the table. And that's all for my short update if you have any questions. Thank you.\nSPEAKER S1: Your last point. Is there any reason that you think that the way you're going wouldn't work with the other use cases?\nSPEAKER S5: Not necessarily. I mean, some of the use cases are pretty specific. I'm not sure that they would be suitable for prototyping just with, uh, just in JavaScript, but it was more of a, of a general thought of whether this is something that can be, um, used to try out other scenarios and other and other use cases. Um, basically, because one of the things that we are looking for is to find, um. Areas where people would be interested in seeing this being being tried out.\nSPEAKER S2: The some of the use cases, the more long term use cases, like being able to install a web app with kind of accurate trust, uh, can't be prototyped in JavaScript because you have to bootstrap somehow. Like you can't install the service worker that that does the kind of that is the prototype. Um, if you can't bootstrap somewhere, um, but for instance, the, the other use case that, um, the Chrome Origin trial is capturing where, um, kind of ads are being served as, as more self-contained subresources. Um, that probably could have been prototyped this way.\nSPEAKER S5: I think so, I think so, because basically. What you need for that is just to be able to load the, the bundle and then retrieve each of the, of the resources. That's a good point. Thank you.\nSPEAKER S3: Yeah. Uh, Siobhan, please.\nSPEAKER S4: Yeah. I just wanted to say that they definitely believe that preload is the way to go, where the client can choose which resources it wants to load. Um, and I do wish that the original trial also, um, had gone with that approach because I think anything else like where the client cannot choose to load would just basically be a non-starter.\nSPEAKER S5: Yeah. One of the things that we want to try out is some benchmarking because. We want to see, for example, what happens if the client requests a lot of resources in in one go. Does that have a very big impact? Does that create a very large HTTP request that then has to travel to the server and so on. So those are the kinds of, uh, more edge cases that we, that we want to try out.\nSPEAKER S3: Okay. That was oh. Sean's back. Well, Sean, were you moving on?\nSPEAKER S1: The same thing that I think that we've we drained the Q on that one that I think we're we're off to, um, Jeffrey to talk about the bundle.\nSPEAKER S3: Yep.\nSPEAKER S2: The the biggest question that I, that I discovered recently was, um, how to interact with, um, the new, uh, http working groups, uh, binary HTTP format, um, the kind of, uh, and I forwarded it to the list, but the, the direction that that seems appropriate to me is, is to try to converge them. Um, even though that'll, that probably involves several changes to the, to the bundle format. Um, and I was curious if people had thoughts on on anything about that, that binary representation.\nSPEAKER S3: Well, the person most likely to have thoughts about it is unfortunately not in the room right now.\nSPEAKER S2: Yeah.\nSPEAKER S3: Um, and just not to be opaque or anything. That's, uh, Martin Thompson who's working on the other binary representation draft. But yeah. So, as Siobhan has said in chat, um, convergence here would be good minimizing the differences. So, um, until we get a little bit more information, though, about what challenges might be involved there. You know, I think, uh, you and Martin have to start seeing how you can, um, work it all out and then what issues that that might bring up.\nSPEAKER S6: Let's see. Who's going to.\nSPEAKER S1: Basically what I was going to say, um, you know, if we we should we should definitely try to, uh, achieve a consensus to use one format, because if we have separate formats, I think it's a recipe for disaster.\nSPEAKER S6: Yep.\nSPEAKER S2: Um, here are the. Here are the issues, um, on the repository. Um, I don't I don't have kind of I don't think any of them are, are particularly like urgent to answer right now. Um. Let's see, does anyone want to kind of dig into any of these today? I guess holler on the chat if one looks interesting to to dig into. Otherwise we could end early and and go back to the list to, to dig into, um, the binary format and the use cases.\nSPEAKER S3: I think we're lightly enough attended today and low energy enough that, um.\nSPEAKER S1: I'm just curious, what are we clashing with during the agenda on the agenda that, uh, it's probably drained people away from us.\nSPEAKER S3: Yeah.\nSPEAKER S2: I know, Priv probably pulled Martin away.\nSPEAKER S1: Yeah. So that's that's something we'll have to make sure we I just this is only for, like, the next time we do this to make sure that I get the, um, clashes correct.\nSPEAKER S3: Yeah.\nSPEAKER S1: Yeah, probably. Yeah.\nSPEAKER S3: I think, though, Jeffrey, it does seem like we're not going to get any public comment on these outstanding issues right now. So proposed resolutions on the list is probably the way to go next.\nSPEAKER S6: Yep.\nSPEAKER S2: Um, and hopefully we'll be in person next time, which will help improve energy.\nSPEAKER S3: Yep. Okay. Um. Well, Sean. Oh, wait. Felipe has something to say. Please, please.\nSPEAKER S5: Yeah. One question that I did want to ask is about clarifying the process for the next steps in the use case document, and basically to see also where, uh, where I can help.\nSPEAKER S2: You're asking how we make decisions about what to change in the use cases document.\nSPEAKER S5: Yeah. Partially that And also you know what the next steps would be.\nSPEAKER S2: I believe the next steps are for us to send a PR, uh, reorganizing the use cases document, and then we'll send that that to the list for comments.\nSPEAKER S1: Yeah, that's my understanding as well that if you if you go ahead and update the document and then people will comment, then I think you can engage. People will be engaged to be like, yes, that one is in or out, that the ones that are still in the front, at the front part of the document. Um, and then we can actually get to whether we're, we're done. And it might be as easy as just moving things. Um, and that would be great. And then we could focus our energy elsewhere. Um, I highly doubt that. I'm sure there's would be something that's controversial, but, um, I yeah, it's basically just reorganize the document and then we'll go from there, because now it's a working group document that one of the reasons why you want to submit the old version the way it is, is so that when you submit the next version, that's the oh one version of the working group, you can see what's changed as part of the working group document, um, process and all that stuff. So I think that, uh, yeah, if you guys can just get that, that the next version up, uh, when you're when, when available, that'd be great.\nSPEAKER S5: Okay. Thank you. Yeah. Then I guess we can coordinate among ourselves in the in the coming days.\nSPEAKER S1: The only, the only other thing I would add is just to make sure that, uh, you know, do it, do it in the GitHub so it's open and people can see what's going on. And if we have any questions, we can just refer them to the list. We can see, see the the list. We probably should go ahead and get uh w pack uh mailing list set up. So there are weekly summaries sent. I think Mark Nottingham has a cool tool that'll allow us to do that. And, um, so that if the, you know, the tempo on the mailing list, um, or the tempo in the GitHub repo picks up and the mailing list will automatically get, uh, cc'd with whatever gets changed.\nSPEAKER S3: I think Jeffrey popped on to say yes. I don't know exactly, but, um.\nSPEAKER S6: Sorry.\nSPEAKER S2: Yes, that is what I said.\nSPEAKER S3: Okay, the audio didn't actually come through, but it was brief enough that I thought that that was, uh, and, uh, Felipe must have done the same. Uh, you have to give it a half a second for the audio, actually, channel to connect. Um, but, uh, Sean, I think we are probably in agreement that, uh, much like we expected with only needing an hour session, I think that we're going to be ending early here at only half an hour. Right. Do you have any other business you need, Sean?\nSPEAKER S1: I do not. The only other thing is to think about is that, um, we do have other drafts in the working group. Uh, in our statement of work that we agreed with the ISG. And so at some point, we'll need to begin engaging on those. And I guess there's probably some other things that need to get done first. But, um, if you want to start working on those drafts, feel free. Um, you know, we basically will start the process the same way we did with the other drafts, with individual drafts that we will then evaluate and, you know, a run, an adoption call on. So if there if any of the other work items that are available on our that are on our charter, um, feel free to jump in there and start working on them. Yep. That's it for me.\nSPEAKER S3: Yeah. And I think, um, now you all have some time to go ahead and drop over to Priv or PC or whatever you like. Um, and we're going to call it here. Thanks again. Um, for the note taking and, uh, we'll see you on the list. Bye, all. Yep.\nSPEAKER S1: Thank you. Bye bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9908114785252755
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Folks, it's the top of the hour.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're going to give people a couple more minutes to see if they can straggle in, and then we're going to try to start.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I will note that I asked for an hour and they gave us two.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "So there's probably little chance that we will use the full two hours.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "A couple more people coming in, so that's good.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Give them like, we'll give another minute and then we'll get started.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "I think we've kind of waited long enough for people to show up.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess I want to welcome everybody to Wpac.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Um, at iATf 112.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the chairs are Sean and David.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we're here.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "I see the, um, our editors are here as well.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just a reminder, we're gonna record this.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, please, if you're not speaking, uh, make sure your your microphone is muted.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you want to come off, turn your video on when you're speaking.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "That's fine.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this room is small enough that it shouldn't really crash it.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's some links there for the useful things.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, for the links for the medico audio and the encoding.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "MD um, so next there we go.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Click on the next slide.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "This is the note.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, this relates to, you know, all the, the, um, IPR notices that we have, um, you know, had a working group, progress, all kinds of stuff.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "I'll get to the anti harassment things later in the code of conduct, the copyright and patents, basically.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you know anything about, uh, IPR in this space, you declare it before you participate.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "And that includes basically communicating in any way to the working group.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and next we're going to go you might have seen this in a couple of working groups where we're trying to trying to focus on the code of conduct guidelines.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this working group has not had this problem, but I think it's worth just kind of repeating everywhere.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "We've got an RFC that defines the code of conduct.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Um, basically the highlights are to treat colleagues with respect, um, speak slowly but slowly, which I sometimes have a problem with.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Um, try not to use slang so everybody can kind of get on, uh, and understand what's going on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we should dispute ideas by, uh, reasoned argument, use our best engineering judgment, find the best solution for the whole internet, and contribute to the ongoing work of the IETF.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and remember that we'd like this to apply everywhere, not just in not just on the channel, but also on the mic.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, jabber, echo, etc..",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "And the mailing list for that matter.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "I kind of know that that's us.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "The agenda is pretty straightforward, like I said.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I did request an hour, and they gave us two.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "So I basically just split it down the middle.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "We have two documents that we've adopted.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "We have more that we need to adopt, but these are the two that we're starting with.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and kind of just split them between use cases and bundle.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I do note that I put Philippes name on the bundle, uh, draft.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's probably just going to be Jeffrey.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that's really it.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "I we didn't have any particular slides.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "I thought we would basically just go to the, um, repo and start working through any issues and have an open discussion, unless anybody has any other ideas and wants to bash this agenda.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Jeffrey.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Cool.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I also asked Felipe to, uh, kind of discuss a little bit, um, about kind of his work and his team's work on, uh, bundle implementation progress.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so when we get to that section, um, I think he'll have, uh, some stuff to present.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, you know, I put his name in the right place, then completely.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Good call.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, alright, so let's get into the use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just gonna switch screens.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: There is one thing that we, uh, skipped right over, and that is.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "We need a scribe, please.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, yes.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Take notes into the code EMD.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, hopefully other people keep an eye on it, and the chairs will definitely go over it afterward.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "But somebody to get the initial set of notes into the code would certainly be helpful.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Call for volunteers.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Can't be, Geoffrey.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "He's busy.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "Is anybody else paying attention?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Mr.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Bishop, Mr.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Saab, can I implore upon either of you to perhaps pay enough attention for notes?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Is anybody listening other than Geoffrey?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "We only really need to highlight the decisions made.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "We don't really need blow by blow.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Minutes.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, Siobhan, I was encouraged by seeing your name, but I appreciate that you might have to duck out, so.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "We should have worked this out ahead of time.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, we did not.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Is there anybody who doesn't possibly have to duck out in 15 minutes?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, and Jeffrey has volunteered to write down the decisions, which also the chairs are capable of doing so.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much, Justin.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "We appreciate, uh, we appreciate that highly.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "And like I said, the chairs will go over the notes, um, to corroborate with, you know, our, um, sense of the meeting.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "And, of course, there's a YouTube video, so, um, that should be sufficient.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you again, Justin.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "And away we go with Jeffrey.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "So the, um, the use cases document is basically the the content that you all have seen before.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's still on my plate to to split out the, um, The controversial use cases into an appendix and leave the rest.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the in the main section.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I believe the the primary non-controversial use cases are um, basically the, the uh prefetch of, of content in a of like subresources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so, so just about everything else will, will go into the appendix.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Does anyone have particular.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then I'll also, uh, split out requirements.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, similarly so that they the only kind of essential requirements are the ones that, that are required by the, by the agreed on use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Does anyone have particular use cases that you, that you want to kind of see stay in the top section that, um, that kind of shouldn't move to the appendix?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "I don't hear anyone.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I'll.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "I'll proceed with that.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Siobhan is, uh, uh, free to go, please.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Can you hear me?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yes we can.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "We're good.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I'm not a use case, but, um, just wondering.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "And this might be addressed by the change you have, and.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "But just wondering why Subresource bundling was so low in the list of the use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Because I think they're ordered by priority.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, at least roughly by priority.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it was it was not kind of in the, in the top set of things that, that I was interested in when starting the, the work.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Um, kind of we were, we were looking at, uh, at ways to replace um, or ways to, to compete with native apps where you can share the, installation file.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it seems like there's kind of we can we can get partway there by doing subresources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a lot more consensus, um, in the community for, for doing subresources first.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so that that seems like the right thing to focus on initially.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Gotcha.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, Geoffrey, one thing I'll observe, too, is a couple of weeks ago, uh, Larry has, um, asked about this whole, um, my multi-part thing and that he wasn't suggesting we use it necessarily, but he wanted to add it as a use case and so on and so forth.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have thoughts?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um, perhaps that you could even then, uh, share with Larry on the list for others to digest?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because Larry keeps coming back to this, my multi-part thing.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so far we haven't seen energy in the group, um, to, uh, go down that particular path.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "But if you had, um, some, some relevant thoughts, that would certainly be welcome.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "The the multi-part kind of scheme like clearly.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Clearly the bundle format does compete with multi-part.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but the particular use cases, like multi-part is a set of formats rather than a set of use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so it, I think hasn't been clear.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Like what, what use cases in particular we're missing here.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this kind of the, the use cases that we've listed are seem like the ones that, that we want to focus on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I don't think Larry has said like, like here are use cases you're missing.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "He's just said, like, here's a bunch of multi-part stuff.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "You should you should look at at kind of completely replacing it.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "I I've also been confused on what Larry sees as the use case there, um, as opposed to the possibility of compatible formatting.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I will follow up with Larry on the list, suggesting that if he sees a relevant, specific use case there, that he follow up to you with actual suggested text.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "And and it I think we do I think we do replace most most or all of what of like the particular subtypes of multi-part like you can you can accomplish them using bundles.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Um and it yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "It's not clear what what in particular would need to change to replace the rest.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Great.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, I guess the question is, do we want to talk about the implementation experience or.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sorry, are we done with use cases?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "So we're done with use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "I guess the question is, should we talk about implementation experience?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Um, before we talk about the draft, I think that might be interesting because it might inform, um, the Bundle's draft.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "So do we want to give Felipe the the floor here and let him let him talk?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That is my suggestion.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Felipe, welcome to come to the front of the room.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Let me see if I can share my screen over here.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Hello everybody I am.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "You can see them.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "We're good.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm Felipe Arias from Hialeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "We've been working in partnership with io.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, feel free to reach out after the meeting if you have any questions.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "And this is a short update on the work that we have been doing on the use case of resource pre-loading.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Using bundle responses.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "You can have a look at the explainer for more details.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the general approach is that a page would provide a list of resources to preload, and then would send a request to the server with a list of those resources that are not in the cache, and then the server would reply with a web bundle containing the resources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Each resource can be stored in the cache individually, and our proposal restricts the origin and the path of the resources to those of the reference bundle file, and also enforces URL consistency in the sense that for a given URL, the server must return the same resource regardless of whether the request has been done individually or as part of a bundle.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Chromium has an implementation of a similar set of ideas, and we have an open issue there where we want to gradually converge towards a common complete specification.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "In the last meeting of the group, we discussed some changes to keep the spec as simple as possible and to focus on consensus functionality like Pre-loading well, also allowing for additional sector sections that may extend the format for specific use cases related to the implementation of this spec.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "There is a NodeJS module to create and read web bundles, and one of the things that we have been doing over the past weeks has been to update this tool to support the new, updated version of the spec, while also keeping compatibility with the previous version.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "So with this NodeJS module, we can prototype implement a server that is aware of bundles and is able to handle and manipulate manipulate them.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is a bit how the backwards compatibility works where the new version is used by default, but you can specify a previous one, and then the code in the bundle will be able to pick the right version.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "And this NodeJS module can also be used in the browser to get some experimentation.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "But we managed to do it, which means that since we have support for web bundles in the server and in the client, we can prototype the whole bundle Pre-loading use case.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "So that's what we have done.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Our client parses the declarations in the HTML file that lists the resources that the page wants to preload, and then sends an HTTP request with a specific header that lists the resources that are not in the cache.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "In the case of the prototype, we are using a service worker.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "So the cache is the service workers cache, and then the bundles or those requests are served by a small web server that supports bundle preloading with subsetting and is able to create bundles on the fly.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "So if the client requests only a subset of the resources that have been listed on the page, then the server can return only those resources in a in a new bundle.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "So this is how the current syntax that we have been using looks like, where you basically specify a reference web bundle file in the server and then list the resources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "And you can use Absolute or relative URLs for this.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "And this is just a draft.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one benefit of this prototyping strategy is that it wouldn't take much to try out different syntaxes for this.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "We have a couple examples at the moment in the repository.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "The first one is a very basic test where some resources are preloaded.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "And you can use the dev tools in the browser to see how those resources are retrieved.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And then one by one, they are made available in the cache.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So they are retrieved in one request, but then they become several entries in the service.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Workers can share this.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "The second example is a small react application that uses Webpack as a bundler tool, and in this case, bundle preloading is already able to improve the performance because the resources can be loaded in parallel in one single request, whereas by default what Webpack does is that it loads the JavaScript and then the JavaScript loads the rest of the resources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "So it happens in sequence, which is slower.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "So what have we learned so far?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Well, first that this approach works for prototyping and for trying out a solution for this use case.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "It already allows us to test the different scenarios where the solution might be used, and it gives us an easy way to experiment with different syntaxes for the HTML tags or for the HTTP headers.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So far, the performance is actually reasonable.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, using a service worker adds its own overhead, Head, but other than that, we are seeing that the solution has good potential for improving performance in the future, because we are seeing that we can reduce the number of, uh, requests, response round trips, we can parallelize, uh, downloading resources, we can put individual resources in the cache and so on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "And the next steps for this line of work is to have better integration for with boundary tools.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "So it's easier to try out in, in more use cases or in more pages.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one of my colleagues come is working on benchmarking this solution and comparing it with bundle tools and with other solutions.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we want to create more examples.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So we are really looking for ideas of Scenarios where people feel that this could be a good solution and something that they would like to to try out.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And a final thought is that I'm really wondering if this approach of prototyping and then iterating on that, uh, can also be applied for other use cases that we have on the table.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "And that's all for my short update if you have any questions.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Your last point.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Is there any reason that you think that the way you're going wouldn't work with the other use cases?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Not necessarily.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, some of the use cases are pretty specific.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure that they would be suitable for prototyping just with, uh, just in JavaScript, but it was more of a, of a general thought of whether this is something that can be, um, used to try out other scenarios and other and other use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Um, basically, because one of the things that we are looking for is to find, um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Areas where people would be interested in seeing this being being tried out.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: The some of the use cases, the more long term use cases, like being able to install a web app with kind of accurate trust, uh, can't be prototyped in JavaScript because you have to bootstrap somehow.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Like you can't install the service worker that that does the kind of that is the prototype.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you can't bootstrap somewhere, um, but for instance, the, the other use case that, um, the Chrome Origin trial is capturing where, um, kind of ads are being served as, as more self-contained subresources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that probably could have been prototyped this way.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I think so, I think so, because basically.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "What you need for that is just to be able to load the, the bundle and then retrieve each of the, of the resources.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "That's a good point.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Siobhan, please.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to say that they definitely believe that preload is the way to go, where the client can choose which resources it wants to load.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I do wish that the original trial also, um, had gone with that approach because I think anything else like where the client cannot choose to load would just basically be a non-starter.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "One of the things that we want to try out is some benchmarking because.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "We want to see, for example, what happens if the client requests a lot of resources in in one go.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Does that have a very big impact?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Does that create a very large HTTP request that then has to travel to the server and so on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "So those are the kinds of, uh, more edge cases that we, that we want to try out.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "That was oh.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Sean's back.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Well, Sean, were you moving on?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The same thing that I think that we've we drained the Q on that one that I think we're we're off to, um, Jeffrey to talk about the bundle.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: The the biggest question that I, that I discovered recently was, um, how to interact with, um, the new, uh, http working groups, uh, binary HTTP format, um, the kind of, uh, and I forwarded it to the list, but the, the direction that that seems appropriate to me is, is to try to converge them.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Um, even though that'll, that probably involves several changes to the, to the bundle format.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I was curious if people had thoughts on on anything about that, that binary representation.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well, the person most likely to have thoughts about it is unfortunately not in the room right now.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, and just not to be opaque or anything.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "That's, uh, Martin Thompson who's working on the other binary representation draft.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "So, as Siobhan has said in chat, um, convergence here would be good minimizing the differences.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, until we get a little bit more information, though, about what challenges might be involved there.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "You know, I think, uh, you and Martin have to start seeing how you can, um, work it all out and then what issues that that might bring up.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Let's see.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Who's going to.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Basically what I was going to say, um, you know, if we we should we should definitely try to, uh, achieve a consensus to use one format, because if we have separate formats, I think it's a recipe for disaster.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, here are the.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Here are the issues, um, on the repository.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't I don't have kind of I don't think any of them are, are particularly like urgent to answer right now.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see, does anyone want to kind of dig into any of these today?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "I guess holler on the chat if one looks interesting to to dig into.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise we could end early and and go back to the list to, to dig into, um, the binary format and the use cases.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think we're lightly enough attended today and low energy enough that, um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I'm just curious, what are we clashing with during the agenda on the agenda that, uh, it's probably drained people away from us.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I know, Priv probably pulled Martin away.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "So that's that's something we'll have to make sure we I just this is only for, like, the next time we do this to make sure that I get the, um, clashes correct.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, probably.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think, though, Jeffrey, it does seem like we're not going to get any public comment on these outstanding issues right now.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "So proposed resolutions on the list is probably the way to go next.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, and hopefully we'll be in person next time, which will help improve energy.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Well, Sean.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, wait.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Felipe has something to say.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Please, please.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "One question that I did want to ask is about clarifying the process for the next steps in the use case document, and basically to see also where, uh, where I can help.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: You're asking how we make decisions about what to change in the use cases document.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Partially that And also you know what the next steps would be.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I believe the next steps are for us to send a PR, uh, reorganizing the use cases document, and then we'll send that that to the list for comments.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, that's my understanding as well that if you if you go ahead and update the document and then people will comment, then I think you can engage.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "People will be engaged to be like, yes, that one is in or out, that the ones that are still in the front, at the front part of the document.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then we can actually get to whether we're, we're done.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And it might be as easy as just moving things.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that would be great.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "And then we could focus our energy elsewhere.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I highly doubt that.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sure there's would be something that's controversial, but, um, I yeah, it's basically just reorganize the document and then we'll go from there, because now it's a working group document that one of the reasons why you want to submit the old version the way it is, is so that when you submit the next version, that's the oh one version of the working group, you can see what's changed as part of the working group document, um, process and all that stuff.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that, uh, yeah, if you guys can just get that, that the next version up, uh, when you're when, when available, that'd be great.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Then I guess we can coordinate among ourselves in the in the coming days.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The only, the only other thing I would add is just to make sure that, uh, you know, do it, do it in the GitHub so it's open and people can see what's going on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "And if we have any questions, we can just refer them to the list.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "We can see, see the the list.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "We probably should go ahead and get uh w pack uh mailing list set up.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "So there are weekly summaries sent.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "I think Mark Nottingham has a cool tool that'll allow us to do that.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, so that if the, you know, the tempo on the mailing list, um, or the tempo in the GitHub repo picks up and the mailing list will automatically get, uh, cc'd with whatever gets changed.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think Jeffrey popped on to say yes.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know exactly, but, um.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Sorry.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes, that is what I said.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay, the audio didn't actually come through, but it was brief enough that I thought that that was, uh, and, uh, Felipe must have done the same.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you have to give it a half a second for the audio, actually, channel to connect.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, Sean, I think we are probably in agreement that, uh, much like we expected with only needing an hour session, I think that we're going to be ending early here at only half an hour.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have any other business you need, Sean?",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I do not.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "The only other thing is to think about is that, um, we do have other drafts in the working group.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in our statement of work that we agreed with the ISG.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "And so at some point, we'll need to begin engaging on those.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "And I guess there's probably some other things that need to get done first.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, if you want to start working on those drafts, feel free.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, we basically will start the process the same way we did with the other drafts, with individual drafts that we will then evaluate and, you know, a run, an adoption call on.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So if there if any of the other work items that are available on our that are on our charter, um, feel free to jump in there and start working on them.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "That's it for me.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "And I think, um, now you all have some time to go ahead and drop over to Priv or PC or whatever you like.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we're going to call it here.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks again.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for the note taking and, uh, we'll see you on the list.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Bye, all.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9908114785252755
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Bye bye.",
+            "confidence": 0.9908114785252755
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T15:10:47.318112+00:00",
+          "processed_at": "2026-01-27T15:10:47.318112+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "n1xl9l3pqi"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9908114785252755
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

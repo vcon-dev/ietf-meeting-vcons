@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "372322dc-ba84-413b-bbca-eeb7cd1692d8",
   "created_at": "2026-01-03T19:29:18.313050",
-  "updated_at": "2026-01-03T19:29:22.612750",
+  "updated_at": "2026-01-27T13:40:41.298998+00:00",
   "subject": "IETF 111 - COSE Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=lInuuo4Zejo",
       "meta": {
         "ietf_meeting": 111,
         "working_group": "cose"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 111,
         "location": "Online, US",
@@ -50,10 +49,10 @@
         "start_time": "2021-07-26T21:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "cose",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/agenda-111-cose",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/bluesheets-111-cose-202107281430",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/minutes-111-cose",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-cose-ietf-111-cose-chair-slides",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-cose-c509",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-cose-cose-x509",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-cose-introduction-to-pairing-friendly-curves-representation-in-jose-and-cose-draft",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/agenda/cose/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-111-cose",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -7583,6 +7583,3862 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Let's give people one more minute and then we will get started. Well, first, I'll thank Brian Campbell for letting us use this image of the city where we all were hoping to be this week. Um, we'll see if this is the last virtual ITF in this pandemic period or whether we're going to Madrid, hopefully. Um, Like all the ITF meetings, this is covered by the note. Well, um, you'll find this in the chair slides online and many other places. Um, essentially saying that, uh, you should participate, uh, with the knowledge that your contributions may be used at the discretion of the ITF and the working group. We have an hours meeting. Um. This is the agenda we have. Um, so the administrivia we're in the middle of, we'll talk about document status. Um, Ivo will talk about the x509 status. The editors will talk about the C encoded cert status. uh, Kyle den Hartog will talk about, uh, individual draft, proposing to register some curves. And that actually brings up a question that the chairs and Ben thought it might be useful to have, which is what criteria we want to have for registering additional algorithms within the working group. So importantly, we need people to participate in note taking for us to, um, have an official meeting. Uh, so I would like to ask the people present if one or more of you would be willing to collaborate in the, uh, uh, collaborative note taking session there. Looking for volunteers.\nSPEAKER S2: So. I. Like the action items. Mostly not. Blow by blow. Discussion.\nSPEAKER S1: Okay. So we have your audio is not great, but I think we have a minute taker. Is that correct?\nSPEAKER S2: Yes.\nSPEAKER S1: Okay, great. And, uh, I'd like some people to also be monitoring the jabber and feel feel free to interrupt me or the other presenters if something comes up in jabber that you feel should be discussed in real time. All right. Are there any amendments that people would like to make to the agenda? Before we continue?\nSPEAKER S2: It was noted that there is rat U6 that might be worth discussing at the end if we have time.\nSPEAKER S1: Okay. Um, who proposed that?\nSPEAKER S2: Christian did.\nSPEAKER S1: Okay. Thank you. All right. Um, these are the documents in the working group repository. Um, there are three of them. Which are the best documents to take Cosette to internet standard status. Those are in off 48 with the RFC editor. in lieu of Jim Schad not being Matt Miller, is, uh, responding to the comments in order to get this done. So look forward to three new working group. RFC internet standard status not too long. Uh, Russ is leading the countersign effort. Uh, Evo is, uh, in charge of the x509 effort, and the editors are leading the cbor encoded cert work. Are there any comments that people want to add to document status? All right. Well, if that's the case, um. first, um, Matt, I know you don't have slides, but is there anything that you want to say about the, uh. The best documents?\nSPEAKER S3: Well, first, Russ had joined the queue. I think he had something you wanted to say.\nSPEAKER S1: Okay. Go ahead. Russ.\nSPEAKER S4: I just wanted to say that with countersign. I think we finished working group last call, and, uh, we're just waiting on the chairs to push the publish button.\nSPEAKER S1: Okay, I will take that up with the other two chairs after the meeting and determine if they agree that that's the status. Unless either of you want to speak up now. Either confirming or disagreeing with that assertion.\nSPEAKER S4: Yeah, well, if it's not the case, please point me to the unresolved comments.\nSPEAKER S5: Who is the shepherd for the document?\nSPEAKER S2: That should be Michael Richardson.\nSPEAKER S1: Okay, um. We will look at that. Thank you. Ivo, do you want to talk about. The X509 document?\nSPEAKER S2: Uh, yes. So. Basically, there are a few open issues in GitHub and some merge requests in GitHub. And, uh, there is a proposal to add some additional text to the document. Uh, so let me walk you through the different, uh, points. Uh, there is a merge request from Ben and Michael Richardson. I believe those are uncontroversial. And, uh, I intend to merge them. Um, then there is one suggestion. I think it was from Francesca to, uh, add a reference, uh, to the document. That should also be uncontroversial. At least that's my opinion. If anyone thinks otherwise. Please let us know. Uh, and, uh, then there are good number of issues that, uh, should be resolved with, uh, merge requests. Uh, uh, from Jon, uh, Jon Madsen. And, uh, there was a discussion with Ben going on in this, uh, um, merge request or pull request. And I think that, uh, uh, the point that I know for this thing is that, uh, we were waiting, uh, Ben, to save the new text resolves his concerns. Uh, so, Ben, if you could check this, uh, that would be really appreciated. And, uh. yes.\nSPEAKER S6: Yes, I will try to do that in the next week or two.\nSPEAKER S2: Okay. Thank you. And, uh, then there is, uh, one extra issue that was, uh, suggesting, uh, not using, uh, uh, strings at all, um, for representing some data. In some cases right now, we can either have like a binary string if, uh, we have only one element present or we have an array, uh, if we have multiple elements. And there was a suggestion, uh, to simplify the protocol by removing one of the options, uh, my personal opinion is that, uh, this might be inconsistent with other places where we are supporting both. And, uh, I'm inclined not to, to take this suggestion. Um, but, uh, as other people have other opinions, uh, uh, I would be interested to know. And the last point is that, uh, we were discussing during an interim meeting that, uh, probably it would be good to add some more text. What exactly is causing x509 protecting, uh, other people from so Have that text. I'm not sure I would be the best person to write it. Is there anyone that feels they might be? Having the opportunity to do that and, uh, appropriate knowledge to do that. You can also reach out to us, uh, after the meeting. Uh, otherwise we will discuss, uh, and try to, uh, build people individually or collectively with the other chairs. Try to write, uh, such text. Uh, so from my point of view, those are all the open questions for this document. I really hope we will be able to finish it soon. And there are some external dependencies on the document which, uh, kind of try to urge us to finish it sooner. So or at least, uh, provide feedback if we would be changing anything substantial. Uh, so, yes. Are there any questions or comments? I will take that as a no. So, um. Yes. Let's, uh, try to resolve the last point, and, uh, uh, I will prepare changes for the or resolve the first few ones, and hopefully we'll be able to ship this soon.\nSPEAKER S1: Alright. Thank you. Eva. Um, I believe the next thing on the agenda is the cbor encoded cert presentation. Um, and I invite the presenter to share those slides at this point. Or if you're not sure how to do it, I know how to do it by sharing my screen, which is.\nSPEAKER S7: I have requested to share their. So okay. Here it comes.\nSPEAKER S1: Again.\nSPEAKER S7: So this is a keyboard encoded x509 C509. Uh, this presentation, I think it will be quite quick and it's a bit recap from the previous interim since 110. Uh, we are now at zero two. And most of the changes we have, uh, is um, we have implemented a lot more extensions, both from RFC 5280, as well as some other extensions that are used for different certificate profiles. Uh, we have new things are our PKI, and Russ was, uh, nice enough to provide us with the example certificate, which we now support. We also read the DSM, uh, certificate profile for USC and adopted the spec to be sure to support that. Michael has provided a divide cert. The spec should be compatible with divide, but I will as soon as I have time. I will test my implementation and spec with Michael's Test certificate an update if needed. It's been updated based on comments from Hillary and Michael. Thanks. A new is that we have test and coded a lot of certificates. Certificate and certificate bags. And we now have tables illustrating the size differences. Let me show them here also. Uh, we have added uh initial C CDL for assigning requested certificate revocation lists. Uh, there is a new section on how to implement this in CA, or describing how it can be quite relatively easy as you can be compatible with you, some of your or most of your existing code. Uh, we have released source code for this and there is more source code progressing from Fraunhofer. Uh, so said we the draft now supports, uh, all the extensions in five, two, eight, zero or at least all the certificate extension. I think the some CRL specific extensions that are not supported yet. Uh, the following are extensions are fully supported. Then there are more extensions that are only partly supported. And basically every certificate we have seen is supported. But there are some more exotic options or combinations that we do not support in the seaboard. Encoding. Um, and more comments on this would be very we would be happy to receive. Then there's here more extensions that are also partly supported. And here we have, for example, the Ace resources and the IP resources from, uh, from our certificates. Uh, the CSR looks like this. Um, and uh, this was very easy to specify using all the existing definitions. Um, I think we right now, it's specified that you can request two types of, um, both types of certificates and uh, the, uh, the, the format is compatible with The RFC 2980. I think the use cases require some further discussions. We are also not testing this. Uh, there was some discussion of the signature format. And I think also we have comments that attributes are needed for extensibility that needs further discussion. Um, we have done a similar thing for CRL at some earlier interim. It was yesterday that uh c509 should support, uh, signing requests, CRL and Ocsp. Uh, I have done the first draft on CRL. That was also very easy to using the existing definitions. I think there are some certificate CRL extensions that are not supported Cbor encoding of them are not supported. These have not been tested. Um, I think there could be a discussion if we want. Is the group still wanting CRL and UCSB and should then should they be in the same document or should they potentially be another? Um, right now this seems quite easy to include in the same document. Uh, here is a table showing the sizes, uh, of course, X509 and cozy c509. Um, and it's the first is very typical IoT certificate. And there's where c509 do a very big, quite big relative, um, difference and General compression algorithm doesn't work. Uh C509 also compresses uh HTTP certificate chains quite much. Um, and uh, here's two examples. This is ah w-w-w-what and tools dot dot. Um. The next is we've also implemented tested how C509 works in TLS. In TLS it's specified as a new certificate format so it can be combined with certificate compression. Uh, basically you have done and if you use C509 as a certificate compression of C5 seven, then you basically can get two layers of compression. Um, here you can see that Brotli does not work for the IoT certificate. Um, and we can see that Brotli does not work on top of C5 zero nine in that case. Um, then we have the Rpca certificate, and we can see that zero nine is to start with, a bit more efficient than just brutally. And that both combined, uh, provides, uh, basically one of them provides half size and both of them provides, um, quarter size. And this is quite a large difficult I don't know how, uh. How that well, that represents the average Rpca certificate then three different, two different same change and a bag. And uh, as you can see here, uh, what you can get are if using both z509 and brutally, you shave basically 400 bytes for this https shames. Um, and Z509 alone works for short change, but is not very effective on large shades as it only currently take each certificate individually and there is no it cannot compress anything that is common between certificates in the same chain. But see, using them both provides a benefit over just broadly. Um link for these are the two main things. Uh.\nSPEAKER S3: John, we have we have a question in the queue.\nSPEAKER S5: Yeah. I just wanted to mention that John, uh, provided me with, uh, um, copies of those chains on the previous slide, and, uh, I wanted to apply Cyber Pack to it just to see what happens. Um, unfortunately, I uncovered a bug in my pack, uh, uh, implementation, and I haven't had time to fix that, so I would love to report numbers today, but maybe on Friday in the cyber meeting.\nSPEAKER S7: Yeah. Okay. Looking forward to that. Um, and here is an issue. That I think, um, conclusion on that one option would, could provide broadly in the C5 zero nine. But that's not very useful for IoT. We discussed that in the interim. And that need should discuss what the use cases for that should also discuss if seaboard packed, uh, how that works. Or it can if it can be used to work better. I think this is a better solution for IoT devices. Uh, next step. We have quite a lot of GitHub issues that can be closed. We will, uh, using the software provided by Michael to compress that and fix any things that if it doesn't work, uh, I will also release some updated version of the my software. I found some bugs, and I have now implemented at least most or most of the, uh, extensions almost. Or maybe some is missing. Uh, then we have this certificate, chain bag compression. Uh, we will looking forward to Karsten's results with Seaboard Pact and we will specify a file format. One or several for maybe certificate and CRL or different based on graft rejection. File magic. Then more validation of different certificates. Test compression of CRL. I think more of you are very welcome. Um, I think the base, the core specification for IoT certificate 9 to 5 seems quite stable at this point. It has not changed for quite many versions. Any questions or comments? Um. I definitely dropped. Yeah. Yeah. No questions. Then I closed up.\nSPEAKER S1: All right. Thank you. John. Um. The next speaker on our agenda is Kyle Den Hartog, who will be talking about an individual draft, um, about possibly registering pairing friendly curves. Um, that Hopefully we'll all learn some things and get something, uh, some useful actions out of this. Uh, Kyle. Go ahead.\nSPEAKER S6: I'm not seeing Kyle in the participant list.\nSPEAKER S1: You are correct. I was just scanning that as well. Um. He is in New Zealand, so the time may not have been conducive. He's usually very responsible, but, um. I don't know. Do people want me to step through his slides, which I have not read in detail and at least have us review them? We can do a PowerPoint, if you will.\nSPEAKER S6: There does seem to be enough text in the slides that it could be worth that, especially given that I don't think there is much else on the agenda.\nSPEAKER S1: Yeah, the only other thing is AOB. So let's go ahead and uh, try to do that. And this time I figured out, with the help of my co-chairs, how to use the slide presentation functionality. Um. So, um, for the minutes, I'm curious what fraction of you. Of course we're not in person. Uh, I can't just tell people raise hands easily. I'm curious how many of you have heard of what they call pairing friendly curves in the cryptographic literature? Maybe those of you who know something about it can say something in the chat. Uh, just for the record, um, these are used for zero knowledge proof algorithms, um, some of which are being used in the decentralized identity world at this point. That much background? I do know for sure. Um, so Kyle authored this, uh, there's a company in New Zealand matter that he and some other folks I know are working on, uh, did based identities using verifiable credentials. And there's a scheme for zero knowledge proof called BSS plus signatures. Um. Let's see. Dan Bennett is who's a long time ago Usenix friend of mine is one of the BES, um, who was the inventors of that signature scheme. And there are choice of curves for this scheme is something called BLS 12 381. And there's different representations of that. And currently there's no either Jose or Cozy, uh, registrations for those curves or any of the friends of theirs. So what they've done is. They, uh, and there is a irtf document, as he points out, on pairing friendly curves, and that this builds upon that. So the notion of pairing friendly curves is, uh, known to the irtf, which are our crypto experts. Um, and it does registrations for the 128 bit security and 256 bit security curves, um, for these curves. Um, number of points, which you can read as well as I but, um, one of them is what's the best way to encode the keys? Um. So in this working group, we would probably say use a keyboard, web key and the Exposé working Group. We would say you want to use a Jose representation. I know there's other representation representations in the wild, uh, for compressed point curves, um, that just used the number in the Did world. I'm not advocating that, but I think that's what he's doing. Um. So I'd asked a question to Kyle offline. I felt like this was kind of incomplete because curves without corresponding signing algorithms or at least saying how to make use of them, uh, sort of don't give us an end to end solution. Now, I recognize that in his use case, um, there's a W3C community group defining the use of this particular VBS plus scheme, and so this would support that. But in general, I would think in the IETF we want to have sort of end to end registrations to make things, uh, usable. Uh, there's a notion of subgroups to be used with the curve, which I am not enough of a cryptographic mathematical expert to be able to explain that to you. Um, I know some of the proposals have just said, uh, represent the subgroups as different curves. There's other possibilities. Um, he's asking what would be the best path forward for this draft. Um, and the last bullet I really can't speak to about curves registered with prohibited status. I don't know, is anybody on the call enough of an expert to shed any light on the last point.\nSPEAKER S6: So I will, I guess, chime in unless Jonathan wants to join the queue. But my understanding here is that the Bn2 56 G1 and G2 are going to correspond to these subgroups that were in the third bullet point. And so my sense is that in general, it's good to have identifiers for these things if we are going to need to refer to them. And the code point space for curved names is not particularly scarce. So on the face of it, the proposal to to register these, but to have in the comments or other notes an indication that these are sort of placeholders, they're not expected to be used for actual signatures, but they might appear in protocol elements that require a curve for some of these other, um, uses that take advantage of the parent friendly nature of these curves. Uh, so on the face of it, the proposal to register them but give them a prohibited status does seem to make some sense. But I will yield to Jonathan, who has gotten into the queue.\nSPEAKER S1: Jonathan. You are muted.\nSPEAKER S8: Yeah. Double click. Um, yeah. So the the issue with the BN 256 curves is that there was, there was an attack that reduced they, they were believed to have 128 bit security, but there was an attack that reduced the security to 100 bits. So um, generally there were they were, uh, well deployed. But there's been a number of efforts in different standards organizations to define new, uh, more secure, uh, Ben curves.\nSPEAKER S1: Okay. Thank you for that background, Jonathan. I'm going to move to the next slide. Um. And he's asking for questions. Um, does anybody want to say anything else about this draft for the meeting minutes?\nSPEAKER S5: Well, I think the the. Sorry. Um, I think the one thing we need to discuss at some point is the, um, format. So there are several references to SEC. One, uh, here. Is that really the format we want these, um, to be in? Um, or do we actually use something more like. Okay. Um. So, um, yeah, I haven't read the IETF draft. This is, uh, apparently based on. So that seems to be stuck on the, uh, document Shepherd for 54 days. So we probably have to ask Stanislav, uh, what status that has.\nSPEAKER S1: Then.\nSPEAKER S6: Um, sorry, I thought I had seen your on in the queue as well, so I thought I was gonna have a little bit more time. Uh, on the question that Carsten raised about the SEC one encoding versus okp, that might actually tie in nicely to the next item on the agenda, which was about the criteria for registering additional algorithms. Uh, I think I had kicked off a little bit of a thread that touched on this topic as well, and it seems like the general sense or I hesitate to use the word consensus, but the general sense I got was that the oqp is generally going to be preferred if there's no specific reason to prefer CC1. Um, and so I, I would support that since, you know, if, if we can use Oqp that would be good. So the question I guess would be then to Kyle or to anyone else about whether there's existing deployments where these curves are strongly associated with the SEC one encoding, uh, because we don't want to go off and do something different just for the sake of something different. Uh, we should try and be consistent with the ecosystem as it stands.\nSPEAKER S1: Okay. Any more questions? Otherwise, I propose that we move to the next topic, which was actually prompted, um, among the chairs because of this presentation. Um, um, like both to pick, uh, the brains of the working group members and, uh, possibly Ben as Adi on how should we be thinking about when it makes sense to accept a draft, uh, to register new cryptographic algorithms and curves and what criteria we want to apply. I know we are chartered for being able to do that. Stay in existence forever, but there may be some additional algorithms and curves coming our way. Um, I'm here to listen, not to, uh, drive that. So it's open mic on what? Algorithms and curves. We should be registering and why? And I'll let this go about ten minutes, and then I'll try to save the last ten minutes for AOB.\nSPEAKER S2: Yeah.\nSPEAKER S1: Uh, Brandon. Go ahead.\nSPEAKER S9: I think there's a big argument to be made for, uh, starting to register some pqc algorithms. Uh, there's obviously going to be a lot of interest in that, uh, especially once the NIST competition finishes. Um, and certainly there's already been some discussion of these where, uh, stateful hash based signatures are concerned. So I think that we should probably consider, uh, taking a role in registering pqc algorithms.\nSPEAKER S1: Um, let me just ask a follow up question. Uh, can you educate us for 30s on the nature of the competition that you're describing and what the outcomes are expected to be?\nSPEAKER S9: So, while I'm by no means an expert, um, my, uh, on on this topic, my understanding is that there is an ongoing competition for both key agreement and signing. And so as such, it fits in where, uh, we use, um, ephemeral static, uh, for example, um, and we would probably want to consider something in a similar, uh, space. Um, and likewise, there's a number of uh, of algorithms for, uh, for signing as well. Um, now, obviously, uh, I think rust has already put through, um, one on the, the topic of stateful hash based signing. I think we've already registered that algorithm. So, uh, along the same vein, I would argue that we probably should be prepared once that, uh, once that finishes to look at, uh, registering algorithms for the winners of the um of the NIST competitions.\nSPEAKER S1: That certainly makes sense. Um, Goran. Go ahead.\nSPEAKER S10: Yeah. Um, I'd like to chime in also on this on this discussion. So I'm one of the designated experts for certain co c um, code points. And uh, together with Derek and Sean, we sort of we were very happy with Gymshark being around because he was, uh, very, um, eager to provide input about registration requests. So we we basically followed his advice and, uh, when we now have been asked to review, we have been looking looking at the patterns in RFC 81, 52 and so on. Admittedly, it's not. It's not always clear how these registrations should be made. In some cases it's quite clear. Um, but there are there are corner cases and so on. Um, so, I mean, Jim, he knew, uh, very well about Jose and kicks assignments. So it's it's definitely a conscious decision here. Um, and some of the constructions are made for good reasons. So like, uh, for example, issues with truncation of hash algorithms and how you need to be explicit about that. And there are rules like which I mean which, which we may, may want to deviate from. But that's there at least are are rules. Now in the current allocations, like signature algorithms are typically bundled with a hash function to predigest the signature input, but they are not bundled with elliptic curve. Instead, algorithms use specific key type and the key will indicate the curve. CRV is one of the key parameters. And another example is Diffie-Hellman algorithms, which are bundled with this designation of ephemeral static, static but not elliptic curve, and so on. And then there are also exceptions like this is 256 K which is bundling uh also uh with with hash algorithm and curve. So I just want to say that if we are deviating from what's currently defined in the code, we do want to open, open make coke available for for many other STOs and and deployments. I think that's really good. But if we want to change a lot, then we need to proceed quite carefully because we risk creating a greater mess than it's already there. So we should have a plan for, I think, for for how to deviate from that or what how to assign Which probably is something we won't crack in a working group meeting. It probably needs a larger effort beyond that. Another item I'd like to add is that in particular, we should be careful with short identifiers. They are handed out to applications that really need that. So PK algorithms would would probably not fit into the category of short identifiers.\nSPEAKER S1: Yeah, sure.\nSPEAKER S10: That's my $0.02.\nSPEAKER S1: Kirsten, you're in the queue.\nSPEAKER S5: Yeah, I got in the queue to just quickly say that just because in this competition is complete, doesn't mean that we have an algorithm to register, because they usually need some time to write up the result and to derive some, some actually, uh, standards, uh, um, compatible. Uh, description of uh, what, what they actually, uh, have. Uh, but on on John's point. Um, I think, uh, we we really need to address this. Uh, I think we actually should write a document that explains our, uh, the guidelines that we are using. Um, that will probably at some point become a BCP. But I think it's important that we start writing these things up. So it's not just law that is traded, uh, from the engines, but, uh, we can just point to a document. Look, this is what we have decided. And so one of the things that Ben just said, uh, we prefer okay, over one, but, uh, yeah, uh, how would a registrant know that? Uh, so I think we really have to write this up and start a new document with this, this BCP information.\nSPEAKER S1: Good point. I do know, um. that, you know, from Josie and some other contexts. We wanted things to be registered that we expect to be commonly used. Uh, not that you couldn't register esoteric things, but, uh, there's also the criteria that you, the designated experts, at least want to believe that, uh, there's been. A public cryptographic analysis of the safety and effectiveness of the algorithms. Um, this is where, you know, I'm a complete novice in the pairing friendly curve space, for instance. I would want to defer to the CFG and our other experts about which of these probably passes muster. That said, we don't want to, um, Uh, make experimentation hard by not having common algorithms. So let's see. I'll recognize Brendan. And then I'd like to ask, uh, to close this out. If Ben wants to say anything from the, uh, ISG perspective. Brendan.\nSPEAKER S9: Uh, yeah. So one of the things you just mentioned, um, brings up an important topic. Um, you said that you you want some kind of indication that there's been cryptographic analysis and that algorithms we register have had some kind of security review behind them. Uh, so that brings me to the question of what do we do about independent submissions that register a, an algorithm identifier, uh, to an outside observer? Those might appear to have exactly the properties you've mentioned, but because they haven't gone through, uh, the regular stream, There's there's no expectation that they have had that review. So I'm just curious what the working group's take on that is.\nSPEAKER S1: I do know that our registries have a field for, uh, the documents that, uh, in which that analysis was supposed to have been done so we wouldn't even accept a registration if there's no evidence provided. I'm not saying that's a fail safe check, but it's a start.\nSPEAKER S9: Okay. Thank you.\nSPEAKER S1: John. And then I'm going to ask Ben to speak.\nSPEAKER S7: Uh, yeah, I, I think the current recommended column which have is it can be yes or no recommended is maybe too little. I think it would be good to have more Flexibility here to add more information. Um, uh, similar discussions have been had in the TLS working group, which also have a single recommended column. And I think the conclusion earlier discussions is that that's not enough. It should be updated in the future. Um.\nSPEAKER S1: Indeed, Jose has more granularity as a result of some input from Sean Turner when he was Add. But uh, because A is binary, although I think we have a deprecated or prohibited value as well as yes or no, but. Okay. Uh, Ben, do you want to make any closing remarks to this discussion and then I'll move on to AOB?\nSPEAKER S6: Yeah. Uh, thanks for passing it over to me. Um, I think the points that definitely that you're on and Castner were making our good ones, that it would be good to have some clarity about our expectations, and to write it down for so that it's available for people who are asking for registrations. Uh, it's definitely not something where we resolved in this session or we're planning to resolve in this session. I mentioned in the chat, I hopefully Kirsten can volunteer to help start writing those down, uh, in the form of a draft. Um, and so I look forward to seeing that kind of guidance written up. I think it's within the current charter to be able to do that. And it's very useful to do. Um, so I think there's potentially a new milestone that we should put into the data tracker for the working group to to track this work and how quickly we think we can do it. Um, but I think there was some good, uh, good comments and some good suggestions here, so hopefully we can continue the discussion on the email list.\nSPEAKER S1: All right. Thank you all. Um, let's go to AOB. And there was a request to discuss the rats UX draft. Uh, please come to the queue and, uh, speak. Hank, what do you speak?\nSPEAKER S11: Yeah. So, hi. I'm just, uh, pressing buttons, so. And I'm here. Let me let me turn on my camera. Um, hi. Um, so I assume there's a question associated to the topic of UX.\nSPEAKER S5: Well, the first thing is that we maybe could say what it is.\nSPEAKER S11: Oh, okay, I see.\nSPEAKER S5: CWG is by definition always protected with the code. Yeah. Um, and around it and uh, it turns out you sometimes want to interchange unarmored, unprotected, uh, data structures that contain the claims sets from CWG. So, uh, I mean, this is technically entirely trivial, but we have to write it up. And we probably also have to write up some security considerations because, uh, yeah, these are not. So you cannot use them the same way you would use C code. You would use them in communicating about things that might go into a CWG, and you would use them on secure channels. And we have to to describe what the properties of these secure channels are and so on. So this is what the the UX document is about. And Hank has more about that.\nSPEAKER S1: Okay. That's very useful. Go ahead.\nSPEAKER S11: So Jim did not like this. So so it's it's a null cipher in uh no.\nSPEAKER S12: No no no no no no no no no no.\nSPEAKER S5: No no no no no.\nSPEAKER S12: Let me.\nSPEAKER S11: Let me finish.\nSPEAKER S5: Looking like a. So you cannot confuse it with a like finish the story.\nSPEAKER S11: Let me finish the story. So Jim didn't like this because he said it is like a JWT with a null cipher, which it is not because. The the J.W.. The null cipher are much worse. That is correct. So so if you mean that.\nSPEAKER S1: Is it just the CW claims without the cryptographic wrapper.\nSPEAKER S11: There is a definition in C1 that defines claims sets, and it is exactly that. It is so so so. But but we want to retain um, the guarantees that you that that comes with the C1. So now you need an alternative. And the alternative is the conveyance method here. And uh, that, that is then providing this the same guarantees and uh, the would have done an object security and, and and that is, that is unfortunately application specific. So the guarantees you expect from a CW are intrinsic to the object of CW, but they are not intrinsic to the arbitrary channel that is secured somehow. So these channels have to be established under certain Circumstances. When you receive something that is a claim set, then you suddenly are burdened with responsibility. Maybe it's the burden of the responsibility of the issuer. Maybe it's a dedicated role that you define in your scenario, and therefore you can't just define UX as the claim set that are encased in a one and done. No. You have to always provide. And I think there was Carson hinting at a security consideration that is specific to the user scenario. And uh, and uh, but but but the the core of course, is relatively easy. It's an unprotected claim set. Yeah.\nSPEAKER S5: Yeah. I think it's important to to clarify this because the UX is an unprotected claim set. It's unprotected, and the rest of the document is a little bit speculative and tells you what properties a a secure channel might have to have so you can make useful use of an UX in the same way that you could make use of a CWG. And it's a bit unfortunate that that we we are forced to put the two things into a single documents because it really confuses the issue. But that's where we are.\nSPEAKER S1: I state not wearing my chair hat. Just as a point of comparison, OpenID connect does utilize a jot cloud set in one flow without it being a jot. There's this thing called a Userinfo endpoint, which must be protected by TLS, where you send claims about the end user, such as your first and last name. If you choose to disclose those that are just sent as bare claims. Now they use the Jot registrations, but they're protected by TLS, not protected by W.S. as a point of comparison that is in the wild.\nSPEAKER S11: I think we have to, uh, if it's comparable, we have to check that because every, um, let's call it, um, similar example. A proof of concept here is, is, is, uh, extending the, the intuitive, uh, yeah message that we want to convey here. Uh, but it is not intuitive unfortunately without context and, and yeah, maybe in another example would provide that. Thank you.\nSPEAKER S1: I'm putting that into the chat for the minutes.\nSPEAKER S12: Yeah.\nSPEAKER S11: For the thank you. So there was a lot of arguing and we are closing to the bottom of the hour. But there was a lot of arguing. Uh, can we just say UX as a standalone claim set? And I think the, uh, still, I'm convinced that the answer is no. It has to be context specific due to their security considerations in the context.\nSPEAKER S1: Okay. Well, this is certainly a relevant topic. Thank you for the explanation. We are at time. Does anybody want to make a final remark or otherwise? We'll, uh, end here and thank you for your participation.\nSPEAKER S6: Yeah, I was just going to jump in to say thanks to Henk and Kirsten for letting us know about UX and why. It's not as simple as it might appear. Um, it seems like we should probably continue discussion about that on the, um, the rats group that's in Kirsten. on the appropriate list where the document is actually homed, which I'm pretty sure is rats, but we'll check shortly. Uh, but thank you again for bringing it up here. That was all I had to summarize.\nSPEAKER S1: All right. Thank you all. We'll see you in another meeting or on the list. Take care. Bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9846498670381157
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Let's give people one more minute and then we will get started.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Well, first, I'll thank Brian Campbell for letting us use this image of the city where we all were hoping to be this week.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll see if this is the last virtual ITF in this pandemic period or whether we're going to Madrid, hopefully.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Like all the ITF meetings, this is covered by the note.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, you'll find this in the chair slides online and many other places.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Um, essentially saying that, uh, you should participate, uh, with the knowledge that your contributions may be used at the discretion of the ITF and the working group.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "We have an hours meeting.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "This is the agenda we have.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the administrivia we're in the middle of, we'll talk about document status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Ivo will talk about the x509 status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "The editors will talk about the C encoded cert status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "uh, Kyle den Hartog will talk about, uh, individual draft, proposing to register some curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "And that actually brings up a question that the chairs and Ben thought it might be useful to have, which is what criteria we want to have for registering additional algorithms within the working group.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "So importantly, we need people to participate in note taking for us to, um, have an official meeting.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I would like to ask the people present if one or more of you would be willing to collaborate in the, uh, uh, collaborative note taking session there.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Looking for volunteers.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "I.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Like the action items.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Mostly not.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Blow by blow.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Discussion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "So we have your audio is not great, but I think we have a minute taker.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Is that correct?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, great.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I'd like some people to also be monitoring the jabber and feel feel free to interrupt me or the other presenters if something comes up in jabber that you feel should be discussed in real time.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any amendments that people would like to make to the agenda?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Before we continue?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: It was noted that there is rat U6 that might be worth discussing at the end if we have time.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Um, who proposed that?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Christian did.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Um, these are the documents in the working group repository.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there are three of them.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Which are the best documents to take Cosette to internet standard status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Those are in off 48 with the RFC editor.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "in lieu of Jim Schad not being Matt Miller, is, uh, responding to the comments in order to get this done.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So look forward to three new working group.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "RFC internet standard status not too long.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Russ is leading the countersign effort.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Evo is, uh, in charge of the x509 effort, and the editors are leading the cbor encoded cert work.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any comments that people want to add to document status?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Well, if that's the case, um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "first, um, Matt, I know you don't have slides, but is there anything that you want to say about the, uh.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "The best documents?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well, first, Russ had joined the queue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "I think he had something you wanted to say.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Russ.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: I just wanted to say that with countersign.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "I think we finished working group last call, and, uh, we're just waiting on the chairs to push the publish button.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, I will take that up with the other two chairs after the meeting and determine if they agree that that's the status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Unless either of you want to speak up now.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Either confirming or disagreeing with that assertion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, well, if it's not the case, please point me to the unresolved comments.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Who is the shepherd for the document?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That should be Michael Richardson.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "We will look at that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Ivo, do you want to talk about.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "The X509 document?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, yes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, there are a few open issues in GitHub and some merge requests in GitHub.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, there is a proposal to add some additional text to the document.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so let me walk you through the different, uh, points.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is a merge request from Ben and Michael Richardson.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "I believe those are uncontroversial.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I intend to merge them.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then there is one suggestion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was from Francesca to, uh, add a reference, uh, to the document.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "That should also be uncontroversial.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "At least that's my opinion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "If anyone thinks otherwise.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Please let us know.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, then there are good number of issues that, uh, should be resolved with, uh, merge requests.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, uh, from Jon, uh, Jon Madsen.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, there was a discussion with Ben going on in this, uh, um, merge request or pull request.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that, uh, uh, the point that I know for this thing is that, uh, we were waiting, uh, Ben, to save the new text resolves his concerns.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, Ben, if you could check this, uh, that would be really appreciated.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "yes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yes, I will try to do that in the next week or two.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, then there is, uh, one extra issue that was, uh, suggesting, uh, not using, uh, uh, strings at all, um, for representing some data.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "In some cases right now, we can either have like a binary string if, uh, we have only one element present or we have an array, uh, if we have multiple elements.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "And there was a suggestion, uh, to simplify the protocol by removing one of the options, uh, my personal opinion is that, uh, this might be inconsistent with other places where we are supporting both.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I'm inclined not to, to take this suggestion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, as other people have other opinions, uh, uh, I would be interested to know.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "And the last point is that, uh, we were discussing during an interim meeting that, uh, probably it would be good to add some more text.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "What exactly is causing x509 protecting, uh, other people from so Have that text.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure I would be the best person to write it.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Is there anyone that feels they might be?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Having the opportunity to do that and, uh, appropriate knowledge to do that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "You can also reach out to us, uh, after the meeting.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, otherwise we will discuss, uh, and try to, uh, build people individually or collectively with the other chairs.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Try to write, uh, such text.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so from my point of view, those are all the open questions for this document.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "I really hope we will be able to finish it soon.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "And there are some external dependencies on the document which, uh, kind of try to urge us to finish it sooner.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "So or at least, uh, provide feedback if we would be changing anything substantial.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, yes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any questions or comments?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "I will take that as a no.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Let's, uh, try to resolve the last point, and, uh, uh, I will prepare changes for the or resolve the first few ones, and hopefully we'll be able to ship this soon.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Alright.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Eva.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I believe the next thing on the agenda is the cbor encoded cert presentation.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I invite the presenter to share those slides at this point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Or if you're not sure how to do it, I know how to do it by sharing my screen, which is.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I have requested to share their.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Here it comes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Again.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So this is a keyboard encoded x509 C509.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this presentation, I think it will be quite quick and it's a bit recap from the previous interim since 110.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we are now at zero two.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "And most of the changes we have, uh, is um, we have implemented a lot more extensions, both from RFC 5280, as well as some other extensions that are used for different certificate profiles.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have new things are our PKI, and Russ was, uh, nice enough to provide us with the example certificate, which we now support.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "We also read the DSM, uh, certificate profile for USC and adopted the spec to be sure to support that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Michael has provided a divide cert.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "The spec should be compatible with divide, but I will as soon as I have time.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "I will test my implementation and spec with Michael's Test certificate an update if needed.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "It's been updated based on comments from Hillary and Michael.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "A new is that we have test and coded a lot of certificates.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Certificate and certificate bags.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "And we now have tables illustrating the size differences.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Let me show them here also.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have added uh initial C CDL for assigning requested certificate revocation lists.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is a new section on how to implement this in CA, or describing how it can be quite relatively easy as you can be compatible with you, some of your or most of your existing code.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have released source code for this and there is more source code progressing from Fraunhofer.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so said we the draft now supports, uh, all the extensions in five, two, eight, zero or at least all the certificate extension.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "I think the some CRL specific extensions that are not supported yet.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the following are extensions are fully supported.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Then there are more extensions that are only partly supported.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "And basically every certificate we have seen is supported.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "But there are some more exotic options or combinations that we do not support in the seaboard.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Encoding.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and more comments on this would be very we would be happy to receive.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Then there's here more extensions that are also partly supported.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "And here we have, for example, the Ace resources and the IP resources from, uh, from our certificates.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the CSR looks like this.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, this was very easy to specify using all the existing definitions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think we right now, it's specified that you can request two types of, um, both types of certificates and uh, the, uh, the, the format is compatible with The RFC 2980.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "I think the use cases require some further discussions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "We are also not testing this.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there was some discussion of the signature format.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "And I think also we have comments that attributes are needed for extensibility that needs further discussion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have done a similar thing for CRL at some earlier interim.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "It was yesterday that uh c509 should support, uh, signing requests, CRL and Ocsp.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I have done the first draft on CRL.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "That was also very easy to using the existing definitions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "I think there are some certificate CRL extensions that are not supported Cbor encoding of them are not supported.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "These have not been tested.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think there could be a discussion if we want.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Is the group still wanting CRL and UCSB and should then should they be in the same document or should they potentially be another?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Um, right now this seems quite easy to include in the same document.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here is a table showing the sizes, uh, of course, X509 and cozy c509.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it's the first is very typical IoT certificate.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "And there's where c509 do a very big, quite big relative, um, difference and General compression algorithm doesn't work.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Uh C509 also compresses uh HTTP certificate chains quite much.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, here's two examples.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "This is ah w-w-w-what and tools dot dot.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "The next is we've also implemented tested how C509 works in TLS.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "In TLS it's specified as a new certificate format so it can be combined with certificate compression.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, basically you have done and if you use C509 as a certificate compression of C5 seven, then you basically can get two layers of compression.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Um, here you can see that Brotli does not work for the IoT certificate.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we can see that Brotli does not work on top of C5 zero nine in that case.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then we have the Rpca certificate, and we can see that zero nine is to start with, a bit more efficient than just brutally.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "And that both combined, uh, provides, uh, basically one of them provides half size and both of them provides, um, quarter size.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "And this is quite a large difficult I don't know how, uh.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "How that well, that represents the average Rpca certificate then three different, two different same change and a bag.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, as you can see here, uh, what you can get are if using both z509 and brutally, you shave basically 400 bytes for this https shames.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and Z509 alone works for short change, but is not very effective on large shades as it only currently take each certificate individually and there is no it cannot compress anything that is common between certificates in the same chain.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "But see, using them both provides a benefit over just broadly.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Um link for these are the two main things.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: John, we have we have a question in the queue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to mention that John, uh, provided me with, uh, um, copies of those chains on the previous slide, and, uh, I wanted to apply Cyber Pack to it just to see what happens.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Um, unfortunately, I uncovered a bug in my pack, uh, uh, implementation, and I haven't had time to fix that, so I would love to report numbers today, but maybe on Friday in the cyber meeting.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Looking forward to that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and here is an issue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "That I think, um, conclusion on that one option would, could provide broadly in the C5 zero nine.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "But that's not very useful for IoT.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "We discussed that in the interim.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "And that need should discuss what the use cases for that should also discuss if seaboard packed, uh, how that works.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Or it can if it can be used to work better.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "I think this is a better solution for IoT devices.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next step.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "We have quite a lot of GitHub issues that can be closed.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "We will, uh, using the software provided by Michael to compress that and fix any things that if it doesn't work, uh, I will also release some updated version of the my software.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "I found some bugs, and I have now implemented at least most or most of the, uh, extensions almost.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Or maybe some is missing.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then we have this certificate, chain bag compression.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we will looking forward to Karsten's results with Seaboard Pact and we will specify a file format.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "One or several for maybe certificate and CRL or different based on graft rejection.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "File magic.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Then more validation of different certificates.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Test compression of CRL.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "I think more of you are very welcome.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the base, the core specification for IoT certificate 9 to 5 seems quite stable at this point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "It has not changed for quite many versions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions or comments?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "I definitely dropped.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "No questions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Then I closed up.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "John.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "The next speaker on our agenda is Kyle Den Hartog, who will be talking about an individual draft, um, about possibly registering pairing friendly curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that Hopefully we'll all learn some things and get something, uh, some useful actions out of this.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Kyle.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I'm not seeing Kyle in the participant list.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: You are correct.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "I was just scanning that as well.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "He is in New Zealand, so the time may not have been conducive.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "He's usually very responsible, but, um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "Do people want me to step through his slides, which I have not read in detail and at least have us review them?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "We can do a PowerPoint, if you will.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: There does seem to be enough text in the slides that it could be worth that, especially given that I don't think there is much else on the agenda.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, the only other thing is AOB.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So let's go ahead and uh, try to do that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And this time I figured out, with the help of my co-chairs, how to use the slide presentation functionality.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, for the minutes, I'm curious what fraction of you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Of course we're not in person.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I can't just tell people raise hands easily.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "I'm curious how many of you have heard of what they call pairing friendly curves in the cryptographic literature?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe those of you who know something about it can say something in the chat.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just for the record, um, these are used for zero knowledge proof algorithms, um, some of which are being used in the decentralized identity world at this point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "That much background?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "I do know for sure.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so Kyle authored this, uh, there's a company in New Zealand matter that he and some other folks I know are working on, uh, did based identities using verifiable credentials.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a scheme for zero knowledge proof called BSS plus signatures.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Dan Bennett is who's a long time ago Usenix friend of mine is one of the BES, um, who was the inventors of that signature scheme.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "And there are choice of curves for this scheme is something called BLS 12 381.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "And there's different representations of that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "And currently there's no either Jose or Cozy, uh, registrations for those curves or any of the friends of theirs.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "So what they've done is.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "They, uh, and there is a irtf document, as he points out, on pairing friendly curves, and that this builds upon that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "So the notion of pairing friendly curves is, uh, known to the irtf, which are our crypto experts.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it does registrations for the 128 bit security and 256 bit security curves, um, for these curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Um, number of points, which you can read as well as I but, um, one of them is what's the best way to encode the keys?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "So in this working group, we would probably say use a keyboard, web key and the Exposé working Group.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "We would say you want to use a Jose representation.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "I know there's other representation representations in the wild, uh, for compressed point curves, um, that just used the number in the Did world.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not advocating that, but I think that's what he's doing.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So I'd asked a question to Kyle offline.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "I felt like this was kind of incomplete because curves without corresponding signing algorithms or at least saying how to make use of them, uh, sort of don't give us an end to end solution.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Now, I recognize that in his use case, um, there's a W3C community group defining the use of this particular VBS plus scheme, and so this would support that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "But in general, I would think in the IETF we want to have sort of end to end registrations to make things, uh, usable.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's a notion of subgroups to be used with the curve, which I am not enough of a cryptographic mathematical expert to be able to explain that to you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I know some of the proposals have just said, uh, represent the subgroups as different curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "There's other possibilities.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "Um, he's asking what would be the best path forward for this draft.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the last bullet I really can't speak to about curves registered with prohibited status.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know, is anybody on the call enough of an expert to shed any light on the last point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So I will, I guess, chime in unless Jonathan wants to join the queue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "But my understanding here is that the Bn2 56 G1 and G2 are going to correspond to these subgroups that were in the third bullet point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "And so my sense is that in general, it's good to have identifiers for these things if we are going to need to refer to them.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "And the code point space for curved names is not particularly scarce.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "So on the face of it, the proposal to to register these, but to have in the comments or other notes an indication that these are sort of placeholders, they're not expected to be used for actual signatures, but they might appear in protocol elements that require a curve for some of these other, um, uses that take advantage of the parent friendly nature of these curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so on the face of it, the proposal to register them but give them a prohibited status does seem to make some sense.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "But I will yield to Jonathan, who has gotten into the queue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jonathan.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "You are muted.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Double click.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "So the the issue with the BN 256 curves is that there was, there was an attack that reduced they, they were believed to have 128 bit security, but there was an attack that reduced the security to 100 bits.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "So um, generally there were they were, uh, well deployed.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "But there's been a number of efforts in different standards organizations to define new, uh, more secure, uh, Ben curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for that background, Jonathan.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to move to the next slide.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "And he's asking for questions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Um, does anybody want to say anything else about this draft for the meeting minutes?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Well, I think the the.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the one thing we need to discuss at some point is the, um, format.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "So there are several references to SEC.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "One, uh, here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Is that really the format we want these, um, to be in?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Um, or do we actually use something more like.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, yeah, I haven't read the IETF draft.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "This is, uh, apparently based on.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "So that seems to be stuck on the, uh, document Shepherd for 54 days.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "So we probably have to ask Stanislav, uh, what status that has.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Then.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um, sorry, I thought I had seen your on in the queue as well, so I thought I was gonna have a little bit more time.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the question that Carsten raised about the SEC one encoding versus okp, that might actually tie in nicely to the next item on the agenda, which was about the criteria for registering additional algorithms.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think I had kicked off a little bit of a thread that touched on this topic as well, and it seems like the general sense or I hesitate to use the word consensus, but the general sense I got was that the oqp is generally going to be preferred if there's no specific reason to prefer CC1.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so I, I would support that since, you know, if, if we can use Oqp that would be good.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "So the question I guess would be then to Kyle or to anyone else about whether there's existing deployments where these curves are strongly associated with the SEC one encoding, uh, because we don't want to go off and do something different just for the sake of something different.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we should try and be consistent with the ecosystem as it stands.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Any more questions?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise, I propose that we move to the next topic, which was actually prompted, um, among the chairs because of this presentation.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, like both to pick, uh, the brains of the working group members and, uh, possibly Ben as Adi on how should we be thinking about when it makes sense to accept a draft, uh, to register new cryptographic algorithms and curves and what criteria we want to apply.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "I know we are chartered for being able to do that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Stay in existence forever, but there may be some additional algorithms and curves coming our way.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm here to listen, not to, uh, drive that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So it's open mic on what?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Algorithms and curves.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "We should be registering and why?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll let this go about ten minutes, and then I'll try to save the last ten minutes for AOB.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, Brandon.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I think there's a big argument to be made for, uh, starting to register some pqc algorithms.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's obviously going to be a lot of interest in that, uh, especially once the NIST competition finishes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and certainly there's already been some discussion of these where, uh, stateful hash based signatures are concerned.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that we should probably consider, uh, taking a role in registering pqc algorithms.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, let me just ask a follow up question.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, can you educate us for 30s on the nature of the competition that you're describing and what the outcomes are expected to be?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: So, while I'm by no means an expert, um, my, uh, on on this topic, my understanding is that there is an ongoing competition for both key agreement and signing.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "And so as such, it fits in where, uh, we use, um, ephemeral static, uh, for example, um, and we would probably want to consider something in a similar, uh, space.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and likewise, there's a number of uh, of algorithms for, uh, for signing as well.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now, obviously, uh, I think rust has already put through, um, one on the, the topic of stateful hash based signing.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "I think we've already registered that algorithm.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, along the same vein, I would argue that we probably should be prepared once that, uh, once that finishes to look at, uh, registering algorithms for the winners of the um of the NIST competitions.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: That certainly makes sense.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Goran.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'd like to chime in also on this on this discussion.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm one of the designated experts for certain co c um, code points.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, together with Derek and Sean, we sort of we were very happy with Gymshark being around because he was, uh, very, um, eager to provide input about registration requests.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So we we basically followed his advice and, uh, when we now have been asked to review, we have been looking looking at the patterns in RFC 81, 52 and so on.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Admittedly, it's not.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "It's not always clear how these registrations should be made.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "In some cases it's quite clear.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but there are there are corner cases and so on.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, I mean, Jim, he knew, uh, very well about Jose and kicks assignments.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "So it's it's definitely a conscious decision here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and some of the constructions are made for good reasons.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "So like, uh, for example, issues with truncation of hash algorithms and how you need to be explicit about that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And there are rules like which I mean which, which we may, may want to deviate from.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "But that's there at least are are rules.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Now in the current allocations, like signature algorithms are typically bundled with a hash function to predigest the signature input, but they are not bundled with elliptic curve.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Instead, algorithms use specific key type and the key will indicate the curve.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "CRV is one of the key parameters.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "And another example is Diffie-Hellman algorithms, which are bundled with this designation of ephemeral static, static but not elliptic curve, and so on.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "And then there are also exceptions like this is 256 K which is bundling uh also uh with with hash algorithm and curve.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "So I just want to say that if we are deviating from what's currently defined in the code, we do want to open, open make coke available for for many other STOs and and deployments.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's really good.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "But if we want to change a lot, then we need to proceed quite carefully because we risk creating a greater mess than it's already there.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "So we should have a plan for, I think, for for how to deviate from that or what how to assign Which probably is something we won't crack in a working group meeting.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "It probably needs a larger effort beyond that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Another item I'd like to add is that in particular, we should be careful with short identifiers.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "They are handed out to applications that really need that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So PK algorithms would would probably not fit into the category of short identifiers.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, sure.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: That's my $0.02.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Kirsten, you're in the queue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah, I got in the queue to just quickly say that just because in this competition is complete, doesn't mean that we have an algorithm to register, because they usually need some time to write up the result and to derive some, some actually, uh, standards, uh, um, compatible.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, description of uh, what, what they actually, uh, have.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but on on John's point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think, uh, we we really need to address this.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think we actually should write a document that explains our, uh, the guidelines that we are using.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that will probably at some point become a BCP.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "But I think it's important that we start writing these things up.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "So it's not just law that is traded, uh, from the engines, but, uh, we can just point to a document.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Look, this is what we have decided.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "And so one of the things that Ben just said, uh, we prefer okay, over one, but, uh, yeah, uh, how would a registrant know that?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I think we really have to write this up and start a new document with this, this BCP information.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Good point.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "I do know, um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "that, you know, from Josie and some other contexts.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "We wanted things to be registered that we expect to be commonly used.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, not that you couldn't register esoteric things, but, uh, there's also the criteria that you, the designated experts, at least want to believe that, uh, there's been.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "A public cryptographic analysis of the safety and effectiveness of the algorithms.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is where, you know, I'm a complete novice in the pairing friendly curve space, for instance.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "I would want to defer to the CFG and our other experts about which of these probably passes muster.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "That said, we don't want to, um, Uh, make experimentation hard by not having common algorithms.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "So let's see.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "I'll recognize Brendan.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "And then I'd like to ask, uh, to close this out.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "If Ben wants to say anything from the, uh, ISG perspective.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Brendan.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Uh, yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "So one of the things you just mentioned, um, brings up an important topic.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you said that you you want some kind of indication that there's been cryptographic analysis and that algorithms we register have had some kind of security review behind them.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that brings me to the question of what do we do about independent submissions that register a, an algorithm identifier, uh, to an outside observer?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Those might appear to have exactly the properties you've mentioned, but because they haven't gone through, uh, the regular stream, There's there's no expectation that they have had that review.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm just curious what the working group's take on that is.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I do know that our registries have a field for, uh, the documents that, uh, in which that analysis was supposed to have been done so we wouldn't even accept a registration if there's no evidence provided.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not saying that's a fail safe check, but it's a start.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: John.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "And then I'm going to ask Ben to speak.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, yeah, I, I think the current recommended column which have is it can be yes or no recommended is maybe too little.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "I think it would be good to have more Flexibility here to add more information.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, similar discussions have been had in the TLS working group, which also have a single recommended column.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "And I think the conclusion earlier discussions is that that's not enough.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "It should be updated in the future.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Indeed, Jose has more granularity as a result of some input from Sean Turner when he was Add.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "But uh, because A is binary, although I think we have a deprecated or prohibited value as well as yes or no, but.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Ben, do you want to make any closing remarks to this discussion and then I'll move on to AOB?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thanks for passing it over to me.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the points that definitely that you're on and Castner were making our good ones, that it would be good to have some clarity about our expectations, and to write it down for so that it's available for people who are asking for registrations.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's definitely not something where we resolved in this session or we're planning to resolve in this session.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "I mentioned in the chat, I hopefully Kirsten can volunteer to help start writing those down, uh, in the form of a draft.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so I look forward to seeing that kind of guidance written up.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's within the current charter to be able to do that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "And it's very useful to do.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I think there's potentially a new milestone that we should put into the data tracker for the working group to to track this work and how quickly we think we can do it.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think there was some good, uh, good comments and some good suggestions here, so hopefully we can continue the discussion on the email list.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you all.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let's go to AOB.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "And there was a request to discuss the rats UX draft.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, please come to the queue and, uh, speak.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Hank, what do you speak?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "So, hi.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just, uh, pressing buttons, so.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Let me let me turn on my camera.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Um, hi.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I assume there's a question associated to the topic of UX.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Well, the first thing is that we maybe could say what it is.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Oh, okay, I see.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: CWG is by definition always protected with the code.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and around it and uh, it turns out you sometimes want to interchange unarmored, unprotected, uh, data structures that contain the claims sets from CWG.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I mean, this is technically entirely trivial, but we have to write it up.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "And we probably also have to write up some security considerations because, uh, yeah, these are not.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "So you cannot use them the same way you would use C code.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "You would use them in communicating about things that might go into a CWG, and you would use them on secure channels.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "And we have to to describe what the properties of these secure channels are and so on.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "So this is what the the UX document is about.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "And Hank has more about that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "That's very useful.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: So Jim did not like this.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "So so it's it's a null cipher in uh no.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: No no no no no no no no no no.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: No no no no no.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Let me.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Let me finish.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Looking like a.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "So you cannot confuse it with a like finish the story.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Let me finish the story.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "So Jim didn't like this because he said it is like a JWT with a null cipher, which it is not because.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "The the J.W..",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "The null cipher are much worse.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "That is correct.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "So so if you mean that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Is it just the CW claims without the cryptographic wrapper.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: There is a definition in C1 that defines claims sets, and it is exactly that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "It is so so so.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "But but we want to retain um, the guarantees that you that that comes with the C1.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "So now you need an alternative.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "And the alternative is the conveyance method here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, that, that is then providing this the same guarantees and uh, the would have done an object security and, and and that is, that is unfortunately application specific.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "So the guarantees you expect from a CW are intrinsic to the object of CW, but they are not intrinsic to the arbitrary channel that is secured somehow.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "So these channels have to be established under certain Circumstances.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "When you receive something that is a claim set, then you suddenly are burdened with responsibility.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe it's the burden of the responsibility of the issuer.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe it's a dedicated role that you define in your scenario, and therefore you can't just define UX as the claim set that are encased in a one and done.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "You have to always provide.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "And I think there was Carson hinting at a security consideration that is specific to the user scenario.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, and uh, but but but the the core of course, is relatively easy.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "It's an unprotected claim set.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's important to to clarify this because the UX is an unprotected claim set.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "It's unprotected, and the rest of the document is a little bit speculative and tells you what properties a a secure channel might have to have so you can make useful use of an UX in the same way that you could make use of a CWG.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "And it's a bit unfortunate that that we we are forced to put the two things into a single documents because it really confuses the issue.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "But that's where we are.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I state not wearing my chair hat.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Just as a point of comparison, OpenID connect does utilize a jot cloud set in one flow without it being a jot.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "There's this thing called a Userinfo endpoint, which must be protected by TLS, where you send claims about the end user, such as your first and last name.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "If you choose to disclose those that are just sent as bare claims.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Now they use the Jot registrations, but they're protected by TLS, not protected by W.S.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "as a point of comparison that is in the wild.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: I think we have to, uh, if it's comparable, we have to check that because every, um, let's call it, um, similar example.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "A proof of concept here is, is, is, uh, extending the, the intuitive, uh, yeah message that we want to convey here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but it is not intuitive unfortunately without context and, and yeah, maybe in another example would provide that.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I'm putting that into the chat for the minutes.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Yeah.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: For the thank you.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "So there was a lot of arguing and we are closing to the bottom of the hour.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "But there was a lot of arguing.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, can we just say UX as a standalone claim set?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "And I think the, uh, still, I'm convinced that the answer is no.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "It has to be context specific due to their security considerations in the context.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Well, this is certainly a relevant topic.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for the explanation.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "We are at time.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "Does anybody want to make a final remark or otherwise?",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "We'll, uh, end here and thank you for your participation.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, I was just going to jump in to say thanks to Henk and Kirsten for letting us know about UX and why.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "It's not as simple as it might appear.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it seems like we should probably continue discussion about that on the, um, the rats group that's in Kirsten.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "on the appropriate list where the document is actually homed, which I'm pretty sure is rats, but we'll check shortly.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but thank you again for bringing it up here.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "That was all I had to summarize.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you all.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "We'll see you in another meeting or on the list.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "Take care.",
+            "confidence": 0.9846498670381157
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9846498670381157
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T13:40:41.297405+00:00",
+          "processed_at": "2026-01-27T13:40:41.297405+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "l0nxz70f7p"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9846498670381157
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "dba6270a-4329-4129-b0ec-2f819419aef9",
   "created_at": "2026-01-03T19:57:57.949114",
-  "updated_at": "2026-01-03T19:58:02.556258",
+  "updated_at": "2026-01-28T00:56:02.814245+00:00",
   "subject": "IETF 119 - GNAP Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=asDCdY1PiUY",
       "meta": {
         "ietf_meeting": 119,
         "working_group": "gnap"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 119,
         "location": "Brisbane, AU",
@@ -50,10 +49,10 @@
         "start_time": "2024-03-18T03:00:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "gnap",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/bluesheets-119-gnap-202403200300",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/minutes-119-gnap-202403200300",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/agenda-119-gnap",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/draft-ietf-gnap-core-protocol",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/draft-ietf-gnap-resource-servers",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/chatlog-119-gnap-202403201300",
         "mimetype": "text/plain",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/slides-119-gnap-chair-slides",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/materials/slides-119-gnap-gnap-editors-update",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/119/agenda/gnap/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-119-gnap",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -2245,6 +2245,1384 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Comment for the captioner, the technology that they're using is called Metco, which is m e e e h o. So that's me and echo that combined I think.\nSPEAKER S2: That's going. To go in okay. Yeah I love the starting slide. That's so cute indeed. Yeah. Alright.\nSPEAKER S3: So welcome everyone. We actually so I'm Aaron Sheffer we have more koalas in the room than chairs. Leaf couldn't make it to Australia or even remotely. So I'll be chairing a meeting today. And. Yeah. Okay, it's already midweek. If you haven't seen the note well yet, please take a long look at the note. Well, it applies to everything that we do at the IETF and at this meeting. Um, we will have a few starting words from me, uh, followed by Justine, who will describe the latest status of the two Nap documents. And then if time remains or time should remain for any other business, otherwise we are very likely to end early. Um, so speaking of status, the core, the Nap core protocol has been approved by the ISG for publication. That's a very big achievement for us. Thank you to everyone who was involved. And this only happened last week, I believe. So really, really recently. Um. Iris protocol. Postures. Uh, read it. Uh, the there was, uh, another revision we opened last call, and there was absolute crickets from the mailing list. No reviews during a working group last call we will be discussing. So the chairs and the authors will be discussing this, uh, document with the ads or with the incoming ad. The, uh, soon after this eitf meeting, a most likely we will wrap up this working group immediately. Uh, since, uh, the core protocol is already in the RFC editor. Q and we don't seem to have enough energy to drive the protocol through the working group. Uh, but this is all very tentative, pending on, uh, on the ads approach to this. Um, yeah. One last thing that I neglected, neglected to say is there were some very late, uh, small, minor changes to the core protocol, and therefore Justin published it, uh, earlier today. Uh, so that's the latest, latest version. That's the version that's going into the RFC editor right now. And with that, I'll pass it to Justin. I don't know if this is going to work, but yeah, if not, you could try.\nSPEAKER S4: Try the remote.\nSPEAKER S3: Next slide thing. Yeah.\nSPEAKER S4: Yeah. I hit the button to request.\nSPEAKER S3: Okay. And like this.\nSPEAKER S4: No, no. Hover over me and then hit the. Yes. It kind of disappears. Okay, cool. That should work. Alright. So hi everybody. I'm Justin Richer. Um, as Jared mentioned, uh, we've got two drafts in the working group, and I'm going to go through kind of the changes that we've had since last time and, um, where we're going to go from here. Um, so, uh, as is tradition, uh, in the slide deck, you can get the diffs between the drafts from the last time as of this morning, this is actually now out of date because there is now a, uh, dash 20 that does one small change, which I'll talk about in a moment. Um, I didn't have a chance to, uh, update, uh, these these slides, but the change is minor. Um, core draft went through, uh, a handful of changes. Vast majority of them were editorial based on iesg feedback, clarification of concepts, uh, that kinds of things. Once again, I didn't do the Iana registrations, right. Uh, every single time I write an RFC, I seem to learn some new thing that I get wrong. Um, but, uh, those seem to be good. Uh, now, uh, the the latest one was about media requests, so that's up there. There. Um, oh, and a lot of clarification of, you know, the languages, the figures like what figure is tied to which text and which examples tied to which, um, you know, sort of surrounding prose. And that thing we did actually add a couple of security considerations for things that got, uh, that came up in the ISG review. Um, there were some mtls related bits, uh, in there, encourage you to go look at the diffs. It's all, you know, additive explanatory content. There were there was one syntactical change and one additional normative change that I want to cover, uh, the syntactical changes that we changed, the Jose token types for the Jose key bindings. So they are now, um, instead of binding plus GSD, they are now binding Dash, J.W. and that goes across all four different, uh, types that are in there because there's nap and nap binding. And then there's also J.W., and J.W. versions of both of those. So if you have an implementation of NAB and you are and you are using the Jose based key binding mechanisms, then this is a syntax change that you need to make in order to be, uh, fully compliant. The reasoning behind this is that that plus carries a lot of semantic meaning in the media type. And there was, uh, resistance of registering new, um, extensions for J.w.s and J.W., uh, from folks in the Jose community. For the purposes of Ganap, we were just trying to be good citizens and using the structures that we thought were going to be available there. Um, and turns out those structures weren't there. And it really is not our place to try and invent them within the Ganap protocol. We just really needed a way to signal that there are different message types and different container types. And so we just have four distinct media types, uh, that are being registered for those things. A lot of the implementations that, uh, I have personally worked with HTTP message signatures, which is, uh, not affected by this change. So if you're doing that or mtls, this doesn't affect you at all. But if you are doing the Jose stuff, then, uh, you should change your implementations and change that plus to a minus, and then you will be in compliance. Uh, the other normative change is actually on a, uh, recommended, um, and that's the number of characters in user codes. Uh, it was pointed out that we didn't have a recommended lower bound for that. We just had a recommended upper bound for usability sake. Um, and uh, based on, uh, some fairly quick discussion, we, um, settled around a, a recommended range of 6 to 8 characters for user facing codes. This is just a recommendation. It is not a requirement. You're still allowed to make longer codes. And if you really want to, shorter codes as well. Um, but there's already a lot of discussion about the nature of those codes, what characters you should pick, uh, how you communicate them, how you target them to your expected users, how they're supposed to carry them through the system, all of that kind of stuff. Um, a lot of that we were able to, uh, sort of import from, uh, other documents like the OAuth device flow and, um, and align all of that kind of stuff together. Uh, so again, that was a normative change, but functionally not really a requirement change. Uh, since it is it is advice. And as of today, it is, uh, officially in the RFC. Editors queue for publication with those changes applied. Um, and uh, so, yeah, the, uh, this is awesome. Uh, it's been a lot of work that's gone into this from a lot of people over the last roughly four years, um, from, uh, from chartering to today. And, uh, Napa is a really big document. Um, I was looking over our charter and milestones earlier, and the core document actually covers the vast majority of the milestones, um, in a single cohesive protocol document, uh, which wasn't necessarily what we thought was going to happen when we started pulling things together. But that's that's what it is so very exciting to see that moving forward. The CES draft, uh, the editors did several rounds of cleanup, um, all culminating in the in the current draft that was put out to the working group. Uh, again, we added Iana registrations. Uh, if experience tells me anything, those are probably wrong in some way that I don't know about yet. Um, importantly, we added error responses based on, uh, how core does things? Uh, we added an acknowledgment section, a couple of little bits of cleanup, no real major changes to the document. Um, and then requested working group last call. Um, so we got zero response to working group last call. As Yaron mentioned. None. No positive. Like yes, this is fine. And I read it. No, I have a problem with this. None at all. So we are now trying to figure out what exactly to do with the draft and how we're going to do that. Um, if anybody has input into that process or wants to volunteer right now to do a last call review of the draft, now's a great time to bring that up. Um, but right now we're trying to figure out what the next steps are for that. What I would like to see, uh, as the editor, is the Rs call to go to uh, to the ISG. And um, it is a much, much simpler document when compared to core, much, much shorter. And it also borrows and adapts a lot of the structures and syntaxes and pieces from the core document for its specific focus. And so with that in mind, I think it's worth going that. But that is my personal opinion as a participant. Um, regardless of what happens to the Rs draft, um, the editors think it's time to close the working group. And, um, so hopefully we can, uh, we can ship this one last document out the door, and then, um, we do not believe the editors do not believe that we will need a meeting to discuss things in Vancouver.\nSPEAKER S3: And I agree.\nSPEAKER S4: And that's that's it for my slides. So very, very quick update. A lot of stuff that's been happening has been already discussed on the list and stuff is in motion. So.\nSPEAKER S3: Thank you Justin. Any comments, any questions anybody, uh, who wishes to support, uh, the publication of the draft in any way? Peter.\nSPEAKER S5: Uh, yes. I just wanted to ask, uh, given the the crickets seen in the working group last call, are there implementations of the Rs that are, uh, draft that are being used? Uh, I, I guess I'm a little confused. Why? I. I mean, I understand this group has been relatively small, but is nobody interested in this? Have you have you been churning out pages to the, uh, to the void?\nSPEAKER S4: Um, so from my experience, uh, there are implementations of different pieces of the CES draft. Uh, it the CES draft is not a single cohesive protocol. Uh, it's more a set of things that resource servers can optionally use to sort of enhance their connection to the Ise, whereas Nap core, it has a whole lot of things. You don't have to implement all of them, but you're going to be doing some part of that single protocol to implement Nap with the CES draft. I know some people have implemented introspection. Um, some people are using Jot formatted tokens, which are described in that draft as well. Um, I don't know of anybody that's using the discovery portion. We tried to reach out to get feedback on that. Uh, that was an issue that Yaron had filed about the Rs facing discovery, and we didn't really get a lot of feedback from the implementation communities. Um, so I don't know of anybody, including myself, who has implemented every single thing in that end to end in a single cohesive system.\nSPEAKER S5: Okay, so it would be hard to say that we had interoperable implementations and lots of experience that.\nSPEAKER S4: That's that is correct. Yes.\nSPEAKER S5: Okay. Thank you. Yeah.\nSPEAKER S4: That that said though, I will I will also add that the Rs giraffe deliberately reuses pieces from core and tries to tries really hard to not invent things. Um, when it doesn't need to, but the statement still definitely stands.\nSPEAKER S3: Okay. And with that, we bring our meeting to a close. As Justin mentioned, we we will most likely not meet in Vancouver. Uh, but this remains to be seen. Thank you everyone.\nSPEAKER S4: All right. Thank you all. There it is.\nSPEAKER S6: Thank you.\nSPEAKER S7: To close the ceremony.\nSPEAKER S3: Is there such a thing.\nSPEAKER S4: Uh, yeah. Because I know that they can turn it off. I don't know if anybody from Mexico is listening here, but, uh.\nSPEAKER S3: This is actually on the.\nSPEAKER S4: Oh, they're on the chat, aren't they?\nSPEAKER S3: Yeah. At the very least, it'll stop the recording.\nSPEAKER S7: Okay, that's. That's good. I need some notes on the etherpad minutes.\nSPEAKER S4: Awesome. Thank you.\nSPEAKER S3: Thank you.\nSPEAKER S4: All right. I just dropped in the chat.\nSPEAKER S3: Okay.\nSPEAKER S4: Oh.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9873979782852864
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Comment for the captioner, the technology that they're using is called Metco, which is m e e e h o.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "So that's me and echo that combined I think.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That's going.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "To go in okay.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah I love the starting slide.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "That's so cute indeed.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So welcome everyone.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "We actually so I'm Aaron Sheffer we have more koalas in the room than chairs.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Leaf couldn't make it to Australia or even remotely.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll be chairing a meeting today.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, it's already midweek.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "If you haven't seen the note well yet, please take a long look at the note.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Well, it applies to everything that we do at the IETF and at this meeting.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we will have a few starting words from me, uh, followed by Justine, who will describe the latest status of the two Nap documents.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "And then if time remains or time should remain for any other business, otherwise we are very likely to end early.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so speaking of status, the core, the Nap core protocol has been approved by the ISG for publication.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "That's a very big achievement for us.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you to everyone who was involved.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "And this only happened last week, I believe.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "So really, really recently.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Iris protocol.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Postures.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, read it.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the there was, uh, another revision we opened last call, and there was absolute crickets from the mailing list.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "No reviews during a working group last call we will be discussing.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "So the chairs and the authors will be discussing this, uh, document with the ads or with the incoming ad.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "The, uh, soon after this eitf meeting, a most likely we will wrap up this working group immediately.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, since, uh, the core protocol is already in the RFC editor.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Q and we don't seem to have enough energy to drive the protocol through the working group.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but this is all very tentative, pending on, uh, on the ads approach to this.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "One last thing that I neglected, neglected to say is there were some very late, uh, small, minor changes to the core protocol, and therefore Justin published it, uh, earlier today.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that's the latest, latest version.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "That's the version that's going into the RFC editor right now.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "And with that, I'll pass it to Justin.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if this is going to work, but yeah, if not, you could try.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Try the remote.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Next slide thing.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "I hit the button to request.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "And like this.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: No, no.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Hover over me and then hit the.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "It kind of disappears.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, cool.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "That should work.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So hi everybody.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "I'm Justin Richer.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as Jared mentioned, uh, we've got two drafts in the working group, and I'm going to go through kind of the changes that we've had since last time and, um, where we're going to go from here.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, as is tradition, uh, in the slide deck, you can get the diffs between the drafts from the last time as of this morning, this is actually now out of date because there is now a, uh, dash 20 that does one small change, which I'll talk about in a moment.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I didn't have a chance to, uh, update, uh, these these slides, but the change is minor.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Um, core draft went through, uh, a handful of changes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Vast majority of them were editorial based on iesg feedback, clarification of concepts, uh, that kinds of things.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Once again, I didn't do the Iana registrations, right.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, every single time I write an RFC, I seem to learn some new thing that I get wrong.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, those seem to be good.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, now, uh, the the latest one was about media requests, so that's up there.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "There.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Um, oh, and a lot of clarification of, you know, the languages, the figures like what figure is tied to which text and which examples tied to which, um, you know, sort of surrounding prose.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "And that thing we did actually add a couple of security considerations for things that got, uh, that came up in the ISG review.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there were some mtls related bits, uh, in there, encourage you to go look at the diffs.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "It's all, you know, additive explanatory content.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "There were there was one syntactical change and one additional normative change that I want to cover, uh, the syntactical changes that we changed, the Jose token types for the Jose key bindings.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "So they are now, um, instead of binding plus GSD, they are now binding Dash, J.W.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "and that goes across all four different, uh, types that are in there because there's nap and nap binding.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "And then there's also J.W., and J.W.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "versions of both of those.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "So if you have an implementation of NAB and you are and you are using the Jose based key binding mechanisms, then this is a syntax change that you need to make in order to be, uh, fully compliant.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "The reasoning behind this is that that plus carries a lot of semantic meaning in the media type.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "And there was, uh, resistance of registering new, um, extensions for J.w.s and J.W., uh, from folks in the Jose community.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "For the purposes of Ganap, we were just trying to be good citizens and using the structures that we thought were going to be available there.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and turns out those structures weren't there.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "And it really is not our place to try and invent them within the Ganap protocol.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "We just really needed a way to signal that there are different message types and different container types.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "And so we just have four distinct media types, uh, that are being registered for those things.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "A lot of the implementations that, uh, I have personally worked with HTTP message signatures, which is, uh, not affected by this change.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "So if you're doing that or mtls, this doesn't affect you at all.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "But if you are doing the Jose stuff, then, uh, you should change your implementations and change that plus to a minus, and then you will be in compliance.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other normative change is actually on a, uh, recommended, um, and that's the number of characters in user codes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it was pointed out that we didn't have a recommended lower bound for that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "We just had a recommended upper bound for usability sake.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, based on, uh, some fairly quick discussion, we, um, settled around a, a recommended range of 6 to 8 characters for user facing codes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "This is just a recommendation.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "It is not a requirement.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "You're still allowed to make longer codes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "And if you really want to, shorter codes as well.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but there's already a lot of discussion about the nature of those codes, what characters you should pick, uh, how you communicate them, how you target them to your expected users, how they're supposed to carry them through the system, all of that kind of stuff.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a lot of that we were able to, uh, sort of import from, uh, other documents like the OAuth device flow and, um, and align all of that kind of stuff together.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so again, that was a normative change, but functionally not really a requirement change.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, since it is it is advice.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "And as of today, it is, uh, officially in the RFC.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Editors queue for publication with those changes applied.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, so, yeah, the, uh, this is awesome.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's been a lot of work that's gone into this from a lot of people over the last roughly four years, um, from, uh, from chartering to today.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, Napa is a really big document.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I was looking over our charter and milestones earlier, and the core document actually covers the vast majority of the milestones, um, in a single cohesive protocol document, uh, which wasn't necessarily what we thought was going to happen when we started pulling things together.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "But that's that's what it is so very exciting to see that moving forward.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "The CES draft, uh, the editors did several rounds of cleanup, um, all culminating in the in the current draft that was put out to the working group.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, again, we added Iana registrations.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if experience tells me anything, those are probably wrong in some way that I don't know about yet.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, importantly, we added error responses based on, uh, how core does things?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we added an acknowledgment section, a couple of little bits of cleanup, no real major changes to the document.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then requested working group last call.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we got zero response to working group last call.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "As Yaron mentioned.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "None.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "No positive.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Like yes, this is fine.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And I read it.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "No, I have a problem with this.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "None at all.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So we are now trying to figure out what exactly to do with the draft and how we're going to do that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if anybody has input into that process or wants to volunteer right now to do a last call review of the draft, now's a great time to bring that up.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but right now we're trying to figure out what the next steps are for that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "What I would like to see, uh, as the editor, is the Rs call to go to uh, to the ISG.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "And um, it is a much, much simpler document when compared to core, much, much shorter.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "And it also borrows and adapts a lot of the structures and syntaxes and pieces from the core document for its specific focus.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "And so with that in mind, I think it's worth going that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "But that is my personal opinion as a participant.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Um, regardless of what happens to the Rs draft, um, the editors think it's time to close the working group.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, so hopefully we can, uh, we can ship this one last document out the door, and then, um, we do not believe the editors do not believe that we will need a meeting to discuss things in Vancouver.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And I agree.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: And that's that's it for my slides.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So very, very quick update.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "A lot of stuff that's been happening has been already discussed on the list and stuff is in motion.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you Justin.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Any comments, any questions anybody, uh, who wishes to support, uh, the publication of the draft in any way?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Peter.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, yes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to ask, uh, given the the crickets seen in the working group last call, are there implementations of the Rs that are, uh, draft that are being used?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I, I guess I'm a little confused.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Why?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "I.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I understand this group has been relatively small, but is nobody interested in this?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Have you have you been churning out pages to the, uh, to the void?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Um, so from my experience, uh, there are implementations of different pieces of the CES draft.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it the CES draft is not a single cohesive protocol.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's more a set of things that resource servers can optionally use to sort of enhance their connection to the Ise, whereas Nap core, it has a whole lot of things.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "You don't have to implement all of them, but you're going to be doing some part of that single protocol to implement Nap with the CES draft.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "I know some people have implemented introspection.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Um, some people are using Jot formatted tokens, which are described in that draft as well.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know of anybody that's using the discovery portion.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "We tried to reach out to get feedback on that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that was an issue that Yaron had filed about the Rs facing discovery, and we didn't really get a lot of feedback from the implementation communities.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I don't know of anybody, including myself, who has implemented every single thing in that end to end in a single cohesive system.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay, so it would be hard to say that we had interoperable implementations and lots of experience that.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: That's that is correct.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: That that said though, I will I will also add that the Rs giraffe deliberately reuses pieces from core and tries to tries really hard to not invent things.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Um, when it doesn't need to, but the statement still definitely stands.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "And with that, we bring our meeting to a close.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "As Justin mentioned, we we will most likely not meet in Vancouver.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but this remains to be seen.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you everyone.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you all.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "There it is.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: To close the ceremony.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Is there such a thing.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Because I know that they can turn it off.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if anybody from Mexico is listening here, but, uh.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: This is actually on the.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Oh, they're on the chat, aren't they?",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "At the very least, it'll stop the recording.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay, that's.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "That's good.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "I need some notes on the etherpad minutes.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Awesome.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "I just dropped in the chat.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9873979782852864
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Oh.",
+            "confidence": 0.9873979782852864
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-28T00:56:02.813346+00:00",
+          "processed_at": "2026-01-28T00:56:02.813346+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "metmhe5ebg"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9873979782852864
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

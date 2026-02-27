@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "69141955-8a1c-43aa-a308-645aeacd71ad",
   "created_at": "2026-01-03T19:28:48.065486",
-  "updated_at": "2026-01-03T19:28:52.938009",
+  "updated_at": "2026-01-27T13:26:41.011940+00:00",
   "subject": "IETF 111 - 6LO Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=1weg9N8Actk",
       "meta": {
         "ietf_meeting": 111,
         "working_group": "6lo"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 111,
         "location": "Online, US",
@@ -50,10 +49,10 @@
         "start_time": "2021-07-28T21:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "6lo",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/agenda-111-6lo",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/bluesheets-111-6lo-202107281430",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/minutes-111-6lo",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-6lo-chairs-introduction",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-6lo-6lo-applicability-and-use-cases",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-6lo-transmission-of-schc-compressed-packets-over-ieee-802154-networks",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-6lo-native-short-address-for-internet-expansion",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/materials/slides-111-6lo-fragment-forwarding-and-fec",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 5,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/111/agenda/6lo/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-111-6lo",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8641,6 +8641,4541 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Okay. Hello everyone. I hope you can hear me correctly. Welcome to the meeting of the Siuslaw Working Group. My name is Carlos Gomez. The other chair is Shweta Bhandari. Our responsible aid is Eric Klein. Uh, we hope Eric will join soon. And for today, we have one minute taker, Georgios Papadopoulos. Kindly, uh, will help in taking minutes. However, uh, is there anyone else who would maybe like to volunteer to help Georgios in taking minutes?\nSPEAKER S2: Yeah, I'm on the eve of bad as well. Hi all.\nSPEAKER S1: Thank you very much, Dominique. This is much appreciated. Okay, so yeah, please recall everyone that, uh, the process of taking minutes will happen over, uh, the etherpad by using code EMD. So anyone can also join and contribute to the collaborative process of taking minutes. So, um, on the slide, you can also find a number of pointers to useful resources such as the online agenda, the double room for six lo the mitico which well, we are using and uh, the link for code EMD for today's session. Okay. Um. Next, please. Uh, perhaps there's the note. Well, yeah. Thank you. So, yeah, this is the note. Well, so recall that it contains a number of pointers to, uh, ITF policies on a number of important topics. So please make sure that you have read it. Next, please. This is the agenda for today. The first slot is the usual chair's introduction and presentation of draft status. So this is the presentation that's currently in progress. And well after that there will be the presentation of the last update of the Applicability and use cases draft. That will be followed by the presentation of a new draft entitled transmission of Chic compress packets over IEEE 22.15.4. That will also be followed by yet another new draft entitled Native Short Address for Internet expansion. And finally, we'll have a presentation on fragment forwarding and the use of forward error correction. So as you can see, we have a total agenda time of 60 minutes. So we have a packed agenda today. And by the way, this is the first six meeting in many six meetings that we are going to dedicate most of the agenda time to discussing new materials. Um, well, are there maybe any questions or comments on the agenda? Okay. So let's move to the next slide. Thank you. So about the status of the working group documents since the last IETF, we have a new RFC that's RFC 1934 which is entitled Packet Delivery Deadline time in the routing header for six lo pans. So, uh, congratulations to the authors, and thank you very much to everyone who helped and contributed with comments and reviews. So thanks again to everyone involved in the process. Other than that, we currently have four working group documents. The first one is IPv6 over NFC. So you may recall that this document was first evaluated by the ISG a couple of years ago. And um, well after that, and the authors collaborated with the shepherd to produce some updates of the draft. And currently there are some ongoing discussions on how to proceed about the process of how to continue the evaluation at the ISG level. So, uh, I don't know if maybe if Eric joins later or perhaps he may provide additional details on this. But anyway, uh, this is to let you know that there is some ongoing discussion about how to proceed with the next steps. The next document is IPv6, measured with BLE links. This document was also evaluated by the ISG. And there was uh, after revision nine, there was one outstanding discuss, and the authors updated the document and the discuss was clear. So currently there are no more remaining discuss ballots. However, there were recently some ISG members who stepped down. So as a result, uh, now we need to have a few more ballots to get the approval of the document. And we expect to have such ballots in August or early September. Then the next working group document is IPv6 over PLC. This document entered the ISG evaluation state quite recently, just around one week ago, and it is on the agenda for the, uh, for the 12th of August. So in about a couple of weeks, we expect to receive the feedback from the ISG, and the last working group document is the six loan use cases. Draft. There was a set of comments which were received after the second working group last call for this document, and the authors have updated the draft produced version 11. So, uh, yeah, there will be a presentation on this last set of updates today. Okay. So is there any question, any comment? Okay. So if there are no comments then we may proceed to the next presentation, which is precisely about the use cases draft.\nSPEAKER S3: Okay. Hello. Could you hear me?\nSPEAKER S1: Yes, I can hear you.\nSPEAKER S3: Okay. Thank you. Okay. Uh, nice to meet you again. Uh, my name is Yonghong. Uh, so, uh, today I will present the, uh, sixth row use case. Left next page, please. Uh. Yes. This is the history and status. Uh, you know, uh, we have two, uh, working group. Last call. So in the last meeting, uh, based on the 10th revision, uh, we will try to resolve the comment from the second working group. Last call. So I believe that, uh, we resolve the last of the comment from the second working group, last call. But, uh, there are the remaining comment after the second working group. Last call. So, uh, in this meeting, I will try to resolve the other remaining, uh, comment. Next page, please. Yes. So this update after last meeting. So the after last meeting, we got two comments. That is a command from hello. And the other is to command from the dollar. So I would like to thanks to them. The first command from Kevin is I received that after submission of the previous draft. So I don't have any time to reflect this command in the draft. So the command prompt are the poor. The first thing is to consideration of standard error 2059 26 recommended practice. And the other is expression of the standard. Uh, the other is to order the title of the IEEE standard and finally removing an explicit external standard and the command prompt direct is the is the minor is the type of some standard. Next page please. Yes. The first command prompt hello cabinet. Is that the translation of IEEE standard arrow to the 59 2060 recommended prefix? Uh, he says that this draft does not take into account the IEEE standard 59 recommended prefix. The standard arrow to the 59, provide multiplexing and implementation layer for the standard error for the poll. So this document should also note that in some IEEE standard poll networks, those might not be needed, and the method provided by the IEEE standard editor 59 could also be used. So actually I have no knowledge of the standard error. Error 59. Uh, but I, uh, studies and I investigated the IEEE standard error 29 as I believe that the command from federal cabinet, uh, is correct. So, uh, I changed the text. As you can see, uh, it is noted that standard error 59 2060 provide multiplexing and implementation layer for the standard error 15.9. Okay. Next page please. Uh, the other command is the, uh, regarding expression of IEEE standard. Uh, he said the proper way to refer to the IEEE Triple standard is to use a triply standard error 15 15.4 or triple standard 1901 2010. So note that the standard between the IEEE and standard number, and that there is no period after the standard. So I check the, uh, draft, and I found that there are some the, uh, expression. So in the full text I changes, I triple standard the port to i3 standard error to the port. And I also changed as he recommended. Okay. Next page please. The other comment is the old title of an attribute standard. For example i3 standard error Step it up for the original title is to, uh. As you can see, part 15 for low rate wireless personal area network. And then in 2015, uh, it is simplified in standard for low rate wireless personal area networks. And it also simplified again in 2020 to IEEE standard for low rate wireless networks. So I finally changed the last one IT standard for low rate wireless networks. Okay. Next page please. Uh, the final comment on is the removing an explicit external standard. Uh, it is related to the thread, uh, text. So he said that I'm not sure current thread group use IEEE standard for uh 26 anymore. That is any feature that was built in 1826. But which are now no longer in your new version. So he suggests to delete the sentence. The IEEE standard 1526, and I triply add it to the 2015 version of the specification are used by thread. So I delete the sentence. Okay. Next page please. Uh, it is the command prompt or direct. Uh, yes, it is the same. The minor typo. So I change it to standard 19 zero one and I change to standard 19 01.1 and 19 01.2. Okay. Next page please. Yes. As you can see, uh, in this time, we don't, uh, give any change of the technical part. It is, uh, only two leads to the expression, while some the typo. So I believe that, uh, I uh, reserved all comment during working group. Second working group last call and uh, after the second working group. Last call. Okay. That's all. Thanks. Okay. Is there any question or comment? Hi, Carlos. Could you hear me?\nSPEAKER S1: Hello? Yes. So Tito is in the queue. Uh, feel free to speak.\nSPEAKER S4: All right. So, uh, I was just pointing out that the, uh, 15 nine, uh, had just new version or actual revision of the 59 was approved, like a month ago or so. So now it's in the editor's queue, uh, which will probably take a month or two or something like that. And there will be 59, 20, 21 should be out, like in a couple of months. It doesn't have any the the fragmentation that kind of things are actually same, that there are major differences, that there is actually no support for 15 for why which is adding algorithms to multiple, you know, different key, uh, cryptographic algorithms for 15 for and allows negotiation of those two.\nSPEAKER S3: Okay. Thanks.\nSPEAKER S5: If there are no other comments, if you want to take this forward. Any volunteers to shepherd this document to through ISG process? Please feel free to reach out are on the mailer or to Carla and me to if you want to volunteer. Otherwise I'll be shepherding the doc. Thank you. So moving on to the next one. Carlos. Uh. You want to go ahead?\nSPEAKER S1: Okay. Hello again. So I'm going to present the initial version of a new draft entitled Transmission of Compressed Packets over IEEE 802.15.4 networks. My co-author is Ana from Ecleo. Next, please. First of all, let's take a look at the motivation for this draft as this working group knows very well, RFC 6282 has been the basis for header compression in six Lapan and also in six Lo. This RFC was designed for 15.4 as the target technology, and it has been adapted or reused quite extensively for relatively similar IoT technologies. So with this RFC it is possible to compress a typical 48 byte IPv6 UDP header down to a size of seven bytes. That's in the best case with global addresses. And on the other hand, last year there was the publication of RFC 8724, which is a product of the Lrp1 working Group. It's also known as chic, which is a framework which provides additional functionality. Basically, there are two main Sublayers header compression and fragmentation. In chic and it has been designed for lrp1 technologies, which are even more constrained than six low or six low powered technologies we usually handle. Um. So if we focus on header compression, Chic is capable of compressing a 48 byte IPv6 UDP header down to a size of, for example, just one byte. Again, in the best case with global addresses, and it is based on the use of static context and the technique here is exploiting a priori knowledge of header field values. Next please. We may also consider an application layer protocol on top of IPv6 UDP. Like in this case coap. And well there is no specific header compression for Coap. So in that case we may compress an IPv6 UDP coap header down to a size of 11 bytes. Again, in the best case with global addresses, and also in this case with no header options. And however, there is some uh specification on how to compress coap headers by using chic. And as a result, it's possible to compress an IPv6 UDP header down to a size of just two bytes. So this header compression improvement leads to some battery lifetime improvement for devices that run on batteries. And, uh, that's in this case, if we use those mentioned protocols on top of 15.4, theoretically, and in the most extreme case, it is possible to achieve a theoretical battery lifetime improvement by up to 40%. Uh, that would be also including a third byte when using chic, which would be the chic dispatch that will be presented later. And, uh, well, a disclaimer here is that, of course, the actual improvement will be lower depending on various parameters and features such as device hardware and especially the slip current consumption, Mac layer settings, application layer settings, payload size, and so on. Next please. So um, about the status of this document. So the document I'm presenting today is an initial version. It's A00. However, strictly speaking it is not really A00 because it's actually an extended version of another document that was with a narrow scope which intended to define just the chic. Dispatch. And here the scope is greater. The aim is to specify everything necessary to enable the transmission of compressed packets over 15.4 networks. Also, the aim is to incorporate feedback from previous meetings. Next please. Well here we can see two protocol stacks. The one on the left is the traditional six based protocol stack, where as you can see, the six layer has been illustrated as two separate sublayers. The one on top is the header compression. The other one is fragmentation. This is on top of 15.4. And on the right what we can see is the protocol stack. Uh, that would be the result if we apply this change that we propose here. So you can see that the only change in terms of the protocol stack relates with the header compression part. So here we would be using chic header compression instead of six header compression. However to be clear the aim is not Obsoleting traditional six header compression. The the goal here is to provide just another way to perform header compression. If, uh, that seems to be uh, suitable, uh or beneficial in some 6 or 6 Lo environments. Then another common is that, as you can see in the protocol stack on the right, we stick to six open fragmentation. That's even if she provides also some fragmentation functionality. However, here, uh, perhaps there is not that much of an incentive to use fragmentation for a number of reasons. First, in terms of functionality, uh, we had the recent publication of the Selective Fragment Recovery RFC. So from that point of view, perhaps there is not much more that can be added by considering fragmentation. Then, um, also, in terms of the size of the fragmentation header, it's not so clear that there will be a huge improvement from that side as well. And perhaps it's also positive to be able to reuse existing code, uh, existing fragmentation code for implementations of a 15.4. So as you can see currently in the draft, what we specify is that fragmentation would still be used. Next please. So here we show the frame format which corresponds to an encapsulated shipped compressed packet. This would be carried as layer two meaning 15.4 frame payload. And there are a number of fields. The first one that is the leftmost one is the dispatch. This is a field which is intended to signal that what comes next is a chic packet, which is a packet with a header that has been compressed by using chic. So here what we define in the draft is a dispatch type dedicated for chic header compression. As the chic dispatch. So here we exploit RFC 1825. And we use the paging dispatch which as you can see has a size of one byte starting with four ones and then four additional bits which indicate the page that will be used. Recall that uh, RFC 1825 basically expands the dispatch type space in Japan and here, for the sake of efficiency, to keep low overhead. The aim is to just use, uh. Dedicate a whole page so that we can have, uh, the paging dispatch as the dispatch. And in this case, because most pages are currently unused and assigned, we would aim to use page two. So as a result, the dispatch would be the one shown on the last bullet here on the slide, uh, which is a one byte bit pattern. So there is one thing in the queue. I don't know if you may have any question at this moment.\nSPEAKER S6: Uh, hello. Uh, I have a question about the, um, dispatch type value assignment. Uh, I'm not very clear about, uh, when to assign a whole page and when to assign a dispatch value in page. In page zero. Uh, because here I, uh, I can see, uh, we use we use the whole page. But if we assign only a or only one value from page zero. Seems to, uh, seems to work.\nSPEAKER S1: Well, the the problem is that, uh, we would need to to actually see if. Well, uh, look at the available unassigned space from page zero. Page one perhaps. Uh, but the problem is that we would need to to probably use more than one byte. Okay. Um, and on the other hand, the point is that there are up to 16 possible pages and most of them are unassigned. Actually, there are only two pages at the moment actually assigned. And there's a third one that will be assigned, but there are still 13, uh, pages which are not used. Well, out of those, one is experimental. But anyway, it seems like perhaps it might be Suitable to to allocate a whole page for this. Considering that the aim here is to keep low overhead. Just keep this page of just one byte. That's the aim here. Um, I don't know if Pascal is also on the queue.\nSPEAKER S7: I have the same pang, actually. Um, you're. We are using one value in page zero to just ignore page two. It's just one sequence of bits which are taken from the first byte, just like any value in page zero. So if if you're using the full page to just mean one thing, I mean I would like to study if we can find any bit left in page zero as opposed to assigning a full page. It seems seems to me like a good idea to to to look at. I'm pretty sure there are some few bits left.\nSPEAKER S1: Okay. Thank you. Thank you very much for the comments. So yeah, we'll definitely take a look at this. Okay. So then I guess we may continue with the next slide please.\nSPEAKER S7: Otherwise.\nSPEAKER S1: Okay. So um, then after the dispatch what comes next is the packet. As mentioned before it would be a packet with a header compressed by using Shik. Then there would be some payload and if needed there would be a last field which would be padding with the aim to align the size of the frame format to an octet boundary. Next please. Then we have a section where which is dedicated to explain and specify how she compression will be done for IPv6, UDP and TCP headers in this case. And first of all, we need to take into account that she had a compression may be applied to different protocols or sets of protocols. Uh, that means that perhaps we might apply compression to only IPv6 or perhaps to IPv6 UDP, or perhaps to IPv6 UDP jointly. So, uh, for subsequent versions of the document, uh, we may need to look at how we might, uh, how we should, uh, support the different options here. And that relates with how we handle how we specify the use of what is called in ID, which would correspond to the base compressed header. Other than that, uh, we state that IPv6 and UDP header fields must be compressed as per section ten of the base basic specification, which is 8724. Here there's one detail, which is that there are two concepts in that RFC. Device ID and app ID, which correspond to the context for which she has been designed, which is an lp1 network architecture where there's the device, meaning the small IoT device such as a sensor, and then an application server perhaps receiving data from that device. And perhaps those concepts don't always translate exactly in the context of a 15.4 network. For example, in a mesh network, there could be interactions between two peers. So this is something that might need some adaptation perhaps. And another point is that, uh, regarding Coap, we say that header fields, if coap is is used and if compression is used, just those fields must be compressed as per sections 4 to 6 of RFC 8824. Okay, so next please. Well, um. Thank you. Uh, that was everything. I don't know if there may be other comments or questions. Okay. So yeah. Whang-peng.\nSPEAKER S6: Opinion I think is a very good comparison, uh, mechanism here. And, um, we need to, uh, uh, it's valuable to, uh, integrate the QTc and the six loop framework. So, um, it's a it's only a comment I think is very good. Thank you.\nSPEAKER S1: Thank you very much for the positive comment. Thank you. Any other comments?\nSPEAKER S8: No, not for the moment. I will have a look on this draft. Carlos, thank you for this presentation and I will come with, uh, comments over the mailing list.\nSPEAKER S1: Okay. Thank you very much. Georgios, feedback will be very much appreciated. Okay. Any other comments? Yeah. So then we may proceed to the next presentation. So that would be one thing.\nSPEAKER S6: Hello everyone. Um, company from Huawei is speaking. Um, today I'll introduce a new internet draft to you. Namely the native short address for internet expansion. Um, next. Next page, please. Okay. Thank you. Uh, three points drove me to research on NFC technology. Uh, the first one is an ongoing, massive expansion of Network Edge that is driven by IoT technology. And the second one is many work has been done to address the foundational issues, uh, especially in 6.60 and lp1, uh, working groups. The last one, uh, is, uh, we still have uh, there is still room to improve the solutions because of existing solutions shortcomings, uh, which include, uh, inherited address allocation mechanism from IPv6 from IPv6 consumes more bandwidth and energy. And the second point is, uh, native native IPv6 address is too long. Uh, constrained IoT network devices cannot afford large routing table, uh, just limited scale of the network. And then, uh, RPO based routing makes routers consuming extra resources to advertise, store and manage route messages, thus increasing complexity of network. And next. Uh, next page please. So what we want to do here is to propose a new solution based on native short address. Um, uh, essay. Ah, it will optimize networking of devices within LTE domain as well towards to the internet, and it depends on another specific lower layer conventions, nor centralized dhcpv6 server and more on there is no routing table is needed anymore and thus eliminate route message messages. And considering the most common route over network is the ANC approach will have a 43% head length reducing Jan six open. Uh, here. Um, I received comments from colleagues about the best case of loop fhq. Uh, and uh, as per the RFC 6282, uh, the best case would be 2 or 3, uh, octopus. But, uh, I want to clarify here, um, if we consider, uh, if we consider the common case and, uh, most common, uh, encapsulation, uh, should be seven, should be seven bytes. Here. Um, okay. Next. Next page please. So, uh, next I will explain what is NSA now? It's defined as a distributed assigned network layer, uh, identifier for efficient routing. And it's normally local effected and using a smaller address space than IPv6. Uh, here's key techniques, uh, NSA allocation and table free routing. Uh, then the last the last, uh, feature is, uh, address encoding that avoids context and compression. Um, next page please. Oh. Thank you. Um, so for, uh, for, uh, allocation. And there are some assumptions here for allocation algorithm. Um, one is network nodes rules and style of the dress respectively. And the relations between parent and child address. Uh, under this uh example of network, uh looks like uh, right. Uh figure in next pages, uh, I will give an example to explain how does, uh, NSA be generated. Uh, next page please. Okay. Uh, note, uh, And the NFC network may stay at four states. Uh, one is node with no address and the root node for word node. Uh, all the leaf node and next page please. When? Uh when node. Uh see uh node X wants to request a native short address. Uh, it sends address request message to its neighbors. Uh, the message carries predefined rule and node ID information of node X. Next, please. Okay. Uh, leaf. And what node now will ignore and drop the message silently and and next. And the um and the forward forwarder node or root will execute uh will execute address allocation function to generate a new address for node X and send the response message to node x. Um next please. So node x will receive many response responses from its neighbors maybe. And it will accept uh, it will accept the first valid response and use that and use that address. So it ignores other late coming responses. Uh next please. So, uh, after the allocation and native table three routing can be used for uh, for inter-domain routing, uh, we defined some rule with priorities. We also give an example to explain the routing procedure. And next please. Uh, suppose there is a packet destined 2111011. The the light gray node. Uh, to, uh, sorry. Uh, the the deep gray node, uh, from the 01011 node and the left gray node, uh, okay. At the source. Uh, rule two will, uh, will be matched firstly. So the action is uh, is uh, is sending to uh parent node uh with address one zero. Uh next please. And when the package arrives, uh one zero node uh rule four match the firstly. So the action is tend to send to its parent and the root node with address one. And uh next please and add the root and root are rule three matches firstly, so the destination should locate in subtree of this node and then we will calculate the direct child or direct child uh, of the of this node and send send to it. Send it to the next layer child node with address 1110. Uh next please. Uh, so uh, at 1110 node rule three matched again and send to the next layer child. Uh, it's 111011. Uh, and next please. And the package will arrive. Uh, will arrive at the destination. Okay. This is, uh, this is, uh, an example of for the, uh, table free routing. Uh. Next, please. Uh, okay. Previous pages explains the procedure of routing, uh, uh, routing in the domain. Uh, but for the packet traffic, uh, from, uh, uh, between native and IPv6 domain, um, inward and outward traffic need to be identified. Uh, for in domain nodes address uh border gateway need to uh concatenate uh and concatenate uh IPv6 prefix and NSA uh for outside IPv6 address. Border gateway can maintain a mapping table between IPv6 and a short index for for IPv6 address. And then uh gateway performs translation when packets pass through the gateway. Uh. Next, please. Um, after the allocation and routing, we want to, uh, develop the packet header encoding, uh, which is based on, uh, lupine framework and reuse part of the, um, part of a header. Compression definitions of six lupine. And there are three, uh, length variable headers encoding and including, uh, payload length, uh, source address and destination address. And next please. And uh, some, uh, some specific values, uh, of uh of the length variable, uh field will be used to indicate that a longer field will be used. Uh, so this is the basic mechanism for the length variable. Okay. Next please. So about how we can achieve some improvements include include a simpler routing. Eliminate eliminate context and saving more bits in headers. Um so and this is what, what I mentioned the uh, improve uh, improving room. Okay. Next please. Uh, so, um, here, uh, here is about the, um, in consideration, the new dispatch type assignment. And I need to request some dispatch type values. Um, the the ideal, the ideal values, uh, is 16. Um, but, uh, um, under the columns of, uh, college. Um, we cannot use the 0101 uh, 110000 value, which, uh, which has already been used by the broadcast. Uh, so here, uh, we, uh, we have some modification, uh, modification here, and we use the 0101000 1 to 0 1011111. And this values is suggested to be assigned for NSA according to current state of the of this registry. Um, but um, by the previous discussion, uh, if the new page can be used, I think the NSA, uh, NSA dispatch type can be assigned to a new page also. Uh, so, um, so here I think we need more comments here. Uh, okay. Next page please. Um, so, uh, what I expect next is some interest will be inspired by this document. Uh, collaborations. Uh, comments, questions are all appreciated. And I also seek for, uh, uh, I also seek for six low group uh, can accept this work and maybe, uh, part of this document. Uh, okay. This is my presentation. Uh, any questions? Comments? Uh, okay. All right, I saw Pascal.\nSPEAKER S1: Yes. Pascal, please.\nSPEAKER S6: Yeah, please.\nSPEAKER S7: Say that this has been tried, uh, great. many times in the past. Um, it's it was exemplified by, uh, IEEE 822.15.5 standard. And that standard was actually a big failure. And the reason why it failed is because it did not survive the real world. Um, for instance, if you have mobility, like you change your parents, then that causes the change of address. If the structure of the graph doesn't match, um, the number of children per parent that are expected, then the network cannot form. And there are a good number of reasons like that which cause data to that 15.5 to fail. Um, some people came in to six low, I would say almost 15 years ago proposing something similar. I think it was draft Daniel. Something like that. And you will find in the history that it also failed. Um, I'm not encouraging. Six, six. Slow to to try again because we know this fails. Um, also, the way this draft is worded, it looks more like a layer two technology where you redefine headers and Mac, then an IP technology where you can position IPv6. Um, I don't even see why you're proposing those formats at the IETF. It doesn't look like an IETF piece of work, more like an IP. And again, like I said, it was already done at Tripoli and it failed. If you want to to look for more history, just take for instance six and your article addressing, and you will find a number of papers which will show you all sorts of variations of of these ideas in the past. But like I said, they all failed.\nSPEAKER S6: Okay.\nSPEAKER S2: Hello, this is Dominic. I want to concur with Pascal. Uh, I think this has been tried as well with the first version of Zigbee. If my memory serves, this was about, uh, 16 years ago, and they had, uh, tree based address allocation, uh, with ranges at each of the intermediate routers where, where you had to define statically, uh, the depth and breadth of your possible tree. And that was a failure. They quickly changed back to, um, other addressing systems that are not related to the to the topology for the reason that Pascal explained when the topology changes, then you have to renumber everything. That's my comment.\nSPEAKER S6: Okay. Got it. Uh, about, uh, changes. Okay. The, uh, so the comments is about the when topology changes, uh, what, uh, can be, uh, what can be done by the NSA, right?\nSPEAKER S2: Yes. Correct. You have to reallocate all the addresses.\nSPEAKER S6: Uh, I, I think is a very interesting, uh, further research topic. And so I will, uh, update some sentences in the next version. Okay. Thank you all.\nSPEAKER S1: Also, there is one, uh, couple of comments on the chat from Matthew Gillmor. Uh, one is plus one to Pascal's comments and then a question, which is how many client devices are supported with this proposal? Okay. Perhaps one last comment. Uh, we are, uh, on the time for starting the next presentation. Is that, uh, well, uh, also from the point of view of whether the work would fit in six low charter. Um, yeah. There is the concern that nodes in the NSA domain are not aware of their own corresponding IPv6 addresses, so perhaps that is a bit beyond. Uh, or not exactly complying with IPv6, right? At least in the typical sense. So that's another point to consider. Okay. Well thank you. So we can proceed to the next presentation on fragment forwarding and forward error correction and network coding. So when you are free.\nSPEAKER S9: Well hello everybody. I hope you can hear me. Well. Um, and and. Okay, great. And today I will talk with you about fragrance forwarding and forward error correction coding and propositions that, um, to our minds, uh, could improve the reliability of the fragmentation with six open. Uh, so next slide please. Thanks. Um, so, um, on this small example, which is, uh, an example of a forwarding of a packet under the RFC 4944, uh, fragmentation mechanism. There are three main issues, some of which have been addressed by following uh RFCs. But uh, the main one is, uh, that the loss of any fragment, um, entails, uh, the failure or the full transmission, um, mechanism. So if any fragment is lost, that will mean that all the translations that have occurred before will have been, uh, done in vain. So our concerns are how can we address this issue with new new ideas and mechanisms? Next slide please. So the fragment forwarding draft, uh, the RFC 8930 has addressed some of the issues of the RFC for 4944, uh, mainly with uh, the addition of the virtual reassembly buffer, which uh, um, allows to, uh, avoid reassembling the packets at each hop. This has improved greatly the latency, the memory usage of the nodes. But still we have this one main issue that I just talked about, which is one loss fragment, means that the whole packet is lost. And, uh, I will now propose, introduce, introduce you to the forward error correction principle. Next slide please. So forward the correction is let's say an idea in which by adding redundancy to the transformations that you perform, uh, you aim at uh, have a successful first attempt of transmission so that you don't have to retransmit the full packet in the 89, 31. Uh, there is a different approach, which is let's, uh, make our first try and with, uh, requests to the source node, let's, let's correct the, uh, the losses that we have, uh, suffered. The forward error correction principle is a different idea where we really try to make the first attempt successful. So there are two types of effects. Um, the first one is, uh, the intra frame one where. You aim at making the last bytes of a fragment recovered through error correction codes that can be implemented into the fragments. But what we focused on is the Interframe effect, where by adding new fragments, you enable the destination to recover the fragments. Uh, the loss, the loss fragments that, uh, you miss at the end. So we have three propositions of, uh, fake for fragmentation. Uh, and at the end, if you if you are interested, you can talk about one article that we found when we, uh, worked on this. Next slide please. So the first fake proposition is, uh, quite simple. We call it we call it because it adds one additional fragment which is generated by using the XOR, the exclusive or operator on the original fragments of the packet. So thanks to this additional fragment, if any of the previous fragments is lost, um, it is possible to recover it, uh, by performing once again the XOR operator uh, at the destination node. This uh entails the possibility of recovering one and only one fragment, uh uh, of the packet. Next slide please. Thanks. Um, so when a packet is forwarded, um, uh, we still use in, in that case, the virtual reassembly buffer. And what we do is the additional fragment, uh, will have a datagram. Uh, sorry. Yes, a datagram offset. Um, uh, that is, uh, where you add the, The payload of the, the additional, the size of the payload of the additional fragments and all the fragments are, including the additional one, are transmitted successively. I mean, um, and if, uh, the destination, uh, sees that one fragment is missing, uh, but that it still receives, uh, the number of original fragments, it will perform the recovery by performing the XOR operator at the end. So that way we are able to recover one of the fragments that could have been lost. Next slide please. So since the first, uh, fake mechanism only was only able to recover one fragment, this, uh, next, uh, fake mechanism called for retransmission. Fake will allow to recover more fragments. So it is very simple. You will. Each fragment will be sent twice identically. So in that. In that case, even if you lose the first fragment. Next slide please. Since you are also sending a copy of the first fragment, the relay node will be able to create the verb thanks to the routing information contained in the in the IPv6 header compressed. Um that is contained in this first segment. The verb will be able to be created and the next fragment will be able to be forwarded. Next slide please. So um, the that way, as I said, the first fragment will be forwarded from the relay node to the destination node. And the second uh fragment will uh, be able also to be forwarded. Next slide please. And that way, uh, even if some of the copies of the fragments are not received. Uh, next slide please. We will we will be able to recover and reassemble the packet as long as one of one copy of each fragment is received. And in case, uh, of reception of two copies of the same fragment, the second copy will be discarded because it will be unnecessary. So obviously, this, uh, improves the reliability of the transmission, but also increase, uh, increases greatly the traffic. So, um, we will now propose a new, uh, uh, mechanism based on network coding. Next slide please. So basically, um, it will fragment the it will start by fragmenting the packet as, uh, currently done by the fragmentation mechanism. Next slide please. So uh the the Though in the original fragments will still be generated and there will be zero padding added to the last fragment. Next slide please. And what will happen is we use, um, an encoding algorithm based on finite field arithmetic, which have the important property where you only need the same number of original fragments to be received in order to be able to reassemble the packets. So in this example, we have three original fragments and five encoded fragments, and you can receive any combination of the of three of the five encoded fragments in order in order to be able to recover the packet. So this makes us able to, uh, uh, have a lot more flexibility, uh, according to like regarding the combination of fragments that will be, received, um, and will increase the reliability of the transmission. Next slide please. So then this encoded, this encoded um fragments will be sent uh will be encapsulated into inside the match frame. And in our experimentations we didn't have we just, um, put the source address and destination address in each fragment. We didn't put the IP header, which is a mistake. Uh, if you want to be compliant with the fragmentation, you would add this field between the fragment header and the address. But adding the source address and the destination address to each fragment allows us to be able to lose, uh, any fragment, including the first one, which, with the current fragmentation, uh, proposal, uh, is the only one containing the routing information. And this makes it also possible in the future to have a mechanism where each fragment can be routing independently, and each fragment can be, for example, sent on a different path, which can entail interesting properties for our network. Um, next slide please.\nSPEAKER S1: Sorry to interrupt. Uh, yeah. If you could quickly finish because we are past our agenda time.\nSPEAKER S9: Okay. Uh, I will quickly finish then. So, uh, uh, in this example, we will have, uh, four original fragments, uh, leading to six encoded fragments. Uh, next slide please. And even if the first one is not, uh, transmitted correctly. Successfully. Successfully. Next slide please. Um, the second one contains the routing information which will, uh, allow to forward itself. Next slide please. and all the other fragments will be able to be forwarded. Thanks to this routing information, and any combination of four fragments would have enabled us to recover the fragments. In that case, uh, it happens to be the fragments number two, three, four, and five. And we're able to decode these fragments in order to reassemble the packet. Uh, next slide please. So thanks for listening. Uh, if you have comments or questions, I will gladly answer, answer them.\nSPEAKER S1: Yeah. So thank you for the presentation. We are past our agenda time. Uh, so we'll have unfortunately no time for discussing this today, but, uh, probably we can continue and we can discuss on the mailing list. And, uh, by the way, uh, my understanding is that there is not yet an internet draft out there for this, but, uh, that you will publish one?\nSPEAKER S9: Yes.\nSPEAKER S1: Okay. So then, uh, after that, when you submit your draft, then it will be good to discuss on the mailing list. Okay. So if there is not any comment, maybe for a quick question or comment. Yeah, we are three minutes past our time. So probably we should say that, uh, the session is finished here. And hopefully let's see if we can see each other in person or virtually in Madrid. Thank you very much.\nSPEAKER S2: Thank you. Bye bye.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.98190337732051
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Hello everyone.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "I hope you can hear me correctly.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the meeting of the Siuslaw Working Group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "My name is Carlos Gomez.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "The other chair is Shweta Bhandari.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Our responsible aid is Eric Klein.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we hope Eric will join soon.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "And for today, we have one minute taker, Georgios Papadopoulos.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Kindly, uh, will help in taking minutes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "However, uh, is there anyone else who would maybe like to volunteer to help Georgios in taking minutes?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, I'm on the eve of bad as well.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Hi all.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you very much, Dominique.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "This is much appreciated.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so yeah, please recall everyone that, uh, the process of taking minutes will happen over, uh, the etherpad by using code EMD.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "So anyone can also join and contribute to the collaborative process of taking minutes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, on the slide, you can also find a number of pointers to useful resources such as the online agenda, the double room for six lo the mitico which well, we are using and uh, the link for code EMD for today's session.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, perhaps there's the note.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Well, yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "So, yeah, this is the note.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Well, so recall that it contains a number of pointers to, uh, ITF policies on a number of important topics.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "So please make sure that you have read it.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "This is the agenda for today.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "The first slot is the usual chair's introduction and presentation of draft status.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "So this is the presentation that's currently in progress.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "And well after that there will be the presentation of the last update of the Applicability and use cases draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "That will be followed by the presentation of a new draft entitled transmission of Chic compress packets over IEEE 22.15.4.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "That will also be followed by yet another new draft entitled Native Short Address for Internet expansion.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "And finally, we'll have a presentation on fragment forwarding and the use of forward error correction.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "So as you can see, we have a total agenda time of 60 minutes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "So we have a packed agenda today.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "And by the way, this is the first six meeting in many six meetings that we are going to dedicate most of the agenda time to discussing new materials.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Um, well, are there maybe any questions or comments on the agenda?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "So let's move to the next slide.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "So about the status of the working group documents since the last IETF, we have a new RFC that's RFC 1934 which is entitled Packet Delivery Deadline time in the routing header for six lo pans.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, congratulations to the authors, and thank you very much to everyone who helped and contributed with comments and reviews.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So thanks again to everyone involved in the process.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Other than that, we currently have four working group documents.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "The first one is IPv6 over NFC.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "So you may recall that this document was first evaluated by the ISG a couple of years ago.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "And um, well after that, and the authors collaborated with the shepherd to produce some updates of the draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "And currently there are some ongoing discussions on how to proceed about the process of how to continue the evaluation at the ISG level.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I don't know if maybe if Eric joins later or perhaps he may provide additional details on this.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "But anyway, uh, this is to let you know that there is some ongoing discussion about how to proceed with the next steps.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "The next document is IPv6, measured with BLE links.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "This document was also evaluated by the ISG.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "And there was uh, after revision nine, there was one outstanding discuss, and the authors updated the document and the discuss was clear.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So currently there are no more remaining discuss ballots.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "However, there were recently some ISG members who stepped down.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "So as a result, uh, now we need to have a few more ballots to get the approval of the document.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "And we expect to have such ballots in August or early September.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Then the next working group document is IPv6 over PLC.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "This document entered the ISG evaluation state quite recently, just around one week ago, and it is on the agenda for the, uh, for the 12th of August.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "So in about a couple of weeks, we expect to receive the feedback from the ISG, and the last working group document is the six loan use cases.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "There was a set of comments which were received after the second working group last call for this document, and the authors have updated the draft produced version 11.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, yeah, there will be a presentation on this last set of updates today.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "So is there any question, any comment?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "So if there are no comments then we may proceed to the next presentation, which is precisely about the use cases draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Could you hear me?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes, I can hear you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, nice to meet you again.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, my name is Yonghong.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, uh, today I will present the, uh, sixth row use case.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Left next page, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "This is the history and status.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you know, uh, we have two, uh, working group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "So in the last meeting, uh, based on the 10th revision, uh, we will try to resolve the comment from the second working group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "So I believe that, uh, we resolve the last of the comment from the second working group, last call.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, there are the remaining comment after the second working group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, in this meeting, I will try to resolve the other remaining, uh, comment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Next page, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "So this update after last meeting.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "So the after last meeting, we got two comments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "That is a command from hello.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "And the other is to command from the dollar.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "So I would like to thanks to them.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "The first command from Kevin is I received that after submission of the previous draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't have any time to reflect this command in the draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "So the command prompt are the poor.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "The first thing is to consideration of standard error 2059 26 recommended practice.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "And the other is expression of the standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other is to order the title of the IEEE standard and finally removing an explicit external standard and the command prompt direct is the is the minor is the type of some standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "The first command prompt hello cabinet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Is that the translation of IEEE standard arrow to the 59 2060 recommended prefix?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, he says that this draft does not take into account the IEEE standard 59 recommended prefix.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "The standard arrow to the 59, provide multiplexing and implementation layer for the standard error for the poll.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So this document should also note that in some IEEE standard poll networks, those might not be needed, and the method provided by the IEEE standard editor 59 could also be used.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "So actually I have no knowledge of the standard error.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Error 59.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I, uh, studies and I investigated the IEEE standard error 29 as I believe that the command from federal cabinet, uh, is correct.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I changed the text.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "As you can see, uh, it is noted that standard error 59 2060 provide multiplexing and implementation layer for the standard error 15.9.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other command is the, uh, regarding expression of IEEE standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, he said the proper way to refer to the IEEE Triple standard is to use a triply standard error 15 15.4 or triple standard 1901 2010.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So note that the standard between the IEEE and standard number, and that there is no period after the standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "So I check the, uh, draft, and I found that there are some the, uh, expression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "So in the full text I changes, I triple standard the port to i3 standard error to the port.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "And I also changed as he recommended.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "The other comment is the old title of an attribute standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "For example i3 standard error Step it up for the original title is to, uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "As you can see, part 15 for low rate wireless personal area network.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "And then in 2015, uh, it is simplified in standard for low rate wireless personal area networks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "And it also simplified again in 2020 to IEEE standard for low rate wireless networks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "So I finally changed the last one IT standard for low rate wireless networks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the final comment on is the removing an explicit external standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it is related to the thread, uh, text.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "So he said that I'm not sure current thread group use IEEE standard for uh 26 anymore.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "That is any feature that was built in 1826.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "But which are now no longer in your new version.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "So he suggests to delete the sentence.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "The IEEE standard 1526, and I triply add it to the 2015 version of the specification are used by thread.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "So I delete the sentence.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it is the command prompt or direct.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yes, it is the same.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "The minor typo.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "So I change it to standard 19 zero one and I change to standard 19 01.1 and 19 01.2.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "As you can see, uh, in this time, we don't, uh, give any change of the technical part.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "It is, uh, only two leads to the expression, while some the typo.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "So I believe that, uh, I uh, reserved all comment during working group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Second working group last call and uh, after the second working group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "That's all.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Is there any question or comment?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, Carlos.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Could you hear me?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hello?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "So Tito is in the queue.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, feel free to speak.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I was just pointing out that the, uh, 15 nine, uh, had just new version or actual revision of the 59 was approved, like a month ago or so.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "So now it's in the editor's queue, uh, which will probably take a month or two or something like that.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "And there will be 59, 20, 21 should be out, like in a couple of months.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "It doesn't have any the the fragmentation that kind of things are actually same, that there are major differences, that there is actually no support for 15 for why which is adding algorithms to multiple, you know, different key, uh, cryptographic algorithms for 15 for and allows negotiation of those two.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: If there are no other comments, if you want to take this forward.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Any volunteers to shepherd this document to through ISG process?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Please feel free to reach out are on the mailer or to Carla and me to if you want to volunteer.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise I'll be shepherding the doc.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "So moving on to the next one.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Carlos.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "You want to go ahead?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Hello again.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm going to present the initial version of a new draft entitled Transmission of Compressed Packets over IEEE 802.15.4 networks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "My co-author is Ana from Ecleo.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "First of all, let's take a look at the motivation for this draft as this working group knows very well, RFC 6282 has been the basis for header compression in six Lapan and also in six Lo.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "This RFC was designed for 15.4 as the target technology, and it has been adapted or reused quite extensively for relatively similar IoT technologies.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "So with this RFC it is possible to compress a typical 48 byte IPv6 UDP header down to a size of seven bytes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "That's in the best case with global addresses.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "And on the other hand, last year there was the publication of RFC 8724, which is a product of the Lrp1 working Group.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "It's also known as chic, which is a framework which provides additional functionality.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, there are two main Sublayers header compression and fragmentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "In chic and it has been designed for lrp1 technologies, which are even more constrained than six low or six low powered technologies we usually handle.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "So if we focus on header compression, Chic is capable of compressing a 48 byte IPv6 UDP header down to a size of, for example, just one byte.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Again, in the best case with global addresses, and it is based on the use of static context and the technique here is exploiting a priori knowledge of header field values.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "We may also consider an application layer protocol on top of IPv6 UDP.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Like in this case coap.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "And well there is no specific header compression for Coap.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "So in that case we may compress an IPv6 UDP coap header down to a size of 11 bytes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Again, in the best case with global addresses, and also in this case with no header options.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "And however, there is some uh specification on how to compress coap headers by using chic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "And as a result, it's possible to compress an IPv6 UDP header down to a size of just two bytes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "So this header compression improvement leads to some battery lifetime improvement for devices that run on batteries.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, that's in this case, if we use those mentioned protocols on top of 15.4, theoretically, and in the most extreme case, it is possible to achieve a theoretical battery lifetime improvement by up to 40%.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that would be also including a third byte when using chic, which would be the chic dispatch that will be presented later.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, well, a disclaimer here is that, of course, the actual improvement will be lower depending on various parameters and features such as device hardware and especially the slip current consumption, Mac layer settings, application layer settings, payload size, and so on.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "So um, about the status of this document.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "So the document I'm presenting today is an initial version.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "It's A00.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "However, strictly speaking it is not really A00 because it's actually an extended version of another document that was with a narrow scope which intended to define just the chic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Dispatch.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "And here the scope is greater.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "The aim is to specify everything necessary to enable the transmission of compressed packets over 15.4 networks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Also, the aim is to incorporate feedback from previous meetings.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Well here we can see two protocol stacks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "The one on the left is the traditional six based protocol stack, where as you can see, the six layer has been illustrated as two separate sublayers.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "The one on top is the header compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "The other one is fragmentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "This is on top of 15.4.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "And on the right what we can see is the protocol stack.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that would be the result if we apply this change that we propose here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "So you can see that the only change in terms of the protocol stack relates with the header compression part.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "So here we would be using chic header compression instead of six header compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "However to be clear the aim is not Obsoleting traditional six header compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "The the goal here is to provide just another way to perform header compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "If, uh, that seems to be uh, suitable, uh or beneficial in some 6 or 6 Lo environments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Then another common is that, as you can see in the protocol stack on the right, we stick to six open fragmentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "That's even if she provides also some fragmentation functionality.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "However, here, uh, perhaps there is not that much of an incentive to use fragmentation for a number of reasons.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "First, in terms of functionality, uh, we had the recent publication of the Selective Fragment Recovery RFC.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "So from that point of view, perhaps there is not much more that can be added by considering fragmentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Then, um, also, in terms of the size of the fragmentation header, it's not so clear that there will be a huge improvement from that side as well.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "And perhaps it's also positive to be able to reuse existing code, uh, existing fragmentation code for implementations of a 15.4.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "So as you can see currently in the draft, what we specify is that fragmentation would still be used.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So here we show the frame format which corresponds to an encapsulated shipped compressed packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "This would be carried as layer two meaning 15.4 frame payload.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "And there are a number of fields.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "The first one that is the leftmost one is the dispatch.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "This is a field which is intended to signal that what comes next is a chic packet, which is a packet with a header that has been compressed by using chic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So here what we define in the draft is a dispatch type dedicated for chic header compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "As the chic dispatch.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "So here we exploit RFC 1825.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "And we use the paging dispatch which as you can see has a size of one byte starting with four ones and then four additional bits which indicate the page that will be used.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Recall that uh, RFC 1825 basically expands the dispatch type space in Japan and here, for the sake of efficiency, to keep low overhead.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "The aim is to just use, uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Dedicate a whole page so that we can have, uh, the paging dispatch as the dispatch.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "And in this case, because most pages are currently unused and assigned, we would aim to use page two.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "So as a result, the dispatch would be the one shown on the last bullet here on the slide, uh, which is a one byte bit pattern.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So there is one thing in the queue.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if you may have any question at this moment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, hello.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I have a question about the, um, dispatch type value assignment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm not very clear about, uh, when to assign a whole page and when to assign a dispatch value in page.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "In page zero.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because here I, uh, I can see, uh, we use we use the whole page.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "But if we assign only a or only one value from page zero.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Seems to, uh, seems to work.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well, the the problem is that, uh, we would need to to actually see if.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "Well, uh, look at the available unassigned space from page zero.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Page one perhaps.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but the problem is that we would need to to probably use more than one byte.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and on the other hand, the point is that there are up to 16 possible pages and most of them are unassigned.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Actually, there are only two pages at the moment actually assigned.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a third one that will be assigned, but there are still 13, uh, pages which are not used.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Well, out of those, one is experimental.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "But anyway, it seems like perhaps it might be Suitable to to allocate a whole page for this.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Considering that the aim here is to keep low overhead.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Just keep this page of just one byte.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "That's the aim here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know if Pascal is also on the queue.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I have the same pang, actually.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you're.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "We are using one value in page zero to just ignore page two.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "It's just one sequence of bits which are taken from the first byte, just like any value in page zero.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "So if if you're using the full page to just mean one thing, I mean I would like to study if we can find any bit left in page zero as opposed to assigning a full page.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "It seems seems to me like a good idea to to to look at.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "I'm pretty sure there are some few bits left.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for the comments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, we'll definitely take a look at this.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "So then I guess we may continue with the next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Otherwise.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "So um, then after the dispatch what comes next is the packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "As mentioned before it would be a packet with a header compressed by using Shik.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Then there would be some payload and if needed there would be a last field which would be padding with the aim to align the size of the frame format to an octet boundary.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Then we have a section where which is dedicated to explain and specify how she compression will be done for IPv6, UDP and TCP headers in this case.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "And first of all, we need to take into account that she had a compression may be applied to different protocols or sets of protocols.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that means that perhaps we might apply compression to only IPv6 or perhaps to IPv6 UDP, or perhaps to IPv6 UDP jointly.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, for subsequent versions of the document, uh, we may need to look at how we might, uh, how we should, uh, support the different options here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "And that relates with how we handle how we specify the use of what is called in ID, which would correspond to the base compressed header.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Other than that, uh, we state that IPv6 and UDP header fields must be compressed as per section ten of the base basic specification, which is 8724.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Here there's one detail, which is that there are two concepts in that RFC.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Device ID and app ID, which correspond to the context for which she has been designed, which is an lp1 network architecture where there's the device, meaning the small IoT device such as a sensor, and then an application server perhaps receiving data from that device.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "And perhaps those concepts don't always translate exactly in the context of a 15.4 network.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "For example, in a mesh network, there could be interactions between two peers.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "So this is something that might need some adaptation perhaps.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "And another point is that, uh, regarding Coap, we say that header fields, if coap is is used and if compression is used, just those fields must be compressed as per sections 4 to 6 of RFC 8824.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that was everything.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if there may be other comments or questions.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Whang-peng.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Opinion I think is a very good comparison, uh, mechanism here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, we need to, uh, uh, it's valuable to, uh, integrate the QTc and the six loop framework.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, it's a it's only a comment I think is very good.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you very much for the positive comment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Any other comments?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: No, not for the moment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "I will have a look on this draft.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Carlos, thank you for this presentation and I will come with, uh, comments over the mailing list.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Georgios, feedback will be very much appreciated.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Any other comments?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "So then we may proceed to the next presentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So that would be one thing.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Hello everyone.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Um, company from Huawei is speaking.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Um, today I'll introduce a new internet draft to you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Namely the native short address for internet expansion.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Next page, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, three points drove me to research on NFC technology.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the first one is an ongoing, massive expansion of Network Edge that is driven by IoT technology.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "And the second one is many work has been done to address the foundational issues, uh, especially in 6.60 and lp1, uh, working groups.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "The last one, uh, is, uh, we still have uh, there is still room to improve the solutions because of existing solutions shortcomings, uh, which include, uh, inherited address allocation mechanism from IPv6 from IPv6 consumes more bandwidth and energy.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "And the second point is, uh, native native IPv6 address is too long.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, constrained IoT network devices cannot afford large routing table, uh, just limited scale of the network.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "And then, uh, RPO based routing makes routers consuming extra resources to advertise, store and manage route messages, thus increasing complexity of network.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "And next.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "So what we want to do here is to propose a new solution based on native short address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, essay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Ah, it will optimize networking of devices within LTE domain as well towards to the internet, and it depends on another specific lower layer conventions, nor centralized dhcpv6 server and more on there is no routing table is needed anymore and thus eliminate route message messages.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "And considering the most common route over network is the ANC approach will have a 43% head length reducing Jan six open.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I received comments from colleagues about the best case of loop fhq.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and uh, as per the RFC 6282, uh, the best case would be 2 or 3, uh, octopus.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, I want to clarify here, um, if we consider, uh, if we consider the common case and, uh, most common, uh, encapsulation, uh, should be seven, should be seven bytes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Next.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, next I will explain what is NSA now?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "It's defined as a distributed assigned network layer, uh, identifier for efficient routing.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "And it's normally local effected and using a smaller address space than IPv6.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here's key techniques, uh, NSA allocation and table free routing.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then the last the last, uh, feature is, uh, address encoding that avoids context and compression.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so for, uh, for, uh, allocation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "And there are some assumptions here for allocation algorithm.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one is network nodes rules and style of the dress respectively.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "And the relations between parent and child address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, under this uh example of network, uh looks like uh, right.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Uh figure in next pages, uh, I will give an example to explain how does, uh, NSA be generated.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, note, uh, And the NFC network may stay at four states.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one is node with no address and the root node for word node.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, all the leaf node and next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "When?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Uh when node.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Uh see uh node X wants to request a native short address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it sends address request message to its neighbors.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the message carries predefined rule and node ID information of node X.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, leaf.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "And what node now will ignore and drop the message silently and and next.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "And the um and the forward forwarder node or root will execute uh will execute address allocation function to generate a new address for node X and send the response message to node x.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Um next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "So node x will receive many response responses from its neighbors maybe.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "And it will accept uh, it will accept the first valid response and use that and use that address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "So it ignores other late coming responses.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, after the allocation and native table three routing can be used for uh, for inter-domain routing, uh, we defined some rule with priorities.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "We also give an example to explain the routing procedure.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "And next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, suppose there is a packet destined 2111011.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "The the light gray node.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to, uh, sorry.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the the deep gray node, uh, from the 01011 node and the left gray node, uh, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "At the source.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, rule two will, uh, will be matched firstly.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "So the action is uh, is uh, is sending to uh parent node uh with address one zero.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "And when the package arrives, uh one zero node uh rule four match the firstly.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "So the action is tend to send to its parent and the root node with address one.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "And uh next please and add the root and root are rule three matches firstly, so the destination should locate in subtree of this node and then we will calculate the direct child or direct child uh, of the of this node and send send to it.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Send it to the next layer child node with address 1110.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so uh, at 1110 node rule three matched again and send to the next layer child.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's 111011.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "And the package will arrive.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, will arrive at the destination.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "This is, uh, this is, uh, an example of for the, uh, table free routing.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Previous pages explains the procedure of routing, uh, uh, routing in the domain.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but for the packet traffic, uh, from, uh, uh, between native and IPv6 domain, um, inward and outward traffic need to be identified.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for in domain nodes address uh border gateway need to uh concatenate uh and concatenate uh IPv6 prefix and NSA uh for outside IPv6 address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Border gateway can maintain a mapping table between IPv6 and a short index for for IPv6 address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "And then uh gateway performs translation when packets pass through the gateway.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Um, after the allocation and routing, we want to, uh, develop the packet header encoding, uh, which is based on, uh, lupine framework and reuse part of the, um, part of a header.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Compression definitions of six lupine.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "And there are three, uh, length variable headers encoding and including, uh, payload length, uh, source address and destination address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "And next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, some, uh, some specific values, uh, of uh of the length variable, uh field will be used to indicate that a longer field will be used.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so this is the basic mechanism for the length variable.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "So about how we can achieve some improvements include include a simpler routing.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Eliminate eliminate context and saving more bits in headers.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Um so and this is what, what I mentioned the uh, improve uh, improving room.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Next please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, um, here, uh, here is about the, um, in consideration, the new dispatch type assignment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "And I need to request some dispatch type values.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the the ideal, the ideal values, uh, is 16.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, um, under the columns of, uh, college.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we cannot use the 0101 uh, 110000 value, which, uh, which has already been used by the broadcast.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so here, uh, we, uh, we have some modification, uh, modification here, and we use the 0101000 1 to 0 1011111.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "And this values is suggested to be assigned for NSA according to current state of the of this registry.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but um, by the previous discussion, uh, if the new page can be used, I think the NSA, uh, NSA dispatch type can be assigned to a new page also.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, um, so here I think we need more comments here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Next page please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, what I expect next is some interest will be inspired by this document.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, collaborations.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, comments, questions are all appreciated.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "And I also seek for, uh, uh, I also seek for six low group uh, can accept this work and maybe, uh, part of this document.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "This is my presentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, any questions?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Comments?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "All right, I saw Pascal.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Pascal, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Say that this has been tried, uh, great.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "many times in the past.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's it was exemplified by, uh, IEEE 822.15.5 standard.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "And that standard was actually a big failure.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "And the reason why it failed is because it did not survive the real world.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for instance, if you have mobility, like you change your parents, then that causes the change of address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "If the structure of the graph doesn't match, um, the number of children per parent that are expected, then the network cannot form.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "And there are a good number of reasons like that which cause data to that 15.5 to fail.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Um, some people came in to six low, I would say almost 15 years ago proposing something similar.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was draft Daniel.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Something like that.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "And you will find in the history that it also failed.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not encouraging.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Six, six.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Slow to to try again because we know this fails.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Um, also, the way this draft is worded, it looks more like a layer two technology where you redefine headers and Mac, then an IP technology where you can position IPv6.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't even see why you're proposing those formats at the IETF.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "It doesn't look like an IETF piece of work, more like an IP.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "And again, like I said, it was already done at Tripoli and it failed.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "If you want to to look for more history, just take for instance six and your article addressing, and you will find a number of papers which will show you all sorts of variations of of these ideas in the past.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "But like I said, they all failed.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hello, this is Dominic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "I want to concur with Pascal.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think this has been tried as well with the first version of Zigbee.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "If my memory serves, this was about, uh, 16 years ago, and they had, uh, tree based address allocation, uh, with ranges at each of the intermediate routers where, where you had to define statically, uh, the depth and breadth of your possible tree.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "And that was a failure.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "They quickly changed back to, um, other addressing systems that are not related to the to the topology for the reason that Pascal explained when the topology changes, then you have to renumber everything.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "That's my comment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "Got it.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, about, uh, changes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "The, uh, so the comments is about the when topology changes, uh, what, uh, can be, uh, what can be done by the NSA, right?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Correct.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "You have to reallocate all the addresses.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, I, I think is a very interesting, uh, further research topic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "And so I will, uh, update some sentences in the next version.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you all.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Also, there is one, uh, couple of comments on the chat from Matthew Gillmor.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one is plus one to Pascal's comments and then a question, which is how many client devices are supported with this proposal?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Perhaps one last comment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we are, uh, on the time for starting the next presentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "Is that, uh, well, uh, also from the point of view of whether the work would fit in six low charter.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "There is the concern that nodes in the NSA domain are not aware of their own corresponding IPv6 addresses, so perhaps that is a bit beyond.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or not exactly complying with IPv6, right?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "At least in the typical sense.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "So that's another point to consider.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Well thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "So we can proceed to the next presentation on fragment forwarding and forward error correction and network coding.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "So when you are free.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Well hello everybody.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "I hope you can hear me.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "Well.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and and.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, great.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "And today I will talk with you about fragrance forwarding and forward error correction coding and propositions that, um, to our minds, uh, could improve the reliability of the fragmentation with six open.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, um, on this small example, which is, uh, an example of a forwarding of a packet under the RFC 4944, uh, fragmentation mechanism.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "There are three main issues, some of which have been addressed by following uh RFCs.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "But uh, the main one is, uh, that the loss of any fragment, um, entails, uh, the failure or the full transmission, um, mechanism.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "So if any fragment is lost, that will mean that all the translations that have occurred before will have been, uh, done in vain.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "So our concerns are how can we address this issue with new new ideas and mechanisms?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "So the fragment forwarding draft, uh, the RFC 8930 has addressed some of the issues of the RFC for 4944, uh, mainly with uh, the addition of the virtual reassembly buffer, which uh, um, allows to, uh, avoid reassembling the packets at each hop.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "This has improved greatly the latency, the memory usage of the nodes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "But still we have this one main issue that I just talked about, which is one loss fragment, means that the whole packet is lost.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I will now propose, introduce, introduce you to the forward error correction principle.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "So forward the correction is let's say an idea in which by adding redundancy to the transformations that you perform, uh, you aim at uh, have a successful first attempt of transmission so that you don't have to retransmit the full packet in the 89, 31.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is a different approach, which is let's, uh, make our first try and with, uh, requests to the source node, let's, let's correct the, uh, the losses that we have, uh, suffered.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "The forward error correction principle is a different idea where we really try to make the first attempt successful.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "So there are two types of effects.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the first one is, uh, the intra frame one where.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "You aim at making the last bytes of a fragment recovered through error correction codes that can be implemented into the fragments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "But what we focused on is the Interframe effect, where by adding new fragments, you enable the destination to recover the fragments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the loss, the loss fragments that, uh, you miss at the end.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "So we have three propositions of, uh, fake for fragmentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and at the end, if you if you are interested, you can talk about one article that we found when we, uh, worked on this.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "So the first fake proposition is, uh, quite simple.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "We call it we call it because it adds one additional fragment which is generated by using the XOR, the exclusive or operator on the original fragments of the packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "So thanks to this additional fragment, if any of the previous fragments is lost, um, it is possible to recover it, uh, by performing once again the XOR operator uh, at the destination node.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "This uh entails the possibility of recovering one and only one fragment, uh uh, of the packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so when a packet is forwarded, um, uh, we still use in, in that case, the virtual reassembly buffer.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "And what we do is the additional fragment, uh, will have a datagram.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, sorry.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, a datagram offset.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, that is, uh, where you add the, The payload of the, the additional, the size of the payload of the additional fragments and all the fragments are, including the additional one, are transmitted successively.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, um, and if, uh, the destination, uh, sees that one fragment is missing, uh, but that it still receives, uh, the number of original fragments, it will perform the recovery by performing the XOR operator at the end.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "So that way we are able to recover one of the fragments that could have been lost.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "So since the first, uh, fake mechanism only was only able to recover one fragment, this, uh, next, uh, fake mechanism called for retransmission.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "Fake will allow to recover more fragments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "So it is very simple.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "You will.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "Each fragment will be sent twice identically.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "So in that.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "In that case, even if you lose the first fragment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "Since you are also sending a copy of the first fragment, the relay node will be able to create the verb thanks to the routing information contained in the in the IPv6 header compressed.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "Um that is contained in this first segment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "The verb will be able to be created and the next fragment will be able to be forwarded.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "So um, the that way, as I said, the first fragment will be forwarded from the relay node to the destination node.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "And the second uh fragment will uh, be able also to be forwarded.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 583,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 584,
+            "start": 0,
+            "end": 0,
+            "text": "And that way, uh, even if some of the copies of the fragments are not received.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 585,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 586,
+            "start": 0,
+            "end": 0,
+            "text": "We will we will be able to recover and reassemble the packet as long as one of one copy of each fragment is received.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 587,
+            "start": 0,
+            "end": 0,
+            "text": "And in case, uh, of reception of two copies of the same fragment, the second copy will be discarded because it will be unnecessary.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 588,
+            "start": 0,
+            "end": 0,
+            "text": "So obviously, this, uh, improves the reliability of the transmission, but also increase, uh, increases greatly the traffic.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 589,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, we will now propose a new, uh, uh, mechanism based on network coding.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 590,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 591,
+            "start": 0,
+            "end": 0,
+            "text": "So basically, um, it will fragment the it will start by fragmenting the packet as, uh, currently done by the fragmentation mechanism.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 592,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 593,
+            "start": 0,
+            "end": 0,
+            "text": "So uh the the Though in the original fragments will still be generated and there will be zero padding added to the last fragment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 594,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 595,
+            "start": 0,
+            "end": 0,
+            "text": "And what will happen is we use, um, an encoding algorithm based on finite field arithmetic, which have the important property where you only need the same number of original fragments to be received in order to be able to reassemble the packets.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 596,
+            "start": 0,
+            "end": 0,
+            "text": "So in this example, we have three original fragments and five encoded fragments, and you can receive any combination of the of three of the five encoded fragments in order in order to be able to recover the packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 597,
+            "start": 0,
+            "end": 0,
+            "text": "So this makes us able to, uh, uh, have a lot more flexibility, uh, according to like regarding the combination of fragments that will be, received, um, and will increase the reliability of the transmission.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 598,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 599,
+            "start": 0,
+            "end": 0,
+            "text": "So then this encoded, this encoded um fragments will be sent uh will be encapsulated into inside the match frame.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 600,
+            "start": 0,
+            "end": 0,
+            "text": "And in our experimentations we didn't have we just, um, put the source address and destination address in each fragment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 601,
+            "start": 0,
+            "end": 0,
+            "text": "We didn't put the IP header, which is a mistake.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 602,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you want to be compliant with the fragmentation, you would add this field between the fragment header and the address.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 603,
+            "start": 0,
+            "end": 0,
+            "text": "But adding the source address and the destination address to each fragment allows us to be able to lose, uh, any fragment, including the first one, which, with the current fragmentation, uh, proposal, uh, is the only one containing the routing information.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 604,
+            "start": 0,
+            "end": 0,
+            "text": "And this makes it also possible in the future to have a mechanism where each fragment can be routing independently, and each fragment can be, for example, sent on a different path, which can entail interesting properties for our network.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 605,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 606,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sorry to interrupt.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 607,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 608,
+            "start": 0,
+            "end": 0,
+            "text": "If you could quickly finish because we are past our agenda time.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 609,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 610,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I will quickly finish then.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 611,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, uh, in this example, we will have, uh, four original fragments, uh, leading to six encoded fragments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 612,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 613,
+            "start": 0,
+            "end": 0,
+            "text": "And even if the first one is not, uh, transmitted correctly.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 614,
+            "start": 0,
+            "end": 0,
+            "text": "Successfully.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 615,
+            "start": 0,
+            "end": 0,
+            "text": "Successfully.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 616,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 617,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the second one contains the routing information which will, uh, allow to forward itself.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 618,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 619,
+            "start": 0,
+            "end": 0,
+            "text": "and all the other fragments will be able to be forwarded.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 620,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks to this routing information, and any combination of four fragments would have enabled us to recover the fragments.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 621,
+            "start": 0,
+            "end": 0,
+            "text": "In that case, uh, it happens to be the fragments number two, three, four, and five.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 622,
+            "start": 0,
+            "end": 0,
+            "text": "And we're able to decode these fragments in order to reassemble the packet.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 623,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 624,
+            "start": 0,
+            "end": 0,
+            "text": "So thanks for listening.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 625,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if you have comments or questions, I will gladly answer, answer them.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 626,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 627,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you for the presentation.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 628,
+            "start": 0,
+            "end": 0,
+            "text": "We are past our agenda time.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 629,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we'll have unfortunately no time for discussing this today, but, uh, probably we can continue and we can discuss on the mailing list.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 630,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, by the way, uh, my understanding is that there is not yet an internet draft out there for this, but, uh, that you will publish one?",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 631,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Yes.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 632,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 633,
+            "start": 0,
+            "end": 0,
+            "text": "So then, uh, after that, when you submit your draft, then it will be good to discuss on the mailing list.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 634,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 635,
+            "start": 0,
+            "end": 0,
+            "text": "So if there is not any comment, maybe for a quick question or comment.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 636,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, we are three minutes past our time.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 637,
+            "start": 0,
+            "end": 0,
+            "text": "So probably we should say that, uh, the session is finished here.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 638,
+            "start": 0,
+            "end": 0,
+            "text": "And hopefully let's see if we can see each other in person or virtually in Madrid.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 639,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 640,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.98190337732051
+          },
+          {
+            "id": 641,
+            "start": 0,
+            "end": 0,
+            "text": "Bye bye.",
+            "confidence": 0.98190337732051
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T13:26:41.010425+00:00",
+          "processed_at": "2026-01-27T13:26:41.010425+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "6kf0knl7sl"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.98190337732051
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "01e22416-051f-40e6-a60b-d9c53f093126",
   "created_at": "2026-01-03T19:25:39.300379",
-  "updated_at": "2026-01-03T19:25:43.661788",
+  "updated_at": "2026-01-23T18:06:38.341720+00:00",
   "subject": "IETF 110 - ASAP Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=tDPwvLJ4Sss",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "asap"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T12:00:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "asap",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-asap",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-kinamdar-dispatch-sip-auto-peer",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-asap-202103081700",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-asap",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-asap-asap-wg-ietf-110-meeting-slides",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/asap/",
         "mimetype": "text/html",
@@ -183,10 +182,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-asap",
         "mimetype": "text/markdown",
@@ -197,7 +196,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -5371,6 +5371,3302 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Hi everyone. Let's give people a few more minutes to join. We're just giving people a minute or two to to join in. Shall we go ahead and get started? Hi everyone. Welcome to the automatic SIP Trunking in Peering Working Group session at IETF 110 I'm Jean Mahoney. And my co-chair Gonzalo. You want to say hey.\nSPEAKER S2: Hey, Gene, can everyone hear me? Okay. Gene, can you hear me? Okay.\nSPEAKER S1: I can hear you. Yes.\nSPEAKER S2: Great. Hey, everybody. Thanks for joining us.\nSPEAKER S1: All right. We have confirmation that one of the participants could hear us. Alright. Um, you want to go ahead and move the slides?\nSPEAKER S2: Okay. Can you see them now? Um, you should be able to see the title slide.\nSPEAKER S1: Yes I can.\nSPEAKER S2: Great. All right.\nSPEAKER S1: All right. Here is the note. Well, this is a reminder of IETF policies with regard to such things as patents and code of conduct. Uh, lots of information here that's linked to at the bottom. Uh, please be aware by participating in the IETF, you agree to the following IETF processes and policies. Next slide. All right. So um, some info on how we're going to be running the session. So any decisions that we make will be confirmed on the mailing list. Um, the meeting is being recorded. If you are at the mic uh, please use headphones. Uh, when speaking to cut out issues such as echo, um, if you would like to speak, click the hand icon and I will identify you. And then you will click the mic icon so you can speak. At least I think that's the way it works. This is my first time hosting a session online. Uh, so, um, Gonzalo will be presenting the slides. Uh, we've got, uh, some resources here on, uh, how to how to work with these, uh, working group sessions down at the bottom if you need help with, uh, working with medico. So next. All right. Uh, few things to to go over. So there is a jabber room. Although the chat room here with the medico session is the same thing. Uh, we would like jabber scribe. Uh, keep an eye out on the conversations. Um, raise issues. Is there somebody who's willing to to perform that role? Anyone? I guess type in the in the chat room if you're interested. So I'm not seeing anybody jumping in. Um, I guess. Gonzalo, can you keep an eye out on the chat room?\nSPEAKER S2: I sure can. Yeah, I'll. I'll relay anything that comes up in the chat room that's meaningful.\nSPEAKER S1: Okay, so the next thing would be minutes. Takers? Any takers for taking minutes? You can, um, type things along in code EMD. Uh, multiple people can work on the notes simultaneously lightens the load. Is there anyone who's willing to take minutes? Just high level stuff. Action items. So I see in the chat room we have a question. Is there anybody actually here? So I have a participant's list of 23 people. So I see some people who are not just chairs or so.\nSPEAKER S2: So it looks like, um, we've had two volunteers. Cost of. Who's one of the co-authors? He's willing to to while he's not speaking, he's willing to take minutes. And, uh, Mark Petito is also willing to take notes.\nSPEAKER S1: Oh, cool. Thank you very much. Um, and again, you could use the code EMD or if you would like to take notes offline and send them to the chair separately, that also works. Um, I'm, we're good with either. All right. Next slide. Okay. Well, I think we have taken care of the administrivia. Uh, we have one presentation today. Um, and then wrap up and next steps. So any agenda bashing? All right. Well let's continue on to the presentation. So I think at this point the presenters enter the Q and um, then they're allowed to talk. There we go. So Srikanth, uh, just click your um, mic and uh, video icons and uh, you should be good to go.\nSPEAKER S3: Hey, Jean, can you hear me?\nSPEAKER S1: I can.\nSPEAKER S3: Okay. That's great. All right. So, uh, thanks. Uh, thanks, everyone, for joining the meeting. Uh, next slide please. All right. So this is the agenda. Um, we can go to the next slide. Okay. Great. So, um, right, so for the benefit of those who are new here and, you know, for whom ASAP is, uh, a new thing and haven't had a chance to go through the draft. Uh, I just wanted to cover the problem, uh, in a couple of minutes that we're trying to solve here. Uh, we, uh, presented this back in IETF 1.6. Uh, so it's been some time, uh, and I thought this would be a good refresher. So, um, yeah. So today, administrators usually when, uh, deploying, uh, you know, their SBC or any other equipment that peers with the service provider and the setting up the SIP trunk, they have a tedious job of, um, you know, fixing, uh, interoperability issues and things that should take them, you know, just a couple of minutes end up taking them a few hours and even a few days, in fact, and they end up having to open service requests with, uh, vendor equipment manufacturers as well as the service provider in order to get these problems fixed. So what we are trying to do is to bring that pain down and, you know, just get this get up and running in a few minutes. Uh, next slide please. Right. So the first thing we need to find out was, uh, you know, how big is the problem, right? So, uh, we went back to our support cases, uh, on, uh, this is Cisco Cube, which is the, uh, which is Cisco's enterprise SBC. And, uh, we found out that around 22% of the cases directly relate to itsp interoperability issues. So, uh, Cisco is just one of the SBC manufacturers here. There are many of them in the market. So you can imagine how many, uh, you know, service requests are getting created. How many problems are there that need to be solved? So it's quite a lot there. And apart from that, you also have a significant number of enterprises that are still on analog and digital telephony and are gradually moving on to sip trunks. Right. So this problem isn't going to go away. We're going to see this problem, you know, for the next few years at least. Uh, next slide please. Right. So I quickly wanted to walk through the, uh, high level overview of what the draft proposes. So for the purpose of this diagram, we've got, uh, an enterprise SBC that's sitting right in the center and a capability server that's sitting on the service provider network. So the capability, uh, so the SBC will send a HTTP, you know, well formed, get request to the capability server. And the capability server will respond with the required document to the SBC. And once it gets that document, it's going to either automatically parse that and configure itself, or an administrator can manually parse that and configure the SBC in order to get the SIP calls working. So that's a quick overview of what the draft proposes. Our next slide please. Right. So what's inside that capability set document a a representation in XML uh, of, you know, a Yang model that's being proposed in the draft. Um, we're still not sure whether we're going with the XML or the JSON, right? So right now we're just representing this in XML. But the final call is yet to be taken. And as you can see here we are covering, uh, various facets of the call setup process. Um, you know, what are the transport characteristics that are required for the call? Uh, what are the media requirements for the call? What does the service provider support? And as well as, uh, cases where the enterprise and the service provider, let's say they want to do SIP over TLS and SRP. There are settings for that as well. Um, next slide please. Right. So the story so far. So versions one and two, uh, we published before we presented at IETF 106 and uh, at the dispatch meeting at IGF 106, we had a consensus to form a working group. And last year we, uh, got a charter proposed, uh, which was approved, as well as, uh, the working group, work group that was formed, uh, late last year in August of 2020. Uh, next slide please. Right. So I just wanted to quickly, uh, go through the various changes that, uh, you know, the draft has undergone over the last year. So versions one and two, like I mentioned, they were the initial draft, just a name change and some formatting issues that were fixed. In version three, we added the search location field to the capability set. This is for deployments where the enterprise and service provider want to do SIP over TLS. And you know you need the required configuration for that. So that comes under the third location field. Next slide please. In version four we added the num range field. So the num range field basically specifies the number range that's allocated to the enterprise network by the service provider. And it can be communicated as a list of values, uh, as a block or a reference. Uh next slide. Right. And then we come to the latest version. Uh, so in the latest version we clarified, you know, whatever HTTP versions that are supported, which is version 1.1 and above, uh, we also define the scope of the work in the draft. Uh, so basically we did not we do not include any low level details such as IP addressing scheme and the net access network infrastructure. So that part of the, uh, that part is not covered by the draft. The draft is just about how do you get SIP calls working with RTP between the enterprise and the service provider. And then we also had a we also added a paragraph that clarifies on how the workflow is going to work in case you have an intermediate service provider, uh, between the enterprise and the service provider, because what we've observed is if you have an enterprise that's trying to peer with, let's say, uh, service provider ABC, often that connection goes via a service provider XYZ. So we've just covered that particular scenario as well in the draft and how the workflow has to adopt, uh, adapt to that next slide please. Right. So this brings me to the open issues that are, uh, you know, yet to be finalized upon in the draft. So one, uh, one was the XML or the JSON representation, uh, for the capability set. Uh, another very important aspect is the, um, discovery of the capability server, which is sitting in the service provider network. We would like this to be an automated process. Instead of having the administrator go ahead and configure that on the, uh, SBC and point that towards, you know, the capability server. We would like this to be an automated, uh, you know, process. So, for example, Webfinger is one of the frameworks that can be used here, uh, for the discovery. And, uh, we wanted to ask to the larger group if there are any other parameters that needed to be added to the capability set. And, you know, if there are any modifications that are required in the draft. Uh, we got a review today from, uh, Mark, which was really helpful. Uh, it had like two specific parameters that he was talking about, which was which related to the duration, the validity of that capability document, and also whether, you know, we're going to add a specific section. So I think those are two really good points that he raised. Thanks, Mark. Um, and you know, we will address those in the upcoming, um, upcoming, uh, versions of the draft. And if you've noticed that the, um, capability set, uh, encompasses all of the, uh, vendor agnostic parameters that we really think are important to get SIP calls working. But we are definitely open to hearing from the larger group on anything that we've missed and anything that would be more helpful, uh, to, you know, make this a more seamless process. And, uh, finally, just I just wanted to ask the group if, you know, this, uh, draft is good now to be adopted by the working group as well. Yeah. Uh. Thanks, Jean. Thanks, Gonzalo. That's all I had.\nSPEAKER S1: All right. Thank you. Um. All right, so, uh, Q is open. If anybody wants to come to the the mic with any questions or comments. Raise your hand. I am not seeing anyone entering the Q um, not seeing anything in the chat room. So, um, curious as to how many people have read the draft. I'm going to try the Show of Hands tool. So, um, I will type the question in and send it to the session start session. Okay, I'm going to end the session. I assume that if you have read the draft, you have raised your hand.\nSPEAKER S2: Hey, Jean, I don't see the Show of Hands tool. Um, let me stop sharing and see if that helps.\nSPEAKER S1: Huh? Did, um. Let's see. Oh, so in the chat room, I hear. Got nothing for hand showing. Yeah. So? So some people were able to, um, show their hands. Um. So shall I. It sounds like I maybe need to run this again, and I can do that. So, um, it looks like not everybody got to see the, um, Show of Hands tool when I started the Show of Hands session. Um, let me try this again. So I'm going to click the Show of Hands tool, which is this bar chart, um, icon. And we I will start a session. So um, with displays for me.\nSPEAKER S2: I see it now Jean.\nSPEAKER S1: Okay.\nSPEAKER S2: Yeah.\nSPEAKER S1: So if people are not seeing a have you read the draft question? Um, I guess add something to the chat room. And I'm getting better numbers this time. So, um. Yeah, let us know in the chat room if you're having issues with this. I'll give it a moment or two more. Okay, so, um, I guess it's showing both of the, um, raise hands. Uh, I should have disambiguated them. So the, um, one with the higher number of raised hands was the second one that I ran. So nine people have said they've read read the draft. Um, so I. Guess at this point, we can ask the second question. So I'm going to do another raise hands as soon as I can type the question in. So you should now see a second question. Should the working group adopt the draft as a working group item. Oh, wait, somebody said maybe. Oh, we have a John Peterson in the queue. Um. Sorry, John. Let me. Oh. Go ahead. Sorry.\nSPEAKER S4: No, I was just going to say, I mean, is there an alternative, like, you know, I mean, if this work item. Right. And like, I mean, I it's it's kind of academic. It's important that people read it. But, you know, I think enough people say they read it. Nobody's talking about it. I mean, we just need to do this, right?\nSPEAKER S1: This is true. There is not another alternative. Unless somebody stands up and says, hey, I got another draft. Um, but, uh, we will be confirming this decision on the mailing list. I, I note that the the draft does, as the, um, tree pointed out, there are still open issues that need to be worked on. so there's some stuff to do. What I see here is that, um, we've got eight people have. Well, we should be vote voting like this, but, um, there is support for, um, adopting the draft, and we will confirm this on the list. Is there, um, any other comments or questions? Anybody like to come to the q o Costa, please go ahead.\nSPEAKER S5: Hi. Uh, am I audible? Hello. Hello.\nSPEAKER S2: We we can we can hear you. Costa.\nSPEAKER S5: Okay, great. Uh, I just wanted to tie back into the point that Shreekant raised with regards to stir. Uh, we we I mean, I think all, all of us in, you know, the co authors basically feel that stir, uh, from the perspective of enterprise and service provider networks is going to play a pivotal role. And we must have something that is specific to stir as far as, uh, this framework and this graph is, is concerned, uh, however, at this point in time, um, there are a lot of, uh, aspects of stir that are yet to be finalized. Uh, so, for example, stuff that's specific to rich call data, uh, delegate certificates and things like that. So I think there's some vector of dependency over there and, you know, as, uh, as and when uh, some of, uh, some of the stuff goes towards standardization, I think we can incorporate elements of that into, into the ASAP effort. But, uh, from the perspective of, you know, fleshing out a framework and a draft that has all the elements to it that are that are required from an enterprise to service provider SIP trunking scenario. We definitely feel that, uh, you know, something related to stir would be of, of great importance. So I just wanted to highlight that aspect as well.\nSPEAKER S1: Thank you.\nSPEAKER S6: Thank you.\nSPEAKER S1: Mark. Please go ahead.\nSPEAKER S7: Hi. Can you hear me? Okay. Probably, yes. Just to respond to what was just said about star. Uh, I think that it's true that, uh, we are far from from having, uh, mechanism for delegated certificate in star, but it does not prevent to start doing the work in this draft. And then a third solution, if at the time where this draft is ready, but star is still do not have all the, uh, mechanism in place, we can split it and do an extension separately, but I don't think that prevents us to start doing the work. Thank you.\nSPEAKER S1: Thank you. Constable, would you like to say something more? Please go ahead.\nSPEAKER S5: Yeah. I just wanted to, uh. You know, just to say that I kind of agree with what Mark brought up. Um, so we basically see how how, uh, you know, the story pans out and the timelines on that. And we decided the best approach possible, whether we need to embed something with regards to Sto within this draft or, or propose an extension as and when some of this stuff becomes mature and all of the all of the cogs to that framework have been ironed out. So, uh, I think I kind of am in agreement with what Mark just brought up right now.\nSPEAKER S1: Thank you. Jonathan.\nSPEAKER S6: Jonathan.\nSPEAKER S1: Please go ahead.\nSPEAKER S8: Hey, guys. Uh, so, you know, I'm obviously supportive of moving forward with the draft. Um, couple comments. One is, um, Kassab and everyone, I have a draft in a similar area at this IETF meeting that, uh, talks about, uh, high availability, um, on SIP trunks. Um, there's some overlap, actually, in the configuration data. There's a configuration mechanism defined in my draft as well. So I'd encourage you guys to take a look at that. Um, and I'm happy to collaborate on it. Um, and then the second comment is on the actual elements in the, in the YAML. I like to me there's, there's two very different types of stuff in there. There's stuff that the SBC on the receiving end probably knows about and can easily create the configuration file from it. And then there's the stuff that's a little harder. The num range was the one in particular that struck me as as quite a different story. Um, and that relates to the stir stuff. So my question slash feedback is, you know, to minimize the scope of the document to, uh, only be that which can easily be implemented, meaning the terminating SBC and the carrier side can basically generate this document trivially from its configuration. And if it's more than that, then push it out of scope for now so that this can actually get implemented and deployed. That's my main feedback.\nSPEAKER S1: Thank you.\nSPEAKER S2: Jonathan. Hey, Jonathan, one quick question for Jonathan. Um, I saw the draft that you put forward. I haven't read it, but is it problematic overlap or is it complementary?\nSPEAKER S8: It's mostly complimentary. I mean, it just needs to be reconciled. The bulk of the draft is more on the Ha mechanisms, and it requires a configuration of the set of IP addresses of the clusters in the instance. Um, and so that piece defines a JSON document you fetch via HTTP. So I mean, it's just a question of making sure that these things line up and they're either in, you know, either. So I so I think it's mostly complimentary. And we just have to reconcile these two. These are not like pick A or B. They're not like that okay.\nSPEAKER S2: Yeah obviously it'd be helpful Jonathan now that you put that out there, if you've got cycles to just kind of keep an eye on this draft as it progresses.\nSPEAKER S8: Yeah. Did you I was quickly trying to scan through. Is there something in the draft that enumerates the IP address set for the, um, the carriers? Uh, there's that call control.\nSPEAKER S2: Cost? Yeah. Do you have that.\nSPEAKER S8: The call control is a set of IP addresses. Yeah I see that okay okay. Yeah. So I'll I'll send comments on the list. But basically it overlaps with the call control field uh in the YAML file. Um, so we either need to bring the, the couple additional parameters in my draft into this or, or something like that. It's probably the right thing.\nSPEAKER S2: Okay. Yeah. Perfect. Thanks, John. Okay.\nSPEAKER S5: Hey, Jonathan. Um, nice to see you here. Uh, so with, uh, with regards to your comment on, you know, kind of simplifying stuff for, uh, service providers so that it's actually deployed and adopted. I agree, it certainly would be very difficult for a service provider to keep track of the range for every single enterprise that registers in, uh, I, I was thinking probably it would probably make sense to make that specific parameter optional, uh, as opposed to remove it all together so that that was where I was leaning.\nSPEAKER S8: Well, I mean, my sense again, it's like, you know, keep it simple and, you know, perfect is the enemy of the good. I think there's gonna there's no shortage of, of stuff being worked on around passing around phone numbers and how we convey them as it relates to some of this stuff, too. I think you just yank it. You can can always extend it later. Um, but but get this thing done and and this way you don't have to worry about reconciling it with all that other stuff. But I don't feel that strongly.\nSPEAKER S5: Thanks.\nSPEAKER S1: Cullen. Um. Please go ahead.\nSPEAKER S9: I just had to unmute a few times, and I finally got there. Uh, so just sort of on that comment of that number range stuff, I, I feel like there's sort of like, you know, there's sip trunks that are meant for like a, you know, like, I like a call center to a to a bunch of different large carriers, or they're very different from one. That's for a small PBX and a small business up to, um, up to a service provider. And so maybe we just we probably need to talk a little bit more about those and where the number ranges make sense in certain cases. I mean, for the small PBX case, the the carrier is allocating a very specific number range, and it's very well known. And it's, you know, it's generally like, you know, here's your 50 numbers. Um, so I think we probably I'm thinking more back about those drafts. We probably just weren't really clear enough about what these all were. And when you use them, when they were optional, when they made and whether they helped, I mean, like, let's not put stuff in here that's not needed. Right? That was the whole idea was simplify this. So I think we should just all get together and talk about those and see what makes sense.\nSPEAKER S1: Thank you. Uh, John Peterson, please go ahead.\nSPEAKER S4: Yeah. I mean, I was kind of wondering, like how automatable and this is, I guess, part of that conversation, you know, really are like telephone numbers. Like, I mean, it's, you know, if an enterprise gets a block of like 50 telephone numbers, is the assignment of those numbers automatic, like to arbitrary, I guess is my point or, you know, I mean, if you're only learning about what telephone numbers you've got from like an auto config with the service provider, like surely there's some like manual intervention that's to follow that, right? So I mean, I guess this this is why I think I might be with Jonathan on this and that I can imagine, um, you know, use cases where this might make sense, but like, it's it's not like DHCP where it just doesn't matter what numbers you get. Right.\nSPEAKER S1: Thank you Jonathan. Please go ahead.\nSPEAKER S8: Yeah. And and to call on me. My point is not that there's too many numbers. It's that uh, John makes another great point, which is the enterprise probably needs to take manual steps once they get the numbers. My point is the service provider. Even if it's one number, I would be skeptical that it is very easy for a service provider to implement some software that magically produces that number in response to the HTTP get request to get this document. Because again, the implementation model I have in mind is like, okay, you've got a carrier, they've got an SBC, it's terminating the call. Someone's typed in the config into the CLI. On this SBC, the phone numbers are stored elsewhere and I don't know where, and it's probably a disastrous mess. And maybe even the SBC doesn't know them. So the SBC could serve the HTTP get request for the rest of this document, but not for the phone numbers, at least not easily in my opinion. So even if it's just one phone number. So I'm just suggesting keep it simple. And because they're easy to, they're hard to generate and they're difficult to consume, it feels like you just remove it.\nSPEAKER S9: Well, there's one thing that the SBC does know, and that is which incoming SIP requests. It routes down this SIP trunk. and it uses the phone number to do that generally, so I don't know. I mean, I think we have to dig around this. I totally agree with Peterson's comment that it's not just like, this is not like DHCP. Most definitely the case. Right?\nSPEAKER S8: Calling that is not how mine works actually. So that wouldn't work.\nSPEAKER S9: No, but that's what I'm talking about. The ones for small business sbcs it would be how yours work, right? Like, I mean, how else would an SBC possibly work that was serving sip trunks to a small business for incoming calls? And that's why I said I differentiated these two cases. But for that case, right, like the Microsoft small business, what was the SIP connect spec, like all of that stuff. Right. Like that stuff. Yeah. It does sort of know. Right.\nSPEAKER S8: It's configured in as a trunk route parameter in the SIP URI as opposed to an actual phone number. I mean, the phone number might be in the URI itself, uh, in the like the two or request URI. But but it's uh, but the, the thing that knows like determines where to send the call is, is possibly based on upstream trunk group definitions. That's how we do it, for example.\nSPEAKER S9: So but if you had a small if AT&T had a had a bunch of customers and it had an incoming call to a given phone number and it had to decide which one of those customers that sent the SIP invite to. Right. Like it would use the phone number to route that?\nSPEAKER S8: Sure. In the software.\nSPEAKER S9: And that's the type of trunk we're talking about for this, that that case. And what I, I don't think the draft makes any of that at all clear. Right. I just I just think that that's like I'm not even saying we need that in the draft. I have no idea what's needed or not needed, but it just seems like, uh, that that people were thinking of a different use case than the type of, uh, than sip trunks that were for outbound calls or for for very generic termination.\nSPEAKER S1: Thank you. Srikanth. You have a comment to that?\nSPEAKER S3: Yeah. I think when, when we were, uh, you know, putting in the, uh, that particular field, um, what we were thinking about was a specific use case, where sometimes what we've observed is when an enterprise doesn't. Uh, sorry. Yeah. When when an enterprise doesn't, um, you know, send the right phone number, it gets rejected, uh, by the service provider. So because the service providers provide us pretty strict about what kind of numbers are being, uh, advertised by the enterprise. So that was a sort of, um, you know, use case that we had in mind. But. Yeah. I think it makes sense that if if it does, if it's a mess and it does make it more complicated, then, uh, it could be something that, uh, you know, we could, uh, amend in the draft. Yeah.\nSPEAKER S1: Okay. Thank you. Oh. Are there any other comments or questions? Well, I think that was a good discussion. Uh, we will confirm, uh, adopting the draft on the mailing list. Uh, and I guess we will bring this meeting to a close. Thank you everyone.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9912556781310837
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hi everyone.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Let's give people a few more minutes to join.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "We're just giving people a minute or two to to join in.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Shall we go ahead and get started?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Hi everyone.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the automatic SIP Trunking in Peering Working Group session at IETF 110 I'm Jean Mahoney.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "And my co-chair Gonzalo.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "You want to say hey.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hey, Gene, can everyone hear me?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Gene, can you hear me?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I can hear you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Hey, everybody.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for joining us.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "We have confirmation that one of the participants could hear us.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you want to go ahead and move the slides?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Can you see them now?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you should be able to see the title slide.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes I can.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Here is the note.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Well, this is a reminder of IETF policies with regard to such things as patents and code of conduct.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, lots of information here that's linked to at the bottom.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, please be aware by participating in the IETF, you agree to the following IETF processes and policies.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "So um, some info on how we're going to be running the session.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "So any decisions that we make will be confirmed on the mailing list.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the meeting is being recorded.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "If you are at the mic uh, please use headphones.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, when speaking to cut out issues such as echo, um, if you would like to speak, click the hand icon and I will identify you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "And then you will click the mic icon so you can speak.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "At least I think that's the way it works.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "This is my first time hosting a session online.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, um, Gonzalo will be presenting the slides.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we've got, uh, some resources here on, uh, how to how to work with these, uh, working group sessions down at the bottom if you need help with, uh, working with medico.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So next.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, few things to to go over.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "So there is a jabber room.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "Although the chat room here with the medico session is the same thing.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we would like jabber scribe.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, keep an eye out on the conversations.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um, raise issues.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Is there somebody who's willing to to perform that role?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "I guess type in the in the chat room if you're interested.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm not seeing anybody jumping in.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Gonzalo, can you keep an eye out on the chat room?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I sure can.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I'll.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "I'll relay anything that comes up in the chat room that's meaningful.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, so the next thing would be minutes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Takers?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Any takers for taking minutes?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "You can, um, type things along in code EMD.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, multiple people can work on the notes simultaneously lightens the load.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Is there anyone who's willing to take minutes?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Just high level stuff.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Action items.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "So I see in the chat room we have a question.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "Is there anybody actually here?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "So I have a participant's list of 23 people.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "So I see some people who are not just chairs or so.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So it looks like, um, we've had two volunteers.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Cost of.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Who's one of the co-authors?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "He's willing to to while he's not speaking, he's willing to take minutes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, Mark Petito is also willing to take notes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, cool.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and again, you could use the code EMD or if you would like to take notes offline and send them to the chair separately, that also works.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm, we're good with either.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I think we have taken care of the administrivia.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have one presentation today.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then wrap up and next steps.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "So any agenda bashing?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Well let's continue on to the presentation.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "So I think at this point the presenters enter the Q and um, then they're allowed to talk.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "There we go.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "So Srikanth, uh, just click your um, mic and uh, video icons and uh, you should be good to go.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Hey, Jean, can you hear me?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I can.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "That's great.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, thanks.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thanks, everyone, for joining the meeting.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "So this is the agenda.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we can go to the next slide.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, right, so for the benefit of those who are new here and, you know, for whom ASAP is, uh, a new thing and haven't had a chance to go through the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I just wanted to cover the problem, uh, in a couple of minutes that we're trying to solve here.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we, uh, presented this back in IETF 1.6.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so it's been some time, uh, and I thought this would be a good refresher.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "So today, administrators usually when, uh, deploying, uh, you know, their SBC or any other equipment that peers with the service provider and the setting up the SIP trunk, they have a tedious job of, um, you know, fixing, uh, interoperability issues and things that should take them, you know, just a couple of minutes end up taking them a few hours and even a few days, in fact, and they end up having to open service requests with, uh, vendor equipment manufacturers as well as the service provider in order to get these problems fixed.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "So what we are trying to do is to bring that pain down and, you know, just get this get up and running in a few minutes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "So the first thing we need to find out was, uh, you know, how big is the problem, right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, we went back to our support cases, uh, on, uh, this is Cisco Cube, which is the, uh, which is Cisco's enterprise SBC.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we found out that around 22% of the cases directly relate to itsp interoperability issues.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, Cisco is just one of the SBC manufacturers here.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "There are many of them in the market.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "So you can imagine how many, uh, you know, service requests are getting created.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "How many problems are there that need to be solved?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "So it's quite a lot there.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "And apart from that, you also have a significant number of enterprises that are still on analog and digital telephony and are gradually moving on to sip trunks.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "So this problem isn't going to go away.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to see this problem, you know, for the next few years at least.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "So I quickly wanted to walk through the, uh, high level overview of what the draft proposes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "So for the purpose of this diagram, we've got, uh, an enterprise SBC that's sitting right in the center and a capability server that's sitting on the service provider network.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So the capability, uh, so the SBC will send a HTTP, you know, well formed, get request to the capability server.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "And the capability server will respond with the required document to the SBC.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "And once it gets that document, it's going to either automatically parse that and configure itself, or an administrator can manually parse that and configure the SBC in order to get the SIP calls working.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "So that's a quick overview of what the draft proposes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Our next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "So what's inside that capability set document a a representation in XML uh, of, you know, a Yang model that's being proposed in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we're still not sure whether we're going with the XML or the JSON, right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "So right now we're just representing this in XML.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "But the final call is yet to be taken.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "And as you can see here we are covering, uh, various facets of the call setup process.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, what are the transport characteristics that are required for the call?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what are the media requirements for the call?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "What does the service provider support?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And as well as, uh, cases where the enterprise and the service provider, let's say they want to do SIP over TLS and SRP.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "There are settings for that as well.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "So the story so far.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "So versions one and two, uh, we published before we presented at IETF 106 and uh, at the dispatch meeting at IGF 106, we had a consensus to form a working group.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "And last year we, uh, got a charter proposed, uh, which was approved, as well as, uh, the working group, work group that was formed, uh, late last year in August of 2020.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "So I just wanted to quickly, uh, go through the various changes that, uh, you know, the draft has undergone over the last year.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "So versions one and two, like I mentioned, they were the initial draft, just a name change and some formatting issues that were fixed.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "In version three, we added the search location field to the capability set.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "This is for deployments where the enterprise and service provider want to do SIP over TLS.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "And you know you need the required configuration for that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "So that comes under the third location field.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "In version four we added the num range field.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "So the num range field basically specifies the number range that's allocated to the enterprise network by the service provider.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "And it can be communicated as a list of values, uh, as a block or a reference.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Uh next slide.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "And then we come to the latest version.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so in the latest version we clarified, you know, whatever HTTP versions that are supported, which is version 1.1 and above, uh, we also define the scope of the work in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so basically we did not we do not include any low level details such as IP addressing scheme and the net access network infrastructure.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "So that part of the, uh, that part is not covered by the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "The draft is just about how do you get SIP calls working with RTP between the enterprise and the service provider.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "And then we also had a we also added a paragraph that clarifies on how the workflow is going to work in case you have an intermediate service provider, uh, between the enterprise and the service provider, because what we've observed is if you have an enterprise that's trying to peer with, let's say, uh, service provider ABC, often that connection goes via a service provider XYZ.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "So we've just covered that particular scenario as well in the draft and how the workflow has to adopt, uh, adapt to that next slide please.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "So this brings me to the open issues that are, uh, you know, yet to be finalized upon in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "So one, uh, one was the XML or the JSON representation, uh, for the capability set.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, another very important aspect is the, um, discovery of the capability server, which is sitting in the service provider network.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "We would like this to be an automated process.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Instead of having the administrator go ahead and configure that on the, uh, SBC and point that towards, you know, the capability server.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "We would like this to be an automated, uh, you know, process.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, Webfinger is one of the frameworks that can be used here, uh, for the discovery.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, we wanted to ask to the larger group if there are any other parameters that needed to be added to the capability set.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, if there are any modifications that are required in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we got a review today from, uh, Mark, which was really helpful.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it had like two specific parameters that he was talking about, which was which related to the duration, the validity of that capability document, and also whether, you know, we're going to add a specific section.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "So I think those are two really good points that he raised.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Mark.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and you know, we will address those in the upcoming, um, upcoming, uh, versions of the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "And if you've noticed that the, um, capability set, uh, encompasses all of the, uh, vendor agnostic parameters that we really think are important to get SIP calls working.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "But we are definitely open to hearing from the larger group on anything that we've missed and anything that would be more helpful, uh, to, you know, make this a more seamless process.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, finally, just I just wanted to ask the group if, you know, this, uh, draft is good now to be adopted by the working group as well.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Jean.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Gonzalo.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "That's all I had.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "All right, so, uh, Q is open.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "If anybody wants to come to the the mic with any questions or comments.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Raise your hand.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "I am not seeing anyone entering the Q um, not seeing anything in the chat room.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, curious as to how many people have read the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to try the Show of Hands tool.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I will type the question in and send it to the session start session.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, I'm going to end the session.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "I assume that if you have read the draft, you have raised your hand.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hey, Jean, I don't see the Show of Hands tool.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let me stop sharing and see if that helps.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Huh?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Did, um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, so in the chat room, I hear.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Got nothing for hand showing.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "So some people were able to, um, show their hands.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "So shall I.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "It sounds like I maybe need to run this again, and I can do that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, it looks like not everybody got to see the, um, Show of Hands tool when I started the Show of Hands session.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let me try this again.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm going to click the Show of Hands tool, which is this bar chart, um, icon.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "And we I will start a session.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "So um, with displays for me.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I see it now Jean.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So if people are not seeing a have you read the draft question?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I guess add something to the chat room.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "And I'm getting better numbers this time.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, let us know in the chat room if you're having issues with this.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "I'll give it a moment or two more.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so, um, I guess it's showing both of the, um, raise hands.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I should have disambiguated them.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "So the, um, one with the higher number of raised hands was the second one that I ran.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "So nine people have said they've read read the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Guess at this point, we can ask the second question.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm going to do another raise hands as soon as I can type the question in.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "So you should now see a second question.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Should the working group adopt the draft as a working group item.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, wait, somebody said maybe.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, we have a John Peterson in the queue.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry, John.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Let me.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: No, I was just going to say, I mean, is there an alternative, like, you know, I mean, if this work item.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "And like, I mean, I it's it's kind of academic.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "It's important that people read it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "But, you know, I think enough people say they read it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Nobody's talking about it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, we just need to do this, right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: This is true.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "There is not another alternative.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Unless somebody stands up and says, hey, I got another draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, we will be confirming this decision on the mailing list.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "I, I note that the the draft does, as the, um, tree pointed out, there are still open issues that need to be worked on.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "so there's some stuff to do.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "What I see here is that, um, we've got eight people have.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we should be vote voting like this, but, um, there is support for, um, adopting the draft, and we will confirm this on the list.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Is there, um, any other comments or questions?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody like to come to the q o Costa, please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Hi.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, am I audible?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: We we can we can hear you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Costa.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay, great.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I just wanted to tie back into the point that Shreekant raised with regards to stir.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we we I mean, I think all, all of us in, you know, the co authors basically feel that stir, uh, from the perspective of enterprise and service provider networks is going to play a pivotal role.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "And we must have something that is specific to stir as far as, uh, this framework and this graph is, is concerned, uh, however, at this point in time, um, there are a lot of, uh, aspects of stir that are yet to be finalized.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, for example, stuff that's specific to rich call data, uh, delegate certificates and things like that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "So I think there's some vector of dependency over there and, you know, as, uh, as and when uh, some of, uh, some of the stuff goes towards standardization, I think we can incorporate elements of that into, into the ASAP effort.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, from the perspective of, you know, fleshing out a framework and a draft that has all the elements to it that are that are required from an enterprise to service provider SIP trunking scenario.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "We definitely feel that, uh, you know, something related to stir would be of, of great importance.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "So I just wanted to highlight that aspect as well.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Mark.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Hi.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Probably, yes.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Just to respond to what was just said about star.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think that it's true that, uh, we are far from from having, uh, mechanism for delegated certificate in star, but it does not prevent to start doing the work in this draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "And then a third solution, if at the time where this draft is ready, but star is still do not have all the, uh, mechanism in place, we can split it and do an extension separately, but I don't think that prevents us to start doing the work.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Constable, would you like to say something more?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to, uh.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "You know, just to say that I kind of agree with what Mark brought up.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we basically see how how, uh, you know, the story pans out and the timelines on that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And we decided the best approach possible, whether we need to embed something with regards to Sto within this draft or, or propose an extension as and when some of this stuff becomes mature and all of the all of the cogs to that framework have been ironed out.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I think I kind of am in agreement with what Mark just brought up right now.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Hey, guys.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, you know, I'm obviously supportive of moving forward with the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Um, couple comments.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "One is, um, Kassab and everyone, I have a draft in a similar area at this IETF meeting that, uh, talks about, uh, high availability, um, on SIP trunks.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's some overlap, actually, in the configuration data.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "There's a configuration mechanism defined in my draft as well.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "So I'd encourage you guys to take a look at that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I'm happy to collaborate on it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the second comment is on the actual elements in the, in the YAML.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "I like to me there's, there's two very different types of stuff in there.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "There's stuff that the SBC on the receiving end probably knows about and can easily create the configuration file from it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "And then there's the stuff that's a little harder.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "The num range was the one in particular that struck me as as quite a different story.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that relates to the stir stuff.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "So my question slash feedback is, you know, to minimize the scope of the document to, uh, only be that which can easily be implemented, meaning the terminating SBC and the carrier side can basically generate this document trivially from its configuration.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "And if it's more than that, then push it out of scope for now so that this can actually get implemented and deployed.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "That's my main feedback.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Hey, Jonathan, one quick question for Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I saw the draft that you put forward.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "I haven't read it, but is it problematic overlap or is it complementary?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: It's mostly complimentary.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, it just needs to be reconciled.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "The bulk of the draft is more on the Ha mechanisms, and it requires a configuration of the set of IP addresses of the clusters in the instance.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so that piece defines a JSON document you fetch via HTTP.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "So I mean, it's just a question of making sure that these things line up and they're either in, you know, either.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So I so I think it's mostly complimentary.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "And we just have to reconcile these two.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "These are not like pick A or B.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "They're not like that okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah obviously it'd be helpful Jonathan now that you put that out there, if you've got cycles to just kind of keep an eye on this draft as it progresses.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Did you I was quickly trying to scan through.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Is there something in the draft that enumerates the IP address set for the, um, the carriers?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's that call control.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Cost?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: The call control is a set of IP addresses.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah I see that okay okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll I'll send comments on the list.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "But basically it overlaps with the call control field uh in the YAML file.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we either need to bring the, the couple additional parameters in my draft into this or, or something like that.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "It's probably the right thing.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Perfect.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, John.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Hey, Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Um, nice to see you here.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so with, uh, with regards to your comment on, you know, kind of simplifying stuff for, uh, service providers so that it's actually deployed and adopted.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "I agree, it certainly would be very difficult for a service provider to keep track of the range for every single enterprise that registers in, uh, I, I was thinking probably it would probably make sense to make that specific parameter optional, uh, as opposed to remove it all together so that that was where I was leaning.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Well, I mean, my sense again, it's like, you know, keep it simple and, you know, perfect is the enemy of the good.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "I think there's gonna there's no shortage of, of stuff being worked on around passing around phone numbers and how we convey them as it relates to some of this stuff, too.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "I think you just yank it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "You can can always extend it later.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but but get this thing done and and this way you don't have to worry about reconciling it with all that other stuff.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "But I don't feel that strongly.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Thanks.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Cullen.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: I just had to unmute a few times, and I finally got there.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so just sort of on that comment of that number range stuff, I, I feel like there's sort of like, you know, there's sip trunks that are meant for like a, you know, like, I like a call center to a to a bunch of different large carriers, or they're very different from one.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "That's for a small PBX and a small business up to, um, up to a service provider.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "And so maybe we just we probably need to talk a little bit more about those and where the number ranges make sense in certain cases.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, for the small PBX case, the the carrier is allocating a very specific number range, and it's very well known.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "And it's, you know, it's generally like, you know, here's your 50 numbers.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I think we probably I'm thinking more back about those drafts.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "We probably just weren't really clear enough about what these all were.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "And when you use them, when they were optional, when they made and whether they helped, I mean, like, let's not put stuff in here that's not needed.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "That was the whole idea was simplify this.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we should just all get together and talk about those and see what makes sense.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, John Peterson, please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I was kind of wondering, like how automatable and this is, I guess, part of that conversation, you know, really are like telephone numbers.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Like, I mean, it's, you know, if an enterprise gets a block of like 50 telephone numbers, is the assignment of those numbers automatic, like to arbitrary, I guess is my point or, you know, I mean, if you're only learning about what telephone numbers you've got from like an auto config with the service provider, like surely there's some like manual intervention that's to follow that, right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "So I mean, I guess this this is why I think I might be with Jonathan on this and that I can imagine, um, you know, use cases where this might make sense, but like, it's it's not like DHCP where it just doesn't matter what numbers you get.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you Jonathan.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "And and to call on me.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "My point is not that there's too many numbers.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "It's that uh, John makes another great point, which is the enterprise probably needs to take manual steps once they get the numbers.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "My point is the service provider.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Even if it's one number, I would be skeptical that it is very easy for a service provider to implement some software that magically produces that number in response to the HTTP get request to get this document.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Because again, the implementation model I have in mind is like, okay, you've got a carrier, they've got an SBC, it's terminating the call.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Someone's typed in the config into the CLI.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "On this SBC, the phone numbers are stored elsewhere and I don't know where, and it's probably a disastrous mess.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe even the SBC doesn't know them.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "So the SBC could serve the HTTP get request for the rest of this document, but not for the phone numbers, at least not easily in my opinion.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "So even if it's just one phone number.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm just suggesting keep it simple.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "And because they're easy to, they're hard to generate and they're difficult to consume, it feels like you just remove it.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Well, there's one thing that the SBC does know, and that is which incoming SIP requests.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "It routes down this SIP trunk.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "and it uses the phone number to do that generally, so I don't know.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I think we have to dig around this.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "I totally agree with Peterson's comment that it's not just like, this is not like DHCP.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Most definitely the case.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Calling that is not how mine works actually.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "So that wouldn't work.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: No, but that's what I'm talking about.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "The ones for small business sbcs it would be how yours work, right?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Like, I mean, how else would an SBC possibly work that was serving sip trunks to a small business for incoming calls?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why I said I differentiated these two cases.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "But for that case, right, like the Microsoft small business, what was the SIP connect spec, like all of that stuff.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Like that stuff.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "It does sort of know.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: It's configured in as a trunk route parameter in the SIP URI as opposed to an actual phone number.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the phone number might be in the URI itself, uh, in the like the two or request URI.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "But but it's uh, but the, the thing that knows like determines where to send the call is, is possibly based on upstream trunk group definitions.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "That's how we do it, for example.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: So but if you had a small if AT&T had a had a bunch of customers and it had an incoming call to a given phone number and it had to decide which one of those customers that sent the SIP invite to.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Like it would use the phone number to route that?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Sure.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "In the software.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: And that's the type of trunk we're talking about for this, that that case.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "And what I, I don't think the draft makes any of that at all clear.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "I just I just think that that's like I'm not even saying we need that in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "I have no idea what's needed or not needed, but it just seems like, uh, that that people were thinking of a different use case than the type of, uh, than sip trunks that were for outbound calls or for for very generic termination.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Srikanth.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "You have a comment to that?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "I think when, when we were, uh, you know, putting in the, uh, that particular field, um, what we were thinking about was a specific use case, where sometimes what we've observed is when an enterprise doesn't.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, sorry.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "When when an enterprise doesn't, um, you know, send the right phone number, it gets rejected, uh, by the service provider.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "So because the service providers provide us pretty strict about what kind of numbers are being, uh, advertised by the enterprise.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "So that was a sort of, um, you know, use case that we had in mind.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "But.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "I think it makes sense that if if it does, if it's a mess and it does make it more complicated, then, uh, it could be something that, uh, you know, we could, uh, amend in the draft.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any other comments or questions?",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I think that was a good discussion.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we will confirm, uh, adopting the draft on the mailing list.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I guess we will bring this meeting to a close.",
+            "confidence": 0.9912556781310837
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you everyone.",
+            "confidence": 0.9912556781310837
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T18:06:38.340213+00:00",
+          "processed_at": "2026-01-23T18:06:38.340213+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "hw9c44hjux"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9912556781310837
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

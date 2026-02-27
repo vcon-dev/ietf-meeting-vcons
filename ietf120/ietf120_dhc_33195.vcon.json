@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "3c65600b-5dba-472c-8a7a-23eb8968c792",
   "created_at": "2026-01-03T20:01:30.436772",
-  "updated_at": "2026-01-03T20:01:34.939306",
+  "updated_at": "2026-01-28T02:34:27.491048+00:00",
   "subject": "IETF 120 - DHC Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=USGYB3nYm8U",
       "meta": {
         "ietf_meeting": 120,
         "working_group": "dhc"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 120,
         "location": "Vancouver, CA",
@@ -50,10 +49,10 @@
         "start_time": "2024-07-23T00:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "dhc",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/agenda-120-dhc",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/chatlog-120-dhc-202407231730",
         "mimetype": "text/plain",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/minutes-120-dhc-202407240030",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/bluesheets-120-dhc-202407240030",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/draft-ietf-dhc-rfc8415bis",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/draft-porfiri-dhc-dhcpv4-over-dhcpv6-ra",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-dhc-dhc-working-group-chair-slides",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-dhc-8415-to-internet-standard",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-dhc-dhcpv4-over-dhcpv6-relay",
         "mimetype": "application/pdf",
@@ -225,10 +224,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/agenda/dhc/",
         "mimetype": "text/html",
@@ -239,10 +238,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-120-dhc",
         "mimetype": "text/markdown",
@@ -253,7 +252,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -4911,6 +4911,3729 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Give it one more minute and we'll get started. Okay. I guess we'll go ahead and get started. So for those of you. Hey, everyone. Thanks for coming. This is the DHCP working group, so I'll start from the beginning. Um, this is Vancouver. If you're in the wrong place. Welcome. Anyway, welcome to DHCP. Um, Bernie, my co-chair, as you can see, is remote. He's hanging out in New Hampshire, I believe. So he's he stayed up with us tonight, which is awesome. Um. That's correct. Sweet. Uh, here's the note. Well, I know we're still early in the week, so you haven't seen this a million times, but if you're in the room, you are agreeing to this. Please take a look at it. If you've not seen it before, I suggest you go read it. Um, this is important things. We want everybody to understand. They're agreeing to this. Um, this includes, you know, heavily on the patent side and patent application. So just please make sure you take some time to read this if you've not seen it before and you understand it. Thanks. Yep. Notice the note. Well, um, médico does blue sheets now, um, Bernie and I are co-chairs. Um, do we have a note taker? Bernie, I saw you started a copy. It looked like.\nSPEAKER S2: Somebody else actually started that. I don't know who did. Yep. Okay.\nSPEAKER S1: Um, do we have anyone willing to take notes for this? Yeah. Bernie's typing now, so I. I think Bernie will take Bernie. Are you good recording everything for us?\nSPEAKER S2: I'll try. Yep. I mean, again, assistance is always welcome, especially, uh, when things get hot and heavy. Yes, yes.\nSPEAKER S1: Oh. Tomac jumped into. He can take notes. Thank you.\nSPEAKER S2: Okay. Great.\nSPEAKER S1: Great. Thank you. Okay. So got a note taker. Here's our agenda for today. We're going to talk um 8415 to Internet Standard. We're going to talk about DHCP v4 over DHCP V6 relays and next steps. So it's pretty short today. Um, a couple of regular updates we have for you guys. We have, uh, regular documents. We have two of them currently that are working group documents. Um, we have adder DHCP. Adder notifications. And that one I think is in. Yes. It's approved right. It's been approved. It's in RFC editor. We're we're in the last stages. We're we're we're we're we're good with it. We just need to get it over the last hump. So that's good. Um, 8415 we're going to talk about in a minute. And then always we'd like to just list um, there's a lot of interesting DHCP drafts. There's five of them I've put here. I'm only four bullets. I'm not sure what I goofed, but there's a couple here. You should go read if you're into DHCP. These are just relative drafts to let everybody know they're not working group documents yet. Um, a couple of them are trying to be, um, so we'll talk about those today. And then there's just some other ones, um, past presentations. There was a spring presentation about the DHCP one there. So that's still ongoing. Um, so these are just relevant documents to the working group. Um, feel free to read them at your own pleasure. We just like to highlight them. And that's it for the administrative side. So I think the next thing we're going to do is switch over to id415. Okay. So um this is for advancing DHCP v6 to Internet Standard presentation. So a couple things here. Just to remind everybody we've motivation for advancing DHCP to internet standard. Um this is the next we've had this slide up for a while. It's a milestone of this working group to move this from to an internet standard from the current status it's at. And this has been ongoing. So, um, a couple things happened since the last IETF, which is good. Um, we left it in working group last call a little bit longer than we intended, but we got some really good feedback, so I think it ended up working out for us. Intentional or not, I think it worked out better. So the we published oh five. So we just recently published that there are two things we did in there. One of them is we clarified the UDP ports. There were some questions and I've included a link to the mail archive if you're really interested in it. Um, there's been some confusion about what UDP ports people want to use, uh, and how to use them. So we clarified it. I thought it ended up being really good text saying, hey, this is the cases where you use it and how to do it. Um, so that got added in oh five. And then the other thing we did with this, we had a sort of an oops, we had some texts that was from the original 8415 about I, I address option only being in the Iana, which is not true. It's it was added to Azure notification and then previously to that it was in least query. So we had it in two places that it didn't previously. We reused the option which made sense. So we took out all of that text in oh five. So the good news there is that, um, DHCP addr is now good to go. That one's no longer violating 8415. And then lease query. We we patched as well. And those are the only two changes we made to this document at this point. So oh five is out there. What we would like to do is we've already done working group last call. We want to do two weeks. We want to ship this to the eye. The eye. Oh wow. It's already been a long week, apparently. Um, we want to send it to them in two weeks. So this is kind of our last comments. If anyone has any last comments, please feel free to come up to the mic now or yeah, come up to the mic, please. If you have any more comments about this document or any more things, we kind of want to close this up. We've we've let this run probably an IETF too long. So we want to try to close this gap. So does anyone have any comments they'd like to make. Okay. Great. No one got up. So we're going to send this. So I'll send an email out to the list. But we'll send this to the. The plan will be in two weeks to send this off. Um, and start getting it through the process. Um, Suresh has nicely agreed in previous. It's. Are you still good? Suresh to document? Okay. Suresh is nodding his head at me. Uh, so I think we're good. All right, so that's it for this, then? Uh, I don't think we have anything. Bernie, did you have anything else you wanted to add to that?\nSPEAKER S2: No. I think we're, uh, in good shape there. We're good to go. And, uh, I'd like to see it get done.\nSPEAKER S1: Okay. Awesome. All right, so then we're going to move to our next presentation. Claudio, I know you're remoting in Italy, and it's a very late, so we'll try to get you set up.\nSPEAKER S3: Hello, Here I am.\nSPEAKER S1: Perfect.\nSPEAKER S3: And my presentation is about a work that we have started at ITF 118, and then it has proceeded, uh, during the time we get got some contribution and now we have moved into another step. So, uh, let me thanks. Uh, first for all ITF community for having helped us solving what was a problem. And now, uh, it is a solution. So, uh, let me really take this, uh, chance for, uh, uh, say thank you for all the people who has given us suggestion and, uh, helped us solving a real problem. Uh, I need to make a quick recall from yes, a place. Please switch to slide number two team. Uh, the quick description of the problem is that in the radio, the radio access network was not really a network until, uh, a new requirement. So we had, uh, a configuration where we had a simple connection one one to N, so we had one device connected to a number N of radio, and we had no problem in understanding what radio was connected to. What of the the plug of this device. But since there is a new requirement now from, uh, mainly driven from the open run organization that, uh, the the relationship between the radio and the controlling unit is n to M now and then. We have a network in between the. This is challenging, and it's not the normal way the network grew up, because the communication between those devices is much more complex and it's not IP based. It is also the we also have IP, but we don't have IP only. So actually we get we got into the problem of properly configuring the radio with uh information that come from, uh, the topology. So we have started digging into what is possible to do with topology. Uh, the this solution exists for IPv6 using Dhcpv6, but the solution does not exist with DHCP version. Legacy. The version for because the relay agent the layer two relay. There are no layer two relay agent with capable of transporting the whole topology to the server here. Uh, but, uh, really, again, thanks to ATF, uh, suggesting how to read the various description, we have found out that we have, uh, a way for encapsulating DHCP v4 into the V6. So actually if you go directly into slide number five, then, uh, it's number five. Uh, so having dhcp v4 over dhcp v6 uh solves the problem. The only new challenge that is remaining in our use cases that are implementing uh DHCP v4 over Dhcpv6 at the client is out of control for for us and for mainly for the deployment of this new configuration of the network because, uh, of interoperability, because the the client is built up by a large variety of, uh, vendor and configuration. And uh, that is uh, and then we, we are also in a, another type say, say political configuration because the transport network may be different from the, uh, the run. Uh, so we have one organization providing the transport. So, uh, administering the switch and another organization administering the radio and the, the the servers. So it may be complex. So, uh, since we have already a solution for DHCP v6, we would like to have the to use exactly the same solution for the legacy DHCP. So uh, what we would need here is the possibility of having the encapsulation dhcp v4 over dhcp v6 in uh in the relay agent rather than having in the client. So not having this option as mandatory, but uh, as an option, but actually implementing that part in uh in the relay agent. So if you, if you uh, go into slide number seven, this is what we. slide number seven. I mean, yeah, this is what we would like to have as a possibility, uh, from a normative part. It is only the since, uh, the ACP before over Dhcpv6 is already an RFC, so there is nothing to be added. It works all the procedure, all the encapsulation, the bit, the data structure. It's already defined and stated pretty well how it needs to be done. Uh, I can also say that we as Ericsson organization will do that anyhow in our switch. So this is a solution that we will use in the in the real network when doing the deployment. Uh, we since uh network is interoperability. We would like to have a description or having the adoption of of our draft that describes this type of deployment of DHCP for over DHCP, V6 at the relay agent, uh, for permitting the interoperability and for permitting for the this new configuration to be uh, standard. Uh, I have received, uh, we have received a number of comments to the existing draft that is a lot focused on the radio use case. Uh, and I understand that, uh, having a specific use case is in, in a way misleading. And there are also, uh, has been pointed out that there is another RFC that is describing how uh, is describing about, uh, the, the problem of the topology. It's the RFC 6916, 79, 69 that describes this, uh, this part. So we we may refer to that RFC and fully remove the use case from the radio on that. So, uh, actually what we ask is to, to get comments and, uh, eventually proceeding with the adoption, uh, I have nothing very much to add to this presentation. So if we can we, we can directly move into the question and answer part. Thank you for listening to me.\nSPEAKER S1: Okay. We got some people lined up. So go ahead.\nSPEAKER S4: Uh, David Lamparter, um, the draft is not overly specific yet on what exactly the the relay agent is supposed to do. Um, in the diagram, you have a legacy HTTP server on the right hand side of of the network. Are you intending to support this decapsulation and then have a legacy IPv4 DHCP server, or is that just a misunderstanding in the diagram?\nSPEAKER S3: It is a misunderstanding. Uh, it's I, I was making this diagram to to to long ago actually. Yes. But this is a DHCP server that complies to DHCP v4 over Dhcpv6. So it is either a monolithic implementation that supports both or it is an implementation that does decapsulation and forwards to DHCP for server, but nothing new uh related to what existing already, and it is standardized. Uh. But as I said, all this stuff about, uh, radio network will be removed from the draft. And then we will make reference to the RFC 69, 69, 79, 69 for, uh, the topology discovery as it is already mentioned there. Yeah, it is actually. I meant it's actually a pity that for over six was specified only at the client and not, uh, not being given the possibility to be implemented at the at the relay agent. In our specific case, the. We have a mixed usage of the network, so we have both layer three and layer two that are switched there. Uh, so that we need to have a relay agent working on layer two. And this does not exist over for DHCP, v4, but it exists for v6. And this DHCP before over DHCP v6 actually is a solution that helps and it does not need any further standardization.\nSPEAKER S4: Uh David Lamparter again, uh, just as a positive comment, as someone who probably will implement this, I don't see a particular problem. Seems fine. Okay, thanks.\nSPEAKER S5: Yeah. Thank you. Thank you.\nSPEAKER S2: Yeah. I want to just, uh, mention something. This is Bernie Boldt. Um, I think it was Muhammad that on the list had, uh, made some comment, um, about referencing, uh, that 7969 text. And that actually also triggered something in me to, you know, one of the things you may need to look at is right, that the so when, when the client is using broadcast traffic or, you know, because that's how it communicates in v4 to the relay agent, you're okay. But you may have to think about the case of when it is unicast a renewal. Right? I mean, I think if if the server is reachable, the the ultimate DHCP server is reachable with whatever address the client has, you're okay. But if it's not, that may be an issue because I'm not sure. You know what the the uh, IPv4 routing infrastructure will will provide there. So it may be something you need to look at. It's a known problem already. And you know, we have we have like server ID override features and things like that that are used in some other networks where we don't want the renewal to be sent to the server directly, but instead want it to go, uh, to to the the relay agent.\nSPEAKER S5: Yeah.\nSPEAKER S3: Thank you. Bernie. You find actually one of the points that we need to specify better. And it is when you have this, uh, implementation at the relay agent, that means that it is actually, uh, the relay agent responsibility to avoid all this fuss and make this DHCP v4 over six only and not distributing anything else. Actually, the it is the only agent that needs to pass the request and eventually drop what is uh, for the configuration. Yeah. That will we will write about on the new version of the draft. Thank you very much for the comment.\nSPEAKER S2: Okay. Sounds good. Yeah. When? When you have a new version of the draft. I think it'd be very interesting to take a look at it. And, uh, you know, the the group can comment. I mean, I think in the long run, this work is probably, uh, interesting to the working group. So I think, um, you know, it is something that we may look to adopt, but maybe you want to do 1 or 2 more revs of the draft first to improve the, uh, you know, the draft and stuff and make it a little bit more detailed before we we consider the adoption question.\nSPEAKER S3: Uh, thank you very much for the comment. And, uh, I am committed we the team, because we are a team. We are committed to make improvement of the draft and, uh, tuning that in the direction driven by the comments from the community. Thank you again.\nSPEAKER S1: Okay. Yeah, I think that's the right next steps, Bernie. You know, we'll get a couple of revisions, Claudio, from you guys, and then we can talk about, um, adopting this. I agree with Bernie. I think it's definitely within our charter and we can adopt this, so. That's good. Yeah. Suresh. Go ahead.\nSPEAKER S6: Thanks. Uh. Thanks, Bonnie. Thanks, Tim. So, um, if you have the pending comments, address, like, you know, what is kind of delaying adoption at that point, right? Like, you know, um, if we can kind of get it all in the next revision, right? Is it okay to kind of go for adoption at that point?\nSPEAKER S1: Yeah. I mean, I definitely think the Rand stuff's got to be removed. I think we talked about everything. I think we could probably go after the next. We could go for a call to adoption.\nSPEAKER S6: I think the Rand stuff, like I kind of was like, wanted to add the ransom because there's the last meeting when this was presented. Right. Like somebody actually asked for that context on why you want to do that. Right. And that's why the Rand stuff is there, because somebody asked for it so he can take it out. But if it's confusing. But there is kind of the justification for the use case because at least for me, it made clear why this was an issue, right? Like, there's like some set of nodes that cannot be updated. And that's kind of getting lost. I'm sure it's the other use cases, but it is like probably just keep it somewhere. I don't mind taking it out, but I think it's yeah, it was some somebody had that issue like.\nSPEAKER S1: Yeah I know.\nSPEAKER S6: Right.\nSPEAKER S1: What's funny is that then it caused more confusion afterwards. So I that's kind of where I landed on this is yeah I, I was I totally agree last time that this was one of the things people wanted to change, but then it seems to cause more confusion on the mailing list. So I think that's the general consensus. But you know, I'm not I do not have a strong opinion on this, and I don't think the working group does. So I think you can make your best.\nSPEAKER S6: Judgment, like taking it out is fine. But I think like the reason like we kind of ended up on the solution rather than the previous like DHCP, v4, L-to-r kind of solution was that this has got a clear exit path for v6, right? Like so the um, the all the infrastructure is V6, right. And when this V4 things go away, we can kind of stick in V6 only without keeping additional legacy V4 infrastructure is the interesting point. So thanks really. And we'll try to get this updated as soon as possible. And thanks thanks.\nSPEAKER S7: Yeah I mean another course. Um, I also wanted to say I would actually propose to move it into the appendix because I totally understand that. Like, it might be confusing if we have it in the main document. It sounds like this is like specific to this use case, which is not the case. It's like a more general mechanism, but, um, having the motivation clear, making clear why we design it in this way. Because we have this use case. I think it's so useful. So put it in the appendix. So we don't like if the question comes up again we don't have to like rip out an old draft.\nSPEAKER S1: It seems to be an excellent idea from my my seat for sure. Um, Bernie? You're up.\nSPEAKER S2: Yeah. That's what I was going to suggest is for now, let's move it. Move the rand stuff into an appendix. We can always decide later on, either to keep it or to jettison it. If we don't, you know, think it's it adds sufficient value. But I would I would agree that's the best thing to do is to move it to out to an appendix and focus on the, um, you know, the, the main core of the material, which is how you use this and less on the, the specific use case. Okay.\nSPEAKER S1: Michael. You're up.\nSPEAKER S8: Michael Richardson and Mike. Sorry I'm late. Um, um, I didn't ever think I commented on it. I never thought it should be removed. I just didn't understand it. That didn't mean I thought that it should be removed. That or even. I mean, put it in appendix if you like. But all I'm saying is that it sounded like there was a use case there that was well thought out and was motivating things. I just didn't understand it. Okay. And I have a bit more understanding of it from conversations, that mailing list or whatever. But that doesn't mean the text is is great, uh, yet, but I think you should leave it in. I just think you probably just need to either delete a sentence or add a sentence, or move a comma, or I don't know what, but, um, you know, I mean, maybe, like you, you heard the, you know, uh, if you if I understood the, the, the, the use case well enough to propose text, then I. Yeah, maybe.\nSPEAKER S1: Yeah. I think we're coming to it. Let's, let's keep it to the appendix. I think that'll solve everyone's problem and we'll be good. Any any last comments on this draft? Okay. Sweet. Um, this was it for the actual scheduled stuff. So I think the only other things we have is just kind of doing a recap, um, on this really quick. So today, I think the two things we're going to have is it for 15 days is we're going to ship that off. Um, you have a two weeks. If you have deep thoughts, you want to give about it, please. You got a couple weeks here. We're going to give you a week after the IETF, because I know everybody loves having a lot of work the week after the ITF. So we're going to give you a little bit longer. Take a look and then we'll ship that one off. And then um, we're going to get an update for the draft we just had presented. Um, I don't think there's any other documents out there looking to get adopted by us at the moment, but that doesn't mean there won't be in the future. So I think that's everything Bernie did. I miss everything that I missed.\nSPEAKER S2: That, that was it. Yep. Oh Eric wants.\nSPEAKER S1: Yeah. Alright. He's walking up.\nSPEAKER S9: So Eric giving responsibility for this group. So the plan was to close the HC after the document was published. Uh, looks like we are keeping more and more work coming. So. Which is good. So the plan is no more to close the working group, but keep it open for a couple of iATf and then we will see.\nSPEAKER S1: Okay. So yeah, that's.\nSPEAKER S10: Are you.\nSPEAKER S9: Clapping in your hand because I want to close it or want to stay open. Right.\nSPEAKER S1: Yeah. We are the longest running working group I think now, so we have that going for us.\nSPEAKER S4: Uh, David Lamparter, uh, we just determined this ETF that we need a new option to communicate IPv6. Next tops for IPv4 routes in GCP. And please don't close the working group in front of me.\nSPEAKER S1: Yeah. No I think that's what we're finding is people are finding use cases as it becomes more prevalent. So yeah we're going to keep it around. Um we're not going to close it right away. So if you do have your your wonderful DHCP ideas, feel free to pitch them. Yeah.\nSPEAKER S11: Hi. Um, I'm Josh Cohen. Uh, since you're finished with your agenda items, I thought I might ask a few questions. So I'm one of the authors of Wpad, the web proxy Autodiscovery for HTTP. Anyone familiar with that?\nSPEAKER S1: Vaguely, yeah.\nSPEAKER S11: Yeah. So I did that 25 years ago, um, back in the one one days. And that was, you know, before DHCP was even deployed or widely deployed, at least. Yeah. So, um, you know, one of the after, uh, security vulnerability advisory after, you know, over the years, it's come time to sort of have a discussion about what to do about that. And so, um, I'm one alternative is just to get rid of it now, just to narrow it down. Um, and so that means, you know, obviously getting rid of some of the deprecated discovery mechanisms. Um, and one of them is, is DHCP, which is currently one of the ones that's used. And so I had a couple of questions in terms of, of um, the current state of DHCP. Um.\nSPEAKER S1: You're asking about V4, I'm assuming is what you're, you're asking about the, the current status of what goes. So we're charged to do v4 stuff. Um, we can if you want to make updates to previous things. Um, we're open for business for those things we obviously deal with options. Um, but we obviously mostly today focus on V6 options. Not that we couldn't put out something. Bernie, we're allowed to talk about. I think we're allowed to change. We still we can change. V4 stuff. Right?\nSPEAKER S2: Well, I think I think we'd like to hear what those issues are and see. And then, you know, like, everything, um, you know, draft speak loudest. And then we'd, we'd, uh, you know, assuming Eric is okay with, with the US adopting the work and the working group's okay with it, then we can move forward.\nSPEAKER S11: Okay. Well, I think that is probably premature to say to go that far, but, um, so are we allowed to talk about v6 stuff?\nSPEAKER S2: You can talk about V4 or V6 stuff. Okay. In this form we have extra time and you know.\nSPEAKER S11: Alright, great, great. So, um, you know, the the big issue is security, which is the, you know, wait, Tommy, Paulie would describe it as the lack of a root trust, right. Which is that you can, you know, you can spoof, uh, the DHCP server and then basically check the web browser into picking up a proxy and get a man in the middle attack, although that's a lot less, um, I think, feasible or common than some of the other ways that it works. The issue seems to be better than the DH, the DNS solution. Um, so my question, um, is, you know, one, we, you know, in the Wpad draft, we make an assertion that option code I think is two five 2 or 2 five four is the where wpad the URL for the PAC file goes, although we never followed through and registered it with Iana. Um, uh.\nSPEAKER S12: Bold choice.\nSPEAKER S11: Well, that is true. I think it was, um, you know, when we did it, we thought, okay, we're going to this is a short term solution, we're going to do this better. And we just never got around to it. And the short term solution became the long term solution. Um, so I think the first question is in terms of, you know, where DHCP. Either v4, v6 or both are with respect to um. Better security in terms of um, possibly authenticating or something or um, to avoid those kinds of spoofing attacks. And the other is uh, are V6 and v4 options the same in terms of the code they use, or are those different? Um, and are there any constraints in terms of what you can put in the value of those options?\nSPEAKER S1: Bernie, you want to take this one?\nSPEAKER S2: Sure. Yeah. I mean, the number space for V4 and v6 options is completely separate and different. It's the same for messages and everything. Uh, we, you know, there's there's a few cases, like you're raising the, uh, security or authentication issues. Uh, there are a few cases where, um, you know, we we do use the same table of sort of sub values as was used in V4, just because it made sense to only have sort of one set of those. But before options are completely different than v6, there's, you know, the option space is different. The formatting is often hopefully in V6 cleaner. Now because we we learned our lessons from some of the messes in V4 and things like that. But I mean security, you know, just to touch on security, there was a lot of work done on that for a number of years, but it's a very difficult problem to solve, you know, to try to secure or to authenticate the the DHCP transaction.\nSPEAKER S11: Okay. So yeah, it's a hard problem that remains not not really well solved. And that's not unique to DHCP.\nSPEAKER S1: Right, right. Yeah I mean yeah this this problem is not unique. People do have setups and networks right. Where they have things like DHCP guard or other mechanisms to prevent rogue servers from appearing right, which is a different problem than authenticating the actual DHCP traffic. But I think the well-known issue is making sure that there aren't rogue DHCP servers. Most networks have the ability to solve that problem. Um, authenticating the DHCP messages is another um, issue in itself.\nSPEAKER S11: Um, what did you call the solution to to prevent the DHCP guard.\nSPEAKER S1: Yeah, that's the DHCP guard is is what it's called. And so that's where you prevent servers that are on certain ports from sending or answering DHCP.\nSPEAKER S2: And it's like savvy is another one of the documents that's around that whole architecture of, you know, monitoring. Um, but this is for like switches and routers to monitor, uh, what addresses are, uh, provided by authoritative DHCP servers or whatever so that they, uh, can restrict traffic properly.\nSPEAKER S11: Okay. So that was guard. And what was the second one?\nSPEAKER S1: Savvy.\nSPEAKER S11: How do you spell that?\nSPEAKER S1: Savvy.\nSPEAKER S11: Savvy okay. Yeah. Thank you.\nSPEAKER S2: Yeah, yeah. And there's also, you know, the the um, 802.11 x as well that, you know what the Ethernet port you plug into or whatever, authenticating that at that lower level that, that you could use.\nSPEAKER S1: Okay. We had a walk on topic. Great. Okay. So I think we're going to conclude the meeting. We talked about the next steps. I want to thank everybody for coming today. And hopefully we'll see you guys in the future. Thanks everybody.\nSPEAKER S2: All right. Thank you Tim. Thank you everybody. Thanks Eric. All right.\nSPEAKER S13: Thank you.\nSPEAKER S2: And thanks Claudio for presenting from Italy two in the morning. Get some sleep. Alright. Take care.\nSPEAKER S3: Actually, I am in the moonshine now.\nSPEAKER S2: Yep. It is. It was like full moon I think yesterday or something. So it is pretty.\nSPEAKER S14: Yeah. Yeah.\nSPEAKER S3: And 36 degrees, actually. Here. Thank you. Bye.\nSPEAKER S15: So we only got two presentations and I don't 8415. There's not a whole lot to say. It's it's done. So I think that was kind of what we expected.\nSPEAKER S11: Are they meeting?\nSPEAKER S15: Yes. Okay.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9906620103249316
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Give it one more minute and we'll get started.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "I guess we'll go ahead and get started.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "So for those of you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Hey, everyone.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for coming.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "This is the DHCP working group, so I'll start from the beginning.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is Vancouver.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "If you're in the wrong place.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, welcome to DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Bernie, my co-chair, as you can see, is remote.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "He's hanging out in New Hampshire, I believe.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "So he's he stayed up with us tonight, which is awesome.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "That's correct.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Sweet.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here's the note.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I know we're still early in the week, so you haven't seen this a million times, but if you're in the room, you are agreeing to this.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Please take a look at it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "If you've not seen it before, I suggest you go read it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is important things.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "We want everybody to understand.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "They're agreeing to this.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this includes, you know, heavily on the patent side and patent application.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "So just please make sure you take some time to read this if you've not seen it before and you understand it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Notice the note.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, médico does blue sheets now, um, Bernie and I are co-chairs.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do we have a note taker?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Bernie, I saw you started a copy.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "It looked like.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Somebody else actually started that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know who did.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, do we have anyone willing to take notes for this?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Bernie's typing now, so I.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "I think Bernie will take Bernie.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Are you good recording everything for us?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I'll try.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, again, assistance is always welcome, especially, uh, when things get hot and heavy.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, yes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Tomac jumped into.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "He can take notes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So got a note taker.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Here's our agenda for today.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to talk um 8415 to Internet Standard.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to talk about DHCP v4 over DHCP V6 relays and next steps.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "So it's pretty short today.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a couple of regular updates we have for you guys.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "We have, uh, regular documents.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "We have two of them currently that are working group documents.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have adder DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Adder notifications.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "And that one I think is in.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "It's approved right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "It's been approved.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "It's in RFC editor.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "We're we're in the last stages.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "We're we're we're we're we're good with it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "We just need to get it over the last hump.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "So that's good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Um, 8415 we're going to talk about in a minute.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "And then always we'd like to just list um, there's a lot of interesting DHCP drafts.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "There's five of them I've put here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "I'm only four bullets.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure what I goofed, but there's a couple here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "You should go read if you're into DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "These are just relative drafts to let everybody know they're not working group documents yet.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a couple of them are trying to be, um, so we'll talk about those today.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "And then there's just some other ones, um, past presentations.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "There was a spring presentation about the DHCP one there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "So that's still ongoing.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so these are just relevant documents to the working group.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Um, feel free to read them at your own pleasure.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "We just like to highlight them.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "And that's it for the administrative side.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the next thing we're going to do is switch over to id415.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "So um this is for advancing DHCP v6 to Internet Standard presentation.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "So a couple things here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Just to remind everybody we've motivation for advancing DHCP to internet standard.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Um this is the next we've had this slide up for a while.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "It's a milestone of this working group to move this from to an internet standard from the current status it's at.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "And this has been ongoing.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, a couple things happened since the last IETF, which is good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we left it in working group last call a little bit longer than we intended, but we got some really good feedback, so I think it ended up working out for us.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Intentional or not, I think it worked out better.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "So the we published oh five.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "So we just recently published that there are two things we did in there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "One of them is we clarified the UDP ports.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "There were some questions and I've included a link to the mail archive if you're really interested in it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's been some confusion about what UDP ports people want to use, uh, and how to use them.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "So we clarified it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "I thought it ended up being really good text saying, hey, this is the cases where you use it and how to do it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that got added in oh five.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And then the other thing we did with this, we had a sort of an oops, we had some texts that was from the original 8415 about I, I address option only being in the Iana, which is not true.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "It's it was added to Azure notification and then previously to that it was in least query.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So we had it in two places that it didn't previously.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "We reused the option which made sense.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "So we took out all of that text in oh five.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "So the good news there is that, um, DHCP addr is now good to go.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "That one's no longer violating 8415.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "And then lease query.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "We we patched as well.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And those are the only two changes we made to this document at this point.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "So oh five is out there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "What we would like to do is we've already done working group last call.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "We want to do two weeks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "We want to ship this to the eye.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "The eye.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Oh wow.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "It's already been a long week, apparently.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we want to send it to them in two weeks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "So this is kind of our last comments.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "If anyone has any last comments, please feel free to come up to the mic now or yeah, come up to the mic, please.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "If you have any more comments about this document or any more things, we kind of want to close this up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "We've we've let this run probably an IETF too long.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "So we want to try to close this gap.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "So does anyone have any comments they'd like to make.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "No one got up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "So we're going to send this.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll send an email out to the list.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "But we'll send this to the.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "The plan will be in two weeks to send this off.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and start getting it through the process.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Suresh has nicely agreed in previous.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "It's.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Are you still good?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Suresh to document?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Suresh is nodding his head at me.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I think we're good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "All right, so that's it for this, then?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I don't think we have anything.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Bernie, did you have anything else you wanted to add to that?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: No.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're, uh, in good shape there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "We're good to go.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I'd like to see it get done.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Awesome.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "All right, so then we're going to move to our next presentation.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Claudio, I know you're remoting in Italy, and it's a very late, so we'll try to get you set up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Hello, Here I am.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Perfect.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And my presentation is about a work that we have started at ITF 118, and then it has proceeded, uh, during the time we get got some contribution and now we have moved into another step.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, let me thanks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, first for all ITF community for having helped us solving what was a problem.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "And now, uh, it is a solution.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, let me really take this, uh, chance for, uh, uh, say thank you for all the people who has given us suggestion and, uh, helped us solving a real problem.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I need to make a quick recall from yes, a place.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Please switch to slide number two team.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the quick description of the problem is that in the radio, the radio access network was not really a network until, uh, a new requirement.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "So we had, uh, a configuration where we had a simple connection one one to N, so we had one device connected to a number N of radio, and we had no problem in understanding what radio was connected to.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "What of the the plug of this device.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "But since there is a new requirement now from, uh, mainly driven from the open run organization that, uh, the the relationship between the radio and the controlling unit is n to M now and then.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "We have a network in between the.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "This is challenging, and it's not the normal way the network grew up, because the communication between those devices is much more complex and it's not IP based.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "It is also the we also have IP, but we don't have IP only.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "So actually we get we got into the problem of properly configuring the radio with uh information that come from, uh, the topology.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "So we have started digging into what is possible to do with topology.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the this solution exists for IPv6 using Dhcpv6, but the solution does not exist with DHCP version.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Legacy.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "The version for because the relay agent the layer two relay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "There are no layer two relay agent with capable of transporting the whole topology to the server here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but, uh, really, again, thanks to ATF, uh, suggesting how to read the various description, we have found out that we have, uh, a way for encapsulating DHCP v4 into the V6.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "So actually if you go directly into slide number five, then, uh, it's number five.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so having dhcp v4 over dhcp v6 uh solves the problem.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "The only new challenge that is remaining in our use cases that are implementing uh DHCP v4 over Dhcpv6 at the client is out of control for for us and for mainly for the deployment of this new configuration of the network because, uh, of interoperability, because the the client is built up by a large variety of, uh, vendor and configuration.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, that is uh, and then we, we are also in a, another type say, say political configuration because the transport network may be different from the, uh, the run.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we have one organization providing the transport.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, administering the switch and another organization administering the radio and the, the the servers.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "So it may be complex.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, since we have already a solution for DHCP v6, we would like to have the to use exactly the same solution for the legacy DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "So uh, what we would need here is the possibility of having the encapsulation dhcp v4 over dhcp v6 in uh in the relay agent rather than having in the client.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "So not having this option as mandatory, but uh, as an option, but actually implementing that part in uh in the relay agent.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "So if you, if you uh, go into slide number seven, this is what we.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "slide number seven.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, yeah, this is what we would like to have as a possibility, uh, from a normative part.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "It is only the since, uh, the ACP before over Dhcpv6 is already an RFC, so there is nothing to be added.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "It works all the procedure, all the encapsulation, the bit, the data structure.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "It's already defined and stated pretty well how it needs to be done.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I can also say that we as Ericsson organization will do that anyhow in our switch.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "So this is a solution that we will use in the in the real network when doing the deployment.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we since uh network is interoperability.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "We would like to have a description or having the adoption of of our draft that describes this type of deployment of DHCP for over DHCP, V6 at the relay agent, uh, for permitting the interoperability and for permitting for the this new configuration to be uh, standard.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I have received, uh, we have received a number of comments to the existing draft that is a lot focused on the radio use case.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I understand that, uh, having a specific use case is in, in a way misleading.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And there are also, uh, has been pointed out that there is another RFC that is describing how uh, is describing about, uh, the, the problem of the topology.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "It's the RFC 6916, 79, 69 that describes this, uh, this part.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "So we we may refer to that RFC and fully remove the use case from the radio on that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, actually what we ask is to, to get comments and, uh, eventually proceeding with the adoption, uh, I have nothing very much to add to this presentation.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "So if we can we, we can directly move into the question and answer part.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for listening to me.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "We got some people lined up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So go ahead.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, David Lamparter, um, the draft is not overly specific yet on what exactly the the relay agent is supposed to do.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in the diagram, you have a legacy HTTP server on the right hand side of of the network.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Are you intending to support this decapsulation and then have a legacy IPv4 DHCP server, or is that just a misunderstanding in the diagram?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: It is a misunderstanding.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's I, I was making this diagram to to to long ago actually.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "But this is a DHCP server that complies to DHCP v4 over Dhcpv6.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "So it is either a monolithic implementation that supports both or it is an implementation that does decapsulation and forwards to DHCP for server, but nothing new uh related to what existing already, and it is standardized.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "But as I said, all this stuff about, uh, radio network will be removed from the draft.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "And then we will make reference to the RFC 69, 69, 79, 69 for, uh, the topology discovery as it is already mentioned there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, it is actually.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "I meant it's actually a pity that for over six was specified only at the client and not, uh, not being given the possibility to be implemented at the at the relay agent.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "In our specific case, the.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "We have a mixed usage of the network, so we have both layer three and layer two that are switched there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that we need to have a relay agent working on layer two.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "And this does not exist over for DHCP, v4, but it exists for v6.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And this DHCP before over DHCP v6 actually is a solution that helps and it does not need any further standardization.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh David Lamparter again, uh, just as a positive comment, as someone who probably will implement this, I don't see a particular problem.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Seems fine.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, thanks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "I want to just, uh, mention something.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "This is Bernie Boldt.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think it was Muhammad that on the list had, uh, made some comment, um, about referencing, uh, that 7969 text.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "And that actually also triggered something in me to, you know, one of the things you may need to look at is right, that the so when, when the client is using broadcast traffic or, you know, because that's how it communicates in v4 to the relay agent, you're okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "But you may have to think about the case of when it is unicast a renewal.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I think if if the server is reachable, the the ultimate DHCP server is reachable with whatever address the client has, you're okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "But if it's not, that may be an issue because I'm not sure.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "You know what the the uh, IPv4 routing infrastructure will will provide there.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "So it may be something you need to look at.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "It's a known problem already.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And you know, we have we have like server ID override features and things like that that are used in some other networks where we don't want the renewal to be sent to the server directly, but instead want it to go, uh, to to the the relay agent.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Bernie.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "You find actually one of the points that we need to specify better.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "And it is when you have this, uh, implementation at the relay agent, that means that it is actually, uh, the relay agent responsibility to avoid all this fuss and make this DHCP v4 over six only and not distributing anything else.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Actually, the it is the only agent that needs to pass the request and eventually drop what is uh, for the configuration.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "That will we will write about on the new version of the draft.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for the comment.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Sounds good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "When?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "When you have a new version of the draft.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "I think it'd be very interesting to take a look at it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, you know, the the group can comment.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I think in the long run, this work is probably, uh, interesting to the working group.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "So I think, um, you know, it is something that we may look to adopt, but maybe you want to do 1 or 2 more revs of the draft first to improve the, uh, you know, the draft and stuff and make it a little bit more detailed before we we consider the adoption question.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, thank you very much for the comment.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I am committed we the team, because we are a team.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "We are committed to make improvement of the draft and, uh, tuning that in the direction driven by the comments from the community.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you again.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I think that's the right next steps, Bernie.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "You know, we'll get a couple of revisions, Claudio, from you guys, and then we can talk about, um, adopting this.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "I agree with Bernie.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's definitely within our charter and we can adopt this, so.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "That's good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Suresh.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thanks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Bonnie.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Tim.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if you have the pending comments, address, like, you know, what is kind of delaying adoption at that point, right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Like, you know, um, if we can kind of get it all in the next revision, right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Is it okay to kind of go for adoption at that point?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I definitely think the Rand stuff's got to be removed.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "I think we talked about everything.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "I think we could probably go after the next.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "We could go for a call to adoption.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I think the Rand stuff, like I kind of was like, wanted to add the ransom because there's the last meeting when this was presented.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Like somebody actually asked for that context on why you want to do that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why the Rand stuff is there, because somebody asked for it so he can take it out.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "But if it's confusing.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "But there is kind of the justification for the use case because at least for me, it made clear why this was an issue, right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Like, there's like some set of nodes that cannot be updated.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "And that's kind of getting lost.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "I'm sure it's the other use cases, but it is like probably just keep it somewhere.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "I don't mind taking it out, but I think it's yeah, it was some somebody had that issue like.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah I know.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: What's funny is that then it caused more confusion afterwards.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So I that's kind of where I landed on this is yeah I, I was I totally agree last time that this was one of the things people wanted to change, but then it seems to cause more confusion on the mailing list.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that's the general consensus.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "But you know, I'm not I do not have a strong opinion on this, and I don't think the working group does.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So I think you can make your best.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Judgment, like taking it out is fine.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "But I think like the reason like we kind of ended up on the solution rather than the previous like DHCP, v4, L-to-r kind of solution was that this has got a clear exit path for v6, right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Like so the um, the all the infrastructure is V6, right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "And when this V4 things go away, we can kind of stick in V6 only without keeping additional legacy V4 infrastructure is the interesting point.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "So thanks really.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "And we'll try to get this updated as soon as possible.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "And thanks thanks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah I mean another course.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I also wanted to say I would actually propose to move it into the appendix because I totally understand that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Like, it might be confusing if we have it in the main document.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "It sounds like this is like specific to this use case, which is not the case.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "It's like a more general mechanism, but, um, having the motivation clear, making clear why we design it in this way.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Because we have this use case.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's so useful.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "So put it in the appendix.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "So we don't like if the question comes up again we don't have to like rip out an old draft.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It seems to be an excellent idea from my my seat for sure.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Bernie?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "You're up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "That's what I was going to suggest is for now, let's move it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Move the rand stuff into an appendix.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "We can always decide later on, either to keep it or to jettison it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "If we don't, you know, think it's it adds sufficient value.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "But I would I would agree that's the best thing to do is to move it to out to an appendix and focus on the, um, you know, the, the main core of the material, which is how you use this and less on the, the specific use case.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Michael.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "You're up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Michael Richardson and Mike.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry I'm late.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, I didn't ever think I commented on it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "I never thought it should be removed.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "I just didn't understand it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "That didn't mean I thought that it should be removed.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "That or even.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, put it in appendix if you like.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "But all I'm saying is that it sounded like there was a use case there that was well thought out and was motivating things.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "I just didn't understand it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "And I have a bit more understanding of it from conversations, that mailing list or whatever.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "But that doesn't mean the text is is great, uh, yet, but I think you should leave it in.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "I just think you probably just need to either delete a sentence or add a sentence, or move a comma, or I don't know what, but, um, you know, I mean, maybe, like you, you heard the, you know, uh, if you if I understood the, the, the, the use case well enough to propose text, then I.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, maybe.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're coming to it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Let's, let's keep it to the appendix.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I think that'll solve everyone's problem and we'll be good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Any any last comments on this draft?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Sweet.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this was it for the actual scheduled stuff.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the only other things we have is just kind of doing a recap, um, on this really quick.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "So today, I think the two things we're going to have is it for 15 days is we're going to ship that off.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you have a two weeks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "If you have deep thoughts, you want to give about it, please.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "You got a couple weeks here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "We're going to give you a week after the IETF, because I know everybody loves having a lot of work the week after the ITF.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "So we're going to give you a little bit longer.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Take a look and then we'll ship that one off.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And then um, we're going to get an update for the draft we just had presented.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't think there's any other documents out there looking to get adopted by us at the moment, but that doesn't mean there won't be in the future.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that's everything Bernie did.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "I miss everything that I missed.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That, that was it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Oh Eric wants.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "He's walking up.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: So Eric giving responsibility for this group.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "So the plan was to close the HC after the document was published.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, looks like we are keeping more and more work coming.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Which is good.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So the plan is no more to close the working group, but keep it open for a couple of iATf and then we will see.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, that's.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Are you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Clapping in your hand because I want to close it or want to stay open.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "We are the longest running working group I think now, so we have that going for us.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, David Lamparter, uh, we just determined this ETF that we need a new option to communicate IPv6.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Next tops for IPv4 routes in GCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "And please don't close the working group in front of me.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "No I think that's what we're finding is people are finding use cases as it becomes more prevalent.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah we're going to keep it around.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Um we're not going to close it right away.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "So if you do have your your wonderful DHCP ideas, feel free to pitch them.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Hi.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm Josh Cohen.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, since you're finished with your agenda items, I thought I might ask a few questions.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm one of the authors of Wpad, the web proxy Autodiscovery for HTTP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone familiar with that?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Vaguely, yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "So I did that 25 years ago, um, back in the one one days.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "And that was, you know, before DHCP was even deployed or widely deployed, at least.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you know, one of the after, uh, security vulnerability advisory after, you know, over the years, it's come time to sort of have a discussion about what to do about that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "And so, um, I'm one alternative is just to get rid of it now, just to narrow it down.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so that means, you know, obviously getting rid of some of the deprecated discovery mechanisms.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and one of them is, is DHCP, which is currently one of the ones that's used.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "And so I had a couple of questions in terms of, of um, the current state of DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: You're asking about V4, I'm assuming is what you're, you're asking about the, the current status of what goes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "So we're charged to do v4 stuff.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we can if you want to make updates to previous things.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we're open for business for those things we obviously deal with options.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we obviously mostly today focus on V6 options.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Not that we couldn't put out something.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "Bernie, we're allowed to talk about.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're allowed to change.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "We still we can change.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "V4 stuff.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Well, I think I think we'd like to hear what those issues are and see.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "And then, you know, like, everything, um, you know, draft speak loudest.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "And then we'd, we'd, uh, you know, assuming Eric is okay with, with the US adopting the work and the working group's okay with it, then we can move forward.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I think that is probably premature to say to go that far, but, um, so are we allowed to talk about v6 stuff?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: You can talk about V4 or V6 stuff.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "In this form we have extra time and you know.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Alright, great, great.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you know, the the big issue is security, which is the, you know, wait, Tommy, Paulie would describe it as the lack of a root trust, right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Which is that you can, you know, you can spoof, uh, the DHCP server and then basically check the web browser into picking up a proxy and get a man in the middle attack, although that's a lot less, um, I think, feasible or common than some of the other ways that it works.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "The issue seems to be better than the DH, the DNS solution.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so my question, um, is, you know, one, we, you know, in the Wpad draft, we make an assertion that option code I think is two five 2 or 2 five four is the where wpad the URL for the PAC file goes, although we never followed through and registered it with Iana.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Bold choice.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Well, that is true.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was, um, you know, when we did it, we thought, okay, we're going to this is a short term solution, we're going to do this better.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "And we just never got around to it.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "And the short term solution became the long term solution.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I think the first question is in terms of, you know, where DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Either v4, v6 or both are with respect to um.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Better security in terms of um, possibly authenticating or something or um, to avoid those kinds of spoofing attacks.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "And the other is uh, are V6 and v4 options the same in terms of the code they use, or are those different?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and are there any constraints in terms of what you can put in the value of those options?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Bernie, you want to take this one?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Sure.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the number space for V4 and v6 options is completely separate and different.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "It's the same for messages and everything.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we, you know, there's there's a few cases, like you're raising the, uh, security or authentication issues.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are a few cases where, um, you know, we we do use the same table of sort of sub values as was used in V4, just because it made sense to only have sort of one set of those.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "But before options are completely different than v6, there's, you know, the option space is different.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "The formatting is often hopefully in V6 cleaner.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Now because we we learned our lessons from some of the messes in V4 and things like that.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "But I mean security, you know, just to touch on security, there was a lot of work done on that for a number of years, but it's a very difficult problem to solve, you know, to try to secure or to authenticate the the DHCP transaction.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, it's a hard problem that remains not not really well solved.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "And that's not unique to DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Right, right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah I mean yeah this this problem is not unique.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "People do have setups and networks right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Where they have things like DHCP guard or other mechanisms to prevent rogue servers from appearing right, which is a different problem than authenticating the actual DHCP traffic.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "But I think the well-known issue is making sure that there aren't rogue DHCP servers.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Most networks have the ability to solve that problem.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Um, authenticating the DHCP messages is another um, issue in itself.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Um, what did you call the solution to to prevent the DHCP guard.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, that's the DHCP guard is is what it's called.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "And so that's where you prevent servers that are on certain ports from sending or answering DHCP.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And it's like savvy is another one of the documents that's around that whole architecture of, you know, monitoring.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but this is for like switches and routers to monitor, uh, what addresses are, uh, provided by authoritative DHCP servers or whatever so that they, uh, can restrict traffic properly.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "So that was guard.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "And what was the second one?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Savvy.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: How do you spell that?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Savvy.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Savvy okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "And there's also, you know, the the um, 802.11 x as well that, you know what the Ethernet port you plug into or whatever, authenticating that at that lower level that, that you could use.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "We had a walk on topic.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we're going to conclude the meeting.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "We talked about the next steps.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "I want to thank everybody for coming today.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "And hopefully we'll see you guys in the future.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks everybody.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you Tim.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you everybody.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks Eric.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: And thanks Claudio for presenting from Italy two in the morning.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "Get some sleep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "Take care.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Actually, I am in the moonshine now.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yep.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "It is.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "It was like full moon I think yesterday or something.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "So it is pretty.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S14: Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And 36 degrees, actually.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "Here.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: So we only got two presentations and I don't 8415.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "There's not a whole lot to say.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "It's it's done.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that was kind of what we expected.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Are they meeting?",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: Yes.",
+            "confidence": 0.9906620103249316
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9906620103249316
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-28T02:34:27.489414+00:00",
+          "processed_at": "2026-01-28T02:34:27.489414+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "xey7mfgetf"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9906620103249316
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

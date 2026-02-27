@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "5143f038-247b-4945-b6ea-32699fc8be68",
   "created_at": "2026-01-03T19:26:21.578727",
-  "updated_at": "2026-01-03T19:26:26.011654",
+  "updated_at": "2026-01-24T03:50:02.405872+00:00",
   "subject": "IETF 110 - GAIA Working Group Session",
   "parties": [
     {
@@ -36,17 +36,16 @@
         3
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=w60MW-mUnNQ",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "gaia"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -56,10 +55,10 @@
         "start_time": "2021-03-09T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -68,10 +67,10 @@
         "group_acronym": "gaia",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -105,10 +104,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-gaia",
         "mimetype": "application/pdf",
@@ -119,10 +118,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-gaia-202103121530",
         "mimetype": "application/pdf",
@@ -133,10 +132,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-gaia-agenda",
         "mimetype": "application/pdf",
@@ -147,10 +146,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-gaia-proposals",
         "mimetype": "application/pdf",
@@ -161,10 +160,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-gaia-aob",
         "mimetype": "application/pdf",
@@ -175,10 +174,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/gaia/",
         "mimetype": "text/html",
@@ -189,10 +188,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-gaia",
         "mimetype": "text/markdown",
@@ -203,7 +202,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8773,6 +8773,3708 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Hi, everyone. Um, I hope you can hear me. Oh, great. So welcome to the Gaia meeting. Um, this has been a hectic week, and we didn't have much time to coordinate with Jane. I see Jane, you are there so you can jump in at any moment.\nSPEAKER S2: Yes. Hello. Thank you. And, um. No. Carry on. Leandro, you're doing a lovely job. I'll take notes.\nSPEAKER S1: Okay. Wonderful. Um, so. Well, um, we didn't have a meeting in the in the previous IETF, and, um, and still we are in this, uh, remote mode. Um, I hope you saw the agenda. Um, we we start with the note. Well, um, um, information that you have in on screen, um, I think you, you know, or you must know. So basically, if you're aware of any IETF contribution covered by patents or patent applications must be disclosed on or participate in discussion and and several other clauses here there are the this documentation is also in the, um, data tracker. Uh, you can find it and explore the links. Um, Also the code of conduct as a participant that you need to behave in the way described in the slide. And basically respect and concordance with the policies expressed in the different RFCs and documents. You know, the goals that we we are discussing in this meeting about our research aspects, not about developing standards, although development of standards could emerge from the work in the groups and more documentation for for IETF participants and and background information is there in RFC 1774 18. Just to remember, uh, this is the charter of the Gaia group. Um, that refers to a study on from 2000 2012. So, so it it has certain age and um, and it's about the, the right of everyone and probably everything to be on the internet and considering also the digital divide or the inequality as well, that, uh, still nowadays, uh, about 50% of the population, um, do not have a chance to, to be part of the internet. That's not not only just a matter of cost, but also a matter of ability to do that. And then this is a summary of the objectives of the working group about increasing visibility, about creating a shared vision, about articulating collaboration, about documenting and sharing experiences and research results, um, on the different ways of of bringing connectivity. Um. again document costs, which are because sometimes cost is a barrier. Um, and a longer term perspective on on how this could influence the standardization efforts at the IETF. And then just to go into the current meeting, apart from what I was doing now, uh, this is the draft agenda we shared, um, days ago where we have, uh, this, this, let's say three main topics and, uh, and the last one, um, so, um, I don't know if you have any comment about the agenda, any, any important thing that should be modified. Um, I hope the speakers are here, which is another element that might change the agenda as we go. Any comment on this? Please go ahead and chat or speak up. Well, if not, I think we can move on. And, um. I'm not sure if Matagorda is is there? He offered to talk about the role of a community network cooperative in in addressing the digital divide in Tanzania, but I don't see him connected. So, um, if not, maybe we can move on to the. I don't either see Mark connected yet. I'm not sure if it's connected to that, but I made a mistake in the uploading the agenda. When I reduce the agenda from a previous meeting, I changed the date, but I forgot to change that. It was not Tuesday, but Friday. I hope this didn't confuse anyone. So if not, we can go to the third item in the agenda. Um, I prepared some slides about, um, just to open the discussion. Uh, at the end of the year, we, we had some emails to comment about, um, ideas for our 2021 plan so we can organise future meetings based on on topics of interest. The charter of the Gaia Working Group was defined some years ago, and and things have changed slightly or more than slightly in the last year. And um, so that we can prepare and prioritize topics for future discussions so we have time to even have like, uh, ideally, um, topic specific meetings so we can, um, collect ideas and discuss and then perhaps elaborate some documentation about it. So, uh, regarding this, um, these are the slides that I simply I took the, the ideas and I put them into, into, into slides so we can, we can go through it. So I'm gonna introduce them And then I mean, feel free to to take the floor and, and give your opinion as we as I go, I mean, feel free to interrupt me and add anything to what is written there. So, um, yeah, for instance, there was one. This is a link. In fact, uh, there was a call for, um, someone to write a report on, uh, what have been the internet technical success factors. And up to now, this was proposed by Vesna. Um. So trying to collect what worked, what has worked well, and what has worked less well on the technical aspects of the internet? Um, I proposed several people also commented about, you know, when when we introduce, uh, the Charter of Gaia, uh, we were thinking about bringing the internet for everyone. But you know this. I don't know if you ever read about sustainability aspects, but it is. For instance, um, uh, one representation called doughnut economics. I don't know if you know about this download diagram that puts together the, um, the bare minimum, uh, of, uh, the human requirements to, to participate and to ensure that, uh, most of human beings, uh, have a chance to connect and to participate in the digital world. I mean, related to inequality and the Sustainable Development Goals. That's one aspect. But of course, when we do that, when we expand the internet for everyone, we realize that we end up using materials, energy, um, polluting materials, uh, generating e-waste. So we can we can simply expand the internet for everyone. But we have to make it in a way that, um, we don't destroy the planet as we go. So, um, yeah, I mean, the internet is part of the solution, but also part of the problem. Or if, you know, the Itu-t has some documentation related to what are the expected impact reduction, uh, of uh, the ICT world in general by 2030, which is to be has to be about, um, a reduction of about 42% or something like that. Um, with respect to the numbers in, in in 2018, I think if I remember well, I think it's Itu-t 4070 or something. 1040 or perhaps uh, and then this is this contradicts the objective of expanding the internet for everyone while we reduce it to half in terms of impact. So I'm not sure if anyone wants to comment or not. Misunderstanding. Oh, okay. So, um, you you are asking, uh, in the Q? Uh, hi. Oh, yeah. Go ahead.\nSPEAKER S3: This is Niels. Is this the, uh, the right moment to talk about these proposals, or would you like to do that later in the session?\nSPEAKER S1: No, I think, uh, it's a good moment to go and comment now because, um, we had two other presentations and I didn't see, um, the speakers connected. So I think we can we can comment a little bit as we go. And because we can then, uh, define better what topics are interesting to, to each person. And um, and then, um, we can choose which ones we, we want to spend more time, um, because there is nothing else expected to in the agenda.\nSPEAKER S3: Thanks so much. So with the rise of 5G, but also other notions of, uh, network management, we see an increase of computation happening, uh, in the network and currently in the network management research group. There's also a draft on that. And I was wondering whether this would be the moment to give end users more influence and power over network configurations. And in such network configurations, users could exemplify what values they think are important and whether they would, for instance, like to consume low energy or have higher privacy requirements, such as on a application level as being used through, uh, a do not track, which uh, but that would then perhaps allow to do that on a network level. So give users a more possibility to express their needs and configurations in a network level, and thus, uh, leverage the input of users on, uh, how networks are run.\nSPEAKER S1: Yeah. Anyone wants to add to that?\nSPEAKER S2: My hand up. Leandro. Uh, can you hear me?\nSPEAKER S1: Yeah.\nSPEAKER S2: This is Jane, for the record. Um, I like what Nils is saying. Um, it might be very interesting to hear more about, um, network configuration and, um, what other users would like to see for more. Uh, I would say control, but I don't know if that's the right word. Nils. But, um, one thing I thought that might be interesting, um, for us to talk about is, uh, innovative solutions for, um, power in some of the networks that we all are seeing, whether they're, um, small mobile networks, we've got we know some 4G networks out there that are considered community networks, but they're also operationally. Um, uh, sustainable private networks that are using different, um, energy source, uh, energy sources from solar to wind and other things like that. So it might be interesting to have a discussion about what we're seeing out there as far as that standard. There's a group in Europe that I can't remember the name. Um, but Michael Ogier is involved with them, so we may want to see if we could have a presentation there. And one other topic I would throw out, and I'll remember this for the notes, is open data. Um, how we contribute to making sure that there's, um, openness so that everyone has, um, information. And Steve Song has volunteered to talk about that at the next, um, Gaia meeting. So I think this issue of open data may be something to explore. I don't know how and what, but I just wanted to bring it up.\nSPEAKER S1: Um. Lint. Do you want to talk? And I think you can really speak.\nSPEAKER S4: Thank you very much. I had a little trouble getting in this morning. Um, a bad URL of some sort. Anyway, uh, Jane makes a good point. Um. Two things. First of all, um, there is a term flying around called, uh, data trusts. And it has to do with collecting of data and providing access control to it. You know, under the right circumstances and conditions, uh, the purpose being to make sure that the data gets to the right people. Uh, so that's a concept that's, uh, worth some consideration, uh, even if the data isn't absolutely 100% public, um, being able to manage access in order to enable people who, uh, who need that information, uh, could be quite useful. The other thing on power supplies, uh, just an observation about how important it is to examine each target location and evaluate what its, um, conditions are in order to figure out what might work. So, for example, if you're up in the North and it's going to be dark for six months, solar power may not be your friend. Um, on the other hand, um, if you're in the equator, uh, you probably get a lot of days of sunlight. So, uh, one of the things that is super important, I think, is, as we all work towards this internet for everyone, uh, is to report back what has worked and why it has worked. Uh, or if it didn't work, you know why it didn't work? So we can figure out how to apply the learnings, uh, to the specific situation that we might be trying to, um, uh, achieve. Uh, there is an organization called the Solar Electric Light Fund. Uh, it's self-formed. Uh, and I would recommend, uh, if you're interested in potential solar power that you have a look at what they've been able to do. I was able to to help support the installation of solar power generators, uh, or electrical, uh, converters, uh, in order to support, uh, some, um, uh, American Indian reservation access to the internet, thanks to, uh, Nwsc and, uh, Matt Rantanen, uh, who runs the Tribal Digital Village. So there are lots of potential ways in which to deliver power, and we just need to look carefully at each situation to judge what's possible and affordable.\nSPEAKER S1: Um. Yeah, we've seen like, the comments about, uh, the data, but also about the, um, the opportunities to act also related to the environmental impact. Um, people can do indirect assessments of the impact, but, uh, yeah, I mean, it's transparency to, to access information about, um, environmental, real environmental impact or real power consumption or even, uh, maybe more controversial, like, um, how to combine routing and energy and, um, choices about your traffic, or as Neil said, choosing, uh, maybe protocols or paths or, or options, um, so that we, we break the divide between the providers of the network and the users of the network would simply use it, but they might have a choice beyond that. So I see someone with a difficult name to speak to spell that. Um, go ahead. And and I think you can simply talk. I'm not really sure how the queue works. I see that people is in the queue, but I don't know really. So if you're in the queue, I think you can speak and directly.\nSPEAKER S2: Ignacio, who we know who's done some work with us on some things. I just wanted to throw that out. Ignacio, is that you?\nSPEAKER S5: Yes, I am. Could you hear me.\nSPEAKER S2: Ken?\nSPEAKER S5: Okay.\nSPEAKER S1: I think you can need to to enable anyone. You can simply directly talk.\nSPEAKER S5: Okay. Now, just to say that the energy consumption and heat production about the perhaps some components of actual internet like data centers, it's it's a problem. Uh, here. Uh, okay. We have to to take this this this problem as we can do it. But I think this is a very huge problem that is more large than this specific group. This is one thing. The second thing that I would like to say is that perhaps we can articulate with another, uh, another, uh socities. Like, for instance, we are trying to set up a proposal for community networks in Latin America, and perhaps this could be a good opportunity to, to go and to to find another, another societies like internet society, uh, to, to get, uh, this, uh, this problem to, to develop more quickly this kind of, uh, uh, community networks many sense.\nSPEAKER S1: The one comment to what you said. Uh, I, um, used to have I was in at least in one meeting related to humanitarian initiative. And, um, there is people there that is sensitive to this topic. So, yeah, it's possible to collaborate with in that respect.\nSPEAKER S4: It's, uh, it's then again, if it's all right, if I jump in one more time.\nSPEAKER S1: Feel free. Yeah. Go ahead.\nSPEAKER S4: Thank you. Uh, I was it occurred to me that there was one other technology that, uh, had popped up on my radar recently. Um, and it's free space optics. Uh, one of the problems that you run into when you're trying to bring a significant internet capacity to rural parts of the world, uh, is the pulling fiber is sometimes pretty expensive? Uh, both, uh, from the capital point of view and also from the point of view of maintenance. So there's been some serious work on the development of lower cost free space optics. Um, and there's at least one group at Google, the Ex. Well, it's at alphabet. Uh, the group has been working on, uh, driving cost out of free space lasers. In this case, uh, the particular implementation provides somewhere between 10 and 20 gigabits a second on a single laser link. Uh, the pair of lasers, uh, in small quantities, is $50,000 in larger quantities, let's say over a hundred, uh, is more like $25,000. So even though those are still significant sums compared to the cost of pulling fiber, uh, for data rates in the 10 to 20 gigabits range, uh, that's actually not too bad. So, uh, that's another technology that is worthy of of attention. Doesn't work in all cases. You cases, you clearly need a free, uh, you know, point to point shot. Uh, it doesn't go through hills and foliage very well. Uh, but for places where, um, the atmosphere is not overly burdened with rain, for example, or other inclement weather, um, and, uh, and you have a direct point to point shot, it can be a terrific alternative, uh, for providing a high speed middle mile link.\nSPEAKER S1: Yeah. Sounds a good an excellent option to complement the alternatives. Uh, but, uh, maybe one one controversial topic would be that when people talk about neutrality, uh. Can we think about, uh, environmental neutrality? Can we? As Neil said before, can we choose the path that consumes the less energy? Can we avoid data centers that are have, um, high inefficient uh, operation. Uh, or it's simply a choice of the network. Can we change protocols or analyze the protocols in terms of environmental impact? I see.\nSPEAKER S4: It's it's it's again, uh, there is someone with a, um, a name that looks like it's written in Sanskrit who would like to speak? Uh, but I since I don't speak Sanskrit, I don't know how to say his name. His name?\nSPEAKER S1: Yeah. He said just a minute ago that that he he was having a problem then and he will get back, so.\nSPEAKER S4: Alright. Well, can I respond to the data center question for a moment? Uh, is, as you may know, Google operates a number of data centers around the world, and they are large and they consume a lot of electricity. Uh, sometimes in the, you know, hundreds of megawatts. Uh, on the other hand, one of the things that we have focused on in the past decade is to acquire energy through green means. And so we have, at this point, I believe, um, acquired, uh, virtually all of our energy needs for the next 20 or 30 years from green supplies. Uh, and, uh, so I would argue that, uh, driving, uh, power requirements out is in our interest and everyone else's as well. But if it's possible to generate the energy, uh, using renewables, uh, does that change the equation from your perspective?\nSPEAKER S1: Hmm.\nSPEAKER S3: It's really great that Google is now buying up a lot of green energy. Unfortunately, with that, they're also buying up all the green energy that was actually meant for housing. And with the overall increase in energy energy consumption, where it's still overall a net negative. So we should probably also do something about reducing the consumption of energy. Uh, and step off the idea of continuous growth and continuous increase in energy. Or Google could perhaps also start running its own energy, uh, provision. That would also be excellent.\nSPEAKER S4: So just to pick pick up on that if it's all right, uh, the analysis here in the US, uh, might vary in other parts of the world is that the energy consumption is split about one third, one third, one third residential, uh, business sector and manufacturing, um, and uh, the um, introduction of things like, uh, LEDs has certainly, uh, driven, uh, some energy requirements out, uh, significantly. So in California, for example, the energy use per capita has been flat, despite the fact the population is growing. And of course, more residences and more businesses. So, uh, I think we can look to and encourage further development along those lines where we can produce the same result with a lot less energy. Uh, and that, I think, will help balance the equation.\nSPEAKER S1: We have, uh, one participant in the queue with the name that I don't even knew that it was Sanskrit. Can you can you try to speak and send your point?\nSPEAKER S6: Hi, my name is Sachin. So the name came about because it asked me for a Unicode name and that's how it came out. Can you hear me, please? Just wanted to check. Yeah.\nSPEAKER S1: Yes.\nSPEAKER S6: Yeah. So wind was right. It's actually in Hindi, it's Sachin Garg. So that's why my name is, uh, I had this question about when we are talking about the, uh, various things like power and all these things. One of the very specific things is the protocol level things we have seen that I have seen during my time in the industry that everybody is actually moved to HTTP and basically protocols that are more data hungry. I would say, well, we use pure, uh, text and things like that. So is there a way to basically to go back to is there any sort of a thinking of going back to protocols that we used to have in the early 80s or 90s, where you had a specific file transfer protocol or a specific protocol, some sort of a protocol designed for specific applications, rather than putting everything into a sort of an HTTP and everything being on top of HTTP and HTTP being the only protocol that works. So this is just a thought, I don't know. Really.\nSPEAKER S4: So, uh, it's it's Vint again. Um, this is a really interesting question. I'm going to give a weird answer to it, uh, because, uh, one of the problems we run into in the interplanetary extension of the internet is our inability to do, uh, kind of, uh, you know, high, uh, interactive protocols, you know, the sort of thing where you have lots of exchanges back and forth, which we do commonly, uh, here in our terrestrial internet, because the latencies are fairly low on the whole. Uh, on the other hand, when you're talking about, uh, you know, transmission to and from Earth and Mars, we're talking 40 minute round trip times in the worst case. So the protocols that have been developed for that, uh, tend to be very, um, uh, well, non-interactive. Let me put it that way. And so, um, perhaps, uh, there's something to be said for that. I will say, however, that this only works if you have an application that doesn't require very much interaction at all. So the difference between doing this video conference, where we clearly are interacting and transmitting it at high speeds and at rapid pace, uh, you'd end up more like, uh, email exchanges with attached videos, uh, which are not interactive, particularly. So you'd have to look for applications that don't require this interaction to have protocols that can be bundled up, uh, in relatively infrequent and high latency fashion. Uh, so I don't know how many, you know, protocols will or how many applications would be suitable for that, but that's one dimension to think about.\nSPEAKER S1: So you're proposing to put email servers out of Earth?\nSPEAKER S4: Well, I'm not sure that that. No, actually, uh, what I would argue here is that you simply have to start thinking in English terms where you send something and then you don't know when you're going to get a response back. And there are some protocols that's okay. For search would be really frustrating. I think as you type in something and you might wait for hours before you get an answer back.\nSPEAKER S1: Yeah. So maybe we can move on. And also, by the way, um, we can discuss about the problem, but we also can propose ways to work on it. We are a research group, so we can do research and we can even think about what the outcomes could be. So maybe we can I don't know, we can come back, but we can move on maybe to the next topic about public versus private internet policies that respect human rights. I think that, um, someone said about that, um, and or express, um, as one particular type of infrastructures.\nSPEAKER S4: Well, uh. Leandro. Oh, Jane. Go ahead.\nSPEAKER S2: Yeah. Uh, Leandro was the other infrastructure you noted other than ISPs. I caught the ISP part.\nSPEAKER S1: Sorry.\nSPEAKER S2: You had noted different types of infrastructure that we could take a look at, like ISPs and something else I didn't catch the other thing that you noted.\nSPEAKER S1: Oh, no. Yeah. I ISPs. Yes.\nSPEAKER S2: Okay. And I think that may have been where Vesna was going. I liked her idea too, but bent over to you.\nSPEAKER S4: Uh, well, uh, this, of course, is a topic of great interest to me. Um, partly because I've seen policies, uh, adopted where, um, the private sector, for example, attempts to prevent communities from building their own pieces of internet. We've had experiences here in the US with legislation that's been promoted by, uh, some companies to prevent a community, for example, from building its own network. Now, having said that, I will say that there have been a number of instances where people have tried to build their own networks and it has not worked out. The maintenance and sustainability have have not worked. In other cases it has. And so again, I want to reiterate how important it is to examine why did things work or why did things not work. Uh, as we try to find ways of encouraging all kinds of, uh, implementation to satisfy people's access to the internet. Um, so I'm of the opinion that, um, that, um, we need to adopt, uh, policies that will encourage a variety of different means of implementing these things, including the possibility of, um, public funding, which we're seeing here in the US. Uh, just recently, with the passage of a very big, uh, Recovery Act bill that includes quite a bit of money for, uh, underwriting the cost of expanding internet access, especially in rural parts of the country. Uh, so, uh, my strong view here is that, uh, that we want to, uh, see both private sector encouragement to invest and public sector, uh, willingness to underwrite, uh, in places where, uh, the, uh, the service might not be, uh, fully viable on its own. Uh, on the expense side, again, super important, especially if a number of different networks, uh, could be interconnected for efficiency. Some of you will remember back in time that countries in Europe were interconnecting through United States facilities, and so their traffic was. The term was tromboning back and forth across the Atlantic. There was a considerable effort to build internet exchange points in Europe to allow local interconnection. A similar, um, motivation comes from the construction of content distribution networks, uh, which, uh, locate, uh, content of interest close to, uh, the networks that the users are connected to, uh, to avoid the need for transmitting the data repeatedly, uh, over long distances. And so I think there are a number of tactics. Tactics that, uh, increase the efficiency of, uh, information delivery and access. And we should encourage all of those wherever we can in order to make things more affordable and, frankly, more efficient.\nSPEAKER S1: Also in Europe, there are some, uh, talks about, uh, policy initiatives to, to help in, in respect to what the role of the internet has been during the pandemic, that, uh, there is interest in public investment, uh, to expand coverage and to reduce, uh, the population that couldn't really participate because there was nothing in the middle to allow any kind of connectivity. And in fact, I'm connected nowadays at this moment through a community network. This is my home connection, a fiber part of that community. So you see that it works. And in, in, in parts of the network we found that, um, sometimes public sector didn't really invest in the network in the long term, but simply reduce the risk by deploying, uh, some critical, uh, backbone links, and then those links being repaid as the network grew, so that in the end, the public sector simply reduced the risk, but didn't really waste or lost any money and even sometimes got the money with some interest.\nSPEAKER S4: So you've just described an interesting phenomenon that occurred in the United States in a different context in 1934. There was something called the Rural Electrification Act, and its intent was to provide power, electrical power to parts of the United States that were not, you know, not in the urban environment. And so the low cost loans were made to private sector entities in order to allow them to invest in the equipment needed and the distribution facilities needed. And at the same time, that same act also supported um infrastructure for telephone service. So both telephone and electricity were provided through that mechanism. So that was low cost loans effectively and low interest loans. And so that's another kind of mechanism that can be used to enable, uh, construction where it might otherwise not be possible.\nSPEAKER S1: Yeah. So I think one useful outcome of the research is to show viable models that reduce the risk or to facilitate the expansion of, of infrastructures and enable even, I mean, private citizens or small companies to do something that will not be possible without the initial support of the governments and, um, and have a kind of a as a result, the, the rapid expansion of uh, coverage. Um, and also all this discussion is connected also to the environmental impact. How do we do that efficiently so that it also is energy efficient or it helps the expansion also of power networks as well, not just data networks. I think the following topic maintenance of a public internet commons and public interest is is well connected to this. I think Mallory was commenting about this in the mailing list.\nSPEAKER S4: So it's been again, I'm feeling like I'm, uh, taking more time than is my fair share. So, uh, Madam Chair. Um, Mr. chair. Tell me if I should, uh, shut up. Uh, but I did want to respond to the public internet commons idea. Uh, we're seeing, uh, in the US anyway, uh, more instances of public internet availability, whether it's, uh, in coffee shops or in the libraries or in schools and things like that, where the general public also is, given access, but at the same time, there's a lot of concern over privacy. Uh, and I would draw attention to, uh, the ietf's work, uh, in this area for, um, opportunistic encryption, for example, for Wi-Fi access, uh, and, uh, techniques for protecting, um, strong authentication or using strong authentication to protect identity, uh, for, uh, for people who are trying to use public facilities to log into their, um, their services. And so a very important, um, part of all this, I think, is making sure that the general public using these open facilities is adequately protected, um, with regard to privacy and safety and security. Uh, and that seems to be an important mandate for IETF to look at protocols that will achieve those objectives.\nSPEAKER S3: At the same time, I think privacy and security are very important, but I think if we talk about a common or a public internet, we shouldn't stop there, because it's actually quite surprising that it's still impossible largely to have a email address in a non-Latin script, which means the majority of the people on this planet cannot have a email address in their own language. And the internationalization largely has, uh, not worked on the application level, let alone on the protocol level, which means that if we really want to produce a global network, we need to kind of de-center the Latin language, but also the English tech English text that is now so common in teaching and maintaining protocols as it is as it is at this current meeting. So yes, privacy and security are essential, but we also need to do a power analysis and go further towards social and economic rights. We want to take that into account and have a truly global, uh, internet.\nSPEAKER S1: John, you want to talk?\nSPEAKER S7: Yeah. The, uh. Uh, just to correct one thing, the inability to use, uh, non-Latin script in, uh, email addresses would be a, uh, a surprise both to the people in the IETF who, uh, who did the protocol work for that and did several millions of people who were using such addresses every day. Uh, there are some serious problems with non-black email addresses, but they're not the technology. They're, uh, they're a whole series of human interface issues associated with what happens when you try to use those addresses, uh, outside your own community. And, uh, and while the analogy is not complete, uh, the problems that several of us on uh, on this call reading, uh, Hindi in Devanagari script is, uh, is symptomatic of one of those problems with email addresses. But, uh, but it's not the inability to have those addresses from the technological standpoint that's been available now for several years. And there are, again, several millions of people in, uh, uh, in a number of countries, including China and India, who are using them every day. Thanks.\nSPEAKER S1: Well, this is probably connected to the, uh. Yeah, yeah.\nSPEAKER S6: Go ahead. Yeah. So, yeah, I just wanted to, uh, put a point to what was just said about human interfaces. So it has been a terrible thing to be able to type in Indian languages on a typical computer keyboard, and it is a problem that is still persists. So the way I actually entered the form was basically by typing it on my phone, because that's the only place where a soft keyboard works. So the real challenges are actually about interfaces and the ability to be able to type stuff into, uh, thing. So the technology is still there a problem? I've tried to get hold of some sort of an international domain name system, but I was never able to get the hang of how idns actually really work. So, I mean, I'll have to relook that, but these are the real problems that how do you type in characters of domain names and things like that on systems that are there? So this is a sort of a separate problem, which is really not an IETF problem. It's more of a other challenge problem. And that's what we're calling as the next part of the digital divide where access people may have. I'm in India and we have got wonderful access. Lots of people have wonderful access to the internet. So access is not that much of a problem today. Rather, the problem is the availability of content, which is becoming to be the next digital divide. Thank you for hearing me out.\nSPEAKER S1: Yeah, thank you for your contribution. Uh, by the way, I could see you in the chat that, uh, people say you are not, uh, preventing anyone to speak. So your views are very welcome. And the last comments about the, um, about the non-Latin addresses, in fact, uh, in my place, we speak Catalan, uh, kind of close to French in alphabet. And, uh, and I volunteer in a ISP. And we always have trouble with people that want to use, uh, non non-ascii characters in email. Uh, on the left or on the right of the At symbol, because, uh, yeah, even though the standards are there, um, it is in the end, not that usable. And that's really a pity Because it's also a barrier. I mean, for global access to the internet for all that's a barrier. They have connection, but they cannot express themselves freely in their, um, in their, um, local script. I had more topics to to raise. Uh, yeah.\nSPEAKER S7: I can't stress that. I can't stress that too much. Um, the, uh, the underlying protocol technology for a lot of things is there, um, uh, identifiers, internationalized identifiers, generally, uh, email, local parts, domain names and other things. Um, we've got two sets of problems at the user interface level. And, uh, and perhaps that's something this group should be paying more attention to. Uh, one of those problems is local. Um, uh, when, uh, when companies design a system and then think that they can translate that system, either the keyword vocabulary or the system, or the page layout, or the characters into, uh, some other language and script and culture in a relatively crude or automated or artificially, uh, stupid way. Uh, that often doesn't work out well. So there are important issues relative to, uh, making certain that user interfaces are actually, uh, and the things which access them, keyboards included, are actually culturally reasonable and appropriate for, uh, for a particular locality or language or culture or system. Uh, and, uh, and that requires work that we haven't been good at doing, although there are notable exceptions around the world. The second problem is that when people from one environment using their own language and script, and email addresses in that language and script are trying to communicate with, uh, people somewhere else using a different set of systems, especially if the languages and scripts are very different. Um, uh, we run into a different set of problems. And, uh, and I've said in another context that it's perhaps no accident that, uh, that the creation myths of, uh, of many of the religions of the world have, uh, versions of stories about language differences and incompatibilities and people having difficulty communicating with each other that are attributed to divine intervention. And I hope we don't need divine intervention to fix the problems, but we at least need to be aware of them and be conscious of them and, uh, and incorporate them into our thinking rather than saying, this isn't available. And, Um, thanks.\nSPEAKER S1: Thank you.\nSPEAKER S4: It's, uh, it's Vin again. I'm glad that John jumped in because, uh, he and I and others spent quite a long time working on internationalized domain names. Uh, in the 2008 to 2010 period. Uh, I did want to mention something about coping with multiple languages and scripts. Uh, I still, I agree with John. We don't do this very well. Uh, in the in the Gmail application, for example, it is possible to enter uh, non, uh, Latin scripts as, uh, as email addresses. Uh, however, I find myself, uh, for example, corresponding with some of my friends in Japan struggling, uh, when I see their, um, Japanese script names and not really being comfortable figuring out which of them am I looking at because I don't speak Japanese and I don't read it in particular. So, uh, we have, um, tried hard to provide translation of content in email. It's never perfect, but with machine learning is getting better and better. So on the content side, uh, it has been possible to provide translations of some degree of utility that does not, however, uh, improve the problem of entering content in a particular script if the keyboards, uh, don't support it. And even if you do, uh, if the recipient isn't prepared to deal with that language, translation is still needed. Translation of names, uh, almost makes no sense at all because they're basically phonetic strings. So, um, so that doesn't work. So there's still a lot to be done, uh, to deal not with single language environments, but rather multi-language environments. And here I think we could encourage significant research and efforts in the IETF, to the extent that anybody has some good ideas for tackling what I think is a pretty hard problem.\nSPEAKER S1: Okay. Thank you. Yeah. Um, especially when problems are involve multiple disciplines, it's not just maybe a matter of protocol design, but also cultural and and linguistic aspects. Shall we move on perhaps to, um, this is second and last, um, um, list of, uh, topics that emerge in the in the list. Do you want to pick up one and comment? I mean, feel free anyone to just select one and and say something about it. Just simply I took ideas that emerged in the mailing list.\nSPEAKER S4: Yeah. It's Vint I'd like to pick on the wholesale access, uh, thing we've had, uh, what I think were fairly successful results in Uganda. Google built a in Kampala. We built a fiber optic network in the city and then made it available at wholesale rates to retail resellers, and that seemed to work okay. In fact, it worked well enough that I think we ended up forming a joint venture with other local companies. And then I believe we replicated that in Ghana. Although I might have had that might have that wrong. So somebody needs to correct me. Feel free to do that. But I am attracted to that idea that we empower, uh, multiple retailers competing with each other to offer, uh, value added services. So that, uh, strikes me as being a pretty interesting tactic.\nSPEAKER S1: And then maybe the, uh, to move on and given the time, uh, this slide is about what things do you believe we can do in in Gaia, uh, with the topics that we discussed before, uh, to, to produce some, um, useful outcomes for moving forward in different ways, like, uh, choice, uh, right about it, um, report and so on.\nSPEAKER S4: Well, it's then again, I have to leave in nine minutes, and maybe that's all the time we have. Anyway, um, let me, uh, respond by saying that the the most valuable thing I think many of you could do would be to report on successes and why they worked. What were the conditions that made things work? Uh, and again, as I mentioned before, if it didn't work, please explain why. Um, and to help others formulate plans and avoid, uh, traps and mistakes that, uh, that you've already uncovered. So this is very, very helpful to do, uh, anywhere that, uh, that you can cast light on tactics and strategies, uh, that produce the desired outcome, which is getting everybody online in an affordable, sustainable way.\nSPEAKER S2: Nils, I think to that end. Oops. Go ahead.\nSPEAKER S3: Nils I really hope people will also report failures and obstacles they found along the way of, uh, changing power imbalances, because that will then allow us to see what the obstacles are and see how they could change, either by technology or policies or, uh, funding schemes, because, uh, as we all know and have seen in the discussions before, that no problem is mainly merely technical, merely social, or merely economic. I'd really like to understand and see more about open hardware, open software and governance from below. And, uh, community organized networks, telecoms and infrastructures.\nSPEAKER S1: Jane, you wanted to comment anything?\nSPEAKER S2: Just to agree on the on the the need for more data. Um, as Vinton um, Nils are suggesting with respect to, you know, what worked, what didn't and, um, what the problems were and what the, um, failures and obstacles were so that others can learn from that. There may be we could put out a call for some case studies. Um, I know a lot of organizations are putting some of those together, and they could be tweaked to handle some of the the points that that others are making here.\nSPEAKER S1: Yeah. In fact, I was part of the for instance, in the case of APC, they do the GIS watch. And a big part of the work is, is about supporting, uh, different groups all over the world into reporting their experiences with, uh, in, in a length of about two, three, four pages. And, and that helps a lot.\nSPEAKER S4: It's been again. One other thing. This is a request. I chair something called the Marconi Society, and we have been having, uh, decadal discussions about hard problems in telecommunications and computing that if they were solved, would make a big difference. And so we're looking for sort of like the decadal studies that they do in astrophysics, you know, where should we go look next to get better information about what the universe is all about? So in this case, we're looking for hard technical problems that if they had solutions, would make a big difference. So we can focus attention and research on that. So if you have ideas for succinctly stated problems, whose solutions would make a big difference in the space that we're talking about here, please send them to me, Vint at google.com. And I'll make sure that that we capture those in our Marconi Society report at the uh, at the end of the year. Thanks so much.\nSPEAKER S1: Wonderful. Thank you. And maybe just to conclude, uh, because we are running out of time, it's, um, you know, I realized that, um, we had one RFC in this, um, working group that is, uh, dated in August 2016. It will be five years, uh, in, in a few months. So we discussed some time about that, but maybe it's time to think about re revisiting what alternative network deployments is and what we have learned along the way for possibility results, but also for impossibility results as well. What do you think?\nSPEAKER S4: Hi, it's Vince. I certainly think that would be a practical and useful thing to do. So, um, you know, you have my vote.\nSPEAKER S1: Thank you.\nSPEAKER S8: Thank you.\nSPEAKER S1: So, Jane, do you want to say any comment, anything about before we we are done today?\nSPEAKER S2: Um, I think this has been a great debate, and, um, I'm really it was really great and I was very interested in it. So I think what we may need to do is take some of the good points here, um, to the list. I like your idea of looking at the charter. I think it does too. So why don't we take some of the, um, the text that we've got here and look at it and come back to the the mailing list? Because I think the whole case study idea is an interesting call for action. Um, and others, uh, have noted that, too. And then we could Look with the group online at the charter. Do some asynchronous, um, work together. What do you think?\nSPEAKER S1: I think it's an excellent proposal and an excellent way also to finish this, uh, meeting with something to do and, uh, looking forward to put together the notes of the meeting and and continue the discussion in the mailing list. Thank you so much for everyone to join.\nSPEAKER S4: Bye bye.\nSPEAKER S8: Take care. Bye bye.\nSPEAKER S4: See you on the net.\nSPEAKER S8: Yeah. See you.\nSPEAKER S2: Thank you everyone.\nSPEAKER S1: Thank you. Bye.\nSPEAKER S8: Bye.\nSPEAKER S2: Okay, so we'll look at the charter asynchronously. And I think I've captured it all. And I just want to ask. I think we still have the need. Meet echo folks here with us. Um, do I have to do anything to capture the chat or will be an automatically captured the notes that I've taken? I think it will. I just want to validate that. Nils or others. Do you know if all this will be captured?\nSPEAKER S7: Yeah. It's automatic.\nSPEAKER S2: Lovely, John, I thought so. I mean, I was typing it, so I figured it was captured.\nSPEAKER S7: This is the. This is part of the magic of Beat Echo.\nSPEAKER S2: I love meet echo. Okay, wonderful. Well, then, this has been fun. Um, thank you, Leandro, for organizing everything. Thank you, everyone, for participating. So, um, Leandro, I'll be in touch and we'll come back to the team here.\nSPEAKER S1: Thank you so much. And also thank you for the mythical guys to make this meeting so smooth. Yeah.\nSPEAKER S2: Thank you. Domenico. Lovely.\nSPEAKER S8: Thanks, all. Bye, everyone.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9912904209884076
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hi, everyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I hope you can hear me.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, great.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "So welcome to the Gaia meeting.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this has been a hectic week, and we didn't have much time to coordinate with Jane.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "I see Jane, you are there so you can jump in at any moment.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "And, um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Carry on.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Leandro, you're doing a lovely job.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "I'll take notes.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Wonderful.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, we didn't have a meeting in the in the previous IETF, and, um, and still we are in this, uh, remote mode.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I hope you saw the agenda.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we we start with the note.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, um, information that you have in on screen, um, I think you, you know, or you must know.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "So basically, if you're aware of any IETF contribution covered by patents or patent applications must be disclosed on or participate in discussion and and several other clauses here there are the this documentation is also in the, um, data tracker.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can find it and explore the links.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Also the code of conduct as a participant that you need to behave in the way described in the slide.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "And basically respect and concordance with the policies expressed in the different RFCs and documents.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "You know, the goals that we we are discussing in this meeting about our research aspects, not about developing standards, although development of standards could emerge from the work in the groups and more documentation for for IETF participants and and background information is there in RFC 1774 18.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Just to remember, uh, this is the charter of the Gaia group.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that refers to a study on from 2000 2012.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "So, so it it has certain age and um, and it's about the, the right of everyone and probably everything to be on the internet and considering also the digital divide or the inequality as well, that, uh, still nowadays, uh, about 50% of the population, um, do not have a chance to, to be part of the internet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "That's not not only just a matter of cost, but also a matter of ability to do that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "And then this is a summary of the objectives of the working group about increasing visibility, about creating a shared vision, about articulating collaboration, about documenting and sharing experiences and research results, um, on the different ways of of bringing connectivity.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "again document costs, which are because sometimes cost is a barrier.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and a longer term perspective on on how this could influence the standardization efforts at the IETF.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "And then just to go into the current meeting, apart from what I was doing now, uh, this is the draft agenda we shared, um, days ago where we have, uh, this, this, let's say three main topics and, uh, and the last one, um, so, um, I don't know if you have any comment about the agenda, any, any important thing that should be modified.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I hope the speakers are here, which is another element that might change the agenda as we go.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Any comment on this?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Please go ahead and chat or speak up.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Well, if not, I think we can move on.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "And, um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure if Matagorda is is there?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "He offered to talk about the role of a community network cooperative in in addressing the digital divide in Tanzania, but I don't see him connected.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if not, maybe we can move on to the.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "I don't either see Mark connected yet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure if it's connected to that, but I made a mistake in the uploading the agenda.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "When I reduce the agenda from a previous meeting, I changed the date, but I forgot to change that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "It was not Tuesday, but Friday.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "I hope this didn't confuse anyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "So if not, we can go to the third item in the agenda.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I prepared some slides about, um, just to open the discussion.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at the end of the year, we, we had some emails to comment about, um, ideas for our 2021 plan so we can organise future meetings based on on topics of interest.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "The charter of the Gaia Working Group was defined some years ago, and and things have changed slightly or more than slightly in the last year.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "And um, so that we can prepare and prioritize topics for future discussions so we have time to even have like, uh, ideally, um, topic specific meetings so we can, um, collect ideas and discuss and then perhaps elaborate some documentation about it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, regarding this, um, these are the slides that I simply I took the, the ideas and I put them into, into, into slides so we can, we can go through it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm gonna introduce them And then I mean, feel free to to take the floor and, and give your opinion as we as I go, I mean, feel free to interrupt me and add anything to what is written there.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, yeah, for instance, there was one.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "This is a link.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, uh, there was a call for, um, someone to write a report on, uh, what have been the internet technical success factors.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "And up to now, this was proposed by Vesna.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "So trying to collect what worked, what has worked well, and what has worked less well on the technical aspects of the internet?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I proposed several people also commented about, you know, when when we introduce, uh, the Charter of Gaia, uh, we were thinking about bringing the internet for everyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "But you know this.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if you ever read about sustainability aspects, but it is.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "For instance, um, uh, one representation called doughnut economics.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if you know about this download diagram that puts together the, um, the bare minimum, uh, of, uh, the human requirements to, to participate and to ensure that, uh, most of human beings, uh, have a chance to connect and to participate in the digital world.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, related to inequality and the Sustainable Development Goals.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "That's one aspect.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "But of course, when we do that, when we expand the internet for everyone, we realize that we end up using materials, energy, um, polluting materials, uh, generating e-waste.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "So we can we can simply expand the internet for everyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "But we have to make it in a way that, um, we don't destroy the planet as we go.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, yeah, I mean, the internet is part of the solution, but also part of the problem.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Or if, you know, the Itu-t has some documentation related to what are the expected impact reduction, uh, of uh, the ICT world in general by 2030, which is to be has to be about, um, a reduction of about 42% or something like that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Um, with respect to the numbers in, in in 2018, I think if I remember well, I think it's Itu-t 4070 or something.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "1040 or perhaps uh, and then this is this contradicts the objective of expanding the internet for everyone while we reduce it to half in terms of impact.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm not sure if anyone wants to comment or not.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Misunderstanding.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you you are asking, uh, in the Q?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, hi.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: This is Niels.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Is this the, uh, the right moment to talk about these proposals, or would you like to do that later in the session?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: No, I think, uh, it's a good moment to go and comment now because, um, we had two other presentations and I didn't see, um, the speakers connected.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we can we can comment a little bit as we go.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "And because we can then, uh, define better what topics are interesting to, to each person.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "And um, and then, um, we can choose which ones we, we want to spend more time, um, because there is nothing else expected to in the agenda.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thanks so much.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "So with the rise of 5G, but also other notions of, uh, network management, we see an increase of computation happening, uh, in the network and currently in the network management research group.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "There's also a draft on that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "And I was wondering whether this would be the moment to give end users more influence and power over network configurations.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "And in such network configurations, users could exemplify what values they think are important and whether they would, for instance, like to consume low energy or have higher privacy requirements, such as on a application level as being used through, uh, a do not track, which uh, but that would then perhaps allow to do that on a network level.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "So give users a more possibility to express their needs and configurations in a network level, and thus, uh, leverage the input of users on, uh, how networks are run.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone wants to add to that?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: My hand up.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Leandro.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, can you hear me?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: This is Jane, for the record.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I like what Nils is saying.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it might be very interesting to hear more about, um, network configuration and, um, what other users would like to see for more.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I would say control, but I don't know if that's the right word.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Nils.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, one thing I thought that might be interesting, um, for us to talk about is, uh, innovative solutions for, um, power in some of the networks that we all are seeing, whether they're, um, small mobile networks, we've got we know some 4G networks out there that are considered community networks, but they're also operationally.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, sustainable private networks that are using different, um, energy source, uh, energy sources from solar to wind and other things like that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "So it might be interesting to have a discussion about what we're seeing out there as far as that standard.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "There's a group in Europe that I can't remember the name.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but Michael Ogier is involved with them, so we may want to see if we could have a presentation there.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "And one other topic I would throw out, and I'll remember this for the notes, is open data.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Um, how we contribute to making sure that there's, um, openness so that everyone has, um, information.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "And Steve Song has volunteered to talk about that at the next, um, Gaia meeting.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "So I think this issue of open data may be something to explore.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know how and what, but I just wanted to bring it up.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Lint.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want to talk?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And I think you can really speak.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you very much.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "I had a little trouble getting in this morning.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a bad URL of some sort.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, uh, Jane makes a good point.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Two things.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "First of all, um, there is a term flying around called, uh, data trusts.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "And it has to do with collecting of data and providing access control to it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "You know, under the right circumstances and conditions, uh, the purpose being to make sure that the data gets to the right people.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so that's a concept that's, uh, worth some consideration, uh, even if the data isn't absolutely 100% public, um, being able to manage access in order to enable people who, uh, who need that information, uh, could be quite useful.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "The other thing on power supplies, uh, just an observation about how important it is to examine each target location and evaluate what its, um, conditions are in order to figure out what might work.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, if you're up in the North and it's going to be dark for six months, solar power may not be your friend.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Um, on the other hand, um, if you're in the equator, uh, you probably get a lot of days of sunlight.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, one of the things that is super important, I think, is, as we all work towards this internet for everyone, uh, is to report back what has worked and why it has worked.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or if it didn't work, you know why it didn't work?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "So we can figure out how to apply the learnings, uh, to the specific situation that we might be trying to, um, uh, achieve.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is an organization called the Solar Electric Light Fund.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's self-formed.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I would recommend, uh, if you're interested in potential solar power that you have a look at what they've been able to do.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "I was able to to help support the installation of solar power generators, uh, or electrical, uh, converters, uh, in order to support, uh, some, um, uh, American Indian reservation access to the internet, thanks to, uh, Nwsc and, uh, Matt Rantanen, uh, who runs the Tribal Digital Village.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "So there are lots of potential ways in which to deliver power, and we just need to look carefully at each situation to judge what's possible and affordable.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, we've seen like, the comments about, uh, the data, but also about the, um, the opportunities to act also related to the environmental impact.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Um, people can do indirect assessments of the impact, but, uh, yeah, I mean, it's transparency to, to access information about, um, environmental, real environmental impact or real power consumption or even, uh, maybe more controversial, like, um, how to combine routing and energy and, um, choices about your traffic, or as Neil said, choosing, uh, maybe protocols or paths or, or options, um, so that we, we break the divide between the providers of the network and the users of the network would simply use it, but they might have a choice beyond that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "So I see someone with a difficult name to speak to spell that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Um, go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And and I think you can simply talk.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not really sure how the queue works.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "I see that people is in the queue, but I don't know really.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "So if you're in the queue, I think you can speak and directly.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Ignacio, who we know who's done some work with us on some things.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to throw that out.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Ignacio, is that you?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yes, I am.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Could you hear me.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Ken?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think you can need to to enable anyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "You can simply directly talk.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Now, just to say that the energy consumption and heat production about the perhaps some components of actual internet like data centers, it's it's a problem.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "We have to to take this this this problem as we can do it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "But I think this is a very huge problem that is more large than this specific group.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "This is one thing.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "The second thing that I would like to say is that perhaps we can articulate with another, uh, another, uh socities.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Like, for instance, we are trying to set up a proposal for community networks in Latin America, and perhaps this could be a good opportunity to, to go and to to find another, another societies like internet society, uh, to, to get, uh, this, uh, this problem to, to develop more quickly this kind of, uh, uh, community networks many sense.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The one comment to what you said.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I, um, used to have I was in at least in one meeting related to humanitarian initiative.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, there is people there that is sensitive to this topic.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "So, yeah, it's possible to collaborate with in that respect.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It's, uh, it's then again, if it's all right, if I jump in one more time.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Feel free.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I was it occurred to me that there was one other technology that, uh, had popped up on my radar recently.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it's free space optics.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one of the problems that you run into when you're trying to bring a significant internet capacity to rural parts of the world, uh, is the pulling fiber is sometimes pretty expensive?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, both, uh, from the capital point of view and also from the point of view of maintenance.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "So there's been some serious work on the development of lower cost free space optics.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there's at least one group at Google, the Ex.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Well, it's at alphabet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the group has been working on, uh, driving cost out of free space lasers.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "In this case, uh, the particular implementation provides somewhere between 10 and 20 gigabits a second on a single laser link.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the pair of lasers, uh, in small quantities, is $50,000 in larger quantities, let's say over a hundred, uh, is more like $25,000.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "So even though those are still significant sums compared to the cost of pulling fiber, uh, for data rates in the 10 to 20 gigabits range, uh, that's actually not too bad.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, that's another technology that is worthy of of attention.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Doesn't work in all cases.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "You cases, you clearly need a free, uh, you know, point to point shot.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it doesn't go through hills and foliage very well.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but for places where, um, the atmosphere is not overly burdened with rain, for example, or other inclement weather, um, and, uh, and you have a direct point to point shot, it can be a terrific alternative, uh, for providing a high speed middle mile link.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Sounds a good an excellent option to complement the alternatives.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but, uh, maybe one one controversial topic would be that when people talk about neutrality, uh.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Can we think about, uh, environmental neutrality?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Can we?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "As Neil said before, can we choose the path that consumes the less energy?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "Can we avoid data centers that are have, um, high inefficient uh, operation.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or it's simply a choice of the network.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "Can we change protocols or analyze the protocols in terms of environmental impact?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "I see.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It's it's it's again, uh, there is someone with a, um, a name that looks like it's written in Sanskrit who would like to speak?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I since I don't speak Sanskrit, I don't know how to say his name.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "His name?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "He said just a minute ago that that he he was having a problem then and he will get back, so.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Alright.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Well, can I respond to the data center question for a moment?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, is, as you may know, Google operates a number of data centers around the world, and they are large and they consume a lot of electricity.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, sometimes in the, you know, hundreds of megawatts.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the other hand, one of the things that we have focused on in the past decade is to acquire energy through green means.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "And so we have, at this point, I believe, um, acquired, uh, virtually all of our energy needs for the next 20 or 30 years from green supplies.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, so I would argue that, uh, driving, uh, power requirements out is in our interest and everyone else's as well.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "But if it's possible to generate the energy, uh, using renewables, uh, does that change the equation from your perspective?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hmm.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: It's really great that Google is now buying up a lot of green energy.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Unfortunately, with that, they're also buying up all the green energy that was actually meant for housing.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And with the overall increase in energy energy consumption, where it's still overall a net negative.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "So we should probably also do something about reducing the consumption of energy.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and step off the idea of continuous growth and continuous increase in energy.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Or Google could perhaps also start running its own energy, uh, provision.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "That would also be excellent.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So just to pick pick up on that if it's all right, uh, the analysis here in the US, uh, might vary in other parts of the world is that the energy consumption is split about one third, one third, one third residential, uh, business sector and manufacturing, um, and uh, the um, introduction of things like, uh, LEDs has certainly, uh, driven, uh, some energy requirements out, uh, significantly.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "So in California, for example, the energy use per capita has been flat, despite the fact the population is growing.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, more residences and more businesses.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I think we can look to and encourage further development along those lines where we can produce the same result with a lot less energy.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and that, I think, will help balance the equation.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: We have, uh, one participant in the queue with the name that I don't even knew that it was Sanskrit.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Can you can you try to speak and send your point?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Hi, my name is Sachin.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "So the name came about because it asked me for a Unicode name and that's how it came out.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me, please?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Just wanted to check.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "So wind was right.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "It's actually in Hindi, it's Sachin Garg.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "So that's why my name is, uh, I had this question about when we are talking about the, uh, various things like power and all these things.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "One of the very specific things is the protocol level things we have seen that I have seen during my time in the industry that everybody is actually moved to HTTP and basically protocols that are more data hungry.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "I would say, well, we use pure, uh, text and things like that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "So is there a way to basically to go back to is there any sort of a thinking of going back to protocols that we used to have in the early 80s or 90s, where you had a specific file transfer protocol or a specific protocol, some sort of a protocol designed for specific applications, rather than putting everything into a sort of an HTTP and everything being on top of HTTP and HTTP being the only protocol that works.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "So this is just a thought, I don't know.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Really.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So, uh, it's it's Vint again.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is a really interesting question.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to give a weird answer to it, uh, because, uh, one of the problems we run into in the interplanetary extension of the internet is our inability to do, uh, kind of, uh, you know, high, uh, interactive protocols, you know, the sort of thing where you have lots of exchanges back and forth, which we do commonly, uh, here in our terrestrial internet, because the latencies are fairly low on the whole.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the other hand, when you're talking about, uh, you know, transmission to and from Earth and Mars, we're talking 40 minute round trip times in the worst case.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "So the protocols that have been developed for that, uh, tend to be very, um, uh, well, non-interactive.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Let me put it that way.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "And so, um, perhaps, uh, there's something to be said for that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "I will say, however, that this only works if you have an application that doesn't require very much interaction at all.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "So the difference between doing this video conference, where we clearly are interacting and transmitting it at high speeds and at rapid pace, uh, you'd end up more like, uh, email exchanges with attached videos, uh, which are not interactive, particularly.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "So you'd have to look for applications that don't require this interaction to have protocols that can be bundled up, uh, in relatively infrequent and high latency fashion.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I don't know how many, you know, protocols will or how many applications would be suitable for that, but that's one dimension to think about.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So you're proposing to put email servers out of Earth?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Well, I'm not sure that that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "No, actually, uh, what I would argue here is that you simply have to start thinking in English terms where you send something and then you don't know when you're going to get a response back.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "And there are some protocols that's okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "For search would be really frustrating.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "I think as you type in something and you might wait for hours before you get an answer back.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe we can move on.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "And also, by the way, um, we can discuss about the problem, but we also can propose ways to work on it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "We are a research group, so we can do research and we can even think about what the outcomes could be.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe we can I don't know, we can come back, but we can move on maybe to the next topic about public versus private internet policies that respect human rights.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "I think that, um, someone said about that, um, and or express, um, as one particular type of infrastructures.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Well, uh.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Leandro.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, Jane.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Leandro was the other infrastructure you noted other than ISPs.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "I caught the ISP part.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sorry.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: You had noted different types of infrastructure that we could take a look at, like ISPs and something else I didn't catch the other thing that you noted.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, no.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "I ISPs.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that may have been where Vesna was going.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "I liked her idea too, but bent over to you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, well, uh, this, of course, is a topic of great interest to me.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Um, partly because I've seen policies, uh, adopted where, um, the private sector, for example, attempts to prevent communities from building their own pieces of internet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "We've had experiences here in the US with legislation that's been promoted by, uh, some companies to prevent a community, for example, from building its own network.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Now, having said that, I will say that there have been a number of instances where people have tried to build their own networks and it has not worked out.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "The maintenance and sustainability have have not worked.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "In other cases it has.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "And so again, I want to reiterate how important it is to examine why did things work or why did things not work.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as we try to find ways of encouraging all kinds of, uh, implementation to satisfy people's access to the internet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I'm of the opinion that, um, that, um, we need to adopt, uh, policies that will encourage a variety of different means of implementing these things, including the possibility of, um, public funding, which we're seeing here in the US.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just recently, with the passage of a very big, uh, Recovery Act bill that includes quite a bit of money for, uh, underwriting the cost of expanding internet access, especially in rural parts of the country.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, uh, my strong view here is that, uh, that we want to, uh, see both private sector encouragement to invest and public sector, uh, willingness to underwrite, uh, in places where, uh, the, uh, the service might not be, uh, fully viable on its own.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the expense side, again, super important, especially if a number of different networks, uh, could be interconnected for efficiency.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Some of you will remember back in time that countries in Europe were interconnecting through United States facilities, and so their traffic was.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "The term was tromboning back and forth across the Atlantic.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "There was a considerable effort to build internet exchange points in Europe to allow local interconnection.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "A similar, um, motivation comes from the construction of content distribution networks, uh, which, uh, locate, uh, content of interest close to, uh, the networks that the users are connected to, uh, to avoid the need for transmitting the data repeatedly, uh, over long distances.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "And so I think there are a number of tactics.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Tactics that, uh, increase the efficiency of, uh, information delivery and access.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "And we should encourage all of those wherever we can in order to make things more affordable and, frankly, more efficient.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Also in Europe, there are some, uh, talks about, uh, policy initiatives to, to help in, in respect to what the role of the internet has been during the pandemic, that, uh, there is interest in public investment, uh, to expand coverage and to reduce, uh, the population that couldn't really participate because there was nothing in the middle to allow any kind of connectivity.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "And in fact, I'm connected nowadays at this moment through a community network.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "This is my home connection, a fiber part of that community.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "So you see that it works.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "And in, in, in parts of the network we found that, um, sometimes public sector didn't really invest in the network in the long term, but simply reduce the risk by deploying, uh, some critical, uh, backbone links, and then those links being repaid as the network grew, so that in the end, the public sector simply reduced the risk, but didn't really waste or lost any money and even sometimes got the money with some interest.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So you've just described an interesting phenomenon that occurred in the United States in a different context in 1934.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "There was something called the Rural Electrification Act, and its intent was to provide power, electrical power to parts of the United States that were not, you know, not in the urban environment.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "And so the low cost loans were made to private sector entities in order to allow them to invest in the equipment needed and the distribution facilities needed.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "And at the same time, that same act also supported um infrastructure for telephone service.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "So both telephone and electricity were provided through that mechanism.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "So that was low cost loans effectively and low interest loans.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And so that's another kind of mechanism that can be used to enable, uh, construction where it might otherwise not be possible.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "So I think one useful outcome of the research is to show viable models that reduce the risk or to facilitate the expansion of, of infrastructures and enable even, I mean, private citizens or small companies to do something that will not be possible without the initial support of the governments and, um, and have a kind of a as a result, the, the rapid expansion of uh, coverage.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and also all this discussion is connected also to the environmental impact.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "How do we do that efficiently so that it also is energy efficient or it helps the expansion also of power networks as well, not just data networks.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "I think the following topic maintenance of a public internet commons and public interest is is well connected to this.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "I think Mallory was commenting about this in the mailing list.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So it's been again, I'm feeling like I'm, uh, taking more time than is my fair share.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, Madam Chair.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Mr.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "chair.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Tell me if I should, uh, shut up.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but I did want to respond to the public internet commons idea.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we're seeing, uh, in the US anyway, uh, more instances of public internet availability, whether it's, uh, in coffee shops or in the libraries or in schools and things like that, where the general public also is, given access, but at the same time, there's a lot of concern over privacy.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I would draw attention to, uh, the ietf's work, uh, in this area for, um, opportunistic encryption, for example, for Wi-Fi access, uh, and, uh, techniques for protecting, um, strong authentication or using strong authentication to protect identity, uh, for, uh, for people who are trying to use public facilities to log into their, um, their services.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "And so a very important, um, part of all this, I think, is making sure that the general public using these open facilities is adequately protected, um, with regard to privacy and safety and security.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and that seems to be an important mandate for IETF to look at protocols that will achieve those objectives.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: At the same time, I think privacy and security are very important, but I think if we talk about a common or a public internet, we shouldn't stop there, because it's actually quite surprising that it's still impossible largely to have a email address in a non-Latin script, which means the majority of the people on this planet cannot have a email address in their own language.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "And the internationalization largely has, uh, not worked on the application level, let alone on the protocol level, which means that if we really want to produce a global network, we need to kind of de-center the Latin language, but also the English tech English text that is now so common in teaching and maintaining protocols as it is as it is at this current meeting.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "So yes, privacy and security are essential, but we also need to do a power analysis and go further towards social and economic rights.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "We want to take that into account and have a truly global, uh, internet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: John, you want to talk?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "The, uh.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just to correct one thing, the inability to use, uh, non-Latin script in, uh, email addresses would be a, uh, a surprise both to the people in the IETF who, uh, who did the protocol work for that and did several millions of people who were using such addresses every day.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are some serious problems with non-black email addresses, but they're not the technology.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "They're, uh, they're a whole series of human interface issues associated with what happens when you try to use those addresses, uh, outside your own community.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, and while the analogy is not complete, uh, the problems that several of us on uh, on this call reading, uh, Hindi in Devanagari script is, uh, is symptomatic of one of those problems with email addresses.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, but it's not the inability to have those addresses from the technological standpoint that's been available now for several years.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "And there are, again, several millions of people in, uh, uh, in a number of countries, including China and India, who are using them every day.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well, this is probably connected to the, uh.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "So, yeah, I just wanted to, uh, put a point to what was just said about human interfaces.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "So it has been a terrible thing to be able to type in Indian languages on a typical computer keyboard, and it is a problem that is still persists.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "So the way I actually entered the form was basically by typing it on my phone, because that's the only place where a soft keyboard works.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "So the real challenges are actually about interfaces and the ability to be able to type stuff into, uh, thing.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "So the technology is still there a problem?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "I've tried to get hold of some sort of an international domain name system, but I was never able to get the hang of how idns actually really work.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "So, I mean, I'll have to relook that, but these are the real problems that how do you type in characters of domain names and things like that on systems that are there?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "So this is a sort of a separate problem, which is really not an IETF problem.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "It's more of a other challenge problem.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "And that's what we're calling as the next part of the digital divide where access people may have.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "I'm in India and we have got wonderful access.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Lots of people have wonderful access to the internet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So access is not that much of a problem today.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Rather, the problem is the availability of content, which is becoming to be the next digital divide.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for hearing me out.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, thank you for your contribution.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, by the way, I could see you in the chat that, uh, people say you are not, uh, preventing anyone to speak.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "So your views are very welcome.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "And the last comments about the, um, about the non-Latin addresses, in fact, uh, in my place, we speak Catalan, uh, kind of close to French in alphabet.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, and I volunteer in a ISP.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And we always have trouble with people that want to use, uh, non non-ascii characters in email.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the left or on the right of the At symbol, because, uh, yeah, even though the standards are there, um, it is in the end, not that usable.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "And that's really a pity Because it's also a barrier.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, for global access to the internet for all that's a barrier.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "They have connection, but they cannot express themselves freely in their, um, in their, um, local script.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "I had more topics to to raise.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I can't stress that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "I can't stress that too much.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the, uh, the underlying protocol technology for a lot of things is there, um, uh, identifiers, internationalized identifiers, generally, uh, email, local parts, domain names and other things.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we've got two sets of problems at the user interface level.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, and perhaps that's something this group should be paying more attention to.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one of those problems is local.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, when, uh, when companies design a system and then think that they can translate that system, either the keyword vocabulary or the system, or the page layout, or the characters into, uh, some other language and script and culture in a relatively crude or automated or artificially, uh, stupid way.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that often doesn't work out well.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So there are important issues relative to, uh, making certain that user interfaces are actually, uh, and the things which access them, keyboards included, are actually culturally reasonable and appropriate for, uh, for a particular locality or language or culture or system.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, and that requires work that we haven't been good at doing, although there are notable exceptions around the world.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "The second problem is that when people from one environment using their own language and script, and email addresses in that language and script are trying to communicate with, uh, people somewhere else using a different set of systems, especially if the languages and scripts are very different.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, we run into a different set of problems.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, and I've said in another context that it's perhaps no accident that, uh, that the creation myths of, uh, of many of the religions of the world have, uh, versions of stories about language differences and incompatibilities and people having difficulty communicating with each other that are attributed to divine intervention.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "And I hope we don't need divine intervention to fix the problems, but we at least need to be aware of them and be conscious of them and, uh, and incorporate them into our thinking rather than saying, this isn't available.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "And, Um, thanks.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It's, uh, it's Vin again.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "I'm glad that John jumped in because, uh, he and I and others spent quite a long time working on internationalized domain names.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the 2008 to 2010 period.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I did want to mention something about coping with multiple languages and scripts.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I still, I agree with John.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "We don't do this very well.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in the in the Gmail application, for example, it is possible to enter uh, non, uh, Latin scripts as, uh, as email addresses.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, however, I find myself, uh, for example, corresponding with some of my friends in Japan struggling, uh, when I see their, um, Japanese script names and not really being comfortable figuring out which of them am I looking at because I don't speak Japanese and I don't read it in particular.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, we have, um, tried hard to provide translation of content in email.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "It's never perfect, but with machine learning is getting better and better.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "So on the content side, uh, it has been possible to provide translations of some degree of utility that does not, however, uh, improve the problem of entering content in a particular script if the keyboards, uh, don't support it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "And even if you do, uh, if the recipient isn't prepared to deal with that language, translation is still needed.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Translation of names, uh, almost makes no sense at all because they're basically phonetic strings.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, so that doesn't work.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "So there's still a lot to be done, uh, to deal not with single language environments, but rather multi-language environments.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "And here I think we could encourage significant research and efforts in the IETF, to the extent that anybody has some good ideas for tackling what I think is a pretty hard problem.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Um, especially when problems are involve multiple disciplines, it's not just maybe a matter of protocol design, but also cultural and and linguistic aspects.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Shall we move on perhaps to, um, this is second and last, um, um, list of, uh, topics that emerge in the in the list.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want to pick up one and comment?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, feel free anyone to just select one and and say something about it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Just simply I took ideas that emerged in the mailing list.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "It's Vint I'd like to pick on the wholesale access, uh, thing we've had, uh, what I think were fairly successful results in Uganda.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Google built a in Kampala.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "We built a fiber optic network in the city and then made it available at wholesale rates to retail resellers, and that seemed to work okay.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, it worked well enough that I think we ended up forming a joint venture with other local companies.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "And then I believe we replicated that in Ghana.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "Although I might have had that might have that wrong.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So somebody needs to correct me.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Feel free to do that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "But I am attracted to that idea that we empower, uh, multiple retailers competing with each other to offer, uh, value added services.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "So that, uh, strikes me as being a pretty interesting tactic.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: And then maybe the, uh, to move on and given the time, uh, this slide is about what things do you believe we can do in in Gaia, uh, with the topics that we discussed before, uh, to, to produce some, um, useful outcomes for moving forward in different ways, like, uh, choice, uh, right about it, um, report and so on.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Well, it's then again, I have to leave in nine minutes, and maybe that's all the time we have.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, um, let me, uh, respond by saying that the the most valuable thing I think many of you could do would be to report on successes and why they worked.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "What were the conditions that made things work?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and again, as I mentioned before, if it didn't work, please explain why.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and to help others formulate plans and avoid, uh, traps and mistakes that, uh, that you've already uncovered.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "So this is very, very helpful to do, uh, anywhere that, uh, that you can cast light on tactics and strategies, uh, that produce the desired outcome, which is getting everybody online in an affordable, sustainable way.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Nils, I think to that end.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Oops.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Nils I really hope people will also report failures and obstacles they found along the way of, uh, changing power imbalances, because that will then allow us to see what the obstacles are and see how they could change, either by technology or policies or, uh, funding schemes, because, uh, as we all know and have seen in the discussions before, that no problem is mainly merely technical, merely social, or merely economic.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "I'd really like to understand and see more about open hardware, open software and governance from below.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, community organized networks, telecoms and infrastructures.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jane, you wanted to comment anything?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Just to agree on the on the the need for more data.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as Vinton um, Nils are suggesting with respect to, you know, what worked, what didn't and, um, what the problems were and what the, um, failures and obstacles were so that others can learn from that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "There may be we could put out a call for some case studies.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I know a lot of organizations are putting some of those together, and they could be tweaked to handle some of the the points that that others are making here.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, I was part of the for instance, in the case of APC, they do the GIS watch.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "And a big part of the work is, is about supporting, uh, different groups all over the world into reporting their experiences with, uh, in, in a length of about two, three, four pages.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "And, and that helps a lot.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It's been again.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "One other thing.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "This is a request.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "I chair something called the Marconi Society, and we have been having, uh, decadal discussions about hard problems in telecommunications and computing that if they were solved, would make a big difference.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "And so we're looking for sort of like the decadal studies that they do in astrophysics, you know, where should we go look next to get better information about what the universe is all about?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "So in this case, we're looking for hard technical problems that if they had solutions, would make a big difference.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "So we can focus attention and research on that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "So if you have ideas for succinctly stated problems, whose solutions would make a big difference in the space that we're talking about here, please send them to me, Vint at google.com.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "And I'll make sure that that we capture those in our Marconi Society report at the uh, at the end of the year.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks so much.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Wonderful.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe just to conclude, uh, because we are running out of time, it's, um, you know, I realized that, um, we had one RFC in this, um, working group that is, uh, dated in August 2016.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "It will be five years, uh, in, in a few months.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "So we discussed some time about that, but maybe it's time to think about re revisiting what alternative network deployments is and what we have learned along the way for possibility results, but also for impossibility results as well.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "What do you think?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Hi, it's Vince.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "I certainly think that would be a practical and useful thing to do.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, you know, you have my vote.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So, Jane, do you want to say any comment, anything about before we we are done today?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, I think this has been a great debate, and, um, I'm really it was really great and I was very interested in it.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "So I think what we may need to do is take some of the good points here, um, to the list.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "I like your idea of looking at the charter.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "I think it does too.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "So why don't we take some of the, um, the text that we've got here and look at it and come back to the the mailing list?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Because I think the whole case study idea is an interesting call for action.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and others, uh, have noted that, too.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "And then we could Look with the group online at the charter.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Do some asynchronous, um, work together.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "What do you think?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think it's an excellent proposal and an excellent way also to finish this, uh, meeting with something to do and, uh, looking forward to put together the notes of the meeting and and continue the discussion in the mailing list.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much for everyone to join.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Bye bye.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Take care.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Bye bye.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: See you on the net.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "See you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you everyone.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Bye.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, so we'll look at the charter asynchronously.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "And I think I've captured it all.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "And I just want to ask.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "I think we still have the need.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Meet echo folks here with us.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do I have to do anything to capture the chat or will be an automatically captured the notes that I've taken?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "I think it will.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "I just want to validate that.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Nils or others.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Do you know if all this will be captured?",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "It's automatic.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Lovely, John, I thought so.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I was typing it, so I figured it was captured.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: This is the.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "This is part of the magic of Beat Echo.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I love meet echo.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, wonderful.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "Well, then, this has been fun.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Um, thank you, Leandro, for organizing everything.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you, everyone, for participating.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, Leandro, I'll be in touch and we'll come back to the team here.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you so much.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "And also thank you for the mythical guys to make this meeting so smooth.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "Domenico.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "Lovely.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Thanks, all.",
+            "confidence": 0.9912904209884076
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Bye, everyone.",
+            "confidence": 0.9912904209884076
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-24T03:50:02.403265+00:00",
+          "processed_at": "2026-01-24T03:50:02.403265+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "hu1hfsjedr"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9912904209884076
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

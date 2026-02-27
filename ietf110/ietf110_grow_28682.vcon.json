@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "a9aa61c6-f585-4ad1-ae49-361da11f983b",
   "created_at": "2026-01-03T19:26:25.200619",
-  "updated_at": "2026-01-03T19:26:30.149685",
+  "updated_at": "2026-01-23T18:57:20.517354+00:00",
   "subject": "IETF 110 - GROW Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=O2suoDVzQmY",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "grow"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T12:00:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "grow",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-grow",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-tppy-bmp-seamless-session",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-grow-202103081300",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-grow",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/draft-ietf-grow-as-path-prepending",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-grow-draft-tppy-bmp-seamless-session-00",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-grow-network-telemetry-with-bmpyang-hackathon-results",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-grow-draft-ietf-grow-as-path-prepending-03",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-grow-chair-slides",
         "mimetype": "application/pdf",
@@ -225,10 +224,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/grow/",
         "mimetype": "text/html",
@@ -239,10 +238,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-grow",
         "mimetype": "text/markdown",
@@ -253,7 +252,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -9009,6 +9009,4219 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Good morning, good afternoon. Good evening everyone. The grow meeting starts in one hour. The grow meeting has been postponed for one hour to accommodate a scheduling conflict for one of the presenters. And because the grow agenda allows to be shorter than two hours. Um. So feel free to get coffee, tea or at your own cost. Uh, we start at 2 p.m. Central European time in about 58 minutes.\nSPEAKER S2: Hey, Jobe, are you going to start soon?\nSPEAKER S1: Hey, Jared. The group meeting has been delayed by one hour. It will start in 56 minutes because of a scheduling conflict with one of the presenters. Uh, and the fact that the grow agenda was shorter than the two hour block allocated to it. Uh, so get some water, get some tea, some cereal. Um, I'm gonna put up a slide that indicates that we're starting a little bit later. Apologies.\nSPEAKER S2: Okay. Got it. All right, I'm going back to spring.\nSPEAKER S1: Hi everyone. We are going to start in about four minutes. So this is last call on coffee four minutes. Then we'll start.\nSPEAKER S3: Good morning. Microphone check.\nSPEAKER S1: Jeffrey. I can hear you loud and clear.\nSPEAKER S3: Okay. Thank you.\nSPEAKER S4: Test.\nSPEAKER S1: Hello, everyone. Welcome to the Global Routing Operations Working Group meeting at IETF 110. Uh. I think today's meeting was originally efficient to take place in Prague, but unfortunately, all of us are gathering in our houses, wherever that is on this planet. That will not take away from the joy of this meeting. Um, but before we start, I would like to draw attention to the ITF note. Well, this is a reminder of ITF policies that are in effect on various topics, such as patents or code of conduct. If you're not familiar with the IETF note, well, please review the reference documents at a later point in time. As mentioned before, we started one hour later. This was because there was a scheduling conflict, uh, that we could not resolve at the last minute, but it appeared to be a simpler solution to just start this meeting one hour later. In today's meeting, we're going to cover the administrative, uh, some BMP and young related reports from the hackathon. Uh, a new initiative called BMP seamless session and an update on the internet draft. Uh, about as path Prepending. If you have questions, uh, please drop them in the chat or raise your hands. Uh. In terms of staff completeness, Christopher, are you around? Yes you are. Uh, so for the administrative side of things, we need a minute. Taker. Is there a volunteer who wants to contribute a summary of what is being discussed on the etherpad?\nSPEAKER S3: I think I can probably do some etherpad. I just need to find it.\nSPEAKER S1: It's real easy to go to it.For you don't click the life, but you click it 110 online and then you don't click agenda, but click agenda HTML. And from there you can easily go to and.\nSPEAKER S5: I forgot where you raise your left foot.\nSPEAKER S1: All right. So we got a minute taker in the shape of Christopher Morrow. Uh, and then I will volunteer to monitor the jabber room. Um. Oh, an update about the charter. Uh, at last, at the last meeting, we, uh, discussed that a charter refresh was requested by the area area director. Uh, and we, uh, faithfully labored to produce an update to hopefully align the work of this working group more with what was described in the system. And this, um, charter update was discussed in the working group. And to me, it appeared that most in the working group had, uh, an idea of what the update meant and what this working group does. But when it was brought forward to the Iusg review stage, uh, a lot of questions came back, uh, where apparently, uh, there is still some work to be done to, uh, make this charter, uh, understandable, not just by the working group participants, but also by people who review our output. So I have it on my to do list to go over the feedback from the ISG review round and incorporate that feedback into a revised charter proposal, which I'll then share it with the working group mailing list. And if people feel that that is a good update, then we'll try again with ISG. So the report, the update is that the charter update is an ongoing process and might take a few more months. Um, other administrative things we need to discuss. I think that's it for now. Um, I'm gonna hand over the microphone to Thomas Graf, who is going to share with us an update, um, the BNP Yang hackathon.\nSPEAKER S6: Okay. Can you see and hear me?\nSPEAKER S1: We can see in here. You take it away.\nSPEAKER S6: And, uh, how about the screen sharing? I think I requested you just need to grant, and then it should work. Yes. Excellent. Okay. Can you see the screen?\nSPEAKER S1: Yes we can. Thank you.\nSPEAKER S6: Oh, excellent. Then I will start with the first slide deck on last week's IETF 110 hackathon. So I'm representing here the BNP and the young group. So in the hackathon on the BNP part, we were focusing this time solely on performance and not on functionality. So here our interest was basically we want to see how BNP uh adjacency In out locally, including path marking. TLB uh is affecting the CPU and memory consumption, but also uh when congestion on the network is happening. So uh, BGP is start sending a lot of updates and withdrawals back and forth. Uh, if on such circumstances, we can ensure that the RIP which is collected through BMP route monitoring, uh, is always like the rip is always representing the same state as we have, uh, on the network. And last but not least, we also want to understand if, uh, a router in transit, uh, if PMP is enabled or not. Uh, what the difference is in terms of BGP route propagation delay. So that's from the PMP part where on uh, Briefly, we are focusing on an open source implementation on these two drafts here and focusing there also on performance tests. This was the software we've been using throughout the hackathon. That's the network. So on the very left hand side we had Zap generating the the BGP updates and withdrawals we had here. 61 router being a route reflector. 52 another route reflector. And 62 basically a provider edge router receiving and installing the routes. And basically here in orange at various points we were enabling a BMP either adjacency out or in Pre-post policy or uh also local coverage and and basically doing the described tests. So what we achieved was this time are on the lab environment that we have now a fully automated test setup in terms of generating the sequenced BGP updates. Uh, also initializing the Vmp the right way, how we want to do it, and then basically collect, um, vmp metrics, uh, from the network and through young push the CPU and memory BGP process usage. Uh, so we can monitor basically prefix loss as a metric loss in BMP and CPU memory usage. We can go down to BGP process level. Uh, as a next step for the next hackathon. Uh, we define that we want to do the same test also in a multi-vendor environment and uh, cover different operating systems. And also, uh, we want to work on some time stamping approval. This is basically what we did on the UDP notice side. Uh, here mainly the focus was implementing uh, a data collection library, uh, which was written in C and also a mock up producer, uh, both supporting uh segmentation in UDP. And it has been integrated into the Pm-act open source network data collection. That was a test message we generated into Apache Kafka for Young Push. And this was a test performance setup we did with the young push. Uh, very impressive for the throughput we achieved, uh, with young push, I think this is one of the most fastest implementation currently available. So on one core with 500,000 messages. We were achieving up to 1011 gigabits per second with the jumbo frames. Uh, so here basically the test setup, uh, from the network side. So, uh, as I mentioned, we enable PMP at various points and we're measuring the effect of the PMP. What was really impressive was that even though we had congestion, so a lot of, uh, we were generating up to 1 million routes on the network that under no circumstance we had loss of metrics. So in all cases, basically the hip state could be achieved. Uh, that's, uh, one good notice here. Uh, the other one is in regarding BGP propagation delay, we discovered that, uh, the accuracy of the Timestamping was not, uh. accurate enough so therefore we could not draw final conclusions. How much impact BNP brings to the BGP propagation delay. So there we're going to improve the timestamping accuracy. And we're going to do the tests in the next Ittf hackathon. Here are some examples on uh on the tests we did. So the test setup generated 1 million BGP VPN before unicast passed. And it was advertised it as fast as possible to uh ten pairs. And as you can see here on the very left hand side, the CPU usage, uh, basically doing the BGP propagation period wherever BMP was off or on did not change. But later on, basically when the propagation was through and then the basically the CPU usage back back down to to normal. The, the export started uh, to to to perform. And during the export period we basically had uh, the same uh, amount of peak that we had during the BGP propagation period of time. In regards of memory consumption, we can see that once the prefixes are being, uh, propagated, uh, initially we are consuming more uh, memory on the BGP process. But throughout the test cycle that did not change. That was on the route reflector. And the same uh, we could experience also on the provider edge router with the same, uh, ribs enabled. So no change in their. Then we did another test, uh, basically on the route reflector where while propagating the the BGP prefixes, we were flapping the BNP. And here, uh, basically we could saw that, uh, there are no impact in memory nor in CPU usage when BNP session is flapping. So what we learned this time in the hackathon, uh, it's basically since it's the fifth time we, we were, uh, more prepared than we were before, uh, testosterone test automation was very important. And also, um, being connected throughout the hackathon with Slack and Ms. teams. And of course, since it's all virtual, we all miss beers and cocktails afterwards. Many thanks to all the participants. Any questions on the test results?\nSPEAKER S1: I see Jeffrey stepped forward to the queue. Sure. Go ahead Jeffrey.\nSPEAKER S3: Thank you. Thomas. Uh, first, a question about the, uh, test methodology for the route reflector and the slide there. You're showing that, uh, BMP is kicking in much later than the BGP convergence. Is that because BMP is being, uh, enabled after the fact, or is there actually a gap there where the system's converging in some fashion?\nSPEAKER S6: Uh, actually the the implementation looks at the CPU usage. And at that point in time when the congestion is is happening on BGP, the the CPU level is, is is higher than normal and therefore the export is being delayed.\nSPEAKER S3: Okay. So the implementation in question is choosing the wait and defers advertising BMB.\nSPEAKER S6: Exactly.\nSPEAKER S3: Okay. Thank you. Uh, and my second thing is an observation about the time stamping. I certainly cannot speak for other people's implementations. Uh, no. Junos has second level granularity for its timestamps. It does not waste the extra space to keep know something? No less than that. Uh, we put in effectively a increasing counter in the, uh, additional field to make sure that, uh, if we have more than one event within the same second, that you get something of no use to let you know the sequencing. But, uh, so the two observations are that the timestamp will be closer to second level granularity for at least one implementation. And the second observation is that, uh, the time stamping is going to be somewhat separated from the BGP events in some cases based on pipelining. So if you just think about the time it takes for a packet to be placed on the wire by a transmitter and maybe TCP delays before it's pushed processed in the queue, potentially with some additional, uh, wiggle room, you know, within a second granularity as it's being run through the BGP pipeline.\nSPEAKER S6: Mhm. Okay. Thanks. Thank. Thank you very much for the input. We'll take that as a notice for the next test. Yeah. And we do saw a different vendor implementations have uh different uh implementations on, on uh time stamping. And we noticed that juniper has does both seconds and milliseconds. Yeah. Great. Any more questions or remarks?\nSPEAKER S1: If there are no additional questions at this point in time, I would like to invite you to, uh, continue with the BNP seamless session, uh, presentation. Sure.\nSPEAKER S6: Dana will have over to the second slide deck in here. Can you see the slides?\nSPEAKER S1: Yes we can.\nSPEAKER S6: Perfect. So I will start. Uh, um, since I'm representing here Swisscom, I give a short overview where we stand currently on network telemetry data collection. I think probably the easiest is to look on the very right hand side. The three graphs. Uh, basically, the first one shows how much, how many messages per second we are producing in terms of ipfix. The second one in Yang Push and the third one into BNP. And as you observe that BNP is quite bursty. And if you look at the count, basically, uh, if you have a burst that you can easily, uh, been higher than the ipfix data collection. So from an evolution point of view, I can say that, uh, us by end of last year, we were collecting roughly 2500, uh, from 2500 devices, uh, network telemetry data with BNP prefix and yang push. And we had up to 1 million messages per second in peak. And we are considering, uh, onboarding, uh, up to 14,000 devices this year. And then with the up to 10 million messages per second and from these 40,000, most of them, 38,000 will we will have BNP enabled. So, uh, if we look at, uh, uh, from this 2500 devices, only 300 currently have BNP enabled. And those 300 devices contribute basically in peak, uh, to 600,000 messages per second, but in average, very low 8000 messages per second. So that gives you more or less a picture, uh, how much data is being exposed from, from the network and the burstiness of BNP, especially with the adjacency rebin. And this is the point which we try to address in this draft and basically to optimize. So, um, one angle is we wouldn't we want to try to avoid data duplication And, uh, the reason why we want to avoid data duplication is because in the BGP network, basically the amount of BGP paths are in a service provider steadily increasing. But also on the other hand, uh, thanks to the new support of PMP, now without adjacency in adjacency rip out also local has been is being supported. So therefore uh, basically more and more metrics are exposed. And those metrics thanks to the Tlvs contain more and more additional information. So overall basically the amount of metrics from the routers is steadily increasing. So the application needs to be prevented. And we see that, uh, those duplications happening most of the time when the BNP session is reestablished and we, Release. We see basically there are two main contribution factor why this is re-established. One is a brief loss of connectivity between BNP client and server, and the other one. Because the BNP server uh is taken in maintenance being restarted and then the BNP is re-established. So if we look a bit more closely into the BNP session handling. So section 3.3 in RFC 7854 describes basically that if the TCP session towards the BNP server is established or closed, then also the BNP session is established and closed. And in section five, uh, basically, uh, that it is described that once the BNP session is established, the initial rip dump without monitoring messages is performed, and this dump is performed regardless if a BMP session is established or re-established. Uh TCP fast open is defined in RFC 74. Uh one three. And uh, basically, it gives us the unique capability that we can distinguish between an initial TCP establishment or a re-establishment of TCP session. And this draft is not only suggesting to use TCP fast open for the BMP session, but also, uh, on the BMP application on the BMP client, extending the BMP session lifecycle. So the BMP session should not be closed immediately when the TCP session is closed. There should be a configurable timeout value, and if within this timeout the TCP session is re-established, then basically the BNP session is considerably still up. Another angle is that we, uh, that the client needs to buffer messages between the re-establishment and the BNP session is declared terminated when either the buffer is full or the timeout is reached of the BNP session closure. What we want to wanted to preserve in this draft is the key principle of BNP. That is, it is still a unidirectional collection protocol. Uh, the suggested uh extensions are optionals. So either, uh, the TCP fast open TCP session is supported or not, and as described um in already in RFC 7854, uh, that uh buffering on the router can happen. Um, and in most implementations today we've seen that it it is happen. And this draft is mainly makes basically use of such a BMP buffer. So the message can be preserved between the the TCP establishments. So this is zero zero version. We are looking very much feedback from the grow mailing mailing list. We would love to hear your comments and feedback. Send also if this draft has merit or not. Um, and whatever you think about TCP, fast, open or whatever, you would prefer to have an implementation be done within the BMP application. But keep in mind, if the implementation needs to be done in the BMP application, we cannot preserve the main principle of BMP that it is a unidirectional protocol. That's all for my side. Any questions? Remarks. Feedback?\nSPEAKER S1: Speaking as just working group participant, I would encourage you to continue this work. I think that the effects on real life networks of session flapping and the consequences for subordinate downstream systems, uh, should not be overlooked. Um, I see an analogy to the session ID, uh, in RDP and how sessions are resumable in RTR, similar to how TCP fast open cookies are handled. And I think, uh, mechanisms like this are useful uh, and arguably help conserve resources. So I would encourage you to pursue this work.\nSPEAKER S6: Thank you very much.\nSPEAKER S1: I see a question on the chat. Uh, Lars asks how much downtime would currently deployed buffer sizes allow for if you are not currently in a burst?\nSPEAKER S6: Mhm. Uh, we were thinking about that and in the draft we were specifying a default value of 60s. So the main goal is basically if you have a small interruption in connectivity between client and server, or you just want to restart the BNP server that within that period of time. Uh, the router should be able to, to, to, to buffer the matrix. But of course, um, memory is limited on the BMP client and therefore you cannot buffer for unlimited time. So if the time would be longer or the buffer would be filled, then you basically fall back to the previous principle that BMP session is normally established again. Does that answer your question?\nSPEAKER S1: Last time? Thanks.\nSPEAKER S6: Cool, thanks.\nSPEAKER S1: Any other questions? I see that there are some, uh Implementers in the room. Um, and I was wondering if, uh, maybe the juniper people or Cisco people have previous experience with TCP fast open. Uh, would this be an entirely new feature, or is it something that, uh, where existing frameworks can be leveraged in the operating system? And. Jeffrey.\nSPEAKER S3: So I don't know if we actually support TCP fast open in either of our two big stacks. Uh, I'm vaguely familiar with the feature. Uh, the thing I would guess comment to Thomas is that, uh, the amount of state that needs to be sort of kept in flight is stuff that the kernel would have already owned anyway from the TCP portion of things. And, you know, maybe some, uh, state that BMP had serialized at that point. But anything that's not in that category is basically, uh, uncivilized state that still in the state machine. And, you know, that shouldn't cost any additional memory. So the main considerations from my perspective, without having read the RFC in detail for some time, is that, uh, really, as long as your kernel can hide the details about the session being lost from the application, to some extent, I don't expect there to be much difficulty in implementing this. So I think that this would probably be a good mechanism. As you know, if the RFC covers the necessary things. Uh, if there's any chance for any lost, uh, state, the problem we have here is that there's really no way to easily recover this sort of thing because we don't have, uh, sequencing, uh, present to the BMP protocol. So those sorts of losses are problematic. Uh, but if that's not the case, this is not a bad thing. I think the major challenge for most vendors, for real routers, rather than, you know, easy host stacks. Is that, uh, nonstop routing? TCP extensions are very messy and complicated, as it already is, and to some extent. Well, I think that the fast open stuff has, uh, some good balances with those features. The interactions are already very complicated.\nSPEAKER S6: I see. That's very useful. Thank you for your feedback.\nSPEAKER S1: Yep. This this working group should realize that the seamlessness can be solved at multiple layers of the stack. So the current proposal is to leverage existing work in, for instance, the Linux kernel stack to allow to to resume a session. But it's not the only path. We can also resume the session within the BNP protocol itself. Um, and there's pros and cons to both approaches. But both approaches will will give us same result, namely avoiding duplicating. Uh. Avoiding resending information that was, uh, sent previously and is still in the buffers of the client. Uh, but with this in mind, uh, let's just explore one path. And if if we somehow encounter an issue or if there are negative interactions with, uh, graceful restart or who knows what, what crazy things, uh, exist in the wild, uh, then we can can revisit it. And, um, the resumption mechanism can be put at a different layer. Exactly. Jeffrey has comments. Graceful restart should not be an issue. I hope so.\nSPEAKER S6: Okay then. Thank you very much.\nSPEAKER S1: Thank you for your time, Thomas. And with that, I'm looking into the room to find Michael McBride to give us an update. Um, um, as path prepending. The floor is yours. I can see you, but not hear you yet.\nSPEAKER S7: Can you hear me?\nSPEAKER S1: Yes. We have audio. Excellent.\nSPEAKER S7: I just took off Bluetooth. Yeah. Okay. Good.\nSPEAKER S1: Do you want to share your screen?\nSPEAKER S7: Yeah, let me do that. Are we good? You see that?\nSPEAKER S6: Um.\nSPEAKER S1: Let's give it another second. On my screen, it says a screen share is being started. So I'm not seeing the slides yet. I'm seeing your desktop. If you go full screen, I think. Yeah. Perfect. All right. I'm gonna mute myself. Take it away.\nSPEAKER S7: All right. Very good. So I thought it would be a good idea to just to give a brief update, we did present this draft last ITF. We've received many comments. Thank you so much. We've incorporated all of them. We just received one this morning from Thomas. Thank you very much. We'll incorporate that comment in the memory section of this draft. Um, in the next Rev Of that. That comment was regarding, um, BJP's impact on Ipfix, uh, NetFlow. And so Jacob, uh, wrote that section and we'll make sure we get that, that section updated. So thank you, Thomas. And we've had some, uh, we've also had several people, uh, several authors changing affiliations that we updated that as well. So the background just real briefly is that, uh, Doug Madory, uh, he did present as path Prepending at a Nanog, and there was participants asked if there was any sort of a BCP coming out of IETF or any other SDO. And there was, uh, the answer was no. And so we thought it'd probably be a good idea in this working group to have a opinion on as path prepending. Uh, the problem is that excessive as path pre-training has caused routing issues on the internet, and so we intend in this document to provide some guidance with how best to utilize as path prepending in order to avoid negatively affecting the internet, and to also offer some alternatives. We've also, per the Working Group's requests, anonymized the real world examples, and we've used documentation, prefixes and as-is. We've included a variety of use cases where it's as path prepending is in use today, including preferring one ISP over another, ISP preferring one asbr over another, asbr um, utilizing one path exclusively and another solely as backup to signal to indicate one path may have a different amount of capacity than another. Um, and an ISP doesn't accept traffic engineering using BGP communities, so Prepending is Pre-painting is the only option. So some of the examples of the problems. Um, again you can look at the draft, but um, you know, you could have an attacker wanting to intercept or manipulate traffic to a prefix, and it enlists a data center to allow announcements of that same prefix with a fabricated shorter as path. And that malicious route would be preferred due to the shortened as path. And that has happened. Um, and then there's also been some routing leaks from one country that are being preferred over another country because of excessively prepended as paths. Um, and in that case, illegitimate routes are preferred, can be preferred over legitimate routes. Um and as was mentioned, and this is the comment that uh Thomas made, was long as paths can cause an increase in memory usage among BGP speakers. There are alternatives to as path prepend. You can use predefined communities that are mapped to a particular behavior when propagated. You can announce more specific routes on the preferred path. Um. Robert is a fan of using IGP or EGP origin, which takes precedence over an incomplete origin code and keeping the path lanes the same. And so we include that in the draft. There may be others, but I think probably that's all important, but I think probably the most important is the best practices. Um, and in bold here is what we've added since the last, uh, Rev uh, Jeff Houston offered these suggestions. And uh, so we included those. Um, so let me just go over them real quickly. So network operators should should ensure prepending is absolutely necessary as many networks have excessive prepending, and it is best to enumerate when the routing policies are intended to achieve, uh, what the routing policies are intended to achieve before concluding that Prepending is a solution. Um, and he also pointed out that the neighbor you are, prepending may have an unconditional preference for customer routes, and prepending doesn't work, and so it's helpful to check with neighbors to see if they would honor their prepend. And so that was a good point that we included, uh, we based upon, uh, analysis that Doug had done, that he presented at Nanog and we included in the draft that there's no need to prevent more than a than five as's. And we include a diagram that shows that, um, 90% of as path lengths are five or fewer in length, uh, don't prevent prepend uh asns that you don't own and prepending to all is is needless. So we welcome more comments. Um, including right now if anybody has any.\nSPEAKER S1: Uh, in the chat I see a comment from Jeffrey Haas for as path prepending communities are effectively scoped one as over, which doesn't help stop as ends in many cases. Um, Jeffrey, perhaps, uh, elaborate.\nSPEAKER S3: Uh, sure. Uh. Presentations in this working group as an example, people talk about their, uh, community policies. Uh, people are very, uh, strong about how they actually do their filtering on stuff. Uh, you know, the chair as an example, as part of an organization that is, you know, very strictly scrubs the communities that pass through their system. So the problem with the, uh, with using communities to shape traffic is that if you can't get your behavior that you desire using some sort of, uh, community address to your adjacent ISP, there's probably not anything you can do about the next hop over. So for traffic control, for, you know, a single hop, communities can be very, very helpful, especially if you're doing things like, uh, selectively leaking more specifics. Um, but once you get past that point, the practice that has held up over the years, you know, for more than one hop, unfortunately, has been prepending. And while I generally agree that the number five is probably, uh, fairly reasonable, the sort of challenge that you end up running into, which, uh, Jeff Houston would recognize as a BGP wedgie, uh, you know, from the RFC that he put out on the topic is that, uh, if you don't have something that is strongly prepended sometimes, uh, near the beginning, you know, it's like, maybe if you think you only need string, maybe two S's away. If you only add an additional two S's into the path, there's a there's a chance that route selection may cause something to wedge a little bit earlier. 1 or 2 S's, you know, uh, closer to things. And unfortunately, a lot of these headaches just have to do with the topology of the internet. Uh, we've gone very much closer to hub and spoke, uh, the core has now continued to condense over the years. But if you happen to be a stub, as that is purchasing multiple streams of, uh, you know, service from different providers, sometimes if you're not close enough to the core, your traffic forwarding is not as you expect, and especially as a smaller provider, your circuit costs can be wildly different in terms of how much you pay for such things.\nSPEAKER S7: Okay.\nSPEAKER S1: Uh, next up in the queue. Ben. Madison.\nSPEAKER S8: Can you hear me? Okay.\nSPEAKER S1: Perfect. Go ahead.\nSPEAKER S8: Um, so I just want to, um, make a point about what Jeff was talking about. About the scope of communities. Um, I'm not sure that that one hop radius is true in general. Um, certainly for us, we scrub anything that's, um, in the well-known space or starts with a, you know, starts with a private A.S. and we're very strict about what we accept in our namespace. Um, but everything other than that we leave untouched. So, for example, one of our customers can send a community in one of our transits namespace and expect that to be honored at our transit's boundary. Um, and I know of customers that do use that. Um, I think the limitation is that if your transit happens to be a happens to be a, you know, inverted commas, tier one or transit free network, the next hop over is going to be a peer and or another customer and then unlikely to honor traffic engineering communities of any sort. Um, but I don't think that the I don't think that the scope is limited by virtue of any scrubbing that necessarily happens at the your immediate upstreams edge. Um. Whether or not that's worth including in the draft or not, I'm not sure. But it certainly does mean that whether you've got alternatives gets complicated. Um, I think that I think the additional text that you've, you've added about the fact that people will typically use local pref to prefer customer routes is important. Um, and I think you can probably go a bit further than it sounds like you've gone and point out that, you know, save resorting to very, very aggressive, aggressive deaggregation you may find that there are scenarios where you just can't make the traffic come in the direction you want it to, and you've got to make peace with that or change provider. Um, there isn't always a way of making it come in the way that you want it to, because we're talking about destination forwarding oriented protocol.\nSPEAKER S7: Thank you. So those are more good comments. We have to just decide whether we want to include that in the draft. Um.\nSPEAKER S8: Because something along the lines of you may be up against a brick wall, you should probably stop banging your head on it.\nSPEAKER S7: Sure. Okay.\nSPEAKER S1: A challenge with documents of this type is that there is a multitude of other. Audiences that that have to interpret this recommendation and apply it to their local situation. And on the one hand, there is the group of people who, uh, self inflict harm by needlessly prepending themselves, uh, which negates the efforts of, say, origin validation. Um, but on the other hand, there is, of course, legitimate use cases of traffic engineering or, uh, traffic engineering use cases that applied in the past, but conflicts did not get updated. So it's a bit tricky how to Navigates the what, what it is we want to teach the reader. Um, and I feel that the number five appears, uh, almost arbitrary. But on the other hand, some recommendation is is perhaps better than, uh, fake hand-waving. Keep it as short as possible. Uh, but these are comments, uh, with just my working group participant hat on, I see that Rudiger fork joins the Rudiger. The floor is yours. Rudiger I cannot hear you. There seems to be some kind of connection issue.\nSPEAKER S7: Um, there's been some there's been some good comments on the, uh, chat as well that will, uh.\nSPEAKER S1: Yeah. Let's roll up to those.\nSPEAKER S7: Yeah. See if we can, uh, just we we should be able to add some of your comments, Jeffrey and others into the draft as well. It's useful.\nSPEAKER S1: So large print says. Can you explain why the average path length affects the number of used prepend sizes? If I want to differentiate between the preference of n pairs, I need up to n minus one different prepending sizes. From my own experience, the average internet path length should just limit the maximum useful difference between any two of those n minus one sizes.\nSPEAKER S7: Yeah, so the thought there was that, you know, if there's maximum or if there's an average of five as pass in their net, then prepending ten times doesn't do you any good. That's the general reasoning behind us putting in there. Um, and to another comment on, you know, if if five is arbitrary, it I don't I'm not sure how arbitrary that is. And I, I think the draft is trying to show that it's not that arbitrary because that's, you know, 90% of the as path lengths in the internet, um, R5 as uh, pass or less. So, um, that's why we put that number in there. If that's if you think that's not a wise thing, then, um, we can avoid doing so. But like you said, I think we should have some recommendation in there.\nSPEAKER S1: Yeah, I. I see friction here between having a recommendation that currently 2021 is sensible. But on the other hand it is hard coding a constant. And this is always an internet drafts a um a balance must be struck. What what is, uh, useful in this, this context? Um, I think Marxist comments. Another approach might be to say that you should not prepend more times than you have ibgp neighbors that might apply to some, uh, smaller ISPs as a useful rule of thumb. Or perhaps there are other mechanisms to arrive at the number five, but not prescribe it as five is the magic number. But I'm doing a lot of talking. Uh, let's go back to the Q. I saw Alexander and then Randy Bush, so we'll go through it in in that order. Alexander, it's your turn.\nSPEAKER S9: Do you?\nSPEAKER S1: I can hear you.\nSPEAKER S9: Great. Me too. So, uh, speaking about this draft and not limiting to this draft, uh, as far as I, as I understand, the idea is to limit the propagation of the leaked by, uh, making the length of ice path of the valid routes, uh, less or just preventing it from, uh, being, uh, meaningless. Meaningless. Uh, so it's easy. So the the idea that you should not prevent more than 2 or 3 times or whatever, it's, uh, very clear. And there is another side of the medal, and maybe it's a good, uh, opportunity to cite it in one of the documents that if you, are here. You are speaking about from the perspective of, uh, the victim of the source of the, uh, root of the prefix of the address space, uh, whose traffic is redirected by the root link. This is another side. The sender, the receiver of the root link who sends the traffic into a black hole or the man in the middle? Uh, it's, uh, doesn't really matter. And there is another simple, stupid idea here that if you have a flat policy, I mean that, uh, for example, if you are a content provider, if you have just same local preference values for all your peers, you are getting a really, uh, good protected against against root links, because the root will have a big, uh, uh, ice bath and uh, in uh, it will be, uh, uh, it will not become a best route for you. So maybe a suggestion that do not use multiple, uh, layers of local preference, for example, making one layer for access, another layer for the, uh, private peers. It's really not that useful and can become harmful. I'm not sure if it should be part of this document, but maybe it's a good idea to be cited.\nSPEAKER S7: Yeah. Maybe so. Thanks. Well, we'll think about that.\nSPEAKER S1: Comments. Questions.\nSPEAKER S5: I took my hand down because my elbow got tired. Um.\nSPEAKER S1: The floor is yours.\nSPEAKER S5: If we can't describe a clear and simple algorithm for the recommendation of how many to prepend to whom, then we shouldn't be talking about it at all. Right? Then we're blowing smoke. So I think we should be discussing a clear and simple algorithm for how many prepends.\nSPEAKER S1: Speaking as participant. Um, I think I agree that a draft merely stipulating too much is harmful without us being able to quantify what too much means in a various, uh, number of scenarios, uh, is indeed not productive, but I hope this working group will be able to come up with, uh, a recommendation because there are measurable effects to people, uh, preparing more than is good for their own environment. Ben Madison. The microphone is yours.\nSPEAKER S8: So I agree that in a perfect world, we'd be able to set out exactly how the reader can arrive at the magic number. But I don't think that there is necessarily a one size fits all way of determining that, because it's dependent partly on where in the internet you're performing the calculation. Um, I don't think that there's anything wrong with saying in the draft that in 2021 that number appears to be approximately five. But if you're reading this in ten years time, your mileage may vary. Um, I think that's a reasonable compromise between additional complication and making it relatively useful. Um, just quickly, another point that I forgot to make when I was talking last, I think that the the stuff around the origin code, um, is a little silly personally. Um, I think mostly the reason that it's effective is because most receivers tend to just ignore it because it doesn't actually change their path selection process meaningfully. And I think that if people started actively using it at scale to do traffic engineering, you'd find that people just reset it on their borders and the effect goes away. Um, I don't think that's a recommendation that we should be making to people.\nSPEAKER S7: Okay.\nSPEAKER S1: Uh, next up, Gerard March.\nSPEAKER S2: Uh, yeah. I find myself agreeing with, uh, with Randy and Ben to some extent of the shape of the internet has changed significantly over the past, you know, 25 years or so that I've been meddling with it. Uh, and the question of what the diameter is and what service providers support what and have what capability, I think is, is something that lends itself to how how do we measure this? How can we describe what is harmful? And then how can you know we've been damaged, uh, in the past with prior implementations. And so we have, uh, as path limitations implemented in, uh, the 2009 four zero network that limited limit as paths to 128, which is probably a safe protectionist number, but is also driven by prior software defects. Uh, and so identifying a number that is that is appropriate and based upon what service providers have, what capabilities, I think is, uh, and coming back to that with a way to describe that to protocol implementers to say this, this number is okay. And this number is not, I think is is going to be really difficult for this group to undertake, uh, just based on, you know, the role and position, the topology of the internet. That's it.\nSPEAKER S7: Thanks.\nSPEAKER S1: Uh, two people are in the queue. Randy and Jeffrey. We'll start with Randy. And, uh, then there's an opportunity for Mike to answer if there is an answer and then it's up to Jeffrey. Randy. Go ahead.\nSPEAKER S5: Uh, Ben, if where I am in the topology is part of the consideration for how I prepend, then that's fine. I didn't say the algorithm is based strictly on how many peers I have or what color Wednesday is, but if we can't give solid guidance, then this isn't going to last. And saying this worked well in 2021. But you know, take a flyer in 2023, that's not really reasonable. I think if we can't give guidance here, then we really don't know what we're talking about.\nSPEAKER S1: Jeffrey.\nSPEAKER S3: Uh, so the one thing I will follow up on from with Jared did mention that might be worth discussing in the document is the bugs that have happened from Prepending and the, uh, the single biggest one is just simply, you know, segment overflow in the as path. As path basically says here's the number of asrs for this segment type. There could be at most 255 on a given segment. If you want to go to, you know, seg two segments in a row that are the same type, you have to add a new segment. And an awful lot of people had bugs, you know, for a number of years that didn't get exercised until people like ripe started playing around with these things experimentally, um, which people found to their horror when the internet started crashing. So it might be worthwhile mentioning that, uh, this is one of the possible contributors towards long paths being bad. Not necessarily that it's broken in BGP, but implementations often are broken in this respect and something to watch out for.\nSPEAKER S7: I agree. We'll add that. And it looks like there's different opinions on using origin code. So we'll have to work that out as a working group.\nSPEAKER S1: The difference in opinion on origin code, what I understood from Rosa's contribution is that he merely posted it, that it is possible to. It may be possible to use origin code as an alternative mechanism to accomplish the same as what was set out to accomplish with the Prepending. Not that origin code is a better practice than Prepending. Just that it's it was enumerating, uh, was my understanding of it. But yes, origin codes is not a reliable mechanism. Uh, just as as path length also is not a reliable mechanism for traffic engineering in the wild, wild internet. So since we're deprecating, uh, assets from the as path attribute, does the group feel that that frees up for longer paths? No. I'm joking. Um. Mike, I my my summary of of, uh, the feedback on this presentation appears to be that, uh, the efforts should be focused on seeing if nobody's questioning whether five is an appropriate number today based on the data it was derived from. Uh, but to make the document more future proof, it would be good to set out to see if the number five can be constructed from different data sources. Uh, that perhaps are more applicable to the local environment in which the operator resides. Reading the future BCP. Um, the chairs are available, uh, if you want additional help in this regard. Uh, or maybe, uh, you have goals and plans, but I look forward to a continued updates on this draft.\nSPEAKER S7: Great. Thanks. Yeah, this has been very helpful.\nSPEAKER S1: Thank you for your time, Mike. Um, with that, we have arrived at the top of the hour, and I would like to conclude this Grow session. The next IETF session will be or will not be in San Francisco, but it will be numbered IETF 101. Uh, we hope to see everybody there. Again, thank you for your time today. Thank you for your contributions in chat and at the microphone. Um, and I wish you a pleasant day. The chats are saved. Yes. So how do we end a meeting?\nSPEAKER S5: It's going to be a long while because we need wrap around to get to 101 in San Francisco.\nSPEAKER S1: Sorry. Can you repeat that?\nSPEAKER S5: San Francisco will be 111, not 101.\nSPEAKER S1: Oh, did I mispronounce. Rudiger. I could hear you for a brief second.\nSPEAKER S10: Uh. Uh, leaving the meeting, I guess the, uh, the chair just leaves the room.\nSPEAKER S1: I will try that.\nSPEAKER S5: We can hang out here. Close your browser.\nSPEAKER S10: Yes, we watch it. Okay. No, it did not work. But. Well, okay. That's that's not really a hard problem.\nSPEAKER S5: By the.\nSPEAKER S10: Way, you.\nSPEAKER S5: You said five was the right number right now. Please, uh, write down the justification for that algorithmically. And I am closing my browser. Ciao.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9882658836091832
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Good morning, good afternoon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Good evening everyone.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "The grow meeting starts in one hour.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "The grow meeting has been postponed for one hour to accommodate a scheduling conflict for one of the presenters.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "And because the grow agenda allows to be shorter than two hours.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "So feel free to get coffee, tea or at your own cost.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we start at 2 p.m.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Central European time in about 58 minutes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hey, Jobe, are you going to start soon?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hey, Jared.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "The group meeting has been delayed by one hour.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "It will start in 56 minutes because of a scheduling conflict with one of the presenters.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the fact that the grow agenda was shorter than the two hour block allocated to it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so get some water, get some tea, some cereal.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm gonna put up a slide that indicates that we're starting a little bit later.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Apologies.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Got it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "All right, I'm going back to spring.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hi everyone.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "We are going to start in about four minutes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "So this is last call on coffee four minutes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Then we'll start.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Good morning.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Microphone check.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "I can hear you loud and clear.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Test.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Hello, everyone.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the Global Routing Operations Working Group meeting at IETF 110.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "I think today's meeting was originally efficient to take place in Prague, but unfortunately, all of us are gathering in our houses, wherever that is on this planet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "That will not take away from the joy of this meeting.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but before we start, I would like to draw attention to the ITF note.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Well, this is a reminder of ITF policies that are in effect on various topics, such as patents or code of conduct.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "If you're not familiar with the IETF note, well, please review the reference documents at a later point in time.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "As mentioned before, we started one hour later.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "This was because there was a scheduling conflict, uh, that we could not resolve at the last minute, but it appeared to be a simpler solution to just start this meeting one hour later.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "In today's meeting, we're going to cover the administrative, uh, some BMP and young related reports from the hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, a new initiative called BMP seamless session and an update on the internet draft.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, about as path Prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "If you have questions, uh, please drop them in the chat or raise your hands.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "In terms of staff completeness, Christopher, are you around?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Yes you are.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so for the administrative side of things, we need a minute.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Taker.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Is there a volunteer who wants to contribute a summary of what is being discussed on the etherpad?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think I can probably do some etherpad.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "I just need to find it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It's real easy to go to it.For you don't click the life, but you click it 110 online and then you don't click agenda, but click agenda HTML.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "And from there you can easily go to and.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I forgot where you raise your left foot.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "So we got a minute taker in the shape of Christopher Morrow.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then I will volunteer to monitor the jabber room.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, an update about the charter.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at last, at the last meeting, we, uh, discussed that a charter refresh was requested by the area area director.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and we, uh, faithfully labored to produce an update to hopefully align the work of this working group more with what was described in the system.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "And this, um, charter update was discussed in the working group.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "And to me, it appeared that most in the working group had, uh, an idea of what the update meant and what this working group does.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "But when it was brought forward to the Iusg review stage, uh, a lot of questions came back, uh, where apparently, uh, there is still some work to be done to, uh, make this charter, uh, understandable, not just by the working group participants, but also by people who review our output.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "So I have it on my to do list to go over the feedback from the ISG review round and incorporate that feedback into a revised charter proposal, which I'll then share it with the working group mailing list.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "And if people feel that that is a good update, then we'll try again with ISG.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "So the report, the update is that the charter update is an ongoing process and might take a few more months.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Um, other administrative things we need to discuss.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's it for now.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm gonna hand over the microphone to Thomas Graf, who is going to share with us an update, um, the BNP Yang hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Can you see and hear me?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: We can see in here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "You take it away.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: And, uh, how about the screen sharing?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "I think I requested you just need to grant, and then it should work.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Excellent.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Can you see the screen?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes we can.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Oh, excellent.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Then I will start with the first slide deck on last week's IETF 110 hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm representing here the BNP and the young group.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "So in the hackathon on the BNP part, we were focusing this time solely on performance and not on functionality.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "So here our interest was basically we want to see how BNP uh adjacency In out locally, including path marking.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "TLB uh is affecting the CPU and memory consumption, but also uh when congestion on the network is happening.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "So uh, BGP is start sending a lot of updates and withdrawals back and forth.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if on such circumstances, we can ensure that the RIP which is collected through BMP route monitoring, uh, is always like the rip is always representing the same state as we have, uh, on the network.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "And last but not least, we also want to understand if, uh, a router in transit, uh, if PMP is enabled or not.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what the difference is in terms of BGP route propagation delay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "So that's from the PMP part where on uh, Briefly, we are focusing on an open source implementation on these two drafts here and focusing there also on performance tests.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "This was the software we've been using throughout the hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "That's the network.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "So on the very left hand side we had Zap generating the the BGP updates and withdrawals we had here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "61 router being a route reflector.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "52 another route reflector.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "And 62 basically a provider edge router receiving and installing the routes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "And basically here in orange at various points we were enabling a BMP either adjacency out or in Pre-post policy or uh also local coverage and and basically doing the described tests.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "So what we achieved was this time are on the lab environment that we have now a fully automated test setup in terms of generating the sequenced BGP updates.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also initializing the Vmp the right way, how we want to do it, and then basically collect, um, vmp metrics, uh, from the network and through young push the CPU and memory BGP process usage.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we can monitor basically prefix loss as a metric loss in BMP and CPU memory usage.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "We can go down to BGP process level.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as a next step for the next hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we define that we want to do the same test also in a multi-vendor environment and uh, cover different operating systems.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And also, uh, we want to work on some time stamping approval.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "This is basically what we did on the UDP notice side.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, here mainly the focus was implementing uh, a data collection library, uh, which was written in C and also a mock up producer, uh, both supporting uh segmentation in UDP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "And it has been integrated into the Pm-act open source network data collection.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "That was a test message we generated into Apache Kafka for Young Push.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "And this was a test performance setup we did with the young push.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, very impressive for the throughput we achieved, uh, with young push, I think this is one of the most fastest implementation currently available.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "So on one core with 500,000 messages.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "We were achieving up to 1011 gigabits per second with the jumbo frames.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so here basically the test setup, uh, from the network side.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, as I mentioned, we enable PMP at various points and we're measuring the effect of the PMP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "What was really impressive was that even though we had congestion, so a lot of, uh, we were generating up to 1 million routes on the network that under no circumstance we had loss of metrics.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So in all cases, basically the hip state could be achieved.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that's, uh, one good notice here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other one is in regarding BGP propagation delay, we discovered that, uh, the accuracy of the Timestamping was not, uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "accurate enough so therefore we could not draw final conclusions.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "How much impact BNP brings to the BGP propagation delay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So there we're going to improve the timestamping accuracy.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "And we're going to do the tests in the next Ittf hackathon.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Here are some examples on uh on the tests we did.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "So the test setup generated 1 million BGP VPN before unicast passed.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "And it was advertised it as fast as possible to uh ten pairs.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "And as you can see here on the very left hand side, the CPU usage, uh, basically doing the BGP propagation period wherever BMP was off or on did not change.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "But later on, basically when the propagation was through and then the basically the CPU usage back back down to to normal.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "The, the export started uh, to to to perform.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "And during the export period we basically had uh, the same uh, amount of peak that we had during the BGP propagation period of time.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "In regards of memory consumption, we can see that once the prefixes are being, uh, propagated, uh, initially we are consuming more uh, memory on the BGP process.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "But throughout the test cycle that did not change.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "That was on the route reflector.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "And the same uh, we could experience also on the provider edge router with the same, uh, ribs enabled.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "So no change in their.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Then we did another test, uh, basically on the route reflector where while propagating the the BGP prefixes, we were flapping the BNP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "And here, uh, basically we could saw that, uh, there are no impact in memory nor in CPU usage when BNP session is flapping.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "So what we learned this time in the hackathon, uh, it's basically since it's the fifth time we, we were, uh, more prepared than we were before, uh, testosterone test automation was very important.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "And also, um, being connected throughout the hackathon with Slack and Ms.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "teams.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, since it's all virtual, we all miss beers and cocktails afterwards.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Many thanks to all the participants.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions on the test results?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I see Jeffrey stepped forward to the queue.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Thank you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Thomas.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, first, a question about the, uh, test methodology for the route reflector and the slide there.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "You're showing that, uh, BMP is kicking in much later than the BGP convergence.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Is that because BMP is being, uh, enabled after the fact, or is there actually a gap there where the system's converging in some fashion?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, actually the the implementation looks at the CPU usage.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "And at that point in time when the congestion is is happening on BGP, the the CPU level is, is is higher than normal and therefore the export is being delayed.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "So the implementation in question is choosing the wait and defers advertising BMB.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Exactly.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and my second thing is an observation about the time stamping.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "I certainly cannot speak for other people's implementations.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, no.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Junos has second level granularity for its timestamps.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "It does not waste the extra space to keep know something?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "No less than that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we put in effectively a increasing counter in the, uh, additional field to make sure that, uh, if we have more than one event within the same second, that you get something of no use to let you know the sequencing.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, so the two observations are that the timestamp will be closer to second level granularity for at least one implementation.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "And the second observation is that, uh, the time stamping is going to be somewhat separated from the BGP events in some cases based on pipelining.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "So if you just think about the time it takes for a packet to be placed on the wire by a transmitter and maybe TCP delays before it's pushed processed in the queue, potentially with some additional, uh, wiggle room, you know, within a second granularity as it's being run through the BGP pipeline.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Mhm.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Thank.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for the input.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "We'll take that as a notice for the next test.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "And we do saw a different vendor implementations have uh different uh implementations on, on uh time stamping.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "And we noticed that juniper has does both seconds and milliseconds.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Any more questions or remarks?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: If there are no additional questions at this point in time, I would like to invite you to, uh, continue with the BNP seamless session, uh, presentation.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Dana will have over to the second slide deck in here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Can you see the slides?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes we can.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Perfect.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "So I will start.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, um, since I'm representing here Swisscom, I give a short overview where we stand currently on network telemetry data collection.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "I think probably the easiest is to look on the very right hand side.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "The three graphs.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, basically, the first one shows how much, how many messages per second we are producing in terms of ipfix.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "The second one in Yang Push and the third one into BNP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "And as you observe that BNP is quite bursty.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "And if you look at the count, basically, uh, if you have a burst that you can easily, uh, been higher than the ipfix data collection.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "So from an evolution point of view, I can say that, uh, us by end of last year, we were collecting roughly 2500, uh, from 2500 devices, uh, network telemetry data with BNP prefix and yang push.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "And we had up to 1 million messages per second in peak.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "And we are considering, uh, onboarding, uh, up to 14,000 devices this year.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "And then with the up to 10 million messages per second and from these 40,000, most of them, 38,000 will we will have BNP enabled.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, if we look at, uh, uh, from this 2500 devices, only 300 currently have BNP enabled.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And those 300 devices contribute basically in peak, uh, to 600,000 messages per second, but in average, very low 8000 messages per second.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "So that gives you more or less a picture, uh, how much data is being exposed from, from the network and the burstiness of BNP, especially with the adjacency rebin.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "And this is the point which we try to address in this draft and basically to optimize.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, one angle is we wouldn't we want to try to avoid data duplication And, uh, the reason why we want to avoid data duplication is because in the BGP network, basically the amount of BGP paths are in a service provider steadily increasing.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "But also on the other hand, uh, thanks to the new support of PMP, now without adjacency in adjacency rip out also local has been is being supported.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "So therefore uh, basically more and more metrics are exposed.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "And those metrics thanks to the Tlvs contain more and more additional information.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "So overall basically the amount of metrics from the routers is steadily increasing.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So the application needs to be prevented.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "And we see that, uh, those duplications happening most of the time when the BNP session is reestablished and we, Release.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "We see basically there are two main contribution factor why this is re-established.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "One is a brief loss of connectivity between BNP client and server, and the other one.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Because the BNP server uh is taken in maintenance being restarted and then the BNP is re-established.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "So if we look a bit more closely into the BNP session handling.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So section 3.3 in RFC 7854 describes basically that if the TCP session towards the BNP server is established or closed, then also the BNP session is established and closed.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "And in section five, uh, basically, uh, that it is described that once the BNP session is established, the initial rip dump without monitoring messages is performed, and this dump is performed regardless if a BMP session is established or re-established.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Uh TCP fast open is defined in RFC 74.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh one three.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, basically, it gives us the unique capability that we can distinguish between an initial TCP establishment or a re-establishment of TCP session.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "And this draft is not only suggesting to use TCP fast open for the BMP session, but also, uh, on the BMP application on the BMP client, extending the BMP session lifecycle.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "So the BMP session should not be closed immediately when the TCP session is closed.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "There should be a configurable timeout value, and if within this timeout the TCP session is re-established, then basically the BNP session is considerably still up.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Another angle is that we, uh, that the client needs to buffer messages between the re-establishment and the BNP session is declared terminated when either the buffer is full or the timeout is reached of the BNP session closure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "What we want to wanted to preserve in this draft is the key principle of BNP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "That is, it is still a unidirectional collection protocol.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the suggested uh extensions are optionals.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "So either, uh, the TCP fast open TCP session is supported or not, and as described um in already in RFC 7854, uh, that uh buffering on the router can happen.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in most implementations today we've seen that it it is happen.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "And this draft is mainly makes basically use of such a BMP buffer.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "So the message can be preserved between the the TCP establishments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "So this is zero zero version.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "We are looking very much feedback from the grow mailing mailing list.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "We would love to hear your comments and feedback.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "Send also if this draft has merit or not.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and whatever you think about TCP, fast, open or whatever, you would prefer to have an implementation be done within the BMP application.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "But keep in mind, if the implementation needs to be done in the BMP application, we cannot preserve the main principle of BMP that it is a unidirectional protocol.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "That's all for my side.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Remarks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Feedback?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Speaking as just working group participant, I would encourage you to continue this work.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "I think that the effects on real life networks of session flapping and the consequences for subordinate downstream systems, uh, should not be overlooked.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I see an analogy to the session ID, uh, in RDP and how sessions are resumable in RTR, similar to how TCP fast open cookies are handled.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "And I think, uh, mechanisms like this are useful uh, and arguably help conserve resources.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So I would encourage you to pursue this work.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Thank you very much.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I see a question on the chat.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Lars asks how much downtime would currently deployed buffer sizes allow for if you are not currently in a burst?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Mhm.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we were thinking about that and in the draft we were specifying a default value of 60s.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "So the main goal is basically if you have a small interruption in connectivity between client and server, or you just want to restart the BNP server that within that period of time.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the router should be able to, to, to, to buffer the matrix.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "But of course, um, memory is limited on the BMP client and therefore you cannot buffer for unlimited time.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So if the time would be longer or the buffer would be filled, then you basically fall back to the previous principle that BMP session is normally established again.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Does that answer your question?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Last time?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Cool, thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Any other questions?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "I see that there are some, uh Implementers in the room.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I was wondering if, uh, maybe the juniper people or Cisco people have previous experience with TCP fast open.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, would this be an entirely new feature, or is it something that, uh, where existing frameworks can be leveraged in the operating system?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So I don't know if we actually support TCP fast open in either of our two big stacks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm vaguely familiar with the feature.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the thing I would guess comment to Thomas is that, uh, the amount of state that needs to be sort of kept in flight is stuff that the kernel would have already owned anyway from the TCP portion of things.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, maybe some, uh, state that BMP had serialized at that point.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "But anything that's not in that category is basically, uh, uncivilized state that still in the state machine.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, that shouldn't cost any additional memory.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "So the main considerations from my perspective, without having read the RFC in detail for some time, is that, uh, really, as long as your kernel can hide the details about the session being lost from the application, to some extent, I don't expect there to be much difficulty in implementing this.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that this would probably be a good mechanism.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "As you know, if the RFC covers the necessary things.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, if there's any chance for any lost, uh, state, the problem we have here is that there's really no way to easily recover this sort of thing because we don't have, uh, sequencing, uh, present to the BMP protocol.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So those sorts of losses are problematic.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but if that's not the case, this is not a bad thing.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "I think the major challenge for most vendors, for real routers, rather than, you know, easy host stacks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Is that, uh, nonstop routing?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "TCP extensions are very messy and complicated, as it already is, and to some extent.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I think that the fast open stuff has, uh, some good balances with those features.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "The interactions are already very complicated.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I see.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "That's very useful.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for your feedback.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yep.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "This this working group should realize that the seamlessness can be solved at multiple layers of the stack.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "So the current proposal is to leverage existing work in, for instance, the Linux kernel stack to allow to to resume a session.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "But it's not the only path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "We can also resume the session within the BNP protocol itself.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there's pros and cons to both approaches.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "But both approaches will will give us same result, namely avoiding duplicating.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Avoiding resending information that was, uh, sent previously and is still in the buffers of the client.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but with this in mind, uh, let's just explore one path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "And if if we somehow encounter an issue or if there are negative interactions with, uh, graceful restart or who knows what, what crazy things, uh, exist in the wild, uh, then we can can revisit it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, the resumption mechanism can be put at a different layer.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "Exactly.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Jeffrey has comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Graceful restart should not be an issue.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "I hope so.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay then.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you for your time, Thomas.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "And with that, I'm looking into the room to find Michael McBride to give us an update.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, as path prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "The floor is yours.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "I can see you, but not hear you yet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Can you hear me?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "We have audio.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Excellent.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I just took off Bluetooth.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Good.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Do you want to share your screen?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah, let me do that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Are we good?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "You see that?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Let's give it another second.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "On my screen, it says a screen share is being started.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm not seeing the slides yet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "I'm seeing your desktop.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "If you go full screen, I think.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Perfect.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "I'm gonna mute myself.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Take it away.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: All right.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Very good.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So I thought it would be a good idea to just to give a brief update, we did present this draft last ITF.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "We've received many comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you so much.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "We've incorporated all of them.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "We just received one this morning from Thomas.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "We'll incorporate that comment in the memory section of this draft.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in the next Rev Of that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "That comment was regarding, um, BJP's impact on Ipfix, uh, NetFlow.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "And so Jacob, uh, wrote that section and we'll make sure we get that, that section updated.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you, Thomas.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "And we've had some, uh, we've also had several people, uh, several authors changing affiliations that we updated that as well.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "So the background just real briefly is that, uh, Doug Madory, uh, he did present as path Prepending at a Nanog, and there was participants asked if there was any sort of a BCP coming out of IETF or any other SDO.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "And there was, uh, the answer was no.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "And so we thought it'd probably be a good idea in this working group to have a opinion on as path prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the problem is that excessive as path pre-training has caused routing issues on the internet, and so we intend in this document to provide some guidance with how best to utilize as path prepending in order to avoid negatively affecting the internet, and to also offer some alternatives.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "We've also, per the Working Group's requests, anonymized the real world examples, and we've used documentation, prefixes and as-is.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "We've included a variety of use cases where it's as path prepending is in use today, including preferring one ISP over another, ISP preferring one asbr over another, asbr um, utilizing one path exclusively and another solely as backup to signal to indicate one path may have a different amount of capacity than another.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and an ISP doesn't accept traffic engineering using BGP communities, so Prepending is Pre-painting is the only option.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "So some of the examples of the problems.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Um, again you can look at the draft, but um, you know, you could have an attacker wanting to intercept or manipulate traffic to a prefix, and it enlists a data center to allow announcements of that same prefix with a fabricated shorter as path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "And that malicious route would be preferred due to the shortened as path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "And that has happened.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then there's also been some routing leaks from one country that are being preferred over another country because of excessively prepended as paths.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in that case, illegitimate routes are preferred, can be preferred over legitimate routes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Um and as was mentioned, and this is the comment that uh Thomas made, was long as paths can cause an increase in memory usage among BGP speakers.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "There are alternatives to as path prepend.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "You can use predefined communities that are mapped to a particular behavior when propagated.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "You can announce more specific routes on the preferred path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Robert is a fan of using IGP or EGP origin, which takes precedence over an incomplete origin code and keeping the path lanes the same.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "And so we include that in the draft.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "There may be others, but I think probably that's all important, but I think probably the most important is the best practices.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in bold here is what we've added since the last, uh, Rev uh, Jeff Houston offered these suggestions.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, so we included those.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so let me just go over them real quickly.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "So network operators should should ensure prepending is absolutely necessary as many networks have excessive prepending, and it is best to enumerate when the routing policies are intended to achieve, uh, what the routing policies are intended to achieve before concluding that Prepending is a solution.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and he also pointed out that the neighbor you are, prepending may have an unconditional preference for customer routes, and prepending doesn't work, and so it's helpful to check with neighbors to see if they would honor their prepend.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "And so that was a good point that we included, uh, we based upon, uh, analysis that Doug had done, that he presented at Nanog and we included in the draft that there's no need to prevent more than a than five as's.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "And we include a diagram that shows that, um, 90% of as path lengths are five or fewer in length, uh, don't prevent prepend uh asns that you don't own and prepending to all is is needless.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "So we welcome more comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Um, including right now if anybody has any.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, in the chat I see a comment from Jeffrey Haas for as path prepending communities are effectively scoped one as over, which doesn't help stop as ends in many cases.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Jeffrey, perhaps, uh, elaborate.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, sure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Presentations in this working group as an example, people talk about their, uh, community policies.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, people are very, uh, strong about how they actually do their filtering on stuff.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you know, the chair as an example, as part of an organization that is, you know, very strictly scrubs the communities that pass through their system.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So the problem with the, uh, with using communities to shape traffic is that if you can't get your behavior that you desire using some sort of, uh, community address to your adjacent ISP, there's probably not anything you can do about the next hop over.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "So for traffic control, for, you know, a single hop, communities can be very, very helpful, especially if you're doing things like, uh, selectively leaking more specifics.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but once you get past that point, the practice that has held up over the years, you know, for more than one hop, unfortunately, has been prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "And while I generally agree that the number five is probably, uh, fairly reasonable, the sort of challenge that you end up running into, which, uh, Jeff Houston would recognize as a BGP wedgie, uh, you know, from the RFC that he put out on the topic is that, uh, if you don't have something that is strongly prepended sometimes, uh, near the beginning, you know, it's like, maybe if you think you only need string, maybe two S's away.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "If you only add an additional two S's into the path, there's a there's a chance that route selection may cause something to wedge a little bit earlier.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "1 or 2 S's, you know, uh, closer to things.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "And unfortunately, a lot of these headaches just have to do with the topology of the internet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we've gone very much closer to hub and spoke, uh, the core has now continued to condense over the years.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "But if you happen to be a stub, as that is purchasing multiple streams of, uh, you know, service from different providers, sometimes if you're not close enough to the core, your traffic forwarding is not as you expect, and especially as a smaller provider, your circuit costs can be wildly different in terms of how much you pay for such things.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, next up in the queue.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Ben.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Madison.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Can you hear me?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Perfect.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Um, so I just want to, um, make a point about what Jeff was talking about.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "About the scope of communities.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure that that one hop radius is true in general.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Um, certainly for us, we scrub anything that's, um, in the well-known space or starts with a, you know, starts with a private A.S.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "and we're very strict about what we accept in our namespace.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but everything other than that we leave untouched.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, one of our customers can send a community in one of our transits namespace and expect that to be honored at our transit's boundary.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I know of customers that do use that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the limitation is that if your transit happens to be a happens to be a, you know, inverted commas, tier one or transit free network, the next hop over is going to be a peer and or another customer and then unlikely to honor traffic engineering communities of any sort.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I don't think that the I don't think that the scope is limited by virtue of any scrubbing that necessarily happens at the your immediate upstreams edge.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Whether or not that's worth including in the draft or not, I'm not sure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "But it certainly does mean that whether you've got alternatives gets complicated.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think that I think the additional text that you've, you've added about the fact that people will typically use local pref to prefer customer routes is important.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think you can probably go a bit further than it sounds like you've gone and point out that, you know, save resorting to very, very aggressive, aggressive deaggregation you may find that there are scenarios where you just can't make the traffic come in the direction you want it to, and you've got to make peace with that or change provider.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there isn't always a way of making it come in the way that you want it to, because we're talking about destination forwarding oriented protocol.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Thank you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "So those are more good comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "We have to just decide whether we want to include that in the draft.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Because something along the lines of you may be up against a brick wall, you should probably stop banging your head on it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Sure.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: A challenge with documents of this type is that there is a multitude of other.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Audiences that that have to interpret this recommendation and apply it to their local situation.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "And on the one hand, there is the group of people who, uh, self inflict harm by needlessly prepending themselves, uh, which negates the efforts of, say, origin validation.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but on the other hand, there is, of course, legitimate use cases of traffic engineering or, uh, traffic engineering use cases that applied in the past, but conflicts did not get updated.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "So it's a bit tricky how to Navigates the what, what it is we want to teach the reader.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I feel that the number five appears, uh, almost arbitrary.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "But on the other hand, some recommendation is is perhaps better than, uh, fake hand-waving.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Keep it as short as possible.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but these are comments, uh, with just my working group participant hat on, I see that Rudiger fork joins the Rudiger.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "The floor is yours.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Rudiger I cannot hear you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "There seems to be some kind of connection issue.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, there's been some there's been some good comments on the, uh, chat as well that will, uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Let's roll up to those.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "See if we can, uh, just we we should be able to add some of your comments, Jeffrey and others into the draft as well.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "It's useful.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So large print says.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "Can you explain why the average path length affects the number of used prepend sizes?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "If I want to differentiate between the preference of n pairs, I need up to n minus one different prepending sizes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "From my own experience, the average internet path length should just limit the maximum useful difference between any two of those n minus one sizes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah, so the thought there was that, you know, if there's maximum or if there's an average of five as pass in their net, then prepending ten times doesn't do you any good.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "That's the general reasoning behind us putting in there.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and to another comment on, you know, if if five is arbitrary, it I don't I'm not sure how arbitrary that is.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "And I, I think the draft is trying to show that it's not that arbitrary because that's, you know, 90% of the as path lengths in the internet, um, R5 as uh, pass or less.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, that's why we put that number in there.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "If that's if you think that's not a wise thing, then, um, we can avoid doing so.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "But like you said, I think we should have some recommendation in there.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, I.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "I see friction here between having a recommendation that currently 2021 is sensible.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "But on the other hand it is hard coding a constant.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "And this is always an internet drafts a um a balance must be struck.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "What what is, uh, useful in this, this context?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think Marxist comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Another approach might be to say that you should not prepend more times than you have ibgp neighbors that might apply to some, uh, smaller ISPs as a useful rule of thumb.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Or perhaps there are other mechanisms to arrive at the number five, but not prescribe it as five is the magic number.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "But I'm doing a lot of talking.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, let's go back to the Q.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "I saw Alexander and then Randy Bush, so we'll go through it in in that order.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Alexander, it's your turn.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Do you?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I can hear you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Great.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Me too.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, speaking about this draft and not limiting to this draft, uh, as far as I, as I understand, the idea is to limit the propagation of the leaked by, uh, making the length of ice path of the valid routes, uh, less or just preventing it from, uh, being, uh, meaningless.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Meaningless.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so it's easy.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "So the the idea that you should not prevent more than 2 or 3 times or whatever, it's, uh, very clear.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "And there is another side of the medal, and maybe it's a good, uh, opportunity to cite it in one of the documents that if you, are here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "You are speaking about from the perspective of, uh, the victim of the source of the, uh, root of the prefix of the address space, uh, whose traffic is redirected by the root link.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "This is another side.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "The sender, the receiver of the root link who sends the traffic into a black hole or the man in the middle?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's, uh, doesn't really matter.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "And there is another simple, stupid idea here that if you have a flat policy, I mean that, uh, for example, if you are a content provider, if you have just same local preference values for all your peers, you are getting a really, uh, good protected against against root links, because the root will have a big, uh, uh, ice bath and uh, in uh, it will be, uh, uh, it will not become a best route for you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe a suggestion that do not use multiple, uh, layers of local preference, for example, making one layer for access, another layer for the, uh, private peers.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "It's really not that useful and can become harmful.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not sure if it should be part of this document, but maybe it's a good idea to be cited.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe so.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we'll think about that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Comments.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "Questions.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I took my hand down because my elbow got tired.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The floor is yours.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: If we can't describe a clear and simple algorithm for the recommendation of how many to prepend to whom, then we shouldn't be talking about it at all.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Then we're blowing smoke.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "So I think we should be discussing a clear and simple algorithm for how many prepends.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Speaking as participant.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think I agree that a draft merely stipulating too much is harmful without us being able to quantify what too much means in a various, uh, number of scenarios, uh, is indeed not productive, but I hope this working group will be able to come up with, uh, a recommendation because there are measurable effects to people, uh, preparing more than is good for their own environment.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Ben Madison.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "The microphone is yours.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: So I agree that in a perfect world, we'd be able to set out exactly how the reader can arrive at the magic number.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "But I don't think that there is necessarily a one size fits all way of determining that, because it's dependent partly on where in the internet you're performing the calculation.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't think that there's anything wrong with saying in the draft that in 2021 that number appears to be approximately five.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "But if you're reading this in ten years time, your mileage may vary.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think that's a reasonable compromise between additional complication and making it relatively useful.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "Um, just quickly, another point that I forgot to make when I was talking last, I think that the the stuff around the origin code, um, is a little silly personally.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think mostly the reason that it's effective is because most receivers tend to just ignore it because it doesn't actually change their path selection process meaningfully.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "And I think that if people started actively using it at scale to do traffic engineering, you'd find that people just reset it on their borders and the effect goes away.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't think that's a recommendation that we should be making to people.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, next up, Gerard March.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, yeah.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "I find myself agreeing with, uh, with Randy and Ben to some extent of the shape of the internet has changed significantly over the past, you know, 25 years or so that I've been meddling with it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and the question of what the diameter is and what service providers support what and have what capability, I think is, is something that lends itself to how how do we measure this?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "How can we describe what is harmful?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "And then how can you know we've been damaged, uh, in the past with prior implementations.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "And so we have, uh, as path limitations implemented in, uh, the 2009 four zero network that limited limit as paths to 128, which is probably a safe protectionist number, but is also driven by prior software defects.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and so identifying a number that is that is appropriate and based upon what service providers have, what capabilities, I think is, uh, and coming back to that with a way to describe that to protocol implementers to say this, this number is okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "And this number is not, I think is is going to be really difficult for this group to undertake, uh, just based on, you know, the role and position, the topology of the internet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "That's it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, two people are in the queue.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Randy and Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "We'll start with Randy.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, then there's an opportunity for Mike to answer if there is an answer and then it's up to Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "Randy.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, Ben, if where I am in the topology is part of the consideration for how I prepend, then that's fine.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "I didn't say the algorithm is based strictly on how many peers I have or what color Wednesday is, but if we can't give solid guidance, then this isn't going to last.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "And saying this worked well in 2021.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "But you know, take a flyer in 2023, that's not really reasonable.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "I think if we can't give guidance here, then we really don't know what we're talking about.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Jeffrey.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, so the one thing I will follow up on from with Jared did mention that might be worth discussing in the document is the bugs that have happened from Prepending and the, uh, the single biggest one is just simply, you know, segment overflow in the as path.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "As path basically says here's the number of asrs for this segment type.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "There could be at most 255 on a given segment.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "If you want to go to, you know, seg two segments in a row that are the same type, you have to add a new segment.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "And an awful lot of people had bugs, you know, for a number of years that didn't get exercised until people like ripe started playing around with these things experimentally, um, which people found to their horror when the internet started crashing.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "So it might be worthwhile mentioning that, uh, this is one of the possible contributors towards long paths being bad.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "Not necessarily that it's broken in BGP, but implementations often are broken in this respect and something to watch out for.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I agree.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "We'll add that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "And it looks like there's different opinions on using origin code.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll have to work that out as a working group.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The difference in opinion on origin code, what I understood from Rosa's contribution is that he merely posted it, that it is possible to.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "It may be possible to use origin code as an alternative mechanism to accomplish the same as what was set out to accomplish with the Prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "Not that origin code is a better practice than Prepending.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "Just that it's it was enumerating, uh, was my understanding of it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "But yes, origin codes is not a reliable mechanism.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, just as as path length also is not a reliable mechanism for traffic engineering in the wild, wild internet.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "So since we're deprecating, uh, assets from the as path attribute, does the group feel that that frees up for longer paths?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "I'm joking.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "Mike, I my my summary of of, uh, the feedback on this presentation appears to be that, uh, the efforts should be focused on seeing if nobody's questioning whether five is an appropriate number today based on the data it was derived from.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but to make the document more future proof, it would be good to set out to see if the number five can be constructed from different data sources.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that perhaps are more applicable to the local environment in which the operator resides.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "Reading the future BCP.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the chairs are available, uh, if you want additional help in this regard.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or maybe, uh, you have goals and plans, but I look forward to a continued updates on this draft.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Great.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, this has been very helpful.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you for your time, Mike.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "Um, with that, we have arrived at the top of the hour, and I would like to conclude this Grow session.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "The next IETF session will be or will not be in San Francisco, but it will be numbered IETF 101.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we hope to see everybody there.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "Again, thank you for your time today.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for your contributions in chat and at the microphone.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I wish you a pleasant day.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "The chats are saved.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "So how do we end a meeting?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: It's going to be a long while because we need wrap around to get to 101 in San Francisco.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sorry.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "Can you repeat that?",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: San Francisco will be 111, not 101.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, did I mispronounce.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "Rudiger.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "I could hear you for a brief second.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Uh.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, leaving the meeting, I guess the, uh, the chair just leaves the room.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I will try that.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: We can hang out here.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 583,
+            "start": 0,
+            "end": 0,
+            "text": "Close your browser.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 584,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yes, we watch it.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 585,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 586,
+            "start": 0,
+            "end": 0,
+            "text": "No, it did not work.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 587,
+            "start": 0,
+            "end": 0,
+            "text": "But.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 588,
+            "start": 0,
+            "end": 0,
+            "text": "Well, okay.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 589,
+            "start": 0,
+            "end": 0,
+            "text": "That's that's not really a hard problem.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 590,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: By the.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 591,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Way, you.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 592,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: You said five was the right number right now.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 593,
+            "start": 0,
+            "end": 0,
+            "text": "Please, uh, write down the justification for that algorithmically.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 594,
+            "start": 0,
+            "end": 0,
+            "text": "And I am closing my browser.",
+            "confidence": 0.9882658836091832
+          },
+          {
+            "id": 595,
+            "start": 0,
+            "end": 0,
+            "text": "Ciao.",
+            "confidence": 0.9882658836091832
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T18:57:20.514979+00:00",
+          "processed_at": "2026-01-23T18:57:20.514979+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "5g0cjz5xde"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9882658836091832
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

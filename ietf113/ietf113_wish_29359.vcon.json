@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "23a4dc2d-bd6e-4075-a6c3-cb7e622395c8",
   "created_at": "2026-01-03T19:37:58.927692",
-  "updated_at": "2026-01-03T19:38:03.697858",
+  "updated_at": "2026-01-27T15:41:14.907394+00:00",
   "subject": "IETF 113 - WISH Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=vBIlf0L1RTM",
       "meta": {
         "ietf_meeting": 113,
         "working_group": "wish"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 113,
         "location": "Vienna, AT",
@@ -50,10 +49,10 @@
         "start_time": "2022-03-21T12:00:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "wish",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/chatlog-113-wish-202203211300",
         "mimetype": "text/plain",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/agenda-113-wish",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/minutes-113-wish",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "document",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/draft-ietf-wish-whip",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "document"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/bluesheets-113-wish-202203211300",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-wish-implementation-experience-whip-in-janus-and-gstreamer",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-wish-chair-slides",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/agenda/wish/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-113-wish",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8393,6 +8393,4023 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Good morning.\nSPEAKER S2: Good morning. According to my time clock, it's time to start. But I think we're going to give people a couple of minutes. We have a pretty light agenda as well, so we should be able to get all the way through it regardless. Hi, Ted. I like your yellow mask. It's very distinctive.\nSPEAKER S3: Hi, Sean. Uh, they were giving them out at the registration, and I have a whole bunch of very boring white ones, but, uh, it's very hard not to, uh, fall to the allure of bright and shiny colors. The advantage of being remote, though, is you get to to go and just show off your beard instead.\nSPEAKER S2: Mhm. Sure. Murray. Jump in.\nSPEAKER S4: How do you hear me now?\nSPEAKER S2: Still pretty faint. I can hear you, but it's pretty faint. Okay.\nSPEAKER S5: Uh, same problem as before. Thanks. I'll keep working on it.\nSPEAKER S2: All right, Niels, unless you got any objection, we'll get going here in, like, two minutes.\nSPEAKER S1: Yeah. It is.\nSPEAKER S4: How's that?\nSPEAKER S2: I think that's better.\nSPEAKER S5: You think it's better? Let me try one more. Turn it up a little more. There. How's that? More?\nSPEAKER S2: Much more. Better.\nSPEAKER S5: All right. Thanks.\nSPEAKER S2: Does not want to seem to let me share the slides via the share slides. So we're going to have a little screen fun. All right, I'll do this. I don't want to do that. That's a bad idea. Let's share this. And hopefully everyone sees this now. All right. It's probably time. So welcome to wish. Um, please make sure your video is turned off. Um, unless you're speaking as well as your microphone, a bunch of links for the video, um, how to get in audio channels and the minutes, which is also the note taking, um, mechanism as well. Um, I believe there was a QR code that comes in at the beginning that when you came in the room that you need to scan, um, to make sure that you get added to the blue sheets. It saves everybody from having to worry about cleaning pens. Um. Welcome to wish. Niels and I are the chairs. Hello. This is only the second session of the, uh, its meeting that you may have been at. This is, uh, Noel. Reminder the various policies that you, um, agree to, uh, adhere yourself to, uh, because you're participating. Um, lots of things in here. Lots of about IPR policy, um, kind of work in the group. Any harassment, uh, code of conduct, copyright, patents, etc. if you have any questions, um, we can answer them. Other people in the room can answer them. If you see or feel that anything is being done that's out of line with those, please contact the team. And this is kind of one that we wanted to highlight, which is the code of conduct is basically to try to treat everybody with respect, try to speak as slowly as possible, trying to limit the use of slang. I feel like they put that in just for me. Dispute ideas by using a reasonable argument. Um. Use your best engineering judgment to find the best solution for the whole of the internet, and contribute to the ongoing work. Thanks. And our agenda is pretty late today, so we're going to go to Administrivia. Um, we have one draft and we have some implementation experience that, uh, got bumped from the last time. And then we'll have some open time. I don't know if we're going to need 30 minutes to talk about the draft, because there's only one open, uh, pull request and two issues. And so we may be able to close that out and actually go for working group. Last call with this, uh, um, with this one draft, and that's really it. So I wonder, is Sergio available? Go ahead.\nSPEAKER S6: Hello? Yeah. I think that the my part is going to be fast, but we can spend later more time just thinking about the steps and things like that. Mhm. So you can go to the first slide.\nSPEAKER S2: Say again.\nSPEAKER S6: Can you go to the first please.\nSPEAKER S2: Hmm.\nSPEAKER S6: Well I can. Oh. Okay. This is not. I don't know how to do it.\nSPEAKER S2: Because he shared it and should be working.\nSPEAKER S6: Yeah, but in the index ready to be shared, there is only the we implemented with implementation experience in Janos. So there is no other DAC there.\nSPEAKER S2: Right? Can you shoot them? The slides to me again via email and I can see if I can get them up.\nSPEAKER S6: Um. Okay.\nSPEAKER S7: So he is.\nSPEAKER S2: Yeah. Because this came through. Oh, unless you updated those.\nSPEAKER S7: Um.\nSPEAKER S6: I updated it in the in the Google doc that you sent me.\nSPEAKER S2: Yep. And then I didn't upload the new version, so that would be a problem. Let me go do that now. Apologies, everyone.\nSPEAKER S6: That I have restored the the slides because it seems that you have ever written my my slides, but I have put it again in, in the in the slide deck on on on Google Drive. So there should be there.\nSPEAKER S8: Yes. I see them now trying to read. Do you want to share that again or. Should I do it.\nSPEAKER S2: Can you share them while I upload them?\nSPEAKER S8: Yep. Turns out I can't. I would have to restart Chrome. Sorry about that.\nSPEAKER S6: No, we're still not there. Yes. The the slides are rotated in the data tracker. Lorenzo. And also if you go to the to the meeting materials in the slides, the didn't they? They are also. Yeah, this is it. Finally.\nSPEAKER S9: Sorry about that, folks.\nSPEAKER S6: Okay, so, um, this is the list of changes between the the previous version of the draft and the and the latest one. Uh, there is one minor change related to the to the linear relation type of A that we have in the draft that will probably has the, um, a un of um with the UN IDF sweep. And we have rename it just to I server. And the main difference between the two drafts is the, the, the last open point that we have for the draft that was how to handle, um, patch requests that could be out of order before between a Apache require that was doing a are sending new historical candidates from the and one that was doing a restart and what happened when they were received out of order and how to to solve it. A the problem was presented last in the last IETF meeting, and it was agreed that we were going to go a we were going to implement it with the with the HTTP entity tag. And that's why this a this a the the patch, the the pull request that has been already merged into the draft and made available in the in the in the second version is is covering that a what the draft the the the the changes have done is that now we are associating a unique a value of an entity tag to each accession. This entity tag is an opaque, opaque value, so meaning that the if the the within the the with clients has not a have to take any kind of a or try to get any semantic semantic value of of, it is an opaque value and it is up to the server how to, um, how to choose the value and how it is generated. And it could be just an auto increment counter and Uuid or the, for example, the username, and it is up to to the to the server, how to to implement it and how to use it. And the entity value. Entity tag value must be returned both in the in the 281 created response to the original post request, or in any 200 okay response to a patch request that it is triggered, I restart? So this means that every time there is a new session, because it is either the initial one or the or because a new restart is triggered, the entity tag value has to be changed and reported back to the client. Then the the patch request for for Ise must contain an if match header with the last known value of the tag value, and then the. The server can check if the the entity the entity tag value that it is in the if match header, and is the same one that the one that he has for the for the session, and if it not, if it doesn't match it means that the the the the patch request is out of order and then it must reject it with a for one to a precondition failed, as in the as specified by the in the RPC. And then the pass request for restart must contain an if match value of an asterisk. Asterisk meaning that um, it didn't regard that the restart must happen regardless of which is the the the value of the entity tag. That means because you want to trigger the restart always and also a I. This is the one thing that we should check. I think that that it is valid according to the HTTP um specs, is that we should only a need to or should only the the the web client should only send the if match header for the request and not for the other requests that are not changing the the ice session, for example, in the HTTP delete, and also as a consequence of the that the batch request for a sending a Ice candidates must contain the the entity tag of the of the stars. Then the client must offer all iscandar Ice candidates that are gathered after sending an Ice restart until until it receives the the the updated entity tag. Um in the in the response. This is already something that we need to do anyway in the initial request, because you cannot send a a Ice candidate until you receive the the response to the to the post request. So this is something that a it was already requested or it was already required to be done before. And on the original, um, when I started the the session, and now we are also having to do it when there is an ongoing. So yeah.\nSPEAKER S2: We have we have two people in the queue I don't know, do you guys want to, uh, do your points now or do you want to wait till the end?\nSPEAKER S6: I have another so it's fine for the for them to. So I'm fine to to go on the queue.\nSPEAKER S2: All right. Julius.\nSPEAKER S10: Hello? Can you hear me? Yep. Okay, cool. Um, so could you please clarify? And I'd like to see it clarified in the draft how the server determines whether an SDP fragment is a is a restart or a um, or a candidate. Does it just look at the if match header or does it examine the SDP and look at the EU flag value, or does it do both?\nSPEAKER S6: If this has not changed that, how is this done? And it is a specified in the RPC for the ice fragment. And you have to check the username and password to see if they have changed between the one that you have and the one that it is a. For the the the one that you have for the client or not. So this is, this is according to I don't recall the the number of the RFC.\nSPEAKER S10: Okay. Sure.\nSPEAKER S6: But you have to you have to check the, the SDP fragment.\nSPEAKER S10: And is it not enough to check the if match value for an asterisk.\nSPEAKER S6: And you shouldn't I mean, let's, let's keep things where they should be. I mean probably probably it will work okay. But but the they are different mechanisms for different things. So I think that an implementation should check the, the the the I seen the username and password and password to detect the that it is a restart.\nSPEAKER S10: Okay. Okay.\nSPEAKER S6: That's just because they can have different semantics. So we must be modified in the future.\nSPEAKER S10: And okay. And I will have another comment about the document as a whole. So I'll go back to the end of the queue now.\nSPEAKER S6: Okay.\nSPEAKER S2: Jonathan do you want to hop up? Thanks.\nSPEAKER S11: Yeah. Jonathan Lennox um, I think the other probably another point you want to say is you can't start a nice restart while an existing Ice restart is pending. Basically, you can't have more than one ice restart in flight at a time. That's probably a requirement you want. Otherwise things get confusing as to which one actually is the current one. Um, I've seen this. Like nobody would probably do this on purpose, but I've seen this like when a device's network is flapping and it just thinks, oh, I have to do is restart right away. So you probably want to say, you know, wait till the previous ice, you get a response to the previous ice restart before you start another one.\nSPEAKER S6: Yeah, but what will happen if one question. Uh. That's that's when what will happen if, uh. If, for example, you have a flagging network, as you said, and the previous restart is not completing, so you have to wait for the timeout of the HTTP request.\nSPEAKER S11: Uh.\nSPEAKER S6: I will never. So the, the whole point of.\nSPEAKER S11: I mean, maybe or either that or you figure out how to handle it. The problem is that if you're if you got more than one request outstanding at a time, you're not sure which one actually, you know, is the current state.\nSPEAKER S6: Yeah. But I but for example, I would say that the restart happens because you are switching networks. So the previous HTTP request is not likely to have been received.\nSPEAKER S11: Or your or you didn't receive the response or was received, but you didn't get the response. Yes, or you haven't gotten the response yet. Who knows. But yeah, no, I agree. Well, I think I'm not sure what the requirements would be, but we should have a description how to handle this, because if you're not sure which request actually reached the server first, you could be uncertain which one you're actually supposed to, which one you should actually switch to. So might you might need some logic there. This is a case where the fact that SIP actually has a total sequence number ordering helps. In fact, you don't have a total sequence. Ordering here confuses things.\nSPEAKER S6: Okay, so maybe just the timestamps for the for the response would be enough for that to know which one is happened before.\nSPEAKER S12: I do love this job. I didn't understand in the description of patch. When you do a patch. Does the ETag value change or not?\nSPEAKER S6: Depends of the. The benefit is that the patch is for a nice restart. If it is, restart the. The entity tag will change because you are triggering. You are creating a new session, but it is. If the patch request is for an sending a new Ice candidate, it will not change.\nSPEAKER S12: Okay, can you make that clear in the in the in the doc.\nSPEAKER S6: Okay I will I will try to clarify.\nSPEAKER S12: Trying to figure it out. And I couldn't read it from the doc. And that's a comment to Jonathan. There is no universal ordering of uh candidates uh, in zip either or other Candidates don't exist. And if so, we're outside of CIP here.\nSPEAKER S1: Yeah, that's what I'm worried about. I can't hear you.\nSPEAKER S9: Julius.\nSPEAKER S10: Yeah. So that's a comment. Not about the latest changes. That's a comment about the document as a whole. If I understand the document correctly, the intent is that both the client and the server are monitoring is consent and reacting immediately to a retraction of consent. Is that correct? Um.\nSPEAKER S6: Yeah. But but this is a this is as a as WebRTC works. So we have not made change any change there. Yeah, sure.\nSPEAKER S10: But I'm saying that, uh, I feel that this should be stated normatively. So if you look at the places where consent is mentioned in the document, the only there is, uh, the normative there is normative language only in two places, and it feels incorrect and it feels incomplete. Sorry. So either you don't use normative language at all for US consent and refer to the right document by saying that you obey another RFC, or else you use normative language and you say, and you state precisely the behavior of the server and the client, and here you are halfway okay, from an editorial point that feels really weird in that you do mention two details in normative language and refer the rest to the web RTC documents. Okay, so I feel that's a that's an editorial issue, not a fundamental issue. So what I would like I might not be I might be the minority here. So I feel that you should be stating that in normative language clearly in this document, even though it repeats other documents. But that's just my opinion.\nSPEAKER S6: I don't have a strong opinion on that. I mean, I will just say I would like to get input on what is the best way of doing the the the tutorial of that. I mean, I'm fine with both ways. Not sure exactly which is the the the correct one of doing that, but I would be fine to, to change it to whatever is the the most appropriate one.\nSPEAKER S10: So perhaps I'll mention the thing that that initially bothered me. So in the last revision you had the fact that in any case, the server must, uh, react to a retraction of consent.\nSPEAKER S7: Mhm.\nSPEAKER S10: Okay. And that's a normative language. And I was wondering here, are you adding a new requirement here or is it something I'm already doing.\nSPEAKER S7: Mhm.\nSPEAKER S6: Yep. I mean a I think that it is valid. The concern I, I'm not sure exactly what is the formal way of doing that in the SEC. So I, we can just check it and and modify it to whatever best practices, best practices for this. But I'm fine. I mean, I understand your concern, so.\nSPEAKER S13: Thank you.\nSPEAKER S2: Adam. Go ahead.\nSPEAKER S5: Thanks.\nSPEAKER S14: So I wanted to comment on, um, what Harold was saying. The I think we really want to be careful here is that we don't try to define the ETag semantics here as much as, uh, pointing to the behavior described in 7232. Um, and from that perspective, I'm, I'm not sure the answer is correct, that it doesn't change when candidates arrive. I think when you're patching a resource, it's changing the resource value. And so the ETag is necessarily going to change. But again I think that's instead of defining the semantics in this document we should point to 7232 for them.\nSPEAKER S6: Okay, but I will like to ask you if you can, I mean, as a make a small PR just trying to. Well, so I can know exactly what, what or where are your concerns or just try to to put a GitHub issue so I can check the sadly the which part of the document needs to be changed?\nSPEAKER S14: Sure. Yeah, I'll do that. Um, I more responding to the the discussion in the room here. I'm I'm not exactly sure what the text says at the moment, but I'll, I'll look at it and, and, uh, open a PR if there needs to be a change. Thanks.\nSPEAKER S6: Yeah. I think that this is the, the the trade off is how verbose verbose do you have to do in the, in the document. So it is explicit about what needs to be done in by a web implementation instead of having to look at too many different drafts, or at least to have a more clear idea about uh, what to what needs to be done. But obviously we need to be precise on the on the language. So.\nSPEAKER S13: So, Sergio.\nSPEAKER S2: From experience here, um, I think the ISG has waffled over the years whether they want lowercase language, if you're repeating requirements from other drafts, as long as I think as long as you're consistent, to make sure that we know where the requirement came from, whether it's new or imported from another document, that's fine. The only problem with repeating the requirement is that it gets changed in the base document and not in the other document. And then there's this mismatch problem. But I think as long as you're clear to say as defined in RFC umpty squat um, in section block comma, then you put the requirement, I think it'll be fine.\nSPEAKER S7: Okay.\nSPEAKER S2: The key was now drained. So you can continue with the presentation. Sorry.\nSPEAKER S7: Yeah.\nSPEAKER S6: So next slide please. So well I said that. So I think that I would like to talk about next steps. There are no outstanding issues in the in the draft. There are two pending ones in the GitHub repository. But one is an old one by team that I will check with him. I don't think that he's on the on the meeting. No, but it was a one from the very beginning and I don't think that it is relevant anymore. And the other one was about the if we should specify the more about the HTTP error response code. I think that we are already doing that for the most of the requests that have a semantic or that needs, we need to to to provide response in case of something that happen. And for general errors like not found or things like that or internal server error. I think that and there is no need to to define that as we everyone should just follow the the HTTP response code that are already specified. So I know what is the the the procedure of continuing with the with the draft. Well, we need to make some editorial changes, but a probably the not sure if we can go to the working group last call or if we need to make this editorial change before before doing so.\nSPEAKER S2: So, Sergio, what I'd like to see is, um, to have you clear out the issues. Um, if they're old, like, close them out. Um, and the other pull request is just kind of, like, lingering there. If you can close this out and then anybody else can get their stuff in as quickly as possible, and then we can go to a working group. Last call.\nSPEAKER S7: Um, okay.\nSPEAKER S10: So, um, I'm so sorry, Sergio. I'm. I'm really sorry that I disagree with you on the error handling issue. And, uh, the reason I'm sorry is that it's horrible. Defining precisely all the error values is horribly tedious work. And I feel and I feel that that's not something that you should leave to the implementer. So, uh, if I'm implementing the server side of wish, I don't want to have to go through all of the http rfc's in order to find out which is the right error value to send at a given point when I have a failure. And when implementing your draft, I have had I have had the problem. So I've I wanted to get it done. So I have to say that I was more or less sending errors randomly, and that's something I felt the need for guidance telling me that if you have this kind of failure, send this error here. So some of them are obvious. If I have an implementation failure, if I have an unexpected error, I send internal server error, that's fine. But in cases where the client is sending something that mismatches and so on, um, whether to send which of the 400 errors or 500 errors to send, I feel that the draft needs a little bit more work on that because it's horrible work.\nSPEAKER S7: No no no no no.\nSPEAKER S6: But I mean, I'm not doing what I can do. This is the typical that please feel free to to submit a PR for solving that. But I'm not going to. But I mean, yes. For example, how is how can we how do we need to go into this? Because for example, do we need to specify what happens if someone sent us an invalid SDP? Uh, when when in the in the patch request? I think that we shouldn't. I mean, this is already a standard HTTP and we don't need to reference the the what code needs to be uh, be returned. If, for example, instead of an SDP, uh, we get a, a JSON, um, something there are a lot of things that we should, uh, we should not be specifying because it is just how, um, HDTV works. I mean, you have error responses that are defined for the, the, for the common cases. I think that we have to define responses, for example, a for when there are semantic issues. For example, I cannot think of anything right now that it is not in the draft. So it would be good if you could put you could say some example and we can check it.\nSPEAKER S10: So there was one on the list, which is, uh, you sent me a candidate that I don't understand. Do I ignore the candidate and return to hundred or to 202? I don't remember. Or do I inform the client that I couldn't pass this candidate? Okay. It's tricky because you can batch the candidate. Okay, so you answered something which I agree with. Uh, ignore the candidate and return success. But I feel that it should be in the draft.\nSPEAKER S7: Yeah. No, no.\nSPEAKER S6: And I have I have added that in the draft. Okay, but but if you if you check this is not about whatever code to return. It is what is the behavior of the server.\nSPEAKER S13: Yeah.\nSPEAKER S6: So that so that's these cases I, I completely agree that we have to to add anything that we can find in the server in the, in the, in the draft for example, because this is not just specifying which is the error code to return, it is if this is valid and what should be the behavior when receiving this kind of or having this kind of of a of candidate.\nSPEAKER S13: Okay.\nSPEAKER S10: What happens if you send me delete for a resource that no longer exists? Do I send 404. But that used to exist that has been turned down. But for for.\nSPEAKER S6: I mean it is standard for for node. I think that this is the most clear example of something that I don't think that needs to be needs to be on the on the draft.\nSPEAKER S10: Okay.\nSPEAKER S7: I mean.\nSPEAKER S6: The the first one, I, I agree that it has to be in the draft and it is it is in the draft. What to return if the if the if the resource is not formed is is the counter example of what I think. Don't think that it has to be in the draft.\nSPEAKER S10: Okay. Offer with Codex that I don't support.\nSPEAKER S6: This is the SDP negotiation. You have to return as an SDP with the Codex.\nSPEAKER S10: Okay? Okay. That's a silly one. So sorry.\nSPEAKER S6: You mean so so yeah.\nSPEAKER S10: Okay then I'll look for the draft and see whether there are any concrete other concrete cases that I missed here.\nSPEAKER S2: Is I get your, um. I feel your pain. Um, but I think one way that we start to ferret out a lot of these is actually by doing the working group last call. So I'd really like to get there in the next couple of weeks where we can fire this off. So I'll be watching the repo. And Sergio, I'll be talking with you to make sure that we, uh, make sure everything is dutifully, uh, knocked off as much as possible. And then we do the working group Last Call and see where we go. And then we can start talking about all the other issues of sending metadata and language support, subtitles, etc..\nSPEAKER S7: Mhm.\nSPEAKER S6: Okay. So I think that because I have already been working with some people that are implementing whip and are thinking about, I have received requests about how to can we add more functionalities to whip. So I think that my general question is if a once we have the Whip draft published or ready for publishing, if we have, we should be working on on adding new functionalities to whip. For example. The ones that comes immediately in mind to me is the how, for example, sending metadata alongside with the A with the with the audio and video. There are a lot of specs already available that are used in the traditional streaming that we could support and for example, multi-language support. If we want to support it and how or for example, how do we do subtitling with a with a with with that it is something that probably a I have a proposal ready to, to start being working on with a like for sending WebVTT over data channels. But this is a kind of a outside of the scope of the of the week working group, because we are not supposed to do any, any new draft or new specs for these kind of things. Probably this should go to a core and then we have to reference it from here. So no, seriously, I have the the Or we should extend the working group to handle these things or how we should do it.\nSPEAKER S2: Uh, Sergio, I too have the same question, but I guess we'll need to figure out how to do that. Um, because I know that we initially tightly scoped this working group's charter. So we may have to huddle with our aides to figure out what they want to do, whether it's, you know, this goes away and they all get dispatched, or they all go to core or wherever. Um, we'll definitely be looking at that if you have ideas. I think the, um, right thing to do is to start dropping drafts and then we can start thinking about it.\nSPEAKER S7: Yep.\nSPEAKER S8: Yeah, I was just checking our charter, and I think. Yeah, as Sean said, like, we need some some work to figure out how to proceed with it.\nSPEAKER S2: Thank you Sergio. I'm going to be looking forward to getting this one in working group last call, so we'll work through that. Uh, Lorenzo, I believe you're up, and we can drive the slides from here, so you can just say next slide.\nSPEAKER S15: You can also try to to pass the control to me. I can try to use the, the the mobile interface over here to control the slides.\nSPEAKER S2: Absolutely. How do I change it over to you.\nSPEAKER S7: Uh, you.\nSPEAKER S15: Can just hover over my name in the in the participants list, and there should be an icon that says pass control to Lorenzo.\nSPEAKER S2: Okay, let's do that. There we go. Look at that. It has I. I believe I'm doing that now.\nSPEAKER S7: Yeah.\nSPEAKER S2: All right. Cool.\nSPEAKER S15: Okay. Yeah. We added this new feature. Why not use it? You know.\nSPEAKER S2: Awesome.\nSPEAKER S15: Okay, I'll be brief, so I will. I won't bother bore you too much with all this. I just wanted to share some implementation experience, uh, with both the web client and server that we implemented as an open source, uh, an open source tool, and in particular using two completely different web RTC stacks, which was also helpful in terms of, uh, integration and interoperability as well. So, uh, I won't go too much into the detail of the on the implementation itself. So you can find more information in that blog post if you're interested. And I also made a presentation at, uh, at a conference in Chicago a few months ago, where I also went a bit more in detail about all the different aspects. But, um, I'll share some some details about both the server and client side implementation. So for the server side, we based it all on our own server, which is an open source implementation of a WebRTC server with different functionality, including an SFU and SFU is indeed what we use. We used in here so specifically Janus uses its own JSON based API. So rather than embedding the web API inside Janus itself, which is what Julius did in Galeon, for instance, if I recall correctly, uh, we chose a simpler and more loosely integrated approach, which was basically of placing a tiny wrapper in front of Janus itself, which means that we have a small, uh, server implementation that sits in front of Janus that implements the web API, and then it translates all the interactions on the website to interactions on the Janus side. So it translates the APIs, uh, on the fly. And of course, nothing needs to be changed on the WebRTC stack because that doesn't change. So it's a very thin layer on the signaling on a signaling level. And we implemented it very quickly using Node.js. So it's basically a very basic express based rest rest API for what implements the the API. And then the integration is is done programmatically as well. And of course it only takes care of the ingest part. So we make sure that the video gets to Janus. And then what happens after that is out of scope of the web server itself. So if you need to distribute it somehow, that's up to you. And as I mentioned, this is completely open source. So if you want to give that a try you just need to to clone the repo. And everything should, should be working. And just to give you an idea about how it works. So as I mentioned, it's very simply a application layer in front of Janus for what concerns the signaling. So you have a web client talking talking the whip language with this simple web server. The web server translates it to Janus requests, which means that eventually you end up with a WebRTC peer connection between the web client and the server that is being controlled by this simple web server. Ever. And as far as the this translation is concerned, it's actually quite trivial, which means that the same process could be done with other media servers as well. In this case, for instance, this is the HTTP post that originates the uh, the publishing process, uh, which means that as soon as we receive a new offer, we need to pass this to Django somehow. And since we are using the plugin with that, it means that we need to create a connection with Janus, create the resource that we need to talk to genres for that, and then we join an existing as a few room as if we were an actual participant. If we, even if we are not, as soon as we receive an answer back, which means that Janus has taken care of the negotiation process, we can send that answer back via whip back to the participant, which means that then the negotiation for the whip producer can start happening. And of course, the whip server also adds the needed resources. For instance, the, uh, the location header, so that you can then interact with the resource after that, which means that of course, we also support handling trickle candidates. And this is quite trivial because in this case we just need to translate between the SDP fragment format that we uses and the JSON based, uh, trickle signaling that Janus uses instead, which is relatively straightforward. Also when you group candidates. So no problems there. Of course, what happens when you start exchanging trickle candidates is that, uh, the actual size and details exchanges are going to happen between the producer and Janus itself. So the web server is not involved in the process after that, for Ice restarts, the process was a bit more complicated just because, uh, on the website, uh, we just use with just exchange the credentials, not the SDP. While Janus expects the SDP to update a session to trigger a restart, which means that the, uh, the web server needs to, to keep basically a copy of the original SDP that was sent via post. And so anytime that we receive new credentials from the producer, we just swap the credentials in this SDP that we had before we send it to Janus, we receive a complete SDP back, and then we extract the new credentials from this answer and only send those via via whip instead. So a bit more work, but not really that complicated. Uh, tearing down a session is also quite easy because we just need to basically tear down the resource on the other side whenever we receive a delete. Of course, uh, the counterpart may also be happening. So we may be detecting a peer connection going down because of Ice or TLS. And in that case, Janus can intercept it and notify that via the Janus API to the web server that is controlling it. And when that happens, the web server can then clean up the resources automatically so that if a peer connection was closed because there was a details alert but no signaling involved, for instance, we can still take care of cleaning everything up accordingly. And of course, I mean web server is nice, but we also wanted to have a web client to test it all, and we didn't really want to use a browser for that, because even though a web client basically needs an HTTP stack and a WebRTC stack, and so the browser is the obvious choice here, I wanted to test instead the more native solution, because that's what most broadcasters use anyway. So they use applications like OBS or extreme or others, which are all native solutions that allow them to to produce a broadcast in a more controlled way. Unfortunately, OBS WebRTC does exist but does not support Whip at the moment. It did support Whip in a very early stage last year, but right now it only supports the custom protocol. So I basically chose to use uh, GStreamer for the purpose because it does come with WebRTC stack in WebRTC bin. And I actually had already used this stack for a few other applications in the past, so I was partly familiar with it and I wanted to play with that. And most importantly, it is very modular and very powerful, which, as I explained later, basically allowed me to do some more prototyping and doing some interesting things with all these, uh, right away. And all this is also open source if you want to, to play with it a bit. So I encourage you to do that. And as far as the futures, uh, there are some limitations. So it's pretty much complete in terms of adherence to the, to the to the spec. But there are some limitations. So we do support critical settings. Stanton. Uh, either in advance or via the link header specified in the document. We support authorization via tokens, delete and so on and so forth. We can also do non-trivial if you want to, even though the spec does mandate support for trickle. And we have a way to force, uh, in case you need it, which would be pretty much the equivalent of calling ice transport relay when you do it from the browser, which can be helpful in some in some cases. And we chose to make the audio video pipelines completely customizable, which means that you choose using the streamer formats how you want, what you want to capture, and how you want to encode it. Up until the web part that is taken care of by the web client, which again gives you a lot of flexibility in terms of what you want to capture and how you want to send it, which was helpful in a few different use cases in particular. The problem is that at the moment, web parties have been has some limitations. So for instance, it does not support Ice restarts yet, which means that I could not test that part so far. And uh, there is a pull request to add support for that. But it's still it's still stuck for a while. And besides, there's also another limitation that we mentioned on the mailing list, which means that, uh, once you create a peer connection object, which means once you have generated your offer and sent it somewhere, you cannot add a stand or turn server after that point, which means that we cannot use, for instance, the link header in response to a post to add a stand and turn server together credentials. After we have sent the offer, we can only do it before, which means that at the moment we only support the link header when in response to the options before the post, which is a bit of a limitation, but hopefully that will be overcome soon as well. And finally at the moment this only oh sorry. At the moment this only supports Linux because that's what I use on my own laptop. But in theory it should be easy enough to port it to Windows and Mac OS as well. I just don't have much experience in development on those environments. So since this is open source, if you have a bit of experience in updating the makefiles to get it working there as well, I'd be this would be very welcome. And to conclude, I mean, this is how you can basically start a web client session. So for instance, in this case that address is actually real. So it's an address that I set up for the hackathon last ITF. And it's still active if you want to play with it a bit. So if you send if you create a web session at that address with that token, then you can just choose what you want to send as audio and video streams. And then, uh, that should just work. And you can test it using this web page over here. So since basically the, uh, the whip the Whip server talks to John to create a fake participant in a room, basically all you need to make sure that it is actually working is joining the same room somehow. So that link allows you to join as a passive participant. If you see something, everything is working. And in this case, we are capturing, uh, a fake audio source and a fake video source. But this could be an actual webcam. This could be a streaming from a file or something else. So everything that GStreamer supports you can actually capture here. Basically that's the main idea. And just to just a couple of notes on the tags. So I started experimenting with those as well. Uh, in a couple of pull requests. And right now I made some assumptions and some of those we have also addressed them in the discussion before, so I won't bother you too much with those. Uh, I was I just wanted to conclude with the, the fact that with the client, we can actually do some experimentation as well. So if you do want to make some experimentations and early prototyping with Whip and WebRTC in general, it may be a useful tool because, for instance, one aspect that is important in broadcasting is the ability to use existing broadcasting tools for WebRTC as well, which is the main reason why WebRTC has not been adopted much in the broadcasting industry so far, mainly because tools like OBS that pretty much all streamers use do not support WebRTC out of the box. So I wanted to check if I could actually already use OBS as a way to produce a stream and then send it via WebRTC somehow, and I prototype prototype the way using an intermediate technology that is called NDI, which is basically a standard de facto in the broadcast industry. Basically I Adobe's I produce something in OBS configured an NDI output in OBS. And since this streamer has a plugin to use NDI as a source, all I needed to do was start the clients to capture from the NDI source that was generated, possibly on another laptop or there, and then capture OBS was producing and send it via WebRTC to Janus, which is what I did in in this very silly. This very silly demo over here where I was capturing myself playing guitar. I did a lot of gifs, like this was the 90s website and then basically started, uh, I produced this stream live and then via NDI passed it to the client. The web client sent it to Janus, and I had, uh, in a demo, there were about 20 people watching the WebRTC concert in real time. Basically, that was the idea. But of course, there are more interesting things that you can do beyond beyond the silly experiment that I did because, for instance, just this week Sergio used the web client to prototype, adding support for new pixel formats and H264 profiles in Chrome itself, because basically GStreamer allows you to encode everything the way that you want, which means that you can easily inject a WebRTC stream that is not strictly what the web RTC browser expects. So you can create something and then check what the browser will accept or not that way. And that is basically all. So I don't know if I have time for questions or if you have any in the first place. Thank you.\nSPEAKER S8: I think we're at the top of the hour, but let's see. Are there any questions? Otherwise thank you Renzo. Always helpful to get feedback from actual implementations. Um, and with that, I think, uh, thank you for attending wish. Sounds like we're good track to, uh, make it to working group. Last call, hopefully soon. And, uh, Sean and me will take the item to figure out, uh, what to do with extensions regarding metadata and subtitles and that kind of stuff. Thank you very much for attending wish, and hopefully you have a good and nice remaining IETF week.\nSPEAKER S2: Yeah, and sorry for the chair fail there at the beginning.\nSPEAKER S8: Oh yes. Sorry about that. Um. My Chrome had like, uh, asked me for permissions to do the screen recording and would have required, like to restart Chrome. I should have tested that before.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.985411202489442
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Good morning.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Good morning.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "According to my time clock, it's time to start.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "But I think we're going to give people a couple of minutes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "We have a pretty light agenda as well, so we should be able to get all the way through it regardless.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, Ted.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "I like your yellow mask.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "It's very distinctive.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Hi, Sean.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they were giving them out at the registration, and I have a whole bunch of very boring white ones, but, uh, it's very hard not to, uh, fall to the allure of bright and shiny colors.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "The advantage of being remote, though, is you get to to go and just show off your beard instead.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Mhm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Murray.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Jump in.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: How do you hear me now?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Still pretty faint.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "I can hear you, but it's pretty faint.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, same problem as before.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "I'll keep working on it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right, Niels, unless you got any objection, we'll get going here in, like, two minutes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "It is.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: How's that?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: I think that's better.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: You think it's better?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "Let me try one more.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Turn it up a little more.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "There.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "How's that?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "More?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Much more.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Better.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: All right.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Does not want to seem to let me share the slides via the share slides.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "So we're going to have a little screen fun.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "All right, I'll do this.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "I don't want to do that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "That's a bad idea.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Let's share this.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "And hopefully everyone sees this now.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "It's probably time.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "So welcome to wish.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Um, please make sure your video is turned off.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "Um, unless you're speaking as well as your microphone, a bunch of links for the video, um, how to get in audio channels and the minutes, which is also the note taking, um, mechanism as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I believe there was a QR code that comes in at the beginning that when you came in the room that you need to scan, um, to make sure that you get added to the blue sheets.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "It saves everybody from having to worry about cleaning pens.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to wish.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Niels and I are the chairs.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "This is only the second session of the, uh, its meeting that you may have been at.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "This is, uh, Noel.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Reminder the various policies that you, um, agree to, uh, adhere yourself to, uh, because you're participating.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, lots of things in here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Lots of about IPR policy, um, kind of work in the group.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Any harassment, uh, code of conduct, copyright, patents, etc.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "if you have any questions, um, we can answer them.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Other people in the room can answer them.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "If you see or feel that anything is being done that's out of line with those, please contact the team.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "And this is kind of one that we wanted to highlight, which is the code of conduct is basically to try to treat everybody with respect, try to speak as slowly as possible, trying to limit the use of slang.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "I feel like they put that in just for me.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Dispute ideas by using a reasonable argument.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "Use your best engineering judgment to find the best solution for the whole of the internet, and contribute to the ongoing work.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "And our agenda is pretty late today, so we're going to go to Administrivia.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have one draft and we have some implementation experience that, uh, got bumped from the last time.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "And then we'll have some open time.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if we're going to need 30 minutes to talk about the draft, because there's only one open, uh, pull request and two issues.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "And so we may be able to close that out and actually go for working group.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Last call with this, uh, um, with this one draft, and that's really it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "So I wonder, is Sergio available?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Hello?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "I think that the my part is going to be fast, but we can spend later more time just thinking about the steps and things like that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Mhm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "So you can go to the first slide.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Say again.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Can you go to the first please.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Hmm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Well I can.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "This is not.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know how to do it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Because he shared it and should be working.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, but in the index ready to be shared, there is only the we implemented with implementation experience in Janos.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "So there is no other DAC there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Can you shoot them?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "The slides to me again via email and I can see if I can get them up.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So he is.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Because this came through.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, unless you updated those.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I updated it in the in the Google doc that you sent me.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "And then I didn't upload the new version, so that would be a problem.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Let me go do that now.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Apologies, everyone.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: That I have restored the the slides because it seems that you have ever written my my slides, but I have put it again in, in the in the slide deck on on on Google Drive.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So there should be there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "I see them now trying to read.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want to share that again or.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Should I do it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Can you share them while I upload them?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Turns out I can't.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "I would have to restart Chrome.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry about that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: No, we're still not there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "The the slides are rotated in the data tracker.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Lorenzo.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "And also if you go to the to the meeting materials in the slides, the didn't they?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "They are also.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, this is it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Finally.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Sorry about that, folks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, so, um, this is the list of changes between the the previous version of the draft and the and the latest one.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there is one minor change related to the to the linear relation type of A that we have in the draft that will probably has the, um, a un of um with the UN IDF sweep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "And we have rename it just to I server.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "And the main difference between the two drafts is the, the, the last open point that we have for the draft that was how to handle, um, patch requests that could be out of order before between a Apache require that was doing a are sending new historical candidates from the and one that was doing a restart and what happened when they were received out of order and how to to solve it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "A the problem was presented last in the last IETF meeting, and it was agreed that we were going to go a we were going to implement it with the with the HTTP entity tag.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "And that's why this a this a the the patch, the the pull request that has been already merged into the draft and made available in the in the in the second version is is covering that a what the draft the the the the changes have done is that now we are associating a unique a value of an entity tag to each accession.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "This entity tag is an opaque, opaque value, so meaning that the if the the within the the with clients has not a have to take any kind of a or try to get any semantic semantic value of of, it is an opaque value and it is up to the server how to, um, how to choose the value and how it is generated.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "And it could be just an auto increment counter and Uuid or the, for example, the username, and it is up to to the to the server, how to to implement it and how to use it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "And the entity value.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Entity tag value must be returned both in the in the 281 created response to the original post request, or in any 200 okay response to a patch request that it is triggered, I restart?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "So this means that every time there is a new session, because it is either the initial one or the or because a new restart is triggered, the entity tag value has to be changed and reported back to the client.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Then the the patch request for for Ise must contain an if match header with the last known value of the tag value, and then the.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "The server can check if the the entity the entity tag value that it is in the if match header, and is the same one that the one that he has for the for the session, and if it not, if it doesn't match it means that the the the the patch request is out of order and then it must reject it with a for one to a precondition failed, as in the as specified by the in the RPC.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "And then the pass request for restart must contain an if match value of an asterisk.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Asterisk meaning that um, it didn't regard that the restart must happen regardless of which is the the the value of the entity tag.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "That means because you want to trigger the restart always and also a I.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "This is the one thing that we should check.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "I think that that it is valid according to the HTTP um specs, is that we should only a need to or should only the the the web client should only send the if match header for the request and not for the other requests that are not changing the the ice session, for example, in the HTTP delete, and also as a consequence of the that the batch request for a sending a Ice candidates must contain the the entity tag of the of the stars.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Then the client must offer all iscandar Ice candidates that are gathered after sending an Ice restart until until it receives the the the updated entity tag.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Um in the in the response.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "This is already something that we need to do anyway in the initial request, because you cannot send a a Ice candidate until you receive the the response to the to the post request.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "So this is something that a it was already requested or it was already required to be done before.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "And on the original, um, when I started the the session, and now we are also having to do it when there is an ongoing.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: We have we have two people in the queue I don't know, do you guys want to, uh, do your points now or do you want to wait till the end?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I have another so it's fine for the for them to.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm fine to to go on the queue.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Julius.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Hello?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Can you hear me?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, cool.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so could you please clarify?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "And I'd like to see it clarified in the draft how the server determines whether an SDP fragment is a is a restart or a um, or a candidate.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Does it just look at the if match header or does it examine the SDP and look at the EU flag value, or does it do both?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: If this has not changed that, how is this done?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "And it is a specified in the RPC for the ice fragment.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "And you have to check the username and password to see if they have changed between the one that you have and the one that it is a.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "For the the the one that you have for the client or not.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "So this is, this is according to I don't recall the the number of the RFC.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: But you have to you have to check the, the SDP fragment.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: And is it not enough to check the if match value for an asterisk.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: And you shouldn't I mean, let's, let's keep things where they should be.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "I mean probably probably it will work okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "But but the they are different mechanisms for different things.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that an implementation should check the, the the the I seen the username and password and password to detect the that it is a restart.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: That's just because they can have different semantics.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "So we must be modified in the future.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: And okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "And I will have another comment about the document as a whole.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll go back to the end of the queue now.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Jonathan do you want to hop up?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "Jonathan Lennox um, I think the other probably another point you want to say is you can't start a nice restart while an existing Ice restart is pending.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, you can't have more than one ice restart in flight at a time.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "That's probably a requirement you want.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise things get confusing as to which one actually is the current one.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I've seen this.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Like nobody would probably do this on purpose, but I've seen this like when a device's network is flapping and it just thinks, oh, I have to do is restart right away.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "So you probably want to say, you know, wait till the previous ice, you get a response to the previous ice restart before you start another one.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, but what will happen if one question.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "That's that's when what will happen if, uh.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "If, for example, you have a flagging network, as you said, and the previous restart is not completing, so you have to wait for the timeout of the HTTP request.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Uh.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I will never.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "So the, the whole point of.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: I mean, maybe or either that or you figure out how to handle it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "The problem is that if you're if you got more than one request outstanding at a time, you're not sure which one actually, you know, is the current state.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "But I but for example, I would say that the restart happens because you are switching networks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "So the previous HTTP request is not likely to have been received.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Or your or you didn't receive the response or was received, but you didn't get the response.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, or you haven't gotten the response yet.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Who knows.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah, no, I agree.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I think I'm not sure what the requirements would be, but we should have a description how to handle this, because if you're not sure which request actually reached the server first, you could be uncertain which one you're actually supposed to, which one you should actually switch to.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "So might you might need some logic there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "This is a case where the fact that SIP actually has a total sequence number ordering helps.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, you don't have a total sequence.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Ordering here confuses things.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, so maybe just the timestamps for the for the response would be enough for that to know which one is happened before.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: I do love this job.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "I didn't understand in the description of patch.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "When you do a patch.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Does the ETag value change or not?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Depends of the.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "The benefit is that the patch is for a nice restart.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "If it is, restart the.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "The entity tag will change because you are triggering.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "You are creating a new session, but it is.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "If the patch request is for an sending a new Ice candidate, it will not change.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Okay, can you make that clear in the in the in the doc.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay I will I will try to clarify.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S12: Trying to figure it out.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "And I couldn't read it from the doc.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "And that's a comment to Jonathan.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "There is no universal ordering of uh candidates uh, in zip either or other Candidates don't exist.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "And if so, we're outside of CIP here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, that's what I'm worried about.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "I can't hear you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Julius.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "So that's a comment.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Not about the latest changes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "That's a comment about the document as a whole.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "If I understand the document correctly, the intent is that both the client and the server are monitoring is consent and reacting immediately to a retraction of consent.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "Is that correct?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "But but this is a this is as a as WebRTC works.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "So we have not made change any change there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, sure.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: But I'm saying that, uh, I feel that this should be stated normatively.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "So if you look at the places where consent is mentioned in the document, the only there is, uh, the normative there is normative language only in two places, and it feels incorrect and it feels incomplete.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "So either you don't use normative language at all for US consent and refer to the right document by saying that you obey another RFC, or else you use normative language and you say, and you state precisely the behavior of the server and the client, and here you are halfway okay, from an editorial point that feels really weird in that you do mention two details in normative language and refer the rest to the web RTC documents.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so I feel that's a that's an editorial issue, not a fundamental issue.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "So what I would like I might not be I might be the minority here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "So I feel that you should be stating that in normative language clearly in this document, even though it repeats other documents.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "But that's just my opinion.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I don't have a strong opinion on that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I will just say I would like to get input on what is the best way of doing the the the tutorial of that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I'm fine with both ways.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Not sure exactly which is the the the correct one of doing that, but I would be fine to, to change it to whatever is the the most appropriate one.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: So perhaps I'll mention the thing that that initially bothered me.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "So in the last revision you had the fact that in any case, the server must, uh, react to a retraction of consent.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Mhm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "And that's a normative language.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "And I was wondering here, are you adding a new requirement here or is it something I'm already doing.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Mhm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "I mean a I think that it is valid.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "The concern I, I'm not sure exactly what is the formal way of doing that in the SEC.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "So I, we can just check it and and modify it to whatever best practices, best practices for this.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "But I'm fine.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I understand your concern, so.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Thank you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Adam.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S14: So I wanted to comment on, um, what Harold was saying.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "The I think we really want to be careful here is that we don't try to define the ETag semantics here as much as, uh, pointing to the behavior described in 7232.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and from that perspective, I'm, I'm not sure the answer is correct, that it doesn't change when candidates arrive.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "I think when you're patching a resource, it's changing the resource value.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "And so the ETag is necessarily going to change.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "But again I think that's instead of defining the semantics in this document we should point to 7232 for them.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, but I will like to ask you if you can, I mean, as a make a small PR just trying to.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Well, so I can know exactly what, what or where are your concerns or just try to to put a GitHub issue so I can check the sadly the which part of the document needs to be changed?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S14: Sure.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I'll do that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I more responding to the the discussion in the room here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "I'm I'm not exactly sure what the text says at the moment, but I'll, I'll look at it and, and, uh, open a PR if there needs to be a change.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "I think that this is the, the the trade off is how verbose verbose do you have to do in the, in the document.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "So it is explicit about what needs to be done in by a web implementation instead of having to look at too many different drafts, or at least to have a more clear idea about uh, what to what needs to be done.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "But obviously we need to be precise on the on the language.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: So, Sergio.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: From experience here, um, I think the ISG has waffled over the years whether they want lowercase language, if you're repeating requirements from other drafts, as long as I think as long as you're consistent, to make sure that we know where the requirement came from, whether it's new or imported from another document, that's fine.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "The only problem with repeating the requirement is that it gets changed in the base document and not in the other document.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "And then there's this mismatch problem.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "But I think as long as you're clear to say as defined in RFC umpty squat um, in section block comma, then you put the requirement, I think it'll be fine.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: The key was now drained.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "So you can continue with the presentation.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So next slide please.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "So well I said that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that I would like to talk about next steps.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "There are no outstanding issues in the in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "There are two pending ones in the GitHub repository.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "But one is an old one by team that I will check with him.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think that he's on the on the meeting.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "No, but it was a one from the very beginning and I don't think that it is relevant anymore.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And the other one was about the if we should specify the more about the HTTP error response code.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "I think that we are already doing that for the most of the requests that have a semantic or that needs, we need to to to provide response in case of something that happen.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "And for general errors like not found or things like that or internal server error.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "I think that and there is no need to to define that as we everyone should just follow the the HTTP response code that are already specified.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "So I know what is the the the procedure of continuing with the with the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we need to make some editorial changes, but a probably the not sure if we can go to the working group last call or if we need to make this editorial change before before doing so.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: So, Sergio, what I'd like to see is, um, to have you clear out the issues.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if they're old, like, close them out.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the other pull request is just kind of, like, lingering there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "If you can close this out and then anybody else can get their stuff in as quickly as possible, and then we can go to a working group.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: So, um, I'm so sorry, Sergio.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "I'm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "I'm really sorry that I disagree with you on the error handling issue.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, the reason I'm sorry is that it's horrible.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "Defining precisely all the error values is horribly tedious work.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "And I feel and I feel that that's not something that you should leave to the implementer.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, if I'm implementing the server side of wish, I don't want to have to go through all of the http rfc's in order to find out which is the right error value to send at a given point when I have a failure.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "And when implementing your draft, I have had I have had the problem.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "So I've I wanted to get it done.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So I have to say that I was more or less sending errors randomly, and that's something I felt the need for guidance telling me that if you have this kind of failure, send this error here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "So some of them are obvious.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "If I have an implementation failure, if I have an unexpected error, I send internal server error, that's fine.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "But in cases where the client is sending something that mismatches and so on, um, whether to send which of the 400 errors or 500 errors to send, I feel that the draft needs a little bit more work on that because it's horrible work.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: No no no no no.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: But I mean, I'm not doing what I can do.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "This is the typical that please feel free to to submit a PR for solving that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "But I'm not going to.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "But I mean, yes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "For example, how is how can we how do we need to go into this?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Because for example, do we need to specify what happens if someone sent us an invalid SDP?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, when when in the in the patch request?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "I think that we shouldn't.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, this is already a standard HTTP and we don't need to reference the the what code needs to be uh, be returned.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "If, for example, instead of an SDP, uh, we get a, a JSON, um, something there are a lot of things that we should, uh, we should not be specifying because it is just how, um, HDTV works.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, you have error responses that are defined for the, the, for the common cases.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "I think that we have to define responses, for example, a for when there are semantic issues.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "For example, I cannot think of anything right now that it is not in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "So it would be good if you could put you could say some example and we can check it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: So there was one on the list, which is, uh, you sent me a candidate that I don't understand.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "Do I ignore the candidate and return to hundred or to 202?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I don't remember.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Or do I inform the client that I couldn't pass this candidate?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "It's tricky because you can batch the candidate.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so you answered something which I agree with.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, ignore the candidate and return success.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "But I feel that it should be in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "No, no.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: And I have I have added that in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, but but if you if you check this is not about whatever code to return.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "It is what is the behavior of the server.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So that so that's these cases I, I completely agree that we have to to add anything that we can find in the server in the, in the, in the draft for example, because this is not just specifying which is the error code to return, it is if this is valid and what should be the behavior when receiving this kind of or having this kind of of a of candidate.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S13: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: What happens if you send me delete for a resource that no longer exists?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Do I send 404.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "But that used to exist that has been turned down.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "But for for.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I mean it is standard for for node.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "I think that this is the most clear example of something that I don't think that needs to be needs to be on the on the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I mean.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: The the first one, I, I agree that it has to be in the draft and it is it is in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "What to return if the if the if the resource is not formed is is the counter example of what I think.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Don't think that it has to be in the draft.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Offer with Codex that I don't support.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: This is the SDP negotiation.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "You have to return as an SDP with the Codex.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "That's a silly one.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "So sorry.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: You mean so so yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay then I'll look for the draft and see whether there are any concrete other concrete cases that I missed here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Is I get your, um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "I feel your pain.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think one way that we start to ferret out a lot of these is actually by doing the working group last call.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "So I'd really like to get there in the next couple of weeks where we can fire this off.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll be watching the repo.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "And Sergio, I'll be talking with you to make sure that we, uh, make sure everything is dutifully, uh, knocked off as much as possible.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "And then we do the working group Last Call and see where we go.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "And then we can start talking about all the other issues of sending metadata and language support, subtitles, etc..",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Mhm.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that because I have already been working with some people that are implementing whip and are thinking about, I have received requests about how to can we add more functionalities to whip.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "So I think that my general question is if a once we have the Whip draft published or ready for publishing, if we have, we should be working on on adding new functionalities to whip.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "For example.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "The ones that comes immediately in mind to me is the how, for example, sending metadata alongside with the A with the with the audio and video.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "There are a lot of specs already available that are used in the traditional streaming that we could support and for example, multi-language support.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "If we want to support it and how or for example, how do we do subtitling with a with a with with that it is something that probably a I have a proposal ready to, to start being working on with a like for sending WebVTT over data channels.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "But this is a kind of a outside of the scope of the of the week working group, because we are not supposed to do any, any new draft or new specs for these kind of things.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Probably this should go to a core and then we have to reference it from here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "So no, seriously, I have the the Or we should extend the working group to handle these things or how we should do it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, Sergio, I too have the same question, but I guess we'll need to figure out how to do that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because I know that we initially tightly scoped this working group's charter.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "So we may have to huddle with our aides to figure out what they want to do, whether it's, you know, this goes away and they all get dispatched, or they all go to core or wherever.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll definitely be looking at that if you have ideas.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "I think the, um, right thing to do is to start dropping drafts and then we can start thinking about it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yep.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, I was just checking our charter, and I think.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, as Sean said, like, we need some some work to figure out how to proceed with it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you Sergio.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to be looking forward to getting this one in working group last call, so we'll work through that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Lorenzo, I believe you're up, and we can drive the slides from here, so you can just say next slide.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: You can also try to to pass the control to me.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "I can try to use the, the the mobile interface over here to control the slides.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Absolutely.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "How do I change it over to you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: Can just hover over my name in the in the participants list, and there should be an icon that says pass control to Lorenzo.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay, let's do that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "There we go.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Look at that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "It has I.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "I believe I'm doing that now.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: All right.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Cool.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: Okay.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "We added this new feature.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "Why not use it?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "You know.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Awesome.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S15: Okay, I'll be brief, so I will.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "I won't bother bore you too much with all this.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "I just wanted to share some implementation experience, uh, with both the web client and server that we implemented as an open source, uh, an open source tool, and in particular using two completely different web RTC stacks, which was also helpful in terms of, uh, integration and interoperability as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I won't go too much into the detail of the on the implementation itself.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "So you can find more information in that blog post if you're interested.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "And I also made a presentation at, uh, at a conference in Chicago a few months ago, where I also went a bit more in detail about all the different aspects.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, I'll share some some details about both the server and client side implementation.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "So for the server side, we based it all on our own server, which is an open source implementation of a WebRTC server with different functionality, including an SFU and SFU is indeed what we use.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "We used in here so specifically Janus uses its own JSON based API.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "So rather than embedding the web API inside Janus itself, which is what Julius did in Galeon, for instance, if I recall correctly, uh, we chose a simpler and more loosely integrated approach, which was basically of placing a tiny wrapper in front of Janus itself, which means that we have a small, uh, server implementation that sits in front of Janus that implements the web API, and then it translates all the interactions on the website to interactions on the Janus side.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "So it translates the APIs, uh, on the fly.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, nothing needs to be changed on the WebRTC stack because that doesn't change.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "So it's a very thin layer on the signaling on a signaling level.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "And we implemented it very quickly using Node.js.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "So it's basically a very basic express based rest rest API for what implements the the API.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "And then the integration is is done programmatically as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "And of course it only takes care of the ingest part.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "So we make sure that the video gets to Janus.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "And then what happens after that is out of scope of the web server itself.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "So if you need to distribute it somehow, that's up to you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "And as I mentioned, this is completely open source.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "So if you want to give that a try you just need to to clone the repo.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "And everything should, should be working.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "And just to give you an idea about how it works.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "So as I mentioned, it's very simply a application layer in front of Janus for what concerns the signaling.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "So you have a web client talking talking the whip language with this simple web server.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "The web server translates it to Janus requests, which means that eventually you end up with a WebRTC peer connection between the web client and the server that is being controlled by this simple web server.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Ever.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "And as far as the this translation is concerned, it's actually quite trivial, which means that the same process could be done with other media servers as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "In this case, for instance, this is the HTTP post that originates the uh, the publishing process, uh, which means that as soon as we receive a new offer, we need to pass this to Django somehow.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "And since we are using the plugin with that, it means that we need to create a connection with Janus, create the resource that we need to talk to genres for that, and then we join an existing as a few room as if we were an actual participant.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "If we, even if we are not, as soon as we receive an answer back, which means that Janus has taken care of the negotiation process, we can send that answer back via whip back to the participant, which means that then the negotiation for the whip producer can start happening.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, the whip server also adds the needed resources.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "For instance, the, uh, the location header, so that you can then interact with the resource after that, which means that of course, we also support handling trickle candidates.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "And this is quite trivial because in this case we just need to translate between the SDP fragment format that we uses and the JSON based, uh, trickle signaling that Janus uses instead, which is relatively straightforward.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Also when you group candidates.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "So no problems there.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, what happens when you start exchanging trickle candidates is that, uh, the actual size and details exchanges are going to happen between the producer and Janus itself.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "So the web server is not involved in the process after that, for Ice restarts, the process was a bit more complicated just because, uh, on the website, uh, we just use with just exchange the credentials, not the SDP.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "While Janus expects the SDP to update a session to trigger a restart, which means that the, uh, the web server needs to, to keep basically a copy of the original SDP that was sent via post.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "And so anytime that we receive new credentials from the producer, we just swap the credentials in this SDP that we had before we send it to Janus, we receive a complete SDP back, and then we extract the new credentials from this answer and only send those via via whip instead.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "So a bit more work, but not really that complicated.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, tearing down a session is also quite easy because we just need to basically tear down the resource on the other side whenever we receive a delete.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Of course, uh, the counterpart may also be happening.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "So we may be detecting a peer connection going down because of Ice or TLS.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "And in that case, Janus can intercept it and notify that via the Janus API to the web server that is controlling it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "And when that happens, the web server can then clean up the resources automatically so that if a peer connection was closed because there was a details alert but no signaling involved, for instance, we can still take care of cleaning everything up accordingly.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, I mean web server is nice, but we also wanted to have a web client to test it all, and we didn't really want to use a browser for that, because even though a web client basically needs an HTTP stack and a WebRTC stack, and so the browser is the obvious choice here, I wanted to test instead the more native solution, because that's what most broadcasters use anyway.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "So they use applications like OBS or extreme or others, which are all native solutions that allow them to to produce a broadcast in a more controlled way.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Unfortunately, OBS WebRTC does exist but does not support Whip at the moment.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "It did support Whip in a very early stage last year, but right now it only supports the custom protocol.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "So I basically chose to use uh, GStreamer for the purpose because it does come with WebRTC stack in WebRTC bin.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "And I actually had already used this stack for a few other applications in the past, so I was partly familiar with it and I wanted to play with that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "And most importantly, it is very modular and very powerful, which, as I explained later, basically allowed me to do some more prototyping and doing some interesting things with all these, uh, right away.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "And all this is also open source if you want to, to play with it a bit.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "So I encourage you to do that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "And as far as the futures, uh, there are some limitations.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "So it's pretty much complete in terms of adherence to the, to the to the spec.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "But there are some limitations.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "So we do support critical settings.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "Stanton.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, either in advance or via the link header specified in the document.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "We support authorization via tokens, delete and so on and so forth.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "We can also do non-trivial if you want to, even though the spec does mandate support for trickle.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "And we have a way to force, uh, in case you need it, which would be pretty much the equivalent of calling ice transport relay when you do it from the browser, which can be helpful in some in some cases.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "And we chose to make the audio video pipelines completely customizable, which means that you choose using the streamer formats how you want, what you want to capture, and how you want to encode it.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Up until the web part that is taken care of by the web client, which again gives you a lot of flexibility in terms of what you want to capture and how you want to send it, which was helpful in a few different use cases in particular.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "The problem is that at the moment, web parties have been has some limitations.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "So for instance, it does not support Ice restarts yet, which means that I could not test that part so far.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, there is a pull request to add support for that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "But it's still it's still stuck for a while.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "And besides, there's also another limitation that we mentioned on the mailing list, which means that, uh, once you create a peer connection object, which means once you have generated your offer and sent it somewhere, you cannot add a stand or turn server after that point, which means that we cannot use, for instance, the link header in response to a post to add a stand and turn server together credentials.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "After we have sent the offer, we can only do it before, which means that at the moment we only support the link header when in response to the options before the post, which is a bit of a limitation, but hopefully that will be overcome soon as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "And finally at the moment this only oh sorry.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "At the moment this only supports Linux because that's what I use on my own laptop.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "But in theory it should be easy enough to port it to Windows and Mac OS as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "I just don't have much experience in development on those environments.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "So since this is open source, if you have a bit of experience in updating the makefiles to get it working there as well, I'd be this would be very welcome.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "And to conclude, I mean, this is how you can basically start a web client session.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "So for instance, in this case that address is actually real.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "So it's an address that I set up for the hackathon last ITF.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "And it's still active if you want to play with it a bit.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "So if you send if you create a web session at that address with that token, then you can just choose what you want to send as audio and video streams.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "And then, uh, that should just work.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "And you can test it using this web page over here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "So since basically the, uh, the whip the Whip server talks to John to create a fake participant in a room, basically all you need to make sure that it is actually working is joining the same room somehow.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "So that link allows you to join as a passive participant.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "If you see something, everything is working.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "And in this case, we are capturing, uh, a fake audio source and a fake video source.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "But this could be an actual webcam.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "This could be a streaming from a file or something else.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "So everything that GStreamer supports you can actually capture here.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "Basically that's the main idea.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "And just to just a couple of notes on the tags.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "So I started experimenting with those as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in a couple of pull requests.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "And right now I made some assumptions and some of those we have also addressed them in the discussion before, so I won't bother you too much with those.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I was I just wanted to conclude with the, the fact that with the client, we can actually do some experimentation as well.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "So if you do want to make some experimentations and early prototyping with Whip and WebRTC in general, it may be a useful tool because, for instance, one aspect that is important in broadcasting is the ability to use existing broadcasting tools for WebRTC as well, which is the main reason why WebRTC has not been adopted much in the broadcasting industry so far, mainly because tools like OBS that pretty much all streamers use do not support WebRTC out of the box.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "So I wanted to check if I could actually already use OBS as a way to produce a stream and then send it via WebRTC somehow, and I prototype prototype the way using an intermediate technology that is called NDI, which is basically a standard de facto in the broadcast industry.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "Basically I Adobe's I produce something in OBS configured an NDI output in OBS.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "And since this streamer has a plugin to use NDI as a source, all I needed to do was start the clients to capture from the NDI source that was generated, possibly on another laptop or there, and then capture OBS was producing and send it via WebRTC to Janus, which is what I did in in this very silly.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "This very silly demo over here where I was capturing myself playing guitar.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "I did a lot of gifs, like this was the 90s website and then basically started, uh, I produced this stream live and then via NDI passed it to the client.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "The web client sent it to Janus, and I had, uh, in a demo, there were about 20 people watching the WebRTC concert in real time.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "Basically, that was the idea.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "But of course, there are more interesting things that you can do beyond beyond the silly experiment that I did because, for instance, just this week Sergio used the web client to prototype, adding support for new pixel formats and H264 profiles in Chrome itself, because basically GStreamer allows you to encode everything the way that you want, which means that you can easily inject a WebRTC stream that is not strictly what the web RTC browser expects.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "So you can create something and then check what the browser will accept or not that way.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "And that is basically all.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't know if I have time for questions or if you have any in the first place.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I think we're at the top of the hour, but let's see.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "Are there any questions?",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise thank you Renzo.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "Always helpful to get feedback from actual implementations.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and with that, I think, uh, thank you for attending wish.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "Sounds like we're good track to, uh, make it to working group.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "Last call, hopefully soon.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, Sean and me will take the item to figure out, uh, what to do with extensions regarding metadata and subtitles and that kind of stuff.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you very much for attending wish, and hopefully you have a good and nice remaining IETF week.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah, and sorry for the chair fail there at the beginning.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Oh yes.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry about that.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "My Chrome had like, uh, asked me for permissions to do the screen recording and would have required, like to restart Chrome.",
+            "confidence": 0.985411202489442
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "I should have tested that before.",
+            "confidence": 0.985411202489442
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T15:41:14.905506+00:00",
+          "processed_at": "2026-01-27T15:41:14.905506+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "2ct0e5zngc"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.985411202489442
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

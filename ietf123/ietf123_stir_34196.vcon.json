@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "c30f13c5-a44c-414a-a62c-e0a280e97833",
   "created_at": "2026-01-03T20:15:33.111550",
-  "updated_at": "2026-01-03T20:15:37.249977",
+  "updated_at": "2026-01-28T04:52:11.980884+00:00",
   "subject": "IETF 123 - STIR Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=yHjeWSiazKo",
       "meta": {
         "ietf_meeting": 123,
         "working_group": "stir"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 123,
         "location": "Madrid, ES",
@@ -50,10 +49,10 @@
         "start_time": "2025-07-21T10:00:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "stir",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/agenda-123-stir",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/chatlog-123-stir-202507231430",
         "mimetype": "text/plain",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/minutes-123-stir-202507231230",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/bluesheets-123-stir-202507231230",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/slides-123-stir-chair-slides",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/slides-123-stir-sti-ct",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/slides-123-stir-jwtclaimconstraints-authority-token",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/materials/slides-123-stir-vesper",
         "mimetype": "application/pdf",
@@ -211,10 +210,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/123/agenda/stir/",
         "mimetype": "text/html",
@@ -225,10 +224,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-123-stir",
         "mimetype": "text/markdown",
@@ -239,7 +238,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -5587,6 +5587,3309 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Well, this has helped me.\nSPEAKER S2: You know.\nSPEAKER S1: Oh. Hello. Welcome to the stirrer group in ITF 123. We're right on time, I think. So we'll start with the chair slides. Note well, that, uh, this is an ITF meeting, and the, uh, the slide is a reminder. It's really a bunch of pointers, but it's, uh, about the rights, privileges and Villages and responsibilities, uh, that you have. If you're going to participate. Please treat each other with professional respect. And, uh, I have chaired a couple of real interesting food fights this week. I'm not expecting one in here, but regardless, it's, uh, treat each other respectfully, and we won't have a problem on that front. Meeting tips. Make sure you join them. The medico. Uh, we wouldn't want to get a warmer room next time, but you need to know how many people are here. Um, this is also how we will manage the queue. So if you don't, uh, join the medical room, you can't get in line for the microphone. We, uh, finally have RFC 9795 on RCD. Uh, we have a couple documents with, uh, the ISG right now. One is approved waiting 80 follow up. I don't know what we're waiting for. Ori, can you make sure the whoever the action holder is knows what the action is? Can you tell us? He's looking it up. Um.\nSPEAKER S3: Ruth, I think we still need a note taker.\nSPEAKER S4: Help me to do it.\nSPEAKER S5: Hi. We're still your responsible area director. I think OOB is just waiting for, uh, back and forth between, um, John and Med. Uh, I've been trying to coordinate, um, just to make sure all the comments are cleared.\nSPEAKER S1: Okay, so you John thinks he's done? We're waiting for med to act.\nSPEAKER S5: Yeah, I think so.\nSPEAKER S1: Okay.\nSPEAKER S5: I think that's it.\nSPEAKER S1: Alright. And uh, 4916 update has a discussed to be sorted out. Um, I unaware that we're waiting on any working group action there. I think it's just the authors and we have certificates in IETF. Last call we have, um, one that is finished with the working group last call, which is, uh, certificate short lived. And we're just waiting the, um, Shepherd's write up, which Ben has the action on that one, I believe. Is that correct?\nSPEAKER S3: How can people hear me?\nSPEAKER S1: Yes.\nSPEAKER S3: Do we have a note taker?\nSPEAKER S1: Will one of you please volunteer to take notes? Somebody.\nSPEAKER S2: Will help.\nSPEAKER S1: Thank you. Greatly appreciate that. All right. Thank you. Ben. We were, uh, some of us were running from a previous over lunch meeting. So there was no reason to not take the, uh, the status update there. So the agenda today is, uh, the Chris Wendt Show. It appears. The. These are all, uh, yet to be adopted documents. And so I believe he's going to try and convince you that we ought to adopt.\nSPEAKER S5: Hey, um, just add interrupt. Uh, what I said on at the mic here before was incorrect. Meds already, uh, cleared it with me, so I'm going to release the document.\nSPEAKER S1: Ah, perfect.\nSPEAKER S5: Thanks.\nSPEAKER S1: That's even better.\nSPEAKER S5: Or he still is responsible for.\nSPEAKER S1: The still responsible. Okay, so are there any agenda bashes?\nSPEAKER S6: My what? We're going.\nSPEAKER S1: After. We're talking about.\nSPEAKER S6: The one that came up this morning.\nSPEAKER S3: So.\nSPEAKER S4: Russ the agenda the the it quote fix draft the 8588.\nSPEAKER S3: 000.\nSPEAKER S4: AOB we've got.\nSPEAKER S6: Yeah. Um, I don't know. I guess we decided to talk about that on the list or I guess if we have time, we can talk about it.\nSPEAKER S1: If we. Yeah, if we get it to AOB, we'll. Okay.\nSPEAKER S3: Are we talking about the Addis reference?\nSPEAKER S6: Right. Yeah, exactly.\nSPEAKER S3: So I think that Mary is probably not with us today and she's the one that put out the draft. So I don't know how much we can talk about here. I would propose this. Go to the mailing list.\nSPEAKER S6: Okay. I, I am a coauthor, but, um, I can briefly talk about it.\nSPEAKER S3: Okay.\nSPEAKER S1: Okay. So no additional agenda other than that one. We'll do with AOB, assuming there's time. Okay. CT is first, right?\nSPEAKER S6: Right. So certificate transparency. Um, we did an update, uh, last, um, one 122 meeting. Um, we had a vigorous discussion about, uh, things. I think we the output of that was to make it very explicit that this is not. Well, let me follow my slides, actually. Um, um, we made it very explicit that we're not trying to redefine anything with 69, 62. Um, it's really just making a, a stir, um, version profile of it, if you want to call it that. Um, it's really about, you know, not using it in the context of TLS, but using it in the context of, um, delegates or, or, uh, sorry, certificates or certificates. Um, and uh, only focusing on those delta usage. We still have some guidance on, you know, what, uh, what happens um, um, to generally describe the roles specific to stir and what they're supposed to be doing. Um, how you what you do at the verification service, things like that. Um, but anything beyond that is, um, essentially references to 69, 62. Um, um, so I think we accomplished that in this version of the draft. Um, and that seemed to be the direction that things were going that as long as we did that, then that became more acceptable. So I guess I wanted to have the discussion is did we achieve that and did we get close enough for adoption?\nSPEAKER S1: So I personally have been struggling with understanding the threat you're trying to squash. Um, what happened in the web? PKI is a particular CA that was in all the browser trust stores. Um, issued a certificate for google.com that google.com knew nothing about. What is the equivalent thing you're afraid that a CA will do that the verification service will detect?\nSPEAKER S6: Yeah. So I think the, um, the idea is the prevention of mRNA, whether it's using mis issuance of the SBC code, which hopefully is not a huge threat vector, but I think is a non-zero chance of happening. The other thing that I think there's a larger than non-zero threat of happening is that, um, somebody validates a telephone number incorrectly, either for legitimate or illegitimate reasons, and you can create a certificate, um, believing that. And so therefore, having some way of monitoring the ecosystem, monitoring the, the issuance of certificates would allow you to provide some mechanism back some, some way of disputing that certificate that you as the number holder or you as the SPC holder, um, are the rightful owner and you're not aware of why that certificate was created.\nSPEAKER S1: Okay. So in the first case, you were saying someone got a, uh, ten Authtoken and um issued a certificate that included a different SBC code.\nSPEAKER S6: Uh, either either the authority that was associated, um, made a mistake, whether intentionally or not intentionally, um, or. Yes, the CA was implicit in, you know, okay doing, doing, doing, spoofing or fraudulent things.\nSPEAKER S1: But the second case I get. Yeah. Um. Right. John.\nSPEAKER S4: Yeah. I mean, the second case we're talking about is a subordinate certification authority and the issuance of like multiple certificates for the same telephone number, for example. Or, you know, I mean, the questions. And Chris and I had a very lengthy conversation about this yesterday, as we have several times in the past, um, you know, I mean, I, I too there, there are There are places here I kind of struggle with. Okay. What exactly is a verification service going to do differently? Right, based on access to this? Um, you know, and I can certainly imagine deployment environments in which this would be useful and others in which, you know, I'd be concerned based on what the policies are for what verification services are supposed to do with it. But at the end of the day, as a tool, the concept that there should be the ability to create ledgers, especially for the SCA cases, which we will not be as tightly governed as we imagine, like the, you know, the standard authority tokens for, um, oceans would be like, I can certainly see the overall rationale for specifying a way to do that, um, especially for TN based certs. And, you know, I just hope that the bodies that go on to utilize this do this in a way that is responsible and does not squash competition, because there are plenty of ways I can imagine it would be used for that precise purpose.\nSPEAKER S6: Correct. Uh, I'm not totally convinced that you can squash competition because you're. I think you're being more transparent, but, you know, I, I, I, I, I agree with your premise for sure.\nSPEAKER S4: Yeah. I mean, again, I don't want to relitigate the previous conversations we've had about this here too much. But again, my concern is much more that, um, in a pluralist environment where there are multiple entities that could be eligible to generate a certificate for a telephone number, or taking, for example, a TSP, who is a carrier and something like a, um, WhatsApp or a broader like that. If there if there are policies that look at the ledgers or the generation of these things and require verification services to to favor one or the other, these are the kinds of cases that I have in mind. And it's really just is this a new way of canonicalization, um, in, you know, we what? We don't have a deployment for yet. Right. We don't really have an SCA environment with telephone number base certificates out there. Right. There are certainly going to be people who feel quite threatened by it. Right. And I can see ways that this could be leveraged in order to make sure that only certain classes of entities are really going to be paid attention to if they generate certificates for this, which is, to Russ's original point, very different from the original CT use case in the web PKI.\nSPEAKER S1: Absolutely.\nSPEAKER S6: But I but I think that's policy is going to be governed by who can delegate versus the transparency service.\nSPEAKER S4: It ain't going to be uh, it ain't going to be determined here. That's the problem.\nSPEAKER S6: Oh, yeah. Yeah.\nSPEAKER S4: We're going to make a munition.\nSPEAKER S6: No.\nSPEAKER S4: No question. Like, you know, somebody's going to go use that in whatever way they see fit. And I things like that can make me nervous. But at the end of the day, it's hard for me to refute the overall argument that having ledgers that are going to record the issuance of certificates for this is innately a bad thing. Just the ways that people might leverage it could be okay.\nSPEAKER S6: Wonderful.\nSPEAKER S1: Ben.\nSPEAKER S3: So kind of commenting on John's point, it seems like we already have a lot of ways people could do that for discrimination. So I don't know if I believe this adds a new problem there. But the actual question I came to bring up is, Chris, I saw I think I saw a brief mention of transparency in Vesper. Is this a dependency for Vesper?\nSPEAKER S6: Currently, we make it part of it because we think that that will help for the reasons I stated. Um, is it a hard dependency? Maybe not, but, um, I think we'd like to make it part of that.\nSPEAKER S3: So if I bring that up, because that means they're kind of co-mingled when we start talking about, uh, working group, uh, adaptation adoption.\nSPEAKER S6: Right? I mean, obviously if, um, If if we don't adopt this, then I would reconsider having that in Vesper. Um, but I like I would I would like that to happen.\nSPEAKER S1: Sean. Hi.\nSPEAKER S7: Sean turner. That is really weird. Um, we talked a little bit about this, and I share some of Russ's and John's concerns because I don't know. Right. Like, you could use this stuff. But the problem is that from the practical perspective, right? It's not just like just you CT you're going to be putting some signatures in the certificate that they're going to get bigger. Right? And then you might have to do all the other things that they have to do, depending upon how big this thing gets, to try to make sure you do all the things that fix all the, the, um, problems with CT, right? That the web has found. And so you end up having like are you going to do consistency checks? There's a bunch of other things that they can look at. And it just kind of is there some other way we could do it. Because you're you're specifically saying Ledger's not CT, Right. And so is there some other way we could do this requirement without doing that. And again I understand like it's really like the web guys did it. It's everywhere. I you know, I get all kinds of great tools for it and it works. But if there's some other if the requirement is fairly simple, if there's some other easier mechanism, maybe we don't have to eat the dog food.\nSPEAKER S6: I don't know, I'd, I'd prefer not to define something new.\nSPEAKER S2: But.\nSPEAKER S4: But yeah, I mean we did this whole exercise and I did for like an hour yesterday going around the the maple on this of what revocation especially centralized revocation in the way that chicken operates, what the properties of that are, that are different from how practically a Ves would interact with this. Right. In the sense of you imagine there's somebody who, for all the sees, it's their job to like pull all the certificate revocations and then broadcast Broadcast those down to verification servers. It in fact works a bit more like the way Chrome works, where instead of actually doing CT like they're pushing tons of crls down with like every Chrome update, then like, you know, determine what the certificates are you're not supposed to listen to. And so, you know, I hesitate to go back and say we need to do a requirements phase and figure out what it is we're actually trying to do here on this. Um, and again, because like I said, I can kind of see the, um, the, the value in being able to have, uh, non-repeatable like record of the scars that generated certificates. And when they did so just for forensic purposes, especially because so much of shaken is actually forensic rather than real time decisioning on the part of the VSS. Um, but if we're trying to get past some of that and get closer to what a real time verification system should look like. I mean, there are alternative designs that I think accomplish something. Something that's indiscernible to me, that requires no new thing to be defined here.\nSPEAKER S6: I think transparency could be it wouldn't have to be mandated that everybody does it. It could be a piece of information that, you know, it was on a transparency log. And maybe that tells you that something that maybe you could trust it more than others, I don't know. Um, but I think revocation is different than because you are. You must follow the revocation. Well, I don't know, maybe that could be considered recommendation, but I don't think anybody says that.\nSPEAKER S4: Yeah, I mean that that's two of one half half dozen of the other. If you in fact, if there's no corresponding certificate in any ledger that you can see is relying party, it's your obligation like not to not to validate the call, which is surely what the policy would be for something like this. Right, right. And so I mean, it's you know, it's the inverse property, but it seems to require like all the same infrastructure to generate it and to accomplish much the same effect. Um, you know, this is the difference between an allow list and a deny list, right? Just in the way that the architecture defined, we've already built a deny list that does this.\nSPEAKER S1: Alec.\nSPEAKER S8: Uh, I think there are two potential values. I think, Chris, you kind of highlighted one of them. Um, but within the the shaken.\nSPEAKER S1: To your microphone.\nSPEAKER S8: Uh, can you hear me better now?\nSPEAKER S1: It's faint if.\nSPEAKER S8: Um. Let's see.\nSPEAKER S3: He is fine online.\nSPEAKER S8: I turned up my mic volume as loud as it goes.\nSPEAKER S1: Okay.\nSPEAKER S8: I'll try and speak loudly. So the. I think there are two values specifically within the the shaken ecosystem that is in use in the US and Canada today of certificate transparency. Um, and the first is thing that's kind of necessary to understand is that currently verification services, when they receive a passport and phone call that they're going to verify one of the most important things that they do to to identify how to treat the call is to look at who signed the call, look at the service provider code, the OCN, whatever you want to call it, that, sign the call and that's identified in the certificate. And this creates a incentive for a party that would like to make calls that are unwanted or illegal, you know, some bad calls to get a certificate that has someone else's service provider code so that their calls aren't labeled as spam or blocked or treated in the way that they are, because it appears as if they're signed by somebody more trustworthy. And so what certificate transparency can do now that we've established that there's an incentive for people to get a certificate with someone else's OCN is it can identify if that happens. Um, a a log. And in fact, in the shaken world where you have a central authority, even a single log can be operated by the central authority that operates, you know, the as the root of trust that issues the service provider code tokens so that all of the service providers relaying parties, they can monitor that log to see if someone requested and got a certificate with their service provider code in it. And not only does it detect if a certificate authority were to not get a service provider code token and issue a certificate, but also if at least in a non-malicious way, assuming the log is operated by the central authority. If the central authority were to mistakenly issue a service provider code token to someone, they shouldn't. Obviously, if if you don't trust the central authority, you would need a separate party to run the log, but I think it provides two important values. Um, even within the shaken ecosystem. And then obviously it goes on for more for, for stays with, um, delegate certificates.\nSPEAKER S4: Uh, John Peterson again. Yeah. That's useful. Alec. I mean, I guess I would have I thought this was more about the potential for future delegate certs and things like that, precisely because, I mean, they're they're such top down controls, like the issuance of authority tokens themselves, like, before you can even get certificates. There's lots of, like, alternative points of, I mean, literally centralized control over that. So I mean, this would be a rogue CA it's not even a rogue C. I mean, who does that? Yes. Okay. Rogue CA or a.\nSPEAKER S6: Stolen or a stolen SBC token or something like that.\nSPEAKER S4: Stolen SBC token. Okay.\nSPEAKER S8: But I'm in a rogue CIA is a is a significant concern. I mean, these these these certificates, other than the parties in the call path who aren't probably looking at it. And the end end, the terminating service provider no one else is even looking at or aware of these certificates. So if someone a rogue CA were to issue a certificate for, I'll just use AT&T name AT&T with AT&T service provider code in it to someone that's not AT&T. AT&T may have no knowledge that this occurred. The PA may have no knowledge that this has occurred. Only the CA and the terminating service providers who receive those calls would ever see the certificate.\nSPEAKER S4: Yeah, certainly. Certainly true. Um, I mean, you know, again, we're always looking at the analogies to the web API here. I mean, the web PKI cases where this has occurred, you know, have occurred because like the Cab forum and the entities are responsible for determining what the set of CAS are that are eligible to issue certificates that browsers actually trust. I would say is not not has nothing like the top down oversight that the issuances have for, um, uh, for the CP of like, you know, either the US or Canada's like systems for this. But, um, yeah, I certainly get it as a use case. I, I just assume this is entirely about the other like sub, you know, subordinate CA use case.\nSPEAKER S6: Well, that's because you talked to me more than Alex. Yeah. Yeah. We we were I mean, I agree with Alex use case as well, but, um.\nSPEAKER S1: Sean.\nSPEAKER S7: Sean Turner and I realize I'm being completely pedantic here, but if you do audits later, you would be able to find out that there was a rogue. That was that was a there was a rogue CA, but you wouldn't know until you did that audit. So there's a there was a window at the end where you'd find out, but it definitely wouldn't be done during call setup.\nSPEAKER S1: Okay, I guess the remaining question is, does anyone object to a call for adoption? Okay.\nSPEAKER S6: Okay.\nSPEAKER S1: Do you have more slides?\nSPEAKER S6: I do not I do not, not for this one. Thank you.\nSPEAKER S2: Uh.\nSPEAKER S6: Um, the next one is, uh.\nSPEAKER S1: I think I have to take the clicker back to fix this. Yeah. Okay. No, the. Yeah.\nSPEAKER S6: Right. Anyways, I can start. Um, the next one is JWT claim constraints I actually presented. This is actually an Acme graph, not a stair graph, but I want to keep the experts in stir aware of what we're doing there. Um, although many were in attendance there as well. Um. So the. So as I explained last time, um, hopefully most people are aware of this. We have an authority token for tne auth list. Um, but 8226 defines two um certificate extensions for str um, the second one being jwt claim constraints. Um, we, we never created an authority token profile, so wanted to fix that. Um, especially in the context of um, potential usage with like RCD or or other things. Um, probably mostly in the context of delegate certs. Um, maybe there's other reasons to do it. Um. Um, I think I, I went through this, um, the new thing here is, uh, we have two challenge types, two extensions. Um, so I mainly my question to the Acme group was did we interpret that correctly and how it's used? I think I got thumbs up mostly that we did interpret that correctly. Um, but I think there's some interesting details in here that might be useful to go through. So this is just, um, the authority token itself. Um, which I don't think there's much controversy about. It's really the TC value is now a JWT claim constraint instead of a, um, everything else sort of works the same. Um, this is the request that we define and in general with like with Pas that are in there, they're using essentially this, um, mechanism. Um, but we've never really taken the opportunity to, um, actually enumerate examples, uh, based on sort of current practice. So I thought this was a good opportunity to include it into this document. Some of those examples, um, maybe there's opportunity to talk about that in the Vesper draft also. Um, but looking for feedback on that. Um, this example is really just a basic thing where you're saying, um, and part of the reason we did the enhanced JWT clean constraints was to exclude the ability to do things like attest or, or, uh, some of the other, um, claim values that, uh, that you may not want a delegated party to be able to claim. Um, this is an example of using a very basic RCD, which includes the permitted values, but also has the excluded claim that you shouldn't be making. So looking for feedback on where we think example if if this is useful where. The best place to put these in the Acme draft. Is there something in store we should do for that? Um, is there examples that I don't have that um, you would like to see? That would be great feedback. Um, but, um, we haven't got an official adoption in Acme, but, uh, sort of got a lot of support, and I think we're headed in that direction, so. So that's good news. Um, so this is for informational purpose, but, um, um, happy to have any discussion. If you have any feedback or we can we can chat about it on the list as well. Okay, I think we can move to the next one.\nSPEAKER S1: Um. The the first bullet here says you're seeking adoption in Acme. Right, right. But you want stirred to review. Is that correct?\nSPEAKER S6: Yeah. Or be generally aware. I don't know if there's an official mechanism for that. Is that what you're suggesting?\nSPEAKER S1: Okay, no, I just I just want to make sure I interpreted the slide.\nSPEAKER S6: Yes. I wanted to make sure.\nSPEAKER S1: The working group then chairs. You were going to drive it or.\nSPEAKER S6: Yeah. For those in stir that aren't paying attention to Acme, I want there to be awareness. Um, and I'm happy to continue to provide that feedback, I probably will. Hopefully that's a good thing.\nSPEAKER S1: Okay.\nSPEAKER S6: But in the same token, I think hopefully it's a straightforward draft as well and can quickly move through that process. A good pun.\nSPEAKER S2: Okay.\nSPEAKER S6: Oh, yeah. Okay. So, Vesper. Um, so we did a let me go to the next slide. I think, actually, I don't have many slides. Um, but it's going to just talk through it. So based on feedback, um, that I got from 122, uh, a lot of feedback from John. I will call him out. Um, but good feedback. Uh, and I always appreciate that feedback. Um, I, we did a very much a wholesale simplification of what we're doing, um, to limit it to the current tools and scope of I think even in my presentation last time, I did admit we threw a lot of spaghetti on the wall. Um, and, um, so we cleaned up a lot of that spaghetti, um, and I think ended up in a really nice place. Um, but, um, the focus of the draft now is really about, um, the use of stairs, tools for delegate certificates with telephone number, scope, um, the specific use of TNF list and JWT claim constraints. Um, and I reference maybe examples might be appropriate there. Um, in that document, I don't I do not have them there yet, but I think they should be probably um, we do focus on the use of certificate transparency as well, um, for protection of. Um, um, the thing we do keep, which I think is an important part of the role of the Vesper draft, is to sort of talk about the roles and relationships in terms of, How these authority tokens are kept, how the association of the validation of the number assignment, and the KYC and vetting that happens for rich call data and other claims that may come in the future, happens. Um, and how that's um, there's sort of a, um, privacy framework around keeping that maintained with trust, but not necessarily exposing things. So using hash mechanisms, for example, that we have in, um, JWT claim constraints tied to um RCD uh integrity mechanisms, um, to not expose actual values, but um, only tie it to hashes, uh, can be used. So there's ideas around that that are part of that. Um, I'm not necessarily going to call for adoption today. Um, because I think I would like to get do another round of feedback for sure, um, to make sure we're on the right direction, but I think we are getting a lot closer. Um, but yeah. John.\nSPEAKER S4: Yeah. John here to say thank you so much. Yes. So much better from my perspective. Um, so things that yeah, I still might look at, uh, since we, we're just having a very spirited discussion about certificate transparency, you know, and as I said, I don't want to go back to requirements phase on that work. Um, but at the same time, I think for this framework, for the overall, I could kind of imagine a more modular way of describing what the requirement is for that support that potentially several mechanisms could plug into, rather than pegging it specifically to to CTE as it's described in your other specification here. Um, but in general, yeah, I think this this seems like an interesting and potentially productive way to kind of tie a bow around a bunch of capabilities that we have, and to get, um, some kind of I might even go as far as to say, post shaken thinking about like how you actually would make this work for enterprises, um, into a good draft here. So. So I like it.\nSPEAKER S6: Awesome. Yes, definitely. Looking for feedback. Um, maybe even active participation on this. Um, so leaving the door open on that, but, um, but yes, I think we're getting a lot closer. And I appreciate the, the feedback and support. And I don't know if I have another slide, but, um, I guess I do. I think that's probably what I just said. Yep. I pretty much covered that. So maybe that went a lot faster than I thought. I guess we can talk about updates to shake and drafts.\nSPEAKER S1: Okay. Not seeing anybody wanting to. I guess they want to see your your other, uh, your one more Rev. Alright. I think that's the end of. Your three presentations. Right.\nSPEAKER S6: It is.\nSPEAKER S1: Alright. So let's go back here. Go to the end. So we're in any other business.\nSPEAKER S6: Yeah. So I'll quickly talk about. So there was an issue that um, we got I think I forget if was on the list or I might have gotten direct feedback about that. Um, One of the aspects that we reference, uh, was no longer available. And that is because Addis, when we do new version revisions, they remove the reference to the older versions. Um, so obviously that is an issue that we need to resolve. Um, we did work through a potential solution, um, where um, actually the SIP forum could host, since they also have copyright rights to that. Um, they could host a persistent version of what we agreed to. But I think we also, um, were advocating that we should go through the process of validating the current V3 version, um, just because it does have some important updates, um, and make sure everybody's aware of that. Um, um, Um, and and everything's up to date. I don't I'm not going to say there's never going to be another version of that spec, but I think shake and Ecosystem is pretty solid where any new increments, incremental changes probably should go through some other review or or won't be necessary. So Mary and I, um, submitted a draft. I think she was able to upload it yesterday. Um, so this is just giving everyone a heads up. Um, but I think there was another change, and I'm not remembering what that was off the top of my head, unfortunately. Um, um, but these are small incremental changes. But, um, we can at least update the document properly to refer to the new version with a persistent link. And I hope and hopefully that should resolve all the issues we've discussed. So maybe it'd be good to have a discussion about that on the list a little bit and repeat that, um, to introduce that document. Um, but again, hopefully assuming that we're doing all the right things there, um, it should be a pretty quick path to go ahead.\nSPEAKER S1: Ben.\nSPEAKER S3: Chris, could you, uh, kick off that discussion on the list, please?\nSPEAKER S6: I can.\nSPEAKER S3: Because I think all the emails have been just between chairs and you and Mary.\nSPEAKER S6: Correct. Yeah, I can do that. Or. Or maybe Mary wants to, um. One of us will.\nSPEAKER S3: I don't think Mary's in the room to hear it, so.\nSPEAKER S6: Yes, I will make sure a discussion happens.\nSPEAKER S1: Okay. Is there any other any other business? Awesome. Then we're done. Thank you.\nSPEAKER S2: Thank you. Thank you. So much. Yeah. Yes. So you. Guys ask me tomorrow.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9896242424242425
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Well, this has helped me.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: You know.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Hello.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the stirrer group in ITF 123.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "We're right on time, I think.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll start with the chair slides.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Note well, that, uh, this is an ITF meeting, and the, uh, the slide is a reminder.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "It's really a bunch of pointers, but it's, uh, about the rights, privileges and Villages and responsibilities, uh, that you have.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "If you're going to participate.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Please treat each other with professional respect.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I have chaired a couple of real interesting food fights this week.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not expecting one in here, but regardless, it's, uh, treat each other respectfully, and we won't have a problem on that front.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "Meeting tips.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Make sure you join them.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "The medico.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we wouldn't want to get a warmer room next time, but you need to know how many people are here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is also how we will manage the queue.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "So if you don't, uh, join the medical room, you can't get in line for the microphone.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "We, uh, finally have RFC 9795 on RCD.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a couple documents with, uh, the ISG right now.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "One is approved waiting 80 follow up.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know what we're waiting for.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Ori, can you make sure the whoever the action holder is knows what the action is?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Can you tell us?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "He's looking it up.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Ruth, I think we still need a note taker.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Help me to do it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Hi.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "We're still your responsible area director.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "I think OOB is just waiting for, uh, back and forth between, um, John and Med.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I've been trying to coordinate, um, just to make sure all the comments are cleared.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, so you John thinks he's done?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "We're waiting for med to act.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yeah, I think so.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I think that's it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Alright.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, 4916 update has a discussed to be sorted out.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I unaware that we're waiting on any working group action there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's just the authors and we have certificates in IETF.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Last call we have, um, one that is finished with the working group last call, which is, uh, certificate short lived.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "And we're just waiting the, um, Shepherd's write up, which Ben has the action on that one, I believe.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "Is that correct?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: How can people hear me?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Do we have a note taker?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Will one of you please volunteer to take notes?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Somebody.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Will help.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Greatly appreciate that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Ben.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "We were, uh, some of us were running from a previous over lunch meeting.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "So there was no reason to not take the, uh, the status update there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "So the agenda today is, uh, the Chris Wendt Show.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "It appears.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "The.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "These are all, uh, yet to be adopted documents.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "And so I believe he's going to try and convince you that we ought to adopt.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Hey, um, just add interrupt.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what I said on at the mic here before was incorrect.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Meds already, uh, cleared it with me, so I'm going to release the document.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Ah, perfect.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Thanks.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: That's even better.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Or he still is responsible for.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The still responsible.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so are there any agenda bashes?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: My what?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "We're going.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: After.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "We're talking about.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: The one that came up this morning.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Russ the agenda the the it quote fix draft the 8588.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: 000.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: AOB we've got.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "I guess we decided to talk about that on the list or I guess if we have time, we can talk about it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: If we.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, if we get it to AOB, we'll.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Are we talking about the Addis reference?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, exactly.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So I think that Mary is probably not with us today and she's the one that put out the draft.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't know how much we can talk about here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "I would propose this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Go to the mailing list.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "I, I am a coauthor, but, um, I can briefly talk about it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "So no additional agenda other than that one.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "We'll do with AOB, assuming there's time.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "CT is first, right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "So certificate transparency.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we did an update, uh, last, um, one 122 meeting.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we had a vigorous discussion about, uh, things.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "I think we the output of that was to make it very explicit that this is not.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Well, let me follow my slides, actually.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, we made it very explicit that we're not trying to redefine anything with 69, 62.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's really just making a, a stir, um, version profile of it, if you want to call it that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's really about, you know, not using it in the context of TLS, but using it in the context of, um, delegates or, or, uh, sorry, certificates or certificates.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and uh, only focusing on those delta usage.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "We still have some guidance on, you know, what, uh, what happens um, um, to generally describe the roles specific to stir and what they're supposed to be doing.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "Um, how you what you do at the verification service, things like that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but anything beyond that is, um, essentially references to 69, 62.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, so I think we accomplished that in this version of the draft.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that seemed to be the direction that things were going that as long as we did that, then that became more acceptable.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "So I guess I wanted to have the discussion is did we achieve that and did we get close enough for adoption?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So I personally have been struggling with understanding the threat you're trying to squash.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Um, what happened in the web?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "PKI is a particular CA that was in all the browser trust stores.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Um, issued a certificate for google.com that google.com knew nothing about.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "What is the equivalent thing you're afraid that a CA will do that the verification service will detect?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the, um, the idea is the prevention of mRNA, whether it's using mis issuance of the SBC code, which hopefully is not a huge threat vector, but I think is a non-zero chance of happening.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "The other thing that I think there's a larger than non-zero threat of happening is that, um, somebody validates a telephone number incorrectly, either for legitimate or illegitimate reasons, and you can create a certificate, um, believing that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "And so therefore, having some way of monitoring the ecosystem, monitoring the, the issuance of certificates would allow you to provide some mechanism back some, some way of disputing that certificate that you as the number holder or you as the SPC holder, um, are the rightful owner and you're not aware of why that certificate was created.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "So in the first case, you were saying someone got a, uh, ten Authtoken and um issued a certificate that included a different SBC code.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh, either either the authority that was associated, um, made a mistake, whether intentionally or not intentionally, um, or.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, the CA was implicit in, you know, okay doing, doing, doing, spoofing or fraudulent things.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: But the second case I get.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "John.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the second case we're talking about is a subordinate certification authority and the issuance of like multiple certificates for the same telephone number, for example.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Or, you know, I mean, the questions.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "And Chris and I had a very lengthy conversation about this yesterday, as we have several times in the past, um, you know, I mean, I, I too there, there are There are places here I kind of struggle with.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "What exactly is a verification service going to do differently?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Right, based on access to this?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, and I can certainly imagine deployment environments in which this would be useful and others in which, you know, I'd be concerned based on what the policies are for what verification services are supposed to do with it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "But at the end of the day, as a tool, the concept that there should be the ability to create ledgers, especially for the SCA cases, which we will not be as tightly governed as we imagine, like the, you know, the standard authority tokens for, um, oceans would be like, I can certainly see the overall rationale for specifying a way to do that, um, especially for TN based certs.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And, you know, I just hope that the bodies that go on to utilize this do this in a way that is responsible and does not squash competition, because there are plenty of ways I can imagine it would be used for that precise purpose.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Correct.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm not totally convinced that you can squash competition because you're.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "I think you're being more transparent, but, you know, I, I, I, I, I agree with your premise for sure.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, again, I don't want to relitigate the previous conversations we've had about this here too much.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "But again, my concern is much more that, um, in a pluralist environment where there are multiple entities that could be eligible to generate a certificate for a telephone number, or taking, for example, a TSP, who is a carrier and something like a, um, WhatsApp or a broader like that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "If there if there are policies that look at the ledgers or the generation of these things and require verification services to to favor one or the other, these are the kinds of cases that I have in mind.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "And it's really just is this a new way of canonicalization, um, in, you know, we what?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "We don't have a deployment for yet.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "We don't really have an SCA environment with telephone number base certificates out there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "There are certainly going to be people who feel quite threatened by it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "And I can see ways that this could be leveraged in order to make sure that only certain classes of entities are really going to be paid attention to if they generate certificates for this, which is, to Russ's original point, very different from the original CT use case in the web PKI.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Absolutely.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: But I but I think that's policy is going to be governed by who can delegate versus the transparency service.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: It ain't going to be uh, it ain't going to be determined here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "That's the problem.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Oh, yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: We're going to make a munition.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: No.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: No question.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Like, you know, somebody's going to go use that in whatever way they see fit.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "And I things like that can make me nervous.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "But at the end of the day, it's hard for me to refute the overall argument that having ledgers that are going to record the issuance of certificates for this is innately a bad thing.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Just the ways that people might leverage it could be okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Wonderful.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Ben.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So kind of commenting on John's point, it seems like we already have a lot of ways people could do that for discrimination.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't know if I believe this adds a new problem there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "But the actual question I came to bring up is, Chris, I saw I think I saw a brief mention of transparency in Vesper.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Is this a dependency for Vesper?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Currently, we make it part of it because we think that that will help for the reasons I stated.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Um, is it a hard dependency?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe not, but, um, I think we'd like to make it part of that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So if I bring that up, because that means they're kind of co-mingled when we start talking about, uh, working group, uh, adaptation adoption.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, obviously if, um, If if we don't adopt this, then I would reconsider having that in Vesper.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I like I would I would like that to happen.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sean.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Hi.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Sean turner.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "That is really weird.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we talked a little bit about this, and I share some of Russ's and John's concerns because I don't know.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Like, you could use this stuff.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "But the problem is that from the practical perspective, right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "It's not just like just you CT you're going to be putting some signatures in the certificate that they're going to get bigger.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "Right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "And then you might have to do all the other things that they have to do, depending upon how big this thing gets, to try to make sure you do all the things that fix all the, the, um, problems with CT, right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "That the web has found.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "And so you end up having like are you going to do consistency checks?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "There's a bunch of other things that they can look at.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "And it just kind of is there some other way we could do it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Because you're you're specifically saying Ledger's not CT, Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And so is there some other way we could do this requirement without doing that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "And again I understand like it's really like the web guys did it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "It's everywhere.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "I you know, I get all kinds of great tools for it and it works.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "But if there's some other if the requirement is fairly simple, if there's some other easier mechanism, maybe we don't have to eat the dog food.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I don't know, I'd, I'd prefer not to define something new.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: But.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: But yeah, I mean we did this whole exercise and I did for like an hour yesterday going around the the maple on this of what revocation especially centralized revocation in the way that chicken operates, what the properties of that are, that are different from how practically a Ves would interact with this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "In the sense of you imagine there's somebody who, for all the sees, it's their job to like pull all the certificate revocations and then broadcast Broadcast those down to verification servers.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "It in fact works a bit more like the way Chrome works, where instead of actually doing CT like they're pushing tons of crls down with like every Chrome update, then like, you know, determine what the certificates are you're not supposed to listen to.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "And so, you know, I hesitate to go back and say we need to do a requirements phase and figure out what it is we're actually trying to do here on this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and again, because like I said, I can kind of see the, um, the, the value in being able to have, uh, non-repeatable like record of the scars that generated certificates.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "And when they did so just for forensic purposes, especially because so much of shaken is actually forensic rather than real time decisioning on the part of the VSS.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but if we're trying to get past some of that and get closer to what a real time verification system should look like.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, there are alternative designs that I think accomplish something.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Something that's indiscernible to me, that requires no new thing to be defined here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I think transparency could be it wouldn't have to be mandated that everybody does it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "It could be a piece of information that, you know, it was on a transparency log.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "And maybe that tells you that something that maybe you could trust it more than others, I don't know.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think revocation is different than because you are.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "You must follow the revocation.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "Well, I don't know, maybe that could be considered recommendation, but I don't think anybody says that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, I mean that that's two of one half half dozen of the other.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "If you in fact, if there's no corresponding certificate in any ledger that you can see is relying party, it's your obligation like not to not to validate the call, which is surely what the policy would be for something like this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Right, right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And so I mean, it's you know, it's the inverse property, but it seems to require like all the same infrastructure to generate it and to accomplish much the same effect.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, this is the difference between an allow list and a deny list, right?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Just in the way that the architecture defined, we've already built a deny list that does this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Alec.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, I think there are two potential values.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "I think, Chris, you kind of highlighted one of them.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but within the the shaken.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: To your microphone.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, can you hear me better now?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It's faint if.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: He is fine online.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I turned up my mic volume as loud as it goes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: I'll try and speak loudly.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "So the.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "I think there are two values specifically within the the shaken ecosystem that is in use in the US and Canada today of certificate transparency.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the first is thing that's kind of necessary to understand is that currently verification services, when they receive a passport and phone call that they're going to verify one of the most important things that they do to to identify how to treat the call is to look at who signed the call, look at the service provider code, the OCN, whatever you want to call it, that, sign the call and that's identified in the certificate.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And this creates a incentive for a party that would like to make calls that are unwanted or illegal, you know, some bad calls to get a certificate that has someone else's service provider code so that their calls aren't labeled as spam or blocked or treated in the way that they are, because it appears as if they're signed by somebody more trustworthy.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "And so what certificate transparency can do now that we've established that there's an incentive for people to get a certificate with someone else's OCN is it can identify if that happens.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a a log.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "And in fact, in the shaken world where you have a central authority, even a single log can be operated by the central authority that operates, you know, the as the root of trust that issues the service provider code tokens so that all of the service providers relaying parties, they can monitor that log to see if someone requested and got a certificate with their service provider code in it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "And not only does it detect if a certificate authority were to not get a service provider code token and issue a certificate, but also if at least in a non-malicious way, assuming the log is operated by the central authority.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "If the central authority were to mistakenly issue a service provider code token to someone, they shouldn't.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Obviously, if if you don't trust the central authority, you would need a separate party to run the log, but I think it provides two important values.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "Um, even within the shaken ecosystem.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "And then obviously it goes on for more for, for stays with, um, delegate certificates.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, John Peterson again.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "That's useful.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Alec.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, I guess I would have I thought this was more about the potential for future delegate certs and things like that, precisely because, I mean, they're they're such top down controls, like the issuance of authority tokens themselves, like, before you can even get certificates.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "There's lots of, like, alternative points of, I mean, literally centralized control over that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "So I mean, this would be a rogue CA it's not even a rogue C.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, who does that?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Rogue CA or a.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Stolen or a stolen SBC token or something like that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Stolen SBC token.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: But I'm in a rogue CIA is a is a significant concern.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, these these these certificates, other than the parties in the call path who aren't probably looking at it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "And the end end, the terminating service provider no one else is even looking at or aware of these certificates.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "So if someone a rogue CA were to issue a certificate for, I'll just use AT&T name AT&T with AT&T service provider code in it to someone that's not AT&T.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "AT&T may have no knowledge that this occurred.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "The PA may have no knowledge that this has occurred.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Only the CA and the terminating service providers who receive those calls would ever see the certificate.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, certainly.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Certainly true.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I mean, you know, again, we're always looking at the analogies to the web API here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, the web PKI cases where this has occurred, you know, have occurred because like the Cab forum and the entities are responsible for determining what the set of CAS are that are eligible to issue certificates that browsers actually trust.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "I would say is not not has nothing like the top down oversight that the issuances have for, um, uh, for the CP of like, you know, either the US or Canada's like systems for this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, yeah, I certainly get it as a use case.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "I, I just assume this is entirely about the other like sub, you know, subordinate CA use case.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Well, that's because you talked to me more than Alex.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "We we were I mean, I agree with Alex use case as well, but, um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sean.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Sean Turner and I realize I'm being completely pedantic here, but if you do audits later, you would be able to find out that there was a rogue.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "That was that was a there was a rogue CA, but you wouldn't know until you did that audit.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "So there's a there was a window at the end where you'd find out, but it definitely wouldn't be done during call setup.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, I guess the remaining question is, does anyone object to a call for adoption?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Do you have more slides?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I do not I do not, not for this one.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um, the next one is, uh.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think I have to take the clicker back to fix this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "No, the.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Anyways, I can start.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the next one is JWT claim constraints I actually presented.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "This is actually an Acme graph, not a stair graph, but I want to keep the experts in stir aware of what we're doing there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Um, although many were in attendance there as well.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "So the.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "So as I explained last time, um, hopefully most people are aware of this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "We have an authority token for tne auth list.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but 8226 defines two um certificate extensions for str um, the second one being jwt claim constraints.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we, we never created an authority token profile, so wanted to fix that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Um, especially in the context of um, potential usage with like RCD or or other things.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, probably mostly in the context of delegate certs.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "Um, maybe there's other reasons to do it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think I, I went through this, um, the new thing here is, uh, we have two challenge types, two extensions.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I mainly my question to the Acme group was did we interpret that correctly and how it's used?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "I think I got thumbs up mostly that we did interpret that correctly.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think there's some interesting details in here that might be useful to go through.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "So this is just, um, the authority token itself.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which I don't think there's much controversy about.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "It's really the TC value is now a JWT claim constraint instead of a, um, everything else sort of works the same.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is the request that we define and in general with like with Pas that are in there, they're using essentially this, um, mechanism.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we've never really taken the opportunity to, um, actually enumerate examples, uh, based on sort of current practice.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "So I thought this was a good opportunity to include it into this document.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Some of those examples, um, maybe there's opportunity to talk about that in the Vesper draft also.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but looking for feedback on that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this example is really just a basic thing where you're saying, um, and part of the reason we did the enhanced JWT clean constraints was to exclude the ability to do things like attest or, or, uh, some of the other, um, claim values that, uh, that you may not want a delegated party to be able to claim.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is an example of using a very basic RCD, which includes the permitted values, but also has the excluded claim that you shouldn't be making.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So looking for feedback on where we think example if if this is useful where.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "The best place to put these in the Acme draft.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "Is there something in store we should do for that?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "Um, is there examples that I don't have that um, you would like to see?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "That would be great feedback.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, um, we haven't got an official adoption in Acme, but, uh, sort of got a lot of support, and I think we're headed in that direction, so.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "So that's good news.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is for informational purpose, but, um, um, happy to have any discussion.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "If you have any feedback or we can we can chat about it on the list as well.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, I think we can move to the next one.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "The the first bullet here says you're seeking adoption in Acme.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Right, right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "But you want stirred to review.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Is that correct?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Or be generally aware.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if there's an official mechanism for that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "Is that what you're suggesting?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, no, I just I just want to make sure I interpreted the slide.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "I wanted to make sure.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The working group then chairs.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "You were going to drive it or.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "For those in stir that aren't paying attention to Acme, I want there to be awareness.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I'm happy to continue to provide that feedback, I probably will.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully that's a good thing.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: But in the same token, I think hopefully it's a straightforward draft as well and can quickly move through that process.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "A good pun.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Oh, yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "So, Vesper.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we did a let me go to the next slide.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "I think, actually, I don't have many slides.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's going to just talk through it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "So based on feedback, um, that I got from 122, uh, a lot of feedback from John.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "I will call him out.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but good feedback.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I always appreciate that feedback.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I, we did a very much a wholesale simplification of what we're doing, um, to limit it to the current tools and scope of I think even in my presentation last time, I did admit we threw a lot of spaghetti on the wall.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, um, so we cleaned up a lot of that spaghetti, um, and I think ended up in a really nice place.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, um, the focus of the draft now is really about, um, the use of stairs, tools for delegate certificates with telephone number, scope, um, the specific use of TNF list and JWT claim constraints.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I reference maybe examples might be appropriate there.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in that document, I don't I do not have them there yet, but I think they should be probably um, we do focus on the use of certificate transparency as well, um, for protection of.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, the thing we do keep, which I think is an important part of the role of the Vesper draft, is to sort of talk about the roles and relationships in terms of, How these authority tokens are kept, how the association of the validation of the number assignment, and the KYC and vetting that happens for rich call data and other claims that may come in the future, happens.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and how that's um, there's sort of a, um, privacy framework around keeping that maintained with trust, but not necessarily exposing things.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "So using hash mechanisms, for example, that we have in, um, JWT claim constraints tied to um RCD uh integrity mechanisms, um, to not expose actual values, but um, only tie it to hashes, uh, can be used.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "So there's ideas around that that are part of that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not necessarily going to call for adoption today.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because I think I would like to get do another round of feedback for sure, um, to make sure we're on the right direction, but I think we are getting a lot closer.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "John.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "John here to say thank you so much.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "So much better from my perspective.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so things that yeah, I still might look at, uh, since we, we're just having a very spirited discussion about certificate transparency, you know, and as I said, I don't want to go back to requirements phase on that work.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but at the same time, I think for this framework, for the overall, I could kind of imagine a more modular way of describing what the requirement is for that support that potentially several mechanisms could plug into, rather than pegging it specifically to to CTE as it's described in your other specification here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but in general, yeah, I think this this seems like an interesting and potentially productive way to kind of tie a bow around a bunch of capabilities that we have, and to get, um, some kind of I might even go as far as to say, post shaken thinking about like how you actually would make this work for enterprises, um, into a good draft here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "So I like it.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Awesome.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, definitely.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Looking for feedback.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Um, maybe even active participation on this.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so leaving the door open on that, but, um, but yes, I think we're getting a lot closer.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "And I appreciate the, the feedback and support.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "And I don't know if I have another slide, but, um, I guess I do.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's probably what I just said.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "I pretty much covered that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe that went a lot faster than I thought.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "I guess we can talk about updates to shake and drafts.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Not seeing anybody wanting to.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "I guess they want to see your your other, uh, your one more Rev.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "I think that's the end of.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Your three presentations.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: It is.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Alright.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "So let's go back here.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Go to the end.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "So we're in any other business.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll quickly talk about.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "So there was an issue that um, we got I think I forget if was on the list or I might have gotten direct feedback about that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Um, One of the aspects that we reference, uh, was no longer available.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "And that is because Addis, when we do new version revisions, they remove the reference to the older versions.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so obviously that is an issue that we need to resolve.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we did work through a potential solution, um, where um, actually the SIP forum could host, since they also have copyright rights to that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "Um, they could host a persistent version of what we agreed to.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "But I think we also, um, were advocating that we should go through the process of validating the current V3 version, um, just because it does have some important updates, um, and make sure everybody's aware of that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, Um, and and everything's up to date.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "I don't I'm not going to say there's never going to be another version of that spec, but I think shake and Ecosystem is pretty solid where any new increments, incremental changes probably should go through some other review or or won't be necessary.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "So Mary and I, um, submitted a draft.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "I think she was able to upload it yesterday.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is just giving everyone a heads up.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think there was another change, and I'm not remembering what that was off the top of my head, unfortunately.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, but these are small incremental changes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, we can at least update the document properly to refer to the new version with a persistent link.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "And I hope and hopefully that should resolve all the issues we've discussed.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe it'd be good to have a discussion about that on the list a little bit and repeat that, um, to introduce that document.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but again, hopefully assuming that we're doing all the right things there, um, it should be a pretty quick path to go ahead.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Ben.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Chris, could you, uh, kick off that discussion on the list, please?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I can.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Because I think all the emails have been just between chairs and you and Mary.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Correct.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I can do that.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Or.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Or maybe Mary wants to, um.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "One of us will.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I don't think Mary's in the room to hear it, so.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yes, I will make sure a discussion happens.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "Is there any other any other business?",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "Awesome.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Then we're done.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "So much.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "So you.",
+            "confidence": 0.9896242424242425
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "Guys ask me tomorrow.",
+            "confidence": 0.9896242424242425
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-28T04:52:11.979519+00:00",
+          "processed_at": "2026-01-28T04:52:11.979519+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "xee8ad0qm4"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9896242424242425
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "9ae1daf6-95ca-42be-9ea6-bc76c606a8e6",
   "created_at": "2026-01-03T19:25:32.015051",
-  "updated_at": "2026-01-03T19:25:36.310796",
+  "updated_at": "2026-01-23T22:35:21.597148+00:00",
   "subject": "IETF 110 - ACME Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=ex47HGPBBiA",
       "meta": {
         "ietf_meeting": 110,
         "working_group": "acme"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 110,
         "location": "Online, CZ",
@@ -50,10 +49,10 @@
         "start_time": "2021-03-08T14:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "acme",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/agenda-110-acme",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/bluesheets-110-acme-202103091530",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/minutes-110-acme",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-acme-chair-slides",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-acme-dtn-node",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-acme-draft-ietf-acme-integrations",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/materials/slides-110-acme-draft-friel-subdomains",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/110/agenda/acme/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-110-acme",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -5411,6 +5411,3050 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Participant lists and the rest.\nSPEAKER S2: Okay.\nSPEAKER S1: Okay, suppose we can start. Okay. Okay. So, um, welcome, everyone to the Acme meeting at ITF 110. Uh. Next slide. Um, so welcome to Knot Prague. Uh, this is, uh, the note. Well, this is something that, uh, Rich and I, uh, came up with, uh, just the other day. Not really. Um, sure. By now you've seen all this, uh, many, many times. And now you've seen it yet another time. Okay, so our agenda for today, uh, we start with the regular, um, administrivia. We've seen the note. Well, we need a note taker, and, um, we don't really need a scribe. I'm monitoring the jabber on my phone. Yeah, joy of using multiple devices. And, um. But we do need a note taker, so please volunteer now. Can proceed without a note taker, so please volunteer. Either on, um, jabber or just, uh, break into the conversation and speak up. Uh.\nSPEAKER S3: I'll do it if nobody else will.\nSPEAKER S1: Okay.\nSPEAKER S4: Rich. I'll take notes.\nSPEAKER S3: Awesome. Thank you.\nSPEAKER S1: Thank you Russ. Okay. And I'd like to remind everybody when, uh, when you talk, uh, please identify yourselves as if we were in a physical meeting, because later when you watch the session on YouTube, uh, you don't really know who's talking. Okay, so we got a note taker. Uh, we have a document update. Um, we'll talk about Acme integrations and DTN node and next steps. So before we get to the document updates, uh, a little public service announcement. Um, rich has decided to step down as co-chair of Acme. Uh, so, um, we're also looking for a volunteer to replace Rich. You can contact me or the ads, but not right now. Let's do this after the meeting. Okay, so, uh, let's go with the document updates. So, um, the email smime is already in the RFC pipeline. State delegation is in its last call. Um, Acme authority token is waiting for Iesg review authority token auth list. Just submitted an update, waiting for add review and we've got presentations here for uh, DTN node ID integrations and subdomains. Um, regarding regarding ITF acme client, uh, no recent update or discussions. So next slide. Now the see presentation. Okay. Let's see the presentation. All right Brian you're up.\nSPEAKER S5: Yes. Thank you. Um, so some of this content is duplicated but left in for background. Um, so you can go on to the next slide. Uh, for those not familiar with DTN, um, it is a store and forward kind of a protocol similar to, uh, mime and, uh, the way that the email systems work. Um, and so the workflow of this validation method, uh, is really taken almost exactly as the same as the s mime um, validation. Next slide please. And, uh, the point of why this draft is being proposed. Uh, we talked about this on the last IETF, but the idea here is that, uh, Acme has all of the infrastructure and bookkeeping and all of the necessary things to do. Uh pkix. Uh, validation. And there's a need in the DTN, uh, to be able to do this kind of thing when a new node comes onto the network and needs to be validated the same way that, uh, a new email user might for an Smime certificate. And, uh, next slide please. So, so the the flow that is in the email s mime draft is, um, basically duplicated here, uh, with this other encoding, this other transport, um, we're going to define an administrative record for, for the bundle protocol. And then the Acme server generates a part one and part two transport those through different paths. And then the um DTN client that's doing the, the validating of their identifier, uh, combines them and sends back the response. Uh, next slide please. So, uh, the, uh, because of the blackout period for the, the internet draft updates, uh, I wasn't able to update the draft until, um, just earlier this week, but I did submit A01 version of the draft that had some clarification and updates. Uh, this is an experimental, uh, draft. The idea is that this would not be widely implemented in Acme. Um, but it is a way to use the Acme mechanism to, uh, do what we need to do for, um, dtn id validation. And, uh, I believe this is the last slide, right? Yes. So at this point now, um, the last changes to the draft were to, to clarify some encodings, some data encodings, um, to use native, uh, byte strings instead of base64, just for slight efficiencies. But the structure is really the same. And um, a lot of some supporting text was taken in from the changes to the s mime draft. Um, so this is more in alignment with the, the what was approved for s mime. And at this point, uh, I have spent a little bit of time on a, uh, demonstration implementation just as a proof of concept. And that's where things stand right now.\nSPEAKER S1: Okay, so, uh, this already is a working draft. Uh, what, um, what are you looking for? Do you think that's ready for last call?\nSPEAKER S5: Uh, because of the simplicity and because of the alignment with the s mime. Um, I don't believe that there are any further changes necessary. Yes. So. Oh, and the other thing to mention is that the the bundle protocol drafts on which this were, uh, relying on for encoding and for, for transport, those have been moved to the, the editor queue. So, um, those are now stabilized. Whereas in the past they really were still in slight flux. So there there should be no need for, for further changes.\nSPEAKER S1: Mhm. I mean the thing I'm worried about is if I now do the um, one of these audience polls, the show of hands um, and ask how many people have read either version of the draft. Um, do you think we're going to get more than five?\nSPEAKER S5: I doubt that.\nSPEAKER S1: Right. So we could do the working group last call. Hopefully get. Some replies about it. So, um, that's a different way. Anyone opposed to us having, uh, having a working group last call. I think I saw Roman there for a moment. Yeah. Go ahead.\nSPEAKER S6: Right. I was just going to jump in, uh, you know, as Brian has kind of indicated, this is a bit of a very narrowly focused kind of use case. We did decide to adopt it. So an approach we could try is to go to working group Last Call. And if we get enough folks to have put eyes on it, we and we work the results, we can proceed. If we don't get enough review, then we can have another conversation about how we can get more review here.\nSPEAKER S1: Okay.\nSPEAKER S3: Has the VPN community looked at this.\nSPEAKER S1: I'm guessing this is a question for you. Oh, yeah.\nSPEAKER S5: Uh, there has been some, uh. Looking at this from the DTN side. The the two things that are new here, um, the one that's stated here is that this does create a new claim type for URIs. So just making sure that the text in here for URI claims, uh, URI identifiers is, um, reasonable and complete. That's one of the, I think, focus areas. And if anybody has implementation experience or feedback from the s mime draft because this is the same effectively the same workflow as the s mime draft. Um, anybody who's familiar with the draft should be able to, uh, at least understand the workflow here and be able to give feedback.\nSPEAKER S1: Okay, so I guess we have a plan of for how to proceed. Any objections to this plan of just going to working group last call and hopefully getting enough reviews to matter. Going once, going twice. Okay, so this is what we're going to do. Uh so thank you Brian. And next presentation is Acme integrations. Right. Um, okay.\nSPEAKER S7: Um, we can go on to the next slide. Informational draft that describes how Acme can be integrated with multiple existing clients and device enrollment mechanisms without requiring any changes. So it's documented in this version of the draft is risky and risky cloud and deep integrations, and it doesn't change any of the specifications for risky or tape. It just stitches them together. Next slide. So there's been one change since the previous draft in IETF 109. And there was one open item, which was how do we handle the risky requirements that the risky um, and entity, the risky register itself has an identity search with an idcp CMC ra um eq set. Um, and the conclusion that we've reached is that, um, even if the RA is is in the middle, acting as, um, a essentially a proxy that lets a pledge get a certificate from Acme, the query itself cannot get a certificate from, um, an Acme server that is not willing to give it an ID Capcom cra. So, for example, Let's Encrypt is not going to issue an identity cert, but Idk, CMC or Eset. Um, so if the RAR, even though the RAR may be, um, getting Acme certificates on behalf of pledges, the aura itself may not be able to get an Acme certificate for itself. If the Acme server it's integrating with is not willing to issue the aura and idk CMC and idk pcmc aura eku and which just means that the the registrar itself may have to get a own identity from Apple CA. The change, um, that's been clarified on multiple mailers and that has been explicitly documented in draft zero four. And that's it. Next steps. All right. Next slide, please. And this is just discussion. Um, we were looking for reviewers and, uh. Uh, feedback. And we believe that we've no changes to make on this, and it's ready for last call. And but we would like some reviewers, please.\nSPEAKER S3: Oh, and I have a question, um, on the ID Cpk-mb. That's an extended key usage ID, correct?\nSPEAKER S7: Correct. Yes.\nSPEAKER S3: Do certificates have multiple end ECUs in them in general for Briski.\nSPEAKER S7: Do they have multiple IK. Well, the circuit of multiple different bits set for extended key usage. But the the one that's important for Bruschi is the the the Bruschi Massa checks for that bit in the circuit Cesar and Bruschi array.\nSPEAKER S3: Gotcha.\nSPEAKER S7: But yeah.\nSPEAKER S3: So no, my question was, for example, in, um, I'm drawing a blank on what it's called, you know, the, the secure IP stuff. Um, there's multiple ECUs defined, but the RFC says you can't fail. You can't fail to validate if they're not there. This is different from that in you're acquiring one. And the users could have other ECUs in there which are unaffected. Is that true.\nSPEAKER S8: The the users.\nSPEAKER S3: The the the the relying parties the consumers of the certs.\nSPEAKER S7: They could have they could have other records in there. Yes.\nSPEAKER S3: Okay. Thanks.\nSPEAKER S7: But but the the one that the one that was contentious is the is this one because. Yeah, the draft is all about acne integrations. We know that let's Encrypt for example which Musk isn't going to hand that out. Um, so there's just that caveat that the the aura itself needs a search from a different state than the pledges.\nSPEAKER S1: Thank you. Thank you. Any questions? Yes. Russ.\nSPEAKER S4: So it's my understanding that that particular e-k-u will only ever be used with, uh, CMP. If you're an RA. So, um, it's really hard to see how it would affect acne.\nSPEAKER S7: Um, well, it's it's it's for the Bruschi integration use case. Russ. So when, when you're using so the Bruschi array, the pledge doctor Bruschi array. And actually I don't have a picture of I don't have a picture of the architecture in this presentation. But the the pledge will talk to the array. And the array will have two back end integrations one to the master server, one to Acme. Um. And the aura will go to the aura will go to the massive first to get a voucher. And this will issue a voucher to the pledge. And it's for that interaction that the Massa will check that the, um, the brewskis, the brewski auras and the entity cert has that bit set. And then it's a completely independent interaction between the Ras and Acme to get a cert on behalf of the pledge. And that bit doesn't play any role in that interaction. So that bit is only needed for getting for the aura to get a voucher from the master server. Um, that bit isn't set when the aura is getting a certificate from Acme to hand back to the pledge.\nSPEAKER S4: So that's all consistent with what I with what I know.\nSPEAKER S8: Okay.\nSPEAKER S7: Okay. And we're just like we're just we're explicitly calling out in the in the document that the RA itself can't get its own identity, assert itself from Acme, because then the RA isn't gonna be able to present that identity search to the masses in order to get a voucher on behalf of oblige.\nSPEAKER S1: Okay. Um, Hendrik.\nSPEAKER S9: So this is Hendrik. Um, on. Please correct me if I'm wrong. I, um, understand this extended usage as the indication that this is an RA, and this is, um, required by EST in the the 7030 draft. Um, it is was initially introduced by CMC and we also tend to um reuse it also for CMP. So to have one let's say unique um extended key usage identification for an RA and therefore you're probably right. An Acme server will not issue or enroll a certificate with this key usage. And I feel like it's a good idea not to do that completely automatically, just based on a domain validation, because it's a specific role. This entity has the RA role, and this is indicated by by this extended key usage. So I think it's okay.\nSPEAKER S7: Okay, good.\nSPEAKER S1: Um, yes. Deb.\nSPEAKER S10: I have to say aloud twice. What? Um, so you can hear me?\nSPEAKER S1: Yeah, we can hear you.\nSPEAKER S10: Um, so the Bruschi end of things is all CMP based.\nSPEAKER S7: Uh, not CMC based. The Bruschi side of things is just getting the signed voucher, which means that whatever the GSM voucher format, I need to, I can't recall the RFC off my head, but the Bruschi flow. The Bruschi flow for the always interacting with the master server is just to get assigned vouchers to hand back to the pledge, so that the pledge trusts the array.\nSPEAKER S10: Right. But Russ is Russ's comment was that you need that for CMP. And can we let Russ talk.\nSPEAKER S1: Yeah Russ can talk.\nSPEAKER S4: So bruschi's est based. And that particular key usage is um needed if you're going to be uh an RA. And also I think they're saying is that you can't use Acme to get an RA certificate, and that seems fine.\nSPEAKER S10: Yeah, yeah, yeah, I got that part right. And it makes complete sense. And I am in complete agreement that you don't want Acme issuing RA certs, because that would be bad. Very bad. My question is do you need the extension, the E-k-u for CMP or CMC. They're doing EST which is can be both right.\nSPEAKER S4: So it's needed for CMC. It is being added to CMP and lamps right now and I think EST uses it. But I'm sorry my memory's not that good I think.\nSPEAKER S10: So EST uses like you can do some things in CMC and some things in CMP, like it's a sort of a mixed bag as I recall. Um, uh, I'm asking because I'm debating on agreeing to review the draft, and I don't know much about CMP, so if it's all CMP stuff, I'm not going to volunteer because I don't really know anything about CMP.\nSPEAKER S7: I'd need to go back and I'd need to go back and read the read the draft and detail again to answer that question. Deb.\nSPEAKER S10: Right. But your draft is not. So my question is whether your draft is CMP ish or whether I can read the draft not knowing much about CMP. You could see what I'm saying.\nSPEAKER S7: You can read the draft without not much, but CMP.\nSPEAKER S10: Okay, so I can read the draft. It looks like it's short. It's like it's 17 pages long. It sounds like.\nSPEAKER S7: It's short and there's quite a few figures in there.\nSPEAKER S10: Oh, good. Pictures are better. So I can review if you would like.\nSPEAKER S7: Great. Thank you. And it does not go into too many details on CMP or CMC.\nSPEAKER S1: Um, okay. So, um, if no one else is in the queue, uh, do you own do you think that, uh, this is, um, ready for working group? Last call, and we'll get the reviewers there?\nSPEAKER S7: I think so, yeah, once we get the reviewers. Yeah, I think we're good to go with it. I don't think so. Anyways.\nSPEAKER S1: So obvious question. Uh, anybody opposed to going to working group? Last call. Mm. Good. I like this silence. Okay. So we'll start to working group last calls. Um, after. Well next week. Okay. So I think when you're also doing the last thing the subdomain. So rich can you put on those slides. Oh there they are.\nSPEAKER S7: Okay. So next slide please. So Acme allows a server to issue search for a given identifier, um, without requiring a challenge to be explicitly fulfilled against that identifier. Um, like for example, an Acme cert can issue a search for food at example.com, where the client has only fulfilled the challenge against one of the parent authorized domain names example.com, for example. Um um and a server could issue search for multiple for a number of subdomain certs, and only require a single challenge to be filled against the parent domain. And that that's really nice when you want to scale to use Acme to issue certs, um, automatically for a large number of end entity certs for devices to your Internet of Things cases, um, we do an authorization once for a top level domain or, or a parent domain, and then we could use Acme to automatically search for for hundreds or thousands of end entity devices. Um next slide. So changes and we've incorporated a similar feedback immediately after one online we've incorporated um, one of the strong piece of feedback was to restrict the challenge Typekit so on specifically for the subdomain use case. So what that means is that, um, one challenge must be fulfilled against a parent authorized domain name. And in order to issue certs for subdomain identifier, um, we've also included a text in the latest draft to um, address the two open items that were raised on the mailer and discussed briefly at the last IGF 109. Next slide. So this the first the open items and the open items does declined. Need a mechanism to indicate to the server that they're willing and enabled capable of fulfilling challenges against parent domains. So for example, for the food apart that example the Com identifier should the challenge, should the client be able to explicitly tell the server that it's it actually has like the DNS keys or whatever it needs to fulfill a challenge against that example, the comma example.com. Um, and one of the things that was raised on the mailer during discussions was that we want to avoid the scenario where a server could issue a challenge against a parent identifier, that the client is not authorized to fulfill a challenge against. For example, client issues, an order for food apartheid, example.com server issues a challenge, for example, to com but the client doesn't have the DNS keys for publishing text records to fill that challenge against the parent domain. We want to avoid that scenario. Um, so so what I, what I proposed and this hasn't been reviewed in detail yet. So this is what I proposed is um, and this is based on inferring some comments that Ryan and Ryan, Phillipe and a few people have made on the manners as well is we could include an optional boolean flag, um, associated with an identifier in a new order, new onset request, and that optional flag indicates whether the client has control over all apparent ends or not. Um, because I believe typically for for Sears, um, they'll base their logic off the top level domain example.com not off things like example.com. Um, so if this flag is true, then the server may issue. If the client includes this flag and the flag is true, then the server knows it can issue a challenge against any of the parent. Um idns and the client will be capable of fulfilling a challenge against them. If the client sets this flag as false, then the client is telling the server, I can't fulfill a challenge against any parent domain. The only thing I'm allowed to rise to the challenge against is the explicit, um, the explicit, um, FQDN that I'm requesting. So that's the only thing I want to challenge for. Um, well, this slide looks a little smaller. Apologies, but, uh, I've just cut and pasted some, uh, text from the draft which shows what the parent domain authorization looks like. It's just an extra Boolean flag that is optionally associated with the identifier. Um, and I think, well, we can debate we should actually debate what the logic should be if that isn't included. And I think if the flag isn't included, it should default to true. Probably. Um, because that's the behavior that, um, baseline Acme has. Baseline Acme doesn't make any assumptions about this at all, so it's left entirely up to server policy. Um, but so I've one follow on question for this proposal. If you go on to the next slide. So next slide please. And the question I have is that sufficiently granular like um, is there any need for a client to be able to specify a subset of parent data into this control over, for example, the client wants to search for food that parodied Example.org, and it can control parody example.org, but not the top level domain. And do we need that level of flexibility? And I don't think we do, but I'd like to discuss that. And what I've documented in draft four is that we don't need that level of flexibility in just a simple Boolean flag is sufficient. Um, so what's shown on the right hand side? Again, this the rendering isn't that big on this page, but it shows. Um, underneath the identifier is an array of adns that the client is actually authorized to fulfill a challenge against. Yeah. That's better. So just scroll over a little bit. Yeah. You can see that the client has issued an order for the food that parodied example that org identifier, and I've just included Illustratively. The client could also optionally include a list of Idns saying, well, I can can fill a challenge against food that parodied example org. I can fulfill a challenge in inspired example, but I'm not authorized to challenge against Example.org. Now, I don't think we need that flexibility, but I'm just asking a question here. Okay. And next on to the next slide. We can go on to open item number two. And this is just from the server side. Does the server need a mechanism to provide a choice of identifiers to the client and let the client choose which challenge to fulfill. Um, and there was some discussion on this on the mailer as well. We believe that this is not needed. And if this would make the server state machine and tracking far too complicated, and it's sufficient for the client to be able to signal to the server whether it's capable of fulfilling challenges against parent idioms or not. And so the proposal is there's no provision to do this in the draft. And I've added clarifying statements in the draft that I've declined indicates that the parent domain authorization is true. Then server policy controls which identifier that the server can use to issue a challenge against. Um. But all the client is indicating with this flag is that it's up to you. Now, server, I've told you I can authorize again. So I've fulfilled challenges against all of the domains. You decide which one you want to issue a challenge against, and that aligns with the baseline Acme spec as well. Um, next slide please. I think they're the only two open items. Yeah. They're they're the two only open items. Um, the draft has just been published with those two open items and closed and documented. Um, so I'd like to get some feedback on those two proposals for the open items. And it is based on what was discussed in the matters a couple of months back. Um, and then we look for a final review of draft zero four with any feedback. And I know, Ross, you reviewed version two. I believe we've incorporated all that feedback already.\nSPEAKER S1: Yeah. Russ, you're in the queue.\nSPEAKER S4: So, um, I'm thinking the single bit is not granular enough because it in different parts of the DNS tree, you don't know, um, exactly where to stop. So in your example, foobar. You're pretty sure that you can't put, uh, the challenge in org, but, um, you know, in, uh, other parts where, uh, especially in Cctlds, it's not exactly clear where the, where the top of, uh, um, a particular registrant's control begins. So I think your your hey, I can deal with challenges in in any of these places, uh, is safest.\nSPEAKER S7: Okay.\nSPEAKER S1: Anyone else?\nSPEAKER S3: Yeah. This is rich. Um, as an individual, I think we should adopt this as, um, a chair. Uh, I think we should, um, you know, send this over to DNS and get their feedback. Once we've adopted.\nSPEAKER S1: Um, um, so the obvious question is how many peoples have read, how many people have read it and perfectly willing to, um, do the show of hands? Let's try it. Right. Please don't raise your hand if you are an author. Okay. This seems to be converging on about two people having read it and six people having explicitly not read it. Okay. Another one. Um, so, yeah, we can do an adoption call. I'd rather not do it Immediately now. But after we've done the other working group last calls not to burden people with too many things at the same time. Um, but yeah, I think we can do the adoption call and, uh, then. Yeah. Okay. Thanks for that. Okay. So, um, so I guess the next step is the adoption call, which means we're almost done with the agenda, and we're got to the open mics part. Going once. Twice. Okay, so, uh, you're getting back a lot of your time, and I just want to thank Rich for all the years of being a chair of Acme. Feel free to open your mic and say thank you, Rich.\nSPEAKER S3: Yeah. Uh.\nSPEAKER S2: Stop sharing.\nSPEAKER S6: I don't know how to flip my. Yeah, I was going to say thanks, Rich. I don't know how to flip my camera. Everyone's looking at my monitor. Uh, for those that might be interested in in, uh, being a co-chair, please do drop me a note, uh, to me and Ben, and we can sort that out. Additionally, what would be helpful for the working group is if we chartered a little more specificity into what the future work is. Uh, for example, we have a we have some drafts we're talking about. We have some drafts adopted. We don't have necessarily milestones. I see that there's some drafts that, uh, that are related and we don't even have on the agenda to talk about. So if we just had some dates for when we think we're going to be done and we have some notion of when we will be done and what classes of extensions we want to we want to cover. So it's basically a matter of do we just need to finish what we have, or is there a new scope that we expect to be talking about in the working group? Now's a good time to throw that out. Metaphorically on the mailing list. Not necessarily at this meeting.\nSPEAKER S2: Right.\nSPEAKER S1: Okay. Thank you. Um, anything else for open mic?\nSPEAKER S2: Yeah.\nSPEAKER S11: Rich needs to feed his dinosaur more often. It's really lost weight.\nSPEAKER S3: They taste like chicken.\nSPEAKER S2: Mhm.\nSPEAKER S1: Okay. So, uh, thank you all. And getting back, uh, for 20 minutes of your life back. Bye.\nSPEAKER S3: Have a good week, everyone.\nSPEAKER S2: That's.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9824535186794093
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Participant lists and the rest.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, suppose we can start.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, welcome, everyone to the Acme meeting at ITF 110.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so welcome to Knot Prague.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is, uh, the note.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Well, this is something that, uh, Rich and I, uh, came up with, uh, just the other day.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "Not really.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Um, sure.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "By now you've seen all this, uh, many, many times.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "And now you've seen it yet another time.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so our agenda for today, uh, we start with the regular, um, administrivia.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "We've seen the note.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we need a note taker, and, um, we don't really need a scribe.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "I'm monitoring the jabber on my phone.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, joy of using multiple devices.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "And, um.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "But we do need a note taker, so please volunteer now.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Can proceed without a note taker, so please volunteer.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Either on, um, jabber or just, uh, break into the conversation and speak up.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I'll do it if nobody else will.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Rich.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "I'll take notes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Awesome.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you Russ.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "And I'd like to remind everybody when, uh, when you talk, uh, please identify yourselves as if we were in a physical meeting, because later when you watch the session on YouTube, uh, you don't really know who's talking.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so we got a note taker.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a document update.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'll talk about Acme integrations and DTN node and next steps.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "So before we get to the document updates, uh, a little public service announcement.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "Um, rich has decided to step down as co-chair of Acme.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, um, we're also looking for a volunteer to replace Rich.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "You can contact me or the ads, but not right now.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Let's do this after the meeting.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so, uh, let's go with the document updates.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, the email smime is already in the RFC pipeline.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "State delegation is in its last call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Acme authority token is waiting for Iesg review authority token auth list.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Just submitted an update, waiting for add review and we've got presentations here for uh, DTN node ID integrations and subdomains.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Um, regarding regarding ITF acme client, uh, no recent update or discussions.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "Now the see presentation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Let's see the presentation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "All right Brian you're up.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so some of this content is duplicated but left in for background.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so you can go on to the next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for those not familiar with DTN, um, it is a store and forward kind of a protocol similar to, uh, mime and, uh, the way that the email systems work.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so the workflow of this validation method, uh, is really taken almost exactly as the same as the s mime um, validation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, the point of why this draft is being proposed.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we talked about this on the last IETF, but the idea here is that, uh, Acme has all of the infrastructure and bookkeeping and all of the necessary things to do.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Uh pkix.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, validation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a need in the DTN, uh, to be able to do this kind of thing when a new node comes onto the network and needs to be validated the same way that, uh, a new email user might for an Smime certificate.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "So, so the the flow that is in the email s mime draft is, um, basically duplicated here, uh, with this other encoding, this other transport, um, we're going to define an administrative record for, for the bundle protocol.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "And then the Acme server generates a part one and part two transport those through different paths.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "And then the um DTN client that's doing the, the validating of their identifier, uh, combines them and sends back the response.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, the, uh, because of the blackout period for the, the internet draft updates, uh, I wasn't able to update the draft until, um, just earlier this week, but I did submit A01 version of the draft that had some clarification and updates.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is an experimental, uh, draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "The idea is that this would not be widely implemented in Acme.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it is a way to use the Acme mechanism to, uh, do what we need to do for, um, dtn id validation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I believe this is the last slide, right?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "So at this point now, um, the last changes to the draft were to, to clarify some encodings, some data encodings, um, to use native, uh, byte strings instead of base64, just for slight efficiencies.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "But the structure is really the same.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "And um, a lot of some supporting text was taken in from the changes to the s mime draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is more in alignment with the, the what was approved for s mime.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "And at this point, uh, I have spent a little bit of time on a, uh, demonstration implementation just as a proof of concept.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "And that's where things stand right now.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, so, uh, this already is a working draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, what, um, what are you looking for?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Do you think that's ready for last call?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, because of the simplicity and because of the alignment with the s mime.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't believe that there are any further changes necessary.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, and the other thing to mention is that the the bundle protocol drafts on which this were, uh, relying on for encoding and for, for transport, those have been moved to the, the editor queue.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, those are now stabilized.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Whereas in the past they really were still in slight flux.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "So there there should be no need for, for further changes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Mhm.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "I mean the thing I'm worried about is if I now do the um, one of these audience polls, the show of hands um, and ask how many people have read either version of the draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "Um, do you think we're going to get more than five?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I doubt that.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "So we could do the working group last call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully get.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Some replies about it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, that's a different way.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "Anyone opposed to us having, uh, having a working group last call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "I think I saw Roman there for a moment.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "I was just going to jump in, uh, you know, as Brian has kind of indicated, this is a bit of a very narrowly focused kind of use case.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "We did decide to adopt it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "So an approach we could try is to go to working group Last Call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "And if we get enough folks to have put eyes on it, we and we work the results, we can proceed.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "If we don't get enough review, then we can have another conversation about how we can get more review here.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Has the VPN community looked at this.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I'm guessing this is a question for you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Oh, yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, there has been some, uh.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Looking at this from the DTN side.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "The the two things that are new here, um, the one that's stated here is that this does create a new claim type for URIs.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "So just making sure that the text in here for URI claims, uh, URI identifiers is, um, reasonable and complete.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "That's one of the, I think, focus areas.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "And if anybody has implementation experience or feedback from the s mime draft because this is the same effectively the same workflow as the s mime draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, anybody who's familiar with the draft should be able to, uh, at least understand the workflow here and be able to give feedback.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay, so I guess we have a plan of for how to proceed.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "Any objections to this plan of just going to working group last call and hopefully getting enough reviews to matter.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Going once, going twice.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so this is what we're going to do.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Uh so thank you Brian.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "And next presentation is Acme integrations.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, we can go on to the next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Informational draft that describes how Acme can be integrated with multiple existing clients and device enrollment mechanisms without requiring any changes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "So it's documented in this version of the draft is risky and risky cloud and deep integrations, and it doesn't change any of the specifications for risky or tape.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "It just stitches them together.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "So there's been one change since the previous draft in IETF 109.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "And there was one open item, which was how do we handle the risky requirements that the risky um, and entity, the risky register itself has an identity search with an idcp CMC ra um eq set.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and the conclusion that we've reached is that, um, even if the RA is is in the middle, acting as, um, a essentially a proxy that lets a pledge get a certificate from Acme, the query itself cannot get a certificate from, um, an Acme server that is not willing to give it an ID Capcom cra.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "So, for example, Let's Encrypt is not going to issue an identity cert, but Idk, CMC or Eset.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if the RAR, even though the RAR may be, um, getting Acme certificates on behalf of pledges, the aura itself may not be able to get an Acme certificate for itself.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "If the Acme server it's integrating with is not willing to issue the aura and idk CMC and idk pcmc aura eku and which just means that the the registrar itself may have to get a own identity from Apple CA.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "The change, um, that's been clarified on multiple mailers and that has been explicitly documented in draft zero four.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "And that's it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Next steps.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide, please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "And this is just discussion.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we were looking for reviewers and, uh.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, feedback.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "And we believe that we've no changes to make on this, and it's ready for last call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "And but we would like some reviewers, please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Oh, and I have a question, um, on the ID Cpk-mb.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "That's an extended key usage ID, correct?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Correct.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Do certificates have multiple end ECUs in them in general for Briski.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Do they have multiple IK.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "Well, the circuit of multiple different bits set for extended key usage.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "But the the one that's important for Bruschi is the the the Bruschi Massa checks for that bit in the circuit Cesar and Bruschi array.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Gotcha.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: But yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So no, my question was, for example, in, um, I'm drawing a blank on what it's called, you know, the, the secure IP stuff.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's multiple ECUs defined, but the RFC says you can't fail.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "You can't fail to validate if they're not there.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "This is different from that in you're acquiring one.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "And the users could have other ECUs in there which are unaffected.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Is that true.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: The the users.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: The the the the relying parties the consumers of the certs.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: They could have they could have other records in there.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: But but the the one that the one that was contentious is the is this one because.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, the draft is all about acne integrations.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "We know that let's Encrypt for example which Musk isn't going to hand that out.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so there's just that caveat that the the aura itself needs a search from a different state than the pledges.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Russ.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So it's my understanding that that particular e-k-u will only ever be used with, uh, CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "If you're an RA.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, it's really hard to see how it would affect acne.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, well, it's it's it's for the Bruschi integration use case.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "Russ.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "So when, when you're using so the Bruschi array, the pledge doctor Bruschi array.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "And actually I don't have a picture of I don't have a picture of the architecture in this presentation.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "But the the pledge will talk to the array.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "And the array will have two back end integrations one to the master server, one to Acme.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "And the aura will go to the aura will go to the massive first to get a voucher.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "And this will issue a voucher to the pledge.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "And it's for that interaction that the Massa will check that the, um, the brewskis, the brewski auras and the entity cert has that bit set.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "And then it's a completely independent interaction between the Ras and Acme to get a cert on behalf of the pledge.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "And that bit doesn't play any role in that interaction.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "So that bit is only needed for getting for the aura to get a voucher from the master server.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that bit isn't set when the aura is getting a certificate from Acme to hand back to the pledge.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So that's all consistent with what I with what I know.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "And we're just like we're just we're explicitly calling out in the in the document that the RA itself can't get its own identity, assert itself from Acme, because then the RA isn't gonna be able to present that identity search to the masses in order to get a voucher on behalf of oblige.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Hendrik.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: So this is Hendrik.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Um, on.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "Please correct me if I'm wrong.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "I, um, understand this extended usage as the indication that this is an RA, and this is, um, required by EST in the the 7030 draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it is was initially introduced by CMC and we also tend to um reuse it also for CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "So to have one let's say unique um extended key usage identification for an RA and therefore you're probably right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "An Acme server will not issue or enroll a certificate with this key usage.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "And I feel like it's a good idea not to do that completely automatically, just based on a domain validation, because it's a specific role.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "This entity has the RA role, and this is indicated by by this extended key usage.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "So I think it's okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay, good.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, yes.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "Deb.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: I have to say aloud twice.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "What?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so you can hear me?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah, we can hear you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Um, so the Bruschi end of things is all CMP based.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, not CMC based.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "The Bruschi side of things is just getting the signed voucher, which means that whatever the GSM voucher format, I need to, I can't recall the RFC off my head, but the Bruschi flow.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "The Bruschi flow for the always interacting with the master server is just to get assigned vouchers to hand back to the pledge, so that the pledge trusts the array.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "But Russ is Russ's comment was that you need that for CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And can we let Russ talk.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah Russ can talk.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So bruschi's est based.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "And that particular key usage is um needed if you're going to be uh an RA.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "And also I think they're saying is that you can't use Acme to get an RA certificate, and that seems fine.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Yeah, yeah, yeah, I got that part right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "And it makes complete sense.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "And I am in complete agreement that you don't want Acme issuing RA certs, because that would be bad.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Very bad.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "My question is do you need the extension, the E-k-u for CMP or CMC.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "They're doing EST which is can be both right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So it's needed for CMC.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "It is being added to CMP and lamps right now and I think EST uses it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "But I'm sorry my memory's not that good I think.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: So EST uses like you can do some things in CMC and some things in CMP, like it's a sort of a mixed bag as I recall.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, I'm asking because I'm debating on agreeing to review the draft, and I don't know much about CMP, so if it's all CMP stuff, I'm not going to volunteer because I don't really know anything about CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I'd need to go back and I'd need to go back and read the read the draft and detail again to answer that question.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Deb.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "But your draft is not.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "So my question is whether your draft is CMP ish or whether I can read the draft not knowing much about CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "You could see what I'm saying.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: You can read the draft without not much, but CMP.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Okay, so I can read the draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "It looks like it's short.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "It's like it's 17 pages long.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "It sounds like.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: It's short and there's quite a few figures in there.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: Oh, good.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Pictures are better.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "So I can review if you would like.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Great.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "And it does not go into too many details on CMP or CMC.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, if no one else is in the queue, uh, do you own do you think that, uh, this is, um, ready for working group?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Last call, and we'll get the reviewers there?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I think so, yeah, once we get the reviewers.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I think we're good to go with it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think so.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Anyways.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: So obvious question.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, anybody opposed to going to working group?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Last call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "Mm.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Good.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "I like this silence.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So we'll start to working group last calls.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "Um, after.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "Well next week.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "So I think when you're also doing the last thing the subdomain.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "So rich can you put on those slides.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Oh there they are.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "So Acme allows a server to issue search for a given identifier, um, without requiring a challenge to be explicitly fulfilled against that identifier.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Um, like for example, an Acme cert can issue a search for food at example.com, where the client has only fulfilled the challenge against one of the parent authorized domain names example.com, for example.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Um um and a server could issue search for multiple for a number of subdomain certs, and only require a single challenge to be filled against the parent domain.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "And that that's really nice when you want to scale to use Acme to issue certs, um, automatically for a large number of end entity certs for devices to your Internet of Things cases, um, we do an authorization once for a top level domain or, or a parent domain, and then we could use Acme to automatically search for for hundreds or thousands of end entity devices.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Um next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "So changes and we've incorporated a similar feedback immediately after one online we've incorporated um, one of the strong piece of feedback was to restrict the challenge Typekit so on specifically for the subdomain use case.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "So what that means is that, um, one challenge must be fulfilled against a parent authorized domain name.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "And in order to issue certs for subdomain identifier, um, we've also included a text in the latest draft to um, address the two open items that were raised on the mailer and discussed briefly at the last IGF 109.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "So this the first the open items and the open items does declined.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Need a mechanism to indicate to the server that they're willing and enabled capable of fulfilling challenges against parent domains.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "So for example, for the food apart that example the Com identifier should the challenge, should the client be able to explicitly tell the server that it's it actually has like the DNS keys or whatever it needs to fulfill a challenge against that example, the comma example.com.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and one of the things that was raised on the mailer during discussions was that we want to avoid the scenario where a server could issue a challenge against a parent identifier, that the client is not authorized to fulfill a challenge against.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "For example, client issues, an order for food apartheid, example.com server issues a challenge, for example, to com but the client doesn't have the DNS keys for publishing text records to fill that challenge against the parent domain.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "We want to avoid that scenario.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so so what I, what I proposed and this hasn't been reviewed in detail yet.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "So this is what I proposed is um, and this is based on inferring some comments that Ryan and Ryan, Phillipe and a few people have made on the manners as well is we could include an optional boolean flag, um, associated with an identifier in a new order, new onset request, and that optional flag indicates whether the client has control over all apparent ends or not.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because I believe typically for for Sears, um, they'll base their logic off the top level domain example.com not off things like example.com.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if this flag is true, then the server may issue.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "If the client includes this flag and the flag is true, then the server knows it can issue a challenge against any of the parent.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "Um idns and the client will be capable of fulfilling a challenge against them.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "If the client sets this flag as false, then the client is telling the server, I can't fulfill a challenge against any parent domain.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "The only thing I'm allowed to rise to the challenge against is the explicit, um, the explicit, um, FQDN that I'm requesting.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So that's the only thing I want to challenge for.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Um, well, this slide looks a little smaller.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Apologies, but, uh, I've just cut and pasted some, uh, text from the draft which shows what the parent domain authorization looks like.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "It's just an extra Boolean flag that is optionally associated with the identifier.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think, well, we can debate we should actually debate what the logic should be if that isn't included.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And I think if the flag isn't included, it should default to true.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Probably.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because that's the behavior that, um, baseline Acme has.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Baseline Acme doesn't make any assumptions about this at all, so it's left entirely up to server policy.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but so I've one follow on question for this proposal.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "If you go on to the next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "So next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "And the question I have is that sufficiently granular like um, is there any need for a client to be able to specify a subset of parent data into this control over, for example, the client wants to search for food that parodied Example.org, and it can control parody example.org, but not the top level domain.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "And do we need that level of flexibility?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "And I don't think we do, but I'd like to discuss that.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "And what I've documented in draft four is that we don't need that level of flexibility in just a simple Boolean flag is sufficient.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so what's shown on the right hand side?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Again, this the rendering isn't that big on this page, but it shows.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, underneath the identifier is an array of adns that the client is actually authorized to fulfill a challenge against.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "That's better.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "So just scroll over a little bit.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "You can see that the client has issued an order for the food that parodied example that org identifier, and I've just included Illustratively.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "The client could also optionally include a list of Idns saying, well, I can can fill a challenge against food that parodied example org.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "I can fulfill a challenge in inspired example, but I'm not authorized to challenge against Example.org.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Now, I don't think we need that flexibility, but I'm just asking a question here.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "And next on to the next slide.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "We can go on to open item number two.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "And this is just from the server side.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "Does the server need a mechanism to provide a choice of identifiers to the client and let the client choose which challenge to fulfill.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there was some discussion on this on the mailer as well.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "We believe that this is not needed.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "And if this would make the server state machine and tracking far too complicated, and it's sufficient for the client to be able to signal to the server whether it's capable of fulfilling challenges against parent idioms or not.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "And so the proposal is there's no provision to do this in the draft.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "And I've added clarifying statements in the draft that I've declined indicates that the parent domain authorization is true.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Then server policy controls which identifier that the server can use to issue a challenge against.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "But all the client is indicating with this flag is that it's up to you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Now, server, I've told you I can authorize again.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "So I've fulfilled challenges against all of the domains.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "You decide which one you want to issue a challenge against, and that aligns with the baseline Acme spec as well.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Um, next slide please.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "I think they're the only two open items.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "They're they're the two only open items.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the draft has just been published with those two open items and closed and documented.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I'd like to get some feedback on those two proposals for the open items.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "And it is based on what was discussed in the matters a couple of months back.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then we look for a final review of draft zero four with any feedback.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "And I know, Ross, you reviewed version two.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "I believe we've incorporated all that feedback already.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Russ, you're in the queue.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: So, um, I'm thinking the single bit is not granular enough because it in different parts of the DNS tree, you don't know, um, exactly where to stop.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "So in your example, foobar.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "You're pretty sure that you can't put, uh, the challenge in org, but, um, you know, in, uh, other parts where, uh, especially in Cctlds, it's not exactly clear where the, where the top of, uh, um, a particular registrant's control begins.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "So I think your your hey, I can deal with challenges in in any of these places, uh, is safest.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Anyone else?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "This is rich.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as an individual, I think we should adopt this as, um, a chair.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think we should, um, you know, send this over to DNS and get their feedback.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Once we've adopted.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um, um, so the obvious question is how many peoples have read, how many people have read it and perfectly willing to, um, do the show of hands?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Let's try it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "Please don't raise your hand if you are an author.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "This seems to be converging on about two people having read it and six people having explicitly not read it.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Another one.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, yeah, we can do an adoption call.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "I'd rather not do it Immediately now.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "But after we've done the other working group last calls not to burden people with too many things at the same time.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but yeah, I think we can do the adoption call and, uh, then.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for that.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, so I guess the next step is the adoption call, which means we're almost done with the agenda, and we're got to the open mics part.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Going once.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Twice.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so, uh, you're getting back a lot of your time, and I just want to thank Rich for all the years of being a chair of Acme.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Feel free to open your mic and say thank you, Rich.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Stop sharing.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: I don't know how to flip my.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I was going to say thanks, Rich.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know how to flip my camera.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Everyone's looking at my monitor.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for those that might be interested in in, uh, being a co-chair, please do drop me a note, uh, to me and Ben, and we can sort that out.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Additionally, what would be helpful for the working group is if we chartered a little more specificity into what the future work is.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for example, we have a we have some drafts we're talking about.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "We have some drafts adopted.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "We don't have necessarily milestones.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "I see that there's some drafts that, uh, that are related and we don't even have on the agenda to talk about.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "So if we just had some dates for when we think we're going to be done and we have some notion of when we will be done and what classes of extensions we want to we want to cover.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "So it's basically a matter of do we just need to finish what we have, or is there a new scope that we expect to be talking about in the working group?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Now's a good time to throw that out.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "Metaphorically on the mailing list.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Not necessarily at this meeting.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Right.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "Um, anything else for open mic?",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: Rich needs to feed his dinosaur more often.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "It's really lost weight.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: They taste like chicken.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Mhm.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, thank you all.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "And getting back, uh, for 20 minutes of your life back.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Have a good week, everyone.",
+            "confidence": 0.9824535186794093
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: That's.",
+            "confidence": 0.9824535186794093
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-23T22:35:21.595720+00:00",
+          "processed_at": "2026-01-23T22:35:21.595720+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "tia0px9htd"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9824535186794093
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

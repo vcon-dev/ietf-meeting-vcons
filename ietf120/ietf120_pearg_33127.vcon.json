@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "32460aea-4f5e-4c87-809e-9ab52bd8c41d",
   "created_at": "2026-01-03T20:03:10.177672",
-  "updated_at": "2026-01-03T20:03:14.572920",
+  "updated_at": "2026-01-28T02:41:39.967579+00:00",
   "subject": "IETF 120 - PEARG Working Group Session",
   "parties": [
     {
@@ -36,17 +36,16 @@
         3
       ],
       "duration": 3600,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=sohvvDFT3DU",
       "meta": {
         "ietf_meeting": 120,
         "working_group": "pearg"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 120,
         "location": "Vancouver, CA",
@@ -56,10 +55,10 @@
         "start_time": "2024-07-23T00:30:00+00:00",
         "duration_seconds": 3600
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -68,10 +67,10 @@
         "group_acronym": "pearg",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -105,10 +104,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/agenda-120-pearg",
         "mimetype": "application/pdf",
@@ -119,10 +118,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/chatlog-120-pearg-202407221730",
         "mimetype": "text/plain",
@@ -133,10 +132,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/minutes-120-pearg-202407230030",
         "mimetype": "application/pdf",
@@ -147,10 +146,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/bluesheets-120-pearg-202407230030",
         "mimetype": "application/pdf",
@@ -161,10 +160,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-pearg-the-ariadne-protocol-a-privacy-preserving-network-layer-protocol",
         "mimetype": "application/pdf",
@@ -175,10 +174,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-pearg-ietf-120-pearg-chair-slides",
         "mimetype": "application/pdf",
@@ -189,10 +188,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-pearg-melt-presentation-12",
         "mimetype": "application/pdf",
@@ -203,10 +202,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-pearg-melt-presentation-22",
         "mimetype": "application/pdf",
@@ -217,10 +216,10 @@
       "meta": {
         "order": 4,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/agenda/pearg/",
         "mimetype": "text/html",
@@ -231,10 +230,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-120-pearg",
         "mimetype": "text/markdown",
@@ -245,7 +244,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -7849,6 +7849,3764 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: I think so, yeah. Okay. Um, I think we can start. Um, y'all, um, welcome to the, uh, session at IETF 120. Uh, I'm Siobhan, and, uh, I am Sarah have been co-chairing this group for a while. And. Yeah, looking forward to the two talks this evening. And, uh, this is the note. Well, please do note it. Well, it covers various topics such as patents and code of conduct. Um, by participating in this meeting and generally the IETF week, you agree to follow this. And there's a number of, um, bcp's and Rfc's that govern, uh, behavior at the IETF. So please do take a look at some point. And, um, if you do have issues or concerns about behavior, please, um, talk to the Ombuds team. Um, that's why they're there. And, um, we do need a note taker. So do we have a volunteer in the room or remote? Can I ask you to.\nSPEAKER S2: Anyone in the room willing to volunteer to take notes. We do need a note taker.\nSPEAKER S1: What was the fun part? Oh. Thanks, Alison. Great.\nSPEAKER S2: Alison. Thank you.\nSPEAKER S1: All right. Um, please do sign in to the session, uh, via data tracker or the QR code. That should be up there somewhere in the session. Um, this helps us keep track of, um, the participation at these, um, research group and working group meetings. Um, and if you're in person, please do still use the Meet Echo Light client in order to join the mic or participate in Show of Hands so that it's fair for folks who are remote. Um, and yeah, keep audio and video off. Um, if you're not presenting. And, um. Yeah, I think that's it. Um, I can give a quick update about, uh, a draft that we've been working on. Um, I don't know if Mallory's in the room. Oh.\nSPEAKER S3: I am. Okay. Um, yeah, I can give a quick update as well. But you've also done work on this, Siobhan. So, um, I mean, I think it was a couple of meetings ago. I think it was in Prague where I sort of maybe asked the chairs. I know you didn't have a session there. I don't I don't think you did. But just whether or not you thought this draft was getting close to ready and, um, for research group last call because I think we've gone through and adjusted, um, the draft, it's fully fleshed out now. I think all of the sections have been, um, written out. We've had some great review from folks whom we've actually cited. So work that others have done that has shown up in this draft. We've had reviews from those experts. They've improved the draft. Um, and so I encourage people to look at it in its current state. Um, if there are questions or anything on direction, um, let me know, especially if that's direction and suggestions from the chairs. But, um, it's in its 10th, you know, actually technically 11th version now. So yeah.\nSPEAKER S1: Thanks a lot. And thanks for driving this work. Um, yeah, I took a look as well. And I think, um, we, the chairs intend on doing a research group last call, um, within the next few weeks. Um, and unless people have, like, strong opposition or have very strong opinions on this right now, uh, please do let us know very soon.\nSPEAKER S3: That would be great. Yeah.\nSPEAKER S1: Great. All right, so let's move on to our first talk, which will be by Stefanos who is joining us from icMl. If I'm not wrong. And it's very late for him. So thank you for presenting.\nSPEAKER S4: Yes. You're not wrong. Uh, hello from Vienna. Uh, let me share the screen again. And you should be able to see my slides, right?\nSPEAKER S1: Yes.\nSPEAKER S4: All right, let's start then. I'm going to present you our work called Melting Point, uh, which stands for Mobile Evaluation of Language Transformers. Um, a few things about me. I'm a machine learning researcher at Brave Software. Uh, and I also hold a visiting researcher position in the University of Cambridge. Uh, prior to that, I that was a research scientist at Samsung AI. And I did my master's in the University of Cambridge. Also, I used to work at CERN back in the day. My interests generally revolve around the areas of distributed mobile systems, efficient deep learning, as well as federated learning. Right. Uh, the brief overview of our talk today is going to be like some background and motivation on, like, uh, deploying machine learning on device, uh, the challenges and directions that exist. Uh, then I'm going to present our work on multipoint. And last, I'm going to close with some key takeaways and open challenges and future directions. Right. Um, it is um, has been in the past that there is a trend, uh, of uh, networks, as in mobile models are getting larger and bigger in their pursuit of, uh, higher accuracy. And we're entering an era that is, uh, that of hyperscale models. At the same time, uh, devices are getting ever more, uh, increasingly powerful, uh, in their attempt to, uh, be able to, um, execute this, these networks. Uh, so we have various, um, use cases coming up, uh, ranging from self-driving cars to image inpainting and outpainting, um, web page, uh, interaction with, uh, various, uh, assistants, intelligent assistants, as well as voice assistants, uh, such as the case of brave Leo, uh, in the browser or a Google Assistant on Pixel eight. So, uh, some trends are that there are new architectures in the blocks, such as llms, diffusion models, nerves and, uh, state models. Uh, at the same time, we have multiple, uh, neural networks, uh, corresponding uh, on the device, uh, either in the same application or across different applications, but running at the same time. And also we have the pressing need for privacy preserving machine learning, either when we're talking about inference or when we're talking about training or personalization of these models on user device, on user data. So, uh, a very brief introduction on Transformers. They were, um, introduced by Google, uh, a few years back, 2017. Uh, they're great characteristics are that they can attend to long context dependencies. Uh, they parallelize sufficiently well. So, uh, we're able to train them, uh, quite efficiently. Um, they support various modalities, uh, such as sequence of tokens, which can be text, can be speech or like a conversion of the vision. And they can scale to large sizes without performance plateauing. This means that more data you fit, uh, the better they become. Uh, this is what they look like. Uh, I want to just pay attention to the main architecture that it consists of an encoder and decoder, and the decoder is autoregressive. That means that when you're you have a sequence of tokens, it generates the next token. And it goes in an iterative manner. So x for x1 up to XT it generates XT one XT plus one. And then this goes into the sequence of tokens and it goes to t plus two. Um as you can understand there is a lot of um compute being um, um, the same. So there is a key value cache that optimizes, uh, a lot of computation and saves a lot of computation. And, uh, Prefill operation fills the cache, whereas generate produces the next token. Uh, the former is a compute bound operation, whereas the latter is usually memory bound operation. And some terminology that I'm going that is going to be useful later on is the context size, which is the maximal window of tokens that the transformer can attend to. Uh, it's the maximum generated length, which is the maximum generated tokens in the output, and the end of sequence token, which is effectively a special token that when it, uh, when the LM is generating that it stops generation. Right. Um, large language models, um, exist from various players in the, in the um, in the market. Um, accuracy, efficiency, cost and cost are the key characteristics. And the training process consists of pre-training on very large corpora such as like the web, then fine tuning on very specific uh, annotated datasets, uh, for um downstream tasks and usually for um um rl AI, which is uh, human feedback or AI feedback for alignment to either human expectations or, uh, safety. um, this kind of values. So how can one deploy alarms in the browser? Uh, we, uh, envision two main, um, modes. One is a deeply application level and the other one is at the website level, the application level. An example is, uh, integration with the browser itself. So imagine you're running on premise, uh, but for inside the browser, whereas at the website level, um, the custodian is effectively the website, and um, the browser is simply the vessel that is running everything through webgpu usually. So, uh, what are the challenges? Uh, definitely. One challenge is system heterogeneity. You have various tiers of devices coexisting out in the wild along with previous generation devices. Um, there are simultaneous workloads, as I said before, not necessarily neural, uh, based, but also, uh non-neural. Um, Compute. Uh, you have the download latency of the model parameters as well as the initialization latency. So loading them from memory into, uh, uh, from secondary memory to main memory. And uh, another problem is the sustained performance where the peak performance may not be guaranteed under continuous inference. So, uh, I'm going to start now with some modeling point which has been accepted to Mobicom 2024. Uh, the code and the paper can also be accessed online. Right. This builds on top of previous work of mine. Um, but I'm going to speak a lot about this. Uh, these are just for reference. Um, the question is, why should one deploy on device one? Is, uh, for decentralization, democratization of access. So instead of having only access to these resources through a black box API, uh, users are able to effectively control how they're using this. um, these models uh, next is privacy and personalization. So they're able to be the custodian of data and not have their data, uh, ever leaving the devices, the device premises. And they're able to personalize these models on their own, uh, tasks. And last but not least, it's sustainability in terms of, uh, you know, if you have easier tasks that don't need that many resources, you don't need to run a trillion model parameter, uh, just because, uh, it's the one available. So you can customize effectively the model, uh, to your needs. So there is a trend going from large language models to smaller language models. And these are usually going from like several billions to, uh, like a few billions, like 1 billion or 2 billion, uh, models. Um, this is how the infrastructure looks like. Uh, you can see two families of devices. One is the phone devices, uh, that you can see at the bottom, and the other one is edge devices, signified by GitLab on the left upper left side. Um, they differ in terms of like how their capabilities, obviously. Uh, but also how we measure energy. Uh, the mobile phones are connected. Ah, well, we have removed the battery. We are doing a battery bypass procedure, and we're connecting the monsoon power monitor through, uh, probes to the control, to the battery controller. And we're able to provide power and measure how much power is consumed at the same time. Uh, for the Jetson boards, they have integrated probes where they can measure their energy. Um, and, uh, the whole process of automating interaction as well as measuring and, uh, gathering the performance memory as well as energy data is coordinated by Raspberry Pi. Um, we also have, uh, the bench where we're, uh, collecting the models, the benchmark binaries, as well as the, um, output reports. This is what it looks like in reality. And these are what each device is, uh, are doing. Uh, also, we have, uh, infrared thermometer for, uh, being able to measure the thermal behavior of the device. So, uh, the benchmarking process looks like this. Um, for brevity of time, I'm not going to go through every bit of detail, but effectively we have models that we're downloading from repositories, be it Huggingface or, uh, another source we're converting and quantizing it, depending on the, uh, framework, the backend framework at hand. And we're going and we're evaluating this based on a evaluation suit or using Luthria's. Uh hmm. Evaluation tool, uh, and report accuracy on several tasks. Uh, these are in order to be able to gauge the impact of quantization, uh, on the Um, accuracy of the tasks that that the model is going to be tackling. At the same time, we have a building process where it builds the binary for the, um, the application. And through automation, we're able to interact realistically with the application, uh, on the device and measure the characteristics that we want to measure. Um, the devices, models and frameworks that we have traced, uh, are depicted in these three tables. Uh, we have high tier and mid tier devices across the board. Uh, on Android, iOS and Z, we have uh, models that span from 1 to 13 billion model parameters. And the frameworks, the backend frameworks that we support is MLC and llama farm is at the front end for iOS on top of llama CBP. Um, we divide two families of benchmarks macro and micro benchmarks macro run at the conversation level, they are more realistic, whereas macro benchmarks are more deterministic. Uh, by having always a fixed set of inputs and output tokens, the throughputs and discharge rates are depicted now in these, uh, various graphs. Uh, on the on the left side you can see the throughputs, and on the right side you can see the energy efficiency of each model, uh, on different devices and uh, frameworks, uh, prefilled, as I said before, is faster than generation because compute bound. So, uh, the GPU is not or the CPU doesn't wait for, uh, the memory to bring data into, um, into the compute device, the SoC. Uh, you can see also that there is a lot of heterogeneity across, uh, across the board, uh, based on the device, the framework as well as the model, generally smaller models behave better, uh, faster, uh, and are more efficient. Um, You can also see, um, the, uh, some, um, peculiar, uh, sorry, sorry, uh, the EVP on Android was not really optimized for GPU performance. And this is why, uh, whatever you see in CV here is run on CPU, whereas whatever you see on MLC is running on GPU. Uh, we have numbers for GPU in the paper. Uh, and you're welcome to um, you're welcome to see, uh, also, CPU was not as efficient as GPU. Um, and yes. So let me just breeze through this. In terms of, uh, power over time, uh, here you can see, uh, depicted, uh, how the wattage, uh, fluctuates over different operations during deployment. You can see the model loading time. You can see various inferences that happen in between. And then we're analyzing the last, the sixth. Uh, um. Generation phase here where you can see the generation phase. Sorry. Um, one thing that is quite. What was quite interesting and surprising was that, uh, the power draw of phones nowadays, uh, tend to, uh, be, uh, much larger than ten watts. That used to be the case. So iPhone 14, uh, for example, uh, was reaching a maximum of 18 instantaneous and um, 13.8W of sustained, and Galaxy S23 was 8.5 and 14W. And this device managed to run from 500 up to 600 approximately until the battery was depleted from full. In terms of quality of experience, you can see the model loading latency here, and you can see that different devices offer somewhat different, uh, loading times. Uh, however, you can see that the there is an artifact here where the Android devices offer larger GPU memory. Unified memory across the board so they're able to also load larger models, but it's, uh, noticeable to the user in terms of sustained inference. Uh, we tried to measure how performance fluctuates when you're running continuous workloads. And we saw that, uh, thermal throttling is being invoked on iPhone 14 Pro, whereas this was not the case on Jetson devices. And we verified that with events on, uh, from the, uh, API, the program, the programming API of iPhones, in order to, uh, see that this is the case. And on the right side, you can see that after a full conversation with Zephyr, 3 billion model parameters, uh, the iPhones were reaching a 48°C in terms of macro benchmarks. We went and analyzed various operations. And how much of the, uh, compute is being spent across different operations. Fused operations here for MLC. You can see, uh, fused operations are operations that are more optimally, uh, defined by merging different operations of the network. Um, and in figure two, you can see very clearly, uh, the memory boundedness of generation, where the GPU effectively waits for memory IO and doing no OP. So, uh, it's, um, it's waiting effectively. Uh, last. We also measured the impact of quantization across different datasets. Uh, data sets span across, um, tasks of natural language inference and generation. Uh, and you can see that different quantization levels, quantization methods as well as different parameter, uh, different like different parameter models are having uh, different impact. Uh, so uh, there was an interesting dynamic in terms of what is, um, the case last, uh, we verified how. So? If we don't, only we're not only limited on the premises of the device, and we can span across different devices, so offload to ambient devices such as Jetson Nanos. Uh, we wanted to verify how, uh, computation works, how well, it works. It's significantly larger than the on device computation. And also it's, uh, it becomes more efficient. Uh, you can see also here different TDP modes that this Jetson supports, which might be effectively different devices that coexist that exist in the IoT domain. So imagine that such a device could be, for example, co-located with your TV. For instance, if we're talking about the consumer home, uh, the summary key takeaways are that, uh, we perform the first study for the feasibility of deploying llms realistically on mobile and edge devices that can act as a basis for future research. Uh, we offer an open benchmarking framework that people can use and extend that allows performance, energy and thermal, as well as accuracy evaluations of transformer models and devices. And the key takeaways were that there is performance heterogeneity, uh, that the on device inference is still memory bound but also thermally bound. Quantization can come at a non-negligible accuracy cost. And tractability does not necessarily imply deployability. So the quality of experience is severely affected on models that are more than 3 billion parameters. In terms of future directions, there are various, uh, things happening in the field. Um, we we're noticing model changes. So the rise of smaller language models and that are used for specific, uh, agent, uh, like behaviors and your routing across different models for, uh, invoking specific behavior as well as moving from unimodal to multimodal models, such as models that can interact with vision, for example, as well as text and the model compression side of things we have low rank approximations are actually on top of quantization that already existed, uh, taking over as a, as a performance variant. And um, we're not seeing also broader, uh, support for dynamic graph models such as models, um can do early exiting skip decoding or speculative decoding. Um, in terms of execution, we expect that the new generation of NPU hardware will be specifically designed for, uh, efficient matrix and matrix to matrix multiplication, as well as, uh, offer more efficient operation support. And this this will boost the energy efficiency and the thermal behavior of the device. Um, last, in terms of deployment, um, we are already noticing the hybrid collaborative execution with uh. Uh, these um, an example is Apple intelligence offloading paradigm. And um, we are also anticipating, um, a deployment paradigm where effectively the backbone of the model can be can be part of a middleware, uh, from the operating system. And then different applications will be able to tap, tap on top of it and build different adapters, for example, for downstream use cases. So these are uh, giving different dynamics, uh, some acknowledgements to my collaborators and, uh, yeah, I'm open to questions. Thank you.\nSPEAKER S1: Thanks a lot. Stefanos. Do we have any questions at the remote or in the room? Um, I have a question to start us off. Maybe, um, it seems like you were evaluating, um, open source models on these devices? Largely. Do you have a sense for what, um, the model performance might look like for the LM shipped by the OS? Um, uh, by the device manufacturer themselves, like Apple or Google?\nSPEAKER S4: That's a good question. Um, I'm not sure. So for for Google, I'm definitely not sure what they will be shipping. It's probably going to be a Gemini variant, um, that, uh, they're already talking about, but they don't publish about um, um, usually, uh, it depends on. So effectively, if it acts as a foundation for others, for other applications to build on top, they need to have, uh, generalizability, um, aspect covered. So the more parameters, uh, that this backbone have, uh, The better. It will generalize across different tasks. Uh, obviously. But at the same time, I don't expect this to be larger than 10 billion model parameters because it won't be supported by devices. Uh, for Apple Apple's case. I'm pretty sure that, like the first variant of Apple intelligence is only supported on the 15 Pro, uh, line, which comes with at least six gigabytes of memory. Um, so, um, that's my that's my understanding right now for things to come. Uh, also, I expect that the first, um, the first variant will have first party applications first, and then third party application might be, um, supported along the way.\nSPEAKER S1: Can you say more about that? Sorry. The first party versus third party, uh, use cases.\nSPEAKER S4: The native applications will be the first clients for this middleware. And then third party applications will probably take, um, take over.\nSPEAKER S1: Um. Any other questions for Stephanos? Jeff. Go ahead.\nSPEAKER S5: Have you looked have you looked at the accuracy of the answer versus the performance that you are evaluating, especially against, uh, trying to break the model, bypassing the guardrails, uh, having hallucination into the answer. Because, I mean, those answers are, like, very low value, but still consuming resources. So did you make any attempt to measure?\nSPEAKER S4: Uh, we did not. Uh, this would only be covered from how quantization can affect this behavior. So for example, if a model is hallucinating more when you're quantizing to a lower bit width, that would be covered by the accuracy metric. But other than that, we did not notice. Well, we did notice, uh, such a behavior, to be honest. Um, it was on three bit quantized models, if I remember correctly. It was some variant of GEMA, but I might be wrong about it. Um, but we did notice this. This behavior. Yes. And when a model hallucinates, we also notice that it tends to be more verbose than necessary. So it produces more tokens.\nSPEAKER S1: Cool. Um, if there are no more questions, we can move on to the next talk. Thanks a lot. Let's have a round of applause.\nSPEAKER S4: Thank you. Cheers.\nSPEAKER S6: So. Hello, everyone. Um, my name is Antoine Franco. Today I have the pleasure to present you, uh, work that I've been doing with my colleagues Luigi and Richard on the Orion Protocol, which is a privacy preserving network layer protocol. So in this presentation, I will present you, uh, this protocol and the reason why we did the design of this protocol is the following. In fact, we wanted to design a data plane network layer protocol, allowing a source s to send the packet packets to a destination de anonymously and by anonymity. Here we mean that the source goals is to present an adversary in the network from associating it with the package destination. So we don't want someone observing the packet in the network to say, oh, this source is talking to this destination. And we want to also to prevent two consecutive packets to be associated with the same flow in, uh, in the network. That means that if you if you prevent association of two packets to a flow, then you, you make, uh, attacks based on, uh, traffic flow more difficult to, to perform. So in the threat model for, for this the protocol design, we consider a global attacker that is observing communications on all the network links. So if you see on the picture in on the right of the slide, all the links are colored red because we consider that the little attacker can, um, can wire tap the links and some nodes, some routing nodes in the network can be corrupted, meaning that an attacker has control over the cryptographic materials of those nodes. Given that we want to operate at the at the network layer, we have some performance constraints. In fact, uh, if you look at the literature and we'll talk later about routing, uh, you have several designs for onion routing protocols that use public key cryptography. The problem with public key cryptography is that it's very difficult to operate at line rate on a router. So in the design constraints of our protocol wanted to use symmetric hypertrophy. We'll see that we do that at the expense of some anonymity protection. But uh performance Requirements were quite strong for us and we from a performance constraint. We also want to change the possibility to have the possibility to change symmetric key with every packet to prevent, uh, to prevent attacks. So, uh, as I, I mentioned in the previous slide, we when we tried to design our protocol, we, we quickly went to onion routing. And uh, we found a very good definition of onion routing in, uh, paper for Christian Kuhn and Martin Martin Beck and Torsten Struther called breaking and partially fixing, uh, provably secure routing, which I encourage you to read because it's a tremendous paper. Uh, so this paper gives a formal definition of onion routing as a set of three primitives, a key generation algorithm, uh, sending algorithm to form the audience that you are going to send over the network. And, uh, an algorithm called proc onion, which defines how a node in the network, uh, process a packet to to to transmit it to the next node. So, um, associated with this formal definition of onion routing, we have three formal properties for for onion routing and ensuring those formal properties, um translates in your protocol being able to protect the anonymity of uh, peoples involved in the communication. So those three formal properties are layer and linkability. In fact, in layering linkability, we mean that an adversary that is accessing onions before and after honest relay cannot determine whether the onions are related or not. So it means that a package that is crossing an honest node can't be, uh, packets in in ingress and egress packets, uh, coming in and out of an honest node can be associated. So it prevents an attacker to perform correlation attacks. The second formal properties that we are interested in in onion routing is indistinguishability. It means that an adversary having access to onions after an honest relay can't figure out which was the route taken by the onion before the honest relay. So when you see egress packets from an honest node, you can't see whether the packet has taken a long path in the network, a short path in the network, and you can't figure out where it was coming from. And the last but not least, property, because it was it has been used for several attacks on, uh, practical onion routing protocols is onion correctness. Onion correctness means that, um, a node that is receiving a a packet needs to be able to, um, to compute, uh, to make sure that the packet that it received is authentic, is authentic, that, uh, attacker has not modified part of the of the payload to perform correlation attacks. Uh, this correctness property is very important because it has been, um, disregarded for several for several years. And uh, in the literature about privacy preserving network protocols, um, there are lots of attacks that are, that are performed that are based on the manipulation of the payload and, uh, trying to, uh, correlate, uh, payload manipulation in and out of, uh, of a network to create a package together. So this onion connectedness, uh, property is very important. So now that I set the scene for where what we wanted to achieve and, uh, what was onion routing in general? Uh, I will do a quick review of state of the Art. And, uh, I summarized it in the, in the following table. So in this table we see a list of um, of work from state of the art. You have, um, several protocols like Sphinx, Tor or nets, nets and a set of properties. So the characteristics of the protocol and the security properties here. And, uh, from the state of the art, we see that the perfect solution has a green light on all those properties. But in the state of the art, we see that no protocol is is addressing all the properties that we want to achieve with, uh, privacy preserving network layer protocol. So in particular, uh, first, uh, things and uh, which is uh, uh, which is one of the major, the major, uh, onion routing protocols that has been presented in a paper from 2012 and it's enhanced versions that has been enhanced by, uh, Christine Kuhn and her colleagues. Um, those protocols are not usable at, uh, at the network layer because they are using public key cryptography. From a security perspective. They are very nice, especially the enhanced version by Christine Kuhn. But, uh, from a performance perspective, it's not feasible to run those protocols at the network layer. Uh, Thorne uh, is, uh, very widely used and, uh, very, very popular. When you talk about privacy preserving protocols, uh, the the issue is that you have a number of attacks that have been performed on tours that prevent him from being completely secure and operating tour at the network layer is a challenge. And you also have protocols like On.net and Net that has been that have been designed in ETH Zurich, in the frame of the future network architecture called cyan. Uh, those protocols are also very interesting. But, uh, given the design, uh, some security properties are not insured. So, uh, so, yeah. Uh, so this, uh, op integrity is the fact that you can compute on the packet, um, uh, authentication tags that that allows you to detect manipulation of the packet. So the possibility to perform correlation attack based on manipulating the payload. So, uh, on net, uh, Sphinx and the tour are not immune against those attacks. And, um, in or. Net and net. The fact that you use a slide or a metadata in the packet, uh, prevents those, um, those protocols to be protected against, uh, the fact that, uh, malicious node can correlate packets together if it has access to the cryptographic material of a given of a given node in the in the network. So now that I presented the shortcomings of, uh, state of the art, I will try to present you, uh, how we aimed at addressing those shortcomings in iron. So in iron, uh, we wanted to prevent against, uh, uh, the attackers that I described earlier and, uh, to, to avoid having to rely on trusted third party. We used a source routing model. So using source routing model allows the source to control the path that is going to be taken in in the network, and the source is able to determine to determine the trust it has in the source, in the route it received from an oracle. For now, we are continuing considering it an oracle. Um, we are going to use sequential encryption on on packets. So at every node in on the path the packet will be re-encrypted. And we'll see how the integrity of the whole packet will be checked at each step. And for performance reasons, we are going to avoid as much as possible the use of public key cryptography. Uh, because, uh, it's not feasible to do that or for all the packets will, will, will use uh, enhanced things packet at the beginning to set up, uh, master master symmetric keys between the source and every node in the on the path. And then we are going to use the key derivation mechanism to derive per packet symmetric keys that we're going to use to generate the cryptographic material that is used to process the packet. So in Orion we have included two technologies that we think are, um, participating in improving, uh, the privacy properties of protocols from state of the art, uh, the first, uh, technologies that we designed and included in our design is the anonymous key reference. In fact, if you remember, in the state of the art, I mentioned that, uh, for instance, in Tor, the use of a cell ID was, um, opening the possibility for an attacker to perform correlation of two packets to a given flow. In fact, in towards design, packets belonging to the same flow, share the same cell ID at a given node, and this is a major attack vector for Tor, and it has been used in several attacks that have been published, and we struggled a lot in the design process of variant to avoid having such, uh, such mechanism and such, uh, identify metadata allowing to an attacker to, to collect uh, packets to the same flow. And, uh, the light came with, um, with uh, a paper called, uh, Anonymous Authenticated Encryption, uh, that was published in 2018, I think. And, um, in fact, in this, in this paper, uh, they say that they are going to they are going to share the reference of the key by saying that the the trailing bytes of encrypted, uh, content will contain all zeros. And if you have a bag of keys and you are and you are, and you are trying to decrypt the, the the the the encrypted contents, you realize that you have used the proper key when you find the trailing zeros. Uh, this is not, uh, an acceptable method when you try to, uh, encrypt and decrypt packet at line rate using symmetric keys, because otherwise you would use public key cryptography. So we modified the method a bit and in the following way. In fact we inspired from the the Enigma attack. The Enigma attack that at the beginning of uh of a packet, we use uh, the same, uh, byte pattern and we encrypt it with a set of, uh, temporary keys. So from the, from the, from the master key that we exchanged between the source and the given node, we derive a set of temporary keys and we encrypt the beginning of the packet with those temporary keys. And we we store the results of those encryption in a dictionary. When we receive a packet, we look at the first bytes of the packet and we compare it with the in the dictionary that we got to to determine whether it's, it matches, uh, the encrypted pattern that we have precomputed. When we find this precomputed pattern in our dictionary, we can retrieve the temporary key. And we can use this temporary key to process the cryptographic materials that we are going to use to process the packet on, on the node. The advantage of this is that you don't have, uh, same reference in clear in the packet because you are using encryption of uh, a given pattern. So the pattern changes with every with every packet. So that's that's fine. And, uh, it can be used to create packets together. It's a moving reference. So it prevents linking packet to a session for an external observer. If we are in, um, in a state where there is a loop on the patterns and we change key and we can we go back to a, to a new cycle. The second um, technology we used in iron is the routing element shuffling. In fact, in, uh, privacy preserving uh, network protocols using source routing approach. Uh, one aspect is that you have to store the route in the header, and the length of the route needs to be hidden to prevent an attacker from, uh, getting information from the observation of the length of the, of the route. Uh, to do that, Sphinx use, uh, last in, first out. Um. uh, data structure, which is very interesting. But uh, processing this last in, first out structure on a router is time consuming because you have to copy the structure and rewrite all the structure on the router. This involves memory and routers don't don't like, uh, copying and changing large amounts of data in in packets errors. So instead of doing this we have a routing uh element vector. Uh, in this element we place the segments that are describing, describing the routing instruction a given node as to use at, uh, at slots that are given by a pseudo random permutation. And uh, when uh node processes, uh, a packet, it can decrypt only, um, Only a slot plus the routing element vector in the same go to retrieve the the routing information and send the packet afterwards. So now that I gave you the description of the primitives that we have been using in the design of the protocol, I will try to define you, but with hands. Uh, how, uh how processing the packet goes. If you want a more formal definition of the protocol, you can go to the archive papers that is listed in the agenda of the, of the meeting. So, uh, we come from, uh, we state that's wants to send a packet to D, and S has exchanged a set of, uh, master keys, KSA, KSB, KC, and Ksd with A, B, C, and D, okay. So, uh, the exchange of those keys is done with, uh, with another protocol that is out of scope of this presentation. For now, you can use enhance things as I mentioned earlier. So first S will create the packet to send to D through A, B and C. To do that it will take a two pass uh a two pass approach. First it will retrieve the address of all the nodes A, B, C, and D and the keys, and it will initialize a routing element vector, which is a um, a vector of bytes of a of a fixed length. And uh, it will, it will compute a pseudorandom permutation over the over the addresses to place the, the addresses into segments here that are placed in, uh, slot position that is given by a pseudo random permutation. So here you send the vectors that uh, segment A is position is here B, C and d. Okay. So now from the master key that has been exchanged between S and ABCd, we compute a temporary key using uh uh key mechanisms such as uh, the UK key duration mechanism that is used in credit cards. And with the temporary key that we retrieved, we compute a pseudo random permutation of the length of the packet plus the length of a routing element vector. Here. So we have those um byte strings. We keep them and uh, we start processing the creating the packet in the following way. So we start from the, the vector of bytes that we initialized. And we place here a segment a segment is uh a prefix with a fixed pattern that we are going to encrypt to reference our key. And a segment, a segment a star is the address of the next node for segment A, so the address of B and the and the authentication uh tag set to zero. Because uh we are going to include an authentication tag later. So we, we include segment a star here. And we XOR the whole packet with row a header. So it's part of it's this part of the pseudo random bytes that we generated with the temporary key. So we retrieve this key this this uh byte vector here. And we continue the process with by placing B at the slot and uh and xoring with raw cssb etc. up to D here. So at the end of this process we obtain a byte vector in which, um, the which is initialized and sequentially encrypted with the Rox header part. But the problem is that with this structure, we don't have the possibility to get a authentication tag for the whole packet. So to include this authentication tag in the header we are going to uh, add the payload at the trailer of the packet. And we are going to exhaust the the whole packet here with row header plus row CC'd payload. So we obtain this byte vector here. And. We are going to Place the segment D star at the beginning. Compute the Mac of the packet here and replace. Segment D star here with the segment with the authentication tag, we computed Xored with raw Ksd uh routing element. So the first part of the of the pseudo random permutation that we computed earlier. And we are going to copy this part, this byte part in the routing element vector at the slot of segment D star. So we do the same in the same way with CB and A, and in the end we obtain the following packets. So here we have uh segment A with the authentication tab with the authentication tag that has been encrypted once segment B with the authentication tag Encrypted twice, three times and four times. So, uh, here, note that, uh, segment N with M contains the encryption tag, and segment N star doesn't contain the encryption tag. So the encryption tag is set to zero. So now S is ready to send the packet to A. So it's going to send it to hey here. So when A receives a packet it reads in the common header the slot position of uh the routing element vector, the routing element that it needs to read in the routing element vector. So it says that it's in position 01234. So four. And at the beginning of this routing element it takes the first byte and tries to match it with the table. It has to reference the reference temporary keys. If there is a match, it retrieves the key. Compute the pseudo random permutation that is used to absorb the packet, and store the routing element with the first part of the pseudo random permutation to retrieve. Segment am. From this, it can compute the the authentication tag to see whether the packet has been manipulated or not. If the packet has not been manipulated, it can exhaust the whole packet with the trailing, uh bytes of the of the random permutation it computed to uh, obtain the following, uh set of packets and relays the packet to the next node b b will will do. It will process the packet the same way, C will process the packet the same way, and the packet will reach D. So at this stage D doesn't know whether it's the destination or an intermediate node. So when D will receive the packet, it will, uh, catch the first byte to reference the key, retrieve the key, compute the permutation. And when it computes the segment DM it, realize that the next element is himself. So it means that it's the destination. So, uh, at this stage, deacon computes the authentication tag for the packet, verifies that the packet has not been manipulated, and decrypt the whole packet or transmit it to the upper layer. Okay. So in um, so now that I described you by hand how the protocol works, how does it compare with state of the art? Did we manage to enhance the situation a bit? Uh, so here at the bottom of the picture, you see, uh, how we perform with iron, whether we are using the routing information vector with a pseudo pseudo random permutation of the position, or without using the routing information vector, meaning that we are using the LIFO data structure that I told you we would, uh, we would like to avoid. The reason why I did this, uh, comparison here is that, uh, in discussing, uh, with, uh, reviewers in conference when we submitted the academic paper for this research work, we realized that the use of the routing information vector was leaking some information, uh, some privacy information. So, uh, in fact, uh, you could, uh, you could say that two packets, uh, in and how to honest router could, would not be, um, would not belong to the same flow if they use the same, uh, position in the routing element vector. So this leaks some information about, uh, for, for an attacker willing to create package. So this is why we mentioned that protection against air flow correlation and uh, source path indistinguishability is partial here. Uh, the limitation we have with our perfect protocol is that, uh, given that we are using symmetric cryptography, it's impossible to have source state and indistinguishability because, um, uh, node that is processing two packets with the same master key knows that the packet comes from the same source. Maybe they have taken other paths to reach it, but, uh, still, we know that the same source has generated those packets. A way to mitigate these attacks is to have a set of keys between one one source and one nodes. And you can shift keys for some packets. But it's taking it's taking, uh, a lot of, uh, performance burden for, for ensuring this property.\nSPEAKER S1: Just a time check. You have about three minutes left.\nSPEAKER S6: Okay, then I will jump to conclusion. Okay, so where do we stand? So we did, uh, the academic part of the of the work on this protocol and the reason why we wanted to present this in, in irtf is that, uh, we think that this protocol can be, uh, adapted in, uh, IETF protocols. Uh, in fact, we are thinking about designing either as an IPv6 extension header inspired by the ASR v6 error or as a, as a new Quic version. Uh, taking advantage of the work on mask, uh, on on the mask Quic proxy, and in particular on the forwarded mode in the mask UDP relay method. Um, we have a first implementation of iron in rust. Contributed by Melker Richard. Uh, which is using our, um, our modified, uh, server error in the implementation. We show from, from our benchmark that the processing of packets is quite efficient compared to, uh, compared to, uh, Sphinx protocol. And we think that, uh, iron could be, uh, a building block in a more global, uh, complete, uh, privacy preserving, uh, layer three set of networking protocols. So thank you. Uh, uh, I'm willing to take questions. Uh, I see that Jonathan is in the queue, so please.\nSPEAKER S1: Just, uh, we have about two minutes, so please keep your questions and answers. Sure. Go ahead. Jonathan.\nSPEAKER S7: Jonathan Hoiland, Cloudflare. Um, you mentioned that you have formal proofs of security on your previous slide. Um, I'm surprised by that because, uh, the anonymity trilemma says that without a certain amount of cover text or a certain amount of latency introduced, it's impossible to be secure against correlation attacks.\nSPEAKER S6: In fact, uh, yeah, it results in formal verification. It's a formal description, uh, formal description of the protocol. So.\nSPEAKER S7: Uh, okay, so but how do you how do you know that or are there without adding those two things? How do you prevent correlation attacks?\nSPEAKER S6: Um, in fact, uh, the reason the reasoning behind behind this, uh, behind this is the following. In fact, by using the anonymous key reference, we try to get rid of, uh, metadata that is allowing correlation of packets. So this is this is where, where we started from. And uh, in fact, in our formal description of the protocol, we shows that, uh, if you cross an honest node with the gaming proof, you can't have a correlation between the inside and outside packet.\nSPEAKER S7: So imagine I you have your network and you have the attacker is the first router and the last router. And it does a very simple counting attack. It just says we know that the source sent ten packets. We know the destination received ten packets. Right. It's doing that attack.\nSPEAKER S6: Uh yeah I sorry I no, no I get your I get your your point. In fact, um, this protocol has to be used together with, uh, uh, uh, traffic jamming or or A traffic packet pacing, uh, sort of algorithm to prevent the pacing of packets from, uh, being an attack vector. In fact, what we try to achieve with Orion is the structurally in the protocol, we we get rid of metadata that allows correlation attacks to be performed based on the structure of the packet. Uh, then you have all the traffic dynamics, uh, based attacks for packet correlation. This is orthogonal to our work. And we think that, uh, in the literature you have several, um, works on, uh, uh, packet sizing methods. So, uh, when you pad the packet, you can adapt the padding to the, to the kind of network, that network traffic that you are transporting. And you don't sacrifice too much performance to prevent, uh, correlation attack. But this thread of work is very interesting. We think our work is compatible with this work, but we didn't include this in our protocol.\nSPEAKER S1: Okay. Thank you. Thanks, all. Thanks. Thanks, everyone. And thank you for thank you to both the presenters for great presentations. And yeah, thanks all for coming out. See you next time. Thank you. And. Special thanks to Allison for taking notes and calling for being the representation for the chairs in the room.\nSPEAKER S2: Thank you everyone.",
+          "language": "en",
+          "duration": 3600,
+          "confidence": 0.9859386787890513
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think so, yeah.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think we can start.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Um, y'all, um, welcome to the, uh, session at IETF 120.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I'm Siobhan, and, uh, I am Sarah have been co-chairing this group for a while.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, looking forward to the two talks this evening.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, this is the note.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "Well, please do note it.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Well, it covers various topics such as patents and code of conduct.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Um, by participating in this meeting and generally the IETF week, you agree to follow this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a number of, um, bcp's and Rfc's that govern, uh, behavior at the IETF.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "So please do take a look at some point.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, if you do have issues or concerns about behavior, please, um, talk to the Ombuds team.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that's why they're there.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, we do need a note taker.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "So do we have a volunteer in the room or remote?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "Can I ask you to.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Anyone in the room willing to volunteer to take notes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "We do need a note taker.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: What was the fun part?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Alison.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Alison.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Um, please do sign in to the session, uh, via data tracker or the QR code.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "That should be up there somewhere in the session.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this helps us keep track of, um, the participation at these, um, research group and working group meetings.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and if you're in person, please do still use the Meet Echo Light client in order to join the mic or participate in Show of Hands so that it's fair for folks who are remote.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and yeah, keep audio and video off.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if you're not presenting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "And, um.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I think that's it.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I can give a quick update about, uh, a draft that we've been working on.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know if Mallory's in the room.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I am.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah, I can give a quick update as well.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "But you've also done work on this, Siobhan.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, I mean, I think it was a couple of meetings ago.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "I think it was in Prague where I sort of maybe asked the chairs.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "I know you didn't have a session there.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "I don't I don't think you did.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "But just whether or not you thought this draft was getting close to ready and, um, for research group last call because I think we've gone through and adjusted, um, the draft, it's fully fleshed out now.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "I think all of the sections have been, um, written out.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "We've had some great review from folks whom we've actually cited.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "So work that others have done that has shown up in this draft.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "We've had reviews from those experts.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "They've improved the draft.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so I encourage people to look at it in its current state.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if there are questions or anything on direction, um, let me know, especially if that's direction and suggestions from the chairs.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, it's in its 10th, you know, actually technically 11th version now.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thanks a lot.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "And thanks for driving this work.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah, I took a look as well.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "And I think, um, we, the chairs intend on doing a research group last call, um, within the next few weeks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and unless people have, like, strong opposition or have very strong opinions on this right now, uh, please do let us know very soon.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: That would be great.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Great.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "All right, so let's move on to our first talk, which will be by Stefanos who is joining us from icMl.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "If I'm not wrong.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "And it's very late for him.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you for presenting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "You're not wrong.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, hello from Vienna.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, let me share the screen again.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "And you should be able to see my slides, right?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right, let's start then.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "I'm going to present you our work called Melting Point, uh, which stands for Mobile Evaluation of Language Transformers.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Um, a few things about me.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "I'm a machine learning researcher at Brave Software.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I also hold a visiting researcher position in the University of Cambridge.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, prior to that, I that was a research scientist at Samsung AI.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "And I did my master's in the University of Cambridge.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Also, I used to work at CERN back in the day.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "My interests generally revolve around the areas of distributed mobile systems, efficient deep learning, as well as federated learning.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the brief overview of our talk today is going to be like some background and motivation on, like, uh, deploying machine learning on device, uh, the challenges and directions that exist.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then I'm going to present our work on multipoint.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "And last, I'm going to close with some key takeaways and open challenges and future directions.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it is um, has been in the past that there is a trend, uh, of uh, networks, as in mobile models are getting larger and bigger in their pursuit of, uh, higher accuracy.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "And we're entering an era that is, uh, that of hyperscale models.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "At the same time, uh, devices are getting ever more, uh, increasingly powerful, uh, in their attempt to, uh, be able to, um, execute this, these networks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so we have various, um, use cases coming up, uh, ranging from self-driving cars to image inpainting and outpainting, um, web page, uh, interaction with, uh, various, uh, assistants, intelligent assistants, as well as voice assistants, uh, such as the case of brave Leo, uh, in the browser or a Google Assistant on Pixel eight.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, some trends are that there are new architectures in the blocks, such as llms, diffusion models, nerves and, uh, state models.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, at the same time, we have multiple, uh, neural networks, uh, corresponding uh, on the device, uh, either in the same application or across different applications, but running at the same time.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "And also we have the pressing need for privacy preserving machine learning, either when we're talking about inference or when we're talking about training or personalization of these models on user device, on user data.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, a very brief introduction on Transformers.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "They were, um, introduced by Google, uh, a few years back, 2017.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they're great characteristics are that they can attend to long context dependencies.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they parallelize sufficiently well.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, we're able to train them, uh, quite efficiently.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, they support various modalities, uh, such as sequence of tokens, which can be text, can be speech or like a conversion of the vision.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "And they can scale to large sizes without performance plateauing.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "This means that more data you fit, uh, the better they become.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is what they look like.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I want to just pay attention to the main architecture that it consists of an encoder and decoder, and the decoder is autoregressive.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "That means that when you're you have a sequence of tokens, it generates the next token.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "And it goes in an iterative manner.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "So x for x1 up to XT it generates XT one XT plus one.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And then this goes into the sequence of tokens and it goes to t plus two.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um as you can understand there is a lot of um compute being um, um, the same.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "So there is a key value cache that optimizes, uh, a lot of computation and saves a lot of computation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, Prefill operation fills the cache, whereas generate produces the next token.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the former is a compute bound operation, whereas the latter is usually memory bound operation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "And some terminology that I'm going that is going to be useful later on is the context size, which is the maximal window of tokens that the transformer can attend to.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, it's the maximum generated length, which is the maximum generated tokens in the output, and the end of sequence token, which is effectively a special token that when it, uh, when the LM is generating that it stops generation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "Um, large language models, um, exist from various players in the, in the um, in the market.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Um, accuracy, efficiency, cost and cost are the key characteristics.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And the training process consists of pre-training on very large corpora such as like the web, then fine tuning on very specific uh, annotated datasets, uh, for um downstream tasks and usually for um um rl AI, which is uh, human feedback or AI feedback for alignment to either human expectations or, uh, safety.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "um, this kind of values.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "So how can one deploy alarms in the browser?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we, uh, envision two main, um, modes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "One is a deeply application level and the other one is at the website level, the application level.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "An example is, uh, integration with the browser itself.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "So imagine you're running on premise, uh, but for inside the browser, whereas at the website level, um, the custodian is effectively the website, and um, the browser is simply the vessel that is running everything through webgpu usually.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, what are the challenges?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, definitely.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "One challenge is system heterogeneity.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "You have various tiers of devices coexisting out in the wild along with previous generation devices.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there are simultaneous workloads, as I said before, not necessarily neural, uh, based, but also, uh non-neural.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Compute.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you have the download latency of the model parameters as well as the initialization latency.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "So loading them from memory into, uh, uh, from secondary memory to main memory.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, another problem is the sustained performance where the peak performance may not be guaranteed under continuous inference.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I'm going to start now with some modeling point which has been accepted to Mobicom 2024.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the code and the paper can also be accessed online.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "This builds on top of previous work of mine.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I'm going to speak a lot about this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, these are just for reference.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the question is, why should one deploy on device one?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Is, uh, for decentralization, democratization of access.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "So instead of having only access to these resources through a black box API, uh, users are able to effectively control how they're using this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "um, these models uh, next is privacy and personalization.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "So they're able to be the custodian of data and not have their data, uh, ever leaving the devices, the device premises.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "And they're able to personalize these models on their own, uh, tasks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "And last but not least, it's sustainability in terms of, uh, you know, if you have easier tasks that don't need that many resources, you don't need to run a trillion model parameter, uh, just because, uh, it's the one available.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "So you can customize effectively the model, uh, to your needs.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "So there is a trend going from large language models to smaller language models.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "And these are usually going from like several billions to, uh, like a few billions, like 1 billion or 2 billion, uh, models.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is how the infrastructure looks like.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can see two families of devices.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "One is the phone devices, uh, that you can see at the bottom, and the other one is edge devices, signified by GitLab on the left upper left side.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Um, they differ in terms of like how their capabilities, obviously.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but also how we measure energy.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the mobile phones are connected.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Ah, well, we have removed the battery.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "We are doing a battery bypass procedure, and we're connecting the monsoon power monitor through, uh, probes to the control, to the battery controller.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "And we're able to provide power and measure how much power is consumed at the same time.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for the Jetson boards, they have integrated probes where they can measure their energy.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, the whole process of automating interaction as well as measuring and, uh, gathering the performance memory as well as energy data is coordinated by Raspberry Pi.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we also have, uh, the bench where we're, uh, collecting the models, the benchmark binaries, as well as the, um, output reports.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "This is what it looks like in reality.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "And these are what each device is, uh, are doing.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also, we have, uh, infrared thermometer for, uh, being able to measure the thermal behavior of the device.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, the benchmarking process looks like this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for brevity of time, I'm not going to go through every bit of detail, but effectively we have models that we're downloading from repositories, be it Huggingface or, uh, another source we're converting and quantizing it, depending on the, uh, framework, the backend framework at hand.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "And we're going and we're evaluating this based on a evaluation suit or using Luthria's.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh hmm.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Evaluation tool, uh, and report accuracy on several tasks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, these are in order to be able to gauge the impact of quantization, uh, on the Um, accuracy of the tasks that that the model is going to be tackling.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "At the same time, we have a building process where it builds the binary for the, um, the application.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "And through automation, we're able to interact realistically with the application, uh, on the device and measure the characteristics that we want to measure.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the devices, models and frameworks that we have traced, uh, are depicted in these three tables.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have high tier and mid tier devices across the board.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on Android, iOS and Z, we have uh, models that span from 1 to 13 billion model parameters.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "And the frameworks, the backend frameworks that we support is MLC and llama farm is at the front end for iOS on top of llama CBP.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we divide two families of benchmarks macro and micro benchmarks macro run at the conversation level, they are more realistic, whereas macro benchmarks are more deterministic.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, by having always a fixed set of inputs and output tokens, the throughputs and discharge rates are depicted now in these, uh, various graphs.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, on the on the left side you can see the throughputs, and on the right side you can see the energy efficiency of each model, uh, on different devices and uh, frameworks, uh, prefilled, as I said before, is faster than generation because compute bound.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, the GPU is not or the CPU doesn't wait for, uh, the memory to bring data into, um, into the compute device, the SoC.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can see also that there is a lot of heterogeneity across, uh, across the board, uh, based on the device, the framework as well as the model, generally smaller models behave better, uh, faster, uh, and are more efficient.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Um, You can also see, um, the, uh, some, um, peculiar, uh, sorry, sorry, uh, the EVP on Android was not really optimized for GPU performance.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "And this is why, uh, whatever you see in CV here is run on CPU, whereas whatever you see on MLC is running on GPU.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have numbers for GPU in the paper.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and you're welcome to um, you're welcome to see, uh, also, CPU was not as efficient as GPU.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and yes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "So let me just breeze through this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "In terms of, uh, power over time, uh, here you can see, uh, depicted, uh, how the wattage, uh, fluctuates over different operations during deployment.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "You can see the model loading time.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "You can see various inferences that happen in between.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "And then we're analyzing the last, the sixth.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, um.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "Generation phase here where you can see the generation phase.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Um, one thing that is quite.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "What was quite interesting and surprising was that, uh, the power draw of phones nowadays, uh, tend to, uh, be, uh, much larger than ten watts.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "That used to be the case.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "So iPhone 14, uh, for example, uh, was reaching a maximum of 18 instantaneous and um, 13.8W of sustained, and Galaxy S23 was 8.5 and 14W.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "And this device managed to run from 500 up to 600 approximately until the battery was depleted from full.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "In terms of quality of experience, you can see the model loading latency here, and you can see that different devices offer somewhat different, uh, loading times.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, however, you can see that the there is an artifact here where the Android devices offer larger GPU memory.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Unified memory across the board so they're able to also load larger models, but it's, uh, noticeable to the user in terms of sustained inference.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we tried to measure how performance fluctuates when you're running continuous workloads.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "And we saw that, uh, thermal throttling is being invoked on iPhone 14 Pro, whereas this was not the case on Jetson devices.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "And we verified that with events on, uh, from the, uh, API, the program, the programming API of iPhones, in order to, uh, see that this is the case.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "And on the right side, you can see that after a full conversation with Zephyr, 3 billion model parameters, uh, the iPhones were reaching a 48°C in terms of macro benchmarks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "We went and analyzed various operations.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "And how much of the, uh, compute is being spent across different operations.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Fused operations here for MLC.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "You can see, uh, fused operations are operations that are more optimally, uh, defined by merging different operations of the network.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in figure two, you can see very clearly, uh, the memory boundedness of generation, where the GPU effectively waits for memory IO and doing no OP.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, it's, um, it's waiting effectively.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, last.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "We also measured the impact of quantization across different datasets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, data sets span across, um, tasks of natural language inference and generation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and you can see that different quantization levels, quantization methods as well as different parameter, uh, different like different parameter models are having uh, different impact.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so uh, there was an interesting dynamic in terms of what is, um, the case last, uh, we verified how.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "So?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "If we don't, only we're not only limited on the premises of the device, and we can span across different devices, so offload to ambient devices such as Jetson Nanos.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we wanted to verify how, uh, computation works, how well, it works.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "It's significantly larger than the on device computation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "And also it's, uh, it becomes more efficient.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you can see also here different TDP modes that this Jetson supports, which might be effectively different devices that coexist that exist in the IoT domain.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "So imagine that such a device could be, for example, co-located with your TV.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "For instance, if we're talking about the consumer home, uh, the summary key takeaways are that, uh, we perform the first study for the feasibility of deploying llms realistically on mobile and edge devices that can act as a basis for future research.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we offer an open benchmarking framework that people can use and extend that allows performance, energy and thermal, as well as accuracy evaluations of transformer models and devices.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "And the key takeaways were that there is performance heterogeneity, uh, that the on device inference is still memory bound but also thermally bound.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Quantization can come at a non-negligible accuracy cost.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And tractability does not necessarily imply deployability.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "So the quality of experience is severely affected on models that are more than 3 billion parameters.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "In terms of future directions, there are various, uh, things happening in the field.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we we're noticing model changes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "So the rise of smaller language models and that are used for specific, uh, agent, uh, like behaviors and your routing across different models for, uh, invoking specific behavior as well as moving from unimodal to multimodal models, such as models that can interact with vision, for example, as well as text and the model compression side of things we have low rank approximations are actually on top of quantization that already existed, uh, taking over as a, as a performance variant.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "And um, we're not seeing also broader, uh, support for dynamic graph models such as models, um can do early exiting skip decoding or speculative decoding.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in terms of execution, we expect that the new generation of NPU hardware will be specifically designed for, uh, efficient matrix and matrix to matrix multiplication, as well as, uh, offer more efficient operation support.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "And this this will boost the energy efficiency and the thermal behavior of the device.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Um, last, in terms of deployment, um, we are already noticing the hybrid collaborative execution with uh.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, these um, an example is Apple intelligence offloading paradigm.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "And um, we are also anticipating, um, a deployment paradigm where effectively the backbone of the model can be can be part of a middleware, uh, from the operating system.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "And then different applications will be able to tap, tap on top of it and build different adapters, for example, for downstream use cases.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "So these are uh, giving different dynamics, uh, some acknowledgements to my collaborators and, uh, yeah, I'm open to questions.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Thanks a lot.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "Stefanos.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Do we have any questions at the remote or in the room?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I have a question to start us off.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe, um, it seems like you were evaluating, um, open source models on these devices?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "Largely.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have a sense for what, um, the model performance might look like for the LM shipped by the OS?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, by the device manufacturer themselves, like Apple or Google?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: That's a good question.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "So for for Google, I'm definitely not sure what they will be shipping.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "It's probably going to be a Gemini variant, um, that, uh, they're already talking about, but they don't publish about um, um, usually, uh, it depends on.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "So effectively, if it acts as a foundation for others, for other applications to build on top, they need to have, uh, generalizability, um, aspect covered.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "So the more parameters, uh, that this backbone have, uh, The better.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "It will generalize across different tasks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, obviously.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "But at the same time, I don't expect this to be larger than 10 billion model parameters because it won't be supported by devices.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for Apple Apple's case.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "I'm pretty sure that, like the first variant of Apple intelligence is only supported on the 15 Pro, uh, line, which comes with at least six gigabytes of memory.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, um, that's my that's my understanding right now for things to come.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, also, I expect that the first, um, the first variant will have first party applications first, and then third party application might be, um, supported along the way.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Can you say more about that?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "The first party versus third party, uh, use cases.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: The native applications will be the first clients for this middleware.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "And then third party applications will probably take, um, take over.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Um.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "Any other questions for Stephanos?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Jeff.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Have you looked have you looked at the accuracy of the answer versus the performance that you are evaluating, especially against, uh, trying to break the model, bypassing the guardrails, uh, having hallucination into the answer.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Because, I mean, those answers are, like, very low value, but still consuming resources.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "So did you make any attempt to measure?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Uh, we did not.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this would only be covered from how quantization can affect this behavior.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "So for example, if a model is hallucinating more when you're quantizing to a lower bit width, that would be covered by the accuracy metric.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "But other than that, we did not notice.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "Well, we did notice, uh, such a behavior, to be honest.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it was on three bit quantized models, if I remember correctly.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "It was some variant of GEMA, but I might be wrong about it.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we did notice this.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "This behavior.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "And when a model hallucinates, we also notice that it tends to be more verbose than necessary.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "So it produces more tokens.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Cool.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if there are no more questions, we can move on to the next talk.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks a lot.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Let's have a round of applause.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Cheers.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Hello, everyone.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Um, my name is Antoine Franco.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "Today I have the pleasure to present you, uh, work that I've been doing with my colleagues Luigi and Richard on the Orion Protocol, which is a privacy preserving network layer protocol.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "So in this presentation, I will present you, uh, this protocol and the reason why we did the design of this protocol is the following.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, we wanted to design a data plane network layer protocol, allowing a source s to send the packet packets to a destination de anonymously and by anonymity.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Here we mean that the source goals is to present an adversary in the network from associating it with the package destination.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "So we don't want someone observing the packet in the network to say, oh, this source is talking to this destination.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "And we want to also to prevent two consecutive packets to be associated with the same flow in, uh, in the network.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "That means that if you if you prevent association of two packets to a flow, then you, you make, uh, attacks based on, uh, traffic flow more difficult to, to perform.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "So in the threat model for, for this the protocol design, we consider a global attacker that is observing communications on all the network links.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "So if you see on the picture in on the right of the slide, all the links are colored red because we consider that the little attacker can, um, can wire tap the links and some nodes, some routing nodes in the network can be corrupted, meaning that an attacker has control over the cryptographic materials of those nodes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "Given that we want to operate at the at the network layer, we have some performance constraints.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, uh, if you look at the literature and we'll talk later about routing, uh, you have several designs for onion routing protocols that use public key cryptography.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "The problem with public key cryptography is that it's very difficult to operate at line rate on a router.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "So in the design constraints of our protocol wanted to use symmetric hypertrophy.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "We'll see that we do that at the expense of some anonymity protection.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "But uh performance Requirements were quite strong for us and we from a performance constraint.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "We also want to change the possibility to have the possibility to change symmetric key with every packet to prevent, uh, to prevent attacks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, as I, I mentioned in the previous slide, we when we tried to design our protocol, we, we quickly went to onion routing.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, we found a very good definition of onion routing in, uh, paper for Christian Kuhn and Martin Martin Beck and Torsten Struther called breaking and partially fixing, uh, provably secure routing, which I encourage you to read because it's a tremendous paper.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so this paper gives a formal definition of onion routing as a set of three primitives, a key generation algorithm, uh, sending algorithm to form the audience that you are going to send over the network.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, an algorithm called proc onion, which defines how a node in the network, uh, process a packet to to to transmit it to the next node.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, associated with this formal definition of onion routing, we have three formal properties for for onion routing and ensuring those formal properties, um translates in your protocol being able to protect the anonymity of uh, peoples involved in the communication.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "So those three formal properties are layer and linkability.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, in layering linkability, we mean that an adversary that is accessing onions before and after honest relay cannot determine whether the onions are related or not.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "So it means that a package that is crossing an honest node can't be, uh, packets in in ingress and egress packets, uh, coming in and out of an honest node can be associated.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "So it prevents an attacker to perform correlation attacks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "The second formal properties that we are interested in in onion routing is indistinguishability.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "It means that an adversary having access to onions after an honest relay can't figure out which was the route taken by the onion before the honest relay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "So when you see egress packets from an honest node, you can't see whether the packet has taken a long path in the network, a short path in the network, and you can't figure out where it was coming from.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "And the last but not least, property, because it was it has been used for several attacks on, uh, practical onion routing protocols is onion correctness.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Onion correctness means that, um, a node that is receiving a a packet needs to be able to, um, to compute, uh, to make sure that the packet that it received is authentic, is authentic, that, uh, attacker has not modified part of the of the payload to perform correlation attacks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this correctness property is very important because it has been, um, disregarded for several for several years.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, in the literature about privacy preserving network protocols, um, there are lots of attacks that are, that are performed that are based on the manipulation of the payload and, uh, trying to, uh, correlate, uh, payload manipulation in and out of, uh, of a network to create a package together.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "So this onion connectedness, uh, property is very important.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "So now that I set the scene for where what we wanted to achieve and, uh, what was onion routing in general?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I will do a quick review of state of the Art.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I summarized it in the, in the following table.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "So in this table we see a list of um, of work from state of the art.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "You have, um, several protocols like Sphinx, Tor or nets, nets and a set of properties.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "So the characteristics of the protocol and the security properties here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, from the state of the art, we see that the perfect solution has a green light on all those properties.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "But in the state of the art, we see that no protocol is is addressing all the properties that we want to achieve with, uh, privacy preserving network layer protocol.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "So in particular, uh, first, uh, things and uh, which is uh, uh, which is one of the major, the major, uh, onion routing protocols that has been presented in a paper from 2012 and it's enhanced versions that has been enhanced by, uh, Christine Kuhn and her colleagues.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Um, those protocols are not usable at, uh, at the network layer because they are using public key cryptography.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "From a security perspective.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "They are very nice, especially the enhanced version by Christine Kuhn.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, from a performance perspective, it's not feasible to run those protocols at the network layer.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Thorne uh, is, uh, very widely used and, uh, very, very popular.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "When you talk about privacy preserving protocols, uh, the the issue is that you have a number of attacks that have been performed on tours that prevent him from being completely secure and operating tour at the network layer is a challenge.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "And you also have protocols like On.net and Net that has been that have been designed in ETH Zurich, in the frame of the future network architecture called cyan.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, those protocols are also very interesting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, given the design, uh, some security properties are not insured.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, so, yeah.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so this, uh, op integrity is the fact that you can compute on the packet, um, uh, authentication tags that that allows you to detect manipulation of the packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "So the possibility to perform correlation attack based on manipulating the payload.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, on net, uh, Sphinx and the tour are not immune against those attacks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, in or.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "Net and net.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "The fact that you use a slide or a metadata in the packet, uh, prevents those, um, those protocols to be protected against, uh, the fact that, uh, malicious node can correlate packets together if it has access to the cryptographic material of a given of a given node in the in the network.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "So now that I presented the shortcomings of, uh, state of the art, I will try to present you, uh, how we aimed at addressing those shortcomings in iron.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "So in iron, uh, we wanted to prevent against, uh, uh, the attackers that I described earlier and, uh, to, to avoid having to rely on trusted third party.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "We used a source routing model.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "So using source routing model allows the source to control the path that is going to be taken in in the network, and the source is able to determine to determine the trust it has in the source, in the route it received from an oracle.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "For now, we are continuing considering it an oracle.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we are going to use sequential encryption on on packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "So at every node in on the path the packet will be re-encrypted.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "And we'll see how the integrity of the whole packet will be checked at each step.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "And for performance reasons, we are going to avoid as much as possible the use of public key cryptography.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, because, uh, it's not feasible to do that or for all the packets will, will, will use uh, enhanced things packet at the beginning to set up, uh, master master symmetric keys between the source and every node in the on the path.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "And then we are going to use the key derivation mechanism to derive per packet symmetric keys that we're going to use to generate the cryptographic material that is used to process the packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "So in Orion we have included two technologies that we think are, um, participating in improving, uh, the privacy properties of protocols from state of the art, uh, the first, uh, technologies that we designed and included in our design is the anonymous key reference.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, if you remember, in the state of the art, I mentioned that, uh, for instance, in Tor, the use of a cell ID was, um, opening the possibility for an attacker to perform correlation of two packets to a given flow.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, in towards design, packets belonging to the same flow, share the same cell ID at a given node, and this is a major attack vector for Tor, and it has been used in several attacks that have been published, and we struggled a lot in the design process of variant to avoid having such, uh, such mechanism and such, uh, identify metadata allowing to an attacker to, to collect uh, packets to the same flow.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, the light came with, um, with uh, a paper called, uh, Anonymous Authenticated Encryption, uh, that was published in 2018, I think.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, in fact, in this, in this paper, uh, they say that they are going to they are going to share the reference of the key by saying that the the trailing bytes of encrypted, uh, content will contain all zeros.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "And if you have a bag of keys and you are and you are, and you are trying to decrypt the, the the the the encrypted contents, you realize that you have used the proper key when you find the trailing zeros.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this is not, uh, an acceptable method when you try to, uh, encrypt and decrypt packet at line rate using symmetric keys, because otherwise you would use public key cryptography.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "So we modified the method a bit and in the following way.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "In fact we inspired from the the Enigma attack.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "The Enigma attack that at the beginning of uh of a packet, we use uh, the same, uh, byte pattern and we encrypt it with a set of, uh, temporary keys.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "So from the, from the, from the master key that we exchanged between the source and the given node, we derive a set of temporary keys and we encrypt the beginning of the packet with those temporary keys.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "And we we store the results of those encryption in a dictionary.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "When we receive a packet, we look at the first bytes of the packet and we compare it with the in the dictionary that we got to to determine whether it's, it matches, uh, the encrypted pattern that we have precomputed.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "When we find this precomputed pattern in our dictionary, we can retrieve the temporary key.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "And we can use this temporary key to process the cryptographic materials that we are going to use to process the packet on, on the node.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "The advantage of this is that you don't have, uh, same reference in clear in the packet because you are using encryption of uh, a given pattern.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "So the pattern changes with every with every packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "So that's that's fine.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, it can be used to create packets together.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "It's a moving reference.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "So it prevents linking packet to a session for an external observer.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "If we are in, um, in a state where there is a loop on the patterns and we change key and we can we go back to a, to a new cycle.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "The second um, technology we used in iron is the routing element shuffling.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, in, uh, privacy preserving uh, network protocols using source routing approach.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one aspect is that you have to store the route in the header, and the length of the route needs to be hidden to prevent an attacker from, uh, getting information from the observation of the length of the, of the route.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, to do that, Sphinx use, uh, last in, first out.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "uh, data structure, which is very interesting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "But uh, processing this last in, first out structure on a router is time consuming because you have to copy the structure and rewrite all the structure on the router.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "This involves memory and routers don't don't like, uh, copying and changing large amounts of data in in packets errors.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "So instead of doing this we have a routing uh element vector.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in this element we place the segments that are describing, describing the routing instruction a given node as to use at, uh, at slots that are given by a pseudo random permutation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, when uh node processes, uh, a packet, it can decrypt only, um, Only a slot plus the routing element vector in the same go to retrieve the the routing information and send the packet afterwards.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "So now that I gave you the description of the primitives that we have been using in the design of the protocol, I will try to define you, but with hands.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, how, uh how processing the packet goes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "If you want a more formal definition of the protocol, you can go to the archive papers that is listed in the agenda of the, of the meeting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, we come from, uh, we state that's wants to send a packet to D, and S has exchanged a set of, uh, master keys, KSA, KSB, KC, and Ksd with A, B, C, and D, okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, the exchange of those keys is done with, uh, with another protocol that is out of scope of this presentation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "For now, you can use enhance things as I mentioned earlier.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "So first S will create the packet to send to D through A, B and C.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "To do that it will take a two pass uh a two pass approach.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "First it will retrieve the address of all the nodes A, B, C, and D and the keys, and it will initialize a routing element vector, which is a um, a vector of bytes of a of a fixed length.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, it will, it will compute a pseudorandom permutation over the over the addresses to place the, the addresses into segments here that are placed in, uh, slot position that is given by a pseudo random permutation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "So here you send the vectors that uh, segment A is position is here B, C and d.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "So now from the master key that has been exchanged between S and ABCd, we compute a temporary key using uh uh key mechanisms such as uh, the UK key duration mechanism that is used in credit cards.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "And with the temporary key that we retrieved, we compute a pseudo random permutation of the length of the packet plus the length of a routing element vector.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "So we have those um byte strings.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "We keep them and uh, we start processing the creating the packet in the following way.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "So we start from the, the vector of bytes that we initialized.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "And we place here a segment a segment is uh a prefix with a fixed pattern that we are going to encrypt to reference our key.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "And a segment, a segment a star is the address of the next node for segment A, so the address of B and the and the authentication uh tag set to zero.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Because uh we are going to include an authentication tag later.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "So we, we include segment a star here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "And we XOR the whole packet with row a header.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "So it's part of it's this part of the pseudo random bytes that we generated with the temporary key.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "So we retrieve this key this this uh byte vector here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "And we continue the process with by placing B at the slot and uh and xoring with raw cssb etc.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "up to D here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "So at the end of this process we obtain a byte vector in which, um, the which is initialized and sequentially encrypted with the Rox header part.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "But the problem is that with this structure, we don't have the possibility to get a authentication tag for the whole packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "So to include this authentication tag in the header we are going to uh, add the payload at the trailer of the packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "And we are going to exhaust the the whole packet here with row header plus row CC'd payload.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "So we obtain this byte vector here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "We are going to Place the segment D star at the beginning.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Compute the Mac of the packet here and replace.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "Segment D star here with the segment with the authentication tag, we computed Xored with raw Ksd uh routing element.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "So the first part of the of the pseudo random permutation that we computed earlier.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "And we are going to copy this part, this byte part in the routing element vector at the slot of segment D star.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "So we do the same in the same way with CB and A, and in the end we obtain the following packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "So here we have uh segment A with the authentication tab with the authentication tag that has been encrypted once segment B with the authentication tag Encrypted twice, three times and four times.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, here, note that, uh, segment N with M contains the encryption tag, and segment N star doesn't contain the encryption tag.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "So the encryption tag is set to zero.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "So now S is ready to send the packet to A.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "So it's going to send it to hey here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "So when A receives a packet it reads in the common header the slot position of uh the routing element vector, the routing element that it needs to read in the routing element vector.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "So it says that it's in position 01234.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "So four.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "And at the beginning of this routing element it takes the first byte and tries to match it with the table.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "It has to reference the reference temporary keys.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "If there is a match, it retrieves the key.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Compute the pseudo random permutation that is used to absorb the packet, and store the routing element with the first part of the pseudo random permutation to retrieve.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Segment am.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "From this, it can compute the the authentication tag to see whether the packet has been manipulated or not.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "If the packet has not been manipulated, it can exhaust the whole packet with the trailing, uh bytes of the of the random permutation it computed to uh, obtain the following, uh set of packets and relays the packet to the next node b b will will do.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "It will process the packet the same way, C will process the packet the same way, and the packet will reach D.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "So at this stage D doesn't know whether it's the destination or an intermediate node.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "So when D will receive the packet, it will, uh, catch the first byte to reference the key, retrieve the key, compute the permutation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "And when it computes the segment DM it, realize that the next element is himself.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "So it means that it's the destination.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, at this stage, deacon computes the authentication tag for the packet, verifies that the packet has not been manipulated, and decrypt the whole packet or transmit it to the upper layer.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "So in um, so now that I described you by hand how the protocol works, how does it compare with state of the art?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Did we manage to enhance the situation a bit?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so here at the bottom of the picture, you see, uh, how we perform with iron, whether we are using the routing information vector with a pseudo pseudo random permutation of the position, or without using the routing information vector, meaning that we are using the LIFO data structure that I told you we would, uh, we would like to avoid.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "The reason why I did this, uh, comparison here is that, uh, in discussing, uh, with, uh, reviewers in conference when we submitted the academic paper for this research work, we realized that the use of the routing information vector was leaking some information, uh, some privacy information.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, in fact, uh, you could, uh, you could say that two packets, uh, in and how to honest router could, would not be, um, would not belong to the same flow if they use the same, uh, position in the routing element vector.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "So this leaks some information about, uh, for, for an attacker willing to create package.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "So this is why we mentioned that protection against air flow correlation and uh, source path indistinguishability is partial here.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the limitation we have with our perfect protocol is that, uh, given that we are using symmetric cryptography, it's impossible to have source state and indistinguishability because, um, uh, node that is processing two packets with the same master key knows that the packet comes from the same source.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Maybe they have taken other paths to reach it, but, uh, still, we know that the same source has generated those packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "A way to mitigate these attacks is to have a set of keys between one one source and one nodes.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "And you can shift keys for some packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "But it's taking it's taking, uh, a lot of, uh, performance burden for, for ensuring this property.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Just a time check.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "You have about three minutes left.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Okay, then I will jump to conclusion.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so where do we stand?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "So we did, uh, the academic part of the of the work on this protocol and the reason why we wanted to present this in, in irtf is that, uh, we think that this protocol can be, uh, adapted in, uh, IETF protocols.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in fact, we are thinking about designing either as an IPv6 extension header inspired by the ASR v6 error or as a, as a new Quic version.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, taking advantage of the work on mask, uh, on on the mask Quic proxy, and in particular on the forwarded mode in the mask UDP relay method.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we have a first implementation of iron in rust.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "Contributed by Melker Richard.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, which is using our, um, our modified, uh, server error in the implementation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "We show from, from our benchmark that the processing of packets is quite efficient compared to, uh, compared to, uh, Sphinx protocol.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "And we think that, uh, iron could be, uh, a building block in a more global, uh, complete, uh, privacy preserving, uh, layer three set of networking protocols.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "So thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, uh, I'm willing to take questions.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I see that Jonathan is in the queue, so please.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Just, uh, we have about two minutes, so please keep your questions and answers.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "Sure.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "Go ahead.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Jonathan.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Jonathan Hoiland, Cloudflare.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you mentioned that you have formal proofs of security on your previous slide.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm surprised by that because, uh, the anonymity trilemma says that without a certain amount of cover text or a certain amount of latency introduced, it's impossible to be secure against correlation attacks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: In fact, uh, yeah, it results in formal verification.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "It's a formal description, uh, formal description of the protocol.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Uh, okay, so but how do you how do you know that or are there without adding those two things?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "How do you prevent correlation attacks?",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Um, in fact, uh, the reason the reasoning behind behind this, uh, behind this is the following.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, by using the anonymous key reference, we try to get rid of, uh, metadata that is allowing correlation of packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "So this is this is where, where we started from.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, in fact, in our formal description of the protocol, we shows that, uh, if you cross an honest node with the gaming proof, you can't have a correlation between the inside and outside packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So imagine I you have your network and you have the attacker is the first router and the last router.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "And it does a very simple counting attack.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "It just says we know that the source sent ten packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "We know the destination received ten packets.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "It's doing that attack.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Uh yeah I sorry I no, no I get your I get your your point.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, um, this protocol has to be used together with, uh, uh, uh, traffic jamming or or A traffic packet pacing, uh, sort of algorithm to prevent the pacing of packets from, uh, being an attack vector.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "In fact, what we try to achieve with Orion is the structurally in the protocol, we we get rid of metadata that allows correlation attacks to be performed based on the structure of the packet.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, then you have all the traffic dynamics, uh, based attacks for packet correlation.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "This is orthogonal to our work.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "And we think that, uh, in the literature you have several, um, works on, uh, uh, packet sizing methods.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, when you pad the packet, you can adapt the padding to the, to the kind of network, that network traffic that you are transporting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "And you don't sacrifice too much performance to prevent, uh, correlation attack.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "But this thread of work is very interesting.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "We think our work is compatible with this work, but we didn't include this in our protocol.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, all.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, everyone.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "And thank you for thank you to both the presenters for great presentations.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "And yeah, thanks all for coming out.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "See you next time.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "And.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Special thanks to Allison for taking notes and calling for being the representation for the chairs in the room.",
+            "confidence": 0.9859386787890513
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you everyone.",
+            "confidence": 0.9859386787890513
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-28T02:41:39.965300+00:00",
+          "processed_at": "2026-01-28T02:41:39.965300+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 3600
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "54vyrb6m88"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9859386787890513
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

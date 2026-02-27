@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "c048c6d6-5254-4b03-8f03-5eae25ce9a7a",
   "created_at": "2026-01-03T20:03:03.431061",
-  "updated_at": "2026-01-03T20:03:07.701531",
+  "updated_at": "2026-01-28T02:01:35.298365+00:00",
   "subject": "IETF 120 - OHAI Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 5400,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=b0cjsIOmox0",
       "meta": {
         "ietf_meeting": 120,
         "working_group": "ohai"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 120,
         "location": "Vancouver, CA",
@@ -50,10 +49,10 @@
         "start_time": "2024-07-22T22:30:00+00:00",
         "duration_seconds": 5400
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "ohai",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/bluesheets-120-ohai-202407260130",
         "mimetype": "application/pdf",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/chatlog-120-ohai-202407251830",
         "mimetype": "text/plain",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/minutes-120-ohai-202407260130",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/agenda-120-ohai",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-ohai-ohttp-deployments",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-ohai-chunked-ohttp",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/materials/slides-120-ohai-chair-slides",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/120/agenda/ohai/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-120-ohai",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -6383,6 +6383,3477 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Oh, hi. According to the National Research Council of Canada's official Canadian time, it is now 6:30 p.m.. Welcome to the Ohi working Group. I'm Richard Barnes. On the screen you can see, uh, my co-chair, Siobhan Saab. And I think Siobhan will, uh, kick us off with a few, uh, administrivia.\nSPEAKER S2: Thanks, Richard. Uh, welcome. All of you have probably seen the slides several times during this week, but it is really important, so please do note it. Well, it covers several topics such as patents and code of conduct. Um, and please do feel free to reach out to Ombuds team. If, um, you experience behavior that you're uncomfortable with, uh, and it will also cover several bcp's and documents that, um, describe participation in the IETF. Just some meeting tips. The important one here is that please use Meet Echo to join the mic so that we can, um, keep things fair between remote participants and, um, in-person participants. And, um, if you're not using the on site tool, please do record your participation using the QR code that's probably up there somewhere in the room. And if you're joining remotely, this should already be taken care of. Um, and yeah, make sure your audio and video are off unless you're presenting if you're remote participant and use a headset. We have, uh, some note takers, thanks to Laura and Chris for helping take notes. And, yeah, we can begin. Um, Tommy will be talking about deployment experience with OSTP, which will lead into the chunked OSTP draft discussion, which is our adopted draft for now.\nSPEAKER S1: And just quickly check before we launch into it any proposed changes to this agenda. Are we all good with this? Sounds good. All right, Tommy, take it away. Okay.\nSPEAKER S3: Maybe even a be quick so we can let people get to their dinners or whatever else lies on the other side of Ojai. Alright. Great. I'm Tommy Pauley from Apple. Um, and so first I wanted to share some background on the, uh, experience that we've been having with a couple different use cases for oblivious http, uh, just to see kind of how they're set up, how they're configured, how they perform. Um, and, uh, I had specifically asked to actually do this before our discussion on chunked because some of the, uh, details of how we actually deploy these things and test these things, and what we've run into are relevant to what we think we should be doing in that draft. Okay. So I'm just going to first go over three different use cases, uh, where we are employing oblivious HTTP and then talk generically about, uh, how we're doing, uh, configuration for OTP and how that's being shared. All right. So the first one that we've been doing for the longest period of time is for doing safe browsing type checks. Um, and this is, this is an example of like an iOS UI for what it would look like in Safari. Um, so this is, uh, a protocol that previously already existed. You have cases where you have, uh, a big database of truncated URL hashes that indicate buckets of things that may be phishing or malware or some bad type of sites. And, uh, so those are downloaded periodically. And then if a client has a hit on one of these truncated hashes, uh, they go and fetch the complete bucket of complete hashes and figure out if the site they're going to is potentially malicious, and then they will show this thing. And it's very important to have privacy on these checks because, uh, when you are a you're fetching these things in the background quite a lot. And so this would allow the server to just kind of watch where everyone goes. Uh, but also when you actually do a look up here for something that is potentially on the list that is revealing some information about what you may be accessing. So it's very important to have good privacy here. So the overall setup that we're doing, uh, so we have on the left, I have, you know, two clients just to represent there's a multitude of different clients and they are communicating generally over HTTP three. By default it can fall back to HTTP two if UDP is blocked on your network, but generally it's HTP three, and these are somewhat long lived connections in the background from the browser client going to the relay, which is operated by a third party partner. And then there is a. Pretty, pretty long lived connection, or a set of long lived HTTP two connections that are mutually authenticated with TLS between the relay and the gateway, which is also where the Safe Browsing Service target is, and then the clients are authenticating to the relay using a Privacy pass, uh, token. So the, uh, clients need to kind of be able to fetch that ahead of time just to say they're legitimate clients that are expected to use the service. And for this case, there's no actual authentication to the back end there. Uh, and as I mentioned before, there's like a periodic update. Uh, that happens in the background. And then some more, uh, real time updates when you have a potential hit. So just some of the properties here, uh, these are normally because they're in the background in periodic, it's normally a cold start connection. So like these fetches are not reusing connections that much. They're just kind of creating a new connection to the relay. It's predominantly in the background. Most of the time this latency is not actually blocking users. Uh, I think this the frequency we see for people actually having a potential hit is like once a day. Um, so normally this is just like a background thing. And when we look at the times for downloading that whole database globally, uh, over OTP, we're seeing it be like on average like three 50 milliseconds for the whole thing, which is okay, it's a background thing. So it's not super important to optimize further than that. So that's one example of OTP here. Uh, there's another case, uh, which was actually discussed at the last IETF. Um, I believe when we were talking about some of the cases where we could have this like unreliable OTP. Um, this is for like DApp metrics upload. Um, and in this case, you're just trying to essentially post an upload of things to the server. The responses are not used in any way. And so this is a case that could be optimized, uh, by allowing the client to just hand the message off to the relay and then not care if it actually got all the way to the gateway or was accepted. They just want to shove the metrics up. In this case, uh, there actually are two sets of privacy passes going on here. Um, but otherwise it's a very similar setup, and it's like on the order of a day or a couple times a day that this is happening. And then the newer case that we have, uh, that we're using is for model inference. Uh, so, uh, recently, uh, we announced some private cloud compute, uh, features for various generative AI things. There's a blog you can read about all the details there, and it explains that it is using oblivious http, um, and this is a case where you have a potentially large responses or small responses and they, uh, take a varying amount of time to generate. And there's a lot of value to having the beginning of a response and then be able to trickle in the rest of the large, uh, generated response over time. Uh, but again, it's a very similar setup. You have many clients with, uh, reused and longer lived HTP three connections. They're using a privacy pass to the relay. There's also a separate privacy pass that's being used all the way to that inference server. There's a mutually authenticated HTTP two connection in between. And this is, uh, more real time based on user activity when a user would be using some of these features.\nSPEAKER S1: Tommy Quick clarifying question. The Gateway Privacy Pass here. And I think the prior example is that, uh, held by the relay or does that kind of pass through? Good point. Through.\nSPEAKER S3: Yeah, it's it's an end to end. So it's within the encrypted package that is decrypted by the server. Yeah. That's right. So it's saying that, uh, this client has access to that. It's also a way to, uh, provide some rate limiting where if you limit how many gateway privacy passes the client can do, that can kind of controls how many, uh, AI inference operations they can do on that model. So this one is more different. It, uh, uses chunked HTTP and that has, uh, you know, new features that that comes along with. And in this case, uh, previously we had been doing the other features and we didn't have to implement things like indeterminate length binary HTTP. We didn't have to have binary HTTP trailer support, because if you're doing single messages that cannot be decrypted partially, there's no value for trailer fields since you have your header fields always in the same bucket. Um, and so these were things that in deployment experience and implementation experience, uh, until you start doing chunked, uh, you really aren't really exercising what it means to do indeterminate length binary HTTP and to have some of the other features like trailer parsing, etc.. So just a heads up of things to test. Um, and one of the other interesting things we'll talk about later in the chunked HTTP draft is that, uh, when we were testing this through, different, uh, CDN provided relays that were doing the chunked Ope relaying, um, we found it very common that by default with post, They were doing buffering of the entire message, uh, and waiting for the end of the message before they would send any bytes up to the server or back. Um, and that is, uh, kind of defeats the purpose of doing chunks. And we're like, well, this this is not giving us the performance we want. It's like having some really huge delays in these cases. And they were all, uh, relatively easy to fix, but is something that is, uh, also not obvious if you're just doing the normal, uh, oblivious HTTP with a post that's all in one go. So those are the three different use cases I wanted to share. Um, as far as how we do the configuration and, uh, how we do that deployment, we have a configuration bag for kind of all of the oblivious HTTP servers that we know about and their associated relays, and we fetch that every like 12 to 24 hours, uh, to get updates there. And this bag includes, uh, the different configs, and each of those has the gateway key configuration. And that's the thing that is in the normal HTTP draft or the RFC. It, uh, also then says, here's the relay that you need to go through. And like the path on the relay for the relay resource. Um, it indicates kind of like what are the supported targets that I can get to behind this gateway so I can know how to route them. And then it also indicates whether or not you are supposed to be using chunked or non chunked, uh, for this particular rule. And uh, if you look into some of the stuff we're doing for the private cloud compute features, there's a lot in there around trying to make sure that there's non targetability. And so these configs are also being um replicated into a transparency log. And we're validating against that. And so that's another aspect of this config. So this is uh essentially one model of how you can get the information about Ojjdp. Um, and it's, you know, definitely kind of like the driven, you know, proprietary config that you like, the client knows about and is fetching, but it is a way, uh, that does work. And I'd be curious to hear if other people have experience with other mechanisms and if they are similar or different to this. And that's all I have here. Any questions?\nSPEAKER S1: Any questions? Comments. Yeah, I.\nSPEAKER S2: Had a question. Tommy.\nSPEAKER S4: Yeah. Siobhan.\nSPEAKER S2: Um, if you go to the previous slide, you mentioned that transparency log. Um, can you say more about this?\nSPEAKER S3: Um, so I mean, this is essentially like alongside the OHP configuration. There's uh, like some proofs that, uh, you can, check in the transparency log that is all detailed on like the private cloud compute stuff. Um, I, uh, that will do a better job of explaining some of the details than I can. Um, but yeah, it's essentially just like a blob that, uh, you then verify is in, uh, the transparency logs. It would be similar to, like a key transparency type solution. It's just a bigger bundle of things.\nSPEAKER S2: Yes. I'm just wondering if you think this is something worth generalizing. And, um, because this question comes up, um, during discussions, um, do you feel like this would be something that could be used beyond or could be in a draft or something?\nSPEAKER S4: Yeah, I.\nSPEAKER S3: Think it could, um, I think it'd be worth, uh, exploring and also kind of hearing from other people who may be trying to use OGP if this is an approach that they are looking at taking or expect to take, because I know we've had discussions about, you know, can you do transparency to provide the consistency or do you do other things like a double check? Um, and so in this case, uh, doing the transparency log was what we went for, for this architecture. But I could see other more dynamic cases being ones that, uh, double check would be easier on.\nSPEAKER S1: All right. Other questions or comments? Leap to the mic. Thank you for this.\nSPEAKER S4: All right.\nSPEAKER S3: Now.\nSPEAKER S1: Unusually, unusually large amount of information from Apple.\nSPEAKER S3: Okay. Uh, so now we'll be talking about the chunked Olivia's HTTP messages draft, uh, which is on oh one. So just as a recap and we kind of mentioned it in the last presentation, chunked up is about allowing you to encrypt and decrypt the requests and responses for HTTP in separate chunks. And so the layout of it is you have the existing kind of request header, um, that you have. And then on the responses the header is just a nonce. But instead of one HC or a and encrypted uh response, you have a little length field that goes before each chunk and you have multiple chunks. It's a very, uh, straightforward idea, but, you know, it has, as with everything, many complications in the details. And as I mentioned before, this allows use of indeterminate mode of binary HTTP. It uses the built in support from HC for having multiple messages, and conceptually is still just a single HTTP request and response. It's not a unlimited streaming bidirectional thing. It's just a way to not have to do the entire message all in one go. Um, yeah. So things that were changed in the oh one version, uh, we fixed one issue, which was an easy one. So we did it, um, around how many chunks you could have? Uh, HPE already does this correctly by having a max number, but the response is also needed to specify the same thing. Uh, your counter should not exceed the values that you could store in the nonce for uniqueness. Um, since that would cause nonce reuse. So don't do that. Uh, there are some other to do's that we have of doing the test vectors and some of the protocol formal analysis that just need to get done when we have time, which we don't have. Uh, but the most, uh, interesting issue that has had discussion that I wanted to highlight today is the one that I was hinting at for the deployment experience where you have incremental forwarding issues, um, on the various adns that are handling the post messages for oblivious HTTP. So our deployment testing found that most of the common implementations, uh, did buffering for Post and would wait until you had completed your entire request, or wait until you got your entire response before forwarding. Um, on any of the bites so that, uh, as I mentioned before, does render the chunked mode, uh, pretty ineffective. And, uh, so we have good discussion on the issue. Uh Kazuha pointed out a lot of great things and the discussion, and we were going back and forth. Um, so one of the references that is useful here is from RFC 9110 On HTTP semantics, and it points out that while the ACP message can be parsed as a stream for incremental processing, the senders and recipients cannot rely on that incremental delivery of partial messages. Uh, since the implementations can buffer or delay the message forwarding. So that's exactly what we're hitting. Um, it is up to implementations to do what they want to do. It is allowable, uh, it's equally allowable to have incremental processing as well as buffering. So there are a couple of different options for what to do here. Uh, one option doesn't involve anything much about, uh, the actual spec other than maybe giving some advice, but you could essentially just say do what we did so far and fix the servers, um, that are doing this. Like, if, you know, you're going to be used as a chunk to OTP relay. You should not be buffering those post messages. Um, so simply like those intermediary intermediaries that are being used for this get updated. We could just give some advice in the document and say, if you want this to be effective, don't buffer. And if you have a deployment that is buffering, you just ask them to stop doing that. Um, for the cases where as what we've seen so far in this deployment experience, there's a pretty, uh, concrete setup where a client is getting a bag of like, here are the known relays that you should use in this mode. And here are the gateways they work with, and they're all authenticated with tokens or mutual TLS. Uh, this works okay. It's not super elegant, but it can work. Uh, the other second approach would be like a much bigger design fix. Uh, one of the things I was brought up on the issue is like, well, you know, post is much more common to have buffering. But there are things like connect that obviously don't do the buffering. And so you could like switch uh, http um, or at least this mode of OTP to stop using post to use extended Connect instead. Um, but that really changes the protocol quite a lot more. Um, it loses a lot of the advantages that you have of just saying I want to use, you know, more normal reverse proxying, uh, capabilities that are built into CDNs or built into other existing intermediary intermediary infrastructure, uh, without having to switch all the way over to, um, a very different type of forward proxy. So we could do this. It would be a large change and would cause more divergence between different modes of OTP. And then the third option, which was uh, more recently suggested, was to just have a negotiation fix where the clients and servers can agree about what they're doing for buffering in post. So this is just saying like, hey, I'm doing a post and I would like you to not buffer this and actually be explicit about it and not just rely on the fact that, uh, this is chunked HTTP and you hope, uh, that the intermediary knows that that means they should not be buffering. So Kazuo has this week come up with a proposal for negotiation fix. It's very simple. Um, it's essentially just a new header field that the clients would send in a request that would indicate that the content should be streamed instead of buffered. The proposal, uh, in what he was saying, I think was request streaming and it's equal to one. Or maybe it needs to be, uh, I guess question mark one. Yeah. Sorry. Um, but a very simple thing. And so we can absolutely bike shed what the name of that should be. But I think we want to get feedback on is this of the three directions? Is this the right approach? Um, and there's also a larger question of like, where should that work be done? Because this could be a very generic thing that could be done in HTTP bis, uh, because it could apply to really any application of Post or many other methods, uh, to let clients indicate that they would prefer not to have their requests buffered.\nSPEAKER S1: All right. We have a couple of folks in the queue. Uh, please.\nSPEAKER S5: Uh, two comments. So, uh, a first on the negotiation figs, uh, historically reverse proxies, uh, used buffering of the, you know, post or other long running requests as the DDoS protection or like general protection against, uh, generally less performant backends. Right. So doing negotiations kind of like defeats this purpose. Uh, second thing, uh, what's the second thing? Uh, so this is not unique problem to, uh, you know, notably gRPC and streaming mode is basically one big, you know, post request that does this back and forth. So I'm actually surprised that this was an issue for you in the deployment. And I would suggest that, you know, force your CNNs to, you know, stop buffering. Uh, so.\nSPEAKER S3: You go with like the first fix of just like, just fix your thing. Yeah.\nSPEAKER S5: Let's fix it. Fine. And on the fix, you don't need to introduce, you know, separate header. If you want to do that, you can just base it on, uh, content type. Right, right. And oh, if it's obvious, HTP just don't buffer.\nSPEAKER S3: Right. Uh, I mean, do you know, for cases of, like you're mentioning that already, don't do the buffering like a gRPC. Is that based on content type? I know. Okay. Um, yeah. And just one other thing I mentioned. Like, I totally get that. Oftentimes the buffering is for DDoS prevention and other things. Um, I imagine again, like this is just a hint or a request and it could trigger the logic to say, okay, evaluate if this request is, you know, sufficiently trusted to do that. Like in this case, as I mentioned before in the deployment, like we're giving you a privacy pass that's been rate limited, and we're going to a known upstream that you have a mutual TLS with. And like all of these things that should make it pass the check. Um, which of course you could just do by saying, yeah, the deployment just has to know that this is streamed, but it can be nice maybe to just give another hint of like, yeah, on this particular request, I do expect it to be streamed in chunks without having to do, uh, different content type, uh, sniffing, but I don't know. I think it's an open discussion.\nSPEAKER S6: So as I said, uh, this, uh, streaming is not specific to just, uh, chunked or HTTP, but it also exists with other application protocols such as gRPC. And for lots of us, the best practices for HTTP are the best practices. Document says that application protocols, uh, have to be developed in a, well, content type or method or whatever independent way, meaning that, uh, requiring specific tuning to the proxies is not a very good way of developing protocols. So I would very much prefer having this kind of discussion in the working group and fixing it as an extension, because that paves our way forward for having a specific specification. Uh, that is, I propose a compliant and it might be too strong a word, but something compliant to the best practices that we have for HTTP.\nSPEAKER S7: Um, are. Firstly, um, I agree with what Peter said, except that he suddenly took a left turn and went to a different conclusion. So I do agree that this is a more general thing and exactly what Kazuo said. I won't repeat it. Um, but I have one question. Does this, um, the request streaming of one, does it result in an error if it's not supported? Or is it a silent failure?\nSPEAKER S3: So what do you what do you think? Kazuo. Yeah.\nSPEAKER S7: So silent. Failure. So I think this is exactly the kind of thing that I agree. They should go to the HTTP working group, but I think this is the right direction. Yeah, and I wholeheartedly support it.\nSPEAKER S3: Cool, great. And again, like in this case with chunked HTTP. Yeah. If you don't get the streaming you just delayed it's just slow. It's you're just having a bad day. Um, but the request can work.\nSPEAKER S7: So it does depend on whether it deadlocks or not. It depends on the application. I mean, like in particular, I.\nSPEAKER S3: Yeah. So in some of the tests we had, we would hard fail on that. But generically with chunked HTTP that could work.\nSPEAKER S7: I see it.\nSPEAKER S3: If the client was tolerant of it.\nSPEAKER S7: The reason that they should be discussing the HTTP working group is because it won't be discussed in the context of just a particular chunk of HTTP. In the general case, you have to make sure that the semantics are clear to the applications, and they have a way of recovering from, um, lack of support.\nSPEAKER S3: I think the examples of existing things like gRPC that have similar properties that are also not using extended connect, etc. or similar like, and we can argue that they should all move over to using web transport, you know, like something like that. But the reality, you know, does exist that you have non connect protocols for which you don't want full buffering.\nSPEAKER S1: I just put myself in queue to say that these options you presented are not actually mutually exclusive. If even if the HTTP working group makes a signal something like this that you would use to request this behavior, you could also say that like regardless of that, this protocol works better if you don't buffer.\nSPEAKER S3: Right. I think the deployment fix and the negotiation fix are I mean you can always do the deployment fix. Um, if we take a really sharp turn over to say like, ah, we're going to give up on post, uh, that's a much bigger design change. Um, but yes, I, I think we could go with both. Yeah. It sounds like people would agree that this should be a generic HTTP thing. I probably would argue that we would want to normatively reference that extension. Um, and so, you know, share our fates across this, across the working groups. But yeah.\nSPEAKER S8: Uh, Jonathan Holland, Um, so is it is it permissible? I promise this does have bearing on the question at hand.\nSPEAKER S3: It's permissible.\nSPEAKER S8: But is it is it permissible that the clients continue sending chunked request data? Um, after receiving the first byte of the chunked response?\nSPEAKER S3: This is something that, in the document, as it stands today, is permissible. It is, uh, an issue, uh, that is open. I and I don't think we've like, fully closed on it. I when we were originally discussing the document, I think some people were of the opinion like, oh, we want it to be, you know, less streaming, like less bidirectional. Um, from a protocol standpoint. And I believe even from an analysis standpoint, like it should be safe to do that. It's more about like, what do we want the world to look like?\nSPEAKER S8: So yeah, from a security analysis standpoint, I think it should be required that the, uh, intermediary buffer the entire server response because because otherwise you have you can implement bidirectional streaming, uh, if you want.\nSPEAKER S3: But if, if the client has completed its entire request.\nSPEAKER S8: Sorry. Yeah. Until the client has completed its entire request.\nSPEAKER S3: Right. But, like, I could stream up my request and then you could stream down your response.\nSPEAKER S8: Yeah, yeah. I mean.\nSPEAKER S3: And those should not involve buffering, uh, within each of those segments.\nSPEAKER S8: Yeah. Sorry. What I meant was you have to wait until the whole request is received by the intermediary before you start sending the response. So yeah, because otherwise. Otherwise, imagine you are just being dumb and you decided I'm going to implement bidirectional streaming by calling it one very long request and receiving part of the response and sending part of what's effectively a new request.\nSPEAKER S3: Yeah. Right.\nSPEAKER S8: Right. But that you you. That's not what you want, right? That's you're trying to get oblivious here.\nSPEAKER S3: Not so to to clarify because the main problem I can think of with that, uh, from the privacy aspect, is that now you are definitely able to reveal a lot about timing, um, and other things that could help you infer location.\nSPEAKER S8: And you're just sort of completely linking the. Well.\nSPEAKER S3: Yes. Right. You are linking all of those. Um, so I, I see it as a, uh, privacy regression. But from a cryptographic security standpoint, uh, it should not be regressed.\nSPEAKER S8: Like the really because I so from. From what I understand of the analysis it would be one once the client is able to start responding to things the server is doing, Uh, you the guarantees all go out the window, basically.\nSPEAKER S3: The threat model of re-identifying or. Well, obviously, like you will re-identify everything that client does on that post request. But like any threat model about identifying the client or potentially even pinpointing the clients location, etc., totally agree that that becomes all opened up. Uh, but like the security from an attacker being able to decrypt or you're like, oh yeah, that that doesn't.\nSPEAKER S8: Like from an unlinkability standpoint.\nSPEAKER S3: Yes, yes. It's just the link. Yeah. Right. Yeah. Agreed.\nSPEAKER S8: Thank you.\nSPEAKER S3: Um.\nSPEAKER S1: John, I noticed you got up, but you didn't join the queue. Did you have feedback on that?\nSPEAKER S7: No. Go on.\nSPEAKER S3: Go. And I think, like like the text around those implications is something that needs to be worked on based on if Tebow.\nSPEAKER S9: Yes. Um, thank you for for the presentation. Um, maybe one thing which I thought about here might not be totally related is, um, OSTP does not have like a standard like, um, endpoint, for instance, for like retrieving configuration. Um, so even though, like this is, um, this probably won't fit like in a configuration endpoint. Um, but I was thinking if this is something that could be valuable down the line, if we have like multiple ways to actually like operate relays, um, to specify, okay, I would support, for instance, like request streaming, no matter what I would support HTTP or if this should be part of a negotiation.\nSPEAKER S3: Right. Um, so previously we've discussed and I think we still have some open issues around the document to describe the impact on configuration. As I mentioned before, if you have a ad hoc configuration on the side, then you're good. Um, so on the main RFC does define a configuration format and a content type for that. And in the OGP discovery RFC that we also did, there is at least like a well known URI that you could go to to ask for a configuration. Now that configuration format does not include bits like does this gateway support chunked? And of course, it does include anything about the relays that you may go through to get there. So I think the relay discussion is I think a bit orthogonal because that's just like generally, how do you discover relays and how they relate to gateways? Um, which probably doesn't belong to anything about chunked. But what is definitely an interesting question is, do you have, uh, a different content type or like a way to know that this gateway is, uh, supporting chunked specifically? Does that make sense? Okay. Cool. Uh, yeah. So overall, um, we still have to finish, uh, some of the updates based on the other issues which we alluded to here, which we got some feedback on at 119, but we need to do more um, thinking on that includes are there maximum chunk sizes overall how we recommend getting the configuration of do you do chunked or not? Uh, the other main thing to do is now kind of go forward with incremental forwarding. Um, and that's probably going to look like a new draft within HTTP bits that then gets normatively referenced from here. Um, and I also want to call out that it's always great to do more, uh, interop more testing. Uh, there are already, uh, multiple client test clients in production client as well as relay and server, uh, gateway server implementations of this, but I think if anyone is interested in also doing interop testing, there should be plenty of implementations so we could try.\nSPEAKER S1: Do you know if any of those implementations are open source right now? And secondary question should we be documenting this interop somehow? Um yeah that could be interesting.\nSPEAKER S3: So I know Chris had an old like go OTP, go uh repo. And then it has a branch on it with a PR that is not yet merged but is functional for doing chunked. So that one is open and just public. I don't know of any others that are open up there. Um, I've heard that, you know, Mark and Thompson intends to update his implementation to also do this. So there would be at least two fully open ones that should talk to each other. Okay. Anything else?\nSPEAKER S1: Any other comments, any of these, uh, feedback points that would merit any discussion here, or do you do you have a concrete direction on those already?\nSPEAKER S3: Uh, I mean, if anyone has particularly strong opinions about, like, configuration and, you know, should, you know, like, should the configuration be extended to include, do you support chunked or not? Should it be like an entirely different configuration content type? Uh, or something else? Um, I'd love to hear it. I think there is some analysis to be done there about the privacy implications of having, you know, if you did purely opportunistic attempts of doing chunked to gateways you didn't know about, uh, that could end up segmenting user populations or client populations based on, like which ones ended up learning about chunked and which ones didn't. And so there's all these fun aspects that could come up there. Um, Which to the earlier discussion like, don't really come up when you're just like. Force pushing uh, the information to clients of like, you shall use this gateway with chunked and that is the only way you shall ever use it. Um, so more dynamic cases are trickier, but I think it's also good to understand what real deployment scenarios people are thinking of that would have those types of problems, because it's hard to design without that. Peter.\nSPEAKER S5: Sikora uh, maybe this is a silly question, but are you expect different chunks to be sent via different third party relays and like, combined? No. On your end?\nSPEAKER S3: No. Um, the chunks are inherently on one stream. They're not oblivious to each other. They are just one request and one response that just are processed incrementally.\nSPEAKER S5: Would we there be any benefit in terms of privacy or what not to do to use multiple relays?\nSPEAKER S3: I think the problem is that you if you think about these as different contexts or kind of partitions of information, uh, the communication channel between the client and the target is kind of one connection. So if you end up rerouting that, you need a way to then reestablish and say, like, I am the same one. Uh. And you need like connection identifiers and then you if you're forced to have more identifying metadata that is visible to more parties, um, like if you want to go down that road like multi-path quick through mask relays and like the this is not that. This is just like I have a request response that is getting the normal benefits, but It's slow because gen AI can be slow. Thanks, David.\nSPEAKER S10: David Skenazy Google. Um, I'm assuming you're developing this on GitHub. Yeah, the link is in the draft, if you can fix that metadata.\nSPEAKER S3: Oh, sorry.\nSPEAKER S10: No, no. Yeah. Because I would have just found an issue. But then I'll find it. I'll file an issue. But I'll tell you what.\nSPEAKER S3: It should be on the working. It's in the working group GitHub.\nSPEAKER S10: It's on the working group. I can find it there. It was the the point that I made after the interim about, um, how this lacks perfect forward secrecy compared to other solution for streaming protocols, which is a perfectly fine thing. You've now well justified that it's worth the risk, but I think that should be pretty clear in the security consideration. So I'll follow you in an issue.\nSPEAKER S3: Yeah. I think you previously mentioned wanting to explore if you can have perfect forward secrecy with OTP, which.\nSPEAKER S10: You.\nSPEAKER S3: Could on you.\nSPEAKER S10: You can have it for free for um. Uh x2 5519. But for all the post-quantum stuff, then life becomes a lot harder. You have to spend a bunch more resources to do it. Um, and it doesn't sound like folks are particularly clamoring for it. So unless there's a use case, I don't think I'll write it up. So.\nSPEAKER S7: I'm hearing people getting wound up about this particular difference in privacy from non chunked ODB. I was trying to I haven't read the draft recently, but it might be worth pointing out in the draft that the. So the idea is that this basically depends on the application and what the application cares to do. The solution you are describing. Ultimately, you are breaking this up and then establishing context through an identifier, which is fundamentally you're creating that linking because the linking is necessary for this to work. So privacy only makes sense when you think about. privacy within the scope of it actually working. If it stops working, then privacy doesn't make sense at all at that point. So that might be just something worth noting in the draft. If it already hasn't, if it hasn't already been. Yeah, I.\nSPEAKER S3: Think that's an area like this meta discussion is worth, uh, more clarified text. So, Jonathan.\nSPEAKER S8: Uh, Jonathan Hoyland's Cloudflare. Um, I, I agree that this is like it's not necessarily bad. The question is more, uh, we need to be sure we know what guarantees we're actually trying to provide, especially if you're going to get a formal analysis. Um, we would have to, like, actually say that the guarantees are different, that like, if you're, like doing whole.\nSPEAKER S3: Different from.\nSPEAKER S8: From non chunked, which doesn't mean bad. It just means different.\nSPEAKER S3: Yeah. Yeah. Um, and I, I imagine in the case where you are Not allowing, uh, interleaving of request and response chunks, uh, particularly when you just have streaming response chunks. The information disclosure is really very, uh, very similar to unchecked. Yeah.\nSPEAKER S8: If you have the if you keep the restriction that the intermediary buffers until the client request is completely received, then I think it's the same.\nSPEAKER S3: Then I think it's identical. Right. Yeah. No, I don't think that's always desirable. Um, sure. So we could but I think having the discussion of these are the properties you get if you do it this way. Um, and not because the client could always choose to send a single chunk that it's complete, um, and only receive, uh, multiple chunks of response. That's a perfectly acceptable use of this.\nSPEAKER S1: All right, we've reached the end of the queue. Last call for any discussion on this draft. Going once, going twice. All right. I think in that case, we are adjourned and everyone can enjoy their dinner. And Siobhan will see you next time.\nSPEAKER S2: Yep. See you all.\nSPEAKER S11: I'm just gonna chat with Sean.",
+          "language": "en",
+          "duration": 5400,
+          "confidence": 0.9903069245165316
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Oh, hi.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "According to the National Research Council of Canada's official Canadian time, it is now 6:30 p.m..",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Welcome to the Ohi working Group.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "I'm Richard Barnes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "On the screen you can see, uh, my co-chair, Siobhan Saab.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "And I think Siobhan will, uh, kick us off with a few, uh, administrivia.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thanks, Richard.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, welcome.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "All of you have probably seen the slides several times during this week, but it is really important, so please do note it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Well, it covers several topics such as patents and code of conduct.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and please do feel free to reach out to Ombuds team.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "If, um, you experience behavior that you're uncomfortable with, uh, and it will also cover several bcp's and documents that, um, describe participation in the IETF.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Just some meeting tips.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "The important one here is that please use Meet Echo to join the mic so that we can, um, keep things fair between remote participants and, um, in-person participants.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, if you're not using the on site tool, please do record your participation using the QR code that's probably up there somewhere in the room.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "And if you're joining remotely, this should already be taken care of.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and yeah, make sure your audio and video are off unless you're presenting if you're remote participant and use a headset.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "We have, uh, some note takers, thanks to Laura and Chris for helping take notes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "And, yeah, we can begin.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Tommy will be talking about deployment experience with OSTP, which will lead into the chunked OSTP draft discussion, which is our adopted draft for now.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: And just quickly check before we launch into it any proposed changes to this agenda.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Are we all good with this?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "Sounds good.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "All right, Tommy, take it away.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Maybe even a be quick so we can let people get to their dinners or whatever else lies on the other side of Ojai.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "Alright.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "I'm Tommy Pauley from Apple.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so first I wanted to share some background on the, uh, experience that we've been having with a couple different use cases for oblivious http, uh, just to see kind of how they're set up, how they're configured, how they perform.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, I had specifically asked to actually do this before our discussion on chunked because some of the, uh, details of how we actually deploy these things and test these things, and what we've run into are relevant to what we think we should be doing in that draft.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm just going to first go over three different use cases, uh, where we are employing oblivious HTTP and then talk generically about, uh, how we're doing, uh, configuration for OTP and how that's being shared.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "So the first one that we've been doing for the longest period of time is for doing safe browsing type checks.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and this is, this is an example of like an iOS UI for what it would look like in Safari.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is, uh, a protocol that previously already existed.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "You have cases where you have, uh, a big database of truncated URL hashes that indicate buckets of things that may be phishing or malware or some bad type of sites.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, so those are downloaded periodically.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "And then if a client has a hit on one of these truncated hashes, uh, they go and fetch the complete bucket of complete hashes and figure out if the site they're going to is potentially malicious, and then they will show this thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "And it's very important to have privacy on these checks because, uh, when you are a you're fetching these things in the background quite a lot.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "And so this would allow the server to just kind of watch where everyone goes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but also when you actually do a look up here for something that is potentially on the list that is revealing some information about what you may be accessing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "So it's very important to have good privacy here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "So the overall setup that we're doing, uh, so we have on the left, I have, you know, two clients just to represent there's a multitude of different clients and they are communicating generally over HTTP three.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "By default it can fall back to HTTP two if UDP is blocked on your network, but generally it's HTP three, and these are somewhat long lived connections in the background from the browser client going to the relay, which is operated by a third party partner.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "And then there is a.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "Pretty, pretty long lived connection, or a set of long lived HTTP two connections that are mutually authenticated with TLS between the relay and the gateway, which is also where the Safe Browsing Service target is, and then the clients are authenticating to the relay using a Privacy pass, uh, token.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "So the, uh, clients need to kind of be able to fetch that ahead of time just to say they're legitimate clients that are expected to use the service.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "And for this case, there's no actual authentication to the back end there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and as I mentioned before, there's like a periodic update.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that happens in the background.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "And then some more, uh, real time updates when you have a potential hit.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "So just some of the properties here, uh, these are normally because they're in the background in periodic, it's normally a cold start connection.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "So like these fetches are not reusing connections that much.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "They're just kind of creating a new connection to the relay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "It's predominantly in the background.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "Most of the time this latency is not actually blocking users.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think this the frequency we see for people actually having a potential hit is like once a day.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so normally this is just like a background thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "And when we look at the times for downloading that whole database globally, uh, over OTP, we're seeing it be like on average like three 50 milliseconds for the whole thing, which is okay, it's a background thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "So it's not super important to optimize further than that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "So that's one example of OTP here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's another case, uh, which was actually discussed at the last IETF.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I believe when we were talking about some of the cases where we could have this like unreliable OTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is for like DApp metrics upload.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and in this case, you're just trying to essentially post an upload of things to the server.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "The responses are not used in any way.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "And so this is a case that could be optimized, uh, by allowing the client to just hand the message off to the relay and then not care if it actually got all the way to the gateway or was accepted.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "They just want to shove the metrics up.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "In this case, uh, there actually are two sets of privacy passes going on here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but otherwise it's a very similar setup, and it's like on the order of a day or a couple times a day that this is happening.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "And then the newer case that we have, uh, that we're using is for model inference.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so, uh, recently, uh, we announced some private cloud compute, uh, features for various generative AI things.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "There's a blog you can read about all the details there, and it explains that it is using oblivious http, um, and this is a case where you have a potentially large responses or small responses and they, uh, take a varying amount of time to generate.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "And there's a lot of value to having the beginning of a response and then be able to trickle in the rest of the large, uh, generated response over time.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but again, it's a very similar setup.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "You have many clients with, uh, reused and longer lived HTP three connections.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "They're using a privacy pass to the relay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "There's also a separate privacy pass that's being used all the way to that inference server.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "There's a mutually authenticated HTTP two connection in between.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "And this is, uh, more real time based on user activity when a user would be using some of these features.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Tommy Quick clarifying question.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "The Gateway Privacy Pass here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "And I think the prior example is that, uh, held by the relay or does that kind of pass through?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Good point.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Through.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah, it's it's an end to end.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "So it's within the encrypted package that is decrypted by the server.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "That's right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "So it's saying that, uh, this client has access to that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "It's also a way to, uh, provide some rate limiting where if you limit how many gateway privacy passes the client can do, that can kind of controls how many, uh, AI inference operations they can do on that model.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "So this one is more different.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "It, uh, uses chunked HTTP and that has, uh, you know, new features that that comes along with.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "And in this case, uh, previously we had been doing the other features and we didn't have to implement things like indeterminate length binary HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "We didn't have to have binary HTTP trailer support, because if you're doing single messages that cannot be decrypted partially, there's no value for trailer fields since you have your header fields always in the same bucket.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so these were things that in deployment experience and implementation experience, uh, until you start doing chunked, uh, you really aren't really exercising what it means to do indeterminate length binary HTTP and to have some of the other features like trailer parsing, etc..",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "So just a heads up of things to test.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and one of the other interesting things we'll talk about later in the chunked HTTP draft is that, uh, when we were testing this through, different, uh, CDN provided relays that were doing the chunked Ope relaying, um, we found it very common that by default with post, They were doing buffering of the entire message, uh, and waiting for the end of the message before they would send any bytes up to the server or back.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that is, uh, kind of defeats the purpose of doing chunks.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "And we're like, well, this this is not giving us the performance we want.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "It's like having some really huge delays in these cases.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "And they were all, uh, relatively easy to fix, but is something that is, uh, also not obvious if you're just doing the normal, uh, oblivious HTTP with a post that's all in one go.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "So those are the three different use cases I wanted to share.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Um, as far as how we do the configuration and, uh, how we do that deployment, we have a configuration bag for kind of all of the oblivious HTTP servers that we know about and their associated relays, and we fetch that every like 12 to 24 hours, uh, to get updates there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "And this bag includes, uh, the different configs, and each of those has the gateway key configuration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "And that's the thing that is in the normal HTTP draft or the RFC.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "It, uh, also then says, here's the relay that you need to go through.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "And like the path on the relay for the relay resource.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it indicates kind of like what are the supported targets that I can get to behind this gateway so I can know how to route them.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "And then it also indicates whether or not you are supposed to be using chunked or non chunked, uh, for this particular rule.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "And uh, if you look into some of the stuff we're doing for the private cloud compute features, there's a lot in there around trying to make sure that there's non targetability.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "And so these configs are also being um replicated into a transparency log.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "And we're validating against that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "And so that's another aspect of this config.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "So this is uh essentially one model of how you can get the information about Ojjdp.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it's, you know, definitely kind of like the driven, you know, proprietary config that you like, the client knows about and is fetching, but it is a way, uh, that does work.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "And I'd be curious to hear if other people have experience with other mechanisms and if they are similar or different to this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "And that's all I have here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "Any questions?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Any questions?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Comments.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Had a question.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "Tommy.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "Siobhan.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, if you go to the previous slide, you mentioned that transparency log.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "Um, can you say more about this?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um, so I mean, this is essentially like alongside the OHP configuration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "There's uh, like some proofs that, uh, you can, check in the transparency log that is all detailed on like the private cloud compute stuff.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I, uh, that will do a better job of explaining some of the details than I can.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but yeah, it's essentially just like a blob that, uh, you then verify is in, uh, the transparency logs.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "It would be similar to, like a key transparency type solution.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "It's just a bigger bundle of things.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "I'm just wondering if you think this is something worth generalizing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, because this question comes up, um, during discussions, um, do you feel like this would be something that could be used beyond or could be in a draft or something?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yeah, I.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Think it could, um, I think it'd be worth, uh, exploring and also kind of hearing from other people who may be trying to use OGP if this is an approach that they are looking at taking or expect to take, because I know we've had discussions about, you know, can you do transparency to provide the consistency or do you do other things like a double check?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so in this case, uh, doing the transparency log was what we went for, for this architecture.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "But I could see other more dynamic cases being ones that, uh, double check would be easier on.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Other questions or comments?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Leap to the mic.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you for this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: All right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Now.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Unusually, unusually large amount of information from Apple.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so now we'll be talking about the chunked Olivia's HTTP messages draft, uh, which is on oh one.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "So just as a recap and we kind of mentioned it in the last presentation, chunked up is about allowing you to encrypt and decrypt the requests and responses for HTTP in separate chunks.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "And so the layout of it is you have the existing kind of request header, um, that you have.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "And then on the responses the header is just a nonce.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "But instead of one HC or a and encrypted uh response, you have a little length field that goes before each chunk and you have multiple chunks.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "It's a very, uh, straightforward idea, but, you know, it has, as with everything, many complications in the details.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "And as I mentioned before, this allows use of indeterminate mode of binary HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "It uses the built in support from HC for having multiple messages, and conceptually is still just a single HTTP request and response.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "It's not a unlimited streaming bidirectional thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "It's just a way to not have to do the entire message all in one go.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "So things that were changed in the oh one version, uh, we fixed one issue, which was an easy one.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "So we did it, um, around how many chunks you could have?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, HPE already does this correctly by having a max number, but the response is also needed to specify the same thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, your counter should not exceed the values that you could store in the nonce for uniqueness.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Um, since that would cause nonce reuse.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "So don't do that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are some other to do's that we have of doing the test vectors and some of the protocol formal analysis that just need to get done when we have time, which we don't have.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but the most, uh, interesting issue that has had discussion that I wanted to highlight today is the one that I was hinting at for the deployment experience where you have incremental forwarding issues, um, on the various adns that are handling the post messages for oblivious HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "So our deployment testing found that most of the common implementations, uh, did buffering for Post and would wait until you had completed your entire request, or wait until you got your entire response before forwarding.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Um, on any of the bites so that, uh, as I mentioned before, does render the chunked mode, uh, pretty ineffective.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, so we have good discussion on the issue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "Uh Kazuha pointed out a lot of great things and the discussion, and we were going back and forth.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so one of the references that is useful here is from RFC 9110 On HTTP semantics, and it points out that while the ACP message can be parsed as a stream for incremental processing, the senders and recipients cannot rely on that incremental delivery of partial messages.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, since the implementations can buffer or delay the message forwarding.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "So that's exactly what we're hitting.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it is up to implementations to do what they want to do.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "It is allowable, uh, it's equally allowable to have incremental processing as well as buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "So there are a couple of different options for what to do here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one option doesn't involve anything much about, uh, the actual spec other than maybe giving some advice, but you could essentially just say do what we did so far and fix the servers, um, that are doing this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Like, if, you know, you're going to be used as a chunk to OTP relay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "You should not be buffering those post messages.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so simply like those intermediary intermediaries that are being used for this get updated.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "We could just give some advice in the document and say, if you want this to be effective, don't buffer.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "And if you have a deployment that is buffering, you just ask them to stop doing that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for the cases where as what we've seen so far in this deployment experience, there's a pretty, uh, concrete setup where a client is getting a bag of like, here are the known relays that you should use in this mode.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "And here are the gateways they work with, and they're all authenticated with tokens or mutual TLS.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this works okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "It's not super elegant, but it can work.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other second approach would be like a much bigger design fix.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, one of the things I was brought up on the issue is like, well, you know, post is much more common to have buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "But there are things like connect that obviously don't do the buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "And so you could like switch uh, http um, or at least this mode of OTP to stop using post to use extended Connect instead.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but that really changes the protocol quite a lot more.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it loses a lot of the advantages that you have of just saying I want to use, you know, more normal reverse proxying, uh, capabilities that are built into CDNs or built into other existing intermediary intermediary infrastructure, uh, without having to switch all the way over to, um, a very different type of forward proxy.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "So we could do this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "It would be a large change and would cause more divergence between different modes of OTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "And then the third option, which was uh, more recently suggested, was to just have a negotiation fix where the clients and servers can agree about what they're doing for buffering in post.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "So this is just saying like, hey, I'm doing a post and I would like you to not buffer this and actually be explicit about it and not just rely on the fact that, uh, this is chunked HTTP and you hope, uh, that the intermediary knows that that means they should not be buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "So Kazuo has this week come up with a proposal for negotiation fix.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "It's very simple.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's essentially just a new header field that the clients would send in a request that would indicate that the content should be streamed instead of buffered.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "The proposal, uh, in what he was saying, I think was request streaming and it's equal to one.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "Or maybe it needs to be, uh, I guess question mark one.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but a very simple thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "And so we can absolutely bike shed what the name of that should be.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "But I think we want to get feedback on is this of the three directions?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Is this the right approach?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and there's also a larger question of like, where should that work be done?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Because this could be a very generic thing that could be done in HTTP bis, uh, because it could apply to really any application of Post or many other methods, uh, to let clients indicate that they would prefer not to have their requests buffered.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "We have a couple of folks in the queue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, please.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Uh, two comments.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, a first on the negotiation figs, uh, historically reverse proxies, uh, used buffering of the, you know, post or other long running requests as the DDoS protection or like general protection against, uh, generally less performant backends.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "So doing negotiations kind of like defeats this purpose.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, second thing, uh, what's the second thing?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so this is not unique problem to, uh, you know, notably gRPC and streaming mode is basically one big, you know, post request that does this back and forth.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm actually surprised that this was an issue for you in the deployment.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "And I would suggest that, you know, force your CNNs to, you know, stop buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: You go with like the first fix of just like, just fix your thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Let's fix it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Fine.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "And on the fix, you don't need to introduce, you know, separate header.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "If you want to do that, you can just base it on, uh, content type.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Right, right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "And oh, if it's obvious, HTP just don't buffer.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I mean, do you know, for cases of, like you're mentioning that already, don't do the buffering like a gRPC.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "Is that based on content type?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "I know.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "And just one other thing I mentioned.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "Like, I totally get that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Oftentimes the buffering is for DDoS prevention and other things.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I imagine again, like this is just a hint or a request and it could trigger the logic to say, okay, evaluate if this request is, you know, sufficiently trusted to do that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "Like in this case, as I mentioned before in the deployment, like we're giving you a privacy pass that's been rate limited, and we're going to a known upstream that you have a mutual TLS with.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "And like all of these things that should make it pass the check.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which of course you could just do by saying, yeah, the deployment just has to know that this is streamed, but it can be nice maybe to just give another hint of like, yeah, on this particular request, I do expect it to be streamed in chunks without having to do, uh, different content type, uh, sniffing, but I don't know.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's an open discussion.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: So as I said, uh, this, uh, streaming is not specific to just, uh, chunked or HTTP, but it also exists with other application protocols such as gRPC.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "And for lots of us, the best practices for HTTP are the best practices.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "Document says that application protocols, uh, have to be developed in a, well, content type or method or whatever independent way, meaning that, uh, requiring specific tuning to the proxies is not a very good way of developing protocols.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "So I would very much prefer having this kind of discussion in the working group and fixing it as an extension, because that paves our way forward for having a specific specification.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that is, I propose a compliant and it might be too strong a word, but something compliant to the best practices that we have for HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Um, are.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "Firstly, um, I agree with what Peter said, except that he suddenly took a left turn and went to a different conclusion.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "So I do agree that this is a more general thing and exactly what Kazuo said.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "I won't repeat it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I have one question.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "Does this, um, the request streaming of one, does it result in an error if it's not supported?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Or is it a silent failure?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So what do you what do you think?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Kazuo.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So silent.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Failure.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "So I think this is exactly the kind of thing that I agree.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "They should go to the HTTP working group, but I think this is the right direction.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, and I wholeheartedly support it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Cool, great.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "And again, like in this case with chunked HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "If you don't get the streaming you just delayed it's just slow.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "It's you're just having a bad day.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but the request can work.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So it does depend on whether it deadlocks or not.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "It depends on the application.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, like in particular, I.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "So in some of the tests we had, we would hard fail on that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "But generically with chunked HTTP that could work.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I see it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: If the client was tolerant of it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: The reason that they should be discussing the HTTP working group is because it won't be discussed in the context of just a particular chunk of HTTP.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "In the general case, you have to make sure that the semantics are clear to the applications, and they have a way of recovering from, um, lack of support.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think the examples of existing things like gRPC that have similar properties that are also not using extended connect, etc.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "or similar like, and we can argue that they should all move over to using web transport, you know, like something like that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "But the reality, you know, does exist that you have non connect protocols for which you don't want full buffering.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I just put myself in queue to say that these options you presented are not actually mutually exclusive.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "If even if the HTTP working group makes a signal something like this that you would use to request this behavior, you could also say that like regardless of that, this protocol works better if you don't buffer.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "I think the deployment fix and the negotiation fix are I mean you can always do the deployment fix.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "Um, if we take a really sharp turn over to say like, ah, we're going to give up on post, uh, that's a much bigger design change.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but yes, I, I think we could go with both.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "It sounds like people would agree that this should be a generic HTTP thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "I probably would argue that we would want to normatively reference that extension.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and so, you know, share our fates across this, across the working groups.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "But yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, Jonathan Holland, Um, so is it is it permissible?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "I promise this does have bearing on the question at hand.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: It's permissible.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: But is it is it permissible that the clients continue sending chunked request data?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Um, after receiving the first byte of the chunked response?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: This is something that, in the document, as it stands today, is permissible.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "It is, uh, an issue, uh, that is open.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "I and I don't think we've like, fully closed on it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "I when we were originally discussing the document, I think some people were of the opinion like, oh, we want it to be, you know, less streaming, like less bidirectional.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "Um, from a protocol standpoint.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "And I believe even from an analysis standpoint, like it should be safe to do that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "It's more about like, what do we want the world to look like?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: So yeah, from a security analysis standpoint, I think it should be required that the, uh, intermediary buffer the entire server response because because otherwise you have you can implement bidirectional streaming, uh, if you want.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: But if, if the client has completed its entire request.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Sorry.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Until the client has completed its entire request.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "But, like, I could stream up my request and then you could stream down your response.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah, yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "I mean.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: And those should not involve buffering, uh, within each of those segments.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Sorry.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "What I meant was you have to wait until the whole request is received by the intermediary before you start sending the response.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "So yeah, because otherwise.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Otherwise, imagine you are just being dumb and you decided I'm going to implement bidirectional streaming by calling it one very long request and receiving part of the response and sending part of what's effectively a new request.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "But that you you.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "That's not what you want, right?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "That's you're trying to get oblivious here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Not so to to clarify because the main problem I can think of with that, uh, from the privacy aspect, is that now you are definitely able to reveal a lot about timing, um, and other things that could help you infer location.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: And you're just sort of completely linking the.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Well.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "You are linking all of those.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I, I see it as a, uh, privacy regression.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "But from a cryptographic security standpoint, uh, it should not be regressed.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Like the really because I so from.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "From what I understand of the analysis it would be one once the client is able to start responding to things the server is doing, Uh, you the guarantees all go out the window, basically.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: The threat model of re-identifying or.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "Well, obviously, like you will re-identify everything that client does on that post request.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "But like any threat model about identifying the client or potentially even pinpointing the clients location, etc., totally agree that that becomes all opened up.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but like the security from an attacker being able to decrypt or you're like, oh yeah, that that doesn't.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Like from an unlinkability standpoint.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yes, yes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "It's just the link.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "Agreed.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Thank you.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Um.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: John, I noticed you got up, but you didn't join the queue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Did you have feedback on that?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: No.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Go on.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Go.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "And I think, like like the text around those implications is something that needs to be worked on based on if Tebow.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S9: Yes.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Um, thank you for for the presentation.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Um, maybe one thing which I thought about here might not be totally related is, um, OSTP does not have like a standard like, um, endpoint, for instance, for like retrieving configuration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so even though, like this is, um, this probably won't fit like in a configuration endpoint.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I was thinking if this is something that could be valuable down the line, if we have like multiple ways to actually like operate relays, um, to specify, okay, I would support, for instance, like request streaming, no matter what I would support HTTP or if this should be part of a negotiation.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so previously we've discussed and I think we still have some open issues around the document to describe the impact on configuration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "As I mentioned before, if you have a ad hoc configuration on the side, then you're good.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so on the main RFC does define a configuration format and a content type for that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "And in the OGP discovery RFC that we also did, there is at least like a well known URI that you could go to to ask for a configuration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Now that configuration format does not include bits like does this gateway support chunked?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "And of course, it does include anything about the relays that you may go through to get there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "So I think the relay discussion is I think a bit orthogonal because that's just like generally, how do you discover relays and how they relate to gateways?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Um, which probably doesn't belong to anything about chunked.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "But what is definitely an interesting question is, do you have, uh, a different content type or like a way to know that this gateway is, uh, supporting chunked specifically?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Does that make sense?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Cool.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "So overall, um, we still have to finish, uh, some of the updates based on the other issues which we alluded to here, which we got some feedback on at 119, but we need to do more um, thinking on that includes are there maximum chunk sizes overall how we recommend getting the configuration of do you do chunked or not?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the other main thing to do is now kind of go forward with incremental forwarding.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and that's probably going to look like a new draft within HTTP bits that then gets normatively referenced from here.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I also want to call out that it's always great to do more, uh, interop more testing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are already, uh, multiple client test clients in production client as well as relay and server, uh, gateway server implementations of this, but I think if anyone is interested in also doing interop testing, there should be plenty of implementations so we could try.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Do you know if any of those implementations are open source right now?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "And secondary question should we be documenting this interop somehow?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Um yeah that could be interesting.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: So I know Chris had an old like go OTP, go uh repo.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "And then it has a branch on it with a PR that is not yet merged but is functional for doing chunked.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "So that one is open and just public.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know of any others that are open up there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I've heard that, you know, Mark and Thompson intends to update his implementation to also do this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "So there would be at least two fully open ones that should talk to each other.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Anything else?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Any other comments, any of these, uh, feedback points that would merit any discussion here, or do you do you have a concrete direction on those already?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, I mean, if anyone has particularly strong opinions about, like, configuration and, you know, should, you know, like, should the configuration be extended to include, do you support chunked or not?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Should it be like an entirely different configuration content type?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, or something else?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'd love to hear it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "I think there is some analysis to be done there about the privacy implications of having, you know, if you did purely opportunistic attempts of doing chunked to gateways you didn't know about, uh, that could end up segmenting user populations or client populations based on, like which ones ended up learning about chunked and which ones didn't.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "And so there's all these fun aspects that could come up there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Which to the earlier discussion like, don't really come up when you're just like.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Force pushing uh, the information to clients of like, you shall use this gateway with chunked and that is the only way you shall ever use it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so more dynamic cases are trickier, but I think it's also good to understand what real deployment scenarios people are thinking of that would have those types of problems, because it's hard to design without that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "Peter.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Sikora uh, maybe this is a silly question, but are you expect different chunks to be sent via different third party relays and like, combined?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "No.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "On your end?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: No.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the chunks are inherently on one stream.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "They're not oblivious to each other.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "They are just one request and one response that just are processed incrementally.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Would we there be any benefit in terms of privacy or what not to do to use multiple relays?",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: I think the problem is that you if you think about these as different contexts or kind of partitions of information, uh, the communication channel between the client and the target is kind of one connection.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "So if you end up rerouting that, you need a way to then reestablish and say, like, I am the same one.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "And you need like connection identifiers and then you if you're forced to have more identifying metadata that is visible to more parties, um, like if you want to go down that road like multi-path quick through mask relays and like the this is not that.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "This is just like I have a request response that is getting the normal benefits, but It's slow because gen AI can be slow.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, David.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: David Skenazy Google.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm assuming you're developing this on GitHub.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, the link is in the draft, if you can fix that metadata.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Oh, sorry.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: No, no.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Because I would have just found an issue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "But then I'll find it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "I'll file an issue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "But I'll tell you what.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: It should be on the working.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "It's in the working group GitHub.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: It's on the working group.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "I can find it there.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "It was the the point that I made after the interim about, um, how this lacks perfect forward secrecy compared to other solution for streaming protocols, which is a perfectly fine thing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "You've now well justified that it's worth the risk, but I think that should be pretty clear in the security consideration.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "So I'll follow you in an issue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "I think you previously mentioned wanting to explore if you can have perfect forward secrecy with OTP, which.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: You.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Could on you.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S10: You can have it for free for um.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Uh x2 5519.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "But for all the post-quantum stuff, then life becomes a lot harder.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "You have to spend a bunch more resources to do it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and it doesn't sound like folks are particularly clamoring for it.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "So unless there's a use case, I don't think I'll write it up.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: I'm hearing people getting wound up about this particular difference in privacy from non chunked ODB.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "I was trying to I haven't read the draft recently, but it might be worth pointing out in the draft that the.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "So the idea is that this basically depends on the application and what the application cares to do.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "The solution you are describing.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "Ultimately, you are breaking this up and then establishing context through an identifier, which is fundamentally you're creating that linking because the linking is necessary for this to work.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "So privacy only makes sense when you think about.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "privacy within the scope of it actually working.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "If it stops working, then privacy doesn't make sense at all at that point.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "So that might be just something worth noting in the draft.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "If it already hasn't, if it hasn't already been.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, I.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Think that's an area like this meta discussion is worth, uh, more clarified text.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "So, Jonathan.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: Uh, Jonathan Hoyland's Cloudflare.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I, I agree that this is like it's not necessarily bad.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "The question is more, uh, we need to be sure we know what guarantees we're actually trying to provide, especially if you're going to get a formal analysis.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we would have to, like, actually say that the guarantees are different, that like, if you're, like doing whole.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Different from.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: From non chunked, which doesn't mean bad.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "It just means different.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I, I imagine in the case where you are Not allowing, uh, interleaving of request and response chunks, uh, particularly when you just have streaming response chunks.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "The information disclosure is really very, uh, very similar to unchecked.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S8: If you have the if you keep the restriction that the intermediary buffers until the client request is completely received, then I think it's the same.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Then I think it's identical.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "No, I don't think that's always desirable.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Um, sure.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "So we could but I think having the discussion of these are the properties you get if you do it this way.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and not because the client could always choose to send a single chunk that it's complete, um, and only receive, uh, multiple chunks of response.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "That's a perfectly acceptable use of this.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right, we've reached the end of the queue.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Last call for any discussion on this draft.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "Going once, going twice.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "I think in that case, we are adjourned and everyone can enjoy their dinner.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "And Siobhan will see you next time.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yep.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "See you all.",
+            "confidence": 0.9903069245165316
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S11: I'm just gonna chat with Sean.",
+            "confidence": 0.9903069245165316
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-28T02:01:35.296758+00:00",
+          "processed_at": "2026-01-28T02:01:35.296758+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 5400
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "tfb8o6ohj1"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9903069245165316
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }

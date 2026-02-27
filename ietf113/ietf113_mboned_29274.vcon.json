@@ -2,7 +2,7 @@
   "vcon": "0.0.1",
   "uuid": "1175c805-cd53-48dd-a4e1-8528250ab383",
   "created_at": "2026-01-03T19:36:39.691594",
-  "updated_at": "2026-01-03T19:36:44.482036",
+  "updated_at": "2026-01-27T16:42:46.605129+00:00",
   "subject": "IETF 113 - MBONED Working Group Session",
   "parties": [
     {
@@ -30,17 +30,16 @@
         2
       ],
       "duration": 7200,
-      "mimetype": "video/mp4",
       "url": "https://www.youtube.com/watch?v=ItCG-TN-TwQ",
       "meta": {
         "ietf_meeting": 113,
         "working_group": "mboned"
-      }
+      },
+      "mediatype": "video/mp4"
     }
   ],
   "attachments": [
     {
-      "type": "meeting_metadata",
       "body": {
         "ietf_meeting_number": 113,
         "location": "Vienna, AT",
@@ -50,10 +49,10 @@
         "start_time": "2022-03-22T13:30:00+00:00",
         "duration_seconds": 7200
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "meeting_metadata"
     },
     {
-      "type": "ingress_info",
       "body": {
         "source": "ietf2vcon",
         "converter_version": "0.1.0",
@@ -62,10 +61,10 @@
         "group_acronym": "mboned",
         "session_index": 0
       },
-      "encoding": "none"
+      "encoding": "none",
+      "purpose": "ingress_info"
     },
     {
-      "type": "lawful_basis",
       "body": {
         "lawful_basis": "legitimate_interests",
         "purpose_grants": [
@@ -99,10 +98,10 @@
       "encoding": "none",
       "meta": {
         "spec": "draft-howe-vcon-lawful-basis-00"
-      }
+      },
+      "purpose": "lawful_basis"
     },
     {
-      "type": "chatlog",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/chatlog-113-mboned-202203221430",
         "mimetype": "text/plain",
@@ -113,10 +112,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "chatlog"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/minutes-113-mboned",
         "mimetype": "application/pdf",
@@ -127,10 +126,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/agenda-113-mboned",
         "mimetype": "application/pdf",
@@ -141,10 +140,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "bluesheets",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/bluesheets-113-mboned-202203221430",
         "mimetype": "application/pdf",
@@ -155,10 +154,10 @@
       "meta": {
         "order": 0,
         "external": true
-      }
+      },
+      "purpose": "bluesheets"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-mboned-agenda",
         "mimetype": "application/pdf",
@@ -169,10 +168,10 @@
       "meta": {
         "order": 1,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-mboned-draft-szcl-mboned-redundant-ingress-failover",
         "mimetype": "application/pdf",
@@ -183,10 +182,10 @@
       "meta": {
         "order": 2,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "slides",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/materials/slides-113-mboned-multicast-to-the-browser-status-update-113",
         "mimetype": "application/pdf",
@@ -197,10 +196,10 @@
       "meta": {
         "order": 3,
         "external": true
-      }
+      },
+      "purpose": "slides"
     },
     {
-      "type": "agenda",
       "body": {
         "url": "https://datatracker.ietf.org/meeting/113/agenda/mboned/",
         "mimetype": "text/html",
@@ -211,10 +210,10 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "agenda"
     },
     {
-      "type": "minutes",
       "body": {
         "url": "https://notes.ietf.org/notes-ietf-113-mboned",
         "mimetype": "text/markdown",
@@ -225,7 +224,8 @@
       "meta": {
         "order": null,
         "external": true
-      }
+      },
+      "purpose": "minutes"
     }
   ],
   "analysis": [
@@ -8597,6 +8597,4380 @@
         }
       },
       "encoding": "none"
+    },
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "speechmatics",
+      "spec": "draft-howe-wtf-transcription-00",
+      "body": {
+        "transcript": {
+          "text": "SPEAKER S1: Or. Yeah. Um. Or Fred or Frederick. Yeah. Um, I think the there's a bigger picture than what I worked on. I did some, uh, some interop with the AMT, um, which I can go over, uh, but then I think the free rider, uh, people did some beer work as well, if I, if I remember. Right. So it might be good to at least get Frederick in there, but I'm happy to supplement on AMT as well. Great. Uh, Frederick.\nSPEAKER S2: Um. Are you on and would you like to give an update on the hackathon?\nSPEAKER S3: Well, actually, the the hackathon, uh, took place and, uh.\nSPEAKER S2: Well, not not yet, but can you? When we get to that part.\nSPEAKER S3: Uh, you mean. But the thing is that, uh, in the, uh, the the topic was not related to, uh, to multicast. Okay, so that's gotcha. Unfortunate.\nSPEAKER S2: Um, okay. Can everyone see my slide? My agenda slide. And note. Well, is that visible?\nSPEAKER S1: Yes.\nSPEAKER S2: Great. Okay. So we've got a note taker. Um, I'm not sure if there's a need for a drop or scribe, but would we want would we like one of those? Um. Warren, you seem to be. In the past, you've, uh, done an exceptional job at jabber scribe.\nSPEAKER S4: Happy to do.\nSPEAKER S2: Okay. Thank you. Warren.\nSPEAKER S4: Nope, nope. This is everybody. Give me a second to try to find him. I know what you need. Huh? I just need to sign in through the web version to subscribe.\nSPEAKER S2: Yeah. I don't think we've had much for the jabber scribe to do. Uh, recently. Since we've.\nSPEAKER S4: Yep. That's why I'm happy to do it.\nSPEAKER S2: Yeah. Okay. Um, I think we're getting to quorum here. Uh, we have a note taker. Uh, we have a jabber scribe. Um, and I think we have all of our presenters on. And we have a healthy list of attendees. So let's get started. First, uh, welcome to iATf 13 113. Uh, and Vienna, you're in the meeting. Hopefully you intended to be here. If not, welcome aboard. You're going to have a lot of fun. Uh, the best part of this meeting today is I can guarantee we will be done early. Um, here is a note. Well, um, as always, please note all of these things. Well, um. And pay close attention to the recent focus on, uh, respectful participation. Um, and meeting tips. You've probably seen this by now, uh, though not in purple, and I'm not quite sure it came in purple, but it is, um, for those of you for whom it is very early, this might help serve to wake you up a little bit more effectively. Uh, but everybody, even if you're in the room, uh, should be signed in to the Meet Echo tool. That's how we will manage the mic queue. Um, and remote participants. Uh, you guys have all been participating remotely, so I think you guys know what to do. Okay, here's our agenda. Uh, we'll go through the working group items. Um. There'll be a brief, very brief update on the hackathon. There was a little bit of work done. Uh, most of it was not related to multicast, so that'll go quickly. Um, Sandy is going to give an update on the, uh, redundant ingress failover draft. Um, and then Jake will, uh, go through all of his various drafts as well as a W3C update, uh, anything to add, anything I missed anything to bash on this agenda. Okay. Moving right along. Um, in terms of acting, active working group documents, um, the Yang models, uh, since last meeting, there were, um, uh, Sandy mentioned. There's no substantive updates. Uh, but she is seeking, uh, one more really good review. Uh, not one more, uh, one more round of really good reviews. Um, so if folks have the time, we would love, uh, we would love for folks to review this document. Um, Sandy, do you have anything else you want to add about that document? You are. How do I.\nSPEAKER S5: Okay. Oh.\nSPEAKER S2: Yep. Sandy can go.\nSPEAKER S5: Okay. Uh, last year, uh, eye. We updated the draft according to some comments from Jake and Jen, and so we'd like to find more. Uh, review, uh, especially from Jake and Jen for it. So, uh, thank you for advance.\nSPEAKER S2: Great. Yep. And, uh, any other folks who are interested in Yang models, we also encourage you, uh, in addition to Jian and, uh, Jake, uh, the telemetry draft. Um, I got an update from the authors. Uh, they are about to update it soon. Uh, there are some several drafts upon which this document depends that are in working group last call and other working groups. Uh, and that should be completed soon. Um, so once that gets done, uh, they will update. And, uh, they plan to present this in IETF 114. Um, I don't know that we have anybody else. Uh oh. Actually, Mike. Mike, did you want to say anything else? About what? I just about the telemetry draft.\nSPEAKER S6: Yeah, that other working group is IPM. It's IP performance, uh, group and, um, performance management group, and they're the ones that are handling the unicast versions of this draft. And so those are the drafts that this draft is dependent upon. So, um, as they progress, which they should soon, then we can progress this one. Uh, we did last time we updated this, uh, added a couple other authors and they made some good contributions. And once the other drafts do progress in IPB, IPM, uh, we probably will pretty quickly add this one to be reviewed and progressed, because when we submitted this draft, it was actually it's it's one of those rare drafts that when we submitted it, it's almost ready to go. Kind of a thing. Um, so anyway. Yeah, we'll we'll we keep it alive and we give minor updates to it, and we will present it, as you mentioned, at the next IDF.\nSPEAKER S2: Jake, you have something to add?\nSPEAKER S1: There's implementations.\nSPEAKER S6: Say that one more time.\nSPEAKER S1: Uh, when you said that's ready to go, do you mean that that there's implementations or.\nSPEAKER S6: No, that it's complete as far as the work and the draft is concerned? I don't think this working group has a requirement for implementations, but I could be wrong.\nSPEAKER S2: Great, thanks. Um, then there are, of course, the multicast. The browser drafts, uh, the for um, and Jake's going to provide updates on this later in the agenda or later. Um, he's next up. Uh, the ingress, um, redundant ingress failover. This is a document that is, um, currently has an adoption call underway. Um, and actually, um, uh, and that, uh, working group adoption call goes through this Friday. Um, so, so far we've had, uh, a number I haven't counted, but there has been some responses. But we'd love to have more. Um, please. It's a short draft. Please do take a look and respond whether you would or would not like to adopt, uh, and any substantive comments as well. Um, and actually, I believe Sandy is going to talk about this next. So, um, let's see what else what's up on the agenda? Okay. Next up on the agenda is a hackathon update. Um, so, Frederick, I believe you said the component of the hackathon that you were involved in was not multicast related. Um, so if that's the case, maybe, Jake, if you want to if you want to speak up about what you're aware of.\nSPEAKER S1: Sure. Um, so I spent the hackathon weekend, uh, getting IPv6 to work with the, um, with the AMT, AMT gateway, Docker container, um, and, uh, uh, running that against, um, against my own relays. Um, so I got, I did, uh, successfully stream and listen to music over, uh, v4 in V4, tunnel V6 and V4 tunnel V six in V6 tunnel and V6 in V4 in V6 tunnel. So all the combinations um in addition, earlier today um Sabha pinged me on the free rider chat and we did a bit of interop with their implementation as well. Um, the free router AMT gateway was able to connect to my relays and success. Also successfully listened to music over all four of those, uh, combinations. And then, um, so far this was only a half an hour ago. Um, but so far I've got, uh, I've tried um, v4 over v4 and v6 over v4 against, uh, their stream and their, um, and their relay. Uh, and I have yet to try the, uh, the two over the V6 relays yet. Uh, but that's anticipated. There was like, there were like a couple of bugs. Um, so if you have both online, uh, and on, um, on theirs, I think that that there was an update from Saba, I don't know, like what their kind of, um, commit processes like, But I think I think the one he's running now is, uh, has a quick patch in it. Um, and maybe that'll be upstreamed appropriately. Uh, anyway, the, um. Yeah. So the, the, um, the empty gateway Docker container and the relay D now are both confirmed with, uh, with them, you know, each of those talking to themselves and, uh, and to the free router implementation for V6 and v4, I think, uh, with, with one, uh, set of tests still pending. So, uh, and that's, that's really all, uh, all I know about.\nSPEAKER S2: Cool. Um, so, Jake, uh, first want to start something here? Um, so, Jake, uh, the, uh, essentially what what was added and what's new and what's unique is the, um, AMT relay and V6 enabled relay and gateway. Uh, you didn't make any changes to FF, uh, MPEG or, um, VLC. Those just worked.\nSPEAKER S1: Uh, yeah, that's that's correct. Those those just worked. Um, so this is of course, with an external gateway, not the embedded, uh, gateway inside VLC, but um, uh, the external relay then those, those just work for, uh, for both V4 and v6 SSN. I did not try ASM, but I don't care, so. Gotcha. I'm willing to try it if somebody else wants wants to, but I haven't tried it yet. I think it'll be fine because for the for the client side, it's going to be very, um. Identical.\nSPEAKER S2: Great. Anybody else involved in the hackathon have anything to add? Uh, any other background or commentary that is related to multicast? Okay. Uh, in that case, uh, let's move on to Sandy. Um. And I will bring up those slides. Okay. Sandy, can you see the slide? And you are ready to go. And, uh, I believe you should have control over the slide. I think can you.\nSPEAKER S5: I can, if I can control the slides. Um, this is share your your he is sharing your screen, and, uh, I can do the control work. I'm not very sure. How can I do it?\nSPEAKER S2: Are you able to.\nSPEAKER S5: Um, I think I can't. No, no.\nSPEAKER S2: Okay. How about now?\nSPEAKER S5: Let me try. It seems I can't move it. I can't put it down.\nSPEAKER S2: No luck. This doesn't work now.\nSPEAKER S5: No luck.\nSPEAKER S2: Okay. All right, you just tell me, and I'll. I'll, uh. I'll take. Uh. Okay, let me redo this again.\nSPEAKER S5: Okay. Thank you. Okay. Um. Hello, everyone. I'm Sandy from ZTE. Uh, this presentation is for the update of multicast redundant ingress router fail overdraft. We have co-author Greg Nissen from China mobile and the intern from China Unicom. Next, please.\nSPEAKER S2: Uh, hold on a second here. Doesn't seem to want to let me move this thing.\nSPEAKER S5: So this is the brief introduction of this draft. Uh, usually two increase routers are deployed for avoiding a single node failure, and the two ingress router can forward a same multicast flow for the egress routers, which connect the receivers. They can select the um for multicast flow forwarding. And there are three modes can be used for ingress routers. Protection for or faster The switch over. Uh, there are cool standby modes and the warm standby mode and the hot standby mode. Uh, the three standby modes can be used with all the existed multicast technologies such as PIM, beer, P2P ethanol, or Mldp. Uh, the cost and the influence of the three modes are different. The network administrator should select the appropriate mode according to the service requirements. Okay, seems that can page down the slides. Okay, okay, I can do the control. Okay. Let's work now. So this is the update of version zero two. We added a section for failure detection according to JC's comments. Thanks, Jiggs. And in order to achieve the successful I switch over VFD or pink. Methods can be used for monitoring the IR node failure or path failure between IR and ER. For BFT methods, BFT FC 5880 can be used in all the deployments. Um multi-point VFD FC 8562 can be used. Can also be used for the failure detection between IR and errs VFD for Mpls Lsps. That is, FC 5884 can be used in P2P or MLP deployments. BFT can be used in deployment for PIM methods, IPv4 ping, FC 0792 and IPv6 ping FC 4443 can also be used in other deployments. Rspn of the 8029 can be used for P2P, internal or midp deployments. Burping can also be used in beer deployment, so backup, IR and ER can detect the selected IR node and pass failure easily by this method. When IR detects the failure of Sir and IR must signal to beer as soon as possible, or IR can get the flu from beer. In advance. When beer detects the failure of sir, beer takes over the Sirs responsibility and forward flow to ers. But the mistaken switch over may occur because in case only one, only the path between beer and sir fails. In this situation, IR may receive duplicate flow. So. So this is the, uh, during the adoption call, uh, we received many useful comments. Uh, thanks, Jake. And again, we plan to add more information and details in future version. Uh, we will add the second learning procedure for of the three modes between IR and ER to make it more clearly, uh, details will be added for the existed optimization method used in failure detection for example. So for example RFC uh 9026 and some clarification for VPN and Non-vpn deployment will be added. Uh, and some language improvement will be done. Um, so. Also, uh, thanks all the support and We welcome more comments for it. Uh. That's all. Thank you.\nSPEAKER S2: For Sandy.\nSPEAKER S5: Hey. Yes.\nSPEAKER S2: Okay. Uh, thank you for sharing. Um, and just a reminder again, this is still, uh, in the adoption call, um, till Friday. So, uh, please, um, love folks to review and, um, and, uh, at least mention whether you support or do not support adoption of this document by the working group. Jake, uh, are you ready to talk for your next or you. Do you have a question about this draft?\nSPEAKER S1: I did actually have a question about this draft. Uh, same question actually. Um, is there an implementation along these lines in open daylight or, uh, any production environments that that you're basing this on, or is this more theoretical at this point?\nSPEAKER S5: In fact, there are many. Uh, yes, because there are many technologies included in this draft. And we have deployed some technologies such as PIM and, and there has not been used widely. So there is no beer deployment for it, but there are many deployment for it. So we usually use the, uh, warm standby or hot standby mode for deployment. So um, for um, hot standby mode, there is duplicate flow in the network. So there is there it can only be used in very large broadband network. So and if there is some network that has no very large band where one this also the maybe the just uh, warm standby or cold standby mode can be used for it. Uh, and generally PIM is used more than other technologies. Yeah.\nSPEAKER S1: Okay. Great. Thank you.\nSPEAKER S2: Thank you.\nSPEAKER S1: Okay. Yeah. Now I'm ready. Lenny. Do you want me to step out or.\nSPEAKER S2: No. Um, let me add your bring your slides up.\nSPEAKER S1: I think I can request I can share some preloaded slides. Does that work?\nSPEAKER S2: Actually, you do have the power to do that, but, um, I just did it for you here. Uh, let's go here. Okay. Now, are you able to control.\nSPEAKER S1: Let's see. I thought oh, there we go. Yes. Share. Awesome. Okay. And I think I have that. Excellent. Okay. Um. Hi, everyone. Thanks. Um, yeah, I'll be talking about the, uh, for active drafts and basically where things stand in terms of, uh, this, this project, uh, for what we're doing. Um, what I'll be going over is, uh, kind of progress reports. Uh, I had a few things I talked about, um, that I was waiting to see how they panned out, uh, that I mentioned in the IETF update. Um, so I'll be giving the follow ups on those. I'll be going over the overall project status and, uh, giving a brief overview of the things that are, um, sort of actively in progress right now. Uh, I would say there's a number of things kind of in the background that I won't, won't really be touching on, but, um, uh, the, the sort of major standards based pieces of it that are, um, that I know of that are making some progress. Uh, and then I'll conclude with, uh, my, uh, requests for actions that I'd like to people to consider and, uh, and hopefully take, uh, going forward for, for what's like kind of going on now or imminently. Um, so the, the follow ups from IETF 112 were kind of negative. Uh, I, um, you know, the outcome of the dispatch discussion was that the, uh, discussion on, on the multicast security document was dispatched to the list, I sent out invites, but nobody responded to anything yet. Um, so, uh, that was a bit disappointing. I think it indicates there's no way I'm asking for a buff at present. Um, however, this, uh, the sort of, you know, direction we outlined here, uh, I think we did get, um, a little bit of useful feedback from, uh, raising it there and that, uh, that feedback and the, uh, sort of our thinking that went into this draft is, is still guiding, uh, what we intend to do, um, in the, in the near term towards, uh, still getting still reaching the browser use case, uh, eventually. Um, but I think I do consider this a, uh, mild setback for the moment. Um, likewise, the, uh, W3C Web Transport, uh, working group was I had an issue open with them, Uh, requesting, um, requesting that they would add multicast as a use case. Uh, from the W3C side. They rejected it, uh, on two points. One is that, um, they are uninterested unless there's browsers expressing an interest and, uh, that it's also premature. Um, at least that was in the minutes of their meeting. Uh, the comments indicated that, uh, this really needs IETF work before W3C can consider taking it on. Um, so that that is driving part of the work that we're, uh, that we're moving forward with now as well. Uh, I see you in the queue.\nSPEAKER S2: Yeah. So maybe this is a question for, for, uh, uh, Warren as well, uh, advice here. It seems like we have a lot of circular dependencies here. Uh, the we're trying to bring add this to the browser. The browser. People are saying there's not enough. People are asking for this. There's not enough demand, there's not enough IETF activity on this. Uh, and and yet you seem to be generating IETF activity and interest. Um, so how do we kind of break through this logjam? And is there something we as a working uh, and so maybe a question to Warren as well, is there something we as a working group can be providing as feedback to say, hey, this would be valuable. Um, there's, there's we've got operators have spoken up, um, and, uh, several other folks have spoken up that this is interesting. And yet, um, you know, there seems to be a little bit less, uh, uh, agreement, um, from others on that. So what do you what do you suggest both Jake and and, um, Warren.\nSPEAKER S1: Uh, so for the first thing, let me suggest that we, uh, that we table that till the end of the, uh, to the last slide where I'm asking for actions. Um, and, uh, and because I do have one related thing that I'll, uh, that I'd like to, to discuss, and we can discuss whether there's a better thing to do or what the kind of ideas are in this space. Um, but, uh, let me first just kind of paint the whole picture overall and tell you where I'm headed and what I think is the right kind of response to this. But I am happy to take suggestions and feedback. Uh, Warren, anything you want to throw on top of that?\nSPEAKER S4: Nope. Hopefully you've got a no.\nSPEAKER S7: Hopefully you've got a good idea for the, uh, suggested actions, because I don't.\nSPEAKER S1: All right. Uh, great. Then, um. Uh, and I, I do want to say it's this criticism that it requires IETF work first, um, is not necessarily saying that, Uh, as as I understand it is not necessarily saying that there's no IETF interest. It's rather saying that, uh, the work to make this viable for web transport has not yet occurred in the IETF. And so the W3C web transport cannot, uh, reasonably consider it. So that that was my take on it. Um, now, whether that will go forward or whether we'll hit a similar wall when I try to take this to Quic. Uh, that is, that is to be determined. And that's where I was going to, uh, to go with that question, um, which we'll talk about a little bit more later. Uh, anyway, so in light of these kind of setbacks, our current strategy is to begin some, uh, we're aiming to do some production deployment that's going to be, uh, deployment of, uh, so I don't know if it'll be in your domain in the very first run, but we are aiming to do some inter-domain multicast production. Deployment, uh, without browser support. Um, and under the understanding that in the long term, we still are going to need to get to the browser. Um, but we think that, you know, in the in the beginning, I was kind of thinking in terms of, um, if we can get some browser support, that's, that's there on the way, then this will, uh, make it more attractive to ISPs, which I think is true. Um, however, I think the other way also goes the other way around also applies. If we can make this, uh, if we can get some traffic running, uh, in some real ISPs, then it will make it more attractive to browsers. Um, so, you know, as always, with multicast, we have a chicken and egg problem, and we're trying to address it and we can address it kind of on either side. Um, um, but I think that they, they support one another. Right. First you make a thing that's not quite a lizard, but also isn't yet a chicken. And that lays an egg that has a, that that grows into a chicken. Right. So, um. Anyway, uh, we are we're not abandoning that effort, but, uh, I do I do consider this a, uh, uh, a minor setback, but I think this is not unexpected when encountering security, uh, feedback for the first time. So that's that's where that stands. Um, so in terms of overall project status, uh, and this is kind of the, um, you know, the Akamai funding ish view, uh, we have moved this project out of R&D and into a product team, and we're trying to now, uh, find the right set of partners, uh, or even single partner, to take this forward into a production run, uh, that we can start deploying. But we think we've convinced ourselves that this has a real business case, um, and that that's not, uh, that's not quite the same as as me engineering hacker. Uh, saying it sounds like a good idea. That's more like the people who tried to shoot it down, uh, It because that's their job. You know, uh, ended up concluding that, okay, this probably is worth looking at in, in more detail and, uh, provided we can get some partners, the intent is to go ahead with this, um, as of now. So we are, um, we are in talks with a few partners, uh, and, uh, and looking to make that work out. If other people think that they'd be good partners for this, too, then we'd be happy to to engage with them as well. Uh, so anybody here that, that wants to, um, that wants to ping me about that, please do feel free and we can talk about it. I can get you in touch with the right people. Um, so, uh, yeah, we're aiming to get, like, some traffic running, uh, within the next 1 or 2 years. Um, probably we'd start that out in, uh, you know, some, some limited networks, um, for the first few runs and then, uh, expand it out into the generalized inner domain stuff. At least that's the plan. Um, and we are we are still aiming to, uh, to address both software downloads and video. Um, so that is uh, that is key to, to kind of making those peak offloads be actually addressable for, for the networks and for ourselves. Um. So, uh, in terms of getting to the browser ultimately, which we, like I said, do still consider very important, uh, thing to solve in the end. Um, uh, we've just started, uh, a, uh, a draft that tries to extend quic um, this tries to build on the quick multipath that was, uh, very recently adopted in the quick working group. Um, and, uh, it's, I mean, it'll be different because it's going to be multicast, but it actually has kind of a lot of overlap with, uh, the kinds of things they're discovering in the quick working group about, uh, about multicast as they do the implementation and evaluation. Um, so we're hoping to leverage some of that work, and we're also hoping that this will actually make it simpler at the application layer. Um, because it's going to be, uh, at least mostly transparent to the, um, to the, uh, web applications that would be making use of it. So they don't they won't have to do anything special except maybe like enable it or disable it at the high level and sort of permit the underlying stack to use multicast or not use multicast. But that's the intent, the intended direction. We're going. Uh, as a rough overview, I have the link to our GitHub repo where we've posted an early version of the draft that doesn't have much content. It's just a, um, like the abstract and intro and outline and a few considerations, a few security considerations, including the link to the Uh uh, to the other document. So none of this is adopted. And there are many ways this could go wrong. But this is our current plan for how to to move this forward. Um, we'd be baking it into quick. So it's going to be built on a, um, on a unicast connection as you're sort of anchor, uh, that provides all the security guarantees and uh, and probably, uh, in a similar way to the, um, you know, stream of hashes. Um, but that'll be, um, uh, you know, instructing the client to, you know, if you are, uh, willing and able, go ahead and join this multicast stream. You'll be receiving quick packets. They'll be encrypted, uh, they'll, um, hopefully match up with our, uh, with our security considerations, uh, for multicast, uh, insights and, uh, and then, uh, they'll be interpreted as, as, um, you know, just just another, uh, unidirectional data stream on the QuickSight. So we think we can transport, um, or we think it makes really good sense to transport, uh, unidirectional web transport streams from server to client this way. And also, um, uh, probably H3, uh, the, the server push, uh, for webobjects. Unfortunately, browsers are removing the server push cache, um, and the server push feature, uh, from browsers right now. Um, however, uh, through the web transport, um, unidirectional streams, it still should be possible to kind of implement that yourself as inside your web app. Um, so, you know, ultimately we'll hopefully have demos of this and, and some stuff running and a, a coherent document to present. Um, Lucas Perdue has agreed to co-author this. He's the his the first author on the um on the other uh multicast over quic http draft. This is a little bit different because this is going to be operating at the quick layer, whereas that one was operating at the HTTP layer, um, and using alt service, whereas this one will be using quick frames. That'll be new quick frames. Uh, kind of loosely based on the, on the multi-path approach, but um, uh, this this is where we're headed, um, as a very tentative target, which I probably shouldn't put in because this is perhaps optimistic. Um, I was hoping to, uh, get a prototype in initial spec, uh, to present in July to the quick working group. We'll see how that goes. This could be superseded by the by our, um, if I have to spend a lot of time on the, uh, on the, uh, partner deployment efforts, uh, which actually would be even better than, than this in terms of, uh, making this project a success. Um, but I do think that this is an important thing to, uh, to have on the roadmap for, um, how we get into the browser. And this is our current kind of plan. Uh, so this could slip, but I am hoping to have something coherent to present in July. Uh, and if not, then, uh, then maybe later this year. Um, yeah. So that's that's where the browser effort stands. Um, I want to say thanks to Max, uh, for a bunch of, uh, feedback and prayers on the draft. Uh, that is slowly coming into shape. I've been a little distracted and haven't, haven't done a whole lot on actually advancing these documents. I've been working more toward, uh, getting deployment to be viable. Um, but it is ultimately obviously going to be very important to have this well documented. Um, and I think he's, uh, his contributions have really helped to shape it up. Uh, and, um, yeah, it's still kind of undetermined whether the quick will reference this one or do something a little bit different, but similar or what exactly. But that'll be kind of hammered out as, as we get the quick thing further along. But I was really glad to see that Andy is actually progressing a little bit, uh, which was nice. Um, in other news, the, uh, we have still been meeting regularly at the W3C Multicast Community Group. I encourage you all to join. Uh, there's a, um, there's a link to the W3C Community Multicast, uh, here. Um, and even if you're just on the mailing list, um, or if you take a look at the meeting minutes or recordings, then you'll be getting monthly updates on this. So if you're interested in watching, then, uh, then keep an eye on it. Uh, meanwhile, um, you know, I'm getting some code contributions from some of the, uh, some of the multicast community group members, which I'm really pleased about. Uh, so thanks in particular to Gavin Henry, uh, for some of his work on lithium. CR um, he's, uh, he's taking a look at, at adding windows support, which is great. Uh, but what we've already upstreamed from that was, uh, was, uh, integration. The CI, CD pipeline integrated coverity, uh, scanning. So it is now scanning for, uh, problems and, uh, vulnerabilities of that. It can do a static analysis and, uh, it found several errors that we, uh, that we fixed in CR. So that is in better shape now than it was. Uh, and rates to remain in better shape as we extend it further. Um, that's a that's meant to be a cross-platform SSM receive library. Um, and I frequently use it for, for my testing. Um, but, uh, we can go into more details about what that has. I've talked about it before in the group, but not recently. Um, yeah. So in conclusion, the, uh, the things I'd like to to consider doing as a working group, uh, for one, I'd like to go ahead and start the dorms. Last call, I think. I haven't had any more, uh, reviews. Um, so if I'm not going to get any, then we might as well go ahead. Uh, I think it's in reasonable shape if I remember. Right. Um, it's, uh, I didn't actually read it all the way through last month. Um, but, uh, uh, last I looked, uh, I didn't have any notes left on it. I think, um, I believe I've, I've incorporated all the comments that have been made so far. Um, second is I'd like to make dorms ambiance back into a cluster, uh, so that the, uh, they can refer to each other and get handled in a sort of clustering way for the RFC editor. Um, uh, if anyone is able, uh, please do post to msac at IETF in response to the uh, uh, discussion about the security considerations document. Um, I think even just asking stupid questions and getting some discussion going would be a useful, uh, expression of interest there. Uh, and, uh, and we might be able to learn some things and understand more about, uh, the right problem space, especially if we can get, uh, any, any of the existing security experts on that list to kind of engage as well. Um. Uh, so for the other is that, um, Nat, I think the only feedback I've gotten so far was that it looks pretty good. Well thought out. Um, you know, I, I looked through it, and there's, uh, there's eight things I have marked as tbds. Uh, I did not actually address those, but what I propose is that I should address those eight tbds and then, uh, and then open it up for last call, or at least get some more reviews going. Um, you know, one of those, uh, and I don't think it's had enough review honestly yet. Um, although I was encouraged by the people who did respond so far. So that was, uh, that was good. Um, and then the other thing is, uh, and, and maybe set a timer to reconfirm, but, um, when they asked for conflict avoidance for the meeting scheduling, let's make sure we don't collide with quick next time if we can. So I can make it to both, uh, if that's still on the table. Um, like I said, there's a chance this will slip. So if it slips, then. Then maybe I'll want to move that request to November or something. Um, and then, uh, but then, uh, and here's where we get back to the, um, to the original comment that we deferred till now. Uh, Lenny previously offered on the list. Like, should we, as a working group, request that something security area or, uh, or transport area or the quick working group or whoever is the right set of people, but but, uh, expressed to them that this is a valuable use case, um, from the point of view of the Mod working group in some official manner and, uh, ask them to, to engage and evaluate, uh, with the work. Um, and I think that the answer is yes. Once we have a concrete proposal, we do not really yet, but, uh, but if this is if this is a worthwhile direction, um, then I think that that's where, uh, that's where it would be really valuable. I guess we might have something concrete to ask about with the, uh, with the security considerations, but, uh, I think it was a fair point that that, um, they want to have an actual proposal for the protocol where we're proposing, uh, for transporting web traffic over multicast in order to consider, um, and that that is like it's it's hard to really get good security considerations in the abstract. So, uh, so it's a fair point, but, um, you know, I leave that to, uh, to further questioning. Really. Um, so that's all I've got. So. Yeah. How about Lenny? Let's let's hear what you have to say.\nSPEAKER S2: Sounds good to me. Um, I, I think you covered it all. You answered my questions, so. Okay. Um, questions? Questions from anyone else? Uh, for Jake.\nSPEAKER S1: Let me ask Warren. Uh, you said you were hoping I had a good idea. I don't know if this is a good idea. It's an idea.\nSPEAKER S7: So, yeah, we're on Google. Yeah. I mean, at least it's an idea. I don't know of a better one. Um, other than just, like, continuing to people, this is the best idea ever and hope that they pay attention. So, yeah, I don't know.\nSPEAKER S1: Yeah. Um, I really do think that that the interest level will rise if there are ISPs that are doing delivery of Inter-domain multicast. Um, my take is that, uh, you know, right now there's, there's high skepticism that this will actually end up getting deployed. Uh, so I think the deployment work is the key to this, um, to getting that that engagement. Uh, there might be more because, uh, the web security people are, um. They've had a lot of people pushing on them about security considerations that they, uh, that they don't agree with. And this does expose information to the network in ways that make them uncomfortable. Um, we tried to address all that in the security considerations document, and I think it's a reasonable way to look at things. But, um, yeah, we'll we'll have to see. Sandy, I saw you in the queue, I think. Or unmuting maybe.\nSPEAKER S5: No, because I see that you you will implement the multicast over quick. So, uh, if multicast will implement it with, with quick. So the will the, uh, AMT still be used forever or, um, every multicast will be on quick.\nSPEAKER S1: Uh, so AMT would still be used for the inner domain transport wherever there's not a multicast capable peering. Uh, that that does the. So it's, um, so the way that the, uh, the AMT would still be used is, um, in quick you would tell the client that, hey, client, please join this multicast group. Um, and then the client would join that multicast group, and then you have your regular, uh, how are you going to transport that multicast? How are you going to do the RPF? How are you going to get it? Uh, transmitted question that we always have with multicast. Right. Um, so this can use AMT. It can also use uh, not AMT and be um, you know, it should work just fine for, uh, connecting to traffic that's sourced within the network. But it also would work, uh, with the Dryad extension, um, or or with the, in theory, with the well-known IP. If there's anybody running those relays, uh, to ingest the traffic from outside the network. Um, so, uh, we still intend to start with, uh, AMT access for inter-domain transport. Um, but it's it should work to do other kinds of transport as well.\nSPEAKER S5: Okay. Thank you.\nSPEAKER S1: Okay. I don't see any.\nSPEAKER S2: Any other questions for Jake?\nSPEAKER S1: Any better ideas? I don't love this. I don't love this plan. I wish I had something a little bit better than. Well, first I'll go implement a whole quick extension, and then I'll hope that they like it. But it's what I've got. So it's at least.\nSPEAKER S2: If you build.\nSPEAKER S1: It.\nSPEAKER S2: If you build it, they will come.\nSPEAKER S1: How long have you been saying that, Lenny?\nSPEAKER S2: It's the, uh, a blind, a broken, a broken clock is is is right twice a day. So at some point, we're going to be right about that.\nSPEAKER S1: Almost long enough. That's the answer? Yes, almost long enough. All right.\nSPEAKER S2: Um, how about, uh, bad idea. Whose time has come? I don't know, that's.\nSPEAKER S1: No, you know, people don't think this is going to work, but I think that we're really getting a crunch on capacity in some ways. Um, you know, maybe there will be a renaissance in the layer one transport at the last mile, and it will make all this obsolete. But, um, I don't see it happening. So I don't know how else we're going to get that the level of demand covered for these peak events. Mm.\nSPEAKER S2: Yeah. I think it's worth noting that we're, we're about to have a perhaps an inflection point for this topic. Um, with the NFL, um, this this fall, uh, where Amazon Prime has exclusive rights to streaming of Thursday Night Football games and you're going to have audiences of 20 to 40 million simultaneous viewers for three hours a week, for 16 weeks a year, 16, 17 weeks a year. And, um, you know.\nSPEAKER S1: The other.\nSPEAKER S2: Thing that with purely with unicast is, is really going to be challenging. So it's I think we're at an interesting point.\nSPEAKER S1: I think we may have passed the inflection point in some places. Uh, there was a similar situation with the zone in Italy, uh, that really began last year, I think, uh, where they got rights to Serie A, which is the, um, you know, the Italian football, uh, most popular team. And, um, they, you know, there's there's been a lot of, uh, press about how that went. Um, and, uh, they did do some attempt to address it with multicast, as I understand it. But, uh, but it seems like it wasn't enough. According to the statements they made last November, um, multicast helped a lot. Uh, but they still have a ways to go because it was only in one network. And, uh, and they needed to do, uh, to get kind of more to really meet this, make it satisfactory to their end users. So, uh, I think we're past the inflection point, really. Um, but there's still open questions on how it's going to land. Anyway, that's, uh, that's all kind of not really protocol work. Um, okay. So I'm done. Well.\nSPEAKER S2: Well, in the movies, uh, there's always the, the the one person who, um, uh, spends years, uh, proactively trying to save the day and gets ignored and in the end does save the planet. So. I think we're, uh, we're following that script. Um, any other questions for anybody else? Anything anybody wants to add before closing the meeting? Um, for those who, uh, for those wondering why we only why we took two hours every time I've signed up for one hour slots, we've blown through that. So we took two. But it was a shorter agenda this, uh, this week. So, anyway, um, I will close this meeting and we will see everybody in Philadelphia. Thanks for everybody for joining. Max, thanks for taking notes. And, uh, sitting in the director's chair. And, um, thanks for everybody else, uh, and look forward to seeing everybody in Philly. Farewell.\nSPEAKER S4: Thank you very much. No worries. Thank you. Yep. Thank you. See you around. Bye.",
+          "language": "en",
+          "duration": 7200,
+          "confidence": 0.9897269807280513
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Or.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 1,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 2,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 3,
+            "start": 0,
+            "end": 0,
+            "text": "Or Fred or Frederick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 4,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 5,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think the there's a bigger picture than what I worked on.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 6,
+            "start": 0,
+            "end": 0,
+            "text": "I did some, uh, some interop with the AMT, um, which I can go over, uh, but then I think the free rider, uh, people did some beer work as well, if I, if I remember.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 7,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 8,
+            "start": 0,
+            "end": 0,
+            "text": "So it might be good to at least get Frederick in there, but I'm happy to supplement on AMT as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 9,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 10,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Frederick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 11,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 12,
+            "start": 0,
+            "end": 0,
+            "text": "Are you on and would you like to give an update on the hackathon?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 13,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Well, actually, the the hackathon, uh, took place and, uh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 14,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Well, not not yet, but can you?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 15,
+            "start": 0,
+            "end": 0,
+            "text": "When we get to that part.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 16,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S3: Uh, you mean.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 17,
+            "start": 0,
+            "end": 0,
+            "text": "But the thing is that, uh, in the, uh, the the topic was not related to, uh, to multicast.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 18,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, so that's gotcha.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 19,
+            "start": 0,
+            "end": 0,
+            "text": "Unfortunate.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 20,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 21,
+            "start": 0,
+            "end": 0,
+            "text": "Can everyone see my slide?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 22,
+            "start": 0,
+            "end": 0,
+            "text": "My agenda slide.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 23,
+            "start": 0,
+            "end": 0,
+            "text": "And note.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 24,
+            "start": 0,
+            "end": 0,
+            "text": "Well, is that visible?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 25,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 26,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 27,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 28,
+            "start": 0,
+            "end": 0,
+            "text": "So we've got a note taker.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 29,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I'm not sure if there's a need for a drop or scribe, but would we want would we like one of those?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 30,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 31,
+            "start": 0,
+            "end": 0,
+            "text": "Warren, you seem to be.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 32,
+            "start": 0,
+            "end": 0,
+            "text": "In the past, you've, uh, done an exceptional job at jabber scribe.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 33,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Happy to do.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 34,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 35,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 36,
+            "start": 0,
+            "end": 0,
+            "text": "Warren.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 37,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Nope, nope.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 38,
+            "start": 0,
+            "end": 0,
+            "text": "This is everybody.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 39,
+            "start": 0,
+            "end": 0,
+            "text": "Give me a second to try to find him.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 40,
+            "start": 0,
+            "end": 0,
+            "text": "I know what you need.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 41,
+            "start": 0,
+            "end": 0,
+            "text": "Huh?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 42,
+            "start": 0,
+            "end": 0,
+            "text": "I just need to sign in through the web version to subscribe.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 43,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 44,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think we've had much for the jabber scribe to do.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 45,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, recently.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 46,
+            "start": 0,
+            "end": 0,
+            "text": "Since we've.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 47,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Yep.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 48,
+            "start": 0,
+            "end": 0,
+            "text": "That's why I'm happy to do it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 49,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 50,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 51,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think we're getting to quorum here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 52,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a note taker.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 53,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we have a jabber scribe.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 54,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think we have all of our presenters on.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 55,
+            "start": 0,
+            "end": 0,
+            "text": "And we have a healthy list of attendees.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 56,
+            "start": 0,
+            "end": 0,
+            "text": "So let's get started.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 57,
+            "start": 0,
+            "end": 0,
+            "text": "First, uh, welcome to iATf 13 113.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 58,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and Vienna, you're in the meeting.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 59,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully you intended to be here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 60,
+            "start": 0,
+            "end": 0,
+            "text": "If not, welcome aboard.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 61,
+            "start": 0,
+            "end": 0,
+            "text": "You're going to have a lot of fun.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 62,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the best part of this meeting today is I can guarantee we will be done early.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 63,
+            "start": 0,
+            "end": 0,
+            "text": "Um, here is a note.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 64,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um, as always, please note all of these things.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 65,
+            "start": 0,
+            "end": 0,
+            "text": "Well, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 66,
+            "start": 0,
+            "end": 0,
+            "text": "And pay close attention to the recent focus on, uh, respectful participation.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 67,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and meeting tips.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 68,
+            "start": 0,
+            "end": 0,
+            "text": "You've probably seen this by now, uh, though not in purple, and I'm not quite sure it came in purple, but it is, um, for those of you for whom it is very early, this might help serve to wake you up a little bit more effectively.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 69,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but everybody, even if you're in the room, uh, should be signed in to the Meet Echo tool.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 70,
+            "start": 0,
+            "end": 0,
+            "text": "That's how we will manage the mic queue.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 71,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and remote participants.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 72,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you guys have all been participating remotely, so I think you guys know what to do.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 73,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, here's our agenda.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 74,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we'll go through the working group items.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 75,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 76,
+            "start": 0,
+            "end": 0,
+            "text": "There'll be a brief, very brief update on the hackathon.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 77,
+            "start": 0,
+            "end": 0,
+            "text": "There was a little bit of work done.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 78,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, most of it was not related to multicast, so that'll go quickly.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 79,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Sandy is going to give an update on the, uh, redundant ingress failover draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 80,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then Jake will, uh, go through all of his various drafts as well as a W3C update, uh, anything to add, anything I missed anything to bash on this agenda.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 81,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 82,
+            "start": 0,
+            "end": 0,
+            "text": "Moving right along.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 83,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in terms of acting, active working group documents, um, the Yang models, uh, since last meeting, there were, um, uh, Sandy mentioned.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 84,
+            "start": 0,
+            "end": 0,
+            "text": "There's no substantive updates.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 85,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but she is seeking, uh, one more really good review.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 86,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, not one more, uh, one more round of really good reviews.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 87,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if folks have the time, we would love, uh, we would love for folks to review this document.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 88,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Sandy, do you have anything else you want to add about that document?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 89,
+            "start": 0,
+            "end": 0,
+            "text": "You are.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 90,
+            "start": 0,
+            "end": 0,
+            "text": "How do I.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 91,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 92,
+            "start": 0,
+            "end": 0,
+            "text": "Oh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 93,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yep.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 94,
+            "start": 0,
+            "end": 0,
+            "text": "Sandy can go.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 95,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 96,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, last year, uh, eye.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 97,
+            "start": 0,
+            "end": 0,
+            "text": "We updated the draft according to some comments from Jake and Jen, and so we'd like to find more.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 98,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, review, uh, especially from Jake and Jen for it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 99,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, thank you for advance.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 100,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 101,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 102,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, any other folks who are interested in Yang models, we also encourage you, uh, in addition to Jian and, uh, Jake, uh, the telemetry draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 103,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I got an update from the authors.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 104,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, they are about to update it soon.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 105,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are some several drafts upon which this document depends that are in working group last call and other working groups.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 106,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and that should be completed soon.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 107,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so once that gets done, uh, they will update.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 108,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, they plan to present this in IETF 114.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 109,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I don't know that we have anybody else.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 110,
+            "start": 0,
+            "end": 0,
+            "text": "Uh oh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 111,
+            "start": 0,
+            "end": 0,
+            "text": "Actually, Mike.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 112,
+            "start": 0,
+            "end": 0,
+            "text": "Mike, did you want to say anything else?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 113,
+            "start": 0,
+            "end": 0,
+            "text": "About what?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 114,
+            "start": 0,
+            "end": 0,
+            "text": "I just about the telemetry draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 115,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Yeah, that other working group is IPM.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 116,
+            "start": 0,
+            "end": 0,
+            "text": "It's IP performance, uh, group and, um, performance management group, and they're the ones that are handling the unicast versions of this draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 117,
+            "start": 0,
+            "end": 0,
+            "text": "And so those are the drafts that this draft is dependent upon.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 118,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, as they progress, which they should soon, then we can progress this one.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 119,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we did last time we updated this, uh, added a couple other authors and they made some good contributions.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 120,
+            "start": 0,
+            "end": 0,
+            "text": "And once the other drafts do progress in IPB, IPM, uh, we probably will pretty quickly add this one to be reviewed and progressed, because when we submitted this draft, it was actually it's it's one of those rare drafts that when we submitted it, it's almost ready to go.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 121,
+            "start": 0,
+            "end": 0,
+            "text": "Kind of a thing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 122,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so anyway.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 123,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah, we'll we'll we keep it alive and we give minor updates to it, and we will present it, as you mentioned, at the next IDF.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 124,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Jake, you have something to add?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 125,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: There's implementations.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 126,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: Say that one more time.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 127,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, when you said that's ready to go, do you mean that that there's implementations or.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 128,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S6: No, that it's complete as far as the work and the draft is concerned?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 129,
+            "start": 0,
+            "end": 0,
+            "text": "I don't think this working group has a requirement for implementations, but I could be wrong.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 130,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great, thanks.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 131,
+            "start": 0,
+            "end": 0,
+            "text": "Um, then there are, of course, the multicast.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 132,
+            "start": 0,
+            "end": 0,
+            "text": "The browser drafts, uh, the for um, and Jake's going to provide updates on this later in the agenda or later.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 133,
+            "start": 0,
+            "end": 0,
+            "text": "Um, he's next up.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 134,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the ingress, um, redundant ingress failover.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 135,
+            "start": 0,
+            "end": 0,
+            "text": "This is a document that is, um, currently has an adoption call underway.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 136,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and actually, um, uh, and that, uh, working group adoption call goes through this Friday.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 137,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, so far we've had, uh, a number I haven't counted, but there has been some responses.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 138,
+            "start": 0,
+            "end": 0,
+            "text": "But we'd love to have more.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 139,
+            "start": 0,
+            "end": 0,
+            "text": "Um, please.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 140,
+            "start": 0,
+            "end": 0,
+            "text": "It's a short draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 141,
+            "start": 0,
+            "end": 0,
+            "text": "Please do take a look and respond whether you would or would not like to adopt, uh, and any substantive comments as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 142,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and actually, I believe Sandy is going to talk about this next.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 143,
+            "start": 0,
+            "end": 0,
+            "text": "So, um, let's see what else what's up on the agenda?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 144,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 145,
+            "start": 0,
+            "end": 0,
+            "text": "Next up on the agenda is a hackathon update.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 146,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, Frederick, I believe you said the component of the hackathon that you were involved in was not multicast related.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 147,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if that's the case, maybe, Jake, if you want to if you want to speak up about what you're aware of.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 148,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Sure.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 149,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I spent the hackathon weekend, uh, getting IPv6 to work with the, um, with the AMT, AMT gateway, Docker container, um, and, uh, uh, running that against, um, against my own relays.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 150,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I got, I did, uh, successfully stream and listen to music over, uh, v4 in V4, tunnel V6 and V4 tunnel V six in V6 tunnel and V6 in V4 in V6 tunnel.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 151,
+            "start": 0,
+            "end": 0,
+            "text": "So all the combinations um in addition, earlier today um Sabha pinged me on the free rider chat and we did a bit of interop with their implementation as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 152,
+            "start": 0,
+            "end": 0,
+            "text": "Um, the free router AMT gateway was able to connect to my relays and success.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 153,
+            "start": 0,
+            "end": 0,
+            "text": "Also successfully listened to music over all four of those, uh, combinations.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 154,
+            "start": 0,
+            "end": 0,
+            "text": "And then, um, so far this was only a half an hour ago.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 155,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but so far I've got, uh, I've tried um, v4 over v4 and v6 over v4 against, uh, their stream and their, um, and their relay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 156,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I have yet to try the, uh, the two over the V6 relays yet.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 157,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but that's anticipated.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 158,
+            "start": 0,
+            "end": 0,
+            "text": "There was like, there were like a couple of bugs.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 159,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if you have both online, uh, and on, um, on theirs, I think that that there was an update from Saba, I don't know, like what their kind of, um, commit processes like, But I think I think the one he's running now is, uh, has a quick patch in it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 160,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and maybe that'll be upstreamed appropriately.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 161,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, anyway, the, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 162,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 163,
+            "start": 0,
+            "end": 0,
+            "text": "So the, the, um, the empty gateway Docker container and the relay D now are both confirmed with, uh, with them, you know, each of those talking to themselves and, uh, and to the free router implementation for V6 and v4, I think, uh, with, with one, uh, set of tests still pending.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 164,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, and that's, that's really all, uh, all I know about.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 165,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Cool.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 166,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, Jake, uh, first want to start something here?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 167,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, Jake, uh, the, uh, essentially what what was added and what's new and what's unique is the, um, AMT relay and V6 enabled relay and gateway.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 168,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you didn't make any changes to FF, uh, MPEG or, um, VLC.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 169,
+            "start": 0,
+            "end": 0,
+            "text": "Those just worked.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 170,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, yeah, that's that's correct.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 171,
+            "start": 0,
+            "end": 0,
+            "text": "Those those just worked.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 172,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this is of course, with an external gateway, not the embedded, uh, gateway inside VLC, but um, uh, the external relay then those, those just work for, uh, for both V4 and v6 SSN.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 173,
+            "start": 0,
+            "end": 0,
+            "text": "I did not try ASM, but I don't care, so.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 174,
+            "start": 0,
+            "end": 0,
+            "text": "Gotcha.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 175,
+            "start": 0,
+            "end": 0,
+            "text": "I'm willing to try it if somebody else wants wants to, but I haven't tried it yet.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 176,
+            "start": 0,
+            "end": 0,
+            "text": "I think it'll be fine because for the for the client side, it's going to be very, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 177,
+            "start": 0,
+            "end": 0,
+            "text": "Identical.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 178,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 179,
+            "start": 0,
+            "end": 0,
+            "text": "Anybody else involved in the hackathon have anything to add?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 180,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, any other background or commentary that is related to multicast?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 181,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 182,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, in that case, uh, let's move on to Sandy.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 183,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 184,
+            "start": 0,
+            "end": 0,
+            "text": "And I will bring up those slides.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 185,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 186,
+            "start": 0,
+            "end": 0,
+            "text": "Sandy, can you see the slide?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 187,
+            "start": 0,
+            "end": 0,
+            "text": "And you are ready to go.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 188,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, I believe you should have control over the slide.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 189,
+            "start": 0,
+            "end": 0,
+            "text": "I think can you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 190,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: I can, if I can control the slides.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 191,
+            "start": 0,
+            "end": 0,
+            "text": "Um, this is share your your he is sharing your screen, and, uh, I can do the control work.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 192,
+            "start": 0,
+            "end": 0,
+            "text": "I'm not very sure.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 193,
+            "start": 0,
+            "end": 0,
+            "text": "How can I do it?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 194,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Are you able to.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 195,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Um, I think I can't.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 196,
+            "start": 0,
+            "end": 0,
+            "text": "No, no.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 197,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 198,
+            "start": 0,
+            "end": 0,
+            "text": "How about now?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 199,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Let me try.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 200,
+            "start": 0,
+            "end": 0,
+            "text": "It seems I can't move it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 201,
+            "start": 0,
+            "end": 0,
+            "text": "I can't put it down.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 202,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: No luck.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 203,
+            "start": 0,
+            "end": 0,
+            "text": "This doesn't work now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 204,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: No luck.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 205,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 206,
+            "start": 0,
+            "end": 0,
+            "text": "All right, you just tell me, and I'll.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 207,
+            "start": 0,
+            "end": 0,
+            "text": "I'll, uh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 208,
+            "start": 0,
+            "end": 0,
+            "text": "I'll take.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 209,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 210,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, let me redo this again.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 211,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 212,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 213,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 214,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 215,
+            "start": 0,
+            "end": 0,
+            "text": "Hello, everyone.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 216,
+            "start": 0,
+            "end": 0,
+            "text": "I'm Sandy from ZTE.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 217,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, this presentation is for the update of multicast redundant ingress router fail overdraft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 218,
+            "start": 0,
+            "end": 0,
+            "text": "We have co-author Greg Nissen from China mobile and the intern from China Unicom.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 219,
+            "start": 0,
+            "end": 0,
+            "text": "Next, please.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 220,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Uh, hold on a second here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 221,
+            "start": 0,
+            "end": 0,
+            "text": "Doesn't seem to want to let me move this thing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 222,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: So this is the brief introduction of this draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 223,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, usually two increase routers are deployed for avoiding a single node failure, and the two ingress router can forward a same multicast flow for the egress routers, which connect the receivers.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 224,
+            "start": 0,
+            "end": 0,
+            "text": "They can select the um for multicast flow forwarding.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 225,
+            "start": 0,
+            "end": 0,
+            "text": "And there are three modes can be used for ingress routers.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 226,
+            "start": 0,
+            "end": 0,
+            "text": "Protection for or faster The switch over.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 227,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there are cool standby modes and the warm standby mode and the hot standby mode.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 228,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the three standby modes can be used with all the existed multicast technologies such as PIM, beer, P2P ethanol, or Mldp.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 229,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the cost and the influence of the three modes are different.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 230,
+            "start": 0,
+            "end": 0,
+            "text": "The network administrator should select the appropriate mode according to the service requirements.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 231,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, seems that can page down the slides.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 232,
+            "start": 0,
+            "end": 0,
+            "text": "Okay, okay, I can do the control.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 233,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 234,
+            "start": 0,
+            "end": 0,
+            "text": "Let's work now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 235,
+            "start": 0,
+            "end": 0,
+            "text": "So this is the update of version zero two.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 236,
+            "start": 0,
+            "end": 0,
+            "text": "We added a section for failure detection according to JC's comments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 237,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks, Jiggs.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 238,
+            "start": 0,
+            "end": 0,
+            "text": "And in order to achieve the successful I switch over VFD or pink.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 239,
+            "start": 0,
+            "end": 0,
+            "text": "Methods can be used for monitoring the IR node failure or path failure between IR and ER.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 240,
+            "start": 0,
+            "end": 0,
+            "text": "For BFT methods, BFT FC 5880 can be used in all the deployments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 241,
+            "start": 0,
+            "end": 0,
+            "text": "Um multi-point VFD FC 8562 can be used.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 242,
+            "start": 0,
+            "end": 0,
+            "text": "Can also be used for the failure detection between IR and errs VFD for Mpls Lsps.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 243,
+            "start": 0,
+            "end": 0,
+            "text": "That is, FC 5884 can be used in P2P or MLP deployments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 244,
+            "start": 0,
+            "end": 0,
+            "text": "BFT can be used in deployment for PIM methods, IPv4 ping, FC 0792 and IPv6 ping FC 4443 can also be used in other deployments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 245,
+            "start": 0,
+            "end": 0,
+            "text": "Rspn of the 8029 can be used for P2P, internal or midp deployments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 246,
+            "start": 0,
+            "end": 0,
+            "text": "Burping can also be used in beer deployment, so backup, IR and ER can detect the selected IR node and pass failure easily by this method.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 247,
+            "start": 0,
+            "end": 0,
+            "text": "When IR detects the failure of Sir and IR must signal to beer as soon as possible, or IR can get the flu from beer.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 248,
+            "start": 0,
+            "end": 0,
+            "text": "In advance.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 249,
+            "start": 0,
+            "end": 0,
+            "text": "When beer detects the failure of sir, beer takes over the Sirs responsibility and forward flow to ers.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 250,
+            "start": 0,
+            "end": 0,
+            "text": "But the mistaken switch over may occur because in case only one, only the path between beer and sir fails.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 251,
+            "start": 0,
+            "end": 0,
+            "text": "In this situation, IR may receive duplicate flow.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 252,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 253,
+            "start": 0,
+            "end": 0,
+            "text": "So this is the, uh, during the adoption call, uh, we received many useful comments.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 254,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thanks, Jake.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 255,
+            "start": 0,
+            "end": 0,
+            "text": "And again, we plan to add more information and details in future version.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 256,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, we will add the second learning procedure for of the three modes between IR and ER to make it more clearly, uh, details will be added for the existed optimization method used in failure detection for example.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 257,
+            "start": 0,
+            "end": 0,
+            "text": "So for example RFC uh 9026 and some clarification for VPN and Non-vpn deployment will be added.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 258,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and some language improvement will be done.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 259,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 260,
+            "start": 0,
+            "end": 0,
+            "text": "Also, uh, thanks all the support and We welcome more comments for it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 261,
+            "start": 0,
+            "end": 0,
+            "text": "Uh.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 262,
+            "start": 0,
+            "end": 0,
+            "text": "That's all.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 263,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 264,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: For Sandy.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 265,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Hey.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 266,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 267,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 268,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, thank you for sharing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 269,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and just a reminder again, this is still, uh, in the adoption call, um, till Friday.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 270,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, please, um, love folks to review and, um, and, uh, at least mention whether you support or do not support adoption of this document by the working group.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 271,
+            "start": 0,
+            "end": 0,
+            "text": "Jake, uh, are you ready to talk for your next or you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 272,
+            "start": 0,
+            "end": 0,
+            "text": "Do you have a question about this draft?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 273,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I did actually have a question about this draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 274,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, same question actually.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 275,
+            "start": 0,
+            "end": 0,
+            "text": "Um, is there an implementation along these lines in open daylight or, uh, any production environments that that you're basing this on, or is this more theoretical at this point?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 276,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: In fact, there are many.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 277,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, yes, because there are many technologies included in this draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 278,
+            "start": 0,
+            "end": 0,
+            "text": "And we have deployed some technologies such as PIM and, and there has not been used widely.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 279,
+            "start": 0,
+            "end": 0,
+            "text": "So there is no beer deployment for it, but there are many deployment for it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 280,
+            "start": 0,
+            "end": 0,
+            "text": "So we usually use the, uh, warm standby or hot standby mode for deployment.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 281,
+            "start": 0,
+            "end": 0,
+            "text": "So um, for um, hot standby mode, there is duplicate flow in the network.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 282,
+            "start": 0,
+            "end": 0,
+            "text": "So there is there it can only be used in very large broadband network.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 283,
+            "start": 0,
+            "end": 0,
+            "text": "So and if there is some network that has no very large band where one this also the maybe the just uh, warm standby or cold standby mode can be used for it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 284,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and generally PIM is used more than other technologies.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 285,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 286,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 287,
+            "start": 0,
+            "end": 0,
+            "text": "Great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 288,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 289,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 290,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 291,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 292,
+            "start": 0,
+            "end": 0,
+            "text": "Now I'm ready.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 293,
+            "start": 0,
+            "end": 0,
+            "text": "Lenny.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 294,
+            "start": 0,
+            "end": 0,
+            "text": "Do you want me to step out or.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 295,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: No.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 296,
+            "start": 0,
+            "end": 0,
+            "text": "Um, let me add your bring your slides up.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 297,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think I can request I can share some preloaded slides.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 298,
+            "start": 0,
+            "end": 0,
+            "text": "Does that work?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 299,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Actually, you do have the power to do that, but, um, I just did it for you here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 300,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, let's go here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 301,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 302,
+            "start": 0,
+            "end": 0,
+            "text": "Now, are you able to control.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 303,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Let's see.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 304,
+            "start": 0,
+            "end": 0,
+            "text": "I thought oh, there we go.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 305,
+            "start": 0,
+            "end": 0,
+            "text": "Yes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 306,
+            "start": 0,
+            "end": 0,
+            "text": "Share.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 307,
+            "start": 0,
+            "end": 0,
+            "text": "Awesome.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 308,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 309,
+            "start": 0,
+            "end": 0,
+            "text": "And I think I have that.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 310,
+            "start": 0,
+            "end": 0,
+            "text": "Excellent.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 311,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 312,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 313,
+            "start": 0,
+            "end": 0,
+            "text": "Hi, everyone.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 314,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 315,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah, I'll be talking about the, uh, for active drafts and basically where things stand in terms of, uh, this, this project, uh, for what we're doing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 316,
+            "start": 0,
+            "end": 0,
+            "text": "Um, what I'll be going over is, uh, kind of progress reports.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 317,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I had a few things I talked about, um, that I was waiting to see how they panned out, uh, that I mentioned in the IETF update.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 318,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so I'll be giving the follow ups on those.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 319,
+            "start": 0,
+            "end": 0,
+            "text": "I'll be going over the overall project status and, uh, giving a brief overview of the things that are, um, sort of actively in progress right now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 320,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I would say there's a number of things kind of in the background that I won't, won't really be touching on, but, um, uh, the, the sort of major standards based pieces of it that are, um, that I know of that are making some progress.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 321,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and then I'll conclude with, uh, my, uh, requests for actions that I'd like to people to consider and, uh, and hopefully take, uh, going forward for, for what's like kind of going on now or imminently.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 322,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so the, the follow ups from IETF 112 were kind of negative.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 323,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I, um, you know, the outcome of the dispatch discussion was that the, uh, discussion on, on the multicast security document was dispatched to the list, I sent out invites, but nobody responded to anything yet.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 324,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, that was a bit disappointing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 325,
+            "start": 0,
+            "end": 0,
+            "text": "I think it indicates there's no way I'm asking for a buff at present.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 326,
+            "start": 0,
+            "end": 0,
+            "text": "Um, however, this, uh, the sort of, you know, direction we outlined here, uh, I think we did get, um, a little bit of useful feedback from, uh, raising it there and that, uh, that feedback and the, uh, sort of our thinking that went into this draft is, is still guiding, uh, what we intend to do, um, in the, in the near term towards, uh, still getting still reaching the browser use case, uh, eventually.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 327,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I think I do consider this a, uh, mild setback for the moment.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 328,
+            "start": 0,
+            "end": 0,
+            "text": "Um, likewise, the, uh, W3C Web Transport, uh, working group was I had an issue open with them, Uh, requesting, um, requesting that they would add multicast as a use case.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 329,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, from the W3C side.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 330,
+            "start": 0,
+            "end": 0,
+            "text": "They rejected it, uh, on two points.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 331,
+            "start": 0,
+            "end": 0,
+            "text": "One is that, um, they are uninterested unless there's browsers expressing an interest and, uh, that it's also premature.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 332,
+            "start": 0,
+            "end": 0,
+            "text": "Um, at least that was in the minutes of their meeting.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 333,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the comments indicated that, uh, this really needs IETF work before W3C can consider taking it on.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 334,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that that is driving part of the work that we're, uh, that we're moving forward with now as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 335,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I see you in the queue.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 336,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 337,
+            "start": 0,
+            "end": 0,
+            "text": "So maybe this is a question for, for, uh, uh, Warren as well, uh, advice here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 338,
+            "start": 0,
+            "end": 0,
+            "text": "It seems like we have a lot of circular dependencies here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 339,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, the we're trying to bring add this to the browser.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 340,
+            "start": 0,
+            "end": 0,
+            "text": "The browser.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 341,
+            "start": 0,
+            "end": 0,
+            "text": "People are saying there's not enough.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 342,
+            "start": 0,
+            "end": 0,
+            "text": "People are asking for this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 343,
+            "start": 0,
+            "end": 0,
+            "text": "There's not enough demand, there's not enough IETF activity on this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 344,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and and yet you seem to be generating IETF activity and interest.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 345,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so how do we kind of break through this logjam?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 346,
+            "start": 0,
+            "end": 0,
+            "text": "And is there something we as a working uh, and so maybe a question to Warren as well, is there something we as a working group can be providing as feedback to say, hey, this would be valuable.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 347,
+            "start": 0,
+            "end": 0,
+            "text": "Um, there's, there's we've got operators have spoken up, um, and, uh, several other folks have spoken up that this is interesting.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 348,
+            "start": 0,
+            "end": 0,
+            "text": "And yet, um, you know, there seems to be a little bit less, uh, uh, agreement, um, from others on that.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 349,
+            "start": 0,
+            "end": 0,
+            "text": "So what do you what do you suggest both Jake and and, um, Warren.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 350,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, so for the first thing, let me suggest that we, uh, that we table that till the end of the, uh, to the last slide where I'm asking for actions.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 351,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, and because I do have one related thing that I'll, uh, that I'd like to, to discuss, and we can discuss whether there's a better thing to do or what the kind of ideas are in this space.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 352,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, let me first just kind of paint the whole picture overall and tell you where I'm headed and what I think is the right kind of response to this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 353,
+            "start": 0,
+            "end": 0,
+            "text": "But I am happy to take suggestions and feedback.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 354,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Warren, anything you want to throw on top of that?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 355,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Nope.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 356,
+            "start": 0,
+            "end": 0,
+            "text": "Hopefully you've got a no.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 357,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: Hopefully you've got a good idea for the, uh, suggested actions, because I don't.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 358,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: All right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 359,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 360,
+            "start": 0,
+            "end": 0,
+            "text": "Then, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 361,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and I, I do want to say it's this criticism that it requires IETF work first, um, is not necessarily saying that, Uh, as as I understand it is not necessarily saying that there's no IETF interest.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 362,
+            "start": 0,
+            "end": 0,
+            "text": "It's rather saying that, uh, the work to make this viable for web transport has not yet occurred in the IETF.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 363,
+            "start": 0,
+            "end": 0,
+            "text": "And so the W3C web transport cannot, uh, reasonably consider it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 364,
+            "start": 0,
+            "end": 0,
+            "text": "So that that was my take on it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 365,
+            "start": 0,
+            "end": 0,
+            "text": "Um, now, whether that will go forward or whether we'll hit a similar wall when I try to take this to Quic.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 366,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that is, that is to be determined.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 367,
+            "start": 0,
+            "end": 0,
+            "text": "And that's where I was going to, uh, to go with that question, um, which we'll talk about a little bit more later.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 368,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, anyway, so in light of these kind of setbacks, our current strategy is to begin some, uh, we're aiming to do some production deployment that's going to be, uh, deployment of, uh, so I don't know if it'll be in your domain in the very first run, but we are aiming to do some inter-domain multicast production.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 369,
+            "start": 0,
+            "end": 0,
+            "text": "Deployment, uh, without browser support.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 370,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and under the understanding that in the long term, we still are going to need to get to the browser.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 371,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but we think that, you know, in the in the beginning, I was kind of thinking in terms of, um, if we can get some browser support, that's, that's there on the way, then this will, uh, make it more attractive to ISPs, which I think is true.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 372,
+            "start": 0,
+            "end": 0,
+            "text": "Um, however, I think the other way also goes the other way around also applies.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 373,
+            "start": 0,
+            "end": 0,
+            "text": "If we can make this, uh, if we can get some traffic running, uh, in some real ISPs, then it will make it more attractive to browsers.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 374,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, you know, as always, with multicast, we have a chicken and egg problem, and we're trying to address it and we can address it kind of on either side.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 375,
+            "start": 0,
+            "end": 0,
+            "text": "Um, um, but I think that they, they support one another.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 376,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 377,
+            "start": 0,
+            "end": 0,
+            "text": "First you make a thing that's not quite a lizard, but also isn't yet a chicken.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 378,
+            "start": 0,
+            "end": 0,
+            "text": "And that lays an egg that has a, that that grows into a chicken.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 379,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 380,
+            "start": 0,
+            "end": 0,
+            "text": "So, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 381,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, uh, we are we're not abandoning that effort, but, uh, I do I do consider this a, uh, uh, a minor setback, but I think this is not unexpected when encountering security, uh, feedback for the first time.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 382,
+            "start": 0,
+            "end": 0,
+            "text": "So that's that's where that stands.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 383,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so in terms of overall project status, uh, and this is kind of the, um, you know, the Akamai funding ish view, uh, we have moved this project out of R&D and into a product team, and we're trying to now, uh, find the right set of partners, uh, or even single partner, to take this forward into a production run, uh, that we can start deploying.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 384,
+            "start": 0,
+            "end": 0,
+            "text": "But we think we've convinced ourselves that this has a real business case, um, and that that's not, uh, that's not quite the same as as me engineering hacker.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 385,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, saying it sounds like a good idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 386,
+            "start": 0,
+            "end": 0,
+            "text": "That's more like the people who tried to shoot it down, uh, It because that's their job.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 387,
+            "start": 0,
+            "end": 0,
+            "text": "You know, uh, ended up concluding that, okay, this probably is worth looking at in, in more detail and, uh, provided we can get some partners, the intent is to go ahead with this, um, as of now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 388,
+            "start": 0,
+            "end": 0,
+            "text": "So we are, um, we are in talks with a few partners, uh, and, uh, and looking to make that work out.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 389,
+            "start": 0,
+            "end": 0,
+            "text": "If other people think that they'd be good partners for this, too, then we'd be happy to to engage with them as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 390,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so anybody here that, that wants to, um, that wants to ping me about that, please do feel free and we can talk about it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 391,
+            "start": 0,
+            "end": 0,
+            "text": "I can get you in touch with the right people.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 392,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, yeah, we're aiming to get, like, some traffic running, uh, within the next 1 or 2 years.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 393,
+            "start": 0,
+            "end": 0,
+            "text": "Um, probably we'd start that out in, uh, you know, some, some limited networks, um, for the first few runs and then, uh, expand it out into the generalized inner domain stuff.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 394,
+            "start": 0,
+            "end": 0,
+            "text": "At least that's the plan.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 395,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and we are we are still aiming to, uh, to address both software downloads and video.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 396,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that is uh, that is key to, to kind of making those peak offloads be actually addressable for, for the networks and for ourselves.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 397,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 398,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, in terms of getting to the browser ultimately, which we, like I said, do still consider very important, uh, thing to solve in the end.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 399,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, we've just started, uh, a, uh, a draft that tries to extend quic um, this tries to build on the quick multipath that was, uh, very recently adopted in the quick working group.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 400,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, it's, I mean, it'll be different because it's going to be multicast, but it actually has kind of a lot of overlap with, uh, the kinds of things they're discovering in the quick working group about, uh, about multicast as they do the implementation and evaluation.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 401,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so we're hoping to leverage some of that work, and we're also hoping that this will actually make it simpler at the application layer.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 402,
+            "start": 0,
+            "end": 0,
+            "text": "Um, because it's going to be, uh, at least mostly transparent to the, um, to the, uh, web applications that would be making use of it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 403,
+            "start": 0,
+            "end": 0,
+            "text": "So they don't they won't have to do anything special except maybe like enable it or disable it at the high level and sort of permit the underlying stack to use multicast or not use multicast.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 404,
+            "start": 0,
+            "end": 0,
+            "text": "But that's the intent, the intended direction.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 405,
+            "start": 0,
+            "end": 0,
+            "text": "We're going.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 406,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, as a rough overview, I have the link to our GitHub repo where we've posted an early version of the draft that doesn't have much content.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 407,
+            "start": 0,
+            "end": 0,
+            "text": "It's just a, um, like the abstract and intro and outline and a few considerations, a few security considerations, including the link to the Uh uh, to the other document.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 408,
+            "start": 0,
+            "end": 0,
+            "text": "So none of this is adopted.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 409,
+            "start": 0,
+            "end": 0,
+            "text": "And there are many ways this could go wrong.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 410,
+            "start": 0,
+            "end": 0,
+            "text": "But this is our current plan for how to to move this forward.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 411,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we'd be baking it into quick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 412,
+            "start": 0,
+            "end": 0,
+            "text": "So it's going to be built on a, um, on a unicast connection as you're sort of anchor, uh, that provides all the security guarantees and uh, and probably, uh, in a similar way to the, um, you know, stream of hashes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 413,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but that'll be, um, uh, you know, instructing the client to, you know, if you are, uh, willing and able, go ahead and join this multicast stream.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 414,
+            "start": 0,
+            "end": 0,
+            "text": "You'll be receiving quick packets.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 415,
+            "start": 0,
+            "end": 0,
+            "text": "They'll be encrypted, uh, they'll, um, hopefully match up with our, uh, with our security considerations, uh, for multicast, uh, insights and, uh, and then, uh, they'll be interpreted as, as, um, you know, just just another, uh, unidirectional data stream on the QuickSight.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 416,
+            "start": 0,
+            "end": 0,
+            "text": "So we think we can transport, um, or we think it makes really good sense to transport, uh, unidirectional web transport streams from server to client this way.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 417,
+            "start": 0,
+            "end": 0,
+            "text": "And also, um, uh, probably H3, uh, the, the server push, uh, for webobjects.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 418,
+            "start": 0,
+            "end": 0,
+            "text": "Unfortunately, browsers are removing the server push cache, um, and the server push feature, uh, from browsers right now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 419,
+            "start": 0,
+            "end": 0,
+            "text": "Um, however, uh, through the web transport, um, unidirectional streams, it still should be possible to kind of implement that yourself as inside your web app.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 420,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, you know, ultimately we'll hopefully have demos of this and, and some stuff running and a, a coherent document to present.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 421,
+            "start": 0,
+            "end": 0,
+            "text": "Um, Lucas Perdue has agreed to co-author this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 422,
+            "start": 0,
+            "end": 0,
+            "text": "He's the his the first author on the um on the other uh multicast over quic http draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 423,
+            "start": 0,
+            "end": 0,
+            "text": "This is a little bit different because this is going to be operating at the quick layer, whereas that one was operating at the HTTP layer, um, and using alt service, whereas this one will be using quick frames.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 424,
+            "start": 0,
+            "end": 0,
+            "text": "That'll be new quick frames.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 425,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, kind of loosely based on the, on the multi-path approach, but um, uh, this this is where we're headed, um, as a very tentative target, which I probably shouldn't put in because this is perhaps optimistic.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 426,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I was hoping to, uh, get a prototype in initial spec, uh, to present in July to the quick working group.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 427,
+            "start": 0,
+            "end": 0,
+            "text": "We'll see how that goes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 428,
+            "start": 0,
+            "end": 0,
+            "text": "This could be superseded by the by our, um, if I have to spend a lot of time on the, uh, on the, uh, partner deployment efforts, uh, which actually would be even better than, than this in terms of, uh, making this project a success.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 429,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but I do think that this is an important thing to, uh, to have on the roadmap for, um, how we get into the browser.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 430,
+            "start": 0,
+            "end": 0,
+            "text": "And this is our current kind of plan.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 431,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so this could slip, but I am hoping to have something coherent to present in July.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 432,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and if not, then, uh, then maybe later this year.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 433,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 434,
+            "start": 0,
+            "end": 0,
+            "text": "So that's that's where the browser effort stands.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 435,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I want to say thanks to Max, uh, for a bunch of, uh, feedback and prayers on the draft.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 436,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that is slowly coming into shape.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 437,
+            "start": 0,
+            "end": 0,
+            "text": "I've been a little distracted and haven't, haven't done a whole lot on actually advancing these documents.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 438,
+            "start": 0,
+            "end": 0,
+            "text": "I've been working more toward, uh, getting deployment to be viable.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 439,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it is ultimately obviously going to be very important to have this well documented.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 440,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think he's, uh, his contributions have really helped to shape it up.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 441,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, um, yeah, it's still kind of undetermined whether the quick will reference this one or do something a little bit different, but similar or what exactly.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 442,
+            "start": 0,
+            "end": 0,
+            "text": "But that'll be kind of hammered out as, as we get the quick thing further along.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 443,
+            "start": 0,
+            "end": 0,
+            "text": "But I was really glad to see that Andy is actually progressing a little bit, uh, which was nice.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 444,
+            "start": 0,
+            "end": 0,
+            "text": "Um, in other news, the, uh, we have still been meeting regularly at the W3C Multicast Community Group.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 445,
+            "start": 0,
+            "end": 0,
+            "text": "I encourage you all to join.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 446,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there's a, um, there's a link to the W3C Community Multicast, uh, here.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 447,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and even if you're just on the mailing list, um, or if you take a look at the meeting minutes or recordings, then you'll be getting monthly updates on this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 448,
+            "start": 0,
+            "end": 0,
+            "text": "So if you're interested in watching, then, uh, then keep an eye on it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 449,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, meanwhile, um, you know, I'm getting some code contributions from some of the, uh, some of the multicast community group members, which I'm really pleased about.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 450,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so thanks in particular to Gavin Henry, uh, for some of his work on lithium.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 451,
+            "start": 0,
+            "end": 0,
+            "text": "CR um, he's, uh, he's taking a look at, at adding windows support, which is great.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 452,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but what we've already upstreamed from that was, uh, was, uh, integration.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 453,
+            "start": 0,
+            "end": 0,
+            "text": "The CI, CD pipeline integrated coverity, uh, scanning.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 454,
+            "start": 0,
+            "end": 0,
+            "text": "So it is now scanning for, uh, problems and, uh, vulnerabilities of that.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 455,
+            "start": 0,
+            "end": 0,
+            "text": "It can do a static analysis and, uh, it found several errors that we, uh, that we fixed in CR.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 456,
+            "start": 0,
+            "end": 0,
+            "text": "So that is in better shape now than it was.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 457,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and rates to remain in better shape as we extend it further.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 458,
+            "start": 0,
+            "end": 0,
+            "text": "Um, that's a that's meant to be a cross-platform SSM receive library.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 459,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I frequently use it for, for my testing.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 460,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, we can go into more details about what that has.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 461,
+            "start": 0,
+            "end": 0,
+            "text": "I've talked about it before in the group, but not recently.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 462,
+            "start": 0,
+            "end": 0,
+            "text": "Um, yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 463,
+            "start": 0,
+            "end": 0,
+            "text": "So in conclusion, the, uh, the things I'd like to to consider doing as a working group, uh, for one, I'd like to go ahead and start the dorms.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 464,
+            "start": 0,
+            "end": 0,
+            "text": "Last call, I think.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 465,
+            "start": 0,
+            "end": 0,
+            "text": "I haven't had any more, uh, reviews.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 466,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so if I'm not going to get any, then we might as well go ahead.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 467,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I think it's in reasonable shape if I remember.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 468,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 469,
+            "start": 0,
+            "end": 0,
+            "text": "Um, it's, uh, I didn't actually read it all the way through last month.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 470,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but, uh, uh, last I looked, uh, I didn't have any notes left on it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 471,
+            "start": 0,
+            "end": 0,
+            "text": "I think, um, I believe I've, I've incorporated all the comments that have been made so far.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 472,
+            "start": 0,
+            "end": 0,
+            "text": "Um, second is I'd like to make dorms ambiance back into a cluster, uh, so that the, uh, they can refer to each other and get handled in a sort of clustering way for the RFC editor.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 473,
+            "start": 0,
+            "end": 0,
+            "text": "Um, uh, if anyone is able, uh, please do post to msac at IETF in response to the uh, uh, discussion about the security considerations document.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 474,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I think even just asking stupid questions and getting some discussion going would be a useful, uh, expression of interest there.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 475,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, and, uh, and we might be able to learn some things and understand more about, uh, the right problem space, especially if we can get, uh, any, any of the existing security experts on that list to kind of engage as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 476,
+            "start": 0,
+            "end": 0,
+            "text": "Um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 477,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so for the other is that, um, Nat, I think the only feedback I've gotten so far was that it looks pretty good.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 478,
+            "start": 0,
+            "end": 0,
+            "text": "Well thought out.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 479,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, I, I looked through it, and there's, uh, there's eight things I have marked as tbds.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 480,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, I did not actually address those, but what I propose is that I should address those eight tbds and then, uh, and then open it up for last call, or at least get some more reviews going.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 481,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, one of those, uh, and I don't think it's had enough review honestly yet.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 482,
+            "start": 0,
+            "end": 0,
+            "text": "Um, although I was encouraged by the people who did respond so far.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 483,
+            "start": 0,
+            "end": 0,
+            "text": "So that was, uh, that was good.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 484,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the other thing is, uh, and, and maybe set a timer to reconfirm, but, um, when they asked for conflict avoidance for the meeting scheduling, let's make sure we don't collide with quick next time if we can.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 485,
+            "start": 0,
+            "end": 0,
+            "text": "So I can make it to both, uh, if that's still on the table.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 486,
+            "start": 0,
+            "end": 0,
+            "text": "Um, like I said, there's a chance this will slip.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 487,
+            "start": 0,
+            "end": 0,
+            "text": "So if it slips, then.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 488,
+            "start": 0,
+            "end": 0,
+            "text": "Then maybe I'll want to move that request to November or something.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 489,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then, uh, but then, uh, and here's where we get back to the, um, to the original comment that we deferred till now.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 490,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, Lenny previously offered on the list.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 491,
+            "start": 0,
+            "end": 0,
+            "text": "Like, should we, as a working group, request that something security area or, uh, or transport area or the quick working group or whoever is the right set of people, but but, uh, expressed to them that this is a valuable use case, um, from the point of view of the Mod working group in some official manner and, uh, ask them to, to engage and evaluate, uh, with the work.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 492,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and I think that the answer is yes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 493,
+            "start": 0,
+            "end": 0,
+            "text": "Once we have a concrete proposal, we do not really yet, but, uh, but if this is if this is a worthwhile direction, um, then I think that that's where, uh, that's where it would be really valuable.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 494,
+            "start": 0,
+            "end": 0,
+            "text": "I guess we might have something concrete to ask about with the, uh, with the security considerations, but, uh, I think it was a fair point that that, um, they want to have an actual proposal for the protocol where we're proposing, uh, for transporting web traffic over multicast in order to consider, um, and that that is like it's it's hard to really get good security considerations in the abstract.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 495,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, so it's a fair point, but, um, you know, I leave that to, uh, to further questioning.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 496,
+            "start": 0,
+            "end": 0,
+            "text": "Really.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 497,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so that's all I've got.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 498,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 499,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 500,
+            "start": 0,
+            "end": 0,
+            "text": "How about Lenny?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 501,
+            "start": 0,
+            "end": 0,
+            "text": "Let's let's hear what you have to say.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 502,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Sounds good to me.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 503,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I, I think you covered it all.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 504,
+            "start": 0,
+            "end": 0,
+            "text": "You answered my questions, so.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 505,
+            "start": 0,
+            "end": 0,
+            "text": "Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 506,
+            "start": 0,
+            "end": 0,
+            "text": "Um, questions?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 507,
+            "start": 0,
+            "end": 0,
+            "text": "Questions from anyone else?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 508,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, for Jake.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 509,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Let me ask Warren.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 510,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, you said you were hoping I had a good idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 511,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know if this is a good idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 512,
+            "start": 0,
+            "end": 0,
+            "text": "It's an idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 513,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S7: So, yeah, we're on Google.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 514,
+            "start": 0,
+            "end": 0,
+            "text": "Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 515,
+            "start": 0,
+            "end": 0,
+            "text": "I mean, at least it's an idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 516,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know of a better one.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 517,
+            "start": 0,
+            "end": 0,
+            "text": "Um, other than just, like, continuing to people, this is the best idea ever and hope that they pay attention.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 518,
+            "start": 0,
+            "end": 0,
+            "text": "So, yeah, I don't know.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 519,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 520,
+            "start": 0,
+            "end": 0,
+            "text": "Um, I really do think that that the interest level will rise if there are ISPs that are doing delivery of Inter-domain multicast.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 521,
+            "start": 0,
+            "end": 0,
+            "text": "Um, my take is that, uh, you know, right now there's, there's high skepticism that this will actually end up getting deployed.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 522,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, so I think the deployment work is the key to this, um, to getting that that engagement.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 523,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there might be more because, uh, the web security people are, um.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 524,
+            "start": 0,
+            "end": 0,
+            "text": "They've had a lot of people pushing on them about security considerations that they, uh, that they don't agree with.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 525,
+            "start": 0,
+            "end": 0,
+            "text": "And this does expose information to the network in ways that make them uncomfortable.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 526,
+            "start": 0,
+            "end": 0,
+            "text": "Um, we tried to address all that in the security considerations document, and I think it's a reasonable way to look at things.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 527,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, yeah, we'll we'll have to see.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 528,
+            "start": 0,
+            "end": 0,
+            "text": "Sandy, I saw you in the queue, I think.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 529,
+            "start": 0,
+            "end": 0,
+            "text": "Or unmuting maybe.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 530,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: No, because I see that you you will implement the multicast over quick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 531,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, if multicast will implement it with, with quick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 532,
+            "start": 0,
+            "end": 0,
+            "text": "So the will the, uh, AMT still be used forever or, um, every multicast will be on quick.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 533,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Uh, so AMT would still be used for the inner domain transport wherever there's not a multicast capable peering.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 534,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, that that does the.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 535,
+            "start": 0,
+            "end": 0,
+            "text": "So it's, um, so the way that the, uh, the AMT would still be used is, um, in quick you would tell the client that, hey, client, please join this multicast group.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 536,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and then the client would join that multicast group, and then you have your regular, uh, how are you going to transport that multicast?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 537,
+            "start": 0,
+            "end": 0,
+            "text": "How are you going to do the RPF?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 538,
+            "start": 0,
+            "end": 0,
+            "text": "How are you going to get it?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 539,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, transmitted question that we always have with multicast.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 540,
+            "start": 0,
+            "end": 0,
+            "text": "Right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 541,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so this can use AMT.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 542,
+            "start": 0,
+            "end": 0,
+            "text": "It can also use uh, not AMT and be um, you know, it should work just fine for, uh, connecting to traffic that's sourced within the network.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 543,
+            "start": 0,
+            "end": 0,
+            "text": "But it also would work, uh, with the Dryad extension, um, or or with the, in theory, with the well-known IP.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 544,
+            "start": 0,
+            "end": 0,
+            "text": "If there's anybody running those relays, uh, to ingest the traffic from outside the network.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 545,
+            "start": 0,
+            "end": 0,
+            "text": "Um, so, uh, we still intend to start with, uh, AMT access for inter-domain transport.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 546,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but it's it should work to do other kinds of transport as well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 547,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S5: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 548,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 549,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 550,
+            "start": 0,
+            "end": 0,
+            "text": "I don't see any.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 551,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Any other questions for Jake?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 552,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Any better ideas?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 553,
+            "start": 0,
+            "end": 0,
+            "text": "I don't love this.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 554,
+            "start": 0,
+            "end": 0,
+            "text": "I don't love this plan.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 555,
+            "start": 0,
+            "end": 0,
+            "text": "I wish I had something a little bit better than.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 556,
+            "start": 0,
+            "end": 0,
+            "text": "Well, first I'll go implement a whole quick extension, and then I'll hope that they like it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 557,
+            "start": 0,
+            "end": 0,
+            "text": "But it's what I've got.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 558,
+            "start": 0,
+            "end": 0,
+            "text": "So it's at least.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 559,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: If you build.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 560,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: It.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 561,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: If you build it, they will come.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 562,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: How long have you been saying that, Lenny?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 563,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: It's the, uh, a blind, a broken, a broken clock is is is right twice a day.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 564,
+            "start": 0,
+            "end": 0,
+            "text": "So at some point, we're going to be right about that.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 565,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: Almost long enough.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 566,
+            "start": 0,
+            "end": 0,
+            "text": "That's the answer?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 567,
+            "start": 0,
+            "end": 0,
+            "text": "Yes, almost long enough.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 568,
+            "start": 0,
+            "end": 0,
+            "text": "All right.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 569,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Um, how about, uh, bad idea.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 570,
+            "start": 0,
+            "end": 0,
+            "text": "Whose time has come?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 571,
+            "start": 0,
+            "end": 0,
+            "text": "I don't know, that's.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 572,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: No, you know, people don't think this is going to work, but I think that we're really getting a crunch on capacity in some ways.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 573,
+            "start": 0,
+            "end": 0,
+            "text": "Um, you know, maybe there will be a renaissance in the layer one transport at the last mile, and it will make all this obsolete.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 574,
+            "start": 0,
+            "end": 0,
+            "text": "But, um, I don't see it happening.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 575,
+            "start": 0,
+            "end": 0,
+            "text": "So I don't know how else we're going to get that the level of demand covered for these peak events.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 576,
+            "start": 0,
+            "end": 0,
+            "text": "Mm.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 577,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Yeah.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 578,
+            "start": 0,
+            "end": 0,
+            "text": "I think it's worth noting that we're, we're about to have a perhaps an inflection point for this topic.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 579,
+            "start": 0,
+            "end": 0,
+            "text": "Um, with the NFL, um, this this fall, uh, where Amazon Prime has exclusive rights to streaming of Thursday Night Football games and you're going to have audiences of 20 to 40 million simultaneous viewers for three hours a week, for 16 weeks a year, 16, 17 weeks a year.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 580,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, you know.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 581,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: The other.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 582,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Thing that with purely with unicast is, is really going to be challenging.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 583,
+            "start": 0,
+            "end": 0,
+            "text": "So it's I think we're at an interesting point.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 584,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S1: I think we may have passed the inflection point in some places.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 585,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, there was a similar situation with the zone in Italy, uh, that really began last year, I think, uh, where they got rights to Serie A, which is the, um, you know, the Italian football, uh, most popular team.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 586,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, they, you know, there's there's been a lot of, uh, press about how that went.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 587,
+            "start": 0,
+            "end": 0,
+            "text": "Um, and, uh, they did do some attempt to address it with multicast, as I understand it.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 588,
+            "start": 0,
+            "end": 0,
+            "text": "But, uh, but it seems like it wasn't enough.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 589,
+            "start": 0,
+            "end": 0,
+            "text": "According to the statements they made last November, um, multicast helped a lot.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 590,
+            "start": 0,
+            "end": 0,
+            "text": "Uh, but they still have a ways to go because it was only in one network.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 591,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, and they needed to do, uh, to get kind of more to really meet this, make it satisfactory to their end users.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 592,
+            "start": 0,
+            "end": 0,
+            "text": "So, uh, I think we're past the inflection point, really.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 593,
+            "start": 0,
+            "end": 0,
+            "text": "Um, but there's still open questions on how it's going to land.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 594,
+            "start": 0,
+            "end": 0,
+            "text": "Anyway, that's, uh, that's all kind of not really protocol work.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 595,
+            "start": 0,
+            "end": 0,
+            "text": "Um, okay.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 596,
+            "start": 0,
+            "end": 0,
+            "text": "So I'm done.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 597,
+            "start": 0,
+            "end": 0,
+            "text": "Well.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 598,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S2: Well, in the movies, uh, there's always the, the the one person who, um, uh, spends years, uh, proactively trying to save the day and gets ignored and in the end does save the planet.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 599,
+            "start": 0,
+            "end": 0,
+            "text": "So.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 600,
+            "start": 0,
+            "end": 0,
+            "text": "I think we're, uh, we're following that script.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 601,
+            "start": 0,
+            "end": 0,
+            "text": "Um, any other questions for anybody else?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 602,
+            "start": 0,
+            "end": 0,
+            "text": "Anything anybody wants to add before closing the meeting?",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 603,
+            "start": 0,
+            "end": 0,
+            "text": "Um, for those who, uh, for those wondering why we only why we took two hours every time I've signed up for one hour slots, we've blown through that.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 604,
+            "start": 0,
+            "end": 0,
+            "text": "So we took two.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 605,
+            "start": 0,
+            "end": 0,
+            "text": "But it was a shorter agenda this, uh, this week.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 606,
+            "start": 0,
+            "end": 0,
+            "text": "So, anyway, um, I will close this meeting and we will see everybody in Philadelphia.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 607,
+            "start": 0,
+            "end": 0,
+            "text": "Thanks for everybody for joining.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 608,
+            "start": 0,
+            "end": 0,
+            "text": "Max, thanks for taking notes.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 609,
+            "start": 0,
+            "end": 0,
+            "text": "And, uh, sitting in the director's chair.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 610,
+            "start": 0,
+            "end": 0,
+            "text": "And, um, thanks for everybody else, uh, and look forward to seeing everybody in Philly.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 611,
+            "start": 0,
+            "end": 0,
+            "text": "Farewell.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 612,
+            "start": 0,
+            "end": 0,
+            "text": "SPEAKER S4: Thank you very much.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 613,
+            "start": 0,
+            "end": 0,
+            "text": "No worries.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 614,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 615,
+            "start": 0,
+            "end": 0,
+            "text": "Yep.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 616,
+            "start": 0,
+            "end": 0,
+            "text": "Thank you.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 617,
+            "start": 0,
+            "end": 0,
+            "text": "See you around.",
+            "confidence": 0.9897269807280513
+          },
+          {
+            "id": 618,
+            "start": 0,
+            "end": 0,
+            "text": "Bye.",
+            "confidence": 0.9897269807280513
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-01-27T16:42:46.602029+00:00",
+          "processed_at": "2026-01-27T16:42:46.602029+00:00",
+          "provider": "speechmatics",
+          "model": "enhanced",
+          "audio": {
+            "duration": 7200
+          },
+          "options": {
+            "language": "en",
+            "diarization": "speaker"
+          }
+        },
+        "extensions": {
+          "speechmatics": {
+            "job_id": "7er3w2k8vx"
+          }
+        },
+        "quality": {
+          "average_confidence": 0.9897269807280513
+        }
+      },
+      "encoding": "json"
     }
+  ],
+  "extensions": [
+    "wtf_transcription"
   ]
 }
