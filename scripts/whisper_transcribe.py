@@ -35,10 +35,16 @@ except ImportError:
     sys.exit(1)
 
 try:
-    from faster_whisper import WhisperModel
+    import mlx_whisper
 except ImportError:
-    print("Error: faster-whisper is required. Install with: pip install faster-whisper")
-    sys.exit(1)
+    try:
+        from faster_whisper import WhisperModel
+        mlx_whisper = None
+    except ImportError:
+        print("Error: mlx-whisper or faster-whisper is required.")
+        print("  Apple Silicon: pip install mlx-whisper")
+        print("  Other:         pip install faster-whisper")
+        sys.exit(1)
 
 
 def download_youtube_audio(
@@ -90,55 +96,86 @@ def transcribe_with_whisper(
     language: Optional[str] = None,
     device: str = "auto"
 ) -> tuple:
-    """Transcribe audio using faster-whisper locally.
+    """Transcribe audio using mlx-whisper (Apple Silicon) or faster-whisper fallback.
 
     Args:
         audio_path: Path to audio file
         model_size: Whisper model size (tiny, base, small, medium, large-v3)
         language: BCP-47 language code, or None for auto-detection
-        device: 'auto', 'cpu', 'cuda', or 'mps'
+        device: ignored when using mlx-whisper (always uses MPS); used by faster-whisper fallback
 
     Returns:
-        Tuple of (segments list, TranscriptionInfo object)
+        Tuple of (segments list, info object)
     """
-    # Select compute type based on device
-    if device == "auto":
-        # Try to auto-detect best device
-        try:
-            import torch
-            if torch.backends.mps.is_available():
-                device = "cpu"  # faster-whisper uses ctranslate2 which works on cpu for Apple Silicon
-                compute_type = "int8"
-            elif torch.cuda.is_available():
-                device = "cuda"
-                compute_type = "float16"
-            else:
-                device = "cpu"
-                compute_type = "int8"
-        except ImportError:
-            device = "cpu"
-            compute_type = "int8"
-    elif device == "cpu":
-        compute_type = "int8"
-    elif device == "cuda":
-        compute_type = "float16"
+    if mlx_whisper is not None:
+        # mlx-whisper uses HuggingFace model IDs
+        mlx_model_map = {
+            "tiny":     "mlx-community/whisper-tiny-mlx",
+            "base":     "mlx-community/whisper-base-mlx",
+            "small":    "mlx-community/whisper-small-mlx",
+            "medium":   "mlx-community/whisper-medium-mlx",
+            "large-v2": "mlx-community/whisper-large-v2-mlx",
+            "large-v3": "mlx-community/whisper-large-v3-mlx",
+        }
+        model_path = mlx_model_map.get(model_size, f"mlx-community/whisper-{model_size}-mlx")
+
+        kwargs = {"word_timestamps": True, "verbose": False}
+        if language:
+            kwargs["language"] = language
+
+        result = mlx_whisper.transcribe(audio_path, path_or_hf_repo=model_path, **kwargs)
+
+        # Normalise to the same (segments, info) shape the rest of the script expects
+        class _Info:
+            pass
+
+        info = _Info()
+        info.language = result.get("language", "en")
+        info.duration = result.get("duration", 0.0)
+
+        class _Word:
+            def __init__(self, w):
+                self.word = w.get("word", "")
+                self.start = w.get("start", 0.0)
+                self.end = w.get("end", 0.0)
+                self.probability = w.get("probability", 1.0)
+
+        class _Segment:
+            def __init__(self, s):
+                self.start = s.get("start", 0.0)
+                self.end = s.get("end", 0.0)
+                self.text = s.get("text", "")
+                self.avg_logprob = s.get("avg_logprob", -0.5)
+                self.words = [_Word(w) for w in s.get("words", [])]
+
+        segments = [_Segment(s) for s in result.get("segments", [])]
+        return segments, info
+
     else:
-        compute_type = "int8"
+        # faster-whisper fallback (non-Apple-Silicon)
+        if device == "auto":
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    device, compute_type = "cuda", "float16"
+                else:
+                    device, compute_type = "cpu", "int8"
+            except ImportError:
+                device, compute_type = "cpu", "int8"
+        elif device == "cuda":
+            compute_type = "float16"
+        else:
+            compute_type = "int8"
 
-    model = WhisperModel(model_size, device=device, compute_type=compute_type)
-
-    segments, info = model.transcribe(
-        audio_path,
-        language=language,
-        word_timestamps=True,
-        beam_size=5,
-        vad_filter=True,
-    )
-
-    # Consume the generator into a list (needed for multiple passes)
-    segments = list(segments)
-
-    return segments, info
+        model = WhisperModel(model_size, device=device, compute_type=compute_type)
+        segments, info = model.transcribe(
+            audio_path,
+            language=language,
+            word_timestamps=True,
+            beam_size=5,
+            vad_filter=True,
+        )
+        return list(segments), info
 
 
 def transcript_to_wtf(
@@ -216,7 +253,7 @@ def transcript_to_wtf(
         "metadata": {
             "created_at": now,
             "processed_at": now,
-            "provider": "whisper",
+            "provider": "mlx-whisper" if mlx_whisper is not None else "whisper",
             "model": model_size,
             "audio": {
                 "duration": round(duration, 3),
@@ -249,7 +286,7 @@ def update_vcon_with_transcription(vcon_path: str, wtf_transcription: dict) -> N
     if "analysis" in vcon:
         vcon["analysis"] = [
             a for a in vcon["analysis"]
-            if not (a.get("type") == "wtf_transcription" and a.get("vendor") == "whisper")
+            if not (a.get("type") == "wtf_transcription" and a.get("vendor") in ("whisper", "mlx-whisper"))
         ]
     else:
         vcon["analysis"] = []
@@ -323,15 +360,29 @@ def transcribe_vcon(
 
     print(f"  YouTube URL: {youtube_url}")
 
-    with tempfile.TemporaryDirectory() as tmpdir:
+    # Check for pre-downloaded audio (from download_audio.py)
+    base_dir = Path(vcon_path).parent.parent
+    meeting_match = Path(vcon_path).stem.split("_")[0]  # e.g. "ietf125"
+    predownload_path = base_dir / "audio" / meeting_match / f"{Path(vcon_path).stem}.mp3"
+
+    _tmpdir_obj = None
+    if predownload_path.exists():
+        print(f"  Using pre-downloaded audio: {predownload_path.name}")
+        audio_path = str(predownload_path)
+        tmpdir = None
+    else:
+        import tempfile as _tempfile
+        _tmpdir_obj = _tempfile.TemporaryDirectory()
+        tmpdir = _tmpdir_obj.name
         print(f"  Downloading audio...")
         try:
             audio_path = download_youtube_audio(youtube_url, tmpdir, cookies_from_browser)
         except Exception as e:
             print(f"  Error downloading audio: {e}")
+            _tmpdir_obj.cleanup()
             return False
 
-        print(f"  Downloaded: {audio_path}")
+    try:
         print(f"  Transcribing with Whisper ({model_size})...")
 
         try:
@@ -350,6 +401,10 @@ def transcribe_vcon(
         conf = wtf["quality"]["average_confidence"]
         print(f"  Done! Language: {lang}, Confidence: {conf:.3f}")
         return True
+
+    finally:
+        if _tmpdir_obj is not None:
+            _tmpdir_obj.cleanup()
 
 
 def find_vcons_for_meeting(meeting: int, group: Optional[str] = None) -> list:
@@ -387,7 +442,7 @@ def find_pending_vcons() -> list:
                 continue
 
             has_whisper = any(
-                a.get("type") == "wtf_transcription" and a.get("vendor") == "whisper"
+                a.get("type") == "wtf_transcription" and a.get("vendor") in ("whisper", "mlx-whisper")
                 for a in vcon.get("analysis", [])
             )
             if not has_whisper:
