@@ -36,15 +36,47 @@ except ImportError:
 
 try:
     import mlx_whisper
+    from mlx_whisper.transcribe import ModelHolder as _MlxModelHolder
+    import mlx.core as _mx
 except ImportError:
+    mlx_whisper = None
+    _MlxModelHolder = None
+    _mx = None
     try:
         from faster_whisper import WhisperModel
-        mlx_whisper = None
     except ImportError:
         print("Error: mlx-whisper or faster-whisper is required.")
         print("  Apple Silicon: pip install mlx-whisper")
         print("  Other:         pip install faster-whisper")
         sys.exit(1)
+
+
+def preload_mlx_model(model_size: str = "large-v3"):
+    """Pre-load the MLX Whisper model into GPU memory before the transcription loop.
+
+    Calling this once means ModelHolder.get_model() is a no-op for every
+    subsequent transcribe() call — the model stays resident in Metal memory
+    for the entire batch.
+    """
+    if mlx_whisper is None or _MlxModelHolder is None:
+        return
+    mlx_model_map = {
+        "tiny":     "mlx-community/whisper-tiny-mlx",
+        "base":     "mlx-community/whisper-base-mlx",
+        "small":    "mlx-community/whisper-small-mlx",
+        "medium":   "mlx-community/whisper-medium-mlx",
+        "large-v2": "mlx-community/whisper-large-v2-mlx",
+        "large-v3": "mlx-community/whisper-large-v3-mlx",
+    }
+    model_path = mlx_model_map.get(model_size, f"mlx-community/whisper-{model_size}-mlx")
+    print(f"Pre-loading MLX model {model_path} into GPU memory...")
+    import mlx.core as mx
+    # Must use float16 — mlx_whisper.transcribe() defaults to fp16=True,
+    # so ModelHolder caches the model as float16. If we pre-load as float32,
+    # ModelHolder stores a separate entry and transcribe() loads a new float16
+    # model, causing "audio_features has an incorrect dtype: mlx.core.float32".
+    _MlxModelHolder.get_model(model_path, mx.float16)
+    print("  Model loaded — will be reused for all files.")
 
 
 def download_youtube_audio(
@@ -119,11 +151,15 @@ def transcribe_with_whisper(
         }
         model_path = mlx_model_map.get(model_size, f"mlx-community/whisper-{model_size}-mlx")
 
-        kwargs = {"word_timestamps": True, "verbose": False}
+        kwargs = {"word_timestamps": False, "verbose": False}
         if language:
             kwargs["language"] = language
 
         result = mlx_whisper.transcribe(audio_path, path_or_hf_repo=model_path, **kwargs)
+
+        # Flush any pending Metal compute before next file
+        if _mx is not None:
+            _mx.eval()
 
         # Normalise to the same (segments, info) shape the rest of the script expects
         class _Info:
@@ -535,6 +571,9 @@ def main():
         for f in vcon_files:
             print(f"  {f}")
         sys.exit(0)
+
+    # Pre-load model once into GPU memory before the loop
+    preload_mlx_model(args.model)
 
     success_count = 0
     errors = []

@@ -1,1 +1,4472 @@
-{"uuid": "019d3273-7c98-807e-9dd8-dd37220d739c", "redacted": {}, "group": [], "parties": [{"mailto": "christian@amsuess.com", "name": "Christian Ams\u00fcss", "role": "chair"}, {"mailto": "barryleiba@computer.org", "name": "Barry Leiba", "role": "chair"}, {"mailto": "paul.hoffman@icann.org", "name": "Paul E. Hoffman", "role": "chair"}, {"name": "IETF Attendees", "role": "attendee"}], "dialog": [{"type": "video", "start": "2026-03-16T08:30:00+00:00", "parties": [0, 1, 2, 3], "mediatype": "video/mp4", "url": "https://youtu.be/P1TONbG8WpA", "duration": 5400, "meta": {"ietf_meeting": 125, "working_group": "cbor"}, "metadata": {"ietf_meeting": 125, "working_group": "cbor"}}], "attachments": [{"purpose": "meeting_metadata", "body": {"ietf_meeting_number": 125, "location": "Shenzhen, CN", "working_group": "cbor", "session_id": "35112", "room": "Shangri-la Ballroom 1", "start_time": "2026-03-16T08:30:00+00:00", "duration_seconds": 5400}, "encoding": "json"}, {"purpose": "ingress_info", "body": {"source": "ietf2vcon", "converter_version": "0.1.0", "converted_at": "2026-03-28T03:18:42.584294+00:00", "meeting_number": 125, "group_acronym": "cbor", "session_index": 0}, "encoding": "json"}, {"purpose": "lawful_basis", "encoding": "json", "body": {"lawful_basis": "legitimate_interests", "expiration": "2099-12-31T23:59:59+00:00", "purpose_grants": [{"purpose": "recording", "granted": true, "granted_at": "2026-03-28T03:18:42.584350+00:00"}, {"purpose": "transcription", "granted": true, "granted_at": "2026-03-28T03:18:42.584354+00:00"}, {"purpose": "publication", "granted": true, "granted_at": "2026-03-28T03:18:42.584357+00:00"}, {"purpose": "archival", "granted": true, "granted_at": "2026-03-28T03:18:42.584359+00:00"}, {"purpose": "analysis", "granted": true, "granted_at": "2026-03-28T03:18:42.584361+00:00"}], "terms_of_service": "https://www.ietf.org/about/note-well/", "metadata": {"terms_of_service_name": "IETF Note Well", "jurisdiction": "IETF", "controller": "Internet Engineering Task Force (IETF)", "notes": "Participation in IETF meetings constitutes agreement to the Note Well, which permits recording, transcription, and public archival of proceedings. See also BCP 78 (RFC 5378) and BCP 79 (RFC 8179) for IPR policies."}}}, {"purpose": "agenda", "body": {"url": "https://datatracker.ietf.org/meeting/125/materials/agenda-125-cbor", "mimetype": "application/pdf", "filename": "agenda-125-cbor.pdf", "title": "Agenda IETF125: cbor"}, "encoding": "json"}, {"purpose": "chatlog", "body": {"url": "https://datatracker.ietf.org/meeting/125/materials/chatlog-125-cbor-202603161630", "mimetype": "text/plain", "filename": "chatlog-125-cbor-202603161630", "title": "Chat Log IETF125: cbor: Mon 16:30"}, "encoding": "json"}, {"purpose": "minutes", "body": {"url": "https://datatracker.ietf.org/meeting/125/materials/minutes-125-cbor-202603160830", "mimetype": "application/pdf", "filename": "minutes-125-cbor-202603160830.pdf", "title": "Minutes IETF125: cbor: Mon 08:30"}, "encoding": "json"}, {"purpose": "slides", "body": {"url": "https://datatracker.ietf.org/meeting/125/materials/slides-125-cbor-chairs-slides", "mimetype": "application/pdf", "filename": "slides-125-cbor-chairs-slides.pdf", "title": "Chairs slides"}, "encoding": "json"}, {"purpose": "slides", "body": {"url": "https://datatracker.ietf.org/meeting/125/materials/slides-125-cbor-serialization-draft-status-and-discussion", "mimetype": "application/pdf", "filename": "slides-125-cbor-serialization-draft-status-and-discussion.pdf", "title": "Serialization draft status and discussion"}, "encoding": "json"}, {"purpose": "agenda", "body": {"url": "https://datatracker.ietf.org/meeting/125/agenda/cbor/", "mimetype": "text/html", "filename": null, "title": "CBOR Agenda"}, "encoding": "json"}, {"purpose": "minutes", "body": {"url": "https://notes.ietf.org/notes-ietf-125-cbor", "mimetype": "text/markdown", "filename": null, "title": "CBOR Notes"}, "encoding": "json"}], "analysis": [], "created_at": "2026-03-28T03:18:42.584058+00:00", "subject": "IETF 125 - CBOR Working Group Session", "extensions": ["lawful_basis"], "updated_at": "2026-03-28T03:18:43.732331+00:00"}
+{
+  "uuid": "019d3273-7c98-807e-9dd8-dd37220d739c",
+  "redacted": {},
+  "group": [],
+  "parties": [
+    {
+      "mailto": "christian@amsuess.com",
+      "name": "Christian Amsüss",
+      "role": "chair"
+    },
+    {
+      "mailto": "barryleiba@computer.org",
+      "name": "Barry Leiba",
+      "role": "chair"
+    },
+    {
+      "mailto": "paul.hoffman@icann.org",
+      "name": "Paul E. Hoffman",
+      "role": "chair"
+    },
+    {
+      "name": "IETF Attendees",
+      "role": "attendee"
+    }
+  ],
+  "dialog": [
+    {
+      "type": "video",
+      "start": "2026-03-16T08:30:00+00:00",
+      "parties": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "mediatype": "video/mp4",
+      "url": "https://youtu.be/P1TONbG8WpA",
+      "duration": 5400,
+      "meta": {
+        "ietf_meeting": 125,
+        "working_group": "cbor"
+      },
+      "metadata": {
+        "ietf_meeting": 125,
+        "working_group": "cbor"
+      }
+    }
+  ],
+  "attachments": [
+    {
+      "purpose": "meeting_metadata",
+      "body": {
+        "ietf_meeting_number": 125,
+        "location": "Shenzhen, CN",
+        "working_group": "cbor",
+        "session_id": "35112",
+        "room": "Shangri-la Ballroom 1",
+        "start_time": "2026-03-16T08:30:00+00:00",
+        "duration_seconds": 5400
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "ingress_info",
+      "body": {
+        "source": "ietf2vcon",
+        "converter_version": "0.1.0",
+        "converted_at": "2026-03-28T03:18:42.584294+00:00",
+        "meeting_number": 125,
+        "group_acronym": "cbor",
+        "session_index": 0
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "lawful_basis",
+      "encoding": "json",
+      "body": {
+        "lawful_basis": "legitimate_interests",
+        "expiration": "2099-12-31T23:59:59+00:00",
+        "purpose_grants": [
+          {
+            "purpose": "recording",
+            "granted": true,
+            "granted_at": "2026-03-28T03:18:42.584350+00:00"
+          },
+          {
+            "purpose": "transcription",
+            "granted": true,
+            "granted_at": "2026-03-28T03:18:42.584354+00:00"
+          },
+          {
+            "purpose": "publication",
+            "granted": true,
+            "granted_at": "2026-03-28T03:18:42.584357+00:00"
+          },
+          {
+            "purpose": "archival",
+            "granted": true,
+            "granted_at": "2026-03-28T03:18:42.584359+00:00"
+          },
+          {
+            "purpose": "analysis",
+            "granted": true,
+            "granted_at": "2026-03-28T03:18:42.584361+00:00"
+          }
+        ],
+        "terms_of_service": "https://www.ietf.org/about/note-well/",
+        "metadata": {
+          "terms_of_service_name": "IETF Note Well",
+          "jurisdiction": "IETF",
+          "controller": "Internet Engineering Task Force (IETF)",
+          "notes": "Participation in IETF meetings constitutes agreement to the Note Well, which permits recording, transcription, and public archival of proceedings. See also BCP 78 (RFC 5378) and BCP 79 (RFC 8179) for IPR policies."
+        }
+      }
+    },
+    {
+      "purpose": "agenda",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/materials/agenda-125-cbor",
+        "mimetype": "application/pdf",
+        "filename": "agenda-125-cbor.pdf",
+        "title": "Agenda IETF125: cbor"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "chatlog",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/materials/chatlog-125-cbor-202603161630",
+        "mimetype": "text/plain",
+        "filename": "chatlog-125-cbor-202603161630",
+        "title": "Chat Log IETF125: cbor: Mon 16:30"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "minutes",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/materials/minutes-125-cbor-202603160830",
+        "mimetype": "application/pdf",
+        "filename": "minutes-125-cbor-202603160830.pdf",
+        "title": "Minutes IETF125: cbor: Mon 08:30"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "slides",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/materials/slides-125-cbor-chairs-slides",
+        "mimetype": "application/pdf",
+        "filename": "slides-125-cbor-chairs-slides.pdf",
+        "title": "Chairs slides"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "slides",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/materials/slides-125-cbor-serialization-draft-status-and-discussion",
+        "mimetype": "application/pdf",
+        "filename": "slides-125-cbor-serialization-draft-status-and-discussion.pdf",
+        "title": "Serialization draft status and discussion"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "agenda",
+      "body": {
+        "url": "https://datatracker.ietf.org/meeting/125/agenda/cbor/",
+        "mimetype": "text/html",
+        "filename": null,
+        "title": "CBOR Agenda"
+      },
+      "encoding": "json"
+    },
+    {
+      "purpose": "minutes",
+      "body": {
+        "url": "https://notes.ietf.org/notes-ietf-125-cbor",
+        "mimetype": "text/markdown",
+        "filename": null,
+        "title": "CBOR Notes"
+      },
+      "encoding": "json"
+    }
+  ],
+  "analysis": [
+    {
+      "type": "wtf_transcription",
+      "dialog": 0,
+      "vendor": "whisper",
+      "encoding": "json",
+      "body": {
+        "transcript": {
+          "text": "There are cells when we're talking. Thank you. Okay, we are at the bottom of the hour and we've got a very full room here, kidding. I don't know if you guys can see that, but it is time for us to begin. Yes, I just want to make sure that our speakers are. So greetings. Welcome to the Seabore Working Group. There we go. So this is a summary of the note well. The next slide will be the note well, but just to be clear, you've already agreed to the guidelines when you registered. You don't have to read them on the next slide, but because you already did agree to them. And basically, ITS experts have been so expected to behave. Professional manner, extended respect and courtesy to their colleagues at all times. If that seems odd or weird to you, definitely go to the link there on the slide. And well, that's other. This is flagged here. So this is the official note. Well, I'm only going to leave it up for a few seconds because you did already agree to it. And again, if this is surprising to you, please go to it. Please go to itf.org slash note well and see, or of the many people in the room, you can scan the QR code. So you've probably seen some of these tips, but very important for remote participants. Using a headset seems to be very helpful. And definitely have your audio and video turned off. We'll sort of try to find if people are, if that's not working. And please do state your name because we are going to, you know, have to do minutes from this and such like that. Any questions yet on the meeting tips? Not seeing it. These are general resources. If you're looking at this remotely, you probably can't click on any of them. But there are also the links that you got when you register. So we've got a long agenda, but it's not. It's, it's a one topic agenda. Well, two topics we're doing in intro now and then the agenda working group came up with is in fact just focusing on the serialization draft, especially recent changes and what seems to be ready to go forward. Oh, and just as a note, our AD is in the room as well. So he will see what we're doing in such. With that Lawrence, you are up. Would you like to be doing the slides or would you like me to do them? I'd like to do the slides and let's me. Is my audio okay. Get your audio is fine and let me. Oh, okay. So Christian just gave you the control. Oh, wait, no Christian, why don't you let him control. So if you just give him slide. Lawrence isn't controlled. The rest lies are all. Okay, very good. Thank you. Okay. So I'm going to drop this guy in the courts. You are up. Okay. Oh, so the slides are not preliminary anymore. I didn't update them, but when I published them a couple of days ago. So just to status on the serialization draft. This is the same status that I'm reporting as of the March 4th interim. So the draft of the forum was published in an ordinary serialization was renamed to preferred plus. The appendix that had deterministic serializations for common tags was removed. That was appendix C. The introduction was expanded to include some rationale for why we're doing this. The control operators were renamed because of the name from ordinary to preferred plus. The control operator that the E.T. was taken. And then there were lots of wording improvements. Much of which came from rural Hans review a few months back. So that was the O4 draft. And then this is largely the same as from the interim. There are five open issues. And two of them are just some writing work. So nothing to discuss. And then there was the idea to move appendix B to the main body. That was a request for rural Hans. We haven't had any discussion on that. And so I think it's changed on that. There's a discussion to move the NAND appendix to another document. This is the appendix that explains NANDs in detail. I'll probably do that. I'm generally in favor of that. But haven't done that yet. Then the whole test vectors and examples. That's the big thing. And I've started some work on that. I think I actually published a PR for that, although it was pretty crude. And I have most of my slides today are on a proposal for that. And then there's also a PR from Carson. Suggesting changes to section one. I have plans to add them, but I don't have a haven't kind of worked through all of them yet. So I don't have too much to say on those yet. Carson. Yeah, quick to comment. One sent some change requests for this PR. And I started working on them. So we are making some progress there. Okay. And sorry that I submitted my comments so late. Okay. So before jumping into the examples and test vectors, any other comments on the draft status or the issues to be worked on in the draft, anything kind of top level comments or discussion on that. Yeah, first. Well, we are having interesting discussion on the mailing list. So I think we still haven't quite found out what we are doing here. So I think we should continue that discussion on the mailing list. Because these are fine points. And we want to make sure that we think about them. Yeah. I agree. I don't know. Thrashing things on the mailing list and some stuff. And it keeps. I mean, I'm in favor, because I think it's it's continuing to drive clarity. I don't think it's like rattling and wasting time. So. Okay. So test vectors and examples. So I'm going to talk for a little while and then I'm sure we'll have lots of interesting discussion. So the. My proposal is we were testing the three serializations that are described there. And it's about the serialization. It's not about general seaboard testing. Not about like fuzzing or anything like that. So like in the in the seaboard and proposing to test nothing is invalid and nothing is not well formed. So that's what's all about serialization. So the serializations. The three are of course general preferred plus and deterministic. The three described in the document. So that's that's the focus here is is those. Another observation here is that. And the number of people are library support for serializations is really going to vary by library. And kind of have to think about this and accommodate this. How this goes so. So you might have one library that supports all three serializations and perhaps they have three distinct modes. You put it in the mode for the serialization you want and then it runs in that mode. So it's a great main support only once serialization. I think it's perfectly reasonable for a library. For example, to support only deterministic serialization. If it's operating in an environment for that. This is reasonable. So then each library decides how to use the test database on features. So I thought about some data test data and here's the what I came up with. So one data item a test data item for the integer zero. So there's a description of it. The test. So this is testing the integer zero. There is the EDM representation of it. Which there actually might be for maps. There are actually multiple EDM representations for a particular thing. And then there are the three serializations. Yes, the file is EDM. And I ran this thing through Cboard.me and it decoded it. So yes. I think that's a useful thing. This is not my forte, but I think it's think that all works. So then there's the then there are. So the description representation. And the acceptable serializations for the item. This is not an exhaustive set of serializations, but it is represents the major ones. So you can serialize in general serialization. You can serialize zero. You know, as those the four different five different lengths. Argument lights. Or you can serialize it as a big number or as a big number within empty string. And for foot plus into deterministic. There's only one serialization. So that's kind of introduces you to the schema of the test item. And then here's the one. I don't know if you can. Can you see it? One for a map with three items. So in this case, because there are six. If you have a map of three items, there are. You can order that six different ways. Including in the EDN. And map order is not significant in the data model in C1. So it's perfectly okay to write the EDN in three different orders. And if you're really testing this exhaustively and thoroughly, you're going to. You should test against all those three different orders. And then, you know, it's serializes in general serialization in three different ways. Six different ways. Same with preferred plus allow six different ways. And then deterministic allows only one. So these two example. Data items are kind of. The bracket. Sort of the top one and the bottom one. And then I picked about ten others. To that I thought would be kind of reasonable to fit in here and and hit all the data types and such. So. Ron. On the previous slide. The general. The general serializations you could easily put. More, you know, more variations. Like you might just put a variation of. Using non preferred size for. For the for the length of the string. And and maybe put a variable length and and in definite length string. Yeah, so I'm. I'm hitting that with other places. So if you look at the bottom. Near the bottom of the slide. I don't have a slide for that data, but like the array, one, two, three. So the serializations for that are. Both. Definant and indefinite for the text string. And then I have. The thing with indefinite. Yeah, indefinite length string and and a definite length string and several variants of the indefinite length string. Same for the byte string. There's a couple of variants of that. Okay. And then you know, we've got. A n and infinity and a n and a n with a payload and for, you know. So that that's the basic idea. I mean, I don't want to go too many these things, but we can certainly add more as long as they keep adding value. Okay, so so what do you do with these. This test data. So there's the obvious test. These are obviously first to me. So for each of the three serializations, you and code the edn and see that it encoded to one of the allowed serializations for the particular. For the particular serialization. So for example, you encode zero and if you're if you're testing general serialization, you encode zero and if you're testing general serialization. You encode zero and make sure it's one of those seven or so different serializations. If you're encoding deterministic serialization, well, there's only one possible right answer for that. So that's the encode test. The decode test is you decode everything in the in the list. And for for the particular serialization and make sure you get back the value zero. So next. The next test is just for checking decoders. I think it's fairly obvious what happens here. So you take something like a preferred plus checking decoder. And you run all of the data for general serialization through it. And make sure it errors out except for what's allowed for preferred plus. And then you take the deterministic checking decoder and run everything from preferred plus in general serial. And then serialization through it and make sure it errors out except for the one allowed for the those the allowed deterministic serializations. So that's for the checking decoder. So I'm just going to be reading the comments here. Okay. So this the next one is where it gets interesting. What you do with a non checking decoder that is fed. So that's the realization that it's that's kind of not for it. So for example, if you feed all the the the the all the different general serializations into a preferred plus decoder that is not a checking decoder. What does it do? And this has some relationship to what's discussed on the list these days. So I believe it will it can decide to error out. For example, it's a preferred plus decoder. It decided not to do indefinite lengths. So it errors out. And that's an okay result. It's okay for a to error out. It's also okay. So that it could successfully decoded. So for example, a non shortest like see where argument. So you could succeed on that. And this is kind of very library by library and like what features they support and all of this. I'm going to show you the the really the one that really gets you gets you on this, which is of course, NAM payloads. So what is a preferred plus decoder do. That's not in checking mode. How does it respond to a NAM payload? The answer I have here is basically anyway it wants. The requirement for preferred plus a preferred plus decoder that's a non checking decoder is that it decode all of preferred plus correctly. That requirement doesn't mean if can't decode other stuff as long as the other parts of general serialization. And then like how do you decode an NAM payload. You can error out. You can because in this case it's a preferred plus decoder. You can error out because it's not required to handle NAM payloads. You could convert it to a quiet NAM. Some CPU instructions do that. You could return it as a double or a single with the JNAM payload. Make up your own structure to represent NAM payloads assigned in the payload bits. So that's actually all the slides I had. There's more text in the PR. And I think we can have some discussion now. I didn't read all the comments yet. So I think it would be useful if we split the discussion into two parts. The first slide, you know, everything other than the test factors. And as let's let's go through those first. Then go to the test factors because they are completely different topics. Very great. Yeah, great. And what I was going to say is that it strikes me that the best approach is to put the test factors in a separate document. It's an informational reference from this one and that refers to the main document normatively. So comments on that during the discussion as well. Okay, thank you, you're up first. And again, we're talking about the first slide which you weren't here for. I thought one to become a test vectors. No, it doesn't appropriate. It's a test vectors later. Okay. Yep. So I'm just to be clear, I'm not prepared for any discussion other than test factors. And I thought we had covered everything. I thought the whole discussion was going to be on test factors. So I'm surprised. Well, it may be done now, but I just wanted to make sure that we in the group that we had a conceptual separation. Even though Barry and I hadn't talked about it, especially with Barry's idea of it's going to be a different document. So if you can go back or go forward one or two of just where you have some of the list of things that yes, stop there. So you've got two to do well, you've got three to do is there the PR at the bottom. So Rowan, you're online, are you able to get the additional security considerations to the working groups soon? Yes. Okay. Great. Where soon means what? By Friday. Excellent. That would be great. Yes. Great. The second to do is the whole test vector examples thing. Lawrence. So for the last bullet, the PR from Cart. Sorry. Thank you. So I'm going to say, speaking to the mic. So the PR from Cart. Lawrence, do you feel like that's something that can be dealt with so that you could have a new draft within a week or so? Or like I don't know how you as the author feel, how big that is. Are you, you know, is it fairly tractable to to get it so that the working group can see. Can you tell me, um, Carson's words with your interpretation, that like is a week a reasonable amount of time for that? Um, I'm, I mean, they're going to work, this week, and me, they're going to work on test vectors are the PR from Carson. I'm not going to work on both this week. There's, there's, there's, so Barry is saying that, therefore, leave the test vectors for later, let's get the main document going. I think the test vectors are actually pretty important and that's why it shows to have the discussion on them. I think the test vectors are important also, but I think they are an adjunct to the main document. Yeah, I don't part of it. I don't in Carson doesn't either. I think they're actually quite important. Or about that, please. When I started writing the test vectors, working through them, it made me understand what we were doing better, particularly the last, the last slide that presented. And, uh, their examples also, um, they help you understand how these apply to a library. And, I mean, I think there's a lot of depth and, and it makes all the stuff that we're discussing in prose real. So I think they're, uh, it really illustrates the difference in, you know, what the different serializations do and you can really see it there, you know, and it's laid out. Uh, rolling your next. Yeah, I mean, I, I, I don't disagree with anything you just said Lawrence, but the, I don't think that we're going to hand, we're going to have test vectors where we're going to have conversations that are going to spin off for, for days and weeks at a time, because we couldn't come to consensus on, on, uh, some aspect of a test vector. I think it's just work, it's just turning the crank and doing some, and there's going to be some light back and forth. But the texts, you know, the, the other open issues, uh, that they could potentially take an unbounded amount of time unless we focus our energy on them first. Thank you, Carson. Yeah, um, I, um, so we were, we were Lawrence, um, I think it's, it's really illustrating to look at these test vectors and I think most people who, uh, actually like the current draft haven't really thought about the issues that are being, as lead demonstrated by the test vectors. So I think, uh, at, at the point where we are making a decision whether this, this draft is going into the right direction, uh, we probably need these test vectors and I wouldn't call them test vectors, but examples, they're called examples in our C at 949. And, uh, they are, they are too illustrating, uh, the main text of the document. Okay, I'm next to the queue. Uh, so, I, I agree with Ron, and what I'm, the question I have for, for you, Lawrence, that, uh, and kind of following up on what Carson said is there's, we need the examples so that readers of the document can better understand what we're saying. And there's, we need to write the examples, so we, as we're writing the document, get it right. And I'm trying to tease those apart that, uh, the extent to which we can write the document and do the examples test vectors, whatever you want to call them. Later, or alongside it without how holding up the main document, if, if they're necessary for us to get the main document right, we need to understand that and we need to understand why, so go ahead and comment on that. Thanks. Lawrence, go ahead. I, I agree with, with what Carson said, um, uh, they are, we're doing the test vectors and example, I mean, I call them example of theirs. Certainly as much an example as they are test vector to facilitate the, the writing process of the document. And I'm also going to say, I feel like I speak with some clarity and authority here, having done serious implementation work on all of this stuff. It's, um, that's, that, uh, really changes my, you know, your opinion on my, you know, my, my background and understanding on this, so. So quite strongly that the example test vectors are in integral part of the document and the back and forth around the test vectors and example will examples will change what we write in other parts of the document. I don't, I mean, I don't mind which order we do it. I think the test vectors are in the document have to stay there and, um, and we don't publish without them. Okay. Thanks for clarifying that, Rowan. Lawrence, what do you think would or might change based on these text test vectors because we initially we had quite a few examples. Um, when we had our first discussions on this document. What examples are you talking about? So I'm asking what you think would change based on these these because I mean, so far for any of the, the items that are that have that you presented, I don't see any, any changes. And for the, even for the NAN payload examples, we discussed the, you know, three possible, three possible options. I think the, the only thing that you said in your slide that I didn't agree with about NAN's was that you could present it. If you presented the, the NAN as a float that that you would present it as something other than a, than a double. Um, the text that I would be, the this I would, would affect, I think would be in section one and section two, which is the frame up for what a serialization is. And, um, how it relates to the default from 8940, which is kind of implicit, which relates to a lot of the discussion that I, the back and forth that's happening with. My self and carcin on the list right now. So no normative change. Probably not, but there's, there's been almost none of the discussion in any of this is normative. It's very little, I mean, the normative stuff is not the, the, the difficulty here. I mean, we're only making small tweaks even relative to 8949. But what's all of your framing? Yeah, but the reason that this document exists is because the normative language wasn't clear. Yeah. Otherwise, we wouldn't have a document. Okay. So what I hear Lawrence and Carston saying is that the, the writing of these examples of these test vectors, whatever. Is helping get the normative text right. Is that correct? I think it's up to get some of the framing and introduction text correct. The hardest stuff to get correct. Sounds good. We will take that under advisement and then let's talk about test vectors. Thank you. It jumped up earlier. You still go for it. Sorry, no hand race. This is thank you. Yeah, I have to for the notes. I think that like low, low number of, four digit examples. It feels to me that's not the, the internet draft is not the right place for that. What do you think there is right place or you, yeah, I would think that's a good up thing or maybe a wiki of necessary, but I would like to see them in a good up. The repository that makes a lot of sense and not in the final document. Then if you select it examples in the document to elaborate on that as a representative thing that I think they may let us go because If you're engineering stuff, you're going to the examples and use what this closes the thing you want to do, but, but for the, for the whole set of the examples. And it is a different place, I think. All right. You're saying that there are too many of these things here and it will be too much of too much in the document. That's what you're saying. Yeah, I assume it's like, 2,000, 3000 ish today. So that's obviously not an internet draft. Sorry, no, not a CNDN. So, uh, 2001. Examples. Oh, test vectors, which is a word that you can wrap around an example if you know what you're doing. So I would call them examples. In any case, and where did you get that number? Uh, I think last time when we, I'd say I have 21 25, but we were the heck of thong. There's 13 lines here. So there's 13, these are the 13 lines I'm for, I'm proposing to put down. Okay, this this could be good, this 13 is a good number of three plus 10 because they're good number to be in an internet draft, I guess. But I think, not all examples have go into the, that we have the shot for. I just want to put these 13 in. I'm, I want them curated. I don't want any enormous. Uh, yeah, there's, there's other people that have lots of things, but my proposal is only like these 13. And they would exist in EDN files in GitHub, and then they would be included in the document. I mean, I'll fill the EDN files anyways, and then, you know, if we want it, if they turn out to be too many, then we can take some out. So. Yeah, no, I don't, I'm not afraid of that number. I went to the screen because I'm, I'm, I'm, I'm, I'm a shot cited. And it's okay. And, and yeah, those look, okay, I don't know if there might be one or two that is a French case. Uh, but this is this is the Dominion skills, so we can do this in the other document. That's fine. Okay, that's not for today. Okay. Lawrence, are you, you're still in the queue, did you have a different thing or? Oh, no, no, sorry. No problem. Yeah, I just wanted to speak in favor of including, not calling these test vectors. I think that's calling them test vectors is what we're getting wrapped around the actual on examples are extremely important. And I know from my own standards, offering that whenever I say paragraph blah, blah, blah, paragraph, example, for example, and then I give something examples are very visual. And I know that when, when reviewers read the document, especially for the first time, they go straight for the example. And, and that's what they read and then maybe later they will read the prose. So, I examples in line or at least in an appendix in the document, I think they're extremely valuable. And I consider those to be different than test vectors which are boring and thorough and, you know, they're very different in my mind. And I think the document definitely needs to include examples. Thank you. Anyone else on this carcin, you have your, you're unmuted, were you going to say something or? I think you have no idea what you just said carcin that's heavily, a lot of this is distorted. Okay. Give the chairs a moment here please. Okay. So we, we just, we had been talking about this a little bit before that as everybody knows, we've parked packed an EDN until we get through this document. I think we're at a state in this document now where we can work on the test vectors of, so, the examples. Let's, let's, let's try calling them examples. Where we can, we can let you work on the examples on the side and go back to the other documents and start working on packed and EDN and get them. Revive them and get them finished. What does the working group as a whole think of that path? Not that we've given you much, like you, you've just heard that, but because we just made it up, but, uh, Hank. I'm just, let us say, yay. Somebody is happy. And, and, and my sense is that we should go, we should go for packed first and, because I understand there are people waiting for that to finish and, yeah. So I'm, discussion rolling. Yeah, I mean, as the, as a, currently has a, it has a normative requirement on EDN. Oh, so. Okay, so maybe EDN. Yeah. So I think, yeah, actually, the EDN is probably closer to finishing anyway. But, yeah. Andy? No, I was, I was mentioning this out in the hallway. The, the, there, I thought there was a, someone had a dependency on EDN. So, yeah. Okay.  We're not the only ones, but I know SD card does, because because we use it extensively to, describe, and what SD cards look like. So, but, but Andy, given that this is sort of, you were the one who had said, let, you know, with us, let's do serialization first as a way to see if we can be moving forward as well. Does this park look at others, does that sort of meet your, your, you know, yes. Yes. So, you are the one testing whether we are moving at a reasonable pace. Yes.  Okay, great. Thank you.  And there's more in the queue. Okay. Lawrence. I'm just going to say my, my proposal for serialization draft is to get the, the example section into, you know, at least a reasonable shape and publish a draft, you know, about five with it in about two weeks. And if there's something else that, the, managers to get done in that time, that will also get pulled into the five draft, but, the main focus for the five draft would be to get the examples in, and like the description and then text on how to use it that way, it's out there for everybody to look at and then, We can go back to work on the other stuff, while people are looking, other parts of the document, while people are looking at the examples. Great. So thank you. That sounds good. Thank you. Yeah, this is the second row. Yeah, our draft has an normative dependency on EDN. So you can do one thing and also not not do the other, I guess. OK. OK. Lawrence, you're still in the queue. Are you wanting to say something more about this or not? OK. Great. Good. Is there anything else? We still have time, but we also now have a lot of stuff in front of us. Anything else for this meeting? We, the chairs will talk, since we're both here, physically in the room, at least half of a dozen people. And we will move what we just talked about to the mailing list. We don't have to ask the mailing list. Is this what you all want to do? We're able to do that as long as our AD agrees, and he just has. So, but he's getting up to the mic again. Can you restate for the record exactly what the plan is? No, because we, OK. OK. But we will restate on the list within the day or two in what the plan is. OK. Right. The general answer is to let Lawrence continue working on serialization in the examples while we put, unpark, one or both of the other documents and start and couldn't resume working on them, likely starting with EDM. OK. OK. OK. If that's it, I think we are finished for the day. Thank you. This was very productive. We will. Yeah. So, very, and I will, very, and Christian and I will come to some of the green will just start mailing with Christian soon. And come up with a plan and will send it to the list. Andy, do you want us to try to talk to you in the hallway before we do that? Hi. Or. No, I think if you can come up with an agreement, I don't think I need to approve it. OK. Sounds good. So, Christian, we'll try to grab you offline so we can figure out a time because you're not in Asia, time zone, I assume. So. No, but I'd be like, given that we have a bit more meeting time, we could just continue. That sounds good. Why don't we do that after we shut this down? So, OK, very good. It's what? Something like 10, 10, 15 AM, your time? Yeah. I have a lot of time to bring my next things to. OK, sounds good. So, thank you very much to the group. We will shut down the meeting. We're going to go have a meeting. And see you all on the list. Thanks. Thank you all, Mike. Thank you. Thank you. Thanks, Joe. You're pretty shut up. OK. But I don't think there's a way of ending me. OK, just leave it. I think I'll stop when you'll stop.                               I'll stop you.                               ",
+          "language": "en",
+          "duration": 5400,
+          "confidence": 0.7112
+        },
+        "segments": [
+          {
+            "id": 0,
+            "start": 0.0,
+            "end": 7.0,
+            "text": "There are cells when we're talking. Thank you.",
+            "confidence": 0.6981
+          },
+          {
+            "id": 1,
+            "start": 12.0,
+            "end": 18.0,
+            "text": "Okay, we are at the bottom of the hour and we've got a very full room here,",
+            "confidence": 0.6981
+          },
+          {
+            "id": 2,
+            "start": 18.0,
+            "end": 25.0,
+            "text": "kidding. I don't know if you guys can see that, but it is time for us to begin.",
+            "confidence": 0.6981
+          },
+          {
+            "id": 3,
+            "start": 25.0,
+            "end": 30.0,
+            "text": "Yes, I just want to make sure that our speakers are.",
+            "confidence": 0.795
+          },
+          {
+            "id": 4,
+            "start": 30.0,
+            "end": 35.0,
+            "text": "So greetings. Welcome to the Seabore Working Group.",
+            "confidence": 0.795
+          },
+          {
+            "id": 5,
+            "start": 35.0,
+            "end": 39.0,
+            "text": "There we go.",
+            "confidence": 0.795
+          },
+          {
+            "id": 6,
+            "start": 39.0,
+            "end": 44.0,
+            "text": "So this is a summary of the note well. The next slide will be the note well,",
+            "confidence": 0.795
+          },
+          {
+            "id": 7,
+            "start": 44.0,
+            "end": 49.0,
+            "text": "but just to be clear, you've already agreed to the guidelines when you registered.",
+            "confidence": 0.795
+          },
+          {
+            "id": 8,
+            "start": 49.0,
+            "end": 53.0,
+            "text": "You don't have to read them on the next slide, but because you already did agree to them.",
+            "confidence": 0.795
+          },
+          {
+            "id": 9,
+            "start": 53.0,
+            "end": 58.0,
+            "text": "And basically, ITS experts have been so expected to behave.",
+            "confidence": 0.7245
+          },
+          {
+            "id": 10,
+            "start": 58.0,
+            "end": 62.0,
+            "text": "Professional manner, extended respect and courtesy to their colleagues at all times.",
+            "confidence": 0.7245
+          },
+          {
+            "id": 11,
+            "start": 62.0,
+            "end": 67.0,
+            "text": "If that seems odd or weird to you, definitely go to the link there on the slide.",
+            "confidence": 0.7245
+          },
+          {
+            "id": 12,
+            "start": 67.0,
+            "end": 74.0,
+            "text": "And well, that's other. This is flagged here.",
+            "confidence": 0.7245
+          },
+          {
+            "id": 13,
+            "start": 74.0,
+            "end": 79.0,
+            "text": "So this is the official note. Well, I'm only going to leave it up for a few seconds because you did already agree to it.",
+            "confidence": 0.7245
+          },
+          {
+            "id": 14,
+            "start": 79.0,
+            "end": 84.0,
+            "text": "And again, if this is surprising to you, please go to it.",
+            "confidence": 0.7946
+          },
+          {
+            "id": 15,
+            "start": 84.0,
+            "end": 98.0,
+            "text": "Please go to itf.org slash note well and see, or of the many people in the room, you can scan the QR code.",
+            "confidence": 0.7946
+          },
+          {
+            "id": 16,
+            "start": 98.0,
+            "end": 104.0,
+            "text": "So you've probably seen some of these tips, but very important for remote participants.",
+            "confidence": 0.7946
+          },
+          {
+            "id": 17,
+            "start": 105.0,
+            "end": 108.0,
+            "text": "Using a headset seems to be very helpful.",
+            "confidence": 0.8632
+          },
+          {
+            "id": 18,
+            "start": 108.0,
+            "end": 113.0,
+            "text": "And definitely have your audio and video turned off.",
+            "confidence": 0.8632
+          },
+          {
+            "id": 19,
+            "start": 113.0,
+            "end": 120.0,
+            "text": "We'll sort of try to find if people are, if that's not working.",
+            "confidence": 0.8632
+          },
+          {
+            "id": 20,
+            "start": 120.0,
+            "end": 127.0,
+            "text": "And please do state your name because we are going to, you know, have to do minutes from this and such like that.",
+            "confidence": 0.8632
+          },
+          {
+            "id": 21,
+            "start": 127.0,
+            "end": 132.0,
+            "text": "Any questions yet on the meeting tips?",
+            "confidence": 0.8632
+          },
+          {
+            "id": 22,
+            "start": 133.0,
+            "end": 138.0,
+            "text": "Not seeing it.",
+            "confidence": 0.8364
+          },
+          {
+            "id": 23,
+            "start": 138.0,
+            "end": 141.0,
+            "text": "These are general resources.",
+            "confidence": 0.8364
+          },
+          {
+            "id": 24,
+            "start": 141.0,
+            "end": 146.0,
+            "text": "If you're looking at this remotely, you probably can't click on any of them.",
+            "confidence": 0.8364
+          },
+          {
+            "id": 25,
+            "start": 146.0,
+            "end": 152.0,
+            "text": "But there are also the links that you got when you register.",
+            "confidence": 0.8364
+          },
+          {
+            "id": 26,
+            "start": 152.0,
+            "end": 158.0,
+            "text": "So we've got a long agenda, but it's not.",
+            "confidence": 0.8364
+          },
+          {
+            "id": 27,
+            "start": 158.0,
+            "end": 177.0,
+            "text": "It's, it's a one topic agenda. Well, two topics we're doing in intro now and then the agenda working group came up with is in fact just focusing on the serialization draft, especially recent changes and what seems to be ready to go forward.",
+            "confidence": 0.8
+          },
+          {
+            "id": 28,
+            "start": 177.0,
+            "end": 183.0,
+            "text": "Oh, and just as a note, our AD is in the room as well. So he will see what we're doing in such.",
+            "confidence": 0.8
+          },
+          {
+            "id": 29,
+            "start": 183.0,
+            "end": 194.0,
+            "text": "With that Lawrence, you are up. Would you like to be doing the slides or would you like me to do them?",
+            "confidence": 0.7684
+          },
+          {
+            "id": 30,
+            "start": 194.0,
+            "end": 198.0,
+            "text": "I'd like to do the slides and let's me.",
+            "confidence": 0.7684
+          },
+          {
+            "id": 31,
+            "start": 198.0,
+            "end": 200.0,
+            "text": "Is my audio okay.",
+            "confidence": 0.7684
+          },
+          {
+            "id": 32,
+            "start": 200.0,
+            "end": 204.0,
+            "text": "Get your audio is fine and let me.",
+            "confidence": 0.7684
+          },
+          {
+            "id": 33,
+            "start": 204.0,
+            "end": 209.0,
+            "text": "Oh, okay. So Christian just gave you the control.",
+            "confidence": 0.7684
+          },
+          {
+            "id": 34,
+            "start": 209.0,
+            "end": 215.0,
+            "text": "Oh, wait, no Christian, why don't you let him control. So if you just give him slide.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 35,
+            "start": 215.0,
+            "end": 216.0,
+            "text": "Lawrence isn't controlled.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 36,
+            "start": 216.0,
+            "end": 217.0,
+            "text": "The rest lies are all.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 37,
+            "start": 217.0,
+            "end": 222.0,
+            "text": "Okay, very good. Thank you. Okay. So I'm going to drop this guy in the courts. You are up.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 38,
+            "start": 222.0,
+            "end": 226.0,
+            "text": "Okay.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 39,
+            "start": 226.0,
+            "end": 235.0,
+            "text": "Oh, so the slides are not preliminary anymore. I didn't update them, but when I published them a couple of days ago.",
+            "confidence": 0.6961
+          },
+          {
+            "id": 40,
+            "start": 236.0,
+            "end": 240.0,
+            "text": "So just to status on the serialization draft.",
+            "confidence": 0.7717
+          },
+          {
+            "id": 41,
+            "start": 240.0,
+            "end": 248.0,
+            "text": "This is the same status that I'm reporting as of the March 4th interim.",
+            "confidence": 0.7717
+          },
+          {
+            "id": 42,
+            "start": 248.0,
+            "end": 256.0,
+            "text": "So the draft of the forum was published in an ordinary serialization was renamed to preferred plus.",
+            "confidence": 0.7717
+          },
+          {
+            "id": 43,
+            "start": 257.0,
+            "end": 266.0,
+            "text": "The appendix that had deterministic serializations for common tags was removed. That was appendix C.",
+            "confidence": 0.8558
+          },
+          {
+            "id": 44,
+            "start": 266.0,
+            "end": 274.0,
+            "text": "The introduction was expanded to include some rationale for why we're doing this.",
+            "confidence": 0.8558
+          },
+          {
+            "id": 45,
+            "start": 274.0,
+            "end": 283.0,
+            "text": "The control operators were renamed because of the name from ordinary to preferred plus.",
+            "confidence": 0.8558
+          },
+          {
+            "id": 46,
+            "start": 283.0,
+            "end": 287.0,
+            "text": "The control operator that the E.T. was taken.",
+            "confidence": 0.7789
+          },
+          {
+            "id": 47,
+            "start": 287.0,
+            "end": 290.0,
+            "text": "And then there were lots of wording improvements.",
+            "confidence": 0.7789
+          },
+          {
+            "id": 48,
+            "start": 290.0,
+            "end": 294.0,
+            "text": "Much of which came from rural Hans review a few months back.",
+            "confidence": 0.7789
+          },
+          {
+            "id": 49,
+            "start": 294.0,
+            "end": 301.0,
+            "text": "So that was the O4 draft.",
+            "confidence": 0.7789
+          },
+          {
+            "id": 50,
+            "start": 301.0,
+            "end": 310.0,
+            "text": "And then this is largely the same as from the interim.",
+            "confidence": 0.7789
+          },
+          {
+            "id": 51,
+            "start": 311.0,
+            "end": 316.0,
+            "text": "There are five open issues.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 52,
+            "start": 316.0,
+            "end": 322.0,
+            "text": "And two of them are just some writing work.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 53,
+            "start": 322.0,
+            "end": 325.0,
+            "text": "So nothing to discuss.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 54,
+            "start": 325.0,
+            "end": 331.0,
+            "text": "And then there was the idea to move appendix B to the main body.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 55,
+            "start": 331.0,
+            "end": 334.0,
+            "text": "That was a request for rural Hans.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 56,
+            "start": 334.0,
+            "end": 336.0,
+            "text": "We haven't had any discussion on that.",
+            "confidence": 0.8573
+          },
+          {
+            "id": 57,
+            "start": 336.0,
+            "end": 338.0,
+            "text": "And so I think it's changed on that.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 58,
+            "start": 338.0,
+            "end": 342.0,
+            "text": "There's a discussion to move the NAND appendix to another document.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 59,
+            "start": 342.0,
+            "end": 346.0,
+            "text": "This is the appendix that explains NANDs in detail.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 60,
+            "start": 346.0,
+            "end": 348.0,
+            "text": "I'll probably do that.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 61,
+            "start": 348.0,
+            "end": 351.0,
+            "text": "I'm generally in favor of that.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 62,
+            "start": 351.0,
+            "end": 354.0,
+            "text": "But haven't done that yet.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 63,
+            "start": 354.0,
+            "end": 359.0,
+            "text": "Then the whole test vectors and examples.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 64,
+            "start": 359.0,
+            "end": 361.0,
+            "text": "That's the big thing.",
+            "confidence": 0.8315
+          },
+          {
+            "id": 65,
+            "start": 361.0,
+            "end": 364.0,
+            "text": "And I've started some work on that.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 66,
+            "start": 364.0,
+            "end": 368.0,
+            "text": "I think I actually published a PR for that, although it was pretty crude.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 67,
+            "start": 368.0,
+            "end": 375.0,
+            "text": "And I have most of my slides today are on a proposal for that.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 68,
+            "start": 375.0,
+            "end": 379.0,
+            "text": "And then there's also a PR from Carson.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 69,
+            "start": 379.0,
+            "end": 382.0,
+            "text": "Suggesting changes to section one.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 70,
+            "start": 382.0,
+            "end": 387.0,
+            "text": "I have plans to add them, but I don't have a haven't kind of worked through all of them yet.",
+            "confidence": 0.8075
+          },
+          {
+            "id": 71,
+            "start": 387.0,
+            "end": 392.0,
+            "text": "So I don't have too much to say on those yet.",
+            "confidence": 0.795
+          },
+          {
+            "id": 72,
+            "start": 392.0,
+            "end": 394.0,
+            "text": "Carson.",
+            "confidence": 0.795
+          },
+          {
+            "id": 73,
+            "start": 394.0,
+            "end": 396.0,
+            "text": "Yeah, quick to comment.",
+            "confidence": 0.795
+          },
+          {
+            "id": 74,
+            "start": 396.0,
+            "end": 400.0,
+            "text": "One sent some change requests for this PR.",
+            "confidence": 0.795
+          },
+          {
+            "id": 75,
+            "start": 400.0,
+            "end": 403.0,
+            "text": "And I started working on them.",
+            "confidence": 0.795
+          },
+          {
+            "id": 76,
+            "start": 403.0,
+            "end": 406.0,
+            "text": "So we are making some progress there.",
+            "confidence": 0.795
+          },
+          {
+            "id": 77,
+            "start": 406.0,
+            "end": 407.0,
+            "text": "Okay.",
+            "confidence": 0.795
+          },
+          {
+            "id": 78,
+            "start": 407.0,
+            "end": 411.0,
+            "text": "And sorry that I submitted my comments so late.",
+            "confidence": 0.795
+          },
+          {
+            "id": 79,
+            "start": 411.0,
+            "end": 419.0,
+            "text": "Okay.",
+            "confidence": 0.8556
+          },
+          {
+            "id": 80,
+            "start": 419.0,
+            "end": 424.0,
+            "text": "So before jumping into the examples and test vectors,",
+            "confidence": 0.8556
+          },
+          {
+            "id": 81,
+            "start": 424.0,
+            "end": 432.0,
+            "text": "any other comments on the draft status or the issues to be worked on in the draft,",
+            "confidence": 0.8556
+          },
+          {
+            "id": 82,
+            "start": 432.0,
+            "end": 436.0,
+            "text": "anything kind of top level comments or discussion on that.",
+            "confidence": 0.8556
+          },
+          {
+            "id": 83,
+            "start": 442.0,
+            "end": 445.0,
+            "text": "Yeah, first.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 84,
+            "start": 445.0,
+            "end": 449.0,
+            "text": "Well, we are having interesting discussion on the mailing list.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 85,
+            "start": 449.0,
+            "end": 456.0,
+            "text": "So I think we still haven't quite found out what we are doing here.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 86,
+            "start": 456.0,
+            "end": 460.0,
+            "text": "So I think we should continue that discussion on the mailing list.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 87,
+            "start": 460.0,
+            "end": 464.0,
+            "text": "Because these are fine points.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 88,
+            "start": 464.0,
+            "end": 467.0,
+            "text": "And we want to make sure that we think about them.",
+            "confidence": 0.7893
+          },
+          {
+            "id": 89,
+            "start": 467.0,
+            "end": 472.0,
+            "text": "Yeah.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 90,
+            "start": 472.0,
+            "end": 475.0,
+            "text": "I agree.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 91,
+            "start": 475.0,
+            "end": 477.0,
+            "text": "I don't know.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 92,
+            "start": 477.0,
+            "end": 480.0,
+            "text": "Thrashing things on the mailing list and some stuff.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 93,
+            "start": 480.0,
+            "end": 482.0,
+            "text": "And it keeps.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 94,
+            "start": 482.0,
+            "end": 487.0,
+            "text": "I mean, I'm in favor, because I think it's it's continuing to drive clarity.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 95,
+            "start": 487.0,
+            "end": 490.0,
+            "text": "I don't think it's like rattling and wasting time.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 96,
+            "start": 490.0,
+            "end": 493.0,
+            "text": "So.",
+            "confidence": 0.7348
+          },
+          {
+            "id": 97,
+            "start": 493.0,
+            "end": 498.0,
+            "text": "Okay.",
+            "confidence": 0.8102
+          },
+          {
+            "id": 98,
+            "start": 498.0,
+            "end": 508.0,
+            "text": "So test vectors and examples.",
+            "confidence": 0.8102
+          },
+          {
+            "id": 99,
+            "start": 508.0,
+            "end": 517.0,
+            "text": "So I'm going to talk for a little while and then I'm sure we'll have lots of interesting discussion.",
+            "confidence": 0.8102
+          },
+          {
+            "id": 100,
+            "start": 517.0,
+            "end": 520.0,
+            "text": "So the.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 101,
+            "start": 520.0,
+            "end": 526.0,
+            "text": "My proposal is we were testing the three serializations that are described there.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 102,
+            "start": 526.0,
+            "end": 529.0,
+            "text": "And it's about the serialization.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 103,
+            "start": 529.0,
+            "end": 534.0,
+            "text": "It's not about general seaboard testing.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 104,
+            "start": 534.0,
+            "end": 538.0,
+            "text": "Not about like fuzzing or anything like that.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 105,
+            "start": 538.0,
+            "end": 546.0,
+            "text": "So like in the in the seaboard and proposing to test nothing is invalid and nothing is not well formed.",
+            "confidence": 0.8087
+          },
+          {
+            "id": 106,
+            "start": 546.0,
+            "end": 549.0,
+            "text": "So that's what's all about serialization.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 107,
+            "start": 549.0,
+            "end": 552.0,
+            "text": "So the serializations.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 108,
+            "start": 552.0,
+            "end": 556.0,
+            "text": "The three are of course general preferred plus and deterministic.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 109,
+            "start": 556.0,
+            "end": 560.0,
+            "text": "The three described in the document.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 110,
+            "start": 560.0,
+            "end": 565.0,
+            "text": "So that's that's the focus here is is those.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 111,
+            "start": 565.0,
+            "end": 569.0,
+            "text": "Another observation here is that.",
+            "confidence": 0.7336
+          },
+          {
+            "id": 112,
+            "start": 569.0,
+            "end": 576.0,
+            "text": "And the number of people are library support for serializations is really going to vary by library.",
+            "confidence": 0.7398
+          },
+          {
+            "id": 113,
+            "start": 576.0,
+            "end": 580.0,
+            "text": "And kind of have to think about this and accommodate this.",
+            "confidence": 0.7398
+          },
+          {
+            "id": 114,
+            "start": 580.0,
+            "end": 583.0,
+            "text": "How this goes so.",
+            "confidence": 0.7398
+          },
+          {
+            "id": 115,
+            "start": 583.0,
+            "end": 590.0,
+            "text": "So you might have one library that supports all three serializations and perhaps they have three distinct modes.",
+            "confidence": 0.7398
+          },
+          {
+            "id": 116,
+            "start": 590.0,
+            "end": 596.0,
+            "text": "You put it in the mode for the serialization you want and then it runs in that mode.",
+            "confidence": 0.7398
+          },
+          {
+            "id": 117,
+            "start": 596.0,
+            "end": 599.0,
+            "text": "So it's a great main support only once serialization.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 118,
+            "start": 599.0,
+            "end": 601.0,
+            "text": "I think it's perfectly reasonable for a library.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 119,
+            "start": 601.0,
+            "end": 604.0,
+            "text": "For example, to support only deterministic serialization.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 120,
+            "start": 604.0,
+            "end": 608.0,
+            "text": "If it's operating in an environment for that.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 121,
+            "start": 608.0,
+            "end": 611.0,
+            "text": "This is reasonable.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 122,
+            "start": 611.0,
+            "end": 621.0,
+            "text": "So then each library decides how to use the test database on features.",
+            "confidence": 0.7165
+          },
+          {
+            "id": 123,
+            "start": 621.0,
+            "end": 636.0,
+            "text": "So I thought about some data test data and here's the what I came up with.",
+            "confidence": 0.827
+          },
+          {
+            "id": 124,
+            "start": 636.0,
+            "end": 641.0,
+            "text": "So one data item a test data item for the integer zero.",
+            "confidence": 0.827
+          },
+          {
+            "id": 125,
+            "start": 641.0,
+            "end": 644.0,
+            "text": "So there's a description of it.",
+            "confidence": 0.827
+          },
+          {
+            "id": 126,
+            "start": 644.0,
+            "end": 645.0,
+            "text": "The test.",
+            "confidence": 0.827
+          },
+          {
+            "id": 127,
+            "start": 645.0,
+            "end": 648.0,
+            "text": "So this is testing the integer zero.",
+            "confidence": 0.827
+          },
+          {
+            "id": 128,
+            "start": 648.0,
+            "end": 653.0,
+            "text": "There is the EDM representation of it.",
+            "confidence": 0.8348
+          },
+          {
+            "id": 129,
+            "start": 653.0,
+            "end": 658.0,
+            "text": "Which there actually might be for maps.",
+            "confidence": 0.8348
+          },
+          {
+            "id": 130,
+            "start": 658.0,
+            "end": 666.0,
+            "text": "There are actually multiple EDM representations for a particular thing.",
+            "confidence": 0.8348
+          },
+          {
+            "id": 131,
+            "start": 666.0,
+            "end": 671.0,
+            "text": "And then there are the three serializations.",
+            "confidence": 0.8348
+          },
+          {
+            "id": 132,
+            "start": 671.0,
+            "end": 673.0,
+            "text": "Yes, the file is EDM.",
+            "confidence": 0.8348
+          },
+          {
+            "id": 133,
+            "start": 673.0,
+            "end": 678.0,
+            "text": "And I ran this thing through Cboard.me and it decoded it.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 134,
+            "start": 678.0,
+            "end": 681.0,
+            "text": "So yes.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 135,
+            "start": 681.0,
+            "end": 683.0,
+            "text": "I think that's a useful thing.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 136,
+            "start": 683.0,
+            "end": 687.0,
+            "text": "This is not my forte, but I think it's think that all works.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 137,
+            "start": 687.0,
+            "end": 691.0,
+            "text": "So then there's the then there are.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 138,
+            "start": 691.0,
+            "end": 694.0,
+            "text": "So the description representation.",
+            "confidence": 0.7776
+          },
+          {
+            "id": 139,
+            "start": 695.0,
+            "end": 704.0,
+            "text": "And the acceptable serializations for the item.",
+            "confidence": 0.823
+          },
+          {
+            "id": 140,
+            "start": 704.0,
+            "end": 712.0,
+            "text": "This is not an exhaustive set of serializations, but it is represents the major ones.",
+            "confidence": 0.823
+          },
+          {
+            "id": 141,
+            "start": 712.0,
+            "end": 715.0,
+            "text": "So you can serialize in general serialization.",
+            "confidence": 0.823
+          },
+          {
+            "id": 142,
+            "start": 715.0,
+            "end": 718.0,
+            "text": "You can serialize zero.",
+            "confidence": 0.823
+          },
+          {
+            "id": 143,
+            "start": 718.0,
+            "end": 723.0,
+            "text": "You know, as those the four different five different lengths.",
+            "confidence": 0.7308
+          },
+          {
+            "id": 144,
+            "start": 723.0,
+            "end": 725.0,
+            "text": "Argument lights.",
+            "confidence": 0.7308
+          },
+          {
+            "id": 145,
+            "start": 725.0,
+            "end": 733.0,
+            "text": "Or you can serialize it as a big number or as a big number within empty string.",
+            "confidence": 0.7308
+          },
+          {
+            "id": 146,
+            "start": 733.0,
+            "end": 736.0,
+            "text": "And for foot plus into deterministic.",
+            "confidence": 0.7308
+          },
+          {
+            "id": 147,
+            "start": 736.0,
+            "end": 741.0,
+            "text": "There's only one serialization.",
+            "confidence": 0.7308
+          },
+          {
+            "id": 148,
+            "start": 742.0,
+            "end": 750.0,
+            "text": "So that's kind of introduces you to the schema of the test item.",
+            "confidence": 0.7884
+          },
+          {
+            "id": 149,
+            "start": 750.0,
+            "end": 753.0,
+            "text": "And then here's the one.",
+            "confidence": 0.7884
+          },
+          {
+            "id": 150,
+            "start": 753.0,
+            "end": 755.0,
+            "text": "I don't know if you can.",
+            "confidence": 0.7884
+          },
+          {
+            "id": 151,
+            "start": 755.0,
+            "end": 758.0,
+            "text": "Can you see it?",
+            "confidence": 0.7884
+          },
+          {
+            "id": 152,
+            "start": 758.0,
+            "end": 762.0,
+            "text": "One for a map with three items.",
+            "confidence": 0.7884
+          },
+          {
+            "id": 153,
+            "start": 762.0,
+            "end": 768.0,
+            "text": "So in this case, because there are six.",
+            "confidence": 0.7884
+          },
+          {
+            "id": 154,
+            "start": 768.0,
+            "end": 771.0,
+            "text": "If you have a map of three items, there are.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 155,
+            "start": 771.0,
+            "end": 774.0,
+            "text": "You can order that six different ways.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 156,
+            "start": 774.0,
+            "end": 777.0,
+            "text": "Including in the EDN.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 157,
+            "start": 777.0,
+            "end": 783.0,
+            "text": "And map order is not significant in the data model in C1.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 158,
+            "start": 783.0,
+            "end": 790.0,
+            "text": "So it's perfectly okay to write the EDN in three different orders.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 159,
+            "start": 790.0,
+            "end": 795.0,
+            "text": "And if you're really testing this exhaustively and thoroughly, you're going to.",
+            "confidence": 0.7804
+          },
+          {
+            "id": 160,
+            "start": 795.0,
+            "end": 800.0,
+            "text": "You should test against all those three different orders.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 161,
+            "start": 800.0,
+            "end": 806.0,
+            "text": "And then, you know, it's serializes in general serialization in three different ways.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 162,
+            "start": 806.0,
+            "end": 807.0,
+            "text": "Six different ways.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 163,
+            "start": 807.0,
+            "end": 810.0,
+            "text": "Same with preferred plus allow six different ways.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 164,
+            "start": 810.0,
+            "end": 814.0,
+            "text": "And then deterministic allows only one.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 165,
+            "start": 814.0,
+            "end": 819.0,
+            "text": "So these two example.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 166,
+            "start": 819.0,
+            "end": 821.0,
+            "text": "Data items are kind of.",
+            "confidence": 0.8009
+          },
+          {
+            "id": 167,
+            "start": 821.0,
+            "end": 823.0,
+            "text": "The bracket.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 168,
+            "start": 823.0,
+            "end": 825.0,
+            "text": "Sort of the top one and the bottom one.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 169,
+            "start": 825.0,
+            "end": 829.0,
+            "text": "And then I picked about ten others.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 170,
+            "start": 829.0,
+            "end": 839.0,
+            "text": "To that I thought would be kind of reasonable to fit in here and and hit all the data types and such.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 171,
+            "start": 839.0,
+            "end": 840.0,
+            "text": "So.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 172,
+            "start": 840.0,
+            "end": 843.0,
+            "text": "Ron.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 173,
+            "start": 843.0,
+            "end": 846.0,
+            "text": "On the previous slide.",
+            "confidence": 0.7474
+          },
+          {
+            "id": 174,
+            "start": 847.0,
+            "end": 850.0,
+            "text": "The general.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 175,
+            "start": 850.0,
+            "end": 853.0,
+            "text": "The general serializations you could easily put.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 176,
+            "start": 853.0,
+            "end": 857.0,
+            "text": "More, you know, more variations.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 177,
+            "start": 857.0,
+            "end": 860.0,
+            "text": "Like you might just put a variation of.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 178,
+            "start": 860.0,
+            "end": 864.0,
+            "text": "Using non preferred size for.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 179,
+            "start": 864.0,
+            "end": 868.0,
+            "text": "For the for the length of the string.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 180,
+            "start": 868.0,
+            "end": 875.0,
+            "text": "And and maybe put a variable length and and in definite length string.",
+            "confidence": 0.7699
+          },
+          {
+            "id": 181,
+            "start": 876.0,
+            "end": 878.0,
+            "text": "Yeah, so I'm.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 182,
+            "start": 878.0,
+            "end": 882.0,
+            "text": "I'm hitting that with other places.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 183,
+            "start": 882.0,
+            "end": 885.0,
+            "text": "So if you look at the bottom.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 184,
+            "start": 885.0,
+            "end": 888.0,
+            "text": "Near the bottom of the slide.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 185,
+            "start": 888.0,
+            "end": 892.0,
+            "text": "I don't have a slide for that data, but like the array, one, two, three.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 186,
+            "start": 892.0,
+            "end": 896.0,
+            "text": "So the serializations for that are.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 187,
+            "start": 896.0,
+            "end": 897.0,
+            "text": "Both.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 188,
+            "start": 897.0,
+            "end": 901.0,
+            "text": "Definant and indefinite for the text string.",
+            "confidence": 0.7544
+          },
+          {
+            "id": 189,
+            "start": 901.0,
+            "end": 904.0,
+            "text": "And then I have.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 190,
+            "start": 904.0,
+            "end": 908.0,
+            "text": "The thing with indefinite.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 191,
+            "start": 908.0,
+            "end": 916.0,
+            "text": "Yeah, indefinite length string and and a definite length string and several variants of the indefinite length string.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 192,
+            "start": 916.0,
+            "end": 918.0,
+            "text": "Same for the byte string.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 193,
+            "start": 918.0,
+            "end": 927.0,
+            "text": "There's a couple of variants of that.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 194,
+            "start": 927.0,
+            "end": 928.0,
+            "text": "Okay.",
+            "confidence": 0.6138
+          },
+          {
+            "id": 195,
+            "start": 928.0,
+            "end": 931.0,
+            "text": "And then you know, we've got.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 196,
+            "start": 931.0,
+            "end": 939.0,
+            "text": "A n and infinity and a n and a n with a payload and for, you know.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 197,
+            "start": 939.0,
+            "end": 941.0,
+            "text": "So that that's the basic idea.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 198,
+            "start": 941.0,
+            "end": 948.0,
+            "text": "I mean, I don't want to go too many these things, but we can certainly add more as long as they keep adding value.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 199,
+            "start": 948.0,
+            "end": 952.0,
+            "text": "Okay, so so what do you do with these.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 200,
+            "start": 952.0,
+            "end": 955.0,
+            "text": "This test data.",
+            "confidence": 0.7053
+          },
+          {
+            "id": 201,
+            "start": 955.0,
+            "end": 958.0,
+            "text": "So there's the obvious test.",
+            "confidence": 0.752
+          },
+          {
+            "id": 202,
+            "start": 958.0,
+            "end": 961.0,
+            "text": "These are obviously first to me.",
+            "confidence": 0.752
+          },
+          {
+            "id": 203,
+            "start": 961.0,
+            "end": 976.0,
+            "text": "So for each of the three serializations, you and code the edn and see that it encoded to one of the allowed serializations for the particular.",
+            "confidence": 0.752
+          },
+          {
+            "id": 204,
+            "start": 976.0,
+            "end": 978.0,
+            "text": "For the particular serialization.",
+            "confidence": 0.752
+          },
+          {
+            "id": 205,
+            "start": 978.0,
+            "end": 984.0,
+            "text": "So for example, you encode zero and if you're if you're testing general serialization, you encode zero and if you're testing general serialization.",
+            "confidence": 0.752
+          },
+          {
+            "id": 206,
+            "start": 984.0,
+            "end": 992.0,
+            "text": "You encode zero and make sure it's one of those seven or so different serializations.",
+            "confidence": 0.872
+          },
+          {
+            "id": 207,
+            "start": 992.0,
+            "end": 1000.0,
+            "text": "If you're encoding deterministic serialization, well, there's only one possible right answer for that.",
+            "confidence": 0.872
+          },
+          {
+            "id": 208,
+            "start": 1000.0,
+            "end": 1003.0,
+            "text": "So that's the encode test.",
+            "confidence": 0.872
+          },
+          {
+            "id": 209,
+            "start": 1003.0,
+            "end": 1010.0,
+            "text": "The decode test is you decode everything in the in the list.",
+            "confidence": 0.872
+          },
+          {
+            "id": 210,
+            "start": 1010.0,
+            "end": 1025.0,
+            "text": "And for for the particular serialization and make sure you get back the value zero.",
+            "confidence": 0.8571
+          },
+          {
+            "id": 211,
+            "start": 1025.0,
+            "end": 1030.0,
+            "text": "So next.",
+            "confidence": 0.8571
+          },
+          {
+            "id": 212,
+            "start": 1030.0,
+            "end": 1034.0,
+            "text": "The next test is just for checking decoders.",
+            "confidence": 0.8571
+          },
+          {
+            "id": 213,
+            "start": 1034.0,
+            "end": 1039.0,
+            "text": "I think it's fairly obvious what happens here.",
+            "confidence": 0.8571
+          },
+          {
+            "id": 214,
+            "start": 1039.0,
+            "end": 1046.0,
+            "text": "So you take something like a preferred plus checking decoder.",
+            "confidence": 0.8865
+          },
+          {
+            "id": 215,
+            "start": 1046.0,
+            "end": 1051.0,
+            "text": "And you run all of the data for general serialization through it.",
+            "confidence": 0.8865
+          },
+          {
+            "id": 216,
+            "start": 1051.0,
+            "end": 1060.0,
+            "text": "And make sure it errors out except for what's allowed for preferred plus.",
+            "confidence": 0.8865
+          },
+          {
+            "id": 217,
+            "start": 1060.0,
+            "end": 1068.0,
+            "text": "And then you take the deterministic checking decoder and run everything from preferred plus in general serial.",
+            "confidence": 0.8865
+          },
+          {
+            "id": 218,
+            "start": 1068.0,
+            "end": 1080.0,
+            "text": "And then serialization through it and make sure it errors out except for the one allowed for the those the allowed deterministic serializations.",
+            "confidence": 0.7633
+          },
+          {
+            "id": 219,
+            "start": 1080.0,
+            "end": 1091.0,
+            "text": "So that's for the checking decoder.",
+            "confidence": 0.7633
+          },
+          {
+            "id": 220,
+            "start": 1091.0,
+            "end": 1098.0,
+            "text": "So I'm just going to be reading the comments here.",
+            "confidence": 0.5712
+          },
+          {
+            "id": 221,
+            "start": 1098.0,
+            "end": 1102.0,
+            "text": "Okay.",
+            "confidence": 0.5712
+          },
+          {
+            "id": 222,
+            "start": 1102.0,
+            "end": 1107.0,
+            "text": "So this the next one is where it gets interesting.",
+            "confidence": 0.5712
+          },
+          {
+            "id": 223,
+            "start": 1107.0,
+            "end": 1117.0,
+            "text": "What you do with a non checking decoder that is fed.",
+            "confidence": 0.5712
+          },
+          {
+            "id": 224,
+            "start": 1117.0,
+            "end": 1121.0,
+            "text": "So that's the realization that it's that's kind of not for it.",
+            "confidence": 0.7304
+          },
+          {
+            "id": 225,
+            "start": 1121.0,
+            "end": 1135.0,
+            "text": "So for example, if you feed all the the the the all the different general serializations into a preferred plus decoder that is not a checking decoder.",
+            "confidence": 0.7304
+          },
+          {
+            "id": 226,
+            "start": 1135.0,
+            "end": 1138.0,
+            "text": "What does it do?",
+            "confidence": 0.7304
+          },
+          {
+            "id": 227,
+            "start": 1138.0,
+            "end": 1143.0,
+            "text": "And this has some relationship to what's discussed on the list these days.",
+            "confidence": 0.7304
+          },
+          {
+            "id": 228,
+            "start": 1143.0,
+            "end": 1149.0,
+            "text": "So I believe it will it can decide to error out.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 229,
+            "start": 1149.0,
+            "end": 1152.0,
+            "text": "For example, it's a preferred plus decoder.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 230,
+            "start": 1152.0,
+            "end": 1156.0,
+            "text": "It decided not to do indefinite lengths.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 231,
+            "start": 1156.0,
+            "end": 1158.0,
+            "text": "So it errors out.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 232,
+            "start": 1158.0,
+            "end": 1160.0,
+            "text": "And that's an okay result.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 233,
+            "start": 1160.0,
+            "end": 1162.0,
+            "text": "It's okay for a to error out.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 234,
+            "start": 1162.0,
+            "end": 1167.0,
+            "text": "It's also okay.",
+            "confidence": 0.8148
+          },
+          {
+            "id": 235,
+            "start": 1167.0,
+            "end": 1174.0,
+            "text": "So that it could successfully decoded.",
+            "confidence": 0.7292
+          },
+          {
+            "id": 236,
+            "start": 1174.0,
+            "end": 1179.0,
+            "text": "So for example, a non shortest like see where argument.",
+            "confidence": 0.7292
+          },
+          {
+            "id": 237,
+            "start": 1179.0,
+            "end": 1181.0,
+            "text": "So you could succeed on that.",
+            "confidence": 0.7292
+          },
+          {
+            "id": 238,
+            "start": 1181.0,
+            "end": 1192.0,
+            "text": "And this is kind of very library by library and like what features they support and all of this.",
+            "confidence": 0.7292
+          },
+          {
+            "id": 239,
+            "start": 1192.0,
+            "end": 1199.0,
+            "text": "I'm going to show you the the really the one that really gets you gets you on this, which is of course,",
+            "confidence": 0.759
+          },
+          {
+            "id": 240,
+            "start": 1199.0,
+            "end": 1201.0,
+            "text": "NAM payloads.",
+            "confidence": 0.759
+          },
+          {
+            "id": 241,
+            "start": 1201.0,
+            "end": 1208.0,
+            "text": "So what is a preferred plus decoder do.",
+            "confidence": 0.759
+          },
+          {
+            "id": 242,
+            "start": 1208.0,
+            "end": 1210.0,
+            "text": "That's not in checking mode.",
+            "confidence": 0.759
+          },
+          {
+            "id": 243,
+            "start": 1210.0,
+            "end": 1214.0,
+            "text": "How does it respond to a NAM payload?",
+            "confidence": 0.759
+          },
+          {
+            "id": 244,
+            "start": 1214.0,
+            "end": 1221.0,
+            "text": "The answer I have here is basically anyway it wants.",
+            "confidence": 0.759
+          },
+          {
+            "id": 245,
+            "start": 1221.0,
+            "end": 1234.0,
+            "text": "The requirement for preferred plus a preferred plus decoder that's a non checking decoder is that it decode all of preferred plus correctly.",
+            "confidence": 0.8448
+          },
+          {
+            "id": 246,
+            "start": 1234.0,
+            "end": 1244.0,
+            "text": "That requirement doesn't mean if can't decode other stuff as long as the other parts of general serialization.",
+            "confidence": 0.8448
+          },
+          {
+            "id": 247,
+            "start": 1245.0,
+            "end": 1251.0,
+            "text": "And then like how do you decode an NAM payload.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 248,
+            "start": 1251.0,
+            "end": 1254.0,
+            "text": "You can error out.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 249,
+            "start": 1254.0,
+            "end": 1258.0,
+            "text": "You can because in this case it's a preferred plus decoder.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 250,
+            "start": 1258.0,
+            "end": 1262.0,
+            "text": "You can error out because it's not required to handle NAM payloads.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 251,
+            "start": 1262.0,
+            "end": 1264.0,
+            "text": "You could convert it to a quiet NAM.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 252,
+            "start": 1264.0,
+            "end": 1266.0,
+            "text": "Some CPU instructions do that.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 253,
+            "start": 1266.0,
+            "end": 1271.0,
+            "text": "You could return it as a double or a single with the JNAM payload.",
+            "confidence": 0.8047
+          },
+          {
+            "id": 254,
+            "start": 1271.0,
+            "end": 1278.0,
+            "text": "Make up your own structure to represent NAM payloads assigned in the payload bits.",
+            "confidence": 0.8457
+          },
+          {
+            "id": 255,
+            "start": 1278.0,
+            "end": 1288.0,
+            "text": "So that's actually all the slides I had.",
+            "confidence": 0.8457
+          },
+          {
+            "id": 256,
+            "start": 1288.0,
+            "end": 1292.0,
+            "text": "There's more text in the PR.",
+            "confidence": 0.8457
+          },
+          {
+            "id": 257,
+            "start": 1292.0,
+            "end": 1296.0,
+            "text": "And I think we can have some discussion now.",
+            "confidence": 0.8457
+          },
+          {
+            "id": 258,
+            "start": 1296.0,
+            "end": 1299.0,
+            "text": "I didn't read all the comments yet.",
+            "confidence": 0.8457
+          },
+          {
+            "id": 259,
+            "start": 1299.0,
+            "end": 1306.0,
+            "text": "So I think it would be useful if we split the discussion into two parts.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 260,
+            "start": 1306.0,
+            "end": 1312.0,
+            "text": "The first slide, you know, everything other than the test factors.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 261,
+            "start": 1312.0,
+            "end": 1315.0,
+            "text": "And as let's let's go through those first.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 262,
+            "start": 1315.0,
+            "end": 1319.0,
+            "text": "Then go to the test factors because they are completely different topics.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 263,
+            "start": 1319.0,
+            "end": 1320.0,
+            "text": "Very great.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 264,
+            "start": 1320.0,
+            "end": 1321.0,
+            "text": "Yeah, great.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 265,
+            "start": 1321.0,
+            "end": 1328.0,
+            "text": "And what I was going to say is that it strikes me that the best approach is to put the test factors in a separate document.",
+            "confidence": 0.8637
+          },
+          {
+            "id": 266,
+            "start": 1328.0,
+            "end": 1336.0,
+            "text": "It's an informational reference from this one and that refers to the main document normatively.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 267,
+            "start": 1336.0,
+            "end": 1341.0,
+            "text": "So comments on that during the discussion as well.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 268,
+            "start": 1341.0,
+            "end": 1342.0,
+            "text": "Okay, thank you, you're up first.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 269,
+            "start": 1342.0,
+            "end": 1347.0,
+            "text": "And again, we're talking about the first slide which you weren't here for.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 270,
+            "start": 1347.0,
+            "end": 1349.0,
+            "text": "I thought one to become a test vectors.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 271,
+            "start": 1349.0,
+            "end": 1350.0,
+            "text": "No, it doesn't appropriate.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 272,
+            "start": 1350.0,
+            "end": 1352.0,
+            "text": "It's a test vectors later.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 273,
+            "start": 1352.0,
+            "end": 1353.0,
+            "text": "Okay.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 274,
+            "start": 1353.0,
+            "end": 1354.0,
+            "text": "Yep.",
+            "confidence": 0.7116
+          },
+          {
+            "id": 275,
+            "start": 1354.0,
+            "end": 1358.0,
+            "text": "So I'm just to be clear, I'm not prepared for any discussion other than test factors.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 276,
+            "start": 1358.0,
+            "end": 1360.0,
+            "text": "And I thought we had covered everything.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 277,
+            "start": 1360.0,
+            "end": 1362.0,
+            "text": "I thought the whole discussion was going to be on test factors.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 278,
+            "start": 1362.0,
+            "end": 1363.0,
+            "text": "So I'm surprised.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 279,
+            "start": 1363.0,
+            "end": 1372.0,
+            "text": "Well, it may be done now, but I just wanted to make sure that we in the group that we had a conceptual separation.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 280,
+            "start": 1372.0,
+            "end": 1379.0,
+            "text": "Even though Barry and I hadn't talked about it, especially with Barry's idea of it's going to be a different document.",
+            "confidence": 0.8527
+          },
+          {
+            "id": 281,
+            "start": 1379.0,
+            "end": 1393.0,
+            "text": "So if you can go back or go forward one or two of just where you have some of the list of things that yes, stop there.",
+            "confidence": 0.8266
+          },
+          {
+            "id": 282,
+            "start": 1393.0,
+            "end": 1399.0,
+            "text": "So you've got two to do well, you've got three to do is there the PR at the bottom.",
+            "confidence": 0.8266
+          },
+          {
+            "id": 283,
+            "start": 1399.0,
+            "end": 1408.0,
+            "text": "So Rowan, you're online, are you able to get the additional security considerations to the working groups soon?",
+            "confidence": 0.8266
+          },
+          {
+            "id": 284,
+            "start": 1409.0,
+            "end": 1410.0,
+            "text": "Yes.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 285,
+            "start": 1410.0,
+            "end": 1412.0,
+            "text": "Okay. Great.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 286,
+            "start": 1412.0,
+            "end": 1415.0,
+            "text": "Where soon means what?",
+            "confidence": 0.7247
+          },
+          {
+            "id": 287,
+            "start": 1415.0,
+            "end": 1418.0,
+            "text": "By Friday.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 288,
+            "start": 1418.0,
+            "end": 1420.0,
+            "text": "Excellent. That would be great.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 289,
+            "start": 1420.0,
+            "end": 1422.0,
+            "text": "Yes. Great.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 290,
+            "start": 1422.0,
+            "end": 1428.0,
+            "text": "The second to do is the whole test vector examples thing.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 291,
+            "start": 1428.0,
+            "end": 1432.0,
+            "text": "Lawrence. So for the last bullet, the PR from Cart.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 292,
+            "start": 1432.0,
+            "end": 1434.0,
+            "text": "Sorry.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 293,
+            "start": 1434.0,
+            "end": 1435.0,
+            "text": "Thank you.",
+            "confidence": 0.7247
+          },
+          {
+            "id": 294,
+            "start": 1435.0,
+            "end": 1437.0,
+            "text": "So I'm going to say, speaking to the mic.",
+            "confidence": 0.7472
+          },
+          {
+            "id": 295,
+            "start": 1437.0,
+            "end": 1439.0,
+            "text": "So the PR from Cart.",
+            "confidence": 0.7472
+          },
+          {
+            "id": 296,
+            "start": 1439.0,
+            "end": 1447.0,
+            "text": "Lawrence, do you feel like that's something that can be dealt with so that you could have a new draft within a week or so?",
+            "confidence": 0.7472
+          },
+          {
+            "id": 297,
+            "start": 1447.0,
+            "end": 1453.0,
+            "text": "Or like I don't know how you as the author feel, how big that is.",
+            "confidence": 0.7472
+          },
+          {
+            "id": 298,
+            "start": 1453.0,
+            "end": 1459.0,
+            "text": "Are you, you know, is it fairly tractable to to get it so that the working group can see.",
+            "confidence": 0.7472
+          },
+          {
+            "id": 299,
+            "start": 1459.0,
+            "end": 1469.0,
+            "text": "Can you tell me, um, Carson's words with your interpretation, that like is a week a reasonable amount of time for that?",
+            "confidence": 0.5603
+          },
+          {
+            "id": 300,
+            "start": 1469.0,
+            "end": 1477.0,
+            "text": "Um, I'm, I mean, they're going to work, this week, and me, they're going to work on test vectors are the PR from Carson. I'm not going to work on both this week.",
+            "confidence": 0.5603
+          },
+          {
+            "id": 301,
+            "start": 1477.0,
+            "end": 1485.0,
+            "text": "There's, there's, there's, so Barry is saying that, therefore, leave the test vectors for later, let's get the main document going.",
+            "confidence": 0.5603
+          },
+          {
+            "id": 302,
+            "start": 1485.0,
+            "end": 1493.0,
+            "text": "I think the test vectors are actually pretty important and that's why it shows to have the discussion on them.",
+            "confidence": 0.8623
+          },
+          {
+            "id": 303,
+            "start": 1493.0,
+            "end": 1501.0,
+            "text": "I think the test vectors are important also, but I think they are an adjunct to the main document.",
+            "confidence": 0.8623
+          },
+          {
+            "id": 304,
+            "start": 1501.0,
+            "end": 1503.0,
+            "text": "Yeah, I don't part of it.",
+            "confidence": 0.8623
+          },
+          {
+            "id": 305,
+            "start": 1503.0,
+            "end": 1507.0,
+            "text": "I don't in Carson doesn't either.",
+            "confidence": 0.8623
+          },
+          {
+            "id": 306,
+            "start": 1507.0,
+            "end": 1511.0,
+            "text": "I think they're actually quite important.",
+            "confidence": 0.8623
+          },
+          {
+            "id": 307,
+            "start": 1511.0,
+            "end": 1515.0,
+            "text": "Or about that, please.",
+            "confidence": 0.7943
+          },
+          {
+            "id": 308,
+            "start": 1515.0,
+            "end": 1521.0,
+            "text": "When I started writing the test vectors, working through them, it made me understand what we were doing better,",
+            "confidence": 0.7943
+          },
+          {
+            "id": 309,
+            "start": 1521.0,
+            "end": 1527.0,
+            "text": "particularly the last, the last slide that presented.",
+            "confidence": 0.7943
+          },
+          {
+            "id": 310,
+            "start": 1527.0,
+            "end": 1537.0,
+            "text": "And, uh, their examples also, um, they help you understand how these apply to a library.",
+            "confidence": 0.7943
+          },
+          {
+            "id": 311,
+            "start": 1537.0,
+            "end": 1547.0,
+            "text": "And, I mean, I think there's a lot of depth and, and it makes all the stuff that we're discussing in prose real.",
+            "confidence": 0.7746
+          },
+          {
+            "id": 312,
+            "start": 1547.0,
+            "end": 1561.0,
+            "text": "So I think they're, uh, it really illustrates the difference in, you know, what the different serializations do and you can really see it there, you know, and it's laid out.",
+            "confidence": 0.7746
+          },
+          {
+            "id": 313,
+            "start": 1561.0,
+            "end": 1563.0,
+            "text": "Uh, rolling your next.",
+            "confidence": 0.8215
+          },
+          {
+            "id": 314,
+            "start": 1563.0,
+            "end": 1575.0,
+            "text": "Yeah, I mean, I, I, I don't disagree with anything you just said Lawrence, but the, I don't think that we're going to",
+            "confidence": 0.8215
+          },
+          {
+            "id": 315,
+            "start": 1575.0,
+            "end": 1585.0,
+            "text": "hand, we're going to have test vectors where we're going to have conversations that are going to spin off for, for days and weeks at a time,",
+            "confidence": 0.8215
+          },
+          {
+            "id": 316,
+            "start": 1585.0,
+            "end": 1591.0,
+            "text": "because we couldn't come to consensus on, on, uh, some aspect of a test vector.",
+            "confidence": 0.8839
+          },
+          {
+            "id": 317,
+            "start": 1591.0,
+            "end": 1597.0,
+            "text": "I think it's just work, it's just turning the crank and doing some, and there's going to be some light back and forth.",
+            "confidence": 0.8839
+          },
+          {
+            "id": 318,
+            "start": 1597.0,
+            "end": 1611.0,
+            "text": "But the texts, you know, the, the other open issues, uh, that they could potentially take an unbounded amount of time unless we focus our energy on them first.",
+            "confidence": 0.8839
+          },
+          {
+            "id": 319,
+            "start": 1611.0,
+            "end": 1613.0,
+            "text": "Thank you, Carson.",
+            "confidence": 0.8839
+          },
+          {
+            "id": 320,
+            "start": 1613.0,
+            "end": 1623.0,
+            "text": "Yeah, um, I, um, so we were, we were Lawrence, um, I think it's, it's really illustrating to look at these test vectors and I think most people who, uh,",
+            "confidence": 0.7766
+          },
+          {
+            "id": 321,
+            "start": 1623.0,
+            "end": 1631.0,
+            "text": "actually like the current draft haven't really thought about the issues that are being, as lead demonstrated by the test vectors.",
+            "confidence": 0.7766
+          },
+          {
+            "id": 322,
+            "start": 1631.0,
+            "end": 1639.0,
+            "text": "So I think, uh, at, at the point where we are making a decision whether this, this draft is going into the right direction,",
+            "confidence": 0.7766
+          },
+          {
+            "id": 323,
+            "start": 1639.0,
+            "end": 1647.0,
+            "text": "uh, we probably need these test vectors and I wouldn't call them test vectors, but examples, they're called examples in our C at 949.",
+            "confidence": 0.6496
+          },
+          {
+            "id": 324,
+            "start": 1647.0,
+            "end": 1655.0,
+            "text": "And, uh, they are, they are too illustrating, uh, the main text of the document.",
+            "confidence": 0.6496
+          },
+          {
+            "id": 325,
+            "start": 1655.0,
+            "end": 1668.0,
+            "text": "Okay, I'm next to the queue. Uh, so, I, I agree with Ron, and what I'm, the question I have for, for you, Lawrence, that, uh,",
+            "confidence": 0.6496
+          },
+          {
+            "id": 326,
+            "start": 1668.0,
+            "end": 1678.0,
+            "text": "and kind of following up on what Carson said is there's, we need the examples so that readers of the document can better understand what we're saying.",
+            "confidence": 0.8885
+          },
+          {
+            "id": 327,
+            "start": 1678.0,
+            "end": 1685.0,
+            "text": "And there's, we need to write the examples, so we, as we're writing the document, get it right.",
+            "confidence": 0.8885
+          },
+          {
+            "id": 328,
+            "start": 1685.0,
+            "end": 1695.0,
+            "text": "And I'm trying to tease those apart that, uh, the extent to which we can write the document and do the examples test vectors, whatever you want to call them.",
+            "confidence": 0.8885
+          },
+          {
+            "id": 329,
+            "start": 1696.0,
+            "end": 1710.0,
+            "text": "Later, or alongside it without how holding up the main document, if, if they're necessary for us to get the main document right, we need to understand that and we need to understand why, so go ahead and comment on that.",
+            "confidence": 0.833
+          },
+          {
+            "id": 330,
+            "start": 1710.0,
+            "end": 1714.0,
+            "text": "Thanks.",
+            "confidence": 0.833
+          },
+          {
+            "id": 331,
+            "start": 1714.0,
+            "end": 1718.0,
+            "text": "Lawrence, go ahead.",
+            "confidence": 0.833
+          },
+          {
+            "id": 332,
+            "start": 1718.0,
+            "end": 1731.0,
+            "text": "I, I agree with, with what Carson said, um, uh, they are, we're doing the test vectors and example, I mean, I call them example of theirs.",
+            "confidence": 0.7444
+          },
+          {
+            "id": 333,
+            "start": 1731.0,
+            "end": 1741.0,
+            "text": "Certainly as much an example as they are test vector to facilitate the, the writing process of the document.",
+            "confidence": 0.7444
+          },
+          {
+            "id": 334,
+            "start": 1741.0,
+            "end": 1753.0,
+            "text": "And I'm also going to say, I feel like I speak with some clarity and authority here, having done serious implementation work on all of this stuff.",
+            "confidence": 0.7174
+          },
+          {
+            "id": 335,
+            "start": 1753.0,
+            "end": 1767.0,
+            "text": "It's, um, that's, that, uh, really changes my, you know, your opinion on my, you know, my, my background and understanding on this, so.",
+            "confidence": 0.7174
+          },
+          {
+            "id": 336,
+            "start": 1767.0,
+            "end": 1782.0,
+            "text": "So quite strongly that the example test vectors are in integral part of the document and the back and forth around the test vectors and example will examples will change what we write in other parts of the document.",
+            "confidence": 0.8383
+          },
+          {
+            "id": 337,
+            "start": 1782.0,
+            "end": 1786.0,
+            "text": "I don't, I mean, I don't mind which order we do it.",
+            "confidence": 0.8383
+          },
+          {
+            "id": 338,
+            "start": 1787.0,
+            "end": 1795.0,
+            "text": "I think the test vectors are in the document have to stay there and, um, and we don't publish without them.",
+            "confidence": 0.8456
+          },
+          {
+            "id": 339,
+            "start": 1795.0,
+            "end": 1798.0,
+            "text": "Okay. Thanks for clarifying that, Rowan.",
+            "confidence": 0.8456
+          },
+          {
+            "id": 340,
+            "start": 1798.0,
+            "end": 1811.0,
+            "text": "Lawrence, what do you think would or might change based on these text test vectors because we initially we had quite a few examples.",
+            "confidence": 0.8456
+          },
+          {
+            "id": 341,
+            "start": 1811.0,
+            "end": 1817.0,
+            "text": "Um, when we had our first discussions on this document.",
+            "confidence": 0.8055
+          },
+          {
+            "id": 342,
+            "start": 1817.0,
+            "end": 1820.0,
+            "text": "What examples are you talking about?",
+            "confidence": 0.8055
+          },
+          {
+            "id": 343,
+            "start": 1820.0,
+            "end": 1834.0,
+            "text": "So I'm asking what you think would change based on these these because I mean, so far for any of the, the items that are that have that you presented, I don't see any, any changes.",
+            "confidence": 0.8055
+          },
+          {
+            "id": 344,
+            "start": 1834.0,
+            "end": 1846.0,
+            "text": "And for the, even for the NAN payload examples, we discussed the, you know, three possible, three possible options.",
+            "confidence": 0.8203
+          },
+          {
+            "id": 345,
+            "start": 1846.0,
+            "end": 1853.0,
+            "text": "I think the, the only thing that you said in your slide that I didn't agree with about NAN's was that you could present it.",
+            "confidence": 0.8203
+          },
+          {
+            "id": 346,
+            "start": 1853.0,
+            "end": 1863.0,
+            "text": "If you presented the, the NAN as a float that that you would present it as something other than a, than a double.",
+            "confidence": 0.8203
+          },
+          {
+            "id": 347,
+            "start": 1863.0,
+            "end": 1877.0,
+            "text": "Um, the text that I would be, the this I would, would affect, I think would be in section one and section two, which is the frame up for what a serialization is.",
+            "confidence": 0.7683
+          },
+          {
+            "id": 348,
+            "start": 1877.0,
+            "end": 1892.0,
+            "text": "And, um, how it relates to the default from 8940, which is kind of implicit, which relates to a lot of the discussion that I, the back and forth that's happening with.",
+            "confidence": 0.7683
+          },
+          {
+            "id": 349,
+            "start": 1892.0,
+            "end": 1899.0,
+            "text": "My self and carcin on the list right now.",
+            "confidence": 0.7745
+          },
+          {
+            "id": 350,
+            "start": 1899.0,
+            "end": 1902.0,
+            "text": "So no normative change.",
+            "confidence": 0.7745
+          },
+          {
+            "id": 351,
+            "start": 1902.0,
+            "end": 1910.0,
+            "text": "Probably not, but there's, there's been almost none of the discussion in any of this is normative.",
+            "confidence": 0.7745
+          },
+          {
+            "id": 352,
+            "start": 1910.0,
+            "end": 1916.0,
+            "text": "It's very little, I mean, the normative stuff is not the, the, the difficulty here.",
+            "confidence": 0.7745
+          },
+          {
+            "id": 353,
+            "start": 1916.0,
+            "end": 1920.0,
+            "text": "I mean, we're only making small tweaks even relative to 8949.",
+            "confidence": 0.7745
+          },
+          {
+            "id": 354,
+            "start": 1920.0,
+            "end": 1930.0,
+            "text": "But what's all of your framing? Yeah, but the reason that this document exists is because the normative language wasn't clear.",
+            "confidence": 0.6951
+          },
+          {
+            "id": 355,
+            "start": 1930.0,
+            "end": 1932.0,
+            "text": "Yeah.",
+            "confidence": 0.6951
+          },
+          {
+            "id": 356,
+            "start": 1932.0,
+            "end": 1938.0,
+            "text": "Otherwise, we wouldn't have a document.",
+            "confidence": 0.6951
+          },
+          {
+            "id": 357,
+            "start": 1938.0,
+            "end": 1941.0,
+            "text": "Okay.",
+            "confidence": 0.6951
+          },
+          {
+            "id": 358,
+            "start": 1941.0,
+            "end": 1949.0,
+            "text": "So what I hear Lawrence and Carston saying is that the, the writing of these examples of these test vectors, whatever.",
+            "confidence": 0.6951
+          },
+          {
+            "id": 359,
+            "start": 1949.0,
+            "end": 1958.0,
+            "text": "Is helping get the normative text right. Is that correct?",
+            "confidence": 0.7792
+          },
+          {
+            "id": 360,
+            "start": 1958.0,
+            "end": 1967.0,
+            "text": "I think it's up to get some of the framing and introduction text correct.",
+            "confidence": 0.7792
+          },
+          {
+            "id": 361,
+            "start": 1967.0,
+            "end": 1972.0,
+            "text": "The hardest stuff to get correct.",
+            "confidence": 0.7792
+          },
+          {
+            "id": 362,
+            "start": 1973.0,
+            "end": 1978.0,
+            "text": "Sounds good. We will take that under advisement and then let's talk about test vectors.",
+            "confidence": 0.6709
+          },
+          {
+            "id": 363,
+            "start": 1978.0,
+            "end": 1985.0,
+            "text": "Thank you. It jumped up earlier. You still go for it.",
+            "confidence": 0.6709
+          },
+          {
+            "id": 364,
+            "start": 1985.0,
+            "end": 1987.0,
+            "text": "Sorry, no hand race. This is thank you.",
+            "confidence": 0.6709
+          },
+          {
+            "id": 365,
+            "start": 1987.0,
+            "end": 1991.0,
+            "text": "Yeah, I have to for the notes.",
+            "confidence": 0.6709
+          },
+          {
+            "id": 366,
+            "start": 1991.0,
+            "end": 1999.0,
+            "text": "I think that like low, low number of, four digit examples.",
+            "confidence": 0.6709
+          },
+          {
+            "id": 367,
+            "start": 1999.0,
+            "end": 2007.0,
+            "text": "It feels to me that's not the, the internet draft is not the right place for that.",
+            "confidence": 0.7072
+          },
+          {
+            "id": 368,
+            "start": 2007.0,
+            "end": 2017.0,
+            "text": "What do you think there is right place or you, yeah, I would think that's a good up thing or maybe a wiki of necessary, but I would like to see them in a good up.",
+            "confidence": 0.7072
+          },
+          {
+            "id": 369,
+            "start": 2017.0,
+            "end": 2023.0,
+            "text": "The repository that makes a lot of sense and not in the final document.",
+            "confidence": 0.7072
+          },
+          {
+            "id": 370,
+            "start": 2023.0,
+            "end": 2033.0,
+            "text": "Then if you select it examples in the document to elaborate on that as a representative thing that I think they may let us go because",
+            "confidence": 0.6861
+          },
+          {
+            "id": 371,
+            "start": 2033.0,
+            "end": 2043.0,
+            "text": "If you're engineering stuff, you're going to the examples and use what this closes the thing you want to do, but, but for the, for the whole set of the examples.",
+            "confidence": 0.6861
+          },
+          {
+            "id": 372,
+            "start": 2043.0,
+            "end": 2046.0,
+            "text": "And it is a different place, I think.",
+            "confidence": 0.6861
+          },
+          {
+            "id": 373,
+            "start": 2046.0,
+            "end": 2050.0,
+            "text": "All right.",
+            "confidence": 0.6861
+          },
+          {
+            "id": 374,
+            "start": 2050.0,
+            "end": 2060.0,
+            "text": "You're saying that there are too many of these things here and it will be too much of too much in the document. That's what you're saying.",
+            "confidence": 0.6446
+          },
+          {
+            "id": 375,
+            "start": 2060.0,
+            "end": 2062.0,
+            "text": "Yeah, I assume it's like,",
+            "confidence": 0.6446
+          },
+          {
+            "id": 376,
+            "start": 2062.0,
+            "end": 2066.0,
+            "text": "2,000, 3000 ish today.",
+            "confidence": 0.6446
+          },
+          {
+            "id": 377,
+            "start": 2066.0,
+            "end": 2070.0,
+            "text": "So that's obviously not an internet draft. Sorry, no, not a CNDN.",
+            "confidence": 0.6446
+          },
+          {
+            "id": 378,
+            "start": 2070.0,
+            "end": 2072.0,
+            "text": "So, uh, 2001.",
+            "confidence": 0.6446
+          },
+          {
+            "id": 379,
+            "start": 2073.0,
+            "end": 2075.0,
+            "text": "Examples.",
+            "confidence": 0.6678
+          },
+          {
+            "id": 380,
+            "start": 2075.0,
+            "end": 2082.0,
+            "text": "Oh, test vectors, which is a word that you can wrap around an example if you know what you're doing. So I would call them examples.",
+            "confidence": 0.6678
+          },
+          {
+            "id": 381,
+            "start": 2082.0,
+            "end": 2087.0,
+            "text": "In any case, and where did you get that number?",
+            "confidence": 0.6678
+          },
+          {
+            "id": 382,
+            "start": 2087.0,
+            "end": 2097.0,
+            "text": "Uh, I think last time when we, I'd say I have 21 25, but we were the heck of thong.",
+            "confidence": 0.6678
+          },
+          {
+            "id": 383,
+            "start": 2097.0,
+            "end": 2105.0,
+            "text": "There's 13 lines here. So there's 13, these are the 13 lines I'm for, I'm proposing to put down.",
+            "confidence": 0.6435
+          },
+          {
+            "id": 384,
+            "start": 2105.0,
+            "end": 2113.0,
+            "text": "Okay, this this could be good, this 13 is a good number of three plus 10 because they're good number to be in an internet draft, I guess.",
+            "confidence": 0.6435
+          },
+          {
+            "id": 385,
+            "start": 2113.0,
+            "end": 2119.0,
+            "text": "But I think, not all examples have go into the, that we have the shot for.",
+            "confidence": 0.6435
+          },
+          {
+            "id": 386,
+            "start": 2119.0,
+            "end": 2125.0,
+            "text": "I just want to put these 13 in. I'm, I want them curated. I don't want any enormous.",
+            "confidence": 0.6435
+          },
+          {
+            "id": 387,
+            "start": 2125.0,
+            "end": 2131.0,
+            "text": "Uh, yeah, there's, there's other people that have lots of things, but my proposal is only like these 13.",
+            "confidence": 0.7567
+          },
+          {
+            "id": 388,
+            "start": 2131.0,
+            "end": 2139.0,
+            "text": "And they would exist in EDN files in GitHub, and then they would be included in the document.",
+            "confidence": 0.7567
+          },
+          {
+            "id": 389,
+            "start": 2139.0,
+            "end": 2146.0,
+            "text": "I mean, I'll fill the EDN files anyways, and then, you know, if we want it, if they turn out to be too many, then we can take some out.",
+            "confidence": 0.7567
+          },
+          {
+            "id": 390,
+            "start": 2146.0,
+            "end": 2147.0,
+            "text": "So.",
+            "confidence": 0.7567
+          },
+          {
+            "id": 391,
+            "start": 2147.0,
+            "end": 2153.0,
+            "text": "Yeah, no, I don't, I'm not afraid of that number. I went to the screen because I'm, I'm, I'm, I'm, I'm a shot cited.",
+            "confidence": 0.7567
+          },
+          {
+            "id": 392,
+            "start": 2154.0,
+            "end": 2163.0,
+            "text": "And it's okay. And, and yeah, those look, okay, I don't know if there might be one or two that is a French case.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 393,
+            "start": 2163.0,
+            "end": 2169.0,
+            "text": "Uh, but this is this is the Dominion skills, so we can do this in the other document. That's fine.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 394,
+            "start": 2169.0,
+            "end": 2171.0,
+            "text": "Okay, that's not for today.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 395,
+            "start": 2171.0,
+            "end": 2172.0,
+            "text": "Okay.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 396,
+            "start": 2172.0,
+            "end": 2176.0,
+            "text": "Lawrence, are you, you're still in the queue, did you have a different thing or?",
+            "confidence": 0.6478
+          },
+          {
+            "id": 397,
+            "start": 2176.0,
+            "end": 2178.0,
+            "text": "Oh, no, no, sorry.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 398,
+            "start": 2178.0,
+            "end": 2179.0,
+            "text": "No problem.",
+            "confidence": 0.6478
+          },
+          {
+            "id": 399,
+            "start": 2180.0,
+            "end": 2186.0,
+            "text": "Yeah, I just wanted to speak in favor of including, not calling these test vectors.",
+            "confidence": 0.8149
+          },
+          {
+            "id": 400,
+            "start": 2186.0,
+            "end": 2194.0,
+            "text": "I think that's calling them test vectors is what we're getting wrapped around the actual on examples are extremely important.",
+            "confidence": 0.8149
+          },
+          {
+            "id": 401,
+            "start": 2194.0,
+            "end": 2206.0,
+            "text": "And I know from my own standards, offering that whenever I say paragraph blah, blah, blah, paragraph, example, for example, and then I give something examples are very visual.",
+            "confidence": 0.8149
+          },
+          {
+            "id": 402,
+            "start": 2206.0,
+            "end": 2213.0,
+            "text": "And I know that when, when reviewers read the document, especially for the first time, they go straight for the example.",
+            "confidence": 0.8654
+          },
+          {
+            "id": 403,
+            "start": 2213.0,
+            "end": 2218.0,
+            "text": "And, and that's what they read and then maybe later they will read the prose.",
+            "confidence": 0.8654
+          },
+          {
+            "id": 404,
+            "start": 2218.0,
+            "end": 2225.0,
+            "text": "So, I examples in line or at least in an appendix in the document, I think they're extremely valuable.",
+            "confidence": 0.8654
+          },
+          {
+            "id": 405,
+            "start": 2225.0,
+            "end": 2234.0,
+            "text": "And I consider those to be different than test vectors which are boring and thorough and, you know, they're very different in my mind.",
+            "confidence": 0.8654
+          },
+          {
+            "id": 406,
+            "start": 2234.0,
+            "end": 2241.0,
+            "text": "And I think the document definitely needs to include examples.",
+            "confidence": 0.6221
+          },
+          {
+            "id": 407,
+            "start": 2241.0,
+            "end": 2242.0,
+            "text": "Thank you.",
+            "confidence": 0.6221
+          },
+          {
+            "id": 408,
+            "start": 2242.0,
+            "end": 2249.0,
+            "text": "Anyone else on this carcin, you have your, you're unmuted, were you going to say something or?",
+            "confidence": 0.6221
+          },
+          {
+            "id": 409,
+            "start": 2249.0,
+            "end": 2262.0,
+            "text": "I think you have no idea what you just said carcin that's heavily, a lot of this is distorted.",
+            "confidence": 0.6221
+          },
+          {
+            "id": 410,
+            "start": 2264.0,
+            "end": 2269.0,
+            "text": "Okay.",
+            "confidence": 0.5878
+          },
+          {
+            "id": 411,
+            "start": 2269.0,
+            "end": 2274.0,
+            "text": "Give the chairs a moment here please.",
+            "confidence": 0.5878
+          },
+          {
+            "id": 412,
+            "start": 2274.0,
+            "end": 2294.0,
+            "text": "Okay.",
+            "confidence": 0.769
+          },
+          {
+            "id": 413,
+            "start": 2294.0,
+            "end": 2300.0,
+            "text": "So we, we just, we had been talking about this a little bit before that as everybody knows,",
+            "confidence": 0.769
+          },
+          {
+            "id": 414,
+            "start": 2300.0,
+            "end": 2306.0,
+            "text": "we've parked packed an EDN until we get through this document.",
+            "confidence": 0.8395
+          },
+          {
+            "id": 415,
+            "start": 2306.0,
+            "end": 2314.0,
+            "text": "I think we're at a state in this document now where we can work on the test vectors of, so, the examples.",
+            "confidence": 0.8395
+          },
+          {
+            "id": 416,
+            "start": 2314.0,
+            "end": 2317.0,
+            "text": "Let's, let's, let's try calling them examples.",
+            "confidence": 0.8395
+          },
+          {
+            "id": 417,
+            "start": 2317.0,
+            "end": 2328.0,
+            "text": "Where we can, we can let you work on the examples on the side and go back to the other documents and start working on packed and EDN and get them.",
+            "confidence": 0.8395
+          },
+          {
+            "id": 418,
+            "start": 2329.0,
+            "end": 2332.0,
+            "text": "Revive them and get them finished.",
+            "confidence": 0.7527
+          },
+          {
+            "id": 419,
+            "start": 2332.0,
+            "end": 2340.0,
+            "text": "What does the working group as a whole think of that path?",
+            "confidence": 0.7527
+          },
+          {
+            "id": 420,
+            "start": 2340.0,
+            "end": 2348.0,
+            "text": "Not that we've given you much, like you, you've just heard that, but because we just made it up, but, uh, Hank.",
+            "confidence": 0.7527
+          },
+          {
+            "id": 421,
+            "start": 2348.0,
+            "end": 2351.0,
+            "text": "I'm just, let us say, yay.",
+            "confidence": 0.7527
+          },
+          {
+            "id": 422,
+            "start": 2351.0,
+            "end": 2354.0,
+            "text": "Somebody is happy.",
+            "confidence": 0.6178
+          },
+          {
+            "id": 423,
+            "start": 2354.0,
+            "end": 2369.0,
+            "text": "And, and, and my sense is that we should go, we should go for packed first and, because I understand there are people waiting for that to finish and, yeah.",
+            "confidence": 0.6178
+          },
+          {
+            "id": 424,
+            "start": 2369.0,
+            "end": 2372.0,
+            "text": "So I'm, discussion rolling.",
+            "confidence": 0.6178
+          },
+          {
+            "id": 425,
+            "start": 2372.0,
+            "end": 2380.0,
+            "text": "Yeah, I mean, as the, as a, currently has a,",
+            "confidence": 0.6178
+          },
+          {
+            "id": 426,
+            "start": 2381.0,
+            "end": 2383.0,
+            "text": "it has a normative requirement on EDN.",
+            "confidence": 0.716
+          },
+          {
+            "id": 427,
+            "start": 2383.0,
+            "end": 2384.0,
+            "text": "Oh, so.",
+            "confidence": 0.716
+          },
+          {
+            "id": 428,
+            "start": 2384.0,
+            "end": 2386.0,
+            "text": "Okay, so maybe EDN.",
+            "confidence": 0.716
+          },
+          {
+            "id": 429,
+            "start": 2386.0,
+            "end": 2390.0,
+            "text": "Yeah. So I think, yeah, actually, the EDN is probably closer to finishing anyway.",
+            "confidence": 0.716
+          },
+          {
+            "id": 430,
+            "start": 2390.0,
+            "end": 2391.0,
+            "text": "But, yeah.",
+            "confidence": 0.716
+          },
+          {
+            "id": 431,
+            "start": 2391.0,
+            "end": 2392.0,
+            "text": "Andy?",
+            "confidence": 0.716
+          },
+          {
+            "id": 432,
+            "start": 2392.0,
+            "end": 2394.0,
+            "text": "No, I was, I was mentioning this out in the hallway.",
+            "confidence": 0.716
+          },
+          {
+            "id": 433,
+            "start": 2394.0,
+            "end": 2397.0,
+            "text": "The, the, there, I thought there was a, someone had a dependency on EDN.",
+            "confidence": 0.716
+          },
+          {
+            "id": 434,
+            "start": 2397.0,
+            "end": 2398.0,
+            "text": "So, yeah.",
+            "confidence": 0.716
+          },
+          {
+            "id": 435,
+            "start": 2398.0,
+            "end": 2399.0,
+            "text": "Okay.",
+            "confidence": 0.716
+          },
+          {
+            "id": 436,
+            "start": 2399.0,
+            "end": 2399.0,
+            "text": "",
+            "confidence": 0.716
+          },
+          {
+            "id": 437,
+            "start": 2399.0,
+            "end": 2405.0,
+            "text": "We're not the only ones, but I know SD card does, because because we use it extensively to, describe,",
+            "confidence": 0.716
+          },
+          {
+            "id": 438,
+            "start": 2405.0,
+            "end": 2407.0,
+            "text": "and what SD cards look like.",
+            "confidence": 0.716
+          },
+          {
+            "id": 439,
+            "start": 2408.0,
+            "end": 2421.0,
+            "text": "So, but, but Andy, given that this is sort of, you were the one who had said, let, you know, with us, let's do serialization first as a way to see if we can be moving forward as well.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 440,
+            "start": 2421.0,
+            "end": 2427.0,
+            "text": "Does this park look at others, does that sort of meet your, your, you know, yes.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 441,
+            "start": 2427.0,
+            "end": 2428.0,
+            "text": "Yes.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 442,
+            "start": 2428.0,
+            "end": 2431.0,
+            "text": "So, you are the one testing whether we are moving at a reasonable pace.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 443,
+            "start": 2431.0,
+            "end": 2432.0,
+            "text": "Yes.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 444,
+            "start": 2432.0,
+            "end": 2432.0,
+            "text": "",
+            "confidence": 0.7968
+          },
+          {
+            "id": 445,
+            "start": 2432.0,
+            "end": 2433.0,
+            "text": "Okay, great.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 446,
+            "start": 2433.0,
+            "end": 2434.0,
+            "text": "Thank you.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 447,
+            "start": 2434.0,
+            "end": 2434.0,
+            "text": "",
+            "confidence": 0.7968
+          },
+          {
+            "id": 448,
+            "start": 2434.0,
+            "end": 2436.0,
+            "text": "And there's more in the queue.",
+            "confidence": 0.7968
+          },
+          {
+            "id": 449,
+            "start": 2437.0,
+            "end": 2440.0,
+            "text": "Okay.",
+            "confidence": 0.7619
+          },
+          {
+            "id": 450,
+            "start": 2440.0,
+            "end": 2443.0,
+            "text": "Lawrence.",
+            "confidence": 0.7619
+          },
+          {
+            "id": 451,
+            "start": 2443.0,
+            "end": 2459.0,
+            "text": "I'm just going to say my, my proposal for serialization draft is to get the, the example section into, you know, at least a reasonable shape and publish a draft,",
+            "confidence": 0.7619
+          },
+          {
+            "id": 452,
+            "start": 2460.0,
+            "end": 2462.0,
+            "text": "you know, about five with it in about two weeks.",
+            "confidence": 0.5952
+          },
+          {
+            "id": 453,
+            "start": 2462.0,
+            "end": 2471.0,
+            "text": "And if there's something else that, the, managers to get done in that time, that will also get pulled into the five draft, but,",
+            "confidence": 0.5952
+          },
+          {
+            "id": 454,
+            "start": 2471.0,
+            "end": 2484.0,
+            "text": "the main focus for the five draft would be to get the examples in, and like the description and then text on how to use it that way, it's out there for everybody to look at and then,",
+            "confidence": 0.5952
+          },
+          {
+            "id": 455,
+            "start": 2484.0,
+            "end": 2486.4,
+            "text": "We can go back to work on the other stuff,",
+            "confidence": 0.4185
+          },
+          {
+            "id": 456,
+            "start": 2486.4,
+            "end": 2488.76,
+            "text": "while people are looking, other parts of the document,",
+            "confidence": 0.4185
+          },
+          {
+            "id": 457,
+            "start": 2488.76,
+            "end": 2491.4,
+            "text": "while people are looking at the examples.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 458,
+            "start": 2491.4,
+            "end": 2492.2,
+            "text": "Great.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 459,
+            "start": 2492.2,
+            "end": 2492.7,
+            "text": "So thank you.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 460,
+            "start": 2492.7,
+            "end": 2494.6,
+            "text": "That sounds good.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 461,
+            "start": 2494.6,
+            "end": 2494.8,
+            "text": "Thank you.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 462,
+            "start": 2498.2,
+            "end": 2500.68,
+            "text": "Yeah, this is the second row.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 463,
+            "start": 2500.68,
+            "end": 2504.32,
+            "text": "Yeah, our draft has an normative dependency on EDN.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 464,
+            "start": 2504.32,
+            "end": 2509.0,
+            "text": "So you can do one thing and also not not do the other, I guess.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 465,
+            "start": 2509.0,
+            "end": 2510.6,
+            "text": "OK.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 466,
+            "start": 2510.6,
+            "end": 2511.4,
+            "text": "OK.",
+            "confidence": 0.4185
+          },
+          {
+            "id": 467,
+            "start": 2514.6,
+            "end": 2516.2,
+            "text": "Lawrence, you're still in the queue.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 468,
+            "start": 2516.2,
+            "end": 2519.92,
+            "text": "Are you wanting to say something more about this or not?",
+            "confidence": 0.7228
+          },
+          {
+            "id": 469,
+            "start": 2519.92,
+            "end": 2520.24,
+            "text": "OK.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 470,
+            "start": 2520.24,
+            "end": 2521.6,
+            "text": "Great.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 471,
+            "start": 2521.6,
+            "end": 2522.12,
+            "text": "Good.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 472,
+            "start": 2522.12,
+            "end": 2524.08,
+            "text": "Is there anything else?",
+            "confidence": 0.7228
+          },
+          {
+            "id": 473,
+            "start": 2524.08,
+            "end": 2528.2,
+            "text": "We still have time, but we also now have a lot of stuff",
+            "confidence": 0.7228
+          },
+          {
+            "id": 474,
+            "start": 2528.2,
+            "end": 2529.16,
+            "text": "in front of us.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 475,
+            "start": 2529.16,
+            "end": 2532.36,
+            "text": "Anything else for this meeting?",
+            "confidence": 0.7228
+          },
+          {
+            "id": 476,
+            "start": 2532.36,
+            "end": 2536.0,
+            "text": "We, the chairs will talk, since we're both here, physically",
+            "confidence": 0.7228
+          },
+          {
+            "id": 477,
+            "start": 2536.0,
+            "end": 2541.64,
+            "text": "in the room, at least half of a dozen people.",
+            "confidence": 0.7228
+          },
+          {
+            "id": 478,
+            "start": 2541.64,
+            "end": 2547.4,
+            "text": "And we will move what we just talked about to the mailing list.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 479,
+            "start": 2547.4,
+            "end": 2549.6,
+            "text": "We don't have to ask the mailing list.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 480,
+            "start": 2549.6,
+            "end": 2552.04,
+            "text": "Is this what you all want to do?",
+            "confidence": 0.6782
+          },
+          {
+            "id": 481,
+            "start": 2552.04,
+            "end": 2555.16,
+            "text": "We're able to do that as long as our AD agrees,",
+            "confidence": 0.6782
+          },
+          {
+            "id": 482,
+            "start": 2555.16,
+            "end": 2556.32,
+            "text": "and he just has.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 483,
+            "start": 2556.32,
+            "end": 2558.52,
+            "text": "So, but he's getting up to the mic again.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 484,
+            "start": 2558.52,
+            "end": 2562.36,
+            "text": "Can you restate for the record exactly what the plan is?",
+            "confidence": 0.6782
+          },
+          {
+            "id": 485,
+            "start": 2562.36,
+            "end": 2564.04,
+            "text": "No, because we, OK.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 486,
+            "start": 2564.04,
+            "end": 2565.04,
+            "text": "OK.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 487,
+            "start": 2565.04,
+            "end": 2567.68,
+            "text": "But we will restate on the list within the day or two",
+            "confidence": 0.6782
+          },
+          {
+            "id": 488,
+            "start": 2567.68,
+            "end": 2568.56,
+            "text": "in what the plan is.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 489,
+            "start": 2568.56,
+            "end": 2570.04,
+            "text": "OK.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 490,
+            "start": 2570.04,
+            "end": 2570.88,
+            "text": "Right.",
+            "confidence": 0.6782
+          },
+          {
+            "id": 491,
+            "start": 2570.92,
+            "end": 2574.16,
+            "text": "The general answer is to let Lawrence continue working",
+            "confidence": 0.5961
+          },
+          {
+            "id": 492,
+            "start": 2574.16,
+            "end": 2578.24,
+            "text": "on serialization in the examples while we",
+            "confidence": 0.5961
+          },
+          {
+            "id": 493,
+            "start": 2578.24,
+            "end": 2581.72,
+            "text": "put, unpark, one or both of the other documents",
+            "confidence": 0.5961
+          },
+          {
+            "id": 494,
+            "start": 2581.72,
+            "end": 2584.24,
+            "text": "and start and couldn't resume working on them,",
+            "confidence": 0.5961
+          },
+          {
+            "id": 495,
+            "start": 2584.24,
+            "end": 2585.56,
+            "text": "likely starting with EDM.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 496,
+            "start": 2585.56,
+            "end": 2586.04,
+            "text": "OK.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 497,
+            "start": 2586.04,
+            "end": 2586.24,
+            "text": "OK.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 498,
+            "start": 2590.84,
+            "end": 2591.28,
+            "text": "OK.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 499,
+            "start": 2591.28,
+            "end": 2595.56,
+            "text": "If that's it, I think we are finished for the day.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 500,
+            "start": 2595.56,
+            "end": 2596.56,
+            "text": "Thank you.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 501,
+            "start": 2596.56,
+            "end": 2599.4,
+            "text": "This was very productive.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 502,
+            "start": 2599.4,
+            "end": 2600.48,
+            "text": "We will.",
+            "confidence": 0.5961
+          },
+          {
+            "id": 503,
+            "start": 2600.48,
+            "end": 2601.48,
+            "text": "Yeah.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 504,
+            "start": 2601.48,
+            "end": 2605.24,
+            "text": "So, very, and I will, very, and Christian and I will come",
+            "confidence": 0.5707
+          },
+          {
+            "id": 505,
+            "start": 2605.24,
+            "end": 2607.64,
+            "text": "to some of the green will just start mailing with Christian",
+            "confidence": 0.5707
+          },
+          {
+            "id": 506,
+            "start": 2607.64,
+            "end": 2609.36,
+            "text": "soon.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 507,
+            "start": 2609.36,
+            "end": 2615.16,
+            "text": "And come up with a plan and will send it to the list.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 508,
+            "start": 2615.16,
+            "end": 2617.84,
+            "text": "Andy, do you want us to try to talk to you in the hallway",
+            "confidence": 0.5707
+          },
+          {
+            "id": 509,
+            "start": 2617.84,
+            "end": 2619.4,
+            "text": "before we do that?",
+            "confidence": 0.5707
+          },
+          {
+            "id": 510,
+            "start": 2619.4,
+            "end": 2620.4,
+            "text": "Hi.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 511,
+            "start": 2620.4,
+            "end": 2620.72,
+            "text": "Or.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 512,
+            "start": 2623.28,
+            "end": 2625.16,
+            "text": "No, I think if you can come up with an agreement,",
+            "confidence": 0.5707
+          },
+          {
+            "id": 513,
+            "start": 2625.16,
+            "end": 2626.36,
+            "text": "I don't think I need to approve it.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 514,
+            "start": 2626.36,
+            "end": 2626.72,
+            "text": "OK.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 515,
+            "start": 2626.72,
+            "end": 2628.24,
+            "text": "Sounds good.",
+            "confidence": 0.5707
+          },
+          {
+            "id": 516,
+            "start": 2629.24,
+            "end": 2632.84,
+            "text": "So, Christian, we'll try to grab you offline so we can figure",
+            "confidence": 0.5821
+          },
+          {
+            "id": 517,
+            "start": 2632.84,
+            "end": 2634.8,
+            "text": "out a time because you're not in Asia,",
+            "confidence": 0.5821
+          },
+          {
+            "id": 518,
+            "start": 2634.8,
+            "end": 2636.08,
+            "text": "time zone, I assume.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 519,
+            "start": 2636.08,
+            "end": 2637.8,
+            "text": "So.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 520,
+            "start": 2637.8,
+            "end": 2641.6,
+            "text": "No, but I'd be like, given that we have a bit more",
+            "confidence": 0.5821
+          },
+          {
+            "id": 521,
+            "start": 2641.6,
+            "end": 2644.24,
+            "text": "meeting time, we could just continue.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 522,
+            "start": 2644.24,
+            "end": 2645.24,
+            "text": "That sounds good.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 523,
+            "start": 2645.24,
+            "end": 2647.24,
+            "text": "Why don't we do that after we shut this down?",
+            "confidence": 0.5821
+          },
+          {
+            "id": 524,
+            "start": 2647.24,
+            "end": 2648.76,
+            "text": "So, OK, very good.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 525,
+            "start": 2648.76,
+            "end": 2649.4,
+            "text": "It's what?",
+            "confidence": 0.5821
+          },
+          {
+            "id": 526,
+            "start": 2649.4,
+            "end": 2654.6,
+            "text": "Something like 10, 10, 15 AM, your time?",
+            "confidence": 0.5821
+          },
+          {
+            "id": 527,
+            "start": 2654.6,
+            "end": 2655.6,
+            "text": "Yeah.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 528,
+            "start": 2655.6,
+            "end": 2658.2,
+            "text": "I have a lot of time to bring my next things to.",
+            "confidence": 0.5821
+          },
+          {
+            "id": 529,
+            "start": 2658.48,
+            "end": 2659.56,
+            "text": "OK, sounds good.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 530,
+            "start": 2659.56,
+            "end": 2661.4,
+            "text": "So, thank you very much to the group.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 531,
+            "start": 2661.4,
+            "end": 2663.72,
+            "text": "We will shut down the meeting.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 532,
+            "start": 2663.72,
+            "end": 2666.12,
+            "text": "We're going to go have a meeting.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 533,
+            "start": 2666.12,
+            "end": 2667.68,
+            "text": "And see you all on the list.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 534,
+            "start": 2667.68,
+            "end": 2667.88,
+            "text": "Thanks.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 535,
+            "start": 2671.08,
+            "end": 2673.08,
+            "text": "Thank you all, Mike.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 536,
+            "start": 2673.08,
+            "end": 2674.36,
+            "text": "Thank you.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 537,
+            "start": 2674.36,
+            "end": 2676.52,
+            "text": "Thank you.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 538,
+            "start": 2676.52,
+            "end": 2678.52,
+            "text": "Thanks, Joe.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 539,
+            "start": 2678.52,
+            "end": 2680.52,
+            "text": "You're pretty shut up.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 540,
+            "start": 2680.52,
+            "end": 2681.16,
+            "text": "OK.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 541,
+            "start": 2681.16,
+            "end": 2685.68,
+            "text": "But I don't think there's a way of ending me.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 542,
+            "start": 2685.68,
+            "end": 2686.96,
+            "text": "OK, just leave it.",
+            "confidence": 0.4543
+          },
+          {
+            "id": 543,
+            "start": 2687.48,
+            "end": 2689.48,
+            "text": "I think I'll stop when you'll stop.",
+            "confidence": 0.381
+          },
+          {
+            "id": 544,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 545,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 546,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 547,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 548,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 549,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 550,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 551,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 552,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 553,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 554,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 555,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 556,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 557,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 558,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 559,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 560,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 561,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 562,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 563,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 564,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 565,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 566,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 567,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 568,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 569,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 570,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 571,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 572,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 573,
+            "start": 2689.48,
+            "end": 2689.48,
+            "text": "",
+            "confidence": 0.381
+          },
+          {
+            "id": 574,
+            "start": 2716.96,
+            "end": 2728.96,
+            "text": "I'll stop you.",
+            "confidence": 0.6399
+          },
+          {
+            "id": 575,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 576,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 577,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 578,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 579,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 580,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 581,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 582,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 583,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 584,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 585,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 586,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 587,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 588,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 589,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 590,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 591,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 592,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 593,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 594,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 595,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 596,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 597,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 598,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 599,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 600,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 601,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 602,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 603,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 604,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          },
+          {
+            "id": 605,
+            "start": 2728.96,
+            "end": 2728.96,
+            "text": "",
+            "confidence": 0.6399
+          }
+        ],
+        "metadata": {
+          "created_at": "2026-03-30T21:51:14.705510+00:00",
+          "processed_at": "2026-03-30T21:51:14.705510+00:00",
+          "provider": "mlx-whisper",
+          "model": "tiny",
+          "audio": {
+            "duration": 5400
+          },
+          "options": {
+            "language": "en",
+            "word_timestamps": true,
+            "vad_filter": true
+          }
+        },
+        "quality": {
+          "average_confidence": 0.7112
+        }
+      }
+    }
+  ],
+  "created_at": "2026-03-28T03:18:42.584058+00:00",
+  "subject": "IETF 125 - CBOR Working Group Session",
+  "extensions": [
+    "lawful_basis",
+    "wtf_transcription"
+  ],
+  "updated_at": "2026-03-30T21:51:14.706434+00:00"
+}
