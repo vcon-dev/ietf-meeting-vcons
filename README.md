@@ -1,6 +1,6 @@
 # IETF Meeting vCons
 
-This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 110-124 (March 2021 - November 2025).
+This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 110-125 (March 2021 - March 2026).
 
 ## What is vCon?
 
@@ -34,7 +34,8 @@ ietf-meeting-vcons/
 ├── ietf121/          # IETF 121 (November 2024, Dublin)
 ├── ietf122/          # IETF 122 (March 2025, Bangkok)
 ├── ietf123/          # IETF 123 (July 2025, Madrid)
-└── ietf124/          # IETF 124 (November 2025, Yokohama)
+├── ietf124/          # IETF 124 (November 2025, Yokohama)
+└── ietf125/          # IETF 125 (March 2026, Shenzhen)
 ```
 
 ## File Naming Convention
@@ -89,9 +90,9 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 
 | Metric | Value |
 |--------|-------|
-| Meetings | 15 (IETF 110-124) |
-| Total vCons | 732 |
-| Date Range | March 2021 - November 2025 |
+| Meetings | 16 (IETF 110-125) |
+| Total vCons | 2,408 |
+| Date Range | March 2021 - March 2026 |
 | Working Groups | ~50 per meeting |
 
 ## Usage Examples
@@ -140,6 +141,142 @@ To generate additional vCons:
 pip install ietf2vcon
 ietf2vcon convert --meeting 125 --group quic
 ```
+
+## Speechmatics Transcription
+
+This repository includes tools to re-transcribe IETF meeting audio using [Speechmatics](https://www.speechmatics.com/) for higher-quality transcriptions with speaker diarization.
+
+### Prerequisites
+
+1. **Speechmatics API Key**: Sign up at [speechmatics.com](https://www.speechmatics.com/) and obtain an API key.
+
+2. **FFmpeg**: Required for audio processing.
+   - macOS: `brew install ffmpeg`
+   - Ubuntu/Debian: `apt install ffmpeg`
+   - Windows: Download from [ffmpeg.org](https://ffmpeg.org/download.html)
+
+3. **Python dependencies**:
+   ```bash
+   pip install -r scripts/requirements.txt
+   ```
+
+### Usage
+
+Set your API key as an environment variable:
+```bash
+export SPEECHMATICS_API_KEY="your-api-key-here"
+```
+
+**Transcribe a single vCon file:**
+```bash
+python scripts/transcribe.py ietf121/ietf121_quic_33502.vcon.json
+```
+
+**Transcribe all sessions from a specific meeting:**
+```bash
+python scripts/transcribe.py --meeting 121
+```
+
+**Transcribe a specific working group:**
+```bash
+python scripts/transcribe.py --meeting 121 --group quic
+```
+
+**Transcribe all vCons missing Speechmatics transcription:**
+```bash
+python scripts/transcribe.py --all-pending
+```
+
+**Preview which files would be transcribed:**
+```bash
+python scripts/transcribe.py --all-pending --dry-run
+```
+
+### Transcription Output
+
+The script:
+1. Downloads audio from the YouTube recording linked in each vCon
+2. Submits the audio to Speechmatics for transcription with speaker diarization
+3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/)
+4. Updates the vCon file with the new transcription in the `analysis` array
+
+The Speechmatics transcription is stored alongside any existing YouTube transcription, with `"vendor": "speechmatics"` to distinguish it.
+
+### WTF Format Features
+
+The Speechmatics transcription includes:
+- **Word-level timestamps**: Precise timing for each word
+- **Speaker diarization**: Identification of different speakers
+- **Confidence scores**: Per-word and per-segment confidence metrics
+- **Segments**: Logical groupings of speech (sentences/phrases)
+- **Quality metrics**: Overall transcription quality assessment
+
+## Local Whisper Transcription
+
+This repository also includes a tool for transcribing IETF meetings using [OpenAI Whisper](https://github.com/openai/whisper) locally via [faster-whisper](https://github.com/SYSTRAN/faster-whisper). No API key or cloud service is required.
+
+### Prerequisites
+
+1. **FFmpeg**: Required for audio processing.
+   - macOS: `brew install ffmpeg`
+   - Ubuntu/Debian: `apt install ffmpeg`
+
+2. **Python dependencies**:
+   ```bash
+   pip install -r scripts/requirements.txt
+   ```
+
+### Usage
+
+**Transcribe a single vCon file:**
+```bash
+python scripts/whisper_transcribe.py ietf125/ietf125_quic_XXXXX.vcon.json
+```
+
+**Transcribe all sessions from a specific meeting:**
+```bash
+python scripts/whisper_transcribe.py --meeting 125
+```
+
+**Transcribe a specific working group:**
+```bash
+python scripts/whisper_transcribe.py --meeting 125 --group quic
+```
+
+**Use a faster (smaller) model:**
+```bash
+python scripts/whisper_transcribe.py --meeting 125 --model medium
+```
+
+**Transcribe all vCons missing Whisper transcription:**
+```bash
+python scripts/whisper_transcribe.py --all-pending
+```
+
+**Preview which files would be transcribed:**
+```bash
+python scripts/whisper_transcribe.py --meeting 125 --dry-run
+```
+
+### Model Selection
+
+| Model | Size | Speed | Quality |
+|-------|------|-------|---------|
+| `tiny` | 39M | Fastest | Low |
+| `base` | 74M | Fast | Fair |
+| `small` | 244M | Moderate | Good |
+| `medium` | 769M | Moderate | Better |
+| `large-v3` | 1.5G | Slow | Best (default) |
+
+### Transcription Output
+
+The script:
+1. Downloads audio from the YouTube recording linked in each vCon
+2. Transcribes locally using faster-whisper with word-level timestamps
+3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/)
+4. Updates the vCon file with the new transcription in the `analysis` array
+
+The Whisper transcription is stored with `"vendor": "whisper"` to distinguish it from YouTube auto-captions and Speechmatics transcriptions. It includes real word-level timestamps and per-segment confidence scores.
 
 ## Related Specifications
 
