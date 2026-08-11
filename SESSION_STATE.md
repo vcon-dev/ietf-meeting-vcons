@@ -1,67 +1,58 @@
 # Session State — IETF vCon Work
-_Last saved: 2026-03-28_
+_Last saved: 2026-08-11_
 
 ## What's Running Right Now
 
-### mlx-whisper transcription (STILL RUNNING — DO NOT KILL)
-- **PID**: 6099
-- **Command**: `.venv/bin/python scripts/whisper_transcribe.py --meeting 125`
-- **Output log**: check with `ps aux | grep whisper_transcribe`
-- **Status**: transcribing IETF 125, 0 files done so far (still on file 1 — large-v3 is slow)
-- **Pre-downloaded audio**: `audio/ietf125/` — 112 MP3 files ready
+Nothing. No transcription or conversion jobs are in flight.
 
 ## Git State
-- **Repo**: `/Users/thomashowe/Documents/GitHub/ietf-meeting-vcons`
-- **Branch**: `ietf125-youtube-refresh`
-- **Last commit**: "Refresh all meetings (110-125) with yt-dlp YouTube captions" (9bdd037)
-- Whisper/mlx code changes are **uncommitted** (scripts/whisper_transcribe.py, scripts/download_audio.py)
-
-## Mac Mini
-- **Host**: `openconserver@192.168.2.3`
-- **T9 disk**: `/Volumes/T9/ietf/` — full IETF FTP archive (~39GB) rsync complete
-- **rsync log**: `/Volumes/T9/ietf-rsync.log`
-
-## vcon-ietf repo changes (uncommitted)
-- **Repo**: `/Users/thomashowe/Documents/GitHub/vcon-ietf`
-- **New file**: `src/ietf2vcon/rsync_mirror.py` — local rsync mirror support
-- **Modified**: `src/ietf2vcon/materials.py` — checks local mirror before HTTP
-- **Modified**: `src/ietf2vcon/converter.py` — added `rsync_mirror_dir` to ConversionOptions
-- **Modified**: `src/ietf2vcon/cli.py` — new `ietf2vcon sync` command + `--rsync-mirror` flag
+- **Repo**: `/Users/openconserver/Documents/GitHub/vcon-dev/ietf-meeting-vcons`
+- **Branch**: `ietf126-vienna`, branched from `1f1b394`. Committed, **not
+  pushed** — no PR opened yet.
 
 ## What Was Accomplished This Session
-1. Generated IETF 125 (Shenzhen) vCons — 159 files in `ietf125/`
-2. Refreshed all meetings 110–125 with yt-dlp YouTube captions (2408 vCons)
-3. Added rsync mirror support to vcon-ietf tool
-4. Rsynced full IETF archive to Mac mini T9 disk
-5. Added `scripts/download_audio.py` — parallel audio pre-download
-6. Updated `scripts/whisper_transcribe.py` to use mlx-whisper + pre-downloaded audio
-7. Downloaded all 112 IETF 125 audio files to `audio/ietf125/`
 
-## Next Steps
-- Wait for mlx-whisper to finish IETF 125 (or stop + try `--model medium` which is faster)
-- Commit whisper/mlx changes to `ietf125-youtube-refresh` branch
-- Commit vcon-ietf rsync changes
-- Consider running transcription on previous meetings (124, 123, ...)
-- Consider Speechmatics for higher quality (speaker diarization)
+Added **IETF 126 (Vienna, 18–24 July 2026)** — 170 vCons in `ietf126/`.
+
+1. Converted all 170 working groups with `ietf2vcon convert-all --meeting 126
+   --transcript-source youtube --parallel 4` (~17 min).
+2. 142 sessions have a recording; 140 of those carry a YouTube auto-caption
+   transcript in WTF format.
+3. Normalised transcripts from attachment to `analysis` with the new
+   `scripts/wtf_attachment_to_analysis.py`, then ran
+   `scripts/migrate_compliance_core02.py --meeting 126`.
+4. Validated: **170/170 files are clean** against
+   `draft-ietf-vcon-vcon-core/vcon_json_schema.json`, same as IETF 125.
+
+### Upstream fix in `ietf2vcon`
+`_try_youtube_captions()` gated on `"youtube.com" in video_url`, but the
+Datatracker publishes recordings as `youtu.be/...` short links, so caption
+fetching was skipped for every session. Fixed in
+`/Users/openconserver/Documents/GitHub/vcon-dev/ietf2vcon`, branch
+`fix/youtu-be-captions` (committed, not pushed).
+
+## Known Gaps
+- **Meetings 110–124 have no transcripts at all.** The "Refresh all meetings
+  (110-125) with yt-dlp YouTube captions" commit (`9bdd037`) landed no analysis
+  entries — the `youtu.be` bug above is the likely cause. With that bug fixed, a
+  re-run should now populate them. ~1900 sessions, roughly 3 hours at the
+  IETF 126 rate.
+- `ietf126_bess_35453` and `ietf126_sustain_35566` have recordings but no
+  YouTube captions available yet; re-run later or fall back to Whisper.
+- IETF 125 transcripts are Whisper (`vendor: whisper`); IETF 126 are YouTube
+  (`vendor: youtube`, `product: auto-captions`). Whisper quality is higher and
+  the two can coexist in `analysis`.
 
 ## Key Commands
 ```bash
-# Check transcription progress
-ps aux | grep whisper_transcribe
-grep -c "Done!" /tmp/whisper_125.log
+# Convert a whole meeting (YouTube captions, 4-way parallel)
+ietf2vcon convert-all --meeting 126 --output-dir ./build126 \
+    --transcript-source youtube --parallel 4
 
-# Run transcription (uses pre-downloaded audio automatically)
-.venv/bin/python scripts/whisper_transcribe.py --meeting 125
+# Normalise + validate after copying *.vcon.json into ietf<N>/
+python scripts/wtf_attachment_to_analysis.py --meeting 126
+python scripts/migrate_compliance_core02.py --meeting 126
 
-# Pre-download audio for a meeting
-.venv/bin/python scripts/download_audio.py --meeting 124 --workers 8
-
-# Sync IETF proceedings via rsync
-ietf2vcon sync --meeting 125
-
-# Mac mini rsync status
-ssh openconserver@192.168.2.3 "df -h /Volumes/T9"
+# Higher-quality local transcription (slow)
+python scripts/whisper_transcribe.py --meeting 126 --model medium
 ```
-
-## Cron Jobs (session-only — will die when Claude exits)
-- Job `95bb2c66`: checks whisper progress every 5 min — **will expire with this session**
