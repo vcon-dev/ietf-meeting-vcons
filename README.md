@@ -39,6 +39,10 @@ ietf-meeting-vcons/
 └── ietf126/          # IETF 126 (July 2026, Vienna)
 ```
 
+Transcript bodies for meetings 110-125 are **not** in this repository. They are
+published as GitHub Release assets and referenced from the vCons by URL and
+hash. See [Transcripts](#transcripts) below.
+
 ## File Naming Convention
 
 Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
@@ -53,26 +57,117 @@ Each vCon file follows the [draft-ietf-vcon-vcon-container](https://datatracker.
 
 ```json
 {
-  "vcon": "0.0.1",
-  "uuid": "unique-identifier",
-  "created_at": "2024-11-07T15:30:00Z",
-  "subject": "IETF 121 - QUIC Working Group Session",
+  "vcon": "0.4.0",
+  "uuid": "019d3273-6d8e-877c-9dd8-dd37220d739c",
+  "created_at": "2026-07-22T12:00:00+00:00",
+  "subject": "IETF 126 - VCON Working Group Session",
+  "extensions": ["lawful_basis", "role", "meta", "wtf_transcription"],
   "parties": [
     {"name": "Chair Name", "mailto": "chair@example.com", "role": "chair"}
   ],
   "dialog": [
-    {"type": "video", "url": "https://www.youtube.com/watch?v=..."}
+    {"type": "recording", "mediatype": "video/mp4", "url": "https://youtu.be/..."}
   ],
   "attachments": [
-    {"type": "agenda", "url": "https://datatracker.ietf.org/..."},
-    {"type": "slides", "url": "https://datatracker.ietf.org/..."},
-    {"type": "lawful_basis", "body": {"lawful_basis": "legitimate_interests", ...}}
+    {"purpose": "agenda", "url": "https://datatracker.ietf.org/...", "party": 0, "dialog": 0},
+    {"purpose": "slides", "url": "https://datatracker.ietf.org/...", "party": 0, "dialog": 0},
+    {"purpose": "lawful_basis", "encoding": "json", "body": "{\"lawful_basis\": \"legitimate_interests\", ...}"}
   ],
   "analysis": [
-    {"type": "wtf_transcription", "spec": "draft-howe-wtf-transcription-00", "body": {...}}
+    {"type": "wtf_transcription", "dialog": 0, "vendor": "youtube", "encoding": "json", "body": "{...}"}
   ]
 }
 ```
+
+Note the details that follow from `draft-ietf-vcon-vcon-core-02`: the syntax
+parameter is `0.4.0`, recordings use dialog type `recording` rather than
+`video`, attachments use `purpose` rather than `type`, and every `body` is a
+**string** rather than an object, with `encoding` declaring how to read it.
+
+## Transcripts
+
+Every session that has a recording has a transcript in
+[WTF](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) format:
+2,087 of them. They are stored in one of two ways.
+
+**IETF 126 is inline.** The transcript body sits in the vCon, so each file is
+self-contained and needs no network access to read. This is the simplest form
+and works well for a single meeting.
+
+**IETF 110-125 are externally referenced.** A WTF body runs 200-400 KB, so
+inlining all of them would make this repository roughly 670 MB. The core spec
+anticipates this: the Analysis Object section states that it *"SHOULD contain
+the body and encoding parameters **or** the url and content_hash parameters."*
+Those meetings therefore reference their transcripts instead of carrying them:
+
+```json
+{
+  "type": "wtf_transcription",
+  "dialog": 0,
+  "vendor": "youtube",
+  "product": "auto-captions",
+  "url": "https://github.com/vcon-dev/ietf-meeting-vcons/releases/download/transcripts-ietf126/ietf126_vcon_35521.wtf.json",
+  "content_hash": "sha512-09FC_f0yKzzG1V6tih0kmrJm2Fd4HBHJPd7zqYXe4aiZcmnj0-1XEbReZmty25QCkIDhpgxOAxAkGA773ORZjA",
+  "mediatype": "application/json"
+}
+```
+
+This keeps the repository around 70 MB while preserving integrity: the
+`content_hash` is a SHA-512 digest of the exact bytes served, formatted as
+`sha512-` plus unpadded base64url, and it is covered by the vCon's own
+signature. A substituted transcript fails verification exactly as an edited
+inline one would.
+
+### Reading a transcript either way
+
+```python
+import base64, hashlib, json, urllib.request
+
+def load_transcript(analysis):
+    """Return the WTF body whether it is inline or externally referenced."""
+    if "body" in analysis:
+        return json.loads(analysis["body"])
+
+    raw = urllib.request.urlopen(analysis["url"]).read()
+
+    algorithm, _, expected = analysis["content_hash"].partition("-")
+    digest = hashlib.new(algorithm, raw).digest()
+    actual = base64.urlsafe_b64encode(digest).rstrip(b"=").decode()
+    if actual != expected:
+        raise ValueError(f"content_hash mismatch for {analysis['url']}")
+
+    return json.loads(raw)
+
+
+with open("ietf126/ietf126_vcon_35521.vcon.json") as f:
+    vcon = json.load(f)
+
+for analysis in vcon.get("analysis", []):
+    if analysis["type"] == "wtf_transcription":
+        wtf = load_transcript(analysis)
+        for segment in wtf["segments"][:5]:
+            print(f"[{segment['start']:.1f}s] {segment['text']}")
+```
+
+Always check the hash before trusting a fetched body. That check is the only
+thing separating an external reference from an unverified download.
+
+### Regenerating the split
+
+```bash
+# Externalize a meeting's transcripts (writes bodies to transcripts/ietf<N>/)
+python scripts/externalize_transcripts.py --meeting 125 \
+    --url-prefix https://github.com/vcon-dev/ietf-meeting-vcons/releases/download/transcripts-ietf125 \
+    --body-dir transcripts/ietf125
+
+# Confirm every reference resolves against its local body file
+python scripts/externalize_transcripts.py --meeting 125 \
+    --body-dir transcripts/ietf125 --verify
+```
+
+`transcripts/` is gitignored. Publishing a meeting means uploading that
+directory's `.wtf.json` files as assets on a release tagged
+`transcripts-ietf<N>`, matching the URL prefix baked into the vCons.
 
 ## Data Sources
 
@@ -80,7 +175,10 @@ All data is sourced from public IETF resources:
 
 - **Session metadata**: [IETF Datatracker API](https://datatracker.ietf.org/api/)
 - **Video recordings**: [IETF YouTube Channel](https://www.youtube.com/@ietf)
-- **Transcripts**: YouTube auto-generated captions
+- **Transcripts**: YouTube auto-generated captions (`vendor: youtube`) for every
+  meeting except IETF 125, which was transcribed locally with Whisper
+  (`vendor: whisper`). Whisper output is higher quality; the two can coexist in
+  `analysis`, distinguished by `vendor`.
 - **Materials**: IETF Meeting Materials Archive
 
 ## IETF Note Well
@@ -93,8 +191,15 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 |--------|-------|
 | Meetings | 17 (IETF 110-126) |
 | Total vCons | 2,578 |
+| Sessions with a recording | 2,089 |
+| Transcripts | 2,087 (140 inline, 1,947 externally referenced) |
 | Date Range | March 2021 - July 2026 |
 | Working Groups | ~50 per meeting |
+| Repository size | ~70 MB (plus ~557 MB of transcript bodies published separately) |
+
+The two sessions with a recording but no transcript are
+`ietf126_bess_35453` and `ietf126_sustain_35566`; YouTube has not published
+auto-captions for either.
 
 ## Usage Examples
 
@@ -109,24 +214,29 @@ with open("ietf121/ietf121_quic_33502.vcon.json") as f:
 
 # Get session info
 print(f"Subject: {vcon['subject']}")
-print(f"Video: {vcon['dialog'][0]['url']}")
+print(f"Recording: {vcon['dialog'][0]['url']}")
 
-# Access transcript
-for analysis in vcon.get("analysis", []):
-    if analysis["type"] == "wtf_transcription":
-        transcript = analysis["body"]
-        for segment in transcript["segments"][:5]:
-            print(f"[{segment['start']:.1f}s] {segment['text']}")
+# Chairs
+for party in vcon["parties"]:
+    if party.get("role") == "chair":
+        print(f"Chair: {party['name']}")
 ```
+
+For transcripts see [Reading a transcript either way](#reading-a-transcript-either-way);
+meetings 110-125 reference them by URL rather than carrying them inline.
 
 ### jq (Command Line)
 
 ```bash
-# Get all video URLs from a meeting
-jq -r '.dialog[0].url' ietf121/*.vcon.json
+# Get all recording URLs from a meeting
+jq -r '.dialog[0].url // empty' ietf121/*.vcon.json
 
-# Extract transcript text
-jq -r '.analysis[] | select(.type=="wtf_transcription") | .body.segments[].text' file.vcon.json
+# Extract transcript text (IETF 126, inline bodies; note body is a JSON string)
+jq -r '.analysis[] | select(.type=="wtf_transcription") | .body | fromjson | .segments[].text' \
+    ietf126/ietf126_vcon_35521.vcon.json
+
+# List transcript URLs for an externally referenced meeting
+jq -r '.analysis[]? | select(.type=="wtf_transcription") | .url' ietf121/*.vcon.json
 
 # List all working groups in a meeting
 ls ietf121/*.vcon.json | sed 's/.*ietf121_\(.*\)_.*/\1/' | sort -u
@@ -164,8 +274,32 @@ python scripts/wtf_attachment_to_analysis.py --meeting 126
 python scripts/migrate_compliance_core02.py --meeting 126
 ```
 
-Both scripts accept `--dry-run` and `-v`, and both are idempotent — re-running
+Both scripts accept `--dry-run` and `-v`, and both are idempotent: re-running
 them on an already-migrated meeting is a no-op.
+
+### Backfilling Transcripts
+
+If sessions end up with a recording but no transcript, fetch the YouTube
+auto-captions directly rather than regenerating the vCons, which would churn
+their UUIDs:
+
+```bash
+python scripts/backfill_youtube_captions.py --meetings 110-124 --workers 2 --delay 2
+```
+
+It skips sessions that already have a YouTube transcript, so it is idempotent
+and resumes cleanly after an interrupt. Two operational notes, both learned the
+hard way:
+
+- **Keep `yt-dlp` current.** A stale build fails with "Sign in to confirm you're
+  not a bot" on every request, which looks exactly like an IP ban but is not.
+  `brew upgrade yt-dlp` (or `pip install -U yt-dlp`) fixes it.
+- **Do not raise `--workers` much.** YouTube throttles bulk caption fetches. The
+  `--give-up-after` guard aborts on sustained throttling rather than burning
+  through the queue against a block.
+
+Sessions whose recording genuinely has no published captions are reported as
+`no-captions` rather than as errors.
 
 ## Speechmatics Transcription
 
