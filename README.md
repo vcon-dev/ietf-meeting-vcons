@@ -1,6 +1,6 @@
 # IETF Meeting vCons
 
-This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 110-125 (March 2021 - March 2026).
+This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 110-126 (March 2021 - July 2026).
 
 ## What is vCon?
 
@@ -35,14 +35,15 @@ ietf-meeting-vcons/
 ├── ietf122/          # IETF 122 (March 2025, Bangkok)
 ├── ietf123/          # IETF 123 (July 2025, Madrid)
 ├── ietf124/          # IETF 124 (November 2025, Yokohama)
-└── ietf125/          # IETF 125 (March 2026, Shenzhen)
+├── ietf125/          # IETF 125 (March 2026, Shenzhen)
+└── ietf126/          # IETF 126 (July 2026, Vienna)
 ```
 
 ## File Naming Convention
 
 Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
 
-- `meeting` - IETF meeting number (110-124)
+- `meeting` - IETF meeting number (110-126)
 - `group` - Working group acronym (e.g., `httpbis`, `quic`, `tls`)
 - `session_id` - Unique session identifier from the IETF Datatracker
 
@@ -90,9 +91,9 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 
 | Metric | Value |
 |--------|-------|
-| Meetings | 16 (IETF 110-125) |
-| Total vCons | 2,408 |
-| Date Range | March 2021 - March 2026 |
+| Meetings | 17 (IETF 110-126) |
+| Total vCons | 2,578 |
+| Date Range | March 2021 - July 2026 |
 | Working Groups | ~50 per meeting |
 
 ## Usage Examples
@@ -139,8 +140,32 @@ To generate additional vCons:
 
 ```bash
 pip install ietf2vcon
-ietf2vcon convert --meeting 125 --group quic
+ietf2vcon convert --meeting 126 --group quic
 ```
+
+### Adding a New Meeting
+
+A whole meeting is converted, normalised and validated in three steps. IETF 126
+was produced this way:
+
+```bash
+ietf2vcon convert-all --meeting 126 --output-dir ./build126 \
+    --transcript-source youtube --parallel 4
+```
+
+`ietf2vcon` stores WTF transcripts as an attachment, while this repository (and
+[draft-howe-vcon-wtf-extension](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/),
+which defines WTF as an *analysis* type) keeps them in `analysis`. After copying
+the `*.vcon.json` files into `ietf126/`, normalise and bring them into
+`draft-ietf-vcon-vcon-core-02` compliance:
+
+```bash
+python scripts/wtf_attachment_to_analysis.py --meeting 126
+python scripts/migrate_compliance_core02.py --meeting 126
+```
+
+Both scripts accept `--dry-run` and `-v`, and both are idempotent — re-running
+them on an already-migrated meeting is a no-op.
 
 ## Speechmatics Transcription
 
