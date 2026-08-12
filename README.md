@@ -10,7 +10,8 @@ vCon is an IETF standard format for capturing conversation data. Each vCon file 
 - **Video recording** - YouTube URL for the session recording
 - **Transcript** - Full transcript in [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/) with word-level timestamps
 - **Materials** - Links to slides, agenda, minutes, and other session documents
-- **Participants** - Working group chairs and attendee information
+- **Participants** - The working group chairs who were serving at the time of
+  the session, plus an attendees party
 - **Lawful basis** - IETF Note Well documentation per [draft-howe-vcon-lawful-basis](https://datatracker.ietf.org/doc/draft-howe-vcon-lawful-basis/)
 
 ## Repository Structure
@@ -172,6 +173,21 @@ python scripts/externalize_transcripts.py --meeting 125 \
 `transcripts/` is gitignored. Publishing a meeting means uploading that
 directory's `.wtf.json` files as assets on a release tagged
 `transcripts-ietf<N>`, matching the URL prefix baked into the vCons.
+
+## Chairs
+
+Chair parties name the people who chaired the session **on the date it was
+held**, not today's chairs. This matters: `ietf2vcon` reads the Datatracker's
+current group record, which would otherwise stamp 2026 chairs on a 2006
+session. `scripts/fix_historical_chairs.py` resolves them per date from
+`grouphistory` and `rolehistory`.
+
+The Datatracker's role history begins **2011-12-09**, when the feature was
+switched on, so sessions before IETF 83 (March 2012) cannot be resolved. Rather
+than assert today's chairs on a session from 2006, those vCons list **no chair
+party at all** and keep only the attendees party. 2,006 vCons are in that state.
+Absence of a claim is preferable to a false one; the chairs are recoverable from
+the IETF proceedings pages for anyone who wants to do that work.
 
 ## Data Sources
 
