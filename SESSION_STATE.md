@@ -86,18 +86,40 @@ captions"). Local Whisper is the only route.
 - Meetings 110-124 could be re-transcribed with Whisper for quality. ~1,900
   sessions, so budget days rather than hours.
 
+### 6. Completed the backwards extension: IETF 66-94
+- **66-89** (24 meetings, 2,887 vCons): materials-only, no recordings. Not
+  empty: 19,849 slides, 5,474 agendas, 5,390 minutes, median 9 docs each.
+- **90-94** (5 meetings, 683 vCons): the audio era. `ietf2vcon` now accepts
+  ietf.org audio MP3s as dialog (`audio/mpeg`), preferring video when both
+  exist, and prefers the https variant since the Datatracker lists some audio
+  twice. 425 audio dialogs, plus 98 YouTube at IETF 94 of which 34 had captions.
+
+The dataset is now **IETF 66-126: 61 consecutive meetings, no gaps, 8,179
+vCons, 4,077 recordings, 3,381 transcripts**, July 2006 to July 2026.
+
+## Open Decision: historical chairs
+
+`ietf2vcon` reads roles from the Datatracker's *current* group record, so every
+vCon lists today's chairs regardless of session date. TLS shows identical chairs
+from IETF 95 to 126. IETF 95's 6lo lists three 2026 chairs; the actual April
+2016 chairs were two different people.
+
+`scripts/fix_historical_chairs.py` resolves chairs as of the session date via
+`grouphistory` + `rolehistory`. Dataset-wide dry run: **2,602 files would be
+corrected, 2,107 already correct, 2,787 skipped** (no grouphistory snapshot at
+or before the meeting date, mostly the oldest meetings). Not applied; awaiting
+a decision. The script is uncommitted.
+
 ## Next Steps Backwards
 
 Remaining eras, in the order they get harder:
 
-- **IETF 90-94** (2014-2015): audio MP3 only, on `ietf.org/audio/`. No captions
-  exist. Needs an audio-dialog adapter plus local Whisper. 5 meetings.
-- **IETF 66-89** (2006-2014): materials only, no recordings (87, 88, 89 return
-  zero). Dialog-less vCons, which is fine: a vCon does not require a dialog.
-  24 meetings.
 - **IETF 1-65** (1986-2006): nothing in the Datatracker (0 minutes at IETF 64
   and below), but web proceedings exist (`ietf.org/proceedings/50/` is live).
   Needs HTML scraping. Highest effort, most historically interesting.
+- **Transcribing the audio era.** IETF 90-94 has 425 audio dialogs with no
+  captions; ~490 sessions total lack transcripts there. Whisper on the MP3s is
+  the only route. Same for the 198 caption-less sessions in IETF 95-98.
 
 Two anomalies worth chasing: **IETF 107** has zero recording documents despite
 certainly being recorded, so its recordings live somewhere the Datatracker does
