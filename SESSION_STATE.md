@@ -1,5 +1,5 @@
 # Session State — IETF vCon Work
-_Last saved: 2026-08-11_
+_Last saved: 2026-08-11 (later session)_
 
 ## What's Running Right Now
 
@@ -7,25 +7,27 @@ Nothing. No transcription or conversion jobs are in flight.
 
 ## Blocking Next Step
 
-**The transcript bodies for meetings 110-125 are not published yet.** The vCons
-reference them at
-`https://github.com/vcon-dev/ietf-meeting-vcons/releases/download/transcripts-ietf<N>/<file>.wtf.json`,
-and those URLs 404 until the assets are uploaded. The bodies are on disk in
-`transcripts/ietf<N>/` (gitignored, 557 MB, 1947 files). Publish them as release
-assets before pushing, or the dataset ships with dead links.
+**Two stale branches still pin the pre-rewrite history**, which is why a fresh
+clone is still ~513 MB rather than ~21 MB. Both are merged and both are
+preserved in the history bundle. Deleting them is the last step of the rewrite:
 
 ```bash
-# One release per meeting, tag must match the URL prefix in the vCons
-gh release create transcripts-ietf121 --title "IETF 121 transcripts" --notes "WTF transcript bodies"
-gh release upload transcripts-ietf121 transcripts/ietf121/*.wtf.json
+git push origin --delete fix/core02-compliance speechmatics
 ```
+
+`fix/core02-compliance` (991b2bc) and `speechmatics` (7d596b9) each reach
+9c5ae15, the commit carrying a 676 MB tree. Clones fetch all branches, so those
+two drag the whole old history along. `refs/pull/*` will still pin the objects
+server-side, but clones do not fetch those.
 
 ## Git State
 - **Repo**: `/Users/openconserver/Documents/GitHub/vcon-dev/ietf-meeting-vcons`
-- **Branch**: `ietf126-vienna`, branched from `1f1b394`. Committed, **not
-  pushed** — no PR opened yet.
-- **Also uncommitted elsewhere**: nothing.
-- `ietf2vcon` branch `fix/youtu-be-captions` is committed, not pushed.
+- **Branch**: `main` at `b216dd5`, the post-rewrite history (3 commits: a
+  synthetic root plus the two IETF 126 work commits). Force-pushed and live.
+- All 16 `transcripts-ietf1{10..25}` tags retargeted to the new history;
+  releases and their 1,947 assets unaffected.
+- `ietf2vcon` PR #1 (the youtu.be fix) is merged.
+- IETF 95-109 lands on branch `ietf95-109-backwards`.
 
 ## What Was Accomplished This Session
 
@@ -63,6 +65,18 @@ Verified: 2,578/2,578 schema-clean, 1,947 references re-hash correctly, and
 re-inlining reproduces the originals byte for byte (proven on IETF 126 before
 applying).
 
+### 5. Extended backwards to IETF 95-109
+15 more meetings, 2,031 vCons, converted with the same pipeline in ~54 minutes.
+1,465 have a recording and 1,260 have a transcript. All schema-clean, all
+externalized, all published as releases.
+
+The dataset is now **IETF 95-126: 32 consecutive meetings, 4,609 vCons,
+3,347 transcripts**, April 2016 to July 2026.
+
+The 198-session gap in IETF 95-98 is not a pipeline failure: those 2016-2017
+videos have no captions on YouTube at all (`yt-dlp` reports "has no automatic
+captions"). Local Whisper is the only route.
+
 ## Known Gaps
 - `ietf126_bess_35453` and `ietf126_sustain_35566` have recordings but YouTube
   has published no auto-captions. Retried after the yt-dlp upgrade; still none.
@@ -71,6 +85,24 @@ applying).
   (`vendor: youtube`). Whisper is higher quality; both can coexist in `analysis`.
 - Meetings 110-124 could be re-transcribed with Whisper for quality. ~1,900
   sessions, so budget days rather than hours.
+
+## Next Steps Backwards
+
+Remaining eras, in the order they get harder:
+
+- **IETF 90-94** (2014-2015): audio MP3 only, on `ietf.org/audio/`. No captions
+  exist. Needs an audio-dialog adapter plus local Whisper. 5 meetings.
+- **IETF 66-89** (2006-2014): materials only, no recordings (87, 88, 89 return
+  zero). Dialog-less vCons, which is fine: a vCon does not require a dialog.
+  24 meetings.
+- **IETF 1-65** (1986-2006): nothing in the Datatracker (0 minutes at IETF 64
+  and below), but web proceedings exist (`ietf.org/proceedings/50/` is live).
+  Needs HTML scraping. Highest effort, most historically interesting.
+
+Two anomalies worth chasing: **IETF 107** has zero recording documents despite
+certainly being recorded, so its recordings live somewhere the Datatracker does
+not index. **IETF 86** has exactly one recording, which smells like a data-entry
+artifact.
 
 ## Candidate Next Datasets
 Researched adjacent organisations. RIPE is the strongest: it self-hosts video

@@ -1,6 +1,6 @@
 # IETF Meeting vCons
 
-This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 110-126 (March 2021 - July 2026).
+This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 95-126 (April 2016 - July 2026): 32 consecutive meetings, 4,609 sessions.
 
 ## What is vCon?
 
@@ -17,10 +17,25 @@ vCon is an IETF standard format for capturing conversation data. Each vCon file 
 
 ```
 ietf-meeting-vcons/
-├── ietf110/          # IETF 110 (March 2021, Online)
-│   ├── ietf110_6man_28833.vcon.json
-│   ├── ietf110_httpbis_28597.vcon.json
+├── ietf95/           # IETF 95 (April 2016, Buenos Aires)
+│   ├── ietf95_6lo_24711.vcon.json
+│   ├── ietf95_6man_24548.vcon.json
 │   └── ...
+├── ietf96/           # IETF 96 (July 2016, Berlin)
+├── ietf97/           # IETF 97 (November 2016, Seoul)
+├── ietf98/           # IETF 98 (March 2017, Chicago)
+├── ietf99/           # IETF 99 (July 2017, Prague)
+├── ietf100/          # IETF 100 (November 2017, Singapore)
+├── ietf101/          # IETF 101 (March 2018, London)
+├── ietf102/          # IETF 102 (July 2018, Montreal)
+├── ietf103/          # IETF 103 (November 2018, Bangkok)
+├── ietf104/          # IETF 104 (March 2019, Prague)
+├── ietf105/          # IETF 105 (July 2019, Montreal)
+├── ietf106/          # IETF 106 (November 2019, Singapore)
+├── ietf107/          # IETF 107 (March 2020, Virtual)
+├── ietf108/          # IETF 108 (July 2020, Online)
+├── ietf109/          # IETF 109 (November 2020, Online)
+├── ietf110/          # IETF 110 (March 2021, Online)
 ├── ietf111/          # IETF 111 (July 2021, Online)
 ├── ietf112/          # IETF 112 (November 2021, Online)
 ├── ietf113/          # IETF 113 (March 2022, Vienna)
@@ -39,7 +54,7 @@ ietf-meeting-vcons/
 └── ietf126/          # IETF 126 (July 2026, Vienna)
 ```
 
-Transcript bodies for meetings 110-125 are **not** in this repository. They are
+Transcript bodies for meetings 95-125 are **not** in this repository. They are
 published as GitHub Release assets and referenced from the vCons by URL and
 hash. See [Transcripts](#transcripts) below.
 
@@ -47,7 +62,7 @@ hash. See [Transcripts](#transcripts) below.
 
 Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
 
-- `meeting` - IETF meeting number (110-126)
+- `meeting` - IETF meeting number (95-126)
 - `group` - Working group acronym (e.g., `httpbis`, `quic`, `tls`)
 - `session_id` - Unique session identifier from the IETF Datatracker
 
@@ -86,16 +101,17 @@ parameter is `0.4.0`, recordings use dialog type `recording` rather than
 
 ## Transcripts
 
-Every session that has a recording has a transcript in
-[WTF](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) format:
-2,087 of them. They are stored in one of two ways.
+There are 3,347 transcripts in
+[WTF](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) format,
+covering every session with a recording except the gaps noted under
+[Coverage gaps](#coverage-gaps). They are stored in one of two ways.
 
 **IETF 126 is inline.** The transcript body sits in the vCon, so each file is
 self-contained and needs no network access to read. This is the simplest form
 and works well for a single meeting.
 
-**IETF 110-125 are externally referenced.** A WTF body runs 200-400 KB, so
-inlining all of them would make this repository roughly 670 MB. The core spec
+**IETF 95-125 are externally referenced.** A WTF body runs 200-400 KB, so
+inlining all of them would make this repository well over a gigabyte. The core spec
 anticipates this: the Analysis Object section states that it *"SHOULD contain
 the body and encoding parameters **or** the url and content_hash parameters."*
 Those meetings therefore reference their transcripts instead of carrying them:
@@ -112,7 +128,7 @@ Those meetings therefore reference their transcripts instead of carrying them:
 }
 ```
 
-This keeps the repository around 70 MB while preserving integrity: the
+This keeps the repository around 90 MB while preserving integrity: the
 `content_hash` is a SHA-512 digest of the exact bytes served, formatted as
 `sha512-` plus unpadded base64url, and it is covered by the vCon's own
 signature. A substituted transcript fails verification exactly as an edited
@@ -189,17 +205,32 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 
 | Metric | Value |
 |--------|-------|
-| Meetings | 17 (IETF 110-126) |
-| Total vCons | 2,578 |
-| Sessions with a recording | 2,089 |
-| Transcripts | 2,087 (140 inline, 1,947 externally referenced) |
-| Date Range | March 2021 - July 2026 |
+| Meetings | 32 (IETF 95-126, consecutive) |
+| Total vCons | 4,609 |
+| Sessions with a recording | 3,554 |
+| Transcripts | 3,347 (140 inline, 3,207 externally referenced) |
+| Date Range | April 2016 - July 2026 |
 | Working Groups | ~50 per meeting |
-| Repository size | ~70 MB (plus ~557 MB of transcript bodies published separately) |
+| Repository size | ~90 MB (plus ~930 MB of transcript bodies published separately) |
 
-The two sessions with a recording but no transcript are
-`ietf126_bess_35453` and `ietf126_sustain_35566`; YouTube has not published
-auto-captions for either.
+### Coverage gaps
+
+207 sessions have a recording but no transcript. They are not evenly spread,
+and the reasons differ:
+
+- **IETF 95-98 (198 sessions).** These 2016-2017 recordings predate YouTube's
+  automatic captioning of the IETF channel. `yt-dlp` reports "has no automatic
+  captions, has no subtitles" for them, so there is nothing to fetch. Closing
+  this gap requires local transcription (see
+  [Local Whisper Transcription](#local-whisper-transcription)).
+- **A handful in IETF 101-106 and 126 (9 sessions).** Individual videos with
+  captions disabled or not yet generated. Worth re-running periodically.
+
+`ietf107` (March 2020, the first virtual meeting) is a special case: it has
+**129 vCons and no recordings at all**, because the Datatracker holds no
+recording documents for it. Its sessions are materials-only. A vCon is not
+required to have a dialog; the agenda, slides and minutes still make these a
+useful record of the session.
 
 ## Usage Examples
 
@@ -223,7 +254,7 @@ for party in vcon["parties"]:
 ```
 
 For transcripts see [Reading a transcript either way](#reading-a-transcript-either-way);
-meetings 110-125 reference them by URL rather than carrying them inline.
+meetings 95-125 reference them by URL rather than carrying them inline.
 
 ### jq (Command Line)
 
