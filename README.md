@@ -195,10 +195,14 @@ All data is sourced from public IETF resources:
 
 - **Session metadata**: [IETF Datatracker API](https://datatracker.ietf.org/api/)
 - **Video recordings**: [IETF YouTube Channel](https://www.youtube.com/@ietf)
-- **Transcripts**: YouTube auto-generated captions (`vendor: youtube`) for every
-  meeting except IETF 125, which was transcribed locally with Whisper
-  (`vendor: whisper`). Whisper output is higher quality; the two can coexist in
-  `analysis`, distinguished by `vendor`.
+- **Transcripts**: three provenances, distinguished by `vendor` and able to
+  coexist in `analysis`:
+  - `youtube` — YouTube auto-generated captions, the default where they exist.
+  - `whisper` — local Whisper (IETF 125), higher quality with word-level timing.
+  - `apple` (`product: speechanalyzer`) — Apple's on-device Speech framework via
+    the `mi` CLI, used where no captions exist: the audio era (IETF 90-94) and
+    the caption-less 2016-2017 videos (IETF 95-98). Segment-level timing, no
+    per-word timestamps or confidence.
 - **Materials**: IETF Meeting Materials Archive
 
 ## IETF Note Well
@@ -212,28 +216,23 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 | Meetings | 61 (IETF 66-126, consecutive) |
 | Total vCons | 8,179 |
 | Sessions with a recording | 4,077 (3,652 video, 425 audio) |
-| Transcripts | 3,381 (140 inline, 3,241 externally referenced) |
+| Transcripts | 4,059 (140 inline, 3,919 externally referenced) |
+| Transcript coverage | 4,059 of 4,077 recordings (99.6%) |
 | Date Range | July 2006 - July 2026 |
 | Working Groups | ~50 per meeting |
-| Repository size | ~120 MB (plus ~940 MB of transcript bodies published separately) |
+| Repository size | ~140 MB (plus ~1.1 GB of transcript bodies published separately) |
 
 ### Coverage gaps
 
-696 sessions have a recording but no transcript. They are not evenly spread,
-and the reasons differ:
+18 of 4,077 recorded sessions have no transcript. Nearly all are YouTube videos
+that have since been **removed or made private**, so there is no longer any
+source to transcribe; a few are recordings that are silent or non-speech.
 
-- **IETF 90-94 (~490 sessions).** Most of this era was published only as audio
-  MP3 on ietf.org, and audio has no captions to fetch. Local transcription is
-  the only route. IETF 94's 98 YouTube recordings were an exception; 34 of them
-  yielded captions.
-
-- **IETF 95-98 (198 sessions).** These 2016-2017 recordings predate YouTube's
-  automatic captioning of the IETF channel. `yt-dlp` reports "has no automatic
-  captions, has no subtitles" for them, so there is nothing to fetch. Closing
-  this gap requires local transcription (see
-  [Local Whisper Transcription](#local-whisper-transcription)).
-- **A handful in IETF 101-106 and 126 (9 sessions).** Individual videos with
-  captions disabled or not yet generated. Worth re-running periodically.
+Everything else with a recording is transcribed. The audio era (IETF 90-94),
+whose recordings moved behind IETF SSO in 2026, was fetched through an
+authenticated session and transcribed on-device (see
+[Transcribing without captions](#transcribing-without-captions)); the
+caption-less 2016-2017 videos (IETF 95-98) the same way.
 
 **IETF 66-89 has no recordings by design.** The IETF did not publish session
 recordings in that era, so those 2,887 vCons are materials-only. They are not
@@ -345,6 +344,44 @@ hard way:
 
 Sessions whose recording genuinely has no published captions are reported as
 `no-captions` rather than as errors.
+
+### Transcribing without captions
+
+Where no captions exist — the audio era (IETF 90-94) and the caption-less
+2016-2017 videos (IETF 95-98) — the audio is transcribed on-device with Apple's
+Speech framework via the `mi` CLI (macOS 26+). It runs on
+the Neural Engine at roughly 90x real time, needs no model download or API key,
+and reads compressed audio directly. Output carries `vendor: apple`,
+`product: speechanalyzer`; it has segment-level timing but no per-word
+timestamps or confidence, so those fields are omitted rather than fabricated.
+
+For sessions with a YouTube recording (extract audio, then transcribe):
+
+```bash
+python scripts/transcribe_mi.py --meetings 95-98
+```
+
+For the audio era, whose `ietf.org/audio/*.mp3` recordings moved **behind IETF
+SSO** in 2026 (an anonymous request gets a Cloudflare 403 and an `auth.ietf.org`
+redirect), fetching needs a browser-grade TLS fingerprint *and* an authenticated
+session. `scripts/transcribe_audio_authed.py` reuses the operator's logged-in
+Chrome session — it never handles a password:
+
+```bash
+# 1. Sign in at datatracker.ietf.org in Chrome, then open one audio URL
+#    (e.g. https://www.ietf.org/audio/ietf92/<file>.mp3) to complete the
+#    get.ietf.org OIDC flow until the file plays.
+# 2. Then:
+pip install curl_cffi browser_cookie3   # into the ietf2vcon venv
+python scripts/transcribe_audio_authed.py --meetings 90-93
+```
+
+It re-reads Chrome cookies on every download to ride through Cloudflare
+clearance rotation, and stops cleanly (resumably) if the browser session
+expires. Both scripts are idempotent — a session that already has a transcript
+is skipped — and both retry transient YouTube JS-challenge failures. Some
+audio-era files are Ogg Vorbis mislabelled as `.mp3`, which Apple's decoder
+rejects; the authed script transcodes those with ffmpeg and retries.
 
 ## Speechmatics Transcription
 

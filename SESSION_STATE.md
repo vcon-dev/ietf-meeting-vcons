@@ -7,18 +7,9 @@ Nothing. No transcription or conversion jobs are in flight.
 
 ## Blocking Next Step
 
-**Two stale branches still pin the pre-rewrite history**, which is why a fresh
-clone is still ~513 MB rather than ~21 MB. Both are merged and both are
-preserved in the history bundle. Deleting them is the last step of the rewrite:
-
-```bash
-git push origin --delete fix/core02-compliance speechmatics
-```
-
-`fix/core02-compliance` (991b2bc) and `speechmatics` (7d596b9) each reach
-9c5ae15, the commit carrying a 676 MB tree. Clones fetch all branches, so those
-two drag the whole old history along. `refs/pull/*` will still pin the objects
-server-side, but clones do not fetch those.
+Nothing blocking. The history rewrite is complete (clone is ~27 MB, down from
+513 MB; the two stale branches were deleted and the full pre-rewrite history is
+archived in the `history-pre-rewrite` release bundle).
 
 ## Git State
 - **Repo**: `/Users/openconserver/Documents/GitHub/vcon-dev/ietf-meeting-vcons`
@@ -109,6 +100,25 @@ from IETF 95 to 126. IETF 95's 6lo lists three 2026 chairs; the actual April
 corrected, 2,107 already correct, 2,787 skipped** (no grouphistory snapshot at
 or before the meeting date, mostly the oldest meetings). Not applied; awaiting
 a decision. The script is uncommitted.
+
+### 7. Transcribed the whole recorded archive (this session)
+Switched the transcription engine from slow mlx-whisper to Apple's on-device
+`mi` (Speech framework, ~90x real time on the M4 Neural Engine, no model, reads
+compressed audio directly). Two new scripts:
+- `scripts/transcribe_mi.py` — YouTube-sourced sessions (95-98, 94).
+- `scripts/transcribe_audio_authed.py` — the login-gated audio era (90-94).
+
+The audio era moved behind IETF SSO in 2026 (Cloudflare 403 + auth.ietf.org
+OIDC). Fetching it needs curl_cffi (browser TLS fingerprint, beats Cloudflare)
+plus the operator's Chrome session cookies (browser_cookie3), never a password.
+Some files are Ogg mislabelled as .mp3; the authed script transcodes with ffmpeg
+and retries.
+
+**678 new transcripts** (`vendor: apple`). Transcript coverage is now
+**4,059 of 4,077 recordings (99.6%)**; the 18 remaining are YouTube videos that
+have been removed/made private (no source left) plus a few silent recordings.
+By vendor: youtube 3,269, apple 678, whisper 112. All published to the
+`transcripts-ietf90..98` releases; all schema-clean; sampled fetch+hash verified.
 
 ## Next Steps Backwards
 
