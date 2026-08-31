@@ -1,0 +1,59 @@
+# Keep s3://ietf-meeting-vcons in step with main.
+#
+# The bucket is a second copy of the vCons, so it can drift the moment a
+# corpus change lands. This runs on every push that touches one, and on
+# demand.
+#
+# Auth is OIDC: the job exchanges a GitHub-signed token for a short-lived
+# role session. There is no access key stored anywhere, and the role trusts
+# only this repository's main branch.
+name: Sync vCons to S3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ietf*/**.vcon.json'
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # required to request the OIDC token
+  contents: read
+
+# One sync at a time. Two overlapping runs could interleave uploads and
+# leave the bucket in a state matching neither commit.
+concurrency:
+  group: s3-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Sync vCons
+        run: |
+          aws s3 sync . s3://ietf-meeting-vcons/ \
+            --exclude "*" --include "ietf*/*.vcon.json" \
+            --content-type application/json \
+            --delete --no-progress
+        # --delete removes objects that no longer exist locally. The filters
+        # apply to the destination too, so nothing outside ietf*/*.vcon.json
+        # is ever a deletion candidate.
+
+      - name: Verify the bucket matches the commit
+        run: |
+          local_count=$(find . -path './ietf*' -name '*.vcon.json' | wc -l | tr -d ' ')
+          remote_count=$(aws s3 ls s3://ietf-meeting-vcons/ --recursive | grep -c '\.vcon\.json$')
+          declared=$(python3 -c "import json; print(json.load(open('dataset.json'))['count'])")
+          echo "local=$local_count remote=$remote_count dataset.json=$declared"
+          if [ "$local_count" != "$remote_count" ] || [ "$local_count" != "$declared" ]; then
+            echo "::error::count mismatch — local=$local_count remote=$remote_count declared=$declared"
+            exit 1
+          fi
