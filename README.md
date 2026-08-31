@@ -1,6 +1,6 @@
 # IETF Meeting vCons
 
-This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) (Virtual Conversation Container) files for IETF working group sessions from meetings 66-126 (July 2006 - July 2026): 61 consecutive meetings, 8,179 sessions.
+This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-core/) (Virtual Conversation Container) files for IETF working group sessions from meetings 66-126 (July 2006 - July 2026): 61 consecutive meetings, 8,179 sessions.
 
 ## What is vCon?
 
@@ -8,7 +8,7 @@ vCon is an IETF standard format for capturing conversation data. Each vCon file 
 
 - **Meeting metadata** - Date, location, working group information
 - **Video recording** - YouTube URL for the session recording
-- **Transcript** - Full transcript in [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/) with word-level timestamps
+- **Transcript** - Full transcript in [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) with word-level timestamps
 - **Materials** - Links to slides, agenda, minutes, and other session documents
 - **Participants** - The working group chairs who were serving at the time of
   the session, plus an attendees party
@@ -47,6 +47,27 @@ Transcript bodies for meetings 66-125 are **not** in this repository. They are
 published as GitHub Release assets and referenced from the vCons by URL and
 hash. See [Transcripts](#transcripts) below.
 
+## Deploying this dataset
+
+`dataset.json` at the repo root declares the whole repository as a single
+dataset, so a loader can ingest it without being told how the files are laid
+out:
+
+```json
+{
+  "name": "ietf-meeting-vcons",
+  "version": "2.0.0",
+  "vcon_dir": ".",
+  "count": 8179,
+  "spec": "0.4.0"
+}
+```
+
+`vcon_dir` is the root, and vCons live in per-meeting subdirectories, so a
+loader should walk it recursively. `count` is a checksum on completeness: a
+partial or truncated checkout can be rejected instead of silently ingesting
+fewer sessions than the dataset claims.
+
 ## File Naming Convention
 
 Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
@@ -57,7 +78,7 @@ Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
 
 ## vCon Structure
 
-Each vCon file follows the [draft-ietf-vcon-vcon-container](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) specification:
+Each vCon file follows the [draft-ietf-vcon-vcon-core](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-core/) specification:
 
 ```json
 {
@@ -73,8 +94,12 @@ Each vCon file follows the [draft-ietf-vcon-vcon-container](https://datatracker.
     {"type": "recording", "mediatype": "video/mp4", "url": "https://youtu.be/..."}
   ],
   "attachments": [
-    {"purpose": "agenda", "url": "https://datatracker.ietf.org/...", "party": 0, "dialog": 0},
-    {"purpose": "slides", "url": "https://datatracker.ietf.org/...", "party": 0, "dialog": 0},
+    {"purpose": "agenda", "url": "https://www.ietf.org/proceedings/126/agenda/agenda-126-vcon-00.md",
+     "content_hash": "sha512-...", "mediatype": "text/markdown", "filename": "agenda-126-vcon-00.md",
+     "meta": {"title": "VCON Agenda", "datatracker_url": "https://datatracker.ietf.org/meeting/126/materials/agenda-126-vcon"},
+     "party": 0, "dialog": 0},
+    {"purpose": "slides", "url": "https://www.ietf.org/proceedings/126/slides/slides-126-vcon-chair-slides-00.pdf",
+     "content_hash": "sha512-...", "mediatype": "application/pdf", "party": 0, "dialog": 0},
     {"purpose": "lawful_basis", "encoding": "json", "body": "{\"lawful_basis\": \"legitimate_interests\", ...}"}
   ],
   "analysis": [
@@ -83,14 +108,30 @@ Each vCon file follows the [draft-ietf-vcon-vcon-container](https://datatracker.
 }
 ```
 
-Note the details that follow from `draft-ietf-vcon-vcon-core-02`: the syntax
+Note the details that follow from `draft-ietf-vcon-vcon-core-02`, the revision this
+dataset targets (the draft is now at -03): the syntax
 parameter is `0.4.0`, recordings use dialog type `recording` rather than
 `video`, attachments use `purpose` rather than `type`, and every `body` is a
 **string** rather than an object, with `encoding` declaring how to read it.
 
+### Why materials point at www.ietf.org rather than the Datatracker
+
+A material attachment carries `url` + `content_hash`, so the URL has to return
+the hashed bytes. The Datatracker's `/meeting/N/materials/<doc>` is a display
+endpoint, not a file: it renders Markdown agendas as HTML pages and converts
+PowerPoint decks to PDF, so a hash of the published file cannot describe what it
+serves. `https://www.ietf.org/proceedings/{meeting}/{type}/{filename}` serves
+each file verbatim, is the tree `rsync.ietf.org::proceedings` mirrors, and is
+reachable by scripted clients across all eras. The Datatracker page is still the
+right thing for a human to open, so it is kept in `meta.datatracker_url`.
+
+Landing pages -- the session page, the collaborative notes, a draft's own page --
+are mutable HTML and carry no hash. They stay body references, since a
+`content_hash` on them would assert an integrity guarantee that does not hold.
+
 ## Transcripts
 
-There are 3,381 transcripts in
+There are 4,059 transcripts in
 [WTF](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) format,
 covering every session with a recording except the gaps noted under
 [Coverage gaps](#coverage-gaps). They are stored in one of two ways.
@@ -117,7 +158,7 @@ Those meetings therefore reference their transcripts instead of carrying them:
 }
 ```
 
-This keeps the repository around 90 MB while preserving integrity: the
+This keeps the repository around 120 MB while preserving integrity: the
 `content_hash` is a SHA-512 digest of the exact bytes served, formatted as
 `sha512-` plus unpadded base64url, and it is covered by the vCon's own
 signature. A substituted transcript fails verification exactly as an edited
@@ -236,7 +277,7 @@ caption-less 2016-2017 videos (IETF 95-98) the same way.
 
 **IETF 66-89 has no recordings by design.** The IETF did not publish session
 recordings in that era, so those 2,887 vCons are materials-only. They are not
-empty: they carry 19,849 slide decks, 5,474 agendas and 5,390 minutes, a median
+empty: they carry 20,855 slide decks, 5,721 agendas and 5,634 minutes, a median
 of 9 documents per session.
 
 `ietf107` (March 2020, the first virtual meeting) is a special case within the
@@ -387,6 +428,8 @@ rejects; the authed script transcodes those with ffmpeg and retries.
 
 This repository includes tools to re-transcribe IETF meeting audio using [Speechmatics](https://www.speechmatics.com/) for higher-quality transcriptions with speaker diarization.
 
+**No Speechmatics transcripts are currently in the dataset.** Every published transcript is either a YouTube auto-caption or, for IETF 125, local Whisper output. This section documents a tool that is available, not data you will find in the files.
+
 ### Prerequisites
 
 1. **Speechmatics API Key**: Sign up at [speechmatics.com](https://www.speechmatics.com/) and obtain an API key.
@@ -438,7 +481,7 @@ python scripts/transcribe.py --all-pending --dry-run
 The script:
 1. Downloads audio from the YouTube recording linked in each vCon
 2. Submits the audio to Speechmatics for transcription with speaker diarization
-3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/)
+3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/)
 4. Updates the vCon file with the new transcription in the `analysis` array
 
 The Speechmatics transcription is stored alongside any existing YouTube transcription, with `"vendor": "speechmatics"` to distinguish it.
@@ -514,15 +557,15 @@ python scripts/whisper_transcribe.py --meeting 125 --dry-run
 The script:
 1. Downloads audio from the YouTube recording linked in each vCon
 2. Transcribes locally using faster-whisper with word-level timestamps
-3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/)
+3. Converts the result to [WTF (World Transcription Format)](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/)
 4. Updates the vCon file with the new transcription in the `analysis` array
 
 The Whisper transcription is stored with `"vendor": "whisper"` to distinguish it from YouTube auto-captions and Speechmatics transcriptions. It includes real word-level timestamps and per-segment confidence scores.
 
 ## Related Specifications
 
-- [draft-ietf-vcon-vcon-container](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-container/) - vCon container format
-- [draft-howe-wtf-transcription](https://datatracker.ietf.org/doc/draft-howe-wtf-transcription/) - World Transcription Format
+- [draft-ietf-vcon-vcon-core](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-core/) - vCon container format (supersedes the expired draft-ietf-vcon-vcon-container)
+- [draft-howe-vcon-wtf-extension](https://datatracker.ietf.org/doc/draft-howe-vcon-wtf-extension/) - World Transcription Format
 - [draft-howe-vcon-lawful-basis](https://datatracker.ietf.org/doc/draft-howe-vcon-lawful-basis/) - Lawful basis extension
 
 ## Contributing
