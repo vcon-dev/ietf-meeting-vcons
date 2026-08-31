@@ -47,6 +47,39 @@ Transcript bodies for meetings 66-125 are **not** in this repository. They are
 published as GitHub Release assets and referenced from the vCons by URL and
 hash. See [Transcripts](#transcripts) below.
 
+## Getting the data
+
+**Git** — the whole dataset with history:
+
+```bash
+git clone https://github.com/vcon-dev/ietf-meeting-vcons.git
+```
+
+**S3** — anonymous read, no AWS account or credentials required. Useful for
+pulling a single meeting, or for streaming the set without a 140 MB clone:
+
+```
+s3://ietf-meeting-vcons/{meeting}/{filename}.vcon.json
+https://ietf-meeting-vcons.s3.amazonaws.com/{meeting}/{filename}.vcon.json
+```
+
+```bash
+# one session, over plain HTTPS
+curl -O "https://ietf-meeting-vcons.s3.amazonaws.com/ietf126/ietf126_vcon_35521.vcon.json"
+
+# one meeting
+aws s3 sync s3://ietf-meeting-vcons/ietf126/ ./ietf126 --no-sign-request
+
+# browse or mirror the whole set (--no-sign-request = no credentials)
+aws s3 ls s3://ietf-meeting-vcons/ --recursive --no-sign-request
+aws s3 sync s3://ietf-meeting-vcons/ ./ietf-vcons --no-sign-request
+```
+
+The bucket is read-only to the public: `s3:GetObject` and `s3:ListBucket` are
+granted anonymously, writes are denied. It carries the 8,179 vCons and nothing
+else — transcript bodies stay on GitHub Releases, which is where the vCons
+reference them.
+
 ## Deploying this dataset
 
 `dataset.json` at the repo root declares the whole repository as a single
