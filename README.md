@@ -1,6 +1,6 @@
 # IETF Meeting vCons
 
-This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-core/) (Virtual Conversation Container) files for IETF working group sessions from meetings 66-126 (July 2006 - July 2026): 61 consecutive meetings, 8,179 sessions.
+This repository contains [vCon](https://datatracker.ietf.org/doc/draft-ietf-vcon-vcon-core/) (Virtual Conversation Container) files for IETF working group sessions: the numbered meetings 66-126 (July 2006 - July 2026), 61 consecutive meetings and 8,179 sessions, plus the VCON working group's two 2026 interim sessions.
 
 ## What is vCon?
 
@@ -16,18 +16,29 @@ vCon is an IETF standard format for capturing conversation data. Each vCon file 
 
 ## Repository Structure
 
-One directory per meeting, `ietf<N>/`, holding one vCon per working group
-session:
+One directory per meeting, holding one vCon per working group session. A
+numbered meeting is `ietf<N>/`; an interim is named as the Datatracker names
+it, since an interim has no number:
 
 ```
 ietf-meeting-vcons/
-├── ietf66/           # IETF 66 (July 2006, Montreal)
+├── ietf66/                    # IETF 66 (July 2006, Montreal)
 │   ├── ietf66_dnsop_1234.vcon.json
 │   └── ...
 ├── ietf67/
 ├── ...
-└── ietf126/          # IETF 126 (July 2026, Vienna)
+├── ietf126/                   # IETF 126 (July 2026, Vienna)
+├── interim-2026-vcon-01/      # VCON interim, 2026-01-27
+└── interim-2026-vcon-02/      # VCON interim, 2026-09-09
 ```
+
+### Interim sessions
+
+Interim coverage is not a backfill. Working groups have held hundreds of
+interims and only the VCON working group's are here, generated the same way
+and from the same Datatracker documents as everything else. Any loader that
+walks `vcon_dir` recursively picks them up without changes; one that assumes
+an `ietf<N>` directory name will miss them.
 
 The dataset spans four eras, which differ in what the IETF published at the
 time rather than in how the vCons are built:
@@ -76,7 +87,7 @@ aws s3 sync s3://ietf-meeting-vcons/ ./ietf-vcons --no-sign-request
 ```
 
 The bucket is read-only to the public: `s3:GetObject` and `s3:ListBucket` are
-granted anonymously, writes are denied. It carries the 8,179 vCons and nothing
+granted anonymously, writes are denied. It carries all 8,181 vCons and nothing
 else — transcript bodies stay on GitHub Releases, which is where the vCons
 reference them.
 
@@ -89,9 +100,9 @@ out:
 ```json
 {
   "name": "ietf-meeting-vcons",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "vcon_dir": ".",
-  "count": 8179,
+  "count": 8181,
   "spec": "0.4.0"
 }
 ```
@@ -103,9 +114,11 @@ fewer sessions than the dataset claims.
 
 ## File Naming Convention
 
-Files follow the pattern: `ietf{meeting}_{group}_{session_id}.vcon.json`
+Files follow the pattern: `{meeting}_{group}_{session_id}.vcon.json`
 
-- `meeting` - IETF meeting number (66-126)
+- `meeting` - `ietf` plus the meeting number for a numbered meeting
+  (`ietf124`), or the Datatracker's interim name for an interim
+  (`interim-2026-vcon-02`)
 - `group` - Working group acronym (e.g., `httpbis`, `quic`, `tls`)
 - `session_id` - Unique session identifier from the IETF Datatracker
 
@@ -287,18 +300,18 @@ All IETF meeting sessions are conducted under the [IETF Note Well](https://www.i
 
 | Metric | Value |
 |--------|-------|
-| Meetings | 61 (IETF 66-126, consecutive) |
-| Total vCons | 8,179 |
-| Sessions with a recording | 4,077 (3,652 video, 425 audio) |
-| Transcripts | 4,059 (140 inline, 3,919 externally referenced) |
-| Transcript coverage | 4,059 of 4,077 recordings (99.6%) |
-| Date Range | July 2006 - July 2026 |
+| Meetings | 61 numbered (IETF 66-126, consecutive) plus 2 VCON interims |
+| Total vCons | 8,181 |
+| Sessions with a recording | 4,079 (3,654 video, 425 audio) |
+| Transcripts | 4,061 (142 inline, 3,919 externally referenced) |
+| Transcript coverage | 4,061 of 4,079 recordings (99.6%) |
+| Date Range | July 2006 - September 2026 |
 | Working Groups | ~50 per meeting |
 | Repository size | ~140 MB (plus ~1.1 GB of transcript bodies published separately) |
 
 ### Coverage gaps
 
-18 of 4,077 recorded sessions have no transcript. Nearly all are YouTube videos
+18 of 4,079 recorded sessions have no transcript. Nearly all are YouTube videos
 that have since been **removed or made private**, so there is no longer any
 source to transcribe; a few are recordings that are silent or non-speech.
 
