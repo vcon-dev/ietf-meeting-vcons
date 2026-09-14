@@ -14,6 +14,7 @@ on:
     branches: [main]
     paths:
       - 'ietf*/**.vcon.json'
+      - 'interim-*/**.vcon.json'
   workflow_dispatch:
 
 permissions:
@@ -40,16 +41,18 @@ jobs:
       - name: Sync vCons
         run: |
           aws s3 sync . s3://ietf-meeting-vcons/ \
-            --exclude "*" --include "ietf*/*.vcon.json" \
+            --exclude "*" \
+            --include "ietf*/*.vcon.json" \
+            --include "interim-*/*.vcon.json" \
             --content-type application/json \
             --delete --no-progress
         # --delete removes objects that no longer exist locally. The filters
-        # apply to the destination too, so nothing outside ietf*/*.vcon.json
-        # is ever a deletion candidate.
+        # apply to the destination too, so nothing outside the two included
+        # patterns is ever a deletion candidate.
 
       - name: Verify the bucket matches the commit
         run: |
-          local_count=$(find . -path './ietf*' -name '*.vcon.json' | wc -l | tr -d ' ')
+          local_count=$(find . \( -path './ietf*' -o -path './interim-*' \) -name '*.vcon.json' | wc -l | tr -d ' ')
           remote_count=$(aws s3 ls s3://ietf-meeting-vcons/ --recursive | grep -c '\.vcon\.json$')
           declared=$(python3 -c "import json; print(json.load(open('dataset.json'))['count'])")
           echo "local=$local_count remote=$remote_count dataset.json=$declared"
