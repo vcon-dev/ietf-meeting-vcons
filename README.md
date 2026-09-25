@@ -292,6 +292,28 @@ All data is sourced from public IETF resources:
     per-word timestamps or confidence.
 - **Materials**: IETF Meeting Materials Archive
 
+### Media references
+
+`content_hash` on an external `dialog`/`attachment`/`analysis` reference lets a
+consumer verify the bytes it fetches match what was hashed at dataset-build
+time. Two categories of reference in this dataset don't carry one, and won't:
+
+- **YouTube recordings** (3,654 sessions, IETF 95-126). A YouTube URL serves an
+  HTML page, not the media file, so fetching it and hashing the response would
+  hash a web page, not a recording. No content_hash is written for these, and
+  none should be.
+- **IETF 90-94 audio** (425 sessions). The `ietf.org/audio/...` MP3 URLs moved
+  behind IETF SSO login in 2026 (see [Coverage gaps](#coverage-gaps)); a plain,
+  polite fetch — no browser spoofing, no bot-protection evasion — gets
+  redirected into the login flow rather than the file. The Datatracker's own
+  `recording-*` documents for these sessions point at the same now-gated URL,
+  there is no alternate public mirror, and the Meetecho recording-playback
+  system only covers IETF 98 onward. These URLs are left as-is, unhashed,
+  until IETF publishes a public replacement.
+
+Every other external reference in the dataset (slides, agendas, minutes,
+transcript bodies) is hashed.
+
 ## IETF Note Well
 
 All IETF meeting sessions are conducted under the [IETF Note Well](https://www.ietf.org/about/note-well/), which permits recording, transcription, and publication. This is documented in each vCon's `lawful_basis` attachment.
