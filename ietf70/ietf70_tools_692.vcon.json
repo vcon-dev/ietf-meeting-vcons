@@ -1,5 +1,5 @@
 {
-  "vcon": "0.4.0",
+  "vcon": "0.5.0",
   "uuid": "019ff6b9-d158-8ca3-9dd8-dd37220d739c",
   "parties": [
     {
@@ -11,65 +11,75 @@
   "attachments": [
     {
       "purpose": "meeting_metadata",
-      "body": "{\"ietf_meeting_number\": 70, \"location\": \"Vancouver, CA\", \"working_group\": \"tools\", \"session_id\": \"692\", \"room\": \"Marine\", \"start_time\": \"2007-12-01T17:30:00+00:00\", \"duration_seconds\": 36000}",
+      "body": "{\"ietf_meeting_number\": 70, \"location\": \"Vancouver, CA\", \"working_group\": \"tools\", \"session_id\": \"692\", \"status\": \"sched\", \"room\": \"Marine\", \"start_time\": \"2007-12-01T17:30:00+00:00\", \"duration_seconds\": 36000, \"materials\": [{\"filename\": \"cosp.txt\", \"url\": \"https://www.ietf.org/proceedings/70/agenda/cosp.txt\", \"title\": \"Agenda for Code Sprint at IETF-70\", \"datatracker_url\": \"https://datatracker.ietf.org/meeting/70/materials/agenda-70-tools-code-sprint\"}]}",
       "encoding": "json",
+      "mediatype": "application/json",
+      "start": "2026-11-14T21:28:03.471846+00:00",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0
     },
     {
       "purpose": "ingress_info",
-      "body": "{\"source\": \"ietf2vcon\", \"converter_version\": \"0.1.0\", \"converted_at\": \"2026-08-12T16:06:40.729172+00:00\", \"meeting_number\": 70, \"group_acronym\": \"tools\", \"session_index\": 0}",
+      "body": "{\"source\": \"ietf2vcon\", \"converter_version\": \"0.3.0\", \"converted_at\": \"2026-11-14T21:28:03.472385+00:00\", \"meeting_number\": 70, \"group_acronym\": \"tools\", \"session_index\": 0}",
       "encoding": "json",
+      "mediatype": "application/json",
+      "start": "2026-11-14T21:28:03.471846+00:00",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0
     },
     {
       "purpose": "lawful_basis",
       "encoding": "json",
-      "body": "{\"lawful_basis\": \"legitimate_interests\", \"expiration\": \"2099-12-31T23:59:59+00:00\", \"purpose_grants\": [{\"purpose\": \"recording\", \"granted\": true, \"granted_at\": \"2026-08-12T16:06:40.729215+00:00\"}, {\"purpose\": \"transcription\", \"granted\": true, \"granted_at\": \"2026-08-12T16:06:40.729219+00:00\"}, {\"purpose\": \"publication\", \"granted\": true, \"granted_at\": \"2026-08-12T16:06:40.729221+00:00\"}, {\"purpose\": \"archival\", \"granted\": true, \"granted_at\": \"2026-08-12T16:06:40.729224+00:00\"}, {\"purpose\": \"analysis\", \"granted\": true, \"granted_at\": \"2026-08-12T16:06:40.729226+00:00\"}], \"terms_of_service\": \"https://www.ietf.org/about/note-well/\", \"metadata\": {\"terms_of_service_name\": \"IETF Note Well\", \"jurisdiction\": \"IETF\", \"controller\": \"Internet Engineering Task Force (IETF)\", \"notes\": \"Participation in IETF meetings constitutes agreement to the Note Well, which permits recording, transcription, and public archival of proceedings. See also BCP 78 (RFC 5378) and BCP 79 (RFC 8179) for IPR policies.\"}}",
+      "body": "{\"lawful_basis\": \"legitimate_interests\", \"expiration\": \"2099-12-31T23:59:59+00:00\", \"purpose_grants\": [{\"purpose\": \"recording\", \"granted\": true, \"granted_at\": \"2007-12-01T17:30:00+00:00\"}, {\"purpose\": \"transcription\", \"granted\": true, \"granted_at\": \"2007-12-01T17:30:00+00:00\"}, {\"purpose\": \"publication\", \"granted\": true, \"granted_at\": \"2007-12-01T17:30:00+00:00\"}, {\"purpose\": \"archival\", \"granted\": true, \"granted_at\": \"2007-12-01T17:30:00+00:00\"}, {\"purpose\": \"analysis\", \"granted\": true, \"granted_at\": \"2007-12-01T17:30:00+00:00\"}], \"terms_of_service\": \"https://www.ietf.org/about/note-well/\", \"metadata\": {\"terms_of_service_name\": \"IETF Note Well\", \"jurisdiction\": \"IETF\", \"controller\": \"Internet Engineering Task Force (IETF)\", \"notes\": \"Participation in IETF meetings constitutes agreement to the Note Well, which permits recording, transcription, and public archival of proceedings. See also BCP 78 (RFC 5378) and BCP 79 (RFC 8179) for IPR policies.\"}, \"proof_mechanisms\": [{\"mechanism_type\": \"external_system\", \"description\": \"IETF Note Well, the IETF's published policy for meeting participation, at https://www.ietf.org/about/note-well/. Participation in an IETF session constitutes agreement to it.\"}]}",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0,
+      "mediatype": "application/json",
+      "start": "2026-11-14T21:28:03.471846+00:00"
     },
     {
       "purpose": "agenda",
-      "body": "{\"url\": \"https://datatracker.ietf.org/meeting/70/materials/agenda-70-tools-code-sprint\", \"mimetype\": \"application/pdf\", \"filename\": \"agenda-70-tools-code-sprint.pdf\", \"title\": \"Agenda for Code Sprint at IETF-70\"}",
-      "encoding": "json",
+      "mediatype": "text/plain",
+      "filename": "cosp.txt",
+      "url": "https://www.ietf.org/proceedings/70/agenda/cosp.txt",
+      "content_hash": "sha512-vi0_9JDvo1-LfE4M7pIQiNRDZTfGR84uarFdJ6yycinA6TCq3sXvBfD5EhlKVLXgRT2Vg8frnOEvHvE3Ts72zA",
+      "start": "2026-11-14T21:28:03.471846+00:00",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0
     },
     {
       "purpose": "agenda",
       "body": "{\"url\": \"https://datatracker.ietf.org/meeting/70/session/tools/\", \"mimetype\": \"text/html\", \"filename\": null, \"title\": \"TOOLS Agenda\"}",
       "encoding": "json",
+      "mediatype": "application/json",
+      "start": "2026-11-14T21:28:03.471846+00:00",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0
     },
     {
       "purpose": "minutes",
       "body": "{\"url\": \"https://notes.ietf.org/notes-ietf-70-tools\", \"mimetype\": \"text/markdown\", \"filename\": null, \"title\": \"TOOLS Notes\"}",
       "encoding": "json",
+      "mediatype": "application/json",
+      "start": "2026-11-14T21:28:03.471846+00:00",
       "party": 0,
-      "dialog": 0,
-      "start": "2026-08-12T16:06:40.728869+00:00",
-      "mediatype": "application/json"
+      "session": 0
     }
   ],
   "analysis": [],
   "created_at": "2026-08-12T16:06:40.728869+00:00",
+  "sessions": [
+    {
+      "start": "2007-12-01T17:30:00+00:00",
+      "duration": 36000,
+      "parties": [
+        0
+      ]
+    }
+  ],
   "subject": "IETF 70 - TOOLS Working Group Session",
   "extensions": [
     "lawful_basis",
-    "role"
+    "CC"
   ],
-  "updated_at": "2026-08-12T16:06:50.349662+00:00"
+  "updated_at": "2026-11-14T21:28:04.106568+00:00"
 }
