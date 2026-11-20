@@ -396,7 +396,7 @@ All data is sourced from public IETF resources:
 
 ### Media references
 
-`content_hash` on an external `attachment` or `analysis` reference lets a consumer verify the bytes it fetches match what was hashed at dataset-build time. Recording `dialog` entries carry no `content_hash`. This is a known deviation from core-05 Section 2.4, which requires `url` and `content_hash` together on an externally referenced file, pending [working group issue 40](https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-core/issues/40) on the core draft. The recording links are of two kinds, and no hash is written for either:
+`content_hash` on an external `attachment` or `analysis` reference lets a consumer verify the bytes it fetches match what was hashed at dataset-build time. Recording `dialog` entries carry no `content_hash`, because no stable bytes can be obtained for the URL. This follows the working group's direction on [core draft issue 40](https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-core/issues/40): a `url` without a `content_hash` is allowed on a Dialog, Attachment or Analysis when the producer cannot obtain stable bytes for it, with no marker field. The [`vcon`](https://pypi.org/project/vcon/) Python library accepts it from 1.0.6. The core-05 text (Section 2.4, and the `url` → `content_hash` dependency in Appendix C) still says MUST until the working group revises it, so a validator that follows the draft text literally reports these links. The recording links are of two kinds, and no hash is written for either:
 
 - **Video recordings** (3,654 files, IETF 90-126 and the interims). The link is a `youtube.com` or `youtu.be` address, which serves an HTML page, not the media file, so fetching it and hashing the response would hash a web page, not a recording.
 - **Audio recordings** (425 files: 424 in IETF 90-94 and one in IETF 86). The `ietf.org/audio/...` MP3 URLs redirect to a login page (checked on one of them in November 2026), and a plain, polite fetch gets no file. These URLs are left as they are, unhashed, until the IETF publishes a public replacement. One of them, in `ietf86/ietf86_sdnrg_22511.vcon.json`, is an `http` link, not `https`.
@@ -444,14 +444,15 @@ These are known properties of the data, listed so that nobody has to find them b
 **Links and hashes**
 
 - **Unhashed material references: 32,876.** They are 8,181 session pages, 8,181 collaborative-notes pages and 7,466 draft pages, which are mutable landing pages with no file to hash, and 9,048 references to a Datatracker material page whose verbatim file was not hashed (7,123 of them in IETF 66-89). The files do not record the reason for each one; the 3.0.0 conversion log counted 898 materials that the servers reported as not available. The `mimetype` inside such a reference is a label taken from the file name or from 2.1.0, not checked by fetching the page, and it is absent from 4,313 of the 32,876 references because nothing known says what the page is.
-- **Recording links have no content hash** (4,079), as described above.
+- **Recording links have no content hash** (4,079), as described above. This follows the working group's direction on core issue 40.
 - **One recording link is `http`**, not `https` (`ietf86/ietf86_sdnrg_22511.vcon.json`), where core-05 requires HTTPS.
 - **Links to collaborative notes** for older meetings no longer lead to a note: the two older meetings checked (IETF 70 and 92) redirect to the notes service's start page. The link for IETF 126 resolves.
 
 **Deviations from the specifications**
 
 - **Inline bodies are strings of serialized JSON.** Every inline `body` (57,419 attachments, 8,181 lawful basis bodies among them, and every inline analysis entry) is a string holding JSON, with `encoding` `json`. Core-05 says `json` means the body is the JSON value itself, so strictly the body should be the object, not a string of it. The core-05 schema accepts a string, so the validator does not flag it.
-- **Recording links have no `content_hash`** (4,079), and one is `http` (see above). Core-05 requires both a hash and HTTPS.
+- **One recording link is `http`** (see above). Core-05 requires HTTPS.
+- **Recording links have no `content_hash`** (4,079). The core-05 text still requires a hash with a `url`, but this follows the working group's direction on [core issue 40](https://github.com/ietf-wg-vcon/draft-ietf-vcon-vcon-core/issues/40), which allows a `url` without a hash when stable bytes cannot be obtained, and `vcon` 1.0.6 accepts it (see [Media references](#media-references)). It is listed here only until the draft text is revised.
 - **Parties carry no `validation`**, which core-05 says should be present when a party has a `name`.
 - **Recording media types are `video/mp4` and `audio/mpeg`**, the registered names. The list core-05 suggests for Dialog `mediatype` has `video/x-mp4` and `audio/x-mp3`, and does not include them.
 - **Attachment `start` values are the conversion time** of the file (14 or 15 November 2026 for every file), not the time of the session or the document. Core-05 defines `start` on an attachment as when it was sent or exchanged.
@@ -675,14 +676,14 @@ It depends on the `vcon` library at version 1.0.0 or later (`vcon>=1.0.0,<2`).
 
    `reference_types.py` has no `--meetings` option: it scans the whole tree and writes only the files that need a change, and a second apply changes nothing. `--proceedings` is optional here (the mirror resolved no reference in 3.0.0).
 
-7. **Validate, then commit.** Every file is checked against the core-05 JSON Schema (Appendix C) plus rules for session wiring, attachment scope and lawful basis scoping. The recording links without a hash are reported as a known deviation and do not fail a file; every other schema error does:
+7. **Validate, then commit.** Every file is checked against the core-05 JSON Schema (Appendix C) plus rules for session wiring, attachment scope and lawful basis scoping. The recording links without a hash are counted and reported separately and do not fail a file, since they follow the working group's direction on core issue 40 (the validator, which checks the core-05 schema as written, labels them known deviations); every other schema error does:
 
    ```bash
    # from an ietf2vcon checkout; the pattern reaches the per-meeting directories
    .venv/bin/python scripts/validate_vcons.py /path/to/ietf-meeting-vcons --all --pattern '*/*.vcon.json'
    ```
 
-   The validator reports 8,181 of 8,181 files passing for this release, with the 4,079 recording links without a hash listed as known deviations.
+   The validator reports 8,181 of 8,181 files passing for this release, with the 4,079 recording links without a hash listed separately (following core issue 40).
 
 ### Running a step again
 
